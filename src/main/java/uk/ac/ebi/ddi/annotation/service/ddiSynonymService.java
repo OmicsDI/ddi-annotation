@@ -23,8 +23,8 @@ public class ddiSynonymService {
         ArrayList<String>  synonyms =  getSynonymsInList(word,table);
 
         if (synonyms.size()==0) {
-            ddiAnnotationService annotService = new ddiAnnotationService();
-            synonyms =  annotService.getSynonymsForWord(word);
+            ddiAnnotationInternalService annotInternalService = new ddiAnnotationInternalService();
+            synonyms =  annotInternalService.getSynonymsForWord(word);
             insertInSynonymsList(synonyms, table);
         }
 //        BasicDBObject document = new BasicDBObject();
