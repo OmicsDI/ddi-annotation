@@ -1,11 +1,10 @@
 package uk.ac.ebi.ddi.annotation.service;
 
-import uk.ac.ebi.ddi.service.db.*;
 
 /**
  * Created by mingze on 03/08/15.
  */
-public interface IDdiAnnotationService {
+public interface IDDIAnnotationService {
 
     /**
      *

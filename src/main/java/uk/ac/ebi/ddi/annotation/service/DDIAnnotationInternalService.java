@@ -15,7 +15,7 @@ import org.json.*;
 import uk.ac.ebi.ddi.annotation.model.AnnotedWord;
 import uk.ac.ebi.ddi.annotation.model.WordInField;
 
-public class ddiAnnotationInternalService {
+public class DDIAnnotationInternalService {
 
     /**
      *
@@ -27,7 +27,8 @@ public class ddiAnnotationInternalService {
         JSONArray annotationResults;
         //        try {
         String recommenderPreUrl = "http://data.bioontology.org/recommender?ontologies=MESH,MS&apikey=807fa818-0a7c-43be-9bac-51576e8795f5&input=";
-        String recommenderUrl = recommenderPreUrl + fieldText.replace(" ", "_");
+        String recommenderUrl = recommenderPreUrl + fieldText.replace(" ", "%20");
+//        String recommenderUrl = recommenderPreUrl + "\'" + fieldText + "\'";
         String output = "";
         try {
             output = getFromWSAPI(recommenderUrl);
@@ -79,9 +80,11 @@ public class ddiAnnotationInternalService {
             JSONArray matchedTerms = coverageResult.getJSONArray("annotations");
 
 
-            System.out.println(ontologyName);
-            System.out.println("number of terms" + numberOfTerms);
-
+//            System.out.println(ontologyName);
+//            System.out.println("number of terms" + numberOfTerms);
+//
+//            System.out.println(recommenderUrl);
+//            System.out.println(matchedTerms);
             matchedWords = getDistinctWordList(matchedTerms);
             for (WordInField matchedWord : matchedWords) {
                 System.out.println(matchedWord.getText() + ":" + matchedWord.getFrom() + "-" + matchedWord.getTo());
@@ -89,7 +92,12 @@ public class ddiAnnotationInternalService {
 
         }
 
-        return matchedWords.toString();
+        if(matchedWords != null) {
+            return matchedWords.toString();
+        }
+        else{
+            return null;
+        }
     }
 
     /**
@@ -172,7 +180,7 @@ public class ddiAnnotationInternalService {
         HttpGet getRequest = new HttpGet(url);
         getRequest.addHeader("accept", "application/json");
         HttpResponse response = httpClient.execute(getRequest);
-        System.out.println("Trying to accessing webservice from:" + url);
+//        System.out.println("Trying to accessing webservice from:" + url);
         if (response.getStatusLine().getStatusCode() != 200) {
 //            throw new RuntimeException("Failed : HTTP error code : "
 //                    + response.getStatusLine().getStatusCode());
@@ -194,7 +202,7 @@ public class ddiAnnotationInternalService {
      */
     private JSONArray findBioOntologyMatchclasses(String matchedWord, JSONArray annotationResults) {
         JSONArray matchedClasses = new JSONArray();
-        System.out.print(annotationResults);
+//        System.out.print(annotationResults);
         for (int i = 0; i < annotationResults.length(); i++) {
             JSONObject annotationResult = annotationResults.getJSONObject(i);
             JSONArray annotations = annotationResult.getJSONArray("annotations");

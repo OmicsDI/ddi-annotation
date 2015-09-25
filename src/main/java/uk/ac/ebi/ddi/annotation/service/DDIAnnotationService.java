@@ -1,52 +1,51 @@
 package uk.ac.ebi.ddi.annotation.service;
 
-import uk.ac.ebi.ddi.service.db.*;
 import uk.ac.ebi.ddi.service.db.model.enrichment.EnrichedDataset;
 import uk.ac.ebi.ddi.service.db.service.enrichment.EnrichmentService;
 
 /**
  * Created by mingze on 03/08/15.
  */
-public class ddiAnnotationService implements IDdiAnnotationService {
+public class DDIAnnotationService implements IDDIAnnotationService {
 
     private EnrichedDataset cachedDataset;
     private EnrichmentService enrichmentService = new EnrichmentService();
 
     @Override
-    public String getEnrichedTitle(String datasetRepoId) {
-        readEnrichedDataset(datasetRepoId);
+    public String getEnrichedTitle(String accession) {
+        readEnrichedDataset(accession);
         return cachedDataset.getEnrichedTitle();
     }
 
     @Override
-    public String getEnrichedAbstract(String datasetRepoId) {
-        readEnrichedDataset(datasetRepoId);
+    public String getEnrichedAbstract(String accession) {
+        readEnrichedDataset(accession);
         return cachedDataset.getEnrichedAbstractDescription();
     }
 
     @Override
-    public String getEnrichedSampleProtocol(String datasetRepoId) {
-        readEnrichedDataset(datasetRepoId);
+    public String getEnrichedSampleProtocol(String accession) {
+        readEnrichedDataset(accession);
         return cachedDataset.getEnrichedSampleProtocol();
     }
 
     @Override
-    public String getEnrichedDataProtocol(String datasetRepoId) {
-        readEnrichedDataset(datasetRepoId);
+    public String getEnrichedDataProtocol(String accession) {
+        readEnrichedDataset(accession);
         return cachedDataset.getEnrichedDataProtocol();
     }
 
-    private void readEnrichedDataset(String datasetRepoId) {
+    private void readEnrichedDataset(String accession) {
 
-        if (cachedDataset != null && datasetRepoId.equals(cachedDataset.getDatasetRepoId())) {
+        if (cachedDataset != null && accession.equals(cachedDataset.getAccession())) {
             return;
         }
-        else if (enrichmentService.isDatasetExist(datasetRepoId)) {
-            cachedDataset = enrichmentService.readByRepoId(datasetRepoId);
+        else if (enrichmentService.isDatasetExist(accession)) {
+            cachedDataset = enrichmentService.readByaccession(accession);
             return;
         }
 
-        cachedDataset.setDatasetRepoId(datasetRepoId);
+        cachedDataset.setAccession(accession);
         cachedDataset.setEnrichedTitle(null);
         cachedDataset.setEnrichedAbstractDescription(null);
         cachedDataset.setEnrichedSampleProtocol(null);
@@ -54,7 +53,7 @@ public class ddiAnnotationService implements IDdiAnnotationService {
         return;
     }
 
-    private String getEnrichedField(String datasetRepoId, String fieldName) {
+    private String getEnrichedField(String accession, String fieldName) {
 
         return null;
     }

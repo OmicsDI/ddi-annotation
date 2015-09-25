@@ -6,13 +6,12 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import uk.ac.ebi.ddi.annotation.service.ddiAnnotationService;
 /**
  * Created by mingze on 22/07/15.
  *
  * find  synonym list for a word, if doesn't have, create one and stored in MongoDB
  */
-public class ddiSynonymService {
+public class DDISynonymService {
 
     public List<String> getSynonyms(String word) throws IOException {
 
@@ -23,7 +22,7 @@ public class ddiSynonymService {
         ArrayList<String>  synonyms =  getSynonymsInList(word,table);
 
         if (synonyms.size()==0) {
-            ddiAnnotationInternalService annotInternalService = new ddiAnnotationInternalService();
+            DDIAnnotationInternalService annotInternalService = new DDIAnnotationInternalService();
             synonyms =  annotInternalService.getSynonymsForWord(word);
             insertInSynonymsList(synonyms, table);
         }
