@@ -6,15 +6,15 @@ package uk.ac.ebi.ddi.annotation.model;
  */
 public class WordInField {
 
+    private String text;
+    private int from;
+    private int to;
+
     public WordInField(String text, int from, int to) {
         this.text = text;
         this.from = from;
         this.to = to;
     }
-
-    private String text;
-    private int from;
-    private int to;
 
     public int getFrom() {
         return from;

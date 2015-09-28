@@ -47,9 +47,10 @@
 	<bean id="InDBServiceRepo" class="uk.ac.ebi.ddi.service.db.repo.intersection.ITermInDBRepoImpl"/>
     <bean class="uk.ac.ebi.ddi.service.db.utils.CascadingMongoEventListener" />
 
-	<bean id="wordService" class="uk.ac.ebi.ddi.service.db.service.enrichment.SynonymsService"/>
+	<bean id="annotService" class="uk.ac.ebi.ddi.annotation.service.DDIAnnotationService"/>
 	<bean id="termService" class="uk.ac.ebi.ddi.service.db.service.intersection.TermInDBService"/>
 	<bean id="enrichmentService" class="uk.ac.ebi.ddi.service.db.service.enrichment.EnrichmentService"/>
+	<bean id="synonymsService " class="uk.ac.ebi.ddi.service.db.service.enrichment.SynonymsService"/>
 
 
 </beans>
