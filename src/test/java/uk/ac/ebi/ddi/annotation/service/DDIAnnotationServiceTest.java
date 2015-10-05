@@ -5,6 +5,8 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import uk.ac.ebi.ddi.annotation.model.DatasetTobeEnriched;
+import uk.ac.ebi.ddi.annotation.model.EnrichedDataset;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -47,6 +49,23 @@ public class DDIAnnotationServiceTest {
         long endTime = System.currentTimeMillis();
 
         System.out.println("That took " + (endTime - startTime) + " milliseconds to annotate 100 field from Bioontology web service");
+
+    }
+
+    @Test
+    public void enrichmentTest() throws IOException{
+
+        DatasetTobeEnriched datasetTobeEnriched1 = new DatasetTobeEnriched("pxd0000001", "pride");
+        datasetTobeEnriched1.setTitle("Large scale qualitative and quantitative profiling of tyrosine phosphorylation using a combination of phosphopeptide immuno-affinity purification and stable isotope dimethyl labeling");
+        datasetTobeEnriched1.setAbstractDescription("Triplex stable isotope dimethyl labeling of phosphotyrosine peptides after EGF stimulation");
+        datasetTobeEnriched1.setSampleProtocol("Not available");
+        datasetTobeEnriched1.setDataProtocol("Not available");
+
+        EnrichedDataset enrichedDataset1 = annotService.enrichment(datasetTobeEnriched1);
+        System.out.println(enrichedDataset1.getEnrichedTitle());
+        System.out.println(enrichedDataset1.getEnrichedAbstractDescription());
+        System.out.println(enrichedDataset1.getEnrichedSampleProtocol());
+        System.out.println(enrichedDataset1.getEnrichedDataProtocol());
 
     }
 }

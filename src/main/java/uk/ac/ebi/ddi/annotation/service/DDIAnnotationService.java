@@ -3,43 +3,116 @@ package uk.ac.ebi.ddi.annotation.service;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.regex.Pattern;
 
 import org.apache.http.HttpResponse;
-import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import uk.ac.ebi.ddi.annotation.model.AnnotedWord;
-import uk.ac.ebi.ddi.annotation.model.WordInField;
+import uk.ac.ebi.ddi.annotation.model.DatasetTobeEnriched;
+import uk.ac.ebi.ddi.annotation.model.EnrichedDataset;
+import uk.ac.ebi.ddi.service.db.model.enrichment.DatasetEnrichmentInfo;
+import uk.ac.ebi.ddi.service.db.model.enrichment.WordInField;
 import uk.ac.ebi.ddi.service.db.model.enrichment.Synonym;
+import uk.ac.ebi.ddi.service.db.service.enrichment.EnrichmentInfoService;
 import uk.ac.ebi.ddi.service.db.service.enrichment.SynonymsService;
 
 
 /**
  * Provide service for synonym annotation
+ * @author Mingze
  */
 public class DDIAnnotationService {
 
     @Autowired
     SynonymsService synonymsService = new SynonymsService();
+    @Autowired
+    EnrichmentInfoService enrichmentInfoService = new EnrichmentInfoService();
 
     /**
-     * get the biology related words in one field
+     * Enrichment on the dataset, includes title, abstraction, sample protocol, data protocol.
+     * @param datasetTobeEnriched
+     * @return
+     */
+
+    public EnrichedDataset enrichment(DatasetTobeEnriched datasetTobeEnriched) {
+
+        String accession = datasetTobeEnriched.getAccession();
+        String database = datasetTobeEnriched.getDatabase();
+
+        EnrichedDataset enrichedDataset = new EnrichedDataset(accession,database);
+        DatasetEnrichmentInfo datasetEnrichmentInfo = new DatasetEnrichmentInfo(accession,database);
+
+        String title = datasetTobeEnriched.getTitle();
+        String abstractDescription = datasetTobeEnriched.getAbstractDescription();
+        String sampleProtocol = datasetTobeEnriched.getSampleProtocol();
+        String dataProtocol = datasetTobeEnriched.getDataProtocol();
+
+        List<WordInField> wordsInTitle = getWordsInFiledFromWS(title);
+        List<WordInField> wordsInAbstractDesc = getWordsInFiledFromWS(abstractDescription);
+        List<WordInField> wordsInSampleProtocol = getWordsInFiledFromWS(sampleProtocol);
+        List<WordInField> wordsInDataProtocol = getWordsInFiledFromWS(dataProtocol);
+
+        datasetEnrichmentInfo.setTitle(wordsInTitle);
+        datasetEnrichmentInfo.setAbstractDescription(wordsInAbstractDesc);
+        datasetEnrichmentInfo.setSampleProtocol(wordsInSampleProtocol);
+        datasetEnrichmentInfo.setDataProtocol(wordsInDataProtocol);
+        datasetEnrichmentInfo.setEnrichTime(new Date());
+        enrichmentInfoService.insert(datasetEnrichmentInfo);
+
+        enrichedDataset.setEnrichedTitle(EnrichField(wordsInTitle));
+        enrichedDataset.setEnrichedAbstractDescription(EnrichField(wordsInAbstractDesc));
+        enrichedDataset.setEnrichedSampleProtocol(EnrichField(wordsInSampleProtocol));
+        enrichedDataset.setEnrichedDataProtocol(EnrichField(wordsInDataProtocol));
+
+        return enrichedDataset;
+    }
+
+    /**
+     * Transfer the words found in field to the synonyms String
+     * @param wordsInField
+     * @return
+     */
+    private String EnrichField(List<WordInField> wordsInField) {
+        if (wordsInField == null) {
+           return null;
+        }
+        String enrichedField = "";
+        for (WordInField word : wordsInField) {
+            List<String> synonymsForWord = getSynonymsForWord(word.getText());
+            for (String synonym : synonymsForWord) {
+                enrichedField += synonym + ", ";
+            }
+            enrichedField = enrichedField.substring(0, enrichedField.length() - 2); //remove the last comma
+            enrichedField += "; ";
+        }
+        enrichedField = enrichedField.substring(0, enrichedField.length() - 2); //remove the last comma
+        enrichedField += ".";
+        return enrichedField;
+    }
+
+
+    /**
+     * Get the biology related words in one field from WebService at bioontology.org
      *
      * @param fieldText
      * @return the words which are identified in the fieldText by recommender API from bioontology.org
      */
-    public String getWordsInFiled(String fieldText) {
+    private List<WordInField> getWordsInFiledFromWS(String fieldText) {
+
+        if(fieldText ==null || fieldText.equals("Not availabel")){
+            return null;
+        }
+
         List<WordInField> matchedWords = null;
         JSONArray annotationResults;
-        //        try {
         String recommenderPreUrl = "http://data.bioontology.org/recommender?ontologies=MESH,MS&apikey=807fa818-0a7c-43be-9bac-51576e8795f5&input=";
         String recommenderUrl = recommenderPreUrl + fieldText.replace(" ", "%20");
-//        String recommenderUrl = recommenderPreUrl + "\'" + fieldText + "\'";
         String output = "";
         try {
             output = getFromWSAPI(recommenderUrl);
@@ -48,31 +121,6 @@ public class DDIAnnotationService {
             e.printStackTrace();
         }
 
-//        String output;
-//        try {
-//            br = new BufferedReader(new FileReader("/home/mingze/work/ddi-annotation/src/main/java/uk/ac/ebi/ddi/annotation/service/annotationResults.txt"));
-//        } catch (FileNotFoundException e) {
-//            e.printStackTrace();
-//        }
-//        try {
-//            StringBuilder sb = new StringBuilder();
-//            String line = null;
-//            try {
-//                line = br.readLine();
-//                sb.append(line);
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-//
-//            output = sb.toString();
-//        } finally {
-//            try {
-//                br.close();
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-//        }
-
         annotationResults = new JSONArray(output);
 
         for (int i = 0; i < annotationResults.length(); i++) {
@@ -80,7 +128,7 @@ public class DDIAnnotationService {
 
             if (annotationResult.getJSONArray("ontologies").length() > 1) {
                 System.out.println("There are more than one ontologies here, something must be wrong");
-                return "error";
+                System.exit(1);
             }
 
             JSONObject ontology = annotationResult.getJSONArray("ontologies").getJSONObject(0);
@@ -104,11 +152,12 @@ public class DDIAnnotationService {
         }
 
         if (matchedWords != null) {
-            return matchedWords.toString();
+            return matchedWords;
         } else {
             return null;
         }
     }
+
 
 
     /**
@@ -118,7 +167,6 @@ public class DDIAnnotationService {
      * @param word
      * @return
      */
-
     public ArrayList<String> getSynonymsForWord(String word) {
 
         if (synonymsService.isWordExist(word)) {
@@ -369,7 +417,6 @@ public class DDIAnnotationService {
 
         return overlappedWord;
     }
-
 
 }
 

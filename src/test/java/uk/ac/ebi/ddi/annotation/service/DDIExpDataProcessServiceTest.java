@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import uk.ac.ebi.ddi.service.db.service.intersection.ExpOutputDatasetService;
-import uk.ac.ebi.ddi.service.db.service.intersection.TermInDBService;
+import uk.ac.ebi.ddi.service.db.service.similarity.ExpOutputDatasetService;
+import uk.ac.ebi.ddi.service.db.service.similarity.TermInDBService;
 
 /**
  * Created by mingze on 14/09/15.
@@ -21,7 +21,7 @@ public class DDIExpDataProcessServiceTest {
     TermInDBService termInDBService = new TermInDBService();
 
     @Autowired
-    DDIExpDataProcessService ddiExpDataProcessService = new DDIExpDataProcessService();
+    DDIDatasetSimilarityService ddiExpDataProcessService = new DDIDatasetSimilarityService();
 //    DDIExpDataProcessService ddiExpDataProcessService = new DDIExpDataProcessService("MetabolomicsData");
 
     @Autowired
@@ -36,9 +36,9 @@ public class DDIExpDataProcessServiceTest {
     @Test
     public void testCalculate() throws Exception {
 //        ddiExpDataProcessService.calculateIDFWeight("ProteomicsData");
-//        ddiExpDataProcessService.calculateIntersections("ProteomicsData");
+//        ddiExpDataProcessService.calculateSimilarity("ProteomicsData");
         ddiExpDataProcessService.calculateIDFWeight("MetabolomicsData");
-        ddiExpDataProcessService.calculateIntersections("MetabolomicsData");
+        ddiExpDataProcessService.calculateSimilarity("MetabolomicsData");
     }
 
     @Test

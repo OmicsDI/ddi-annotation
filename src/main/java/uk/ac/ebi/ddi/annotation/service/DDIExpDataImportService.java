@@ -1,11 +1,11 @@
 package uk.ac.ebi.ddi.annotation.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import uk.ac.ebi.ddi.service.db.model.intersection.TermInList;
-import uk.ac.ebi.ddi.service.db.model.intersection.ExpOutputDataset;
-import uk.ac.ebi.ddi.service.db.model.intersection.TermInDB;
-import uk.ac.ebi.ddi.service.db.service.intersection.ExpOutputDatasetService;
-import uk.ac.ebi.ddi.service.db.service.intersection.TermInDBService;
+import uk.ac.ebi.ddi.service.db.model.similarity.TermInList;
+import uk.ac.ebi.ddi.service.db.model.similarity.ExpOutputDataset;
+import uk.ac.ebi.ddi.service.db.model.similarity.TermInDB;
+import uk.ac.ebi.ddi.service.db.service.similarity.ExpOutputDatasetService;
+import uk.ac.ebi.ddi.service.db.service.similarity.TermInDBService;
 import uk.ac.ebi.ddi.xml.validator.parser.model.Reference;
 
 import java.util.ArrayList;

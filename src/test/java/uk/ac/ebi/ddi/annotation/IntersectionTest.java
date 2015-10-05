@@ -11,13 +11,13 @@ import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import uk.ac.ebi.ddi.annotation.service.DDIExpDataImportService;
-import uk.ac.ebi.ddi.service.db.model.intersection.ExpOutputDataset;
-import uk.ac.ebi.ddi.service.db.model.intersection.TermInDB;
+import uk.ac.ebi.ddi.service.db.model.similarity.ExpOutputDataset;
+import uk.ac.ebi.ddi.service.db.model.similarity.TermInDB;
 import uk.ac.ebi.ddi.xml.validator.exception.DDIException;
 import uk.ac.ebi.ddi.xml.validator.parser.OmicsXMLFile;
 import uk.ac.ebi.ddi.xml.validator.parser.marshaller.OmicsDataMarshaller;
 import uk.ac.ebi.ddi.xml.validator.parser.model.*;
-import uk.ac.ebi.ddi.service.db.service.intersection.*;
+import uk.ac.ebi.ddi.service.db.service.similarity.*;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -88,10 +88,10 @@ public class  IntersectionTest{
         PrintWriter writer = new PrintWriter("/home/mingze/work/ddi-annotation/src/test/resources/testPrideFiles/data.txt", "UTF-8");
 
 
-        File folder = new File("/home/mingze/work/ddi-annotation/src/test/resources/testPrideFiles");
-        String dataType = "ProteomicsData";
-//        File folder = new File("/home/mingze/work/ddi-annotation/src/test/resources/testMetabolitesFiles");
-//        String dataType = "MetabolomicsData";
+//        File folder = new File("/home/mingze/work/ddi-annotation/src/test/resources/testPrideFiles");
+//        String dataType = "ProteomicsData";
+        File folder = new File("/home/mingze/work/ddi-annotation/src/test/resources/testMetabolitesFiles");
+        String dataType = "MetabolomicsData";
 
         File[] listOfFiles = folder.listFiles();
         HashMap entriesMap = new HashMap<String, ArrayList<String>>();
@@ -103,9 +103,9 @@ public class  IntersectionTest{
         }
 
         //delete all data in Mongodb
-        expOutputDatasetService.deleteAll();
-        termInDBService.deleteAll();
-        datasetStatInfoService.deleteAll();
+//        expOutputDatasetService.deleteAll();
+//        termInDBService.deleteAll();
+//        datasetStatInfoService.deleteAll();
 
 
 //        int iterTime = 199;
