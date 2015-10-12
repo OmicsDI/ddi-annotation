@@ -3,16 +3,24 @@ package uk.ac.ebi.ddi.annotation.service;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 import java.util.regex.Pattern;
 
 import org.apache.http.HttpResponse;
+import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.http.params.BasicHttpParams;
+import org.apache.http.params.HttpConnectionParams;
+import org.apache.http.params.HttpParams;
 import org.json.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import sun.net.www.http.HttpClient;
 import uk.ac.ebi.ddi.annotation.model.AnnotedWord;
 import uk.ac.ebi.ddi.annotation.model.DatasetTobeEnriched;
 import uk.ac.ebi.ddi.annotation.model.EnrichedDataset;
@@ -85,6 +93,7 @@ public class DDIAnnotationService {
         String enrichedField = "";
         for (WordInField word : wordsInField) {
             List<String> synonymsForWord = getSynonymsForWord(word.getText());
+            if(synonymsForWord==null) return null;
             for (String synonym : synonymsForWord) {
                 enrichedField += synonym + ", ";
             }
@@ -109,9 +118,10 @@ public class DDIAnnotationService {
             return null;
         }
 
-        List<WordInField> matchedWords = null;
+        List<WordInField> matchedWords = new ArrayList<WordInField>();
         JSONArray annotationResults;
         String recommenderPreUrl = "http://data.bioontology.org/recommender?ontologies=MESH,MS&apikey=807fa818-0a7c-43be-9bac-51576e8795f5&input=";
+        fieldText = fieldText.replace("%", "");//to avoid malformed error
         String recommenderUrl = recommenderPreUrl + fieldText.replace(" ", "%20");
         String output = "";
         try {
@@ -144,7 +154,7 @@ public class DDIAnnotationService {
 //
 //            System.out.println(recommenderUrl);
 //            System.out.println(matchedTerms);
-            matchedWords = getDistinctWordList(matchedTerms);
+            matchedWords.addAll(getDistinctWordList(matchedTerms));
             for (WordInField matchedWord : matchedWords) {
                 System.out.println(matchedWord.getText() + ":" + matchedWord.getFrom() + "-" + matchedWord.getTo());
             }
@@ -152,6 +162,7 @@ public class DDIAnnotationService {
         }
 
         if (matchedWords != null) {
+            Collections.sort(matchedWords);
             return matchedWords;
         } else {
             return null;
@@ -168,11 +179,12 @@ public class DDIAnnotationService {
      * @return
      */
     public ArrayList<String> getSynonymsForWord(String word) {
-
+        ArrayList<String> synonyms;
         if (synonymsService.isWordExist(word)) {
             return synonymsService.getAllSynonyms(word);
         } else {
-            ArrayList<String> synonyms = getSynonymsForWordFromWS(word);
+            synonyms = getSynonymsForWordFromWS(word);
+            if(synonyms==null) return null;
             String mainWordLabel = null;
             for (String synonym : synonyms) {
                 if (synonymsService.isWordExist(synonym)) {
@@ -190,8 +202,8 @@ public class DDIAnnotationService {
                     }
                 }
 
-            }else {  //main word already exist, insert others as main word's synonyms
-                System.out.println("We have a special situation: " + mainWordLabel + "is a synonym of " + word + ", " + mainWordLabel + "exists but not" + word );
+            } else {  //main word already exist, insert others as main word's synonyms
+                System.out.println("We have a special situation: " + mainWordLabel + " is a synonym of " + word + ", " + mainWordLabel + "exists but not" + word);
 
                 Synonym mainWordSynonym = synonymsService.readByLabel(mainWordLabel);
                 for (String synonym : synonyms) {
@@ -218,13 +230,14 @@ public class DDIAnnotationService {
         ArrayList<String> synonyms = new ArrayList<String>();
 
         String annotationPreUrl = "http://data.bioontology.org/annotator?ontologies=MESH,MS&longest_only=true&whole_word_only=false&apikey=807fa818-0a7c-43be-9bac-51576e8795f5&text=";
-        String annotatorUrl = annotationPreUrl + lowerWord;
+        String annotatorUrl = annotationPreUrl + lowerWord.replace(" ", "%20") ;
         String output = "";
         try {
             output = getFromWSAPI(annotatorUrl);
         } catch (IOException e) {
             System.out.println("error to get synonyms for word:" + word + "at this url" + annotatorUrl);
             System.out.println("error info:" + e);
+            return null;
         }
 
         JSONArray annotationResults = new JSONArray(output);
@@ -265,6 +278,7 @@ public class DDIAnnotationService {
             } catch (IOException e) {
                 System.out.println("error in getting synonyms for word:" + word + "at this url" + wordDetailUrl);
                 e.printStackTrace();
+                return null;
             }
             JSONObject wordDetailsInCls = new JSONObject(output);
             JSONArray synonymsInCls = wordDetailsInCls.getJSONArray("synonym");
@@ -285,8 +299,11 @@ public class DDIAnnotationService {
      * @throws IOException
      */
     private String getFromWSAPI(String url) throws IOException {
-        DefaultHttpClient httpClient = new DefaultHttpClient();
+        final RequestConfig params = RequestConfig.custom().setConnectTimeout(600*1000).setSocketTimeout(600*1000).build();
+        CloseableHttpClient httpClient = HttpClientBuilder.create().build();
+        System.out.println("Getting from: "+url);
         HttpGet getRequest = new HttpGet(url);
+        getRequest.setConfig(params);
         getRequest.addHeader("accept", "application/json");
         HttpResponse response = httpClient.execute(getRequest);
 //        System.out.println("Trying to accessing webservice from:" + url);
@@ -294,6 +311,9 @@ public class DDIAnnotationService {
 //            throw new RuntimeException("Failed : HTTP error code : "
 //                    + response.getStatusLine().getStatusCode());
             System.out.println("Failed: HTTP error code:" + response.getStatusLine().getStatusCode());
+            System.out.println(response);
+            IOException ioException = new IOException(response.toString());
+            throw ioException;
         }
 
         BufferedReader br = new BufferedReader(
