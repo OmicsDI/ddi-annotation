@@ -7,7 +7,6 @@ import java.util.List;
 import java.util.regex.Pattern;
 
 import org.apache.http.HttpResponse;
-import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.*;
@@ -35,31 +34,6 @@ public class ddiAnnotationService {
             System.out.println("error in getting words in fieldText:" + fieldText + "at this url" + recommenderUrl);
             e.printStackTrace();
         }
-
-//        String output;
-//        try {
-//            br = new BufferedReader(new FileReader("/home/mingze/work/ddi-annotation/src/main/java/uk/ac/ebi/ddi/annotation/service/annotationResults.txt"));
-//        } catch (FileNotFoundException e) {
-//            e.printStackTrace();
-//        }
-//        try {
-//            StringBuilder sb = new StringBuilder();
-//            String line = null;
-//            try {
-//                line = br.readLine();
-//                sb.append(line);
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-//
-//            output = sb.toString();
-//        } finally {
-//            try {
-//                br.close();
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-//        }
 
         annotationResults = new JSONArray(output);
 
