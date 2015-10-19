@@ -1,0 +1,147 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001577">
+      <name>Functional characteristics of neonatal rat beta cells With distinct markers</name>
+      <description>Neonatal beta cells are considered developmentally immature and hence less glucose-responsive. To study the acquisition of mature glucose-responsiveness, we compared glucose-regulated redox state, insulin synthesis and secretion of beta cells purified from neonatal or 10-weeks old rats to their transcriptomes and proteomes measured by oligonucleotide and LC-MS/MS profiling.  Lower glucose-responsiveness of neonatal beta cells was explained by two distinct properties: higher activity at low glucose and lower activity at high glucose. Basal hyperactivity was associated with higher NAD(P)H, a higher fraction of neonatal beta cells actively incorporating 3H-Tyrosine, and persistently increased insulin secretion below 5 mM glucose.  Neonatal beta cells lacked the steep glucose-responsive NAD(P)H rise between 5-10 mM glucose characteristic for adult beta cells, and accumulated less NAD(P)H at high glucose. They had 2-fold lower expression of malate/aspartate-NADH shuttle and most glycolytic enzymes. Genome-wide profiling situated neonatal beta cells at a developmental crossroad: they showed advanced endocrine differentiation when specifically analyzed for their mRNA/protein level of classical neuroendocrine markers. On the other hand, discrete neonatal beta cell subpopulations still expressed mRNAs/proteins typical for developing/proliferating tissues. One example, Delta-like 1 homolog (DLK1) was used to investigate if neonatal beta cells with basal hyperactivity corresponded to a more immature subset with high DLK1, but no association was found. In conclusion,  the current study supports the importance of glycolytic NADH-shuttling in stimulus-function coupling, presents basal hyperactivity as novel property of neonatal beta cells, and provides potential markers to recognize intercellular developmental differences in the endocrine pancreas.</description>
+      <cross_references>
+        <ref dbkey="10116" dbname="TAXONOMY"/>
+        <ref dbkey="24049066" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-12-05"/>
+        <date type="publication" value="2014-12-12"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001577</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Neonatal endocrine aggregate-enriched preparations were collected by  gradient centrifugation rather than handpicking of islets in 10w-old rats: collagenase-digested pancreas was density-centrifuged first over a Ficoll layer (1.10 g/ml) to separate exocrine from endocrine cells; the endocrine-enriched interphase was collected (ii) and trypsinized to single cells, additionally purified over a  Percoll (1.04 g/ml) layer to separate viable from damaged cells prior to FACS-sorting. While the  10w-old beta cells are mainly discriminated from other islet endocrine cell types by their higher cell size (forward scatter, FSC) in combination with higher endogenous fluorescence due to oxidized flavin cofactors (FAD/FMN) (Fig.1C) (Van De Winkel &amp; Pipeleers 1983), flavin fluorescence is lower in neonatal beta cells and a combination of FSC and cellular complexity/granulation (Side Scatter, SSC) is used to separate  beta cells from a less granulated cell population; the latter SSClow population contains not only exocrine duct cells but also endothelial and mesenchymal cells and a very small fraction of insulin-positive cells.  Protein extraction and trypsinization Cells were washed 3 times with PBS (4°C) and soluble protein was extracted in 50 µl 0.5% (w/v) RapiGest detergent in 50 mM ammonium bicarbonate (Waters Corporation, Milford, MA.) in the presence of Complete Protease Inhibitor Cocktail (F. Hoffmann–La Roche Ltd, Basel, Switserland) and bovine DNAse II (Boehringer Ingelheim GmbH, Ingelheim am Rhein, Germany, 2 µg/mL) solution, followed by centrifugation (10,000 x g, 10 min) to remove cellular debris. 25 µl protein extract was reduced with 2.5 µl 100 mM dithiothreitol (DTT) at room temperature for 60 min, followed by 3 subsequent washes with 400 µl 50 mM ammonium bicarbonate and 4 µl 100 mM DTT using a 5 KDa cut-off membrane filter. This step removes protease inhibitors and most of reduced insulin molecules. Proteins were denatured by heating at 80 °C for 15 min, followed by 30 min at 60°C after addition of 2.5 µl 100 mM DTT and another 30 min at ambient temperature in the dark after addition of 2.5 µl 200 mM iodoacetamide. Trypsinization was carried out overnight at 37°C (1:25 w/w trypsin ratio) in final volume of 100 µl. Finally, RapiGest detergent was removed by acidifying digest to pH = 2 with trifluoroacetic acid and incubation for 15 min at 37°C. LC-MS configuration Nanoscale LC separation of the tryptic peptides was performed with a NanoAcquity system (Waters). Samples were loaded on to a Symmetry C18 5 μm, 2 cm×180 μm trap column (Waters) at a flow rate of 5 μl/min prior to separation on a Bridged Ethyl Hybrid C18 1.7 μm, 25 cm×75 μm analytical reversed-phase column (Waters) by application of a 90 min gradient from 1% ACN and 0.1% formic acid to 40% ACN and 0.1% formic acid at a column flow rate of 0.25 μl/min. The column temperature was maintained at 35ºC. Analysis of the eluted tryptic peptides was performed using a Synapt G2 Q-TOF (quadrupole time-of-flight) mass spectrometer (Waters) equipped with a nanolockspray source (Waters) fitted with a pico-tip emitter (New Objective) operated at a capillary voltage of approximately 3 kV. For all measurements, the mass spectrometer was operated in v-mode with a typical resolution of at least 20,000 full width at half maximum. All analyses were performed in positive mode ESI. The time-of-flight analyzer of the mass spectrometer was externally calibrated with a NaI mixture from m/z 50 to 1990. The collision gas used was argon, maintained at a constant pressure of 2.0×10−3 mbar (1 bar=100 kPa) in the collision cell. The lock mass, [Glu1]fibrinopeptide B, was delivered from the auxiliary pump of the NanoAcquity system with a concentration of 100 fmol/μl at 0.5 μl/min to the reference sprayer of the nanolockspray source. The data were post-acquisition lock-mass corrected using the monoisotopic mass of the doubly charged precursor of [Glu1]fibrinopeptide B, delivered through the reference sprayer, which was sampled every 120 s. Accurate mass precursor and fragment ion LC-MS data were collected in data independent, alternate scanning (LC-MSE) mode of acquisition (13;14)</field>
+        <field name="data_protocol">LC-MS data processing and protein identification Continuum LC-MS data were processed and searched using ProteinLynx GlobalSERVER v2.5 (Waters Corporation). Protein identifications were obtained by searching databases of Rattus norvegicus databases (v15.12, 7,449 entries). Sequence information of Alcohol dehydrogenase Saccharomyces cerevisiae was added to the databases to afford the ability to normalize the data sets and to estimate amounts and concentration [11] and that of known contaminant proteins (e.g. serum albumin Bos taurus and trypsin Sus scrofa). A decoy was generated on the fly with every database search experiment conducted to estimate the protein false positive rate of identification [43]. Data independent scanning protein identifications were accepted when more than three fragment ions per peptide, seven fragment ions per protein and more than 2 peptides per protein were identified, in at least one technical replicate per sample. Protein quantitation was only reported when the protein was detected in at least 2 out of 3 technical replicate of at least one biological replicate. Typical search criteria used for protein identification included automatic peptide and fragment ion tolerance settings (approximately 10 and 25 ppm, respectively), 1 allowed missed cleavage, fixed carbamidomethyl-cysteine modification and variable methionine oxidation. Raw data were expressed as ‘relative molar amount units’ calculated by dividing the determined molar amount for a given protein by the summed determined amount for all identified proteins as this accounts for both technical and biological variations (10;14;15).</field>
+        <field name="instrument_platform">Synapt G2 MS</field>
+        <field name="species">Rattus norvegicus (Rat)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">pancreas</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">Rat</field>
+        <field name="submitter_keywords"> Pancreas</field>
+        <field name="submitter_keywords"> Diabetes</field>
+        <field name="submitter_keywords"> LCMSE</field>
+        <field name="submitter_keywords"> label free quantitation</field>
+        <field name="quantification_method">MS1 intensity based label-free quantification method</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Martens GA, Motté E, Kramer G, Stangé G, Gaarn LW, Hellemans K, Nielsen JH, Aerts JM, Ling Z, Pipeleers D; Functional characteristics of neonatal rat β cells with distinct markers., J Mol Endocrinol, 2014 Feb, 52, 1, 11-28, </field>
+        <field name="submitter">Gertjan Kramer</field>
+        <field name="submitter_mail">gertjan.kramer@embl.de</field>
+        <field name="submitter_affiliation">Proteomics Unit</field>
+        <field name="labhead">J.M.F.G Aerts</field>
+        <field name="labhead_mail">j.m.aerts@amc.uva.nl</field>
+        <field name="labhead_affiliation">Clinical proteomics facility, Medical Biochemistry, Academic Medical Center, University of Amstedam</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130705_s1.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130705_s1_20130923095617.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130705_s2.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130705_s2_20130923095510.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130705_s3.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130705_s3_20130923093707.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130705_s4.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130705_s4_20130923093808.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130705_s5.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130705_s5_20130923093914.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130705_s6.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130705_s6_20130923093937.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130705_s7.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130705_s7_20130923094049.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130705_s8.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130705_s8_20130923094157.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s10.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s10_20130913134116.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s11.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s11_20130913134121.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s12.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s12_20130913134128.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s13.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s13_20130913134143.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s14.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s14_20130913134203.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s15.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s15_20130913134219.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s16.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s16_20130913134244.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s17.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s17_20130913134309.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s18.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s18_20130913134335.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s19.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s19_20130913134410.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s1_20130913134109.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s2.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s20.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s20_20130913134449.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s21.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s21_20130913134504.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s22.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s22_20130913134613.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s22a.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s22a_20130913134013.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s23a.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s23a_20130913134827.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s24.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s24_20130913134831.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s2_20130913134428.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s3.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s34.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s34_20130913134028.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s35.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s35_20130913134037.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s36.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s36_20130913134045.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s37.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s37_20130913134844.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s38.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s38_20130913134902.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s39.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s39_20130913134924.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s3_20130913134635.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s4.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s40.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s40_20130913134932.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s41.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s41_20130913134944.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s42.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s42_20130913134954.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s4_20130913134644.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s4a.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s4a_20130913134654.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s5.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s5_20130913134708.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s5a.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s5a_20130913134730.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s6.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s6_20130913134743.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s6a.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s6a_20130913134754.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s7.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s7_20130913134801.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s7a.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s7a_20130913134808.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s8.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s8_20130913134812.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s8a.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s8a_20130913134819.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s9.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s9_20130913134824.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001577/20130823_s1.raw.zip</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

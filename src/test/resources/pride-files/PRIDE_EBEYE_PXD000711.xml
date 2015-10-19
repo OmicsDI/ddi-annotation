@@ -1,0 +1,153 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000711">
+      <name>Comparative proteomics of two life cycle stages of stable isotope-labeled Trypanosoma brucei reveals novel components of the parasite's host adaptation machinery.</name>
+      <description>Trypanosoma brucei developed a sophisticated life cycle to adapt to different host environments. Although developmental differentiation of T. brucei has been the topic of intensive research for decades, the mechanisms responsible for adaptation to different host environments are not well understood. We developed stable isotope labeling by amino acids in cell culture in trypanosomes to compare the proteomes of two different life cycle stages. Quantitative comparison of 4364 protein groups identified many proteins previously not known to be stage-specifically expressed. The identification of stage-specific proteins helps to understand how parasites adapt to different hosts and provides new insights into differences in metabolism, gene regulation, and cell architecture. A DEAD-box RNA helicase, which is highly up-regulated in the bloodstream form of this parasite and which is essential for viability and proper cell cycle progression in this stage is described as an example.</description>
+      <cross_references>
+        <ref dbkey="5691" dbname="TAXONOMY"/>
+        <ref dbkey="24552149" dbname="pubmed"/>
+        <ref dbkey="23090971" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-01-27"/>
+        <date type="publication" value="2014-01-28"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000711</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">To assess incorporation efficiency, 10^7 cells were lysed in 200 μl lysis buffer (modified RIPA) and centrifuged for 1 min at 13,000 × g to remove cell debris. Two microliter of the lysis supernatant was added to 20 μl of 8 M urea, before reduction with 0.5 mM dithiothreitol and alkylation with 3 mM iodoacetamide for 30 min each at RT. After an initial 3 h Lys-C (Wako) digest, the sample was diluted to 200 μl with 50 mM ammonium bicarbonate buffer and incubated with 0.5 μg sequencing grade modified trypsin (Promega) overnight at RT. The digested samples were desalted and stored on stage tips. For obtaining a comparative trypanosome proteome, 15 μg of either stage in the respective labeled version was combined and boiled in 2 × LDS sample buffer (Invitrogen) before loading on a 4–12% denaturing SDS Novex Gel (Invitrogen). Lanes were cut in 12 slices and processed as described by Shevchenko et al., 2006.</field>
+        <field name="data_protocol">All raw files (pilot and final experiments) were processed with MaxQuant 1.2.2.0 (16) using standard settings and searched against the annotated protein database of Trypanosoma brucei TREU927 (version 3.3, 9826 entries) downloaded from tritrypDB (http://tritrypdb.org) with the Andromeda search engine integrated into the MaxQuant software suite. Enzyme search specificity was Trypsin/P for tryptic digest (Promega) and LysC for digest with lysyl endopeptidase (Wako Chemicals). Up to two miscleavages for each peptide were allowed. Carbamidomethylation on cysteines was set as fixed modification whereas methionine oxidation and protein N-acetylation was considered as variable modifications. The search was performed with an initial mass tolerance of 6 ppm mass accuracy for the precursor ion and 0.5 Da for CID MS/MS spectra and 20 ppm for HCD MS/MS spectra, respectively. False discovery rate was fixed at 1% on peptide and protein level. Identifications were matched between runs with a 2 min window.</field>
+        <field name="instrument_platform">LTQ Orbitrap</field>
+        <field name="instrument_platform">Q Exactive</field>
+        <field name="species">Trypanosoma brucei</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">N-acetylated residue</field>
+        <field name="modification">6x(13)C,2x(15)N labeled L-lysine</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">6x(13)C,4x(15)N labeled L-arginine</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">PRIME-XS Project</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">trypanosomes</field>
+        <field name="quantification_method">SILAC</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Ericson M, Janes MA, Butter F, Mann M, Ullu E, Tschudi C. On the extent and role of the small proteome in the parasitic eukaryote Trypanosoma brucei. BMC Biol. 2014 Feb 19;12:14</field>
+        <field name="publication">Butter F, Bucerius F, Michel M, Cicova Z, Mann M, Janzen CJ; Comparative proteomics of two life cycle stages of stable isotope-labeled Trypanosoma brucei reveals novel components of the parasite's host adaptation machinery., Mol Cell Proteomics, 2013 Jan, 12, 1, 172-9, </field>
+        <field name="submitter">F Butter</field>
+        <field name="submitter_mail">f.butter@imb-mainz.de</field>
+        <field name="submitter_affiliation">Dept. of Proteomics and Signal Transduction</field>
+        <field name="labhead">Matthias Mann</field>
+        <field name="labhead_mail">mann@biochem.mpg.de</field>
+        <field name="labhead_affiliation">MPI for Biochemistry</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111011_Orbi3_FB_tryp_proteome_K_01.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111011_Orbi3_FB_tryp_proteome_K_02.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111011_Orbi3_FB_tryp_proteome_K_03.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111011_Orbi3_FB_tryp_proteome_K_04.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111011_Orbi3_FB_tryp_proteome_K_05.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111011_Orbi3_FB_tryp_proteome_K_06.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111011_Orbi3_FB_tryp_proteome_K_07_111016150021.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111011_Orbi3_FB_tryp_proteome_K_08.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111011_Orbi3_FB_tryp_proteome_K_09.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111011_Orbi3_FB_tryp_proteome_K_10.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111011_Orbi3_FB_tryp_proteome_K_11.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111011_Orbi3_FB_tryp_proteome_K_12.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111014_Orbi6_FB_tryp_proteome_KR_01.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111014_Orbi6_FB_tryp_proteome_KR_02.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111014_Orbi6_FB_tryp_proteome_KR_03.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111014_Orbi6_FB_tryp_proteome_KR_04.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111014_Orbi6_FB_tryp_proteome_KR_05.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111014_Orbi6_FB_tryp_proteome_KR_06.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111014_Orbi6_FB_tryp_proteome_KR_07.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111014_Orbi6_FB_tryp_proteome_KR_08.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111014_Orbi6_FB_tryp_proteome_KR_09.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111014_Orbi6_FB_tryp_proteome_KR_10.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111014_Orbi6_FB_tryp_proteome_KR_11.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111014_Orbi6_FB_tryp_proteome_KR_12.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111014_Orbi6_FB_tryp_proteome_KR_13.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111014_Orbi6_FB_tryp_proteome_KR_14.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111014_Orbi6_FB_tryp_proteome_KR_15.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111014_Orbi6_FB_tryp_proteome_KR_16.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111014_Orbi6_FB_tryp_proteome_KR_17.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111014_Orbi6_FB_tryp_proteome_KR_18.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111014_Orbi6_FB_tryp_proteome_KR_19.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111014_Orbi6_FB_tryp_proteome_KR_20.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111014_Orbi6_FB_tryp_proteome_KR_21.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111014_Orbi6_FB_tryp_proteome_KR_22.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111014_Orbi6_FB_tryp_proteome_KR_23.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111014_Orbi6_FB_tryp_proteome_KR_24.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111014_Orbi6_FB_tryp_proteome_K_13.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111014_Orbi6_FB_tryp_proteome_K_14.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111014_Orbi6_FB_tryp_proteome_K_15.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111014_Orbi6_FB_tryp_proteome_K_16.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111014_Orbi6_FB_tryp_proteome_K_17.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111014_Orbi6_FB_tryp_proteome_K_18.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111014_Orbi6_FB_tryp_proteome_K_19.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111014_Orbi6_FB_tryp_proteome_K_20.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111014_Orbi6_FB_tryp_proteome_K_21.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111014_Orbi6_FB_tryp_proteome_K_22.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111014_Orbi6_FB_tryp_proteome_K_23.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20111014_Orbi6_FB_tryp_proteome_K_24.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_lysC_BSH_H_01.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_lysC_BSH_H_02.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_lysC_BSH_H_03.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_lysC_BSH_H_04.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_lysC_BSH_H_05.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_lysC_BSH_H_06.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_lysC_BSH_H_07.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_lysC_BSH_H_08.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_lysC_BSH_H_09.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_lysC_BSH_H_10.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_lysC_BSH_H_11.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_lysC_BSH_H_12.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_lysC_BSH_L_01.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_lysC_BSH_L_02.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_lysC_BSH_L_03.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_lysC_BSH_L_04.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_lysC_BSH_L_05.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_lysC_BSH_L_06.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_lysC_BSH_L_07.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_lysC_BSH_L_08.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_lysC_BSH_L_09.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_lysC_BSH_L_10.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_lysC_BSH_L_11.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_lysC_BSH_L_12.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_tryp_BSH_H_01.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_tryp_BSH_H_02.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_tryp_BSH_H_03.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_tryp_BSH_H_04.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_tryp_BSH_H_05.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_tryp_BSH_H_06.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_tryp_BSH_H_07.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_tryp_BSH_H_08.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_tryp_BSH_H_09.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_tryp_BSH_H_10.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_tryp_BSH_H_11.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_tryp_BSH_H_12.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_tryp_BSH_L_01.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_tryp_BSH_L_02.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_tryp_BSH_L_03.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_tryp_BSH_L_04.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_tryp_BSH_L_05.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_tryp_BSH_L_06.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_tryp_BSH_L_07.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_tryp_BSH_L_08_120105201525.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_tryp_BSH_L_09.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_tryp_BSH_L_10.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_tryp_BSH_L_11.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/20120102_EXQ2_FB_SA_tryp_BSH_L_12.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/01/PXD000711/search_files.zip</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

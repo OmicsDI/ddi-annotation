@@ -1,0 +1,185 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000467">
+      <name>Endogenous S-nitrosoproteome in colorectal cancer patients</name>
+      <description>Total lysate of tumorous and adjacent normal tissues from each colorectal cancer patient are followed by S-alkylating biotin switch strategy. All biotinylated peptides are analyzed by label-free quantitation and LC-MS/MS analysis. All peak lists from 66 raw MS/MS spectra were processed to mgf format by Mascot Distiller v2.1.1.0. The datasets were batch-searched and combined searched by Mascor v2.2 against the Swissprot v 57.8 human database. PEO-iodoacetyl-biotin (C, +414 Da), Caebamidomethyl (C) and oxidation (M) were specified as variable modifications. Peptides were considered to be identified if the Mascot individual ion score was higher than the Mascot identity score (p less than 0.05). To evaluate the false discovery rate in protein identification, a decoy database search against a randomized decoy database created by Mascot using identical search parameters and validation criteria were also performed. The search results in Mascot were exported in eXtensive Markup Language (XML) data format.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="25040305" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2013-09-17"/>
+        <date type="publication" value="2014-08-20"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000467</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Not available</field>
+        <field name="instrument_platform">Q-Tof Premier</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">biotinylated residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biomedical</field>
+        <field name="submitter_keywords">human</field>
+        <field name="submitter_keywords"> S-nitrosylation</field>
+        <field name="submitter_keywords"> biotin switch</field>
+        <field name="submitter_keywords"> colorectal cancer</field>
+        <field name="submitter_keywords"> tissue</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Chen YJ, Ching WC, Chen JS, Lee TY, Lu CT, Chou HC, Lin PY, Khoo KH, Chen JH, Chen YJ. Decoding the S-Nitrosoproteomic Atlas in Individualized Human Colorectal Cancer Tissues Using a Label-Free Quantitation Strategy. J Proteome Res. 2014 Aug 4</field>
+        <field name="submitter">Yi-Ju Chen</field>
+        <field name="submitter_mail">tp7249@gmail.com</field>
+        <field name="submitter_affiliation">Academia Sinica</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/100605_SNOCRC9WF3.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/F019321_100603SNOCRC9WF3.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_B11b372_N01.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_B11b372_N02.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_B11b372_N03.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_B11b372_T01.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_B11b372_T02.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_B11b372_T03.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_B22a373_N01.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_B22a373_N02.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_B22a373_N03.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_B22a373_T01.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_B22a373_T02.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_B22a373_T03.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_C23c410_N01.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_C23c410_N02.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_C23c410_N03.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_C23c410_T01.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_C23c410_T02.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_C23c410_T03.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_D4424_N01.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_D4424_N02.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_D4424_N03.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_D4424_T01.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_D4424_T02.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_D4424_T03.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_D4445_N01.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_D4445_N02.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_D4445_N03.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_D4445_T01.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_D4445_T02.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_D4445_T03.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_A1a376_N01.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_A1a376_N02.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_A1a376_N03.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_A1a376_T01.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_A1a376_T02.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_A1a376_T03.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_B2_378_N01.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_B2_378_N02.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_B2_378_N03.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_B2_378_T01.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_B2_378_T02.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_B2_378_T03.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_B2_381_N01.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_B2_381_N02.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_B2_381_N03.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_B2_381_T01.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_B2_381_T02.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_B2_381_T03.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_C23c393_N01.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_C23c393_N02.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_C23c393_N03.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_C23c393_T01.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_C23c393_T02.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_C23c393_T03.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100530WFSNOCRC_1N_01.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100530WFSNOCRC_1N_02.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100530WFSNOCRC_1N_03.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100530WFSNOCRC_1T_01.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100530WFSNOCRC_1T_02.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100530WFSNOCRC_1T_03.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100530WFSNOCRC_2N_01.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100530WFSNOCRC_2N_02.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100530WFSNOCRC_2N_03.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100530WFSNOCRC_2T_01.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100530WFSNOCRC_2T_02.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100530WFSNOCRC_2T_03.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_B11b372_N01.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_B11b372_N02.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_B11b372_N03.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_B11b372_T01.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_B11b372_T02.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_B11b372_T03.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_B22a373_N01.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_B22a373_N02.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_B22a373_N03.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_B22a373_T01.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_B22a373_T02.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_B22a373_T03.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_C23c410_N01.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_C23c410_N02.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_C23c410_N03.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_C23c410_T01.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_C23c410_T02.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_C23c410_T03.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_D4424_N01.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_D4424_N02.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_D4424_N03.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_D4424_T01.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_D4424_T02.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_D4424_T03.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_D4445_N01.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_D4445_N02.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_D4445_N03.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_D4445_T01.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_D4445_T02.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327SNOCRC_D4445_T03.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_A1a376_N01.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_A1a376_N02.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_A1a376_N03.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_A1a376_T01.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_A1a376_T02.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_A1a376_T03.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_B2_378_N01.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_B2_378_N02.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_B2_378_N03.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_B2_378_T01.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_B2_378_T02.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_B2_378_T03.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_B2_381_N01.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_B2_381_N02.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_B2_381_N03.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_B2_381_T01.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_B2_381_T02.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_B2_381_T03.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_C23c393_N01.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_C23c393_N02.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_C23c393_N03.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_C23c393_T01.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_C23c393_T02.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100327_SNOCRC_C23c393_T03.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100530WFSNOCRC_1N_01.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100530WFSNOCRC_1N_02.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100530WFSNOCRC_1N_03.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100530WFSNOCRC_1T_01.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100530WFSNOCRC_1T_02.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100530WFSNOCRC_1T_03.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100530WFSNOCRC_2N_01.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100530WFSNOCRC_2N_02.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100530WFSNOCRC_2N_03.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100530WFSNOCRC_2T_01.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100530WFSNOCRC_2T_02.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000467/YJC_100530WFSNOCRC_2T_03.mzXML</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

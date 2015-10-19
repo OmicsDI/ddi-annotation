@@ -1,0 +1,67 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001492">
+      <name>Yeast - phosphoproteome</name>
+      <description>To find the Mec1 targets that are responsible for mec1-100 suppression on HU, we performed a quantitative phosphoproteomic study. Specifically, we screened for modifications that are downregulated in mec1-100, compensated by pph3delta, and left unaffected by rad53delta. To eliminate contributions from Tel1, we used a tel1delta mec1-100 double mutant in the screen. Prior to extraction of proteins, the cultures were arrested in G1 by alpha-factor and released into S phase in the presence of HU.  Samples were analyzed in triplicates.</description>
+      <cross_references>
+        <ref dbkey="4932" dbname="TAXONOMY"/>
+        <ref dbkey="25533186" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-11-17"/>
+        <date type="publication" value="2015-01-12"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001492</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Extracts in 8 M urea, 50 mM ammonium bicarbonate, and 5 mM EDTA had a protein concentration of about 5.2 mg/ mL. 150 μL 200 mM HEPES were added to 1.5 mL of each of the twelve extracts. Reduction and alkylation of cysteines were performed by adding of 160 μL 45 mM DTT for 30 min followed by adding of 180 μL 100 mM iodoacetamide for another 30 min (in the dark), both at room temperature. Before adding of 20 μL 1 mg/ mL LysC (Wako, Japan) the extracts were twofold diluted to keep a final HEPES concentration of 20 mM. First digest was performed overnight at 25 °C. After further twofold diluting of the extracts 100 μL of 0.5 mg/ mL trypsin were added and the second digest was performed at 37 °C overnight. Before phosphopeptide enrichment the digests were desalted using SepPak C18 columns (Waters). The eluates were dried down in a SpeedVac (Thermo Scientific). The digests were reconstituted in 150 μL 2.5% triflouroacetic acid (TFA)/ 80% acetonitrile, saturated with phthalic acid and 30 min incubated with 1.5 mg TiO2 beads (Inertsil Titansphere 5µm, GL Science, Japan) using Mobitec tubes (MoBiTec, Germany). The beads were thoroughly washed four times with 200 μL 2.5% TFA/ 80% acetonitrile. Phospho-peptides were eluted with 100 μL 0.3 M NH4OH and 100 μL 0.3 M NH4OH/ 30% acetonitrile. The pH of the eluates was lowered to about 3 by adding 4 μL TFA before drying down in a SpeedVac. The final desalting step was performed on Oligo R3 media (Life technologies) immobilized on C18 GELoader pipette tips (Proxeon). The LC/MS/MS analyses were performed on an Easy-nLC 1000 pump coupled to an LTQ Orbitrap Velos mass spectrometer (Thermo Scientific) using a Digital PicoView ion source (New Objective). The peptides were separated on a New Objective analytical column (75 μm x 25 cm, Reprosil, 3 μm) with a gradient from 2 to 30% solvent B in 110 min, 30 to 50% solvent B in 30 min and 50 to 80% solvent B in 5 min. Solvent A consisted of 0.1% formic acid in water, solvent B of 0.1% formic acid in acetonitrile. The flow rate was 200 nL/ min. The dried TiO2 eluates were dissolved in 40 μL 0.1% TFA/ 2% acetonitrile and the peptide concentrations determined with a Qubit fluorometer and the Qubit protein assay kit (Life technologies). The injection volumes were adapted accordingly for 1 μg peptides on column.</field>
+        <field name="data_protocol">The twelve raw files (wt - 1981-1, -2, -3; rad53delta - 7373-1, 7373-2, 7373-3; mec1-100 tel1delta - 6913-1, 6913-2, 6913-3; mec1-100 tel1delta pph3delta - 7734-1, 7734-2, 7734-3.raw) were loaded into Progenesis-LC and automatically aligned. The alignments were manually corrected were needed. The final alignment scores were 82.5% and better. Features with two charges and more than two isotopes, features with three to six charges having more than three isotopes and spectra with a limit fragment count of 150 were considered for a database search using MASCOT 2.3 (131202_151105MSMS_150.dat). Peptides were identified searching the Saccharomyces Genome Database (SGD), version Sept. 2011) considering the following settings: Carbamidomethylation at cysteines as fixed modification, deamidation at asparagine and glutamine, oxidation at methionine, acetylation at the protein N-terms and phosphorylation at serine, threonine and tyrosine as variable modifications, two missed cleavage sites, a peptide mass tolerance of 7 ppm and a fragment mass tolerance of 0.6 Da, trypsin as enzyme, allowing the cleavage after arginine and lysine also if followed by a proline. Finally, in Progenesis-LC features were kept if they had a MASCOT ion score greater than 15 and were identified as phosphopeptides without any other modifications except acetylation at protein N-terminals. The normalization was performed considering only those phosphopeptides. The final feature data list was exported into Excel. Ratios “mutant versus wild type” were calculated from the average of the normalized abundances of the three replicates and the probability of a Student’s t-test was determined accordingly. Only phosphopeptides with a probability of 0.95 were considered for further evaluation. The phosphorylation localization probabilities were determined using phosphoRS within Proteome Discoverer (version 1.4.1.14, Thermo Fisher Scientific, 131202_151105MSMS_150.pep.xml).</field>
+        <field name="instrument_platform">LTQ Orbitrap Velos</field>
+        <field name="species">Saccharomyces cerevisiae (Baker's yeast)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">cell culture</field>
+        <field name="modification">N-acetylated residue</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">phosphorylated residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="modification">deamidated residue</field>
+        <field name="technology_type">Affinity purification coupled with mass spectrometry proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">S. cereviasiae</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">COMPLETE</field>
+        <field name="software">Matrix Science Mascot 2.3.02</field>
+        <field name="publication">Hustedt N, Seeber A, Sack R, Tsai-Pflugfelder M, Bhullar B, Vlaming H, van Leeuwen F, Guénolé A, van Attikum H, Srivas R, Ideker T, Shimada K, Gasser SM. Yeast PP4 Interacts with ATR Homolog Ddc2-Mec1 and Regulates Checkpoint Signaling. Mol Cell. 2014 Dec 17. pii: S1097-2765(14)00911-3</field>
+        <field name="submitter">Ragna Sack</field>
+        <field name="submitter_mail">ragna.sack@fmi.ch</field>
+        <field name="submitter_affiliation">Friedrich Miescher Institute for Biomedical Research</field>
+        <field name="labhead">Susan M Gasser</field>
+        <field name="labhead_mail">susan.gasser@fmi.ch</field>
+        <field name="labhead_affiliation">Director of the Friedrich Miescher Institute for Biomedical Research  Maulbeerstrasse 66 CH-4058 Basel Switzerland</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001492/131114_1981-1_3uL.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001492/131114_1981-2_3uL.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001492/131114_1981-3_3uL.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001492/131115_7373-1_3uL.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001492/131115_7373-2_3uL.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001492/131115_7373-3_3uL.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001492/131115_7734-1_3uL.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001492/131115_7734-2_3uL.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001492/131115_7734-3_3uL.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001492/131116_6913-1_3uL.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001492/131116_6913-2_3uL.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001492/131116_6913-3_3uL.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001492/131202_151105MSMS_150.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001492/131202_151105MSMS_150.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001492/F075510_151105MSMS.dat-pride.xml.gz</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

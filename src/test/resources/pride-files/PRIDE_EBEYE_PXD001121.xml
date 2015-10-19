@@ -1,0 +1,75 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001121">
+      <name>Characterization of LysargiNase for use in phosphoproteomics experiments, part 1</name>
+      <description>Use of parallel digest with LysargiNase (former name: ulilysin) and trypsin to cover complementary phosphosites / characterization of phospho-motifs preferentially identified by each protease</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="25419962" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-07-09"/>
+        <date type="publication" value="2014-12-16"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001121</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">MDA-MB 231 cells were harvestedand lysed in the presence of protease and phosphatase inhibitors as described (Rogers et al 2011),  Proteins were denatured (3.5M Gnd-HCl), reduced (10mM DTT) and alkylated (50 mM iodoacetamide). Proteins were purified by chloroform/methanol precipitation, pellets dissolved in a small volume of 8M urea, 2M thioruea, diluted at least 5-fold with 50 mM Hepes, 10 mM CaCl2, pH7.5 and digested with50:1 LysArgiNAse or 100:1 trypsin (equimolar amounts) at 30C over night. Peptides were desalted using C18 cartridges,phosphopeptides enriched using commercial TiO2 tips (Sigma) or homemade TiO2 tips as described (Rogers et al 2011) and desalted using Stage tips prior analysis.</field>
+        <field name="data_protocol">Analysis with MaxQuant 1.4.12. using [X|KR] as specificity rule for LysargiNase and [KR|X] for trypsin. For details, see parameter file in the uploaded seach folder</field>
+        <field name="instrument_platform">LTQ Orbitrap</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">cell culture</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">phosphorylated residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="modification">6x(13)C labeled residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Technical</field>
+        <field name="submitter_keywords">human</field>
+        <field name="submitter_keywords">  MDA-MB 231</field>
+        <field name="submitter_keywords"> phosphopeptides</field>
+        <field name="submitter_keywords"> LysargiNase</field>
+        <field name="submitter_keywords"> trypsin</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Huesgen PF, Lange PF, Rogers LD, Solis N, Eckhard U, Kleifeld O, Goulas T, Gomis-Rüth FX, Overall CM. LysargiNase mirrors trypsin for protein C-terminal and methylation-site identification. Nat Methods. 2014 Nov 24</field>
+        <field name="submitter">Pitter Huesgen</field>
+        <field name="submitter_mail">p.huesgen@fz-juelich.de</field>
+        <field name="submitter_affiliation">Forschungszentrum Jülich</field>
+        <field name="labhead">Christopher M. Overall</field>
+        <field name="labhead_mail">chris.overall@ubc.ca</field>
+        <field name="labhead_affiliation">Centre for Blood Research, Dept. Oral Biological Sciences, Faculty of Dentistry, University of British Columbia, Canada</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001121/LR_Ulilysin_A1_Nov27_121204.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001121/LR_Ulilysin_A2_Nov27_121204.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001121/LR_Ulilysin_A3_Nov27_121204.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001121/PH_82101_U1P_130102.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001121/PH_82101_U2P_130102.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001121/PH_82101_U3P_130102.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001121/PH_82101_U4P_130102.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001121/PH_83004_UP1_130114.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001121/PH_83004_UP2_130114.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001121/SEARCH_LysargiNase_phosphopeptides.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001121/LR_Trypsin_A1_Nov27_121204.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001121/LR_Trypsin_A2_Nov27_121204.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001121/LR_Trypsin_A3_Nov27_121204.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001121/PH_82201_T1P_130102.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001121/PH_82201_T2P_130102.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001121/PH_82201_T3P_130102.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001121/PH_82201_T4P_130102.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001121/PH_83004_TP1_130114.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001121/PH_83004_TP2_130114.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001121/SEARCH_trypsin_phosphopeptides.zip</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

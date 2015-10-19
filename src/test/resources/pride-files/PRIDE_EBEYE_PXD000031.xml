@@ -1,0 +1,99 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000031">
+      <name>Purified FLAG-Hrp1 GeLC-MS/MS</name>
+      <description>Proteomics on affinity purified and mock purified FLAG-Hrp1. Reduction with DTT, alkylation by iodoacetamide. 1D gel, tryptic in gel digestion of cut-out bands, GeLC-MS/MS.</description>
+      <cross_references>
+        <ref dbkey="4896" dbname="TAXONOMY"/>
+        <ref dbkey="23103765" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2012-09-19"/>
+        <date type="publication" value="2012-11-01"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000031</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Not available</field>
+        <field name="instrument_platform">LTQ Orbitrap Velos</field>
+        <field name="species">Schizosaccharomyces pombe (Fission yeast)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Not available</field>
+        <field name="modification">No PTMs are included in the dataset</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="submitter_keywords">Schizosaccharomyces pombe</field>
+        <field name="submitter_keywords"> Hrp1</field>
+        <field name="submitter_keywords"> affinity purification</field>
+        <field name="submitter_keywords"> GeLC</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Pointner J, Persson J, Prasad P, Norman-Axelsson U, Strålfors A, Khorosjutina O, Krietenstein N, Svensson JP, Ekwall K, Korber P; CHD1 remodelers regulate nucleosome spacing in vitro and align nucleosomal arrays over gene coding regions in S. pombe., EMBO J, 2012 Nov 28, 31, 23, 4388-403, </field>
+        <field name="submitter">Rui Branca</field>
+        <field name="submitter_mail">rui.mamede-branca@ki.se</field>
+        <field name="submitter_affiliation">Clinical Proteomics Unit, Dep. of Oncology-Pathology</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_Ctrl_uniprot_Spombe.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_Tag1_uniprot_Spombe.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_Tag2_uniprot_Spombe.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_Tag3_uniprot_Spombe.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_Tag4_uniprot_Spombe.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_Tag5_uniprot_Spombe.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_Tag6_uniprot_Spombe.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_UnTag1_uniprot_Spombe.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_UnTag2_uniprot_Spombe.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_UnTag3_uniprot_Spombe.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_UnTag4_uniprot_Spombe.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_UnTag5_uniprot_Spombe.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_UnTag6_uniprot_Spombe.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_Ctrl_uniprot_Spombe.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_Tag1_uniprot_Spombe.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_Tag2_uniprot_Spombe.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_Tag3_uniprot_Spombe.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_Tag4_uniprot_Spombe.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_Tag5_uniprot_Spombe.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_Tag6_uniprot_Spombe.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_UnTag1_uniprot_Spombe.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_UnTag2_uniprot_Spombe.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_UnTag3_uniprot_Spombe.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_UnTag4_uniprot_Spombe.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_UnTag5_uniprot_Spombe.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_UnTag6_uniprot_Spombe.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_Ctrl_uniprot_Spombe.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_Tag1_uniprot_Spombe.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_Tag2_uniprot_Spombe.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_Tag3_uniprot_Spombe.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_Tag4_uniprot_Spombe.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_Tag5_uniprot_Spombe.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_Tag6_uniprot_Spombe.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_UnTag1_uniprot_Spombe.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_UnTag2_uniprot_Spombe.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_UnTag3_uniprot_Spombe.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_UnTag4_uniprot_Spombe.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_UnTag5_uniprot_Spombe.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_UnTag6_uniprot_Spombe.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_Ctrl.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_Tag1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_Tag2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_Tag3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_Tag4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_Tag5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_Tag6.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_UnTag1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_UnTag2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_UnTag3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_UnTag4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_UnTag5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/11/PXD000031/Hanna_2011jun20_5-of-15ul-inj_15min-grad_UnTag6.raw</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

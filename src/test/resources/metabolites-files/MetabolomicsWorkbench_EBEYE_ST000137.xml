@@ -1,0 +1,66 @@
+<database>
+  <name>MetabolomicsWorkbench</name>
+  <description>The Metabolomics Workbench will serve as a national and international repository for metabolomics data and metadata and will provide analysis tools and access to metabolite standards, protocols, tutorials, training, and more.</description>
+  <release>1.0</release>
+  <release_date>15-05-20</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="ST000137">
+      <name>Metabolomics in sarcoidosis</name>
+      <description>Metabolites in sarcoidosis patients</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="15-02-11"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Metabolomics</field>
+        <field name="full_dataset_link">http://www.metabolomicsworkbench.org/data/DRCCMetadata.php?Mode=Study&amp;StudyID=ST000137</field>
+        <field name="repository">MetabolomicsWorkbench</field>
+        <field name="data_protocol">NMR</field>
+        <field name="instrument_platform">Agilent Technologies</field>
+        <field name="study_factor">Sample Group:Patient</field>
+        <field name="study_factor">Sample Group:Control</field>
+        <field name="species">Homo sapiens</field>
+        <field name="technology_type">Agilent</field>
+        <field name="metabolite_name">Hydroxybutyrate2</field>
+        <field name="metabolite_name">Homocysteine</field>
+        <field name="metabolite_name">Homoserine</field>
+        <field name="metabolite_name">Valine</field>
+        <field name="metabolite_name">Glutamine</field>
+        <field name="metabolite_name">Glycerate</field>
+        <field name="metabolite_name">Glucose</field>
+        <field name="metabolite_name">Glutamate</field>
+        <field name="metabolite_name">Creatinine</field>
+        <field name="metabolite_name">Cystine</field>
+        <field name="metabolite_name">Isoleucine</field>
+        <field name="metabolite_name">Hydroxybutyrate3</field>
+        <field name="metabolite_name">Lactate</field>
+        <field name="metabolite_name">Lysine</field>
+        <field name="metabolite_name">N-Methylhydantoin</field>
+        <field name="metabolite_name">Ornithine</field>
+        <field name="metabolite_name">Proline</field>
+        <field name="metabolite_name">Propylene.glycol</field>
+        <field name="metabolite_name">Pyruvate</field>
+        <field name="metabolite_name">Succinate</field>
+        <field name="metabolite_name">Acetoacetate</field>
+        <field name="metabolite_name">Acetate</field>
+        <field name="metabolite_name">Citrate</field>
+        <field name="metabolite_name">2-Phosphoglycerate</field>
+        <field name="metabolite_name">Taurine</field>
+        <field name="metabolite_name">Betaine</field>
+        <field name="metabolite_name">Arginine</field>
+        <field name="metabolite_name">TMAO</field>
+        <field name="metabolite_name">Aminobutyrate</field>
+        <field name="metabolite_name">Threonine</field>
+        <field name="metabolite_name">Alanine</field>
+        <field name="metabolite_name">Choline</field>
+        <field name="metabolite_name">Carnitine</field>
+        <field name="submitter">Andreea Geamanu</field>
+        <field name="submitter_mail">ageamanu@med.wayne.edu</field>
+        <field name="submitter_affiliation">Internal Medicine, Wayne State University</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

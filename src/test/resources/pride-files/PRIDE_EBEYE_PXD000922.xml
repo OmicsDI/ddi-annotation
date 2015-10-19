@@ -1,0 +1,93 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000922">
+      <name>Mycoplasma gallisepticum S6</name>
+      <description>Avian bacterial pathogen M. gallisepticum is a good model for transcriptional regulation studies due to its small genome and relative simplicity. Here we used RNA-Seq combined with MS-spec proteomics to accurately map coding sequences (CDSs), transcription start sites (TSSs) and transcription terminators (TTs) and decipher their role in stress-induced transcriptional response.</description>
+      <cross_references>
+        <ref dbkey="1006581" dbname="TAXONOMY"/>
+        <ref dbkey="25361977" dbname="pubmed"/>
+        <ref dbkey="Q49500" dbname="uniprot"/>
+        <ref dbkey="Q49496" dbname="uniprot"/>
+        <ref dbkey="Q49495" dbname="uniprot"/>
+        <ref dbkey="Q49498" dbname="uniprot"/>
+        <ref dbkey="Q49497" dbname="uniprot"/>
+        <ref dbkey="Q49499" dbname="uniprot"/>
+        <ref dbkey="D2DUQ3" dbname="uniprot"/>
+        <ref dbkey="B5AG22" dbname="uniprot"/>
+        <ref dbkey="P47720" dbname="uniprot"/>
+        <ref dbkey="Q49379" dbname="uniprot"/>
+        <ref dbkey="P11131" dbname="uniprot"/>
+        <ref dbkey="V5W2J3" dbname="uniprot"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-07-25"/>
+        <date type="publication" value="2014-11-12"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000922</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Protein extraction and 1D electrophoresis Cells harvested as described were washed twice in a wash buffer (150 mM NaCl, 50 mM Tris-HCl, 2mM MgCl2, pH=7.4). Cells were lysed in 20 µl of 1% SDS in 100 mM NH4HCO3 and incubated in an ultrasonic bath for 15 min with subsequent centrifugation at 10000g at 4°С for 5 min. Supernatant was taken, and protein concentration was determined by Bicinchoninic acid protein assay kit (Sigma).  20 µl of 2x Laemmli reagents were then added, and samples were incubated at 95°С for 5 min. Then 50 µg of protein was loaded to polyacrylamide gel (10x0.1 cm, 12% polyacrylamide), and electrophoresis was performed according to Laemmli [17] (10 mA current ). Electrophoresis was stopped when the front dye reached 1.5 cm in separating gel.   Trypsinolysis in polyacrylamide gel The polyacrylamide gel was fixed in a fixation buffer (20% CH3OH and 10% CH3COOH) for 30 min and washed twice in H20. The gel was cut in pieces 1x1 mm, transferred into tubes, and treated with 10 mM DTT and 100 mM NH4HCO3 for 30 min at 56°С. Then proteins were alkylated with 55 mM iodoacetamide in 100 mM NH4HCO3 for 20 min in the dark. Then water was removed from gel pieces by the addition of 100% acetonitrile. Dehydrated samples were treated with a 150 µl trypsin solution (40 mM NH4HCO3, 10% acetonitrile, 20 ng/µl Trypsin Gold, mass spectrometry grade, Promega). Samples were incubated for 60 min at 40°С and for 16-18 h. at 37°С. Peptides were extracted one time by 5% formic acid and two times by 50% acetonitrile with 5% formic acid. Extracts were joined and dried on a vacuum centrifuge at 45°С. Precipitate was diluted in 50 µl of 5% acetonitrile with 0.1% formic acid.   Chromato-mass-spectrometry Peptides were analyzed using a TripleTOF 5600+ (ABSciex) mass-spectrometer with NanoSpray III ion source and NanoLC Ultra 2D+ chromatograph (Eksigent). Chromatographic separation was carried out in the gradient of acetonitrile in water (5 to 40% of acetonitrile in 120 min.) with 0.1% formic acid on 75x150 µm columns with Phenomenex Luna C18 3 µm sorbent and a flow rate of 300 nL/min.   The IDA mode of a mass-spectrometer was used to analyze peptides. Based on the first MS1 spectrum (mass range for analysis and subsequent ion selection for MS2 analysis was 300-1250 m/z, signal accumulation was 250 ms), 50 parent ions with maximum intensity in the current spectrum were chosen for subsequent MS/MS analysis (resolution of quadrupole UNIT was 0.7 Da, measurement mass range was 200-1800 m/z, optimization of ion beam focus was to obtain maximal sensitivity, signal accumulation was 50 ms for each parent ion). Nitrogen was used for collision dissociation with fixed average energy of 40 V. Collision energy was linearly increased from 25 to 55 V during signal accumulation time (50 ms). Parental ions that had already been analyzed were excluded from analysis for 15 sec.</field>
+        <field name="data_protocol">Analysis of mass-spectrometry data Raw data files (.wiff file format) were converted to Mascot Generic Format (.mgf file format) using AB SCIEX MS Data Converter version 1.3 and searched using Mascot version 2.2.07 against a database of all proteins (836 amino acids sequences) of M. gallisepticum S6 (GI:604957178). The Mascot searches were performed with the following parameters: tryptic and semi-tryptic peptides, maximum of one missed cleavages, a peptide charge state limited to 1+,2+ and 3+, a peptide mass tolerance of 10 ppm, a fragment mass tolerance of 0.5 Da, variable modifications caused by Oxidation(M) and Carbomidomethylation(C). Protein scores greater than (6 - protein-trypsin,17 - proteins-semitrypsin, 32 - genome-trypsin, 24 - genome-semitrypsin) were assumed to be significant. Proteogenomic profiling of M.gallisepticum was performed using the database of the chromosomal DNA sequence (genbank) splitted by 3000 nucleotides with a shift of 1000 nucleotides (493 nucleotides sequences).</field>
+        <field name="instrument_platform">TripleTOF 5600</field>
+        <field name="species">Mycoplasma gallisepticum S6</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">Mycoplasma</field>
+        <field name="submitter_keywords"> gallisepticum</field>
+        <field name="submitter_keywords">S6</field>
+        <field name="submitter_keywords"> heat shock</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">COMPLETE</field>
+        <field name="software">Matrix Science Mascot 2.2.07</field>
+        <field name="doi">10.6019/PXD000922</field>
+        <field name="publication">Mazin PV, Fisunov GY, Gorbachev AY, Kapitskaya KY, Altukhov IA, Semashko TA, Alexeev DG, Govorun VM. Transcriptome analysis reveals novel regulatory mechanisms in a genome-reduced bacterium. Nucleic Acids Res. 2014 Oct 31. pii: gku976</field>
+        <field name="submitter">Ilya Altukhov</field>
+        <field name="submitter_mail">ilya.altukhov@gmail.com</field>
+        <field name="submitter_affiliation">Research Institute of Physical Chemical Medicine</field>
+        <field name="labhead">Govorun Vadim Markovich</field>
+        <field name="labhead_mail">govorun@hotmail.ru</field>
+        <field name="labhead_affiliation">Research Institute of Physical Chemical Medicine</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000922/T125.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000922/T122.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000922/T123.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000922/T124.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000922/T917_20140811_mycgall_transf_1_1_5-40_120min_2uLinj_1.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000922/T917_20140811_mycgall_transf_1_1_5-40_120min_2uLinj_1.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000922/T918_20140811_mycgall_transf_1_2_5-40_120min_2uLinj_1.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000922/T918_20140811_mycgall_transf_1_2_5-40_120min_2uLinj_1.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000922/T919_20140811_mycgall_transf_3_1_5-40_120min_2uLinj_1.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000922/T919_20140811_mycgall_transf_3_1_5-40_120min_2uLinj_1.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000922/T920_20140811_mycgall_transf_3_2_5-40_120min_2uLinj_1.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000922/T920_20140811_mycgall_transf_3_2_5-40_120min_2uLinj_1.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000922/T917.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000922/T918.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000922/T919.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000922/T920.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000922/T917_20140811_mycgall_transf_1_1_5-40_120min_2uLinj_1_MGFPeaklist.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000922/T918_20140811_mycgall_transf_1_2_5-40_120min_2uLinj_1_MGFPeaklist.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000922/T919_20140811_mycgall_transf_3_1_5-40_120min_2uLinj_1_MGFPeaklist.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000922/T920_20140811_mycgall_transf_3_2_5-40_120min_2uLinj_1_MGFPeaklist.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000922/T122_log_K_C1_IDA_1.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000922/T122_log_K_C1_IDA_1.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000922/T123_log_5_C1_IDA_2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000922/T123_log_5_C1_IDA_2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000922/T124_log_15_C1_IDA_2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000922/T124_log_15_C1_IDA_2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000922/T125_log_30_C1_IDA_1.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000922/T125_log_30_C1_IDA_1.wiff.scan</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

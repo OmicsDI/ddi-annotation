@@ -1,0 +1,94 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000025">
+      <name>Phosphoproteomic analysis of Rhodopseudomonas palustris</name>
+      <description>This study is to compare the phosphoproteome of Rhodopseudomonas palustris under photoheterotrophic and chemoheterotrophic states</description>
+      <cross_references>
+        <ref dbkey="1076" dbname="TAXONOMY"/>
+        <ref dbkey="23030682" dbname="pubmed"/>
+        <ref dbkey="P13645" dbname="uniprot"/>
+        <ref dbkey="P13647" dbname="uniprot"/>
+        <ref dbkey="ENSP00000251643" dbname="ensembl"/>
+        <ref dbkey="ENSP00000252242" dbname="ensembl"/>
+        <ref dbkey="ENSP00000252244" dbname="ensembl"/>
+        <ref dbkey="ENSP00000252250" dbname="ensembl"/>
+        <ref dbkey="P00761" dbname="uniprot"/>
+        <ref dbkey="Q99456" dbname="uniprot"/>
+        <ref dbkey="ENSP00000293308" dbname="ensembl"/>
+        <ref dbkey="P05783" dbname="uniprot"/>
+        <ref dbkey="P05787" dbname="uniprot"/>
+        <ref dbkey="ENSP00000269576" dbname="ensembl"/>
+        <ref dbkey="P02533" dbname="uniprot"/>
+        <ref dbkey="P48668" dbname="uniprot"/>
+        <ref dbkey="ENSP00000167586" dbname="ensembl"/>
+        <ref dbkey="ENSP00000373487" dbname="ensembl"/>
+        <ref dbkey="P04264" dbname="uniprot"/>
+        <ref dbkey="ENSP00000355124" dbname="ensembl"/>
+        <ref dbkey="P08727" dbname="uniprot"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2012-09-11"/>
+        <date type="publication" value="2012-12-12"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000025</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Not available</field>
+        <field name="instrument_platform">LTQ Orbitrap</field>
+        <field name="instrument_platform">instrument model</field>
+        <field name="instrument_platform">TripleTOF 5600</field>
+        <field name="instrument_platform">instrument model</field>
+        <field name="species">Rhodopseudomonas palustris</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Not available</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">phosphorylated residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="submitter_keywords">Phosphoprotemics</field>
+        <field name="submitter_keywords"> Rhodopseudomonas palustris</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">COMPLETE</field>
+        <field name="software">Matrix Science Mascot 2.3.01</field>
+        <field name="doi">10.6019/PXD000025</field>
+        <field name="publication">Hu CW, Lin MH, Huang HC, Ku WC, Yi TH, Tsai CF, Chen YJ, Sugiyama N, Ishihama Y, Juan HF, Wu SH; Phosphoproteomic analysis of Rhodopseudomonas palustris reveals the role of pyruvate phosphate dikinase phosphorylation in lipid production., J Proteome Res, 2012 Nov 2, 11, 11, 5362-75, </field>
+        <field name="submitter">Chia-Wei Hu</field>
+        <field name="submitter_mail">hkmq8195@gmail.com</field>
+        <field name="submitter_affiliation">Institute of molecular and cellular biology</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/12/PXD000025/Rpalustris_CH_Bio1_Run1.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/12/PXD000025/Rpalustris_CH_Bio1_Run2.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/12/PXD000025/Rpalustris_CH_Bio2_Run1.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/12/PXD000025/Rpalustris_CH_Bio2_Run2.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/12/PXD000025/Rpalustris_CH_Bio3_Run1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/12/PXD000025/Rpalustris_PH_Bio1_Run1.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/12/PXD000025/Rpalustris_PH_Bio1_Run2.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/12/PXD000025/Rpalustris_PH_Bio2_Run1.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/12/PXD000025/Rpalustris_PH_Bio2_Run2.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/12/PXD000025/Rpalustris_PH_Bio3_Run1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/12/PXD000025/Rpalustris_PH_Bio3_Run2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/12/PXD000025/Rpalustris_PH_Bio3_Run3.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/12/PXD000025/PRIDE_Exp_Complete_Ac_27212.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/12/PXD000025/PRIDE_Exp_Complete_Ac_27213.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/12/PXD000025/PRIDE_Exp_Complete_Ac_27214.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/12/PXD000025/PRIDE_Exp_Complete_Ac_27215.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/12/PXD000025/PRIDE_Exp_Complete_Ac_27216.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/12/PXD000025/PRIDE_Exp_Complete_Ac_27217.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/12/PXD000025/PRIDE_Exp_Complete_Ac_27218.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/12/PXD000025/PRIDE_Exp_Complete_Ac_27219.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/12/PXD000025/PRIDE_Exp_Complete_Ac_27220.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/12/PXD000025/PRIDE_Exp_Complete_Ac_27221.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/12/PXD000025/PRIDE_Exp_Complete_Ac_27222.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/12/PXD000025/PRIDE_Exp_Complete_Ac_27223.xml.gz</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

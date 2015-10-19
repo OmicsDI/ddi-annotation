@@ -1,0 +1,455 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-08-26</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001590">
+      <name>Metaproteomics of Optimal vs Suboptimal Biocathode (MCL)</name>
+      <description>Metaproteomics of graphite cloth biocathodes at different potential was performed.</description>
+      <cross_references>
+        <ref dbkey="718308" dbname="TAXONOMY"/>
+        <ref dbkey="26260905" dbname="pubmed"/>
+        <ref dbkey="Q7Z794" dbname="uniprot"/>
+        <ref dbkey="ENSBTAP00000010119" dbname="ensembl"/>
+        <ref dbkey="P08779" dbname="uniprot"/>
+        <ref dbkey="P00761" dbname="uniprot"/>
+        <ref dbkey="Q04695" dbname="uniprot"/>
+        <ref dbkey="Q5XQN5" dbname="uniprot"/>
+        <ref dbkey="P12035" dbname="uniprot"/>
+        <ref dbkey="P02662" dbname="uniprot"/>
+        <ref dbkey="Q99456" dbname="uniprot"/>
+        <ref dbkey="ENSP00000293308" dbname="ensembl"/>
+        <ref dbkey="ENSP00000254043" dbname="ensembl"/>
+        <ref dbkey="ENSP00000369361" dbname="ensembl"/>
+        <ref dbkey="O43790" dbname="uniprot"/>
+        <ref dbkey="P05784" dbname="uniprot"/>
+        <ref dbkey="ENSP00000329243" dbname="ensembl"/>
+        <ref dbkey="ENSP00000369317" dbname="ensembl"/>
+        <ref dbkey="P35527" dbname="uniprot"/>
+        <ref dbkey="Q8BGZ7" dbname="uniprot"/>
+        <ref dbkey="Q148H6" dbname="uniprot"/>
+        <ref dbkey="ENSP00000293774" dbname="ensembl"/>
+        <ref dbkey="P05787" dbname="uniprot"/>
+        <ref dbkey="P35900" dbname="uniprot"/>
+        <ref dbkey="P35908" dbname="uniprot"/>
+        <ref dbkey="ENSMUSP00000085311" dbname="ensembl"/>
+        <ref dbkey="ENSP00000293745" dbname="ensembl"/>
+        <ref dbkey="ENSMUSP00000007275" dbname="ensembl"/>
+        <ref dbkey="Q2M2I5" dbname="uniprot"/>
+        <ref dbkey="Q6KB66" dbname="uniprot"/>
+        <ref dbkey="P07744" dbname="uniprot"/>
+        <ref dbkey="Q8VED5" dbname="uniprot"/>
+        <ref dbkey="P02535" dbname="uniprot"/>
+        <ref dbkey="P02533" dbname="uniprot"/>
+        <ref dbkey="P02538" dbname="uniprot"/>
+        <ref dbkey="ENSMUSP00000036246" dbname="ensembl"/>
+        <ref dbkey="ENSP00000246662" dbname="ensembl"/>
+        <ref dbkey="ENSP00000246635" dbname="ensembl"/>
+        <ref dbkey="Q32MB2" dbname="uniprot"/>
+        <ref dbkey="A2A4G1" dbname="uniprot"/>
+        <ref dbkey="Q3ZAW8" dbname="uniprot"/>
+        <ref dbkey="Q6ISB0" dbname="uniprot"/>
+        <ref dbkey="Q922U2" dbname="uniprot"/>
+        <ref dbkey="ENSP00000355124" dbname="ensembl"/>
+        <ref dbkey="P08730" dbname="uniprot"/>
+        <ref dbkey="P08729" dbname="uniprot"/>
+        <ref dbkey="P08727" dbname="uniprot"/>
+        <ref dbkey="O95678" dbname="uniprot"/>
+        <ref dbkey="P13645" dbname="uniprot"/>
+        <ref dbkey="P13647" dbname="uniprot"/>
+        <ref dbkey="P13646" dbname="uniprot"/>
+        <ref dbkey="ENSP00000251643" dbname="ensembl"/>
+        <ref dbkey="P50446" dbname="uniprot"/>
+        <ref dbkey="ENSP00000252242" dbname="ensembl"/>
+        <ref dbkey="ENSP00000252245" dbname="ensembl"/>
+        <ref dbkey="ENSP00000252244" dbname="ensembl"/>
+        <ref dbkey="ENSP00000413479" dbname="ensembl"/>
+        <ref dbkey="ENSP00000252252" dbname="ensembl"/>
+        <ref dbkey="ENSMUSP00000007318" dbname="ensembl"/>
+        <ref dbkey="ENSMUSP00000007317" dbname="ensembl"/>
+        <ref dbkey="ENSP00000264651" dbname="ensembl"/>
+        <ref dbkey="ENSP00000310861" dbname="ensembl"/>
+        <ref dbkey="ENSP00000328358" dbname="ensembl"/>
+        <ref dbkey="ENSP00000257951" dbname="ensembl"/>
+        <ref dbkey="Q6IFX2" dbname="uniprot"/>
+        <ref dbkey="Q6IFZ6" dbname="uniprot"/>
+        <ref dbkey="Q14CN4" dbname="uniprot"/>
+        <ref dbkey="ENSP00000308452" dbname="ensembl"/>
+        <ref dbkey="Q9R0H5" dbname="uniprot"/>
+        <ref dbkey="Q5XKE5" dbname="uniprot"/>
+        <ref dbkey="ENSMUSP00000017270" dbname="ensembl"/>
+        <ref dbkey="ENSP00000269576" dbname="ensembl"/>
+        <ref dbkey="ENSP00000301656" dbname="ensembl"/>
+        <ref dbkey="ENSP00000301653" dbname="ensembl"/>
+        <ref dbkey="ENSP00000293525" dbname="ensembl"/>
+        <ref dbkey="ENSMUSP00000023788" dbname="ensembl"/>
+        <ref dbkey="ENSP00000334798" dbname="ensembl"/>
+        <ref dbkey="ENSP00000305263" dbname="ensembl"/>
+        <ref dbkey="ENSP00000342710" dbname="ensembl"/>
+        <ref dbkey="ENSMUSP00000023799" dbname="ensembl"/>
+        <ref dbkey="ENSMUSP00000023797" dbname="ensembl"/>
+        <ref dbkey="ENSMUSP00000023709" dbname="ensembl"/>
+        <ref dbkey="A2A5Y0" dbname="uniprot"/>
+        <ref dbkey="ENSMUSP00000065349" dbname="ensembl"/>
+        <ref dbkey="ENSMUSP00000023712" dbname="ensembl"/>
+        <ref dbkey="ENSMUSP00000023710" dbname="ensembl"/>
+        <ref dbkey="ENSP00000167588" dbname="ensembl"/>
+        <ref dbkey="ENSP00000167586" dbname="ensembl"/>
+        <ref dbkey="P04259" dbname="uniprot"/>
+        <ref dbkey="P04264" dbname="uniprot"/>
+        <ref dbkey="Q6NXH9" dbname="uniprot"/>
+        <ref dbkey="Q7Z3Y8" dbname="uniprot"/>
+        <ref dbkey="Q7Z3Y9" dbname="uniprot"/>
+        <ref dbkey="Q7Z3Y7" dbname="uniprot"/>
+        <ref dbkey="P19012" dbname="uniprot"/>
+        <ref dbkey="P19013" dbname="uniprot"/>
+        <ref dbkey="ENSBTAP00000034743" dbname="ensembl"/>
+        <ref dbkey="P19001" dbname="uniprot"/>
+        <ref dbkey="ENSP00000307014" dbname="ensembl"/>
+        <ref dbkey="ENSMUSP00000023803" dbname="ensembl"/>
+        <ref dbkey="Q3TTY5" dbname="uniprot"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2015-06-25"/>
+        <date type="publication" value="2015-08-26"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001590</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Proteins were extracted by Tris B-PER then precipitated and separated on PAGE and in gel digested. Peptide digests were analyzed by LC-MS/MS</field>
+        <field name="data_protocol">Spectra was extracted by AB Sciex software, searched by Mascot and XTandem!. Protein/peptide assignemnts were validated in Scaffod</field>
+        <field name="instrument_platform">QSTAR</field>
+        <field name="species">biofilm metagenome</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">Deamidated</field>
+        <field name="modification">Oxidation</field>
+        <field name="modification">Carbamidomethyl</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Metaproteomics</field>
+        <field name="submitter_keywords">meataproteome</field>
+        <field name="submitter_keywords"> biofilm</field>
+        <field name="submitter_keywords"> graphite</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">COMPLETE</field>
+        <field name="software">Mascot Parser 2.4.3.0</field>
+        <field name="software">Mascot Server 2.4.1</field>
+        <field name="publication">Leary DH, Hervey JW 4th, Malanoski AP, Wang Z, Eddie BJ, Tender GS, Vora GJ, Tender LM, Lin B, Strycharz-Glaven SM. Metaproteomic evidence of changes in protein expression following a change in electrode potential in a robust biocathode microbiome. Proteomics. 2015 Aug 11</field>
+        <field name="submitter">Dasha Leary</field>
+        <field name="submitter_mail">dasha.leary@nrl.navy.mil</field>
+        <field name="submitter_affiliation">Naval Research Laboratory</field>
+        <field name="labhead">Dasha Leary</field>
+        <field name="labhead_mail">dasha.leary@nrl.navy.mil</field>
+        <field name="labhead_affiliation">Naval Research Laboratory</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/S1R1_gel2_opt_allbands_F003331.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140827_S1R1_1dig.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140827_S1R1_1dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140827_S1R1_1dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140827_S1R1_2dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140827_S1R1_2dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140827_S1R1_3dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140827_S1R1_3dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140827_S1R1_4dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140827_S1R1_4dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140827_S1R1_5dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140827_S1R1_5dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140827_S1R1_6dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140827_S1R1_6dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140827_S1R1_7dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140827_S1R1_7dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/F003601_Aug_S1R1.mzid.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/mascot_daemon_merge.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/Biocathode_AugandSep_fisherexacttest.sf3</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/Opt Subopt AugSep extractions combined.pptx</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/Opt Subopt gel images.pptx</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/OptvsSubopt_flowchart.pptx</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/Peptide report_BiocathodAugandSep_allsamples_1pept.xlsx</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/Peptide report_BiocathodAugandSep_allsamples_2pept.xlsx</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140828_S1R2_1dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140828_S1R2_1dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140828_S1R2_2dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140828_S1R2_2dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140828_S1R2_3dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140828_S1R2_3dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140828_S1R2_4dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140828_S1R2_4dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140828_S1R2_5dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140828_S1R2_5dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140828_S1R2_6dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140828_S1R2_6dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140828_S1R2_7dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140828_S1R2_7dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/mascot_daemon_mergeS1R2.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/F003603_Aug_S1R2.mzid.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140829_S1R3_1dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140829_S1R3_1dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140829_S1R3_2dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140829_S1R3_2dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140829_S1R3_3dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140829_S1R3_3dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140829_S1R3_4dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140829_S1R3_4dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140829_S1R3_5dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140829_S1R3_5dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140829_S1R3_6dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140829_S1R3_6dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140829_S1R3_7dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140829_S1R3_7dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/mascot_daemon_mergeS1R3.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/F003605_Aug_S1R3.mzid.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140830_S1R4_1dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140830_S1R4_1dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140830_S1R4_2dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140830_S1R4_2dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140830_S1R4_3dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140830_S1R4_3dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140830_S1R4_4dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140830_S1R4_4dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140830_S1R4_5dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140830_S1R4_5dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140830_S1R4_6dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140830_S1R4_6dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140830_S1R4_7dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140830_S1R4_7dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/mascot_daemon_mergeS1R4.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/F003607_Aug_S1R4.mzid.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140904_S2R2_1dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140904_S2R2_1dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140904_S2R2_2dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140904_S2R2_2dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140904_S2R2_4dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140904_S2R2_4dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140904_S2R2_5dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140904_S2R2_5dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140904_S2R2_6dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140904_S2R2_6dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140904_S2R2_7dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140904_S2R2_7dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/mascot_daemon_mergeS2R1.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/S1R2_gel2_opt_allbands_F003339.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/S1R3_gel2_subopt_allbands_F003341.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/S1R4_gel2_subopt_allbands_F003340.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/S2R1_gel2_opt_allbands_F003342.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140901_S2R1_1dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140901_S2R1_1dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140901_S2R1_2dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140901_S2R1_2dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140901_S2R1_3dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140901_S2R1_3dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140901_S2R1_4dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140901_S2R1_4dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140901_S2R1_5dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140901_S2R1_5dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140901_S2R1_6dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140901_S2R1_6dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140901_S2R1_7dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140901_S2R1_7dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/F003609_Aug_S2R1.mzid.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/S2R2_gel2_opt_F003345.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/mascot_daemon_mergeS2R2.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/F003611_Aug_S2R2.mzid.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140902_S2R3_1dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140902_S2R3_1dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140902_S2R3_2dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140902_S2R3_2dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140902_S2R3_3dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140902_S2R3_3dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140902_S2R3_4dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140902_S2R3_4dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140902_S2R3_5dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140902_S2R3_5dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140902_S2R3_6dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140902_S2R3_6dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140902_S2R3_7dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140902_S2R3_7dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/mascot_daemon_mergeS2R3.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/F003612_Aug_S2R3.mzid.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140903_S2R4_1dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140903_S2R4_1dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140903_S2R4_2dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140903_S2R4_2dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140903_S2R4_3dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140903_S2R4_3dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140903_S2R4_4dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140903_S2R4_4dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140903_S2R4_5dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140903_S2R4_5dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140903_S2R4_6dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140903_S2R4_6dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140903_S2R4_7dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20140903_S2R4_7dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141017_S1R1_1dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141017_S1R1_1dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141017_S1R1_2dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141017_S1R1_2dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141017_S1R1_3dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141017_S1R1_3dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141017_S1R1_4dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141017_S1R1_4dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141017_S1R1_5dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141017_S1R1_5dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141017_S1R1_7dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141017_S1R1_7dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141017_S1R1_8dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141017_S1R1_8dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141017_S1R1_9dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141017_S1R1_9dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141018_S1R3_1dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141018_S1R3_1dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141018_S1R3_2dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141018_S1R3_2dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141018_S1R3_3dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141018_S1R3_3dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141018_S1R3_4dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141018_S1R3_4dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141018_S1R3_5dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141018_S1R3_5dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141018_S1R3_6dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141018_S1R3_6dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141018_S1R3_7dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141018_S1R3_7dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141018_S1R3_8dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141018_S1R3_8dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141018_S1R3_9dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141018_S1R3_9dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141020_S1R2_1dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141020_S1R2_1dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141020_S1R2_2dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141020_S1R2_2dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141020_S1R2_3dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141020_S1R2_3dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141020_S1R2_4dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141020_S1R2_4dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141020_S1R2_5dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141020_S1R2_5dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141020_S1R2_6dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141020_S1R2_6dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141020_S1R2_7dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141020_S1R2_7dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141020_S1R2_8dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141020_S1R2_8dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141020_S1R2_9dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141020_S1R2_9dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141021_S1R4_1dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141021_S1R4_1dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141021_S1R4_2dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141021_S1R4_2dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141021_S1R4_3dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141021_S1R4_3dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141021_S1R4_4dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141021_S1R4_4dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141021_S1R4_5dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141021_S1R4_5dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141021_S1R4_6dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141021_S1R4_6dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141021_S1R4_7dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141021_S1R4_7dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141021_S1R4_8dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141021_S1R4_8dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141021_S1R4_9dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141021_S1R4_9dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141023_S2R1_1dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141023_S2R1_1dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141023_S2R1_2dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141023_S2R1_2dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141023_S2R1_3dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141023_S2R1_3dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141023_S2R1_4dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141023_S2R1_4dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141023_S2R1_5dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141023_S2R1_5dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141023_S2R1_6dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141023_S2R1_6dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141023_S2R1_7dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141023_S2R1_7dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141023_S2R1_8dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141023_S2R1_8dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141023_S2R1_9dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141023_S2R1_9dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141024_S2R3_1dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141024_S2R3_1dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141024_S2R3_2dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141024_S2R3_2dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141024_S2R3_3dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141024_S2R3_3dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141024_S2R3_4dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141024_S2R3_4dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141024_S2R3_5dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141024_S2R3_5dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141024_S2R3_6dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141024_S2R3_6dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141024_S2R3_7dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141024_S2R3_7dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141024_S2R3_8dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141024_S2R3_8dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141024_S2R3_9dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141024_S2R3_9dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141026_S2R2_1dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141026_S2R2_1dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141026_S2R2_2dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141026_S2R2_2dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141026_S2R2_3dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141026_S2R2_3dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141026_S2R2_4dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141026_S2R2_4dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141026_S2R2_5dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141026_S2R2_5dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141026_S2R2_6dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141026_S2R2_6dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141026_S2R2_7dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141026_S2R2_7dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141026_S2R2_8dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141026_S2R2_8dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141026_S2R2_9dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141026_S2R2_9dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141027_S2R4_1dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141027_S2R4_1dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141027_S2R4_2dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141027_S2R4_2dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141027_S2R4_3dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141027_S2R4_3dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141027_S2R4_4dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141027_S2R4_4dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141027_S2R4_5dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141027_S2R4_5dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141027_S2R4_6dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141027_S2R4_6dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141027_S2R4_7dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141027_S2R4_7dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141027_S2R4_8dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141027_S2R4_8dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141027_S2R4_9dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/20141027_S2R4_9dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/220141017_S1R1_6dig.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/220141017_S1R1_6dig.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/mascot_daemon_merge_S1R1_sep.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/mascot_daemon_merge_S1R2_sep.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/mascot_daemon_merge_S1R3_sep.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/mascot_daemon_merge_S1R4_sep.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/mascot_daemon_merge_S2R1_sep.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/mascot_daemon_merge_S2R2_sep.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/mascot_daemon_merge_S2R3_sep.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/mascot_daemon_merge_S2R4_sep.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/F003616_Sep_S2R3.mzid.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/F003617_Sep_S2R1.mzid.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/F003618_Sep_S1R2.mzid.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/F003619_Sep_S1R4.mzid.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/F003620_Sep_S1R1.mzid.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/F003621_Sep_S1R3.mzid.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/F003622_Sep_S2R4.mzid.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/F003623_Sep_S2R2.mzid.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/BiocathodAugandSep_allsamples_final.xlsx</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/Biocathode_AugandSep_extractions combined.sf3</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/Opt_V3.html</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/Sub_V3.html</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/PTandSETcombined_Fisherexacttest_normalizedweighted spectra_annotation.xlsx</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001590/mascot_daemon_merge_178.mgf</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

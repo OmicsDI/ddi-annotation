@@ -1,0 +1,151 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000627">
+      <name>Proteomic analysis of Pichia pastoris GS115</name>
+      <description>Pichia pastoris GS115 was cultured in YPD medium and protein were extracted and separated on SDS-PAGE followed by in-gel trypsin digestion. Protein were also digested in-solution using trypsin and fractionated using SCX and bRPLC. A total of 101 peptide fractions were analyzed on LTQ-Orbitrap Velos mass spectrometer. The raw data was searched using Mascot, Sequest and MS Amanda search algorithms against P. pastorisGS115 NCBI RefSeq database through Proteome Discoverer software suite.</description>
+      <cross_references>
+        <ref dbkey="644223" dbname="TAXONOMY"/>
+        <ref dbkey="25346215" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2013-12-08"/>
+        <date type="publication" value="2014-11-18"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000627</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Not available</field>
+        <field name="instrument_platform">LTQ Orbitrap Velos</field>
+        <field name="species">Komagataella pastoris (strain GS115 / ATCC 20864) (Yeast) (Pichia pastoris)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">acetylated residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">Pichia</field>
+        <field name="submitter_keywords"> LC-MS/MS</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Renuse S, Madugundu AK, Kumar P, Nair BG, Gowda H, Prasad TS, Pandey A. Proteomic analysis and genome annotation of Pichia pastoris, a recombinant protein expression host. Proteomics. 2014 Oct 27</field>
+        <field name="submitter">Akhilesh Pandey</field>
+        <field name="submitter_mail">pandey@jhmi.edu</field>
+        <field name="submitter_affiliation">Johns Hopkins University</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_In-Gel_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_In-Gel_10.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_In-Gel_11.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_In-Gel_12.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_In-Gel_13.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_In-Gel_14.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_In-Gel_15.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_In-Gel_16.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_In-Gel_17.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_In-Gel_18.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_In-Gel_19.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_In-Gel_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_In-Gel_20.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_In-Gel_21.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_In-Gel_22.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_In-Gel_23.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_In-Gel_24.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_In-Gel_25.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_In-Gel_26.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_In-Gel_27.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_In-Gel_28.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_In-Gel_29.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_In-Gel_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_In-Gel_30.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_In-Gel_31.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_In-Gel_4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_In-Gel_5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_In-Gel_6.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_In-Gel_7.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_In-Gel_8.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_In-Gel_9.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_In-Gel_Blank_After_10.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_In-Gel_Blank_After_18.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_Pooled_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_Pooled_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_Pooled_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_Pooled_4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_Pooled_5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_Pooled_D1_HCD.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_SCX_01.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_SCX_02.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_SCX_03.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_SCX_04.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_SCX_05.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_SCX_06.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_SCX_07.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_SCX_08.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_SCX_09.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_SCX_10.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_SCX_11.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_SCX_12.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_SCX_13R.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_SCX_14.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_SCX_15.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_SCX_16.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_SCX_17.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_SCX_18.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_SCX_19.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_SCX_20.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_SCX_21.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_SCX_22.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_SCX_23.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_SCX_24.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_bRPLC_01.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_bRPLC_01_Pre.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_bRPLC_02.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_bRPLC_03.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_bRPLC_04.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_bRPLC_05.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_bRPLC_06.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_bRPLC_07.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_bRPLC_08.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_bRPLC_09.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_bRPLC_10.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_bRPLC_11.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_bRPLC_12.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_bRPLC_13.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_bRPLC_14.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_bRPLC_15.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_bRPLC_16.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_bRPLC_17.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_bRPLC_17_R.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_bRPLC_17_R2_120516201100.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_bRPLC_17r.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_bRPLC_18.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_bRPLC_19.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_bRPLC_20R.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_bRPLC_20_051712.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_bRPLC_21_120518051842.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_bRPLC_21_R.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_bRPLC_22.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_bRPLC_23.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_bRPLC_24.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_bRPLC_Pooled_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_bRPLC_Pooled_1_exlist.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_bRPLC_Pooled_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_bRPLC_Pooled_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_bRPLC_Pooled_4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_bRPLC_pooled_2_Exlist_120611211242.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_bRPLC_pooled_3_Exlist.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/Pichia_bRPLC_pooled_4_Exlist.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/MultiConsensus_112213.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD000627/MultiConsensus_PPAS_112213.prot.xml</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

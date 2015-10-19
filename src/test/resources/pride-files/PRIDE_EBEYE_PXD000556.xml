@@ -1,0 +1,62 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000556">
+      <name>E. coli BW25113 and knock-out mutants (delta-pka, delta-arcA and delta-pka_arcA) LC MS/MS</name>
+      <description>1ml of WT, delta-pka, delta-arcA and delta-pka delta-arcA culture broth was harvested at u=0.4 h-1, centrifuged (14000 x g for 1 min at 4 degrees C), pellet washed once with PBS, flash frozen with liquid N2 and kept at -80 degrees C until further processing. Frozen pellets were melted on ice after which 100 ug of sample biomass was mixed with 100 ug of SILAC-labeled E. coli biomass (internal standard) and frozen at -80 degrees C.  Cell pellets were suspended in 100 uL SDS lysis buffer (4% SDS/100 mM TRIS-HCl pH 8/100 mM DTT) and heated at 95  degrees C for 15 min. Cell lysates were sonicated with ultrasound for a few pulses and pelleted by centrifugation. Cell lysates were digested with trypsin according to Filter Aided Sample Preparation protocol (FASP) (Wiśniewski et al. 2009) and purified with C-18 StageTips (Rappsilber et al. 2007). LC-MS/MS analysis was performed using an Agilent 1200 series nanoflow system (Agilent Technologies) connected to a LTQ Orbitrap mass-spectrometer (Thermo Electron, San Jose, CA, USA) equipped with a nanoelectrospray ion source (Proxeon, Odense, Denmark). Peptides were separated with a 240-minute gradient from 2 to 40% B (A: 0.5% acetic acid, B: 0.5% acetic acid/80% acetonitrile) using a flow-rate of 200 nl/min. Data analysis of raw MS-files was performed by the MaxQuant software package version 1.3.0.5 (Cox and Mann 2008). Peak lists were searched using the Andromeda search engine (built into MaxQuant) against an E. coli database (downloaded 09.04.2013 from http://www.uniprot.org/) which was supplemented with common contaminants (e.g human keratin, trypsin). Full tryptic specificity, a maximum of two missed cleavages and a mass tolerance of 0.5 Da for fragment ions was specified in the MaxQuant search. Carbamidomethylation of cysteine was set as a fixed modification, and methionine oxidation and protein N-terminal acetylation were set as variable modifications. The required false discovery rate was set to 1% for both peptide and protein levels and the minimum required peptide length was set to six amino acids. “Match between runs” option with a time window of 1.5 min was allowed.</description>
+      <cross_references>
+        <ref dbkey="562" dbname="TAXONOMY"/>
+        <ref dbkey="7029" dbname="TAXONOMY"/>
+        <ref dbkey="24633370" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2013-10-30"/>
+        <date type="publication" value="2014-03-19"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000556</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Not available</field>
+        <field name="instrument_platform">LTQ Orbitrap</field>
+        <field name="species">Escherichia coli</field>
+        <field name="species">Acyrthosiphon pisum (Pea aphid)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Not available</field>
+        <field name="modification">N-acetylated residue</field>
+        <field name="modification">methionine oxidation with neutral loss of 64 Da</field>
+        <field name="modification">S-carboxamidomethyl-L-cysteine</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="submitter_keywords">E. coli</field>
+        <field name="submitter_keywords"> delta-pka</field>
+        <field name="submitter_keywords"> delta-arcA</field>
+        <field name="submitter_keywords"> delta-pka_arcA</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Peebo K, Valgepea K, Nahku R, Riis G, Oun M, Adamberg K, Vilu R. Coordinated activation of PTA-ACS and TCA cycles strongly reduces overflow metabolism of acetate in Escherichia coli. Appl Microbiol Biotechnol. 2014 Mar 15</field>
+        <field name="submitter">Karl Peebo</field>
+        <field name="submitter_mail">karl@tftak.eu</field>
+        <field name="submitter_affiliation">Fermentation Department</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000556/130329_07_Orbi1_SK_SER_F200_S1_P5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000556/130402_05_Orbi1_SK_SER_pka1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000556/130402_06_Orbi1_SK_SER_pka2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000556/130402_07_Orbi1_SK_SER_pka3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000556/130403_17_Orbi1_SK_SER_pka_arcA1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000556/130403_18_Orbi1_SK_SER_pka_arcA2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000556/130403_19_Orbi1_SK_SER_pka_arcA3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000556/130404_03_Orbi1_SK_SER_arcA1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000556/130404_04_Orbi1_SK_SER_arcA2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000556/130404_05_Orbi1_SK_SER_arcA3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000556/txt.zip</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

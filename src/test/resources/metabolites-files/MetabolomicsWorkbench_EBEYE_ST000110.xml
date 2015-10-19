@@ -1,0 +1,39 @@
+<database>
+  <name>MetabolomicsWorkbench</name>
+  <description>The Metabolomics Workbench will serve as a national and international repository for metabolomics data and metadata and will provide analysis tools and access to metabolite standards, protocols, tutorials, training, and more.</description>
+  <release>1.0</release>
+  <release_date>15-05-20</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="ST000110">
+      <name>SIRM Analysis of human P493 cells under hypoxia  in [U-13C/15N] labeled Glutamine medium (Both positive and ion mode FTMS)</name>
+      <description>SIRM Analysis of MYC inducible P493 cells under normoxia and hypoxia in [U-13C/15N] labeled Glutamine medium</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="14-09-29"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Metabolomics</field>
+        <field name="full_dataset_link">http://www.metabolomicsworkbench.org/data/DRCCMetadata.php?Mode=Study&amp;StudyID=ST000110</field>
+        <field name="repository">MetabolomicsWorkbench</field>
+        <field name="data_protocol">ESI positive ion mode</field>
+        <field name="data_protocol">GCMS positive ion mode</field>
+        <field name="data_protocol">ESI negative ion mode</field>
+        <field name="instrument_platform">Thermo LTQ-FT</field>
+        <field name="instrument_platform">Thermo LTQ-FT</field>
+        <field name="instrument_platform">GC-EI-MS, Thermo ITQ</field>
+        <field name="study_factor">Oxygen Condition:hypoxia | Treatment:Tetracycline </field>
+        <field name="study_factor">Oxygen Condition:hypoxia | Treatment:None</field>
+        <field name="study_factor">Oxygen Condition:normoxia | Treatment:Tetracycline </field>
+        <field name="study_factor">Oxygen Condition:normoxia | Treatment:None</field>
+        <field name="species">Homo sapiens</field>
+        <field name="technology_type">mass spectrometry</field>
+        <field name="submitter">Teresa Fan</field>
+        <field name="submitter_mail">twmfan@gmail.com</field>
+        <field name="submitter_affiliation">Toxicology, University of Kentucky</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

@@ -1,0 +1,67 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000061">
+      <name>Proteome-wide purification of O-GlcNAc proteins</name>
+      <description>Global O-GlcNAc profiling: proteome-wide purification and identification of O-GlcNAc proteins using GlcNAz metabolic labeling in combination with Click chemistry and label-free LC-MS/MS-based quantification. OGA inhibition: same workflow as 'Global O-GlcNAc profiling'; inhibition of O-GlcNAcase by a small molecule inhibitor. O-GlcNAc sites: identification of O-GlcNAc sites by metabolic labeling/Click chemistry followed by beta elimination Bioinformatics workflow of Global O-GlcNAc profiling and OGA inhibition experiments: Raw mass spectrometry files have been processed using Progenesis LC-MS (4.0) and exported as Mascot generic format for subsequent Mascot (2.3) database search. Mascot search results were processed using Mascot Percolator and the results have been imported back into Progenesis as well as imported to Scaffold (3.5.1). The Progenesis peptide quantification report has been exported as Excel file. Bioinformatics workflow of O-GlcNAc site identification: Raw mass spectrometry files have been processed using Mascot Distiller 2.3 and searched with Mascot. Mascot search results were processed using the Mascot Percolator and imported into Scaffold (3.5.1). After manual validation, peptide and protein identifications (Scaffold file) were imported into Scaffold PTM 2.0 for the estimation of site localization probabilities.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="23301498" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2012-10-31"/>
+        <date type="publication" value="2013-01-10"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000061</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Not available</field>
+        <field name="instrument_platform">LTQ Orbitrap</field>
+        <field name="instrument_platform">LTQ Orbitrap Velos</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Not available</field>
+        <field name="modification">O-(N-acetylamino)glucosyl-L-threonine</field>
+        <field name="modification">O-(N-acetylamino)glucosyl-L-serine</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="submitter_keywords">O-GlcNAc</field>
+        <field name="submitter_keywords"> proteomics</field>
+        <field name="submitter_keywords"> metabolic labeling</field>
+        <field name="submitter_keywords"> Click chemistry</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Hahne H, Sobotzki N, Nyberg T, Helm D, Borodkin VS, van Aalten DM, Agnew B, Kuster B; Proteome wide purification and identification of O-GlcNAc-modified proteins using click chemistry and mass spectrometry., J Proteome Res, 2013 Feb 1, 12, 2, 927-36, </field>
+        <field name="submitter">Hannes Hahne</field>
+        <field name="submitter_mail">hannes.hahne@tum.de</field>
+        <field name="submitter_affiliation">Chair of Proteomics and Bioanalytics</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/01/PXD000061/OGA_inhibition_combined_IDs.sf3</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/01/PXD000061/OGlcNAc_sites.sf3</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/01/PXD000061/OGlcNAc_sites.sptm</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/01/PXD000061/Global_profiling_combined_IDs.sf3</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/01/PXD000061/Global_profiling_raw_unlabelled_background_00469_D08_P003387_B00_F01_R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/01/PXD000061/OGA_inhibition_raw_unlabelled_background_00326_F08_P002256_B00_F01_R1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/01/PXD000061/OGA_inhibition_raw_GlcNAz_labelled_GlcNAcstatinG_treated_00326_E08_P002255_B00_F01_R1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/01/PXD000061/OGA_inhibition_raw_GlcNAz_labelled_untreated_00326_D08_P002254_B00_F01_R1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/01/PXD000061/OGlcNAc_sites_raw_Velos_00469_A08_P003386_B00_F02_R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/01/PXD000061/OGlcNAc_sites_raw_OrbiXL_00396_C02_P002814_B00_F02_R1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/01/PXD000061/OGlcNAc_sites_raw_OrbiXL_00396_D02_P002815_B00_F02_R1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/01/PXD000061/OGlcNAc_sites_raw_OrbiXL_00396_E02_P002816_B00_F02_R1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/01/PXD000061/OGA_inhibition_combined_peaklists.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/01/PXD000061/Global_profiling_combined_peaklists.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/01/PXD000061/Global_profiling_raw_GlcNAz_labelled_00469_C08_P003386_B00_F01_R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/01/PXD000061/Global_profiling_combined_IDs.mzid</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/01/PXD000061/OGA_inhibition_combined_IDs.mzid</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/01/PXD000061/OGlcNAc_sites.mzid</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

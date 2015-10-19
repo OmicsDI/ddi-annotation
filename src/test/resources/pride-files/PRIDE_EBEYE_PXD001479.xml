@@ -1,0 +1,80 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001479">
+      <name>The gut microbiota affects the mucus barrier</name>
+      <description>Two C57BL/6 mice colonies maintained in two rooms in the same specific pathogen free (SPF) facility were found to have different gut microbiota and a mucus phenotype specific for each colony. The thickness and growth of the colon mucus was similar in the two colonies, but one colony had mucus not penetrable to bacteria or bacterial-sized beads, similar to what occurs in free-living wild mice. On the other hand, the other colony had an inner mucus layer that was penetrable to bacteria and beads. These different properties of the mucus in the two rooms were dependent on the microbiota, as the phenotypes were transmissible by transfer of ceacal microbiota to germ-free mice. Mice with an impenetrable mucus layer had increased amounts of Erysipelotrichi, while mice with a penetrable mucus layer had higher levels of Proteobacteria and TM7 bacteria in the distal colon mucus. Thus bacteria affect mucus barrier properties in ways that can have implications for health and disease.</description>
+      <cross_references>
+        <ref dbkey="10090" dbname="TAXONOMY"/>
+        <ref dbkey="25525071" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-11-12"/>
+        <date type="publication" value="2015-02-09"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001479</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Mucus samples removed after thickness measurements were solubilized in a guanidinium hydrochloride-based buffer, following the filter-aided sample preparation (FASP) method as described before [Rodriguez-Pineiro AM, Bergstrom JH, Ermund A, Gustafsson JK, Schutte A, Johansson ME, and Hansson GC (2013) Studies of mucus in mouse stomach, small intestine, and colon. II. Gastrointestinal mucus proteome reveals Muc2 and Muc5ac accompanied by a set of core proteins. Am J Physiol Gastrointest Liver Physiol 305: G348-G356]. Proteins were during this procedure digested with 10 ng/μL porcine trypsin (Promega), and the resulting peptides were eluted and cleaned in StageTips. These samples were then analyzed by nano-reversed phase liquid chromatography (nRPLC) coupled to electrospray ionization-tandem mass spectrometry (ESI-MS/MS) in an LTQ-Orbitrap XL (Thermo Scientific), following the settings described in the article mentioned above.</field>
+        <field name="data_protocol">Data from the MS/MS experiments were analyzed with MaxQuant 1.2.2.5. The databases used were the MaxQuant contaminant database, and the UniProt-SwissProt mouse database (version of March 2012, only reviewed sequences) completed with our public mucin database (http://www.medkem.gu.se/mucinbiology/databases/). For the searches, Met oxidation and N-terminal acetylation were set as variable modifications, and Cys carbamidomethylation as fixed. The main search error was limited to 6 ppm, with a false discovery rate threshold of 0.01. Protein amounts were relatively quantified (ppm) by their intensity-based absolute quantification (iBAQ) in a total of 3 biological replicates per room and food studied.</field>
+        <field name="instrument_platform">LTQ Orbitrap</field>
+        <field name="species">Mus musculus (Mouse)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">disease free</field>
+        <field name="tissue">ileum</field>
+        <field name="tissue">colon</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">acetylated residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">Mucus</field>
+        <field name="submitter_keywords"> ileum</field>
+        <field name="submitter_keywords"> colon</field>
+        <field name="submitter_keywords"> microbiota</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Jakobsson HE, Rodríguez-Piñeiro AM, Schütte A, Ermund A, Boysen P, Bemark M, Sommer F, Bäckhed F, Hansson GC, Johansson ME. The composition of the gut microbiota shapes the colon mucus barrier. EMBO Rep. 2015 Feb;16(2):164-77</field>
+        <field name="submitter">Ana M. Rodriguez-Pineiro</field>
+        <field name="submitter_mail">ana.rodriguez@medkem.gu.se</field>
+        <field name="submitter_affiliation">Biomedicinska inst</field>
+        <field name="labhead">Gunnar C. Hansson</field>
+        <field name="labhead_mail">gunnar.hansson@medkem.gu.se</field>
+        <field name="labhead_affiliation">Department of Medical Biochemistry and Cell Biology University of Gothenburg Sweden</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001479/AR_120822_08.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001479/AR_120822_100.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001479/AR_120822_104.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001479/AR_120822_110.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001479/AR_120822_119.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001479/AR_120822_121.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001479/AR_120822_123.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001479/AR_120822_125.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001479/AR_120822_127.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001479/AR_120822_129.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001479/AR_120822_131.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001479/AR_120822_133.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001479/AR_120822_137.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001479/AR_120822_14.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001479/AR_120822_16.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001479/AR_120822_24.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001479/AR_120822_32.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001479/AR_120822_46.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001479/AR_120822_56.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001479/AR_120822_62.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001479/AR_120822_66.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001479/AR_120822_72.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001479/AR_120822_75.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001479/AR_120822_85.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001479/Key.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001479/SEARCH.zip</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

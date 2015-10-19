@@ -1,0 +1,98 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000405">
+      <name>Ndd1 phosphorylation pattern upon DNA damage</name>
+      <description>The transcriptional activator NDD1 was purified from wt and rad53 or mec1 mutant  treated with hydroxyurea or methyl-methanesulfonate via HTB-tag , digested directly from the streptavidin beads, and then subjected to LC-MSMS analysis. Beads were alternatively digested with trypsin and chymotrypsin for better sequence coverage.</description>
+      <cross_references>
+        <ref dbkey="4932" dbname="TAXONOMY"/>
+        <ref dbkey="24324010" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2013-08-07"/>
+        <date type="publication" value="2013-12-19"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000405</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Not available</field>
+        <field name="instrument_platform">LTQ Orbitrap Velos</field>
+        <field name="species">Saccharomyces cerevisiae (Baker's yeast)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Not available</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">phosphorylated residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="submitter_keywords">Ndd1</field>
+        <field name="submitter_keywords"> transcription factor</field>
+        <field name="submitter_keywords"> hydroxyurea</field>
+        <field name="submitter_keywords"> MMS</field>
+        <field name="submitter_keywords"> DNA damage</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Yelamanchi SK, Veis J, Anrather D, Klug H, Ammerer G; Genotoxic stress prevents Ndd1 dependent transcriptional activation of G2/M specific genes in S. cerevisiae., Mol Cell Biol, 2013 Dec 9, </field>
+        <field name="submitter">Dorothea Anrather</field>
+        <field name="submitter_mail">dorothea.anrather@univie.ac.at</field>
+        <field name="submitter_affiliation">Dep. for Biochemistry and Cell Biology</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/120921V_Ndd1_mec1_+HU_chymo.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/120921V_Ndd1_mec1_+HU_tryp.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/120921V_Ndd1_sml1_+HU_chymo.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/120921V_Ndd1_sml1_+HU_tryp.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/121005V_Ndd1_mec1_+HU_chymo.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/121005V_Ndd1_mec1_+HU_tryp.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/121005V_Ndd1_sml1_+HU_chymo.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/121005V_Ndd1_sml1_+HU_tryp.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/121121V_Ndd1_sml1_+MMS_chymo_30per.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/121121V_Ndd1_sml1_+MMS_tryp_30per.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/121121V_Ndd1_sml1_-MMS_chymo_30per.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/121121V_Ndd1_sml1_-MMS_tryp_30per.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/121207V_Ndd1_rad53_+HU_chymo_25per.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/121207V_Ndd1_rad53_+HU_tryp_25per.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/121207V_Ndd1_rad53_+MMS_chymo_25per.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/121207V_Ndd1_rad53_+MMS_tryp_25per.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/120921V_Ndd1_mec1_+HU_chymo.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/120921V_Ndd1_mec1_+HU_tryp.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/120921V_Ndd1_sml1_+HU_chymo.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/120921V_Ndd1_sml1_+HU_tryp.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/121005V_Ndd1_mec1_+HU_chymo.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/121005V_Ndd1_mec1_+HU_tryp.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/121005V_Ndd1_sml1_+HU_chymo.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/121005V_Ndd1_sml1_+HU_tryp.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/121121V_Ndd1_sml1_+MMS_chymo_30per.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/121121V_Ndd1_sml1_-MMS_chymo_30per.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/121207V_Ndd1_rad53_+HU_chymo_25per.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/121207V_Ndd1_rad53_+HU_tryp_25per.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/121207V_Ndd1_rad53_+MMS_chymo_25per.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/121207V_Ndd1_rad53_+MMS_tryp_25per.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/121121V_Ndd1_sml1_+MMS_tryp_30per.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/121121V_Ndd1_sml1_-MMS_tryp_30per.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/120921V_Ndd1_mec1_+HU_chymo.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/120921V_Ndd1_mec1_+HU_tryp.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/120921V_Ndd1_sml1_+HU_chymo.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/120921V_Ndd1_sml1_+HU_tryp.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/121005V_Ndd1_mec1_+HU_chymo.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/121005V_Ndd1_mec1_+HU_tryp.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/121005V_Ndd1_sml1_+HU_chymo.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/121005V_Ndd1_sml1_+HU_tryp.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/121121V_Ndd1_sml1_+MMS_chymo_30per.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/121121V_Ndd1_sml1_-MMS_chymo_30per.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/121207V_Ndd1_rad53_+HU_chymo_25per.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/121207V_Ndd1_rad53_+HU_tryp_25per.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/121207V_Ndd1_rad53_+MMS_chymo_25per.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/121207V_Ndd1_rad53_+MMS_tryp_25per.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/121121V_Ndd1_sml1_+MMS_tryp_30per.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000405/121121V_Ndd1_sml1_-MMS_tryp_30per.pep.xml</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

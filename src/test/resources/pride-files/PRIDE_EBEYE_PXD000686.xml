@@ -1,0 +1,73 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000686">
+      <name>Tousled-like kinases phosphorylate Asf1 to promote histone supply during DNA replication</name>
+      <description>During DNA replication, nucleosomes are rapidly assembled on newly synthesized DNA to restore chromatin organization. Asf1, a key histone H3-H4 chaperone required for this process, is phosphorylated by Tousled-Like Kinases (TLKs). Here, we identify TLK phosphorylation sites by mass spectrometry and dissect how phosphorylation impacts on human Asf1 function. The divergent C-terminal tail of Asf1a is phosphorylated at several sites and this is required for timely progression through S phase. Consistent with this, biochemical analysis of wild-type and phospho-mimetic Asf1a shows that phosphorylation enhances binding to histones and the downstream chaperones CAF-1 and HIRA. Moreover, we find that TLK phosphorylation of Asf1a is induced in cells experiencing deficiency of new histones and that TLK interaction with Asf1a involves its histone-binding pocket. We thus propose that TLK signaling promotes histone supply in S phase by targeting histone-free Asf1 and stimulating its ability to shuttle histones to sites of chromatin assembly.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="24598821" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-01-16"/>
+        <date type="publication" value="2014-03-06"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000686</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Asf1a and Asf1b gel bands were subjected to in-gel digestion as previously described, with replicate bands digested with either 100 ng of trypsin (overnight at 37°C) or thermolysin (Calbiochem, 60 min at 56°C). Phosphopeptide enrichment was performed on titanium dioxide microcolumns before the resulting eluates were desalted with Poros R3 material. LC-MS/MS was conducted on an EASY-nLC system (Thermo Fisher Scientific) coupled to an LTQ-Orbitrap XL mass spectrometer (Thermo Fisher Scientific) as reported, with a minimum threshold of 30000 precursor ions required to trigger MS/MS spectrum acquisition.</field>
+        <field name="data_protocol">Using Proteome Discoverer 1.0 software (Thermo Fisher Scientific), raw data files were submitted to Mascot database searches 2.2.04 (Matrix Science). An NCBI non-redundant database (20090412) containing 222460 human protein sequences was searched with the following parameters: ESI-TRAP was selected as the instrument type, with specified mass tolerances of 10 ppm (precursor) and 0.6 Da (fragment). N-terminal protein acetylation, methionine oxidation and phosphorylation (serine, threonine and tyrosine) were set as variable modifications. Cysteine carbamidomethylation was included as a fixed modification. Thermolytic searches were permitted up to nine missed cleavages, with cleavage specificity set N-terminal to valine, isoleucine, leucine, phenylalanine, alanine and methionine. Tryptic searches were conducted with one missed cleavage permissible. Only Asf1a and Asf1b phosphopeptides with Mascot ion scores above 20 were considered for evaluation, which involved manual validation of the MS/MS spectrum to determine the site of phosphorylation.</field>
+        <field name="instrument_platform">LTQ Orbitrap</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">N-acetylated residue</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">phosphorylated residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Affinity purification coupled with mass spectrometry proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">Asf1a</field>
+        <field name="submitter_keywords"> Asf1b</field>
+        <field name="submitter_keywords"> phosphopeptide</field>
+        <field name="submitter_keywords"> thermolysin</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Klimovskaia IM, Young C, Strømme CB, Menard P, Jasencakova Z, Mejlvang J, Ask K, Ploug M, Nielsen ML, Jensen ON, Groth A. Tousled-like kinases phosphorylate Asf1 to promote histone supply during DNA replication. Nat Commun. 2014 Mar 6;5:3394</field>
+        <field name="submitter">Clifford Young</field>
+        <field name="submitter_mail">clifford.young@cpr.ku.dk</field>
+        <field name="submitter_affiliation">Department of Proteomics, The Novo Nordisk Foundation Center for Protein Research, University of Copenhagen, Denmark.</field>
+        <field name="labhead">Ole Nørregaard Jensen</field>
+        <field name="labhead_mail">jenseno@bmb.sdu.dk</field>
+        <field name="labhead_affiliation">Department of Biochemistry and Molecular Biology, University of Southern Denmark, Campusvej 55, DK-5230 Odense M, Denmark.</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000686/Ob003244.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000686/Ob003244.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000686/Ob003244.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000686/Ob02496.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000686/Ob02496.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000686/Ob02496.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000686/Ob02497.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000686/Ob02497.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000686/Ob02497.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000686/Ob02527.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000686/Ob02527.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000686/Ob02527.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000686/Ob02532.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000686/Ob02532.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000686/Ob02532.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000686/Ob02533.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000686/Ob02533.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000686/Ob02533.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000686/Readme.pdf</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

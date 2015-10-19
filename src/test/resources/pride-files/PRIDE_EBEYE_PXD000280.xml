@@ -1,0 +1,222 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000280">
+      <name>Arabidopsis thaliana Cytochrome c Novel Partners Identification by LTQ</name>
+      <description>Programmed cell death is an event displayed by many different organisms along the evolutionary scale. In plants, it is necessary for development and for the hypersensitive response to stress or pathogenic infection. A common feature to programmed cell death among organisms is the mitochondria-to-cytosol translocation of cytochrome c. To understand the role of cytochrome c in the onset of plant programmed cell death, a proteomic approach based on affinity chromatography has been developed, using Arabidopsis cytochrome c as bait. Eleven putative, new cytochrome c partners have been identified. Nine of them bind the heme protein in plant protoplasts and in human cells, as a heterologous system, according to Bimolecular Fluorescence Complementation. The binding affinities and the kinetic rate constants of three cytochrome c - target complexes have been estimated by Surface Plasmon Resonance. Our data suggest that the role of cytochrome c as a programmed cell death-signaling messenger could be evolutionarily well-conserved. Data Processing &amp; data analysis: Peptides were analyzed using a nanoliquid chromatography-MS/MS on an LTQ linear ion trap mass spectrometer (Thermo Electron San Jose, CA, USA).  The mass spectrometer was operated in the data-dependent mode to automatically switch between full MS and MS/MS acquisition. The parameters for ion scanning were the following: Full-scan MS(400-1800 m/z) plus top seven peaks Zoom/MS/MS (isolation width 2 m/z), normalized collision energy 35%. The scanning was performed using a dynamic exclusion list (120s exclusion list size of 50). Peak lists from all MS/MS spectra were extracted from the  Xcalibur  RAW  files  using  a  freely  available  program  DTAsupercharge  v.1.19 (http://msquant.sourceforge.net/). MASCOT 2.1 was used to search the Uniprot_Arabidopsis protein database 100323  (90895 sequences). Database search parameters used were the following: trypsin as enzyme; peptide tolerance, 300ppm; fragment ion tolerance, 0.6 Da; missed cleavage sites,1; fixed modification, carbamidomethyl cysteine and variable modifications, methionine oxidation. In all protein identifications the probability scores were greater than the score fixed by MASCOT (30) as  significant with a p-value &lt;0.05.</description>
+      <cross_references>
+        <ref dbkey="3702" dbname="TAXONOMY"/>
+        <ref dbkey="24019145" dbname="pubmed"/>
+        <ref dbkey="Q9SNB7" dbname="uniprot"/>
+        <ref dbkey="Q3EBN6" dbname="uniprot"/>
+        <ref dbkey="Q9SJT9" dbname="uniprot"/>
+        <ref dbkey="Q5W6H1" dbname="uniprot"/>
+        <ref dbkey="Q0DCP4" dbname="uniprot"/>
+        <ref dbkey="Q0WMN4" dbname="uniprot"/>
+        <ref dbkey="Q0WT91" dbname="uniprot"/>
+        <ref dbkey="Q8LCW9" dbname="uniprot"/>
+        <ref dbkey="Q0D7V1" dbname="uniprot"/>
+        <ref dbkey="Q53WK4" dbname="uniprot"/>
+        <ref dbkey="Q9T043" dbname="uniprot"/>
+        <ref dbkey="Q6NR90" dbname="uniprot"/>
+        <ref dbkey="Q56Y85" dbname="uniprot"/>
+        <ref dbkey="Q42112" dbname="uniprot"/>
+        <ref dbkey="Q87X73" dbname="uniprot"/>
+        <ref dbkey="Q564D6" dbname="uniprot"/>
+        <ref dbkey="Q4V3D1" dbname="uniprot"/>
+        <ref dbkey="Q9S9P1" dbname="uniprot"/>
+        <ref dbkey="Q9T0G2" dbname="uniprot"/>
+        <ref dbkey="Q0WRN0" dbname="uniprot"/>
+        <ref dbkey="Q0WWU9" dbname="uniprot"/>
+        <ref dbkey="Q9SKZ3" dbname="uniprot"/>
+        <ref dbkey="Q60DU3" dbname="uniprot"/>
+        <ref dbkey="Q0ILQ6" dbname="uniprot"/>
+        <ref dbkey="Q0JAI2" dbname="uniprot"/>
+        <ref dbkey="Q1H5G2" dbname="uniprot"/>
+        <ref dbkey="Q9FM47" dbname="uniprot"/>
+        <ref dbkey="A6XI99" dbname="uniprot"/>
+        <ref dbkey="Q0V7R6" dbname="uniprot"/>
+        <ref dbkey="Q650S9" dbname="uniprot"/>
+        <ref dbkey="Q9LH85" dbname="uniprot"/>
+        <ref dbkey="B0FV99" dbname="uniprot"/>
+        <ref dbkey="Q6ZL42" dbname="uniprot"/>
+        <ref dbkey="Q889X3" dbname="uniprot"/>
+        <ref dbkey="Q8LG45" dbname="uniprot"/>
+        <ref dbkey="Q2V4C7" dbname="uniprot"/>
+        <ref dbkey="Q6KFR8" dbname="uniprot"/>
+        <ref dbkey="Q9M885" dbname="uniprot"/>
+        <ref dbkey="Q3E9W5" dbname="uniprot"/>
+        <ref dbkey="Q9LFX8" dbname="uniprot"/>
+        <ref dbkey="Q42034" dbname="uniprot"/>
+        <ref dbkey="Q1H559" dbname="uniprot"/>
+        <ref dbkey="Q0E4R7" dbname="uniprot"/>
+        <ref dbkey="Q8LFN4" dbname="uniprot"/>
+        <ref dbkey="B9DGY4" dbname="uniprot"/>
+        <ref dbkey="O64955" dbname="uniprot"/>
+        <ref dbkey="P51407" dbname="uniprot"/>
+        <ref dbkey="Q9FMY5" dbname="uniprot"/>
+        <ref dbkey="O04947" dbname="uniprot"/>
+        <ref dbkey="Q8LCC2" dbname="uniprot"/>
+        <ref dbkey="Q9C514" dbname="uniprot"/>
+        <ref dbkey="C0Z2S4" dbname="uniprot"/>
+        <ref dbkey="C0Z348" dbname="uniprot"/>
+        <ref dbkey="Q9MAL6" dbname="uniprot"/>
+        <ref dbkey="Q56WD9" dbname="uniprot"/>
+        <ref dbkey="Q5VND6" dbname="uniprot"/>
+        <ref dbkey="Q8LB28" dbname="uniprot"/>
+        <ref dbkey="Q3E8J0" dbname="uniprot"/>
+        <ref dbkey="Q9ZVD0" dbname="uniprot"/>
+        <ref dbkey="Q0V7W1" dbname="uniprot"/>
+        <ref dbkey="Q0WRA6" dbname="uniprot"/>
+        <ref dbkey="Q9SIM4" dbname="uniprot"/>
+        <ref dbkey="Q8LEQ0" dbname="uniprot"/>
+        <ref dbkey="C0Z3G4" dbname="uniprot"/>
+        <ref dbkey="Q3EAL7" dbname="uniprot"/>
+        <ref dbkey="B3H684" dbname="uniprot"/>
+        <ref dbkey="Q9SSF1" dbname="uniprot"/>
+        <ref dbkey="C0Z3G9" dbname="uniprot"/>
+        <ref dbkey="P46286" dbname="uniprot"/>
+        <ref dbkey="Q8LAP5" dbname="uniprot"/>
+        <ref dbkey="Q7X752" dbname="uniprot"/>
+        <ref dbkey="Q8H0X7" dbname="uniprot"/>
+        <ref dbkey="B9DFS7" dbname="uniprot"/>
+        <ref dbkey="Q8VY01" dbname="uniprot"/>
+        <ref dbkey="Q9LZR5" dbname="uniprot"/>
+        <ref dbkey="Q0WSD5" dbname="uniprot"/>
+        <ref dbkey="Q8LC48" dbname="uniprot"/>
+        <ref dbkey="Q0WS50" dbname="uniprot"/>
+        <ref dbkey="Q9ASR1" dbname="uniprot"/>
+        <ref dbkey="Q8H7C6" dbname="uniprot"/>
+        <ref dbkey="Q8L7K1" dbname="uniprot"/>
+        <ref dbkey="P49227" dbname="uniprot"/>
+        <ref dbkey="Q8LD03" dbname="uniprot"/>
+        <ref dbkey="Q9FZ76" dbname="uniprot"/>
+        <ref dbkey="P82805" dbname="uniprot"/>
+        <ref dbkey="Q9FJX2" dbname="uniprot"/>
+        <ref dbkey="Q944L7" dbname="uniprot"/>
+        <ref dbkey="Q9M9W1" dbname="uniprot"/>
+        <ref dbkey="Q0WLE7" dbname="uniprot"/>
+        <ref dbkey="P57691" dbname="uniprot"/>
+        <ref dbkey="Q9SGA2" dbname="uniprot"/>
+        <ref dbkey="Q0WS75" dbname="uniprot"/>
+        <ref dbkey="Q39256" dbname="uniprot"/>
+        <ref dbkey="Q9FF52" dbname="uniprot"/>
+        <ref dbkey="Q2V395" dbname="uniprot"/>
+        <ref dbkey="Q2V3X4" dbname="uniprot"/>
+        <ref dbkey="Q0E2I8" dbname="uniprot"/>
+        <ref dbkey="Q0J8A4" dbname="uniprot"/>
+        <ref dbkey="O80439" dbname="uniprot"/>
+        <ref dbkey="Q9SRH9" dbname="uniprot"/>
+        <ref dbkey="A8MQR4" dbname="uniprot"/>
+        <ref dbkey="C0Z2Q9" dbname="uniprot"/>
+        <ref dbkey="Q9LMP8" dbname="uniprot"/>
+        <ref dbkey="Q0WQY6" dbname="uniprot"/>
+        <ref dbkey="Q9LX88" dbname="uniprot"/>
+        <ref dbkey="B9DI24" dbname="uniprot"/>
+        <ref dbkey="Q9FIX6" dbname="uniprot"/>
+        <ref dbkey="B5BRD8" dbname="uniprot"/>
+        <ref dbkey="Q0WMZ3" dbname="uniprot"/>
+        <ref dbkey="Q0DZF7" dbname="uniprot"/>
+        <ref dbkey="Q8LEI7" dbname="uniprot"/>
+        <ref dbkey="Q8GYH3" dbname="uniprot"/>
+        <ref dbkey="Q93VA8" dbname="uniprot"/>
+        <ref dbkey="B3H4K4" dbname="uniprot"/>
+        <ref dbkey="Q38809" dbname="uniprot"/>
+        <ref dbkey="Q0IZY3" dbname="uniprot"/>
+        <ref dbkey="Q42214" dbname="uniprot"/>
+        <ref dbkey="Q9C9C5" dbname="uniprot"/>
+        <ref dbkey="Q7XLD5" dbname="uniprot"/>
+        <ref dbkey="P60040" dbname="uniprot"/>
+        <ref dbkey="Q3EBG6" dbname="uniprot"/>
+        <ref dbkey="Q3E700" dbname="uniprot"/>
+        <ref dbkey="Q8LBI1" dbname="uniprot"/>
+        <ref dbkey="B9DHA6" dbname="uniprot"/>
+        <ref dbkey="Q0WW72" dbname="uniprot"/>
+        <ref dbkey="Q9ZPV5" dbname="uniprot"/>
+        <ref dbkey="Q0DK10" dbname="uniprot"/>
+        <ref dbkey="Q0WUV8" dbname="uniprot"/>
+        <ref dbkey="A8MRK6" dbname="uniprot"/>
+        <ref dbkey="P59223" dbname="uniprot"/>
+        <ref dbkey="P41916" dbname="uniprot"/>
+        <ref dbkey="Q0WW58" dbname="uniprot"/>
+        <ref dbkey="Q9LQH2" dbname="uniprot"/>
+        <ref dbkey="Q9LNU5" dbname="uniprot"/>
+        <ref dbkey="Q0WRH6" dbname="uniprot"/>
+        <ref dbkey="B9DFJ0" dbname="uniprot"/>
+        <ref dbkey="Q6YSN4" dbname="uniprot"/>
+        <ref dbkey="A8MRL6" dbname="uniprot"/>
+        <ref dbkey="Q7FAH2" dbname="uniprot"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2013-06-10"/>
+        <date type="publication" value="2013-11-11"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000280</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Not available</field>
+        <field name="instrument_platform">instrument model</field>
+        <field name="instrument_platform">LTQ</field>
+        <field name="species">Arabidopsis thaliana (Mouse-ear cress)</field>
+        <field name="cell_type">plant cell</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">cell suspension culture</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="submitter_keywords">Arabidopsis thaliana</field>
+        <field name="submitter_keywords"> H2O2</field>
+        <field name="submitter_keywords"> Programmed cell death</field>
+        <field name="submitter_keywords"> Protein-Protein Interactions</field>
+        <field name="submitter_keywords"> Cytochrome c</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">COMPLETE</field>
+        <field name="software">Matrix Science Mascot 2.1.0</field>
+        <field name="doi">10.6019/PXD000280</field>
+        <field name="publication">Martínez-Fábregas J, Díaz-Moreno I, González-Arzola K, Janocha S, Navarro JA, Hervás M, Bernhardt R, Díaz-Quintana A, De la Rosa MÁ; New Arabidopsis thaliana Cytochrome c Partners: A Look Into the Elusive Role of Cytochrome c in Programmed Cell Death in Plants., Mol Cell Proteomics, 2013 Dec, 12, 12, 3666-76, </field>
+        <field name="submitter">Jonathan Martinez Fabregas</field>
+        <field name="submitter_mail">jmartinezfabregas@dundee.ac.uk</field>
+        <field name="submitter_affiliation">Cell Signaling and Immunology</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000280/JM-Control-AIIIC.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000280/JM-Control-AIIIC.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000280/JM-Control-AIIIC.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000280/JM-Control-AIIIC-2horas.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000280/JM-Control-AIIIC-2horas.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000280/JM-Control-AIIIC-2horas.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000280/JM-Control-AIIIC-2horas-ok.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000280/JM-Control-AIIIC-2horas-ok.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000280/JM-Control-AIIIC-2horas-ok.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000280/JM-Control-Blank.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000280/JM-Control-Blank.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000280/JM-Control-Blank.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000280/JM-H2O2-AIIIC.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000280/JM-H2O2-AIIIC.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000280/JM-H2O2-AIIIC.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000280/JM-H2O2-AIIIC-2horas.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000280/JM-H2O2-AIIIC-2horas.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000280/JM-H2O2-AIIIC-2horas.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000280/JM-H2O2-AIIIC-2horas-ok.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000280/JM-H2O2-AIIIC-2horas-ok.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000280/JM-H2O2-AIIIC-2horas-ok.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000280/JM-H2O2-Blank.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000280/JM-H2O2-Blank.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000280/JM-H2O2-Blank.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000280/PRIDE_Exp_Complete_Ac_29628.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000280/PRIDE_Exp_Complete_Ac_29629.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000280/PRIDE_Exp_Complete_Ac_29630.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000280/PRIDE_Exp_Complete_Ac_29631.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000280/PRIDE_Exp_Complete_Ac_29632.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000280/PRIDE_Exp_Complete_Ac_29633.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000280/PRIDE_Exp_Complete_Ac_29634.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000280/PRIDE_Exp_Complete_Ac_29635.xml.gz</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

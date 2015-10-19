@@ -1,0 +1,62 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001549">
+      <name>Hsp90 inhibition induces both protein-specific and global changes in the ubiquitinome</name>
+      <description>We used stable isotope labeling and antibody-based peptide enrichment to quantify more than 1500 protein sites modified with a Gly-Gly motif, the remnant of ubiquitination, in human T-cells treated with an Hsp90 inhibitor. We compared the data with the evolution of net protein levels in the same cells and with changes in protein decay and synthesis rates from a previous study.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="25782750" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-11-27"/>
+        <date type="publication" value="2015-03-19"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001549</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Jurkat T-lymphocytes were fully SILAC labeled light or heavy (13C6-L-lysine, 13C615N4-L-arginine, ). Heavy cells were treated with 1 uM Geldanamycin and harvested at t=2h, 6h, 20h treatment, while light cells were treated with vehicle only (DMSO).  Extracts H+L (GA+DMSO) at each time point were mixed equimolarly , reduced/aklylated on cysteines and digested with Trypsin. Digests were either fractionated and analysed to determine changes in protein levels or used for affinity-based enrichment of modified peptides bearing an epsilon GlyGly-group on lysines, the remnant of Ubiquitination.</field>
+        <field name="data_protocol">After nanoLC-mass spectrometry, SILAC data were analysed with MaxQuant. Data for localized GlyGly sites (modified peptides) and their SILAC ratios were obtained, together with ratios for total protein changes. Data analysis steps are described in the file "Data_analysis_workflow_Ub_GA.txt".   Data for one main experiments are reported and discussed in the manuscript. Two other experiments were performed with slightly different experimental designs. The data are also found here in this repository.  Experimental design with names of files is given in  "EXPERIMENTAL DESIGN PROTEOMEXCHANGE.txt"</field>
+        <field name="instrument_platform">LTQ Orbitrap</field>
+        <field name="instrument_platform">LTQ Orbitrap Velos</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">T lymphocyte</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">cell culture</field>
+        <field name="modification">iodoacetic acid derivatized residue</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">chaperones</field>
+        <field name="submitter_keywords"> hsp90</field>
+        <field name="submitter_keywords"> protein folding</field>
+        <field name="submitter_keywords">  stress</field>
+        <field name="submitter_keywords"> ubiquitin</field>
+        <field name="submitter_keywords"> protein synthesis </field>
+        <field name="submitter_keywords">protein degradation</field>
+        <field name="submitter_keywords"> mass spectrometry</field>
+        <field name="submitter_keywords"> SILAC</field>
+        <field name="submitter_keywords">  quantitation</field>
+        <field name="quantification_method">SILAC</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Quadroni M, Potts A, Waridel P. Hsp90 inhibition induces both protein-specific and global changes in the ubiquitinome. J Proteomics. 2015 Mar 14. pii: S1874-3919(15)00088-3</field>
+        <field name="submitter">Manfredo Quadroni</field>
+        <field name="submitter_mail">manfredo.quadroni@unil.ch</field>
+        <field name="submitter_affiliation">University of Lausanne</field>
+        <field name="labhead">Manfredo Quadroni</field>
+        <field name="labhead_mail">manfredo.quadroni@unil.ch</field>
+        <field name="labhead_affiliation">Protein Analysis Facility Center for Integrative Genomics University of Lausanne 1015 LAUSANNE - SWITZERLAND</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001549/UB_GA_silac.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001549/MaxQuant_output.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001549/UB_GA_analysis.zip</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

@@ -1,0 +1,112 @@
+<database>
+  <name>MetabolomicsWorkbench</name>
+  <description>The Metabolomics Workbench will serve as a national and international repository for metabolomics data and metadata and will provide analysis tools and access to metabolite standards, protocols, tutorials, training, and more.</description>
+  <release>1.0</release>
+  <release_date>15-05-20</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="ST000107">
+      <name>Metabolomic and lipidomic profiles in response to exogenous insulin and GLP-1 infusions during prolonged fasting (LCMS)</name>
+      <description>Seventeen northern elephant seal pups constituting four different cohorts at Año Nuevo State Reserve were studied at two post-weaning periods: early (1-2 wk post weaning; n=5) and late (6-7 weeks post weaning; n=12). Study #1: Prior to each infusion protocol, plasma U/kg). Following the infusion, blood samples were collected at 10,To determine the effects of prolonged fasting on peripheral insulin activity and function, samples were collected. Ten fasting seal pups (n=5 early, n=5 late) were infused (i.v.) with a mass-specific dose of insulin (0.065 U/kg). Following the infusion, blood samples were collected at 10, 30, 60, 90, and 120 minutes. Study #2: Seven, late-fasted seal pups were administered either a low (LDG; 10 pmol/kg; n=3) or high (HDG; 100 pmol/kg; n=4) dose of GLP-1 immediately following a glucose bolus (0.5 g/kg) (i.v.) infused within 2 mins. the infusions, blood samples were collected at 10, 30, 60, 90, 120, and 150 minutes.</description>
+      <cross_references>
+        <ref dbkey="9716" dbname="TAXONOMY"/>
+        <ref dbkey="53081" dbname="ChEBI"/>
+        <ref dbkey="71466" dbname="ChEBI"/>
+        <ref dbkey="52392" dbname="ChEBI"/>
+        <ref dbkey="2700" dbname="ChEBI"/>
+        <ref dbkey="2700" dbname="ChEBI"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="14-07-10"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Metabolomics</field>
+        <field name="full_dataset_link">http://www.metabolomicsworkbench.org/data/DRCCMetadata.php?Mode=Study&amp;StudyID=ST000107</field>
+        <field name="repository">MetabolomicsWorkbench</field>
+        <field name="data_protocol">ESI positive ion mode</field>
+        <field name="instrument_platform">Waters Acquity UPLC (Waters)</field>
+        <field name="instrument_platform">Waters Acquity UPLC (Waters)</field>
+        <field name="study_factor">Treatment:Early ITT Infusion Study | Timepoint:120 mins</field>
+        <field name="study_factor">Treatment:GLP1/Late GTT | Timepoint:120 mins</field>
+        <field name="study_factor">Treatment:Early ITT Infusion Study | Timepoint:30 mins</field>
+        <field name="study_factor">Treatment:GLP1/Late GTT | Timepoint:0 mins</field>
+        <field name="study_factor">Treatment:Late ITT Infusion Study | Timepoint:120 mins</field>
+        <field name="study_factor">Treatment:GLP1/Late GTT | Timepoint:30 mins</field>
+        <field name="study_factor">Treatment:GLP1/Late GTT | Timepoint:60 mins</field>
+        <field name="study_factor">Treatment:Early ITT Infusion Study | Timepoint:60 mins</field>
+        <field name="study_factor">Treatment:GLP1/Late GTT | Timepoint:10 mins</field>
+        <field name="study_factor">Treatment:Early ITT Infusion Study | Timepoint:0 mins</field>
+        <field name="study_factor">Treatment:Early ITT Infusion Study | Timepoint:10 mins</field>
+        <field name="study_factor">Treatment:Late ITT Infusion Study | Timepoint:10 mins</field>
+        <field name="study_factor">Treatment:Late ITT Infusion Study | Timepoint:0 mins</field>
+        <field name="study_factor">Treatment:Late ITT Infusion Study | Timepoint:60 mins</field>
+        <field name="study_factor">Treatment:Late ITT Infusion Study | Timepoint:30 mins</field>
+        <field name="species">Mirounga angustirostris</field>
+        <field name="technology_type">mass spectrometry</field>
+        <field name="metabolite_name">C17:0</field>
+        <field name="metabolite_name">C16:0</field>
+        <field name="metabolite_name">C16:1n7</field>
+        <field name="metabolite_name">PGF2a Ethanolamide</field>
+        <field name="metabolite_name">Stearoyl Ethanolamide</field>
+        <field name="metabolite_name">Oleoyl Ethanolamide</field>
+        <field name="metabolite_name">Palmitoyl Ethanolamide</field>
+        <field name="metabolite_name">Docosatetraenoyl Ethanolamide</field>
+        <field name="metabolite_name">Linoleoyl Ethanolamide</field>
+        <field name="metabolite_name">C18:1n7</field>
+        <field name="metabolite_name">C18:0</field>
+        <field name="metabolite_name">C18:1n9</field>
+        <field name="metabolite_name">C18:2n6</field>
+        <field name="metabolite_name">C18:3n3</field>
+        <field name="metabolite_name">C20:1n9</field>
+        <field name="metabolite_name">C20:3n6</field>
+        <field name="metabolite_name">C20:4n6</field>
+        <field name="metabolite_name">C20:5n3</field>
+        <field name="metabolite_name">C22:5n3</field>
+        <field name="metabolite_name">1-Oleoyl Glycerol</field>
+        <field name="metabolite_name">1-Linoleoyl Glycerol</field>
+        <field name="metabolite_name">Docosahexaenoyl Ethanolamide</field>
+        <field name="metabolite_name">1-Arachidonoyl Glycerol</field>
+        <field name="metabolite_name">C22:6n3</field>
+        <field name="metabolite_name">a-Linolenoyl Ethanolamide</field>
+        <field name="metabolite_name">2-Oleoyl Glycerol</field>
+        <field name="metabolite_name">2-Linoleoyl Glycerol</field>
+        <field name="metabolite_name">2-Arachidonoyl Glycerol</field>
+        <field name="metabolite_name">Dihomo-g-Linolenoyl Ethanolamide</field>
+        <field name="metabolite_name">Arachidonoyl Ethanolamide</field>
+        <field name="pubchem_id">27902</field>
+        <field name="pubchem_id">27902</field>
+        <field name="pubchem_id">27902</field>
+        <field name="pubchem_id">53481911</field>
+        <field name="pubchem_id">27902</field>
+        <field name="pubchem_id">5283454</field>
+        <field name="pubchem_id">52922083</field>
+        <field name="pubchem_id">53394363</field>
+        <field name="pubchem_id">53394363</field>
+        <field name="pubchem_id">27902</field>
+        <field name="pubchem_id">27902</field>
+        <field name="pubchem_id">27902</field>
+        <field name="pubchem_id">27902</field>
+        <field name="pubchem_id">27902</field>
+        <field name="pubchem_id">27902</field>
+        <field name="pubchem_id">27902</field>
+        <field name="pubchem_id">27902</field>
+        <field name="pubchem_id">27902</field>
+        <field name="pubchem_id">27902</field>
+        <field name="pubchem_id">117319</field>
+        <field name="pubchem_id">117319</field>
+        <field name="pubchem_id">5283451</field>
+        <field name="pubchem_id">114672</field>
+        <field name="pubchem_id">27902</field>
+        <field name="pubchem_id">543397</field>
+        <field name="pubchem_id">543397</field>
+        <field name="pubchem_id">549043</field>
+        <field name="pubchem_id">5282280</field>
+        <field name="pubchem_id">5281969</field>
+        <field name="pubchem_id">5281969</field>
+        <field name="submitter">Newman John</field>
+        <field name="submitter_mail">john.newman@ars.usda.gov</field>
+        <field name="submitter_affiliation">Nutrition, University of California, Davis</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

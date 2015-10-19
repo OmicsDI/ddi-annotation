@@ -1,0 +1,69 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000364">
+      <name>A magnetic immunoenrichment strategy for N-terminal-oriented proteogenomics applied to the marine bacterium Roseobacter denitrificans</name>
+      <description>Proteogenomics is the alliance of proteomics and genomics with the aim of better annotating structural genes based on protein experimental pieces of evidence established by tandem mass spectrometry.  While on average more than one tenth of N-termini of proteins are incorrectly annotated, there is a crucial need for methodological approaches to systematically establish translational starts of polypeptides and their maturations such as N-terminal methionine processing and peptide signal excision.  Here, we describe a straightforward strategy to specifically label protein N-termini with a positively charged TMPP label, selectively capture these entities with in-house developed anti-TMPP antibodies coupled to magnetic beads, and analyze them by nanoLC-MS/MS.  While most N-terminomics-oriented approaches are based on depletion of internal peptides to retrieve N-terminal peptides, this enrichment approach is fast and results highly specific for improved ionizable TMPP-labeled peptides.  The whole proteome of the model marine bacterium Roseobacter denitrificans was analyzed.</description>
+      <cross_references>
+        <ref dbkey="375451" dbname="TAXONOMY"/>
+        <ref dbkey="24313271" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2013-07-25"/>
+        <date type="publication" value="2014-07-16"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000364</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Not available</field>
+        <field name="instrument_platform">LTQ Orbitrap</field>
+        <field name="species">Roseobacter denitrificans (strain ATCC 33942 / OCh 114) (Erythrobacter sp. (strain OCh 114)) (Roseobacter denitrificans)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">TMPP-Ac</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">proteogenomics</field>
+        <field name="submitter_keywords"> genome annotation</field>
+        <field name="submitter_keywords"> N-terminomics</field>
+        <field name="submitter_keywords"> high-throughput proteomics</field>
+        <field name="submitter_keywords"> protein derivatization</field>
+        <field name="submitter_keywords"> tandem mass spectrometry</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Bland C, Bellanger L, Armengaud J. Magnetic immunoaffinity enrichment for selective capture and MS/MS analysis of N-terminal-TMPP-labeled peptides. J Proteome Res. 2014 Feb 7;13(2):668-80</field>
+        <field name="submitter">Jean ARMENGAUD</field>
+        <field name="submitter_mail">jean.armengaud@cea.fr</field>
+        <field name="submitter_affiliation">SBTN </field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000364/F067228.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000364/F067230.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000364/F067231.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000364/F067233.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000364/F067236.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000364/F067238.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000364/F067240.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000364/F067241.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000364/F067242.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000364/1RDTpool7E11G5.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000364/2RDTpool7E11G5.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000364/9RDTpool7avtbilles.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000364/13RDCpool7E11G5.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000364/14RDCpool7E11G5.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000364/15RDCpool7avtbilles.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000364/19RDEpool7E11G5.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000364/20RDEpool7E11G5.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000364/21RDEpool7avtbilles.RAW</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

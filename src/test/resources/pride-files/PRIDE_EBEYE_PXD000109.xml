@@ -1,0 +1,119 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000109">
+      <name>ThinPrep Cervical Smear iTRAQ LC-MS/MS</name>
+      <description>The protein content from ThinPrep cervical smear specimens was purified with TCA precipitation. The protein pellets were dissolved and protein concentration was measured with the Bradford assay. 100 ug of protein for each sample were reduced  with TCEP, cysteines were blocked with MMTS and finally digested overnight with trypsin. The resultant peptides were labeled with the iTRAQ 8plex reagents and after mixing were subjected to off-line high pH C18 fractionation. The peptide fractions were further analyzed with low pH C18 LC-Orbitrap Elite HCD MS/MS (MS resolution 120,000, top 10 precursors, isolation width 1.2 m/z, 100 min gradient method). Protein Identification was performed using Proteome Discoverer 1.3 software. SEQUEST node included prec. mass tolerance: 10 ppm, fragment mass tolerance 0.5 Da, iTRAQ8plex Nterm and K,Y static modification, Methylthio static modification, Phospho S variable modification, Oxidation M  variable modification, Deamidation N,Q variable modification. All spectra were search against a Uniprot fasta file containing all reviewed Human entries and all reviewed and un-reviewed human papillomavirus entries. Peptide and PTM validation was performed with Percolator and PhosphoRS nodes respectively. Protein quantitation was performed with the Reporter Ions Quantifier node.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="23510160" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2012-12-14"/>
+        <date type="publication" value="2013-05-09"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000109</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Not available</field>
+        <field name="instrument_platform">LTQ Orbitrap Elite</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Not available</field>
+        <field name="modification">phosphorylated residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="modification">methylthiolated residue</field>
+        <field name="modification">deamidated residue</field>
+        <field name="modification">iTRAQ8plex-116 reporter+balance reagent acylated residue</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="submitter_keywords">ThinPrep</field>
+        <field name="submitter_keywords"> iTRAQ</field>
+        <field name="submitter_keywords"> HPV</field>
+        <field name="submitter_keywords"> Orbitrap Elite</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Papachristou EK, Roumeliotis TI, Chrysagi A, Trigoni C, Charvalos E, Townsend PA, Pavlakis K, Garbis SD; The shotgun proteomic study of the human ThinPrep cervical smear using iTRAQ mass-tagging and 2D LC-FT-Orbitrap-MS: the detection of the human papillomavirus at the protein level., J Proteome Res, 2013 May 3, 12, 5, 2078-89, </field>
+        <field name="submitter">Theodoros Roumeliotis</field>
+        <field name="submitter_mail">tr6@sanger.ac.uk</field>
+        <field name="submitter_affiliation">WTSI</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/07OCT12_cervical_smear_2nd_exp_rep03-HCD.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/07OCT12_cervical_smear_3rd_exp_HCD.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/29SEP12_cervical_smear_1st_exp_HCD.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/30JUN12_cervical_smear_1st_exp_18.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/30JUN12_cervical_smear_1st_exp_19.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/30JUN12_cervical_smear_1st_exp_20.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/30JUN12_cervical_smear_1st_exp_21.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/30JUN12_cervical_smear_1st_exp_22.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/30JUN12_cervical_smear_1st_exp_23.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/30JUN12_cervical_smear_1st_exp_24.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/30JUN12_cervical_smear_1st_exp_25.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/30JUN12_cervical_smear_1st_exp_26.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/30JUN12_cervical_smear_1st_exp_27.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/30JUN12_cervical_smear_1st_exp_28.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/30JUN12_cervical_smear_1st_exp_29.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/30JUN12_cervical_smear_1st_exp_30.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/30JUN12_cervical_smear_1st_exp_31.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/30JUN12_cervical_smear_1st_exp_32.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/30JUN12_cervical_smear_1st_exp_33.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/30JUN12_cervical_smear_1st_exp_34.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/30JUN12_cervical_smear_1st_exp_35.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/30JUN12_cervical_smear_1st_exp_36.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/30JUN12_cervical_smear_1st_exp_37.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/30JUN12_cervical_smear_1st_exp_38.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/30JUN12_cervical_smear_1st_exp_39.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/30JUN12_cervical_smear_1st_exp_40.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/30JUN12_cervical_smear_1st_exp_41.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/05OCT12_cervical_smear_2rd_exp_rep03_21.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/05OCT12_cervical_smear_2rd_exp_rep03_22.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/05OCT12_cervical_smear_2rd_exp_rep03_23.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/05OCT12_cervical_smear_2rd_exp_rep03_24.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/05OCT12_cervical_smear_2rd_exp_rep03_25.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/05OCT12_cervical_smear_2rd_exp_rep03_26.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/05OCT12_cervical_smear_2rd_exp_rep03_27.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/05OCT12_cervical_smear_2rd_exp_rep03_28.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/05OCT12_cervical_smear_2rd_exp_rep03_29.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/05OCT12_cervical_smear_2rd_exp_rep03_30.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/05OCT12_cervical_smear_2rd_exp_rep03_31.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/05OCT12_cervical_smear_2rd_exp_rep03_32.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/05OCT12_cervical_smear_2rd_exp_rep03_33.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/05OCT12_cervical_smear_2rd_exp_rep03_35.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/05OCT12_cervical_smear_2rd_exp_rep03_37.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/05OCT12_cervical_smear_2rd_exp_rep03_38.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/05OCT12_cervical_smear_2rd_exp_rep03_45.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/02OCT12_cervical_smear_3rd_exp_20_rep.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/02OCT12_cervical_smear_3rd_exp_21_rep.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/02OCT12_cervical_smear_3rd_exp_22_rep.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/02OCT12_cervical_smear_3rd_exp_23_rep.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/02OCT12_cervical_smear_3rd_exp_24_rep.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/02OCT12_cervical_smear_3rd_exp_25_rep.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/02OCT12_cervical_smear_3rd_exp_26_rep.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/02OCT12_cervical_smear_3rd_exp_27_rep.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/02OCT12_cervical_smear_3rd_exp_28_rep.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/02OCT12_cervical_smear_3rd_exp_29_rep.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/02OCT12_cervical_smear_3rd_exp_30_rep.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/02OCT12_cervical_smear_3rd_exp_31_rep.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/02OCT12_cervical_smear_3rd_exp_32_rep.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/02OCT12_cervical_smear_3rd_exp_33_rep.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/02OCT12_cervical_smear_3rd_exp_34_rep.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/02OCT12_cervical_smear_3rd_exp_35_rep.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/02OCT12_cervical_smear_3rd_exp_36_rep.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/02OCT12_cervical_smear_3rd_exp_38_rep.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/02OCT12_cervical_smear_3rd_exp_40_rep.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/02OCT12_cervical_smear_3rd_exp_45_rep.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/05OCT12_cervical_smear_3rd_exp_rep02_26.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/05OCT12_cervical_smear_3rd_exp_rep02_27.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/05OCT12_cervical_smear_3rd_exp_rep02_28.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000109/05OCT12_cervical_smear_3rd_exp_rep03_25.raw</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

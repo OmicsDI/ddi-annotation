@@ -1,0 +1,57 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001283">
+      <name>Mass spectrometry imaging of phospholipids in mouse urinary bladder (imzML dataset)</name>
+      <description>The spatial distribution of phospholipids in a tissue section of mouse urinary bladder was analyzed by MALDI MS imaging at 10 micrometer pixel size with high mass resolution (using an LTQ Orbitrap mass spectrometer).</description>
+      <cross_references>
+        <ref dbkey="10090" dbname="TAXONOMY"/>
+        <ref dbkey="20397170" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-09-15"/>
+        <date type="publication" value="2014-11-19"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001283</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">All the experiments were performed with a AP-SMALDI imaging source.  The laser was focused by a centrally bored objective lens to a diameter of 5 to 10 micrometer. Controller software and hardware for the scanning procedure were developed in-house. The imaging source was attached to a linear ion trap/Fourier transform orbital trapping MS (LTQ Orbitrap Discovery, Thermo Scientific GmbH, Bremen, Germany) with a mass resolving power of 30 000 at m/z 400 in positive-ion mode. This setup offers atmospheric pressure compatibility, MSn capability, and sub-ppm mass accuracy. A UV laser with a repetition rate of 60 Hz (LTB MNL-106, LTB, Berlin, Germany) was used for desorption/ionization. The mass range was m/z 100-1000 for measurements of phospholipids. Tissue sections (20 micrometer  thickness) were coated with DHB (2,5-dihydroxybenzoic acid) matrix using a pneumatic sprayer. Assignments of lipids were confirmed by MS/MS analysis directly from tissue (isolation window dm/z 3). All images were generated with a bin width of dm/z 0.01.  Details of sample preparation, data acquisition and data processing are described in: Rompp, A., S. Guenther, Y. Schober, O. Schulz, Z. Takats, W. Kummer and B. Spengler (2010).  Angewandte Chemie International Edition 49(22): 3834-3838.</field>
+        <field name="data_protocol">MS imaging data (Thermo RAW format) was converted to imzML (www.imzml.org) using the 'RAW to imzML' converter. For more information see: Schramm, T., A. Hester, I. Klinkert, J.-P. Both, R. M. A. Heeren, A. Brunelle, O. Laprevote, N. Desbenoit, M.-F. Robbe, M. Stoeckli, B. Spengler and A. Rompp (2012). Journal of Proteomics 75(16): 5106-5110. Selected ion images were generated using the software package MIRION developed at JLU Giessen. The imaging software imports raw data files as stored by the LTQ Orbitrap instrument software during image acquisition and couples this mass spectrometric information with additional scanning metadata, stored in separate data files by our ion source control program. This metadata includes the number of lines and columns of the image and the pixel size. The imaging software is able to create ion images from any of the detected mass-to-charge values with any selected mass window (bin width). A fast image browser of the MIRION software assists in selecting of images. In this work ion images of selected mass-to-charge values were created from the FT MS data set with a bin width of dm/z = 0.01. Up to three different ion images were overlayed in RGB images by the software to display different ion species in parallel. No other postprocessing steps such as interpolation or normalization to matrix signals were applied to the images.</field>
+        <field name="instrument_platform">LTQ Orbitrap</field>
+        <field name="species">Mus musculus (Mouse)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">urinary bladder</field>
+        <field name="modification">No PTMs are included in the dataset</field>
+        <field name="technology_type">Mass spectrometry imaging</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="curator_keywords">Biomedical</field>
+        <field name="submitter_keywords">Mass spectrometry imaging</field>
+        <field name="submitter_keywords"> tissue imaging</field>
+        <field name="submitter_keywords"> phospholipids</field>
+        <field name="submitter_keywords"> mouse urinary bladder</field>
+        <field name="submitter_keywords"> imzML</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Römpp A, Guenther S, Schober Y, Schulz O, Takats Z, Kummer W, Spengler B; Histology by mass spectrometry: label-free tissue characterization obtained from high-accuracy bioanalytical imaging., Angew Chem Int Ed Engl, 2010 May 17, 49, 22, 3834-8, </field>
+        <field name="submitter">Andreas Roempp</field>
+        <field name="submitter_mail">andreas.roempp@anorg.chemie.uni-giessen.de</field>
+        <field name="submitter_affiliation">Institute of Inorganic and Analytical Chemistry, Justus Liebig University Giessen Schubertstrasse 60, D-35392 Giessen Germany</field>
+        <field name="labhead">Bernhard Spengler</field>
+        <field name="labhead_mail">bernhard.spengler@anorg.chemie.uni-giessen.de</field>
+        <field name="labhead_affiliation">Institute of Inorganic and Analytical Chemistry, Justus Liebig University Giessen, Schubertstrasse 60, D-35392 Giessen, Germany</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD001283/HR2MSI mouse urinary bladder S096 - optical image.tif</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD001283/HR2MSI mouse urinary bladder S096 - results.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD001283/HR2MSI mouse urinary bladder S096.ibd</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD001283/HR2MSI mouse urinary bladder S096.imzML</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

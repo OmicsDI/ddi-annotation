@@ -1,0 +1,1025 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001174">
+      <name>Un-conditioned commercial embryo culture media contain a large variety of non-declared proteins: a comprehensive proteomics analysis</name>
+      <description>Study question: Which non-declared proteins (proteins not listed on the composition list of the product data sheet) are present in unconditioned commercial embryo culture media?  Summary answer: A total of 110 non-declared proteins were identified in unconditioned media and between 6 and 8 of these were quantifiable.   What is known already: There are no data in the literature on what non-declared proteins are present in un-conditioned (fresh media in which no embryos have been cultured) commercial embryo media.  Study design, size, duration: The following eight commercial embryo culture media were included in this study: G-1 PLUS and G-2 PLUS G5 Series from Vitrolife, Sydney IVF Cleavage Medium and Sydney IVF Blastocyst Medium from Cook Medical and EmbryoAssist, BlastAssist, Sequential Cleav and Sequential Blast from ORIGIO. Two batches were analysed for each of the Sydney IVF media and one batch from each of the other media. All embryo culture media are supplemented by the manufacturers with purified human serum albumin (HSA 5 mg/ml). The purified HSA (HSA-solution from Vitrolife) and the recombinant human albumin supplement (G-MM from Vitrolife) were also analysed.   Participants/materials, setting, methods: For protein quantification, media samples were in-solution digested with trypsin and analyzed by liquid chromatography-tandem mass spectrometry (LC-MS/MS). For in-depth protein identification, media were albumin depleted, dialyzed and concentrated before sodium dodecyl sulphate polyacrylamide gel electrophoresis. The gel was cut into 14 slices followed by in-gel trypsin digestion, and analysis by LC-MS/MS. Proteins were further investigated using gene ontology (GO) terms analysis.  Main results and the role of chance: Using advanced mass spectrometry and high confidence criteria for accepting proteins (p&lt; 0.01), a total of 110 proteins other than HSA were identified. The average serum albumin content was found to be 94% (92% - 97%) of total protein. Other individual proteins accounted for up to 4.7% of the total protein. Analysis of purified HSA strongly suggests that these non-declared proteins are introduced to the media when the albumin is added. GO analysis showed that many of these proteins have roles in defence pathways, for example 18 were associated with the innate immune response and 17 with inflammatory responses. Eight proteins have been reported previously as secreted embryo proteins.  Limitations, reasons for caution: For six of the commercial embryo culture media only one batch was analyzed. However, this does not affect the overall conclusions.  Wider implications of the findings: The results showed that the HSA added to IVF media contained many other proteins and that the amount varies from batch to batch. These variations in protein profiles are problematic when attempting to identify proteins derived from the embryos. Therefore, when studying the embryo secretome and analysing conditioned media with the aim of finding potential biomarkers that can distinguish normal and abnormal embryo development, it is important that the medium used in the experimental and control groups is from the same batch. Furthermore, the proteins present in un-conditioned media could potentially influence embryonic development, gestation age, birthweight and perhaps have subsequent effects on health of the offspring.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="25164020" dbname="pubmed"/>
+        <ref dbkey="Q96JA1" dbname="uniprot"/>
+        <ref dbkey="P30711" dbname="uniprot"/>
+        <ref dbkey="Q07075" dbname="uniprot"/>
+        <ref dbkey="Q9UBZ9" dbname="uniprot"/>
+        <ref dbkey="ENSP00000376793" dbname="ensembl"/>
+        <ref dbkey="Q5T013" dbname="uniprot"/>
+        <ref dbkey="ENSP00000340888" dbname="ensembl"/>
+        <ref dbkey="Q08188" dbname="uniprot"/>
+        <ref dbkey="P14923" dbname="uniprot"/>
+        <ref dbkey="ENSP00000360687" dbname="ensembl"/>
+        <ref dbkey="P0C0L4" dbname="uniprot"/>
+        <ref dbkey="P0C0L5" dbname="uniprot"/>
+        <ref dbkey="ENSP00000352575" dbname="ensembl"/>
+        <ref dbkey="ENSP00000372224" dbname="ensembl"/>
+        <ref dbkey="ENSP00000312288" dbname="ensembl"/>
+        <ref dbkey="Q01484" dbname="uniprot"/>
+        <ref dbkey="P00739" dbname="uniprot"/>
+        <ref dbkey="P00738" dbname="uniprot"/>
+        <ref dbkey="P00736" dbname="uniprot"/>
+        <ref dbkey="Q07866" dbname="uniprot"/>
+        <ref dbkey="ENSP00000005374" dbname="ensembl"/>
+        <ref dbkey="ENSP00000340870" dbname="ensembl"/>
+        <ref dbkey="P08779" dbname="uniprot"/>
+        <ref dbkey="P00742" dbname="uniprot"/>
+        <ref dbkey="P01945" dbname="uniprot"/>
+        <ref dbkey="Q8NG11" dbname="uniprot"/>
+        <ref dbkey="Q6UX71" dbname="uniprot"/>
+        <ref dbkey="Q9UGM5" dbname="uniprot"/>
+        <ref dbkey="P01973" dbname="uniprot"/>
+        <ref dbkey="Q01459" dbname="uniprot"/>
+        <ref dbkey="P00762" dbname="uniprot"/>
+        <ref dbkey="P00761" dbname="uniprot"/>
+        <ref dbkey="ENSP00000268613" dbname="ensembl"/>
+        <ref dbkey="Q96IY4" dbname="uniprot"/>
+        <ref dbkey="Q6UXB8" dbname="uniprot"/>
+        <ref dbkey="ENSP00000278222" dbname="ensembl"/>
+        <ref dbkey="ENSP00000304236" dbname="ensembl"/>
+        <ref dbkey="P22891" dbname="uniprot"/>
+        <ref dbkey="ENSP00000369654" dbname="ensembl"/>
+        <ref dbkey="Q96S96" dbname="uniprot"/>
+        <ref dbkey="P02647" dbname="uniprot"/>
+        <ref dbkey="ENSP00000306477" dbname="ensembl"/>
+        <ref dbkey="ENSP00000226355" dbname="ensembl"/>
+        <ref dbkey="ENSP00000259205" dbname="ensembl"/>
+        <ref dbkey="Q04695" dbname="uniprot"/>
+        <ref dbkey="ENSP00000265132" dbname="ensembl"/>
+        <ref dbkey="P02655" dbname="uniprot"/>
+        <ref dbkey="P02656" dbname="uniprot"/>
+        <ref dbkey="ENSP00000220763" dbname="ensembl"/>
+        <ref dbkey="P02652" dbname="uniprot"/>
+        <ref dbkey="Q14964" dbname="uniprot"/>
+        <ref dbkey="ENSP00000064571" dbname="ensembl"/>
+        <ref dbkey="Q14966" dbname="uniprot"/>
+        <ref dbkey="ENSMUSP00000035203" dbname="ensembl"/>
+        <ref dbkey="P12035" dbname="uniprot"/>
+        <ref dbkey="ENSP00000369689" dbname="ensembl"/>
+        <ref dbkey="ENSP00000285021" dbname="ensembl"/>
+        <ref dbkey="ENSP00000263398" dbname="ensembl"/>
+        <ref dbkey="Q99456" dbname="uniprot"/>
+        <ref dbkey="ENSP00000236850" dbname="ensembl"/>
+        <ref dbkey="ENSP00000230882" dbname="ensembl"/>
+        <ref dbkey="P28331" dbname="uniprot"/>
+        <ref dbkey="ENSP00000311313" dbname="ensembl"/>
+        <ref dbkey="ENSP00000335290" dbname="ensembl"/>
+        <ref dbkey="Q9NZH8" dbname="uniprot"/>
+        <ref dbkey="P62158" dbname="uniprot"/>
+        <ref dbkey="P14151" dbname="uniprot"/>
+        <ref dbkey="ENSP00000428982" dbname="ensembl"/>
+        <ref dbkey="ENSP00000252951" dbname="ensembl"/>
+        <ref dbkey="Q96A32" dbname="uniprot"/>
+        <ref dbkey="ENSP00000349446" dbname="ensembl"/>
+        <ref dbkey="Q13867" dbname="uniprot"/>
+        <ref dbkey="P78417" dbname="uniprot"/>
+        <ref dbkey="P10523" dbname="uniprot"/>
+        <ref dbkey="Q01831" dbname="uniprot"/>
+        <ref dbkey="ENSP00000394770" dbname="ensembl"/>
+        <ref dbkey="ENSP00000369349" dbname="ensembl"/>
+        <ref dbkey="P41250" dbname="uniprot"/>
+        <ref dbkey="Q6YP21" dbname="uniprot"/>
+        <ref dbkey="Q3SZ57" dbname="uniprot"/>
+        <ref dbkey="ENSP00000344458" dbname="ensembl"/>
+        <ref dbkey="ENSP00000344456" dbname="ensembl"/>
+        <ref dbkey="P13473" dbname="uniprot"/>
+        <ref dbkey="P41222" dbname="uniprot"/>
+        <ref dbkey="ENSP00000264005" dbname="ensembl"/>
+        <ref dbkey="Q7Z7G0" dbname="uniprot"/>
+        <ref dbkey="Q15582" dbname="uniprot"/>
+        <ref dbkey="O71192" dbname="uniprot"/>
+        <ref dbkey="ENSP00000265983" dbname="ensembl"/>
+        <ref dbkey="Q9NZP8" dbname="uniprot"/>
+        <ref dbkey="ENSP00000389948" dbname="ensembl"/>
+        <ref dbkey="P13489" dbname="uniprot"/>
+        <ref dbkey="P20273" dbname="uniprot"/>
+        <ref dbkey="Q6EMK4" dbname="uniprot"/>
+        <ref dbkey="Q8N3K9" dbname="uniprot"/>
+        <ref dbkey="ENSP00000254528" dbname="ensembl"/>
+        <ref dbkey="Q14956" dbname="uniprot"/>
+        <ref dbkey="Q9ULQ0" dbname="uniprot"/>
+        <ref dbkey="Q9HC38" dbname="uniprot"/>
+        <ref dbkey="P11362" dbname="uniprot"/>
+        <ref dbkey="ENSP00000241463" dbname="ensembl"/>
+        <ref dbkey="ENSP00000249344" dbname="ensembl"/>
+        <ref dbkey="Q6T310" dbname="uniprot"/>
+        <ref dbkey="P00450" dbname="uniprot"/>
+        <ref dbkey="ENSP00000364709" dbname="ensembl"/>
+        <ref dbkey="ENSP00000265162" dbname="ensembl"/>
+        <ref dbkey="ENSP00000264036" dbname="ensembl"/>
+        <ref dbkey="ENSP00000264447" dbname="ensembl"/>
+        <ref dbkey="B2UXC6" dbname="uniprot"/>
+        <ref dbkey="ENSP00000369317" dbname="ensembl"/>
+        <ref dbkey="ENSP00000359664" dbname="ensembl"/>
+        <ref dbkey="ENSCAFP00000016597" dbname="ensembl"/>
+        <ref dbkey="P35527" dbname="uniprot"/>
+        <ref dbkey="P09423" dbname="uniprot"/>
+        <ref dbkey="P09420" dbname="uniprot"/>
+        <ref dbkey="P05451" dbname="uniprot"/>
+        <ref dbkey="Q9NZT1" dbname="uniprot"/>
+        <ref dbkey="O75144" dbname="uniprot"/>
+        <ref dbkey="ENSP00000419901" dbname="ensembl"/>
+        <ref dbkey="P01596" dbname="uniprot"/>
+        <ref dbkey="P01593" dbname="uniprot"/>
+        <ref dbkey="P01591" dbname="uniprot"/>
+        <ref dbkey="Q15517" dbname="uniprot"/>
+        <ref dbkey="ENSP00000363603" dbname="ensembl"/>
+        <ref dbkey="Q4FVL5" dbname="uniprot"/>
+        <ref dbkey="P10599" dbname="uniprot"/>
+        <ref dbkey="ENSP00000381250" dbname="ensembl"/>
+        <ref dbkey="ENSP00000264474" dbname="ensembl"/>
+        <ref dbkey="ENSP00000356453" dbname="ensembl"/>
+        <ref dbkey="P20758" dbname="uniprot"/>
+        <ref dbkey="ENSP00000438615" dbname="ensembl"/>
+        <ref dbkey="ENSP00000262919" dbname="ensembl"/>
+        <ref dbkey="ENSP00000306864" dbname="ensembl"/>
+        <ref dbkey="P35908" dbname="uniprot"/>
+        <ref dbkey="ENSP00000293371" dbname="ensembl"/>
+        <ref dbkey="ENSP00000363639" dbname="ensembl"/>
+        <ref dbkey="Q9BWX1" dbname="uniprot"/>
+        <ref dbkey="A9BDG5" dbname="uniprot"/>
+        <ref dbkey="Q9H583" dbname="uniprot"/>
+        <ref dbkey="ENSP00000336927" dbname="ensembl"/>
+        <ref dbkey="Q02413" dbname="uniprot"/>
+        <ref dbkey="P32119" dbname="uniprot"/>
+        <ref dbkey="P55058" dbname="uniprot"/>
+        <ref dbkey="ENSP00000273951" dbname="ensembl"/>
+        <ref dbkey="ENSP00000343764" dbname="ensembl"/>
+        <ref dbkey="ENSP00000361502" dbname="ensembl"/>
+        <ref dbkey="P19652" dbname="uniprot"/>
+        <ref dbkey="ENSP00000241001" dbname="ensembl"/>
+        <ref dbkey="Q08554" dbname="uniprot"/>
+        <ref dbkey="ENSP00000312326" dbname="ensembl"/>
+        <ref dbkey="ENSP00000416330" dbname="ensembl"/>
+        <ref dbkey="Q86VH2" dbname="uniprot"/>
+        <ref dbkey="ENSRNOP00000043068" dbname="ensembl"/>
+        <ref dbkey="P35542" dbname="uniprot"/>
+        <ref dbkey="P08835" dbname="uniprot"/>
+        <ref dbkey="ENSP00000261220" dbname="ensembl"/>
+        <ref dbkey="ENSP00000321259" dbname="ensembl"/>
+        <ref dbkey="ENSP00000349960" dbname="ensembl"/>
+        <ref dbkey="P07738" dbname="uniprot"/>
+        <ref dbkey="ENSP00000278407" dbname="ensembl"/>
+        <ref dbkey="ENSP00000266542" dbname="ensembl"/>
+        <ref dbkey="P11756" dbname="uniprot"/>
+        <ref dbkey="ENSP00000346032" dbname="ensembl"/>
+        <ref dbkey="ENSP00000333994" dbname="ensembl"/>
+        <ref dbkey="P12883" dbname="uniprot"/>
+        <ref dbkey="P12882" dbname="uniprot"/>
+        <ref dbkey="ENSP00000233190" dbname="ensembl"/>
+        <ref dbkey="ENSP00000205948" dbname="ensembl"/>
+        <ref dbkey="Q16836" dbname="uniprot"/>
+        <ref dbkey="P14639" dbname="uniprot"/>
+        <ref dbkey="Q13201" dbname="uniprot"/>
+        <ref dbkey="P01011" dbname="uniprot"/>
+        <ref dbkey="P01008" dbname="uniprot"/>
+        <ref dbkey="P01009" dbname="uniprot"/>
+        <ref dbkey="ENSP00000345530" dbname="ensembl"/>
+        <ref dbkey="Q8WZ75" dbname="uniprot"/>
+        <ref dbkey="P01019" dbname="uniprot"/>
+        <ref dbkey="ENSP00000400010" dbname="ensembl"/>
+        <ref dbkey="ENSP00000256178" dbname="ensembl"/>
+        <ref dbkey="Q16853" dbname="uniprot"/>
+        <ref dbkey="P22792" dbname="uniprot"/>
+        <ref dbkey="P01033" dbname="uniprot"/>
+        <ref dbkey="ENSP00000237014" dbname="ensembl"/>
+        <ref dbkey="P60709" dbname="uniprot"/>
+        <ref dbkey="ENSP00000372126" dbname="ensembl"/>
+        <ref dbkey="P01857" dbname="uniprot"/>
+        <ref dbkey="P01859" dbname="uniprot"/>
+        <ref dbkey="P08697" dbname="uniprot"/>
+        <ref dbkey="P01024" dbname="uniprot"/>
+        <ref dbkey="Q06830" dbname="uniprot"/>
+        <ref dbkey="P01042" dbname="uniprot"/>
+        <ref dbkey="P01040" dbname="uniprot"/>
+        <ref dbkey="ENSP00000322594" dbname="ensembl"/>
+        <ref dbkey="Q8WZ42" dbname="uniprot"/>
+        <ref dbkey="ENSP00000181383" dbname="ensembl"/>
+        <ref dbkey="P01834" dbname="uniprot"/>
+        <ref dbkey="ENSP00000289893" dbname="ensembl"/>
+        <ref dbkey="ENSP00000353731" dbname="ensembl"/>
+        <ref dbkey="Q10588" dbname="uniprot"/>
+        <ref dbkey="ENSP00000265016" dbname="ensembl"/>
+        <ref dbkey="ENSP00000358140" dbname="ensembl"/>
+        <ref dbkey="P02533" dbname="uniprot"/>
+        <ref dbkey="P02538" dbname="uniprot"/>
+        <ref dbkey="ENSP00000160262" dbname="ensembl"/>
+        <ref dbkey="Q2Q1W2" dbname="uniprot"/>
+        <ref dbkey="P48668" dbname="uniprot"/>
+        <ref dbkey="ENSP00000233114" dbname="ensembl"/>
+        <ref dbkey="P11279" dbname="uniprot"/>
+        <ref dbkey="ENSP00000265417" dbname="ensembl"/>
+        <ref dbkey="P80108" dbname="uniprot"/>
+        <ref dbkey="Q13296" dbname="uniprot"/>
+        <ref dbkey="ENSP00000264731" dbname="ensembl"/>
+        <ref dbkey="ENSP00000259726" dbname="ensembl"/>
+        <ref dbkey="ENSP00000370867" dbname="ensembl"/>
+        <ref dbkey="P01871" dbname="uniprot"/>
+        <ref dbkey="P01876" dbname="uniprot"/>
+        <ref dbkey="P01877" dbname="uniprot"/>
+        <ref dbkey="ENSP00000216962" dbname="ensembl"/>
+        <ref dbkey="ENSP00000216968" dbname="ensembl"/>
+        <ref dbkey="ENSP00000246282" dbname="ensembl"/>
+        <ref dbkey="P01860" dbname="uniprot"/>
+        <ref dbkey="P0DJG2" dbname="uniprot"/>
+        <ref dbkey="ENSP00000216455" dbname="ensembl"/>
+        <ref dbkey="P12821" dbname="uniprot"/>
+        <ref dbkey="Q96P63" dbname="uniprot"/>
+        <ref dbkey="Q89WU7" dbname="uniprot"/>
+        <ref dbkey="ENSP00000305938" dbname="ensembl"/>
+        <ref dbkey="Q12866" dbname="uniprot"/>
+        <ref dbkey="ENSP00000246662" dbname="ensembl"/>
+        <ref dbkey="P05089" dbname="uniprot"/>
+        <ref dbkey="P33703" dbname="uniprot"/>
+        <ref dbkey="P81605" dbname="uniprot"/>
+        <ref dbkey="ENSP00000246635" dbname="ensembl"/>
+        <ref dbkey="Q8RE44" dbname="uniprot"/>
+        <ref dbkey="P05090" dbname="uniprot"/>
+        <ref dbkey="P13535" dbname="uniprot"/>
+        <ref dbkey="ENSP00000266041" dbname="ensembl"/>
+        <ref dbkey="Q86U44" dbname="uniprot"/>
+        <ref dbkey="Q62558" dbname="uniprot"/>
+        <ref dbkey="P10721" dbname="uniprot"/>
+        <ref dbkey="ENSP00000348248" dbname="ensembl"/>
+        <ref dbkey="ENSP00000283752" dbname="ensembl"/>
+        <ref dbkey="P51884" dbname="uniprot"/>
+        <ref dbkey="Q9H3D4" dbname="uniprot"/>
+        <ref dbkey="ENSP00000264790" dbname="ensembl"/>
+        <ref dbkey="ENSP00000200639" dbname="ensembl"/>
+        <ref dbkey="Q5VVW2" dbname="uniprot"/>
+        <ref dbkey="P43121" dbname="uniprot"/>
+        <ref dbkey="Q9UBG0" dbname="uniprot"/>
+        <ref dbkey="ENSP00000373272" dbname="ensembl"/>
+        <ref dbkey="ENSP00000265069" dbname="ensembl"/>
+        <ref dbkey="P11217" dbname="uniprot"/>
+        <ref dbkey="P11216" dbname="uniprot"/>
+        <ref dbkey="A8MVG2" dbname="uniprot"/>
+        <ref dbkey="P37837" dbname="uniprot"/>
+        <ref dbkey="ENSP00000255040" dbname="ensembl"/>
+        <ref dbkey="ENSP00000234590" dbname="ensembl"/>
+        <ref dbkey="ENSP00000355541" dbname="ensembl"/>
+        <ref dbkey="ENSP00000385834" dbname="ensembl"/>
+        <ref dbkey="P10244" dbname="uniprot"/>
+        <ref dbkey="P59665" dbname="uniprot"/>
+        <ref dbkey="Q96PD5" dbname="uniprot"/>
+        <ref dbkey="ENSP00000366450" dbname="ensembl"/>
+        <ref dbkey="P17174" dbname="uniprot"/>
+        <ref dbkey="Q2KPA3" dbname="uniprot"/>
+        <ref dbkey="ENSP00000245503" dbname="ensembl"/>
+        <ref dbkey="ENSP00000261714" dbname="ensembl"/>
+        <ref dbkey="P36955" dbname="uniprot"/>
+        <ref dbkey="P26927" dbname="uniprot"/>
+        <ref dbkey="P05109" dbname="uniprot"/>
+        <ref dbkey="Q15828" dbname="uniprot"/>
+        <ref dbkey="ENSP00000442488" dbname="ensembl"/>
+        <ref dbkey="P26916" dbname="uniprot"/>
+        <ref dbkey="ENSP00000245907" dbname="ensembl"/>
+        <ref dbkey="ENSP00000373234" dbname="ensembl"/>
+        <ref dbkey="ENSP00000265029" dbname="ensembl"/>
+        <ref dbkey="ENSP00000264832" dbname="ensembl"/>
+        <ref dbkey="ENSPPYP00000016551" dbname="ensembl"/>
+        <ref dbkey="O43866" dbname="uniprot"/>
+        <ref dbkey="ENSP00000265023" dbname="ensembl"/>
+        <ref dbkey="P05543" dbname="uniprot"/>
+        <ref dbkey="ENSP00000217026" dbname="ensembl"/>
+        <ref dbkey="Q9UMS0" dbname="uniprot"/>
+        <ref dbkey="P04004" dbname="uniprot"/>
+        <ref dbkey="ENSP00000351682" dbname="ensembl"/>
+        <ref dbkey="ENSP00000374778" dbname="ensembl"/>
+        <ref dbkey="ENSP00000261755" dbname="ensembl"/>
+        <ref dbkey="ENSP00000307513" dbname="ensembl"/>
+        <ref dbkey="ENSP00000386444" dbname="ensembl"/>
+        <ref dbkey="Q86YZ3" dbname="uniprot"/>
+        <ref dbkey="P24863" dbname="uniprot"/>
+        <ref dbkey="ENSP00000227378" dbname="ensembl"/>
+        <ref dbkey="Q62190" dbname="uniprot"/>
+        <ref dbkey="Q8IV36" dbname="uniprot"/>
+        <ref dbkey="Q9GZR7" dbname="uniprot"/>
+        <ref dbkey="ENSP00000283357" dbname="ensembl"/>
+        <ref dbkey="ENSP00000298717" dbname="ensembl"/>
+        <ref dbkey="ENSP00000312435" dbname="ensembl"/>
+        <ref dbkey="ENSP00000222286" dbname="ensembl"/>
+        <ref dbkey="ENSP00000307240" dbname="ensembl"/>
+        <ref dbkey="P00915" dbname="uniprot"/>
+        <ref dbkey="ENSP00000085219" dbname="ensembl"/>
+        <ref dbkey="Q9UBS5" dbname="uniprot"/>
+        <ref dbkey="P00918" dbname="uniprot"/>
+        <ref dbkey="O75223" dbname="uniprot"/>
+        <ref dbkey="Q6EIY9" dbname="uniprot"/>
+        <ref dbkey="ENSP00000301522" dbname="ensembl"/>
+        <ref dbkey="ENSP00000281419" dbname="ensembl"/>
+        <ref dbkey="Q96LP2" dbname="uniprot"/>
+        <ref dbkey="ENSP00000439056" dbname="ensembl"/>
+        <ref dbkey="ENSP00000306965" dbname="ensembl"/>
+        <ref dbkey="ENSP00000264381" dbname="ensembl"/>
+        <ref dbkey="ENSP00000164139" dbname="ensembl"/>
+        <ref dbkey="P16070" dbname="uniprot"/>
+        <ref dbkey="B9A064" dbname="uniprot"/>
+        <ref dbkey="ENSP00000361229" dbname="ensembl"/>
+        <ref dbkey="P01714" dbname="uniprot"/>
+        <ref dbkey="P01717" dbname="uniprot"/>
+        <ref dbkey="ENSP00000341917" dbname="ensembl"/>
+        <ref dbkey="P13645" dbname="uniprot"/>
+        <ref dbkey="ENSP00000300060" dbname="ensembl"/>
+        <ref dbkey="P13647" dbname="uniprot"/>
+        <ref dbkey="P13646" dbname="uniprot"/>
+        <ref dbkey="P01308" dbname="uniprot"/>
+        <ref dbkey="P01700" dbname="uniprot"/>
+        <ref dbkey="P46934" dbname="uniprot"/>
+        <ref dbkey="ENSP00000254801" dbname="ensembl"/>
+        <ref dbkey="Q96L93" dbname="uniprot"/>
+        <ref dbkey="Q8IZF2" dbname="uniprot"/>
+        <ref dbkey="P07414" dbname="uniprot"/>
+        <ref dbkey="ENSP00000359356" dbname="ensembl"/>
+        <ref dbkey="O35090" dbname="uniprot"/>
+        <ref dbkey="ENSP00000392338" dbname="ensembl"/>
+        <ref dbkey="O75882" dbname="uniprot"/>
+        <ref dbkey="ENSP00000236671" dbname="ensembl"/>
+        <ref dbkey="ENSP00000268082" dbname="ensembl"/>
+        <ref dbkey="ENSP00000272317" dbname="ensembl"/>
+        <ref dbkey="ENSP00000369816" dbname="ensembl"/>
+        <ref dbkey="ENSP00000072516" dbname="ensembl"/>
+        <ref dbkey="ENSP00000251643" dbname="ensembl"/>
+        <ref dbkey="P02024" dbname="uniprot"/>
+        <ref dbkey="ENSP00000342850" dbname="ensembl"/>
+        <ref dbkey="P08637" dbname="uniprot"/>
+        <ref dbkey="Q13103" dbname="uniprot"/>
+        <ref dbkey="A0Q388" dbname="uniprot"/>
+        <ref dbkey="ENSP00000252242" dbname="ensembl"/>
+        <ref dbkey="ENSP00000342032" dbname="ensembl"/>
+        <ref dbkey="ENSP00000252244" dbname="ensembl"/>
+        <ref dbkey="P25788" dbname="uniprot"/>
+        <ref dbkey="P25786" dbname="uniprot"/>
+        <ref dbkey="ENSP00000413479" dbname="ensembl"/>
+        <ref dbkey="ENSP00000311113" dbname="ensembl"/>
+        <ref dbkey="ENSP00000306261" dbname="ensembl"/>
+        <ref dbkey="P02008" dbname="uniprot"/>
+        <ref dbkey="ENSP00000252250" dbname="ensembl"/>
+        <ref dbkey="ENSP00000252252" dbname="ensembl"/>
+        <ref dbkey="ENSP00000244137" dbname="ensembl"/>
+        <ref dbkey="Q969T7" dbname="uniprot"/>
+        <ref dbkey="P05154" dbname="uniprot"/>
+        <ref dbkey="P05155" dbname="uniprot"/>
+        <ref dbkey="P54108" dbname="uniprot"/>
+        <ref dbkey="Q9FXY7" dbname="uniprot"/>
+        <ref dbkey="P04406" dbname="uniprot"/>
+        <ref dbkey="ENSP00000355627" dbname="ensembl"/>
+        <ref dbkey="P06312" dbname="uniprot"/>
+        <ref dbkey="A1URN6" dbname="uniprot"/>
+        <ref dbkey="P12273" dbname="uniprot"/>
+        <ref dbkey="ENSP00000238146" dbname="ensembl"/>
+        <ref dbkey="ENSP00000226207" dbname="ensembl"/>
+        <ref dbkey="ENSP00000342070" dbname="ensembl"/>
+        <ref dbkey="ENSP00000226218" dbname="ensembl"/>
+        <ref dbkey="P14389" dbname="uniprot"/>
+        <ref dbkey="P12955" dbname="uniprot"/>
+        <ref dbkey="P04075" dbname="uniprot"/>
+        <ref dbkey="ENSP00000302621" dbname="ensembl"/>
+        <ref dbkey="ENSP00000362778" dbname="ensembl"/>
+        <ref dbkey="ENSP00000274773" dbname="ensembl"/>
+        <ref dbkey="P60174" dbname="uniprot"/>
+        <ref dbkey="P02036" dbname="uniprot"/>
+        <ref dbkey="P04066" dbname="uniprot"/>
+        <ref dbkey="P02042" dbname="uniprot"/>
+        <ref dbkey="ENSP00000376930" dbname="ensembl"/>
+        <ref dbkey="P0C869" dbname="uniprot"/>
+        <ref dbkey="ENSP00000296326" dbname="ensembl"/>
+        <ref dbkey="ENSP00000348170" dbname="ensembl"/>
+        <ref dbkey="ENSP00000297814" dbname="ensembl"/>
+        <ref dbkey="Q9GLP6" dbname="uniprot"/>
+        <ref dbkey="P06733" dbname="uniprot"/>
+        <ref dbkey="Q92820" dbname="uniprot"/>
+        <ref dbkey="P27487" dbname="uniprot"/>
+        <ref dbkey="ENSP00000269141" dbname="ensembl"/>
+        <ref dbkey="P16930" dbname="uniprot"/>
+        <ref dbkey="P04433" dbname="uniprot"/>
+        <ref dbkey="Q92835" dbname="uniprot"/>
+        <ref dbkey="ENSP00000310861" dbname="ensembl"/>
+        <ref dbkey="P25311" dbname="uniprot"/>
+        <ref dbkey="P61916" dbname="uniprot"/>
+        <ref dbkey="ENSP00000260508" dbname="ensembl"/>
+        <ref dbkey="ENSP00000291009" dbname="ensembl"/>
+        <ref dbkey="ENSP00000339086" dbname="ensembl"/>
+        <ref dbkey="P49822" dbname="uniprot"/>
+        <ref dbkey="ENSP00000348589" dbname="ensembl"/>
+        <ref dbkey="P07858" dbname="uniprot"/>
+        <ref dbkey="P06727" dbname="uniprot"/>
+        <ref dbkey="ENSP00000264613" dbname="ensembl"/>
+        <ref dbkey="Q9BYE9" dbname="uniprot"/>
+        <ref dbkey="P49064" dbname="uniprot"/>
+        <ref dbkey="P01766" dbname="uniprot"/>
+        <ref dbkey="P49065" dbname="uniprot"/>
+        <ref dbkey="ENSP00000286301" dbname="ensembl"/>
+        <ref dbkey="ENSP00000327229" dbname="ensembl"/>
+        <ref dbkey="P11142" dbname="uniprot"/>
+        <ref dbkey="ENSP00000345179" dbname="ensembl"/>
+        <ref dbkey="ENSP00000358724" dbname="ensembl"/>
+        <ref dbkey="ENSBTAP00000022772" dbname="ensembl"/>
+        <ref dbkey="Q99972" dbname="uniprot"/>
+        <ref dbkey="P20933" dbname="uniprot"/>
+        <ref dbkey="ENSP00000037502" dbname="ensembl"/>
+        <ref dbkey="ENSP00000346402" dbname="ensembl"/>
+        <ref dbkey="P06276" dbname="uniprot"/>
+        <ref dbkey="P20018" dbname="uniprot"/>
+        <ref dbkey="Q5NVH5" dbname="uniprot"/>
+        <ref dbkey="Q96QA5" dbname="uniprot"/>
+        <ref dbkey="ENSP00000431254" dbname="ensembl"/>
+        <ref dbkey="ENSP00000256404" dbname="ensembl"/>
+        <ref dbkey="ENSP00000259396" dbname="ensembl"/>
+        <ref dbkey="ENSP00000357721" dbname="ensembl"/>
+        <ref dbkey="P23470" dbname="uniprot"/>
+        <ref dbkey="ENSP00000168148" dbname="ensembl"/>
+        <ref dbkey="ENSP00000393887" dbname="ensembl"/>
+        <ref dbkey="Q9Y646" dbname="uniprot"/>
+        <ref dbkey="P43251" dbname="uniprot"/>
+        <ref dbkey="ENSP00000308452" dbname="ensembl"/>
+        <ref dbkey="P43652" dbname="uniprot"/>
+        <ref dbkey="Q9UNN8" dbname="uniprot"/>
+        <ref dbkey="ENSP00000257197" dbname="ensembl"/>
+        <ref dbkey="P29508" dbname="uniprot"/>
+        <ref dbkey="ENSP00000257192" dbname="ensembl"/>
+        <ref dbkey="Q9Y623" dbname="uniprot"/>
+        <ref dbkey="Q8N1N4" dbname="uniprot"/>
+        <ref dbkey="ENSP00000236147" dbname="ensembl"/>
+        <ref dbkey="ENSP00000396045" dbname="ensembl"/>
+        <ref dbkey="A2V9Z4" dbname="uniprot"/>
+        <ref dbkey="B3EWE3" dbname="uniprot"/>
+        <ref dbkey="Q12913" dbname="uniprot"/>
+        <ref dbkey="P08571" dbname="uniprot"/>
+        <ref dbkey="ENSP00000347076" dbname="ensembl"/>
+        <ref dbkey="ENSP00000306279" dbname="ensembl"/>
+        <ref dbkey="P55290" dbname="uniprot"/>
+        <ref dbkey="P09211" dbname="uniprot"/>
+        <ref dbkey="ENSP00000466775" dbname="ensembl"/>
+        <ref dbkey="Q96KN2" dbname="uniprot"/>
+        <ref dbkey="ENSP00000357156" dbname="ensembl"/>
+        <ref dbkey="ENSP00000304945" dbname="ensembl"/>
+        <ref dbkey="P29622" dbname="uniprot"/>
+        <ref dbkey="Q96KN7" dbname="uniprot"/>
+        <ref dbkey="ENSP00000254336" dbname="ensembl"/>
+        <ref dbkey="P35222" dbname="uniprot"/>
+        <ref dbkey="O00462" dbname="uniprot"/>
+        <ref dbkey="ENSP00000229239" dbname="ensembl"/>
+        <ref dbkey="P07355" dbname="uniprot"/>
+        <ref dbkey="ENSP00000356671" dbname="ensembl"/>
+        <ref dbkey="Q14624" dbname="uniprot"/>
+        <ref dbkey="ENSP00000269576" dbname="ensembl"/>
+        <ref dbkey="ENSP00000254722" dbname="ensembl"/>
+        <ref dbkey="ENSP00000413520" dbname="ensembl"/>
+        <ref dbkey="Q13616" dbname="uniprot"/>
+        <ref dbkey="ENSP00000394936" dbname="ensembl"/>
+        <ref dbkey="ENSP00000347507" dbname="ensembl"/>
+        <ref dbkey="Q45XH3" dbname="uniprot"/>
+        <ref dbkey="Q9BYX2" dbname="uniprot"/>
+        <ref dbkey="ENSP00000357791" dbname="ensembl"/>
+        <ref dbkey="Q9NPH3" dbname="uniprot"/>
+        <ref dbkey="ENSP00000360519" dbname="ensembl"/>
+        <ref dbkey="ENSP00000222381" dbname="ensembl"/>
+        <ref dbkey="Q8N5R6" dbname="uniprot"/>
+        <ref dbkey="P07359" dbname="uniprot"/>
+        <ref dbkey="P07333" dbname="uniprot"/>
+        <ref dbkey="ENSP00000229270" dbname="ensembl"/>
+        <ref dbkey="Q96KR1" dbname="uniprot"/>
+        <ref dbkey="ENSP00000301659" dbname="ensembl"/>
+        <ref dbkey="ENSP00000325239" dbname="ensembl"/>
+        <ref dbkey="ENSP00000301653" dbname="ensembl"/>
+        <ref dbkey="ENSP00000263100" dbname="ensembl"/>
+        <ref dbkey="ENSP00000339477" dbname="ensembl"/>
+        <ref dbkey="ENSP00000255381" dbname="ensembl"/>
+        <ref dbkey="ENSP00000359446" dbname="ensembl"/>
+        <ref dbkey="ENSP00000251595" dbname="ensembl"/>
+        <ref dbkey="O94927" dbname="uniprot"/>
+        <ref dbkey="Q9Y5Y7" dbname="uniprot"/>
+        <ref dbkey="ENSP00000272298" dbname="ensembl"/>
+        <ref dbkey="ENSP00000290863" dbname="ensembl"/>
+        <ref dbkey="ENSP00000369129" dbname="ensembl"/>
+        <ref dbkey="ENSP00000393417" dbname="ensembl"/>
+        <ref dbkey="P08185" dbname="uniprot"/>
+        <ref dbkey="P07339" dbname="uniprot"/>
+        <ref dbkey="ENSP00000284322" dbname="ensembl"/>
+        <ref dbkey="ENSP00000357330" dbname="ensembl"/>
+        <ref dbkey="Q7Z3B1" dbname="uniprot"/>
+        <ref dbkey="P01614" dbname="uniprot"/>
+        <ref dbkey="P01613" dbname="uniprot"/>
+        <ref dbkey="ENSP00000252172" dbname="ensembl"/>
+        <ref dbkey="P01605" dbname="uniprot"/>
+        <ref dbkey="ENSP00000362413" dbname="ensembl"/>
+        <ref dbkey="ENSP00000379676" dbname="ensembl"/>
+        <ref dbkey="ENSP00000266718" dbname="ensembl"/>
+        <ref dbkey="ENSP00000372815" dbname="ensembl"/>
+        <ref dbkey="Q13790" dbname="uniprot"/>
+        <ref dbkey="ENSP00000246489" dbname="ensembl"/>
+        <ref dbkey="Q9ULH7" dbname="uniprot"/>
+        <ref dbkey="P27169" dbname="uniprot"/>
+        <ref dbkey="ENSP00000298841" dbname="ensembl"/>
+        <ref dbkey="P31944" dbname="uniprot"/>
+        <ref dbkey="P14068" dbname="uniprot"/>
+        <ref dbkey="P40925" dbname="uniprot"/>
+        <ref dbkey="ENSP00000315130" dbname="ensembl"/>
+        <ref dbkey="Q8JHJ2" dbname="uniprot"/>
+        <ref dbkey="ENSP00000285379" dbname="ensembl"/>
+        <ref dbkey="Q6P9F7" dbname="uniprot"/>
+        <ref dbkey="Q9C029" dbname="uniprot"/>
+        <ref dbkey="ENSP00000323856" dbname="ensembl"/>
+        <ref dbkey="ENSP00000349588" dbname="ensembl"/>
+        <ref dbkey="ENSP00000258428" dbname="ensembl"/>
+        <ref dbkey="ENSP00000292401" dbname="ensembl"/>
+        <ref dbkey="ENSP00000365081" dbname="ensembl"/>
+        <ref dbkey="P07911" dbname="uniprot"/>
+        <ref dbkey="ENSP00000264595" dbname="ensembl"/>
+        <ref dbkey="Q04756" dbname="uniprot"/>
+        <ref dbkey="ENSP00000332674" dbname="ensembl"/>
+        <ref dbkey="Q9UPN3" dbname="uniprot"/>
+        <ref dbkey="ENSP00000250971" dbname="ensembl"/>
+        <ref dbkey="ENSP00000362485" dbname="ensembl"/>
+        <ref dbkey="ENSP00000328287" dbname="ensembl"/>
+        <ref dbkey="P02749" dbname="uniprot"/>
+        <ref dbkey="ENSP00000295874" dbname="ensembl"/>
+        <ref dbkey="P50579" dbname="uniprot"/>
+        <ref dbkey="P02743" dbname="uniprot"/>
+        <ref dbkey="P04180" dbname="uniprot"/>
+        <ref dbkey="Q15149" dbname="uniprot"/>
+        <ref dbkey="ENSP00000441828" dbname="ensembl"/>
+        <ref dbkey="ENSP00000350425" dbname="ensembl"/>
+        <ref dbkey="ENSP00000427550" dbname="ensembl"/>
+        <ref dbkey="ENSP00000225927" dbname="ensembl"/>
+        <ref dbkey="ENSP00000295897" dbname="ensembl"/>
+        <ref dbkey="ENSP00000275493" dbname="ensembl"/>
+        <ref dbkey="P54289" dbname="uniprot"/>
+        <ref dbkey="ENSP00000356905" dbname="ensembl"/>
+        <ref dbkey="Q5T7N2" dbname="uniprot"/>
+        <ref dbkey="P02774" dbname="uniprot"/>
+        <ref dbkey="P17813" dbname="uniprot"/>
+        <ref dbkey="P80748" dbname="uniprot"/>
+        <ref dbkey="ENSP00000348068" dbname="ensembl"/>
+        <ref dbkey="Q0VDD7" dbname="uniprot"/>
+        <ref dbkey="P02787" dbname="uniprot"/>
+        <ref dbkey="ENSP00000356969" dbname="ensembl"/>
+        <ref dbkey="ENSP00000381607" dbname="ensembl"/>
+        <ref dbkey="ENSP00000233735" dbname="ensembl"/>
+        <ref dbkey="P10909" dbname="uniprot"/>
+        <ref dbkey="P02790" dbname="uniprot"/>
+        <ref dbkey="P02750" dbname="uniprot"/>
+        <ref dbkey="P02753" dbname="uniprot"/>
+        <ref dbkey="P10912" dbname="uniprot"/>
+        <ref dbkey="P68871" dbname="uniprot"/>
+        <ref dbkey="ENSP00000319464" dbname="ensembl"/>
+        <ref dbkey="B4PS24" dbname="uniprot"/>
+        <ref dbkey="ENSP00000374991" dbname="ensembl"/>
+        <ref dbkey="ENSP00000326199" dbname="ensembl"/>
+        <ref dbkey="P02760" dbname="uniprot"/>
+        <ref dbkey="ENSP00000329797" dbname="ensembl"/>
+        <ref dbkey="P02763" dbname="uniprot"/>
+        <ref dbkey="ENSP00000374987" dbname="ensembl"/>
+        <ref dbkey="Q92954" dbname="uniprot"/>
+        <ref dbkey="P02768" dbname="uniprot"/>
+        <ref dbkey="P02765" dbname="uniprot"/>
+        <ref dbkey="ENSP00000374989" dbname="ensembl"/>
+        <ref dbkey="P02766" dbname="uniprot"/>
+        <ref dbkey="ENSP00000262746" dbname="ensembl"/>
+        <ref dbkey="P02769" dbname="uniprot"/>
+        <ref dbkey="ENSP00000329380" dbname="ensembl"/>
+        <ref dbkey="P01620" dbname="uniprot"/>
+        <ref dbkey="P01621" dbname="uniprot"/>
+        <ref dbkey="ENSP00000329374" dbname="ensembl"/>
+        <ref dbkey="ENSP00000356944" dbname="ensembl"/>
+        <ref dbkey="P02770" dbname="uniprot"/>
+        <ref dbkey="ENSP00000364321" dbname="ensembl"/>
+        <ref dbkey="Q8TEP8" dbname="uniprot"/>
+        <ref dbkey="Q8UVR8" dbname="uniprot"/>
+        <ref dbkey="P04217" dbname="uniprot"/>
+        <ref dbkey="ENSP00000479871" dbname="ensembl"/>
+        <ref dbkey="ENSP00000321853" dbname="ensembl"/>
+        <ref dbkey="B1VNN9" dbname="uniprot"/>
+        <ref dbkey="ENSP00000295408" dbname="ensembl"/>
+        <ref dbkey="P00558" dbname="uniprot"/>
+        <ref dbkey="ENSP00000167586" dbname="ensembl"/>
+        <ref dbkey="O94383" dbname="uniprot"/>
+        <ref dbkey="ENSP00000384330" dbname="ensembl"/>
+        <ref dbkey="P62979" dbname="uniprot"/>
+        <ref dbkey="ENSP00000269491" dbname="ensembl"/>
+        <ref dbkey="P26367" dbname="uniprot"/>
+        <ref dbkey="ENSP00000226578" dbname="ensembl"/>
+        <ref dbkey="Q9UKX3" dbname="uniprot"/>
+        <ref dbkey="Q9UKX2" dbname="uniprot"/>
+        <ref dbkey="P06396" dbname="uniprot"/>
+        <ref dbkey="P00533" dbname="uniprot"/>
+        <ref dbkey="P04259" dbname="uniprot"/>
+        <ref dbkey="B6YSS1" dbname="uniprot"/>
+        <ref dbkey="O60447" dbname="uniprot"/>
+        <ref dbkey="ENSP00000372391" dbname="ensembl"/>
+        <ref dbkey="P04264" dbname="uniprot"/>
+        <ref dbkey="Q9NR48" dbname="uniprot"/>
+        <ref dbkey="A6YF56" dbname="uniprot"/>
+        <ref dbkey="P04278" dbname="uniprot"/>
+        <ref dbkey="Q5XPI4" dbname="uniprot"/>
+        <ref dbkey="O94876" dbname="uniprot"/>
+        <ref dbkey="ENSP00000263045" dbname="ensembl"/>
+        <ref dbkey="ENSP00000333298" dbname="ensembl"/>
+        <ref dbkey="ENSP00000326804" dbname="ensembl"/>
+        <ref dbkey="Q8WVZ1" dbname="uniprot"/>
+        <ref dbkey="ENSP00000301328" dbname="ensembl"/>
+        <ref dbkey="O00338" dbname="uniprot"/>
+        <ref dbkey="P54802" dbname="uniprot"/>
+        <ref dbkey="ENSP00000261944" dbname="ensembl"/>
+        <ref dbkey="ENSP00000373918" dbname="ensembl"/>
+        <ref dbkey="P19022" dbname="uniprot"/>
+        <ref dbkey="ENSP00000218388" dbname="ensembl"/>
+        <ref dbkey="Q9BXX0" dbname="uniprot"/>
+        <ref dbkey="ENSP00000328690" dbname="ensembl"/>
+        <ref dbkey="Q5XLE4" dbname="uniprot"/>
+        <ref dbkey="P15151" dbname="uniprot"/>
+        <ref dbkey="ENSP00000292609" dbname="ensembl"/>
+        <ref dbkey="Q14533" dbname="uniprot"/>
+        <ref dbkey="P05362" dbname="uniprot"/>
+        <ref dbkey="Q7VDY7" dbname="uniprot"/>
+        <ref dbkey="P32942" dbname="uniprot"/>
+        <ref dbkey="P15169" dbname="uniprot"/>
+        <ref dbkey="ENSP00000260118" dbname="ensembl"/>
+        <ref dbkey="B5YDV4" dbname="uniprot"/>
+        <ref dbkey="Q14152" dbname="uniprot"/>
+        <ref dbkey="O95445" dbname="uniprot"/>
+        <ref dbkey="ENSP00000356572" dbname="ensembl"/>
+        <ref dbkey="O00391" dbname="uniprot"/>
+        <ref dbkey="Q7RTS7" dbname="uniprot"/>
+        <ref dbkey="Q8NI35" dbname="uniprot"/>
+        <ref dbkey="O95497" dbname="uniprot"/>
+        <ref dbkey="O14556" dbname="uniprot"/>
+        <ref dbkey="P15924" dbname="uniprot"/>
+        <ref dbkey="P69905" dbname="uniprot"/>
+        <ref dbkey="O43150" dbname="uniprot"/>
+        <ref dbkey="Q1MTR1" dbname="uniprot"/>
+        <ref dbkey="Q8NHQ9" dbname="uniprot"/>
+        <ref dbkey="ENSP00000333203" dbname="ensembl"/>
+        <ref dbkey="ENSP00000288135" dbname="ensembl"/>
+        <ref dbkey="Q9BY67" dbname="uniprot"/>
+        <ref dbkey="Q14118" dbname="uniprot"/>
+        <ref dbkey="C1B914" dbname="uniprot"/>
+        <ref dbkey="ENSP00000273261" dbname="ensembl"/>
+        <ref dbkey="P04211" dbname="uniprot"/>
+        <ref dbkey="ENSP00000230036" dbname="ensembl"/>
+        <ref dbkey="ENSP00000251481" dbname="ensembl"/>
+        <ref dbkey="ENSP00000359539" dbname="ensembl"/>
+        <ref dbkey="ENSP00000227667" dbname="ensembl"/>
+        <ref dbkey="P0CG04" dbname="uniprot"/>
+        <ref dbkey="P0CG05" dbname="uniprot"/>
+        <ref dbkey="P15144" dbname="uniprot"/>
+        <ref dbkey="ENSP00000341567" dbname="ensembl"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-07-25"/>
+        <date type="publication" value="2014-09-01"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001174</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Media G-1 PLUS (Lot: 504328), G-2 PLUS (Lot: 504332), G-MM (Lot: 017087) and HSA-solution (Lot: 017077) were all from the G5 Series from Vitrolife. Sydney IVF Cleavage Medium (Lot: K11935 and 512913) and Sydney IVF Blastocyst Medium (Lot: K11927 and 512892) were from Cook Medical. EmbryoAssist (Lot: 13397875), BlastAssist (Lot: 13500268), Sequential Cleav (Lot: 13440675) and Sequential Blast (Lot: 13420273) were from ORIGIO.  In-solution digestion A total of 100 µg total protein of each media sample was lyophilized and re-dissolved in 25 µl 8 M urea 0.2 M Tris-HCl, pH 8.3, reduced and alkylated by adding 15 mM dithiothreitol (DTT) followed by the addition of 30 mM iodoacetamide. Both reactions were allowed to continue for 1 h. The samples were subsequently diluted 5 times with 0.1 M Tris-HCL pH 8.3 and digested using 1:50 w/w trypsin (Sigma) at 37 °C for 16 h. From each sample, 20 µg was desalted using Poros 50 R2 reverse phase column material (PerSeptive Biosystems) packed in GELoader Tips (Eppendorf), dried in a vacuum centrifuge, dissolved in 0.1% formic acid and stored at 4 °C before liquid chromatography-tandem mass spectrometry (LC–MS/MS) analysis.  Albumin depletion A total of 5 ml (~25 mg serum albumin) Sydney IVF Cleavage Medium (Cook Medical, Lot: K11935) or 0.5 ml (~25 mg serum albumin) G-MM recombinant human serum albumin (HSA) supplement (Vitrolife, Lot: 017087) was diluted 4 times in phosphate-buffered saline (PBS), 5 mM ethylenediaminetetraacetic acid (EDTA), pH 7.4 (loading buffer) and applied to a 1 ml column containing the recombinant albumin-binding domain of streptococcal protein G (Kronvall, et al., 1979) equilibrated in loading buffer. To prevent exceeding the albumin binding capacity of the column (30 mg/ml), each diluted medium sample was divided in five fractions and each fraction was depleted separately. The flow through was collected for each run, and the column regenerated in between using wash buffer (20 mM Na-citrate, 150 mM NaCl, pH 2.5). Flow through for all runs were pooled for each media and dialyzed overnight into 10 mM Tris-HCl, pH 7.4. The depleted and dialyzed media was then concentrated using a 15 ml Centriprep 10K centrifugal filter (Merck Millipore Ltd) to a volume of 0.5 ml before being lyophilized using a speedvac (Savant) to a final volume of 50 µl.  Protein separation by SDS-PAGE and in-gel digestion The albumin-depleted samples were boiled for 5 min in sodium dodecyl sulphate (SDS) sample buffer containing 50 mM DTT, separated by SDS polyacrylamide gel electrophoresis (SDS-PAGE) using a 5-15% (w/v) gel (Bury, 1981) and stained using Coomassie blue (RAPIDstain, G-Biosciences). The gel was cut into 14 slices, these were washed 3 times in milli-Q water and incubated two times 15 min in 130 μL 50% acetonitrile, dehydrated in 130 μL acetonitrile for 15 min and equilibrated in 150 μL 0.1 M NH4HCO3 for 5 min before 150 μL acetonitrile was added. After 15 min the supernatants were removed and the gel pieces were lyophilized for 20 min. In-gel digestions were performed by digesting the gel pieces with trypsin (Sigma) using a 1:50 (w/w) ratio in 50 mM NH4HCO3 at 37 °C for 16 h. The resulting peptides were desalted using Poros 50 R2 reverse phase column material (PerSeptive Biosystems) packed in GELoader Tips (Eppendorf), dried in a vacuum centrifuge, dissolved in 0.1% formic acid and stored at 4 °C before LC–MS/MS analysis.  LC-MS/MS analysis LC-MS/MS analyses were performed on an EASY-nLC II system (Thermo Scientific) connected to a TripleTOF 5600+ mass spectrometer (AB Sciex) equipped with a NanoSpray III source (AB Sciex) and operated under Analyst TF 1.6.0 control. The samples were injected, trapped, and desalted isocratically on a Biosphere C18 precolumn (ID 100 µm x 2 cm, 5 µm, 120 Å, NanoSeparation, Nieuwkoop, Netherlands). Next, the peptides were eluted from the trap column and separated on a 15 cm analytical column (75 μm i.d.), which was pulled in-house on Polymicro silica tubing by a P2000 laser puller (Sutter Instrument Co.), and packed in-house with ReproSil-Pur C18-AQ 3 μm resin (Dr. Marisch GmbH, Ammerbuch-Entringen, Germany). Peptides were eluted at a flow rate of 250 nl/min using a 50 min gradient from 5% to 35% phase B (0.1% formic acid and 90% acetonitrile), followed by re-equilibration for 10 min back to the starting conditions.</field>
+        <field name="data_protocol">Protein Identification The collected MS files were converted to Mascot generic format (MGF) using the AB SCIEX MS Data Converter beta 1.3 (AB SCIEX) and the "proteinpilot MGF" parameters. The peak lists were used to interrogate the Swiss-Prot (version 2014_01, 542,258 sequences) Homo sapiens (20,273 sequences) database or the Swiss-Prot Fungi (31,056 sequences) database using Mascot 2.3.02 (Matrix Science) (Perkins, et al., 1999). Trypsin was employed as enzyme allowing one missed cleavage. Propionamide was entered as a fixed modification for in-gel digests and carbamidomethyl for in-solution digests, whereas oxidation of methionine, and hydroxylation of proline were entered as variable modifications. The mass accuracy of the precursor and product ions were 10 ppm and 0.2 da, and the instrument setting was specified as ESI-QUAD-TOF. The significance threshold (p) was set at 0.01 and the ion score expect cut-off at 0.005. Mascot results were parsed using MS Data Miner v. 1.2.2 (Dyrlund, et al., 2012) accepting only protein hits identified based on three or more unique peptides with expected ion values equal to or lower than 0.005. All keratin contaminants were removed from the final protein lists. MS Data Miner was further used to extract Gene Ontology (GO) information for all identified proteins. Note that since proteins are annotated with several GO terms, they can be represented in multiple GO summary categories.  Protein quantification Proteins were quantified based on the average MS signal response for the three most intense tryptic peptides for each protein (Silva, et al., 2006). In short, the MS files were searched as listed above and the Mascot .dat result files were used to generate a spectral library in Skyline v. 2.1.0.4936 (MacLean, et al., 2010) using the human sequences from Swiss-Prot as background proteome. Employing the same parameters as for the Mascot search, the three most abundant peptides for each protein were manually chosen from all peptides available in the spectral library. After data import, the chromatographic traces (extracted ion chromatograms) were manually inspected and adjusted where needed due to wrongfully assigned peaks. Proteins identified with less than 3 peptides were not included in the quantitation. The relative abundance and standard deviation of proteins quantified in all four of the technical replicates was calculated as the average MS intensity for the three peptides for each protein divided by the sum of the average signal for all quantified proteins in the sample.</field>
+        <field name="instrument_platform">TripleTOF 5600</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="modification">S-carboxamidoethyl-L-cysteine</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biomedical</field>
+        <field name="submitter_keywords">IVF</field>
+        <field name="submitter_keywords"> culture media</field>
+        <field name="submitter_keywords"> embryo</field>
+        <field name="submitter_keywords"> secretome</field>
+        <field name="submitter_keywords"> proteomics</field>
+        <field name="submitter_keywords"> LC-MS/MS</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">COMPLETE</field>
+        <field name="software">Matrix Science Mascot 2.3.02</field>
+        <field name="doi">10.6019/PXD001174</field>
+        <field name="publication">Dyrlund TF, Kirkegaard K, Poulsen ET, Sanggaard KW, Hindkjær JJ, Kjems J, Enghild JJ, Ingerslev HJ. Unconditioned commercial embryo culture media contain a large variety of non-declared proteins: a comprehensive proteomics analysis. Hum Reprod. 2014 Aug 27. pii: deu220</field>
+        <field name="submitter">Thomas F. Dyrlund</field>
+        <field name="submitter_mail">tfd@mb.au.dk</field>
+        <field name="submitter_affiliation">Department of Molecular Biology and Genetics</field>
+        <field name="labhead">Jan J. Enghild</field>
+        <field name="labhead_mail">jje@mb.au.dk</field>
+        <field name="labhead_affiliation">Aarhus University</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 1.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 1.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 1.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 10.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 10.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 10.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 11.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 11.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 11.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 12.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 12.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 12.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 13.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 13.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 13.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 14.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 14.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 14.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 2.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 3.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 3.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 3.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 4.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 4.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 4.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 5.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 5.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 5.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 6.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 6.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 6.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 7.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 7.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 7.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 8.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 8.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 8.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 9.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 9.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 9.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/Supplementary Table 1 - Quantitation.xlsx</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/Supplementary Table 2 - Proteins.xlsx</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-28 - TFD - Vitrolife G-1 Plus - 1ug - 1.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-28 - TFD - Vitrolife G-1 Plus - 1ug - 1.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-28 - TFD - Vitrolife G-1 Plus - 1ug - 1.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-28 - TFD - Vitrolife G-1 Plus - 1ug - 2.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-28 - TFD - Vitrolife G-1 Plus - 1ug - 2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-28 - TFD - Vitrolife G-1 Plus - 1ug - 2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-28 - TFD - Vitrolife G-1 Plus - 1ug - 3.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-28 - TFD - Vitrolife G-1 Plus - 1ug - 3.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-28 - TFD - Vitrolife G-1 Plus - 1ug - 3.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-28 - TFD - Vitrolife G-1 Plus - 1ug - 4.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-28 - TFD - Vitrolife G-1 Plus - 1ug - 4.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-28 - TFD - Vitrolife G-1 Plus - 1ug - 4.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-29 - TFD - Vitrolife G-2 Plus - 0.25ug - 1.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-29 - TFD - Vitrolife G-2 Plus - 0.25ug - 1.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-29 - TFD - Vitrolife G-2 Plus - 0.25ug - 1.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-30 - TFD - Vitrolife G-2 Plus - 0.25ug - 2.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-30 - TFD - Vitrolife G-2 Plus - 0.25ug - 2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-30 - TFD - Vitrolife G-2 Plus - 0.25ug - 2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-30 - TFD - Vitrolife G-2 Plus - 0.25ug - 3.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-30 - TFD - Vitrolife G-2 Plus - 0.25ug - 3.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-30 - TFD - Vitrolife G-2 Plus - 0.25ug - 3.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-30 - TFD - Vitrolife G-2 Plus - 0.25ug - 4.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-30 - TFD - Vitrolife G-2 Plus - 0.25ug - 4.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-30 - TFD - Vitrolife G-2 Plus - 0.25ug - 4.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-30 - TFD - Vitrolife G-MM - 0.25ug - 1.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-30 - TFD - Vitrolife G-MM - 0.25ug - 1.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-30 - TFD - Vitrolife G-MM - 0.25ug - 1.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-30 - TFD - Vitrolife G-MM - 0.25ug - 2.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-30 - TFD - Vitrolife G-MM - 0.25ug - 2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-30 - TFD - Vitrolife G-MM - 0.25ug - 2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-30 - TFD - Vitrolife G-MM - 0.25ug - 3.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-30 - TFD - Vitrolife G-MM - 0.25ug - 3.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-30 - TFD - Vitrolife G-MM - 0.25ug - 3.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-30 - TFD - Vitrolife G-MM - 0.25ug - 4.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-30 - TFD - Vitrolife G-MM - 0.25ug - 4.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-30 - TFD - Vitrolife G-MM - 0.25ug - 4.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-04 - TFD - Cook Cleavage Medium - 0.25ug - 1.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-04 - TFD - Cook Cleavage Medium - 0.25ug - 1.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-04 - TFD - Cook Cleavage Medium - 0.25ug - 1.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-04 - TFD - Cook Cleavage Medium - 0.25ug - 2.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-04 - TFD - Cook Cleavage Medium - 0.25ug - 2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-04 - TFD - Cook Cleavage Medium - 0.25ug - 2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-04 - TFD - Cook Cleavage Medium - 0.25ug - 3.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-04 - TFD - Cook Cleavage Medium - 0.25ug - 3.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-04 - TFD - Cook Cleavage Medium - 0.25ug - 3.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-04 - TFD - Cook Cleavage Medium - 0.25ug - 4.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-04 - TFD - Cook Cleavage Medium - 0.25ug - 4.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-04 - TFD - Cook Cleavage Medium - 0.25ug - 4.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-05 - TFD - Cook Blastocyst Medium - 0.25ug - 1.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-05 - TFD - Cook Blastocyst Medium - 0.25ug - 1.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-05 - TFD - Cook Blastocyst Medium - 0.25ug - 1.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-05 - TFD - Cook Blastocyst Medium - 0.25ug - 2.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-05 - TFD - Cook Blastocyst Medium - 0.25ug - 2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-05 - TFD - Cook Blastocyst Medium - 0.25ug - 2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-05 - TFD - Cook Blastocyst Medium - 0.25ug - 3.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-05 - TFD - Cook Blastocyst Medium - 0.25ug - 3.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-05 - TFD - Cook Blastocyst Medium - 0.25ug - 3.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-05 - TFD - Cook Blastocyst Medium - 0.25ug - 4.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-05 - TFD - Cook Blastocyst Medium - 0.25ug - 4.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-05 - TFD - Cook Blastocyst Medium - 0.25ug - 4.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-06 - TFD - Cook Cleavage Medium L2 - 0.25ug - 1.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-06 - TFD - Cook Cleavage Medium L2 - 0.25ug - 1.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-06 - TFD - Cook Cleavage Medium L2 - 0.25ug - 1.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-06 - TFD - Cook Cleavage Medium L2 - 0.25ug - 2.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-06 - TFD - Cook Cleavage Medium L2 - 0.25ug - 2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-06 - TFD - Cook Cleavage Medium L2 - 0.25ug - 2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-06 - TFD - Cook Cleavage Medium L2 - 0.25ug - 3.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-06 - TFD - Cook Cleavage Medium L2 - 0.25ug - 3.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-06 - TFD - Cook Cleavage Medium L2 - 0.25ug - 3.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-06 - TFD - Cook Cleavage Medium L2 - 0.25ug - 4.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-06 - TFD - Cook Cleavage Medium L2 - 0.25ug - 4.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-06 - TFD - Cook Cleavage Medium L2 - 0.25ug - 4.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-08 - TFD - Cook Blastocyst Medium L2 - 0.25ug - 1.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-08 - TFD - Cook Blastocyst Medium L2 - 0.25ug - 1.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-08 - TFD - Cook Blastocyst Medium L2 - 0.25ug - 1.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-08 - TFD - Cook Blastocyst Medium L2 - 0.25ug - 2.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-08 - TFD - Cook Blastocyst Medium L2 - 0.25ug - 2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-08 - TFD - Cook Blastocyst Medium L2 - 0.25ug - 2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-08 - TFD - Cook Blastocyst Medium L2 - 0.25ug - 3.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-08 - TFD - Cook Blastocyst Medium L2 - 0.25ug - 3.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-08 - TFD - Cook Blastocyst Medium L2 - 0.25ug - 3.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-08 - TFD - Cook Blastocyst Medium L2 - 0.25ug - 4.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-08 - TFD - Cook Blastocyst Medium L2 - 0.25ug - 4.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-08 - TFD - Cook Blastocyst Medium L2 - 0.25ug - 4.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-09 - TFD - ORIGIO EmbryoAssist - 0.25ug - 1.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-09 - TFD - ORIGIO EmbryoAssist - 0.25ug - 1.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-09 - TFD - ORIGIO EmbryoAssist - 0.25ug - 1.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-09 - TFD - ORIGIO EmbryoAssist - 0.25ug - 2.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-09 - TFD - ORIGIO EmbryoAssist - 0.25ug - 2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-09 - TFD - ORIGIO EmbryoAssist - 0.25ug - 2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-09 - TFD - ORIGIO EmbryoAssist - 0.25ug - 3.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-09 - TFD - ORIGIO EmbryoAssist - 0.25ug - 3.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-09 - TFD - ORIGIO EmbryoAssist - 0.25ug - 3.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-09 - TFD - ORIGIO EmbryoAssist - 0.25ug - 4.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-09 - TFD - ORIGIO EmbryoAssist - 0.25ug - 4.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-09 - TFD - ORIGIO EmbryoAssist - 0.25ug - 4.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-15 - TFD - ORIGIO BlastAssist - 0.25ug - 1.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-15 - TFD - ORIGIO BlastAssist - 0.25ug - 1.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-15 - TFD - ORIGIO BlastAssist - 0.25ug - 1.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-15 - TFD - ORIGIO BlastAssist - 0.25ug - 2.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-15 - TFD - ORIGIO BlastAssist - 0.25ug - 2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-15 - TFD - ORIGIO BlastAssist - 0.25ug - 2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-15 - TFD - ORIGIO BlastAssist - 0.25ug - 3.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-15 - TFD - ORIGIO BlastAssist - 0.25ug - 3.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-15 - TFD - ORIGIO BlastAssist - 0.25ug - 3.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-15 - TFD - ORIGIO BlastAssist - 0.25ug - 4.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-15 - TFD - ORIGIO BlastAssist - 0.25ug - 4.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-15 - TFD - ORIGIO BlastAssist - 0.25ug - 4.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-16 - TFD - ORIGIO Sequential Cleav - 0.25ug - 1.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-16 - TFD - ORIGIO Sequential Cleav - 0.25ug - 1.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-16 - TFD - ORIGIO Sequential Cleav - 0.25ug - 1.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-16 - TFD - ORIGIO Sequential Cleav - 0.25ug - 2.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-16 - TFD - ORIGIO Sequential Cleav - 0.25ug - 2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-16 - TFD - ORIGIO Sequential Cleav - 0.25ug - 2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-16 - TFD - ORIGIO Sequential Cleav - 0.25ug - 3.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-16 - TFD - ORIGIO Sequential Cleav - 0.25ug - 3.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-16 - TFD - ORIGIO Sequential Cleav - 0.25ug - 3.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-16 - TFD - ORIGIO Sequential Cleav - 0.25ug - 4.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-16 - TFD - ORIGIO Sequential Cleav - 0.25ug - 4.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-16 - TFD - ORIGIO Sequential Cleav - 0.25ug - 4.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-18 - TFD - ORIGIO Sequential Blast - 0.25ug - 1.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-18 - TFD - ORIGIO Sequential Blast - 0.25ug - 1.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-18 - TFD - ORIGIO Sequential Blast - 0.25ug - 1.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-18 - TFD - ORIGIO Sequential Blast - 0.25ug - 2.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-18 - TFD - ORIGIO Sequential Blast - 0.25ug - 2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-18 - TFD - ORIGIO Sequential Blast - 0.25ug - 2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-18 - TFD - ORIGIO Sequential Blast - 0.25ug - 3.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-18 - TFD - ORIGIO Sequential Blast - 0.25ug - 3.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-18 - TFD - ORIGIO Sequential Blast - 0.25ug - 3.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-18 - TFD - ORIGIO Sequential Blast - 0.25ug - 4.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-18 - TFD - ORIGIO Sequential Blast - 0.25ug - 4.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-18 - TFD - ORIGIO Sequential Blast - 0.25ug - 4.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-05-23 TFD Vitrolife HSA-solution 001.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-05-23 TFD Vitrolife HSA-solution 001.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-05-23 TFD Vitrolife HSA-solution 001.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-05-23 TFD Vitrolife HSA-solution 002.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-05-23 TFD Vitrolife HSA-solution 002.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-05-23 TFD Vitrolife HSA-solution 002.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-05-23 TFD Vitrolife HSA-solution 003.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-05-23 TFD Vitrolife HSA-solution 003.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-05-23 TFD Vitrolife HSA-solution 003.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-05-23 TFD Vitrolife HSA-solution 004.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-05-23 TFD Vitrolife HSA-solution 004.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-05-23 TFD Vitrolife HSA-solution 004.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 1.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 10.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 11.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 12.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 13.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 14.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 2.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 3.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 4.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 5.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 6.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 7.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 8.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 9.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-28 - TFD - Vitrolife G-1 Plus - 1ug - 1.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-28 - TFD - Vitrolife G-1 Plus - 1ug - 2.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-28 - TFD - Vitrolife G-1 Plus - 1ug - 3.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-28 - TFD - Vitrolife G-1 Plus - 1ug - 4.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-29 - TFD - Vitrolife G-2 Plus - 0.25ug - 1.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-30 - TFD - Vitrolife G-2 Plus - 0.25ug - 2.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-30 - TFD - Vitrolife G-2 Plus - 0.25ug - 3.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-30 - TFD - Vitrolife G-2 Plus - 0.25ug - 4.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-04 - TFD - Cook Cleavage Medium - 0.25ug - 1.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-04 - TFD - Cook Cleavage Medium - 0.25ug - 2.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-04 - TFD - Cook Cleavage Medium - 0.25ug - 3.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-04 - TFD - Cook Cleavage Medium - 0.25ug - 4.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-05 - TFD - Cook Blastocyst Medium - 0.25ug - 1.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-05 - TFD - Cook Blastocyst Medium - 0.25ug - 2.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-05 - TFD - Cook Blastocyst Medium - 0.25ug - 3.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-05 - TFD - Cook Blastocyst Medium - 0.25ug - 4.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-06 - TFD - Cook Cleavage Medium L2 - 0.25ug - 1.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-06 - TFD - Cook Cleavage Medium L2 - 0.25ug - 2.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-06 - TFD - Cook Cleavage Medium L2 - 0.25ug - 3.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-06 - TFD - Cook Cleavage Medium L2 - 0.25ug - 4.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-08 - TFD - Cook Blastocyst Medium L2 - 0.25ug - 1.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-08 - TFD - Cook Blastocyst Medium L2 - 0.25ug - 2.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-08 - TFD - Cook Blastocyst Medium L2 - 0.25ug - 3.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-08 - TFD - Cook Blastocyst Medium L2 - 0.25ug - 4.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-09 - TFD - ORIGIO EmbryoAssist - 0.25ug - 1.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-09 - TFD - ORIGIO EmbryoAssist - 0.25ug - 2.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-09 - TFD - ORIGIO EmbryoAssist - 0.25ug - 3.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-09 - TFD - ORIGIO EmbryoAssist - 0.25ug - 4.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-15 - TFD - ORIGIO BlastAssist - 0.25ug - 1.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-15 - TFD - ORIGIO BlastAssist - 0.25ug - 2.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-15 - TFD - ORIGIO BlastAssist - 0.25ug - 3.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-15 - TFD - ORIGIO BlastAssist - 0.25ug - 4.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-16 - TFD - ORIGIO Sequential Cleav - 0.25ug - 1.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-16 - TFD - ORIGIO Sequential Cleav - 0.25ug - 2.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-16 - TFD - ORIGIO Sequential Cleav - 0.25ug - 3.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-16 - TFD - ORIGIO Sequential Cleav - 0.25ug - 4.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-18 - TFD - ORIGIO Sequential Blast - 0.25ug - 1.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-18 - TFD - ORIGIO Sequential Blast - 0.25ug - 2.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-18 - TFD - ORIGIO Sequential Blast - 0.25ug - 3.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-18 - TFD - ORIGIO Sequential Blast - 0.25ug - 4.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-05-23 TFD Vitrolife HSA-solution 001.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-05-23 TFD Vitrolife HSA-solution 002.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-05-23 TFD Vitrolife HSA-solution 003.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-05-23 TFD Vitrolife HSA-solution 004.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 1.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 10.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 11.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 12.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 13.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 14.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 2.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 3.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 4.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 5.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 6.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 7.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 8.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2013-08-12 - TFD - IVF 5ml - Gel - 9.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-28 - TFD - Vitrolife G-1 Plus - 1ug - 1.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-28 - TFD - Vitrolife G-1 Plus - 1ug - 2.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-28 - TFD - Vitrolife G-1 Plus - 1ug - 3.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-28 - TFD - Vitrolife G-1 Plus - 1ug - 4.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-29 - TFD - Vitrolife G-2 Plus - 0.25ug - 1.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-30 - TFD - Vitrolife G-2 Plus - 0.25ug - 2.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-30 - TFD - Vitrolife G-2 Plus - 0.25ug - 3.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-01-30 - TFD - Vitrolife G-2 Plus - 0.25ug - 4.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-04 - TFD - Cook Cleavage Medium - 0.25ug - 1.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-04 - TFD - Cook Cleavage Medium - 0.25ug - 2.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-04 - TFD - Cook Cleavage Medium - 0.25ug - 3.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-04 - TFD - Cook Cleavage Medium - 0.25ug - 4.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-05 - TFD - Cook Blastocyst Medium - 0.25ug - 1.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-05 - TFD - Cook Blastocyst Medium - 0.25ug - 2.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-05 - TFD - Cook Blastocyst Medium - 0.25ug - 3.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-05 - TFD - Cook Blastocyst Medium - 0.25ug - 4.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-06 - TFD - Cook Cleavage Medium L2 - 0.25ug - 1.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-06 - TFD - Cook Cleavage Medium L2 - 0.25ug - 2.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-06 - TFD - Cook Cleavage Medium L2 - 0.25ug - 3.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-06 - TFD - Cook Cleavage Medium L2 - 0.25ug - 4.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-08 - TFD - Cook Blastocyst Medium L2 - 0.25ug - 1.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-08 - TFD - Cook Blastocyst Medium L2 - 0.25ug - 2.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-08 - TFD - Cook Blastocyst Medium L2 - 0.25ug - 3.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-08 - TFD - Cook Blastocyst Medium L2 - 0.25ug - 4.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-09 - TFD - ORIGIO EmbryoAssist - 0.25ug - 1.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-09 - TFD - ORIGIO EmbryoAssist - 0.25ug - 2.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-09 - TFD - ORIGIO EmbryoAssist - 0.25ug - 3.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-09 - TFD - ORIGIO EmbryoAssist - 0.25ug - 4.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-15 - TFD - ORIGIO BlastAssist - 0.25ug - 1.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-15 - TFD - ORIGIO BlastAssist - 0.25ug - 2.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-15 - TFD - ORIGIO BlastAssist - 0.25ug - 3.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-15 - TFD - ORIGIO BlastAssist - 0.25ug - 4.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-16 - TFD - ORIGIO Sequential Cleav - 0.25ug - 1.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-16 - TFD - ORIGIO Sequential Cleav - 0.25ug - 2.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-16 - TFD - ORIGIO Sequential Cleav - 0.25ug - 3.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-16 - TFD - ORIGIO Sequential Cleav - 0.25ug - 4.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-18 - TFD - ORIGIO Sequential Blast - 0.25ug - 1.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-18 - TFD - ORIGIO Sequential Blast - 0.25ug - 2.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-18 - TFD - ORIGIO Sequential Blast - 0.25ug - 3.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-02-18 - TFD - ORIGIO Sequential Blast - 0.25ug - 4.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-05-23 TFD Vitrolife HSA-solution 001.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-05-23 TFD Vitrolife HSA-solution 002.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-05-23 TFD Vitrolife HSA-solution 003.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001174/2014-05-23 TFD Vitrolife HSA-solution 004.dat</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

@@ -1,0 +1,57 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000064">
+      <name>The conserved set of host proteins incorporated into HIV-1 virions suggests a common egress pathway in multiple cell types</name>
+      <description>HIV-1 incorporates a large array of host proteins into virions. Determining the host protein composition in HIV virions has technical difficulties, including co-purification of microvesicles. We developed an alternative purification technique using cholesterol that differentially modulates the density of virions and microvesicles (density modification, DM) allowing for high-yield virion purification that is essential for tandem mass spectrometric and quantitative proteomic (iTRAQ) analysis. DM purified virions were analyzed using iTRAQ and validated against Optiprep (60% iodixanol) purified virions. We were able to characterize host protein incorporation in DM-purified HIV particles derived from CD4+ T cell lines; we compared this dataset to a reprocessed dataset of monocyte-derived macrophages (MDM) derived HIV-1 searched using PrpArML which uses multiple search algorithms (OMSSA, X!Tandem with native, k-score and s-score scoring, MASCOT, MyriMatch, and InSpecT ). The database used for search was the UniProt-SwissProt database (version 2010.11.02; 522,019 sequences). Peptides were combined on PepARML using a random forest approach (Weka) and the results were then parsed into MASPECTRAS 2 with minimum two peptide for a protein and a spectrum false discovery rate of 5%. Peptides assigned  to keratin were excluded, and since the analysis was focused on host proteins, viral peptide assignments were excluded. Protein redundancy was removed by MS based evidence clustering. Link to the paper related to the reprocessed MDM  dataset: PMID: 16940516, the dataset itself is not publicly available.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="11676" dbname="TAXONOMY"/>
+        <ref dbkey="23432411" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2012-11-05"/>
+        <date type="publication" value="2013-08-02"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000064</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Not available</field>
+        <field name="instrument_platform">LCQ Classic</field>
+        <field name="instrument_platform">Applied Biosystems instrument model</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="species">Human immunodeficiency virus 1</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Not available</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="modification">methylthiolated residue</field>
+        <field name="modification">iTRAQ4plex-116 reporter+balance reagent acylated residue</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="submitter_keywords">HIV-1</field>
+        <field name="submitter_keywords"> Virions</field>
+        <field name="submitter_keywords"> DM</field>
+        <field name="submitter_keywords"> LC-MS/MS</field>
+        <field name="submitter_keywords"> MDM</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Linde ME, Colquhoun DR, Mohien CU, Kole T, Aquino V, Cotter R, Edwards N, Hildreth JE, Graham DR; The conserved set of host proteins incorporated into HIV-1 virions suggests a common egress pathway in multiple cell types., J Proteome Res, 2013 May 3, 12, 5, 2045-54, </field>
+        <field name="submitter">Ceereena Ubaida Mohien</field>
+        <field name="submitter_mail">ceereena@jhmi.edu</field>
+        <field name="submitter_affiliation">Johns Hopkins School of Medicine</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000064/DMPurified.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000064/UltraPure_HIV.peparml.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000064/uniprot_sprot.2010_11_20101102.fasta</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

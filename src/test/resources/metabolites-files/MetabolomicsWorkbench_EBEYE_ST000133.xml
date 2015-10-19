@@ -1,0 +1,107 @@
+<database>
+  <name>MetabolomicsWorkbench</name>
+  <description>The Metabolomics Workbench will serve as a national and international repository for metabolomics data and metadata and will provide analysis tools and access to metabolite standards, protocols, tutorials, training, and more.</description>
+  <release>1.0</release>
+  <release_date>15-05-20</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="ST000133">
+      <name>1H NMR Metabolomics Study of Metastatic Melanoma in C57BL/6J Mouse Spleen</name>
+      <description>Tissue extracts from metastatic melanoma mouse spleen and controls were compared via NMR based metabolomic analysis</description>
+      <cross_references>
+        <ref dbkey="10090" dbname="TAXONOMY"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="15-01-08"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Metabolomics</field>
+        <field name="full_dataset_link">http://www.metabolomicsworkbench.org/data/DRCCMetadata.php?Mode=Study&amp;StudyID=ST000133</field>
+        <field name="repository">MetabolomicsWorkbench</field>
+        <field name="data_protocol">NMR: 1D 1H</field>
+        <field name="instrument_platform">Varian 600 MHz</field>
+        <field name="study_factor">Disease State:No</field>
+        <field name="study_factor">Disease State:Yes</field>
+        <field name="species">Mus musculus</field>
+        <field name="technology_type">Varian</field>
+        <field name="metabolite_name">Glutathione</field>
+        <field name="metabolite_name">Glycerol</field>
+        <field name="metabolite_name">Glutamate</field>
+        <field name="metabolite_name">Glutamine</field>
+        <field name="metabolite_name">Histamine</field>
+        <field name="metabolite_name">Glycine</field>
+        <field name="metabolite_name">GTP</field>
+        <field name="metabolite_name">Isobutyrate</field>
+        <field name="metabolite_name">Inosine</field>
+        <field name="metabolite_name">Hypoxanthine</field>
+        <field name="metabolite_name">Histidine</field>
+        <field name="metabolite_name">Tyramine</field>
+        <field name="metabolite_name">Tryptophan</field>
+        <field name="metabolite_name">UDP-galactose</field>
+        <field name="metabolite_name">Tyrosine</field>
+        <field name="metabolite_name">Creatinine</field>
+        <field name="metabolite_name">Cytidine</field>
+        <field name="metabolite_name">dCTP</field>
+        <field name="metabolite_name">DSS-d6 (Chemical Shape Indicator)</field>
+        <field name="metabolite_name">dTTP</field>
+        <field name="metabolite_name">Ethanol</field>
+        <field name="metabolite_name">Ethanolamine</field>
+        <field name="metabolite_name">Formate</field>
+        <field name="metabolite_name">2-Oxoglutarate</field>
+        <field name="metabolite_name">2'-Deoxyguanosine</field>
+        <field name="metabolite_name">2-Aminobutyrate</field>
+        <field name="metabolite_name">Adenosine</field>
+        <field name="metabolite_name">Fucose</field>
+        <field name="metabolite_name">Acetate</field>
+        <field name="metabolite_name">3-Hydroxyisobutyrate</field>
+        <field name="metabolite_name">Glucose</field>
+        <field name="metabolite_name">3-Hydroxybutyrate</field>
+        <field name="metabolite_name">Fumarate</field>
+        <field name="metabolite_name">UDP-glucuronate</field>
+        <field name="metabolite_name">Uracil</field>
+        <field name="metabolite_name">Alanine</field>
+        <field name="metabolite_name">Uridine</field>
+        <field name="metabolite_name">ADP</field>
+        <field name="metabolite_name">Valine</field>
+        <field name="metabolite_name">Xanthine</field>
+        <field name="metabolite_name">Serine</field>
+        <field name="metabolite_name">pi-Methylhistidine</field>
+        <field name="metabolite_name">Phenylalanine</field>
+        <field name="metabolite_name">Oxypurinol</field>
+        <field name="metabolite_name">Citrate</field>
+        <field name="metabolite_name">O-Phosphoethanolamine</field>
+        <field name="metabolite_name">Betaine</field>
+        <field name="metabolite_name">Choline</field>
+        <field name="metabolite_name">ATP</field>
+        <field name="metabolite_name">Benzoate</field>
+        <field name="metabolite_name">Asparagine</field>
+        <field name="metabolite_name">Aspartate</field>
+        <field name="metabolite_name">AMP</field>
+        <field name="metabolite_name">Arginine</field>
+        <field name="metabolite_name">Creatine phosphate</field>
+        <field name="metabolite_name">Creatine</field>
+        <field name="metabolite_name">Trimethylamine</field>
+        <field name="metabolite_name">Trimethylamine N-oxide</field>
+        <field name="metabolite_name">Threonine</field>
+        <field name="metabolite_name">Thymidine</field>
+        <field name="metabolite_name">sn-Glycero-3-phosphocholine</field>
+        <field name="metabolite_name">Taurine</field>
+        <field name="metabolite_name">Malate</field>
+        <field name="metabolite_name">Lysine</field>
+        <field name="metabolite_name">Isoleucine</field>
+        <field name="metabolite_name">Isocitrate</field>
+        <field name="metabolite_name">Leucine</field>
+        <field name="metabolite_name">Lactate</field>
+        <field name="metabolite_name">Alloisoleucine</field>
+        <field name="metabolite_name">Methionine</field>
+        <field name="metabolite_name">myo-Inositol</field>
+        <field name="metabolite_name">Niacinamide</field>
+        <field name="metabolite_name">O-Phosphocholine</field>
+        <field name="metabolite_name">Methanol</field>
+        <field name="submitter">Jianzhi Hu</field>
+        <field name="submitter_mail">jianzhi.hu@pnnl.gov</field>
+        <field name="submitter_affiliation">Fundamental &amp; Computational Sciences, Pacific Northwest National Laboratory</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

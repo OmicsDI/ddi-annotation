@@ -1,0 +1,137 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000563">
+      <name>Integrated Chromosome 19 Transcriptomic and Proteomic Datasets Derived from Six Glioma-Derived Cancer Stem Cell Lines</name>
+      <description>One sub-project within the global Chromosome 19 Consortium, part of the Chromosome-Centric Human Proteome Project, is to define chromosome 19 gene and protein expression in glioma-derived cancer stem cells (GSCs). Chromosome 19 is notoriously linked to glioma by 1p/19q co-deletions and clinical tests are established to detect that specific aberration. GSCs are tumor-initiating cells and are hypothesized to provide a repository of cells in tumors that can self-replicate and be refractory to radiation and chemotherapeutic agents developed for the treatment of tumors. In this pilot study, we performed RNA-Seq, label-free quantitative protein measurements in six GSC lines, and targeted transcriptomic analysis using a chromosome 19 specific microarray in an additional 6 GSC lines.  Here, we present insights into differences in GSC gene and protein expression, including the identification of proteins listed as having no or low evidence at the protein level (such as small nuclear ribonucleoprotein G-like protein, RUXGL_HUMAN), as correlated to chromosome 19 and GSC subtype. Furthermore, the upregulation of proteins downstream of adenovirus-associated viral integration site 1 (AAVS1) in GSC11 in response to oncolytic adenovirus treatment was demonstrated. Taken together, our results may indicate new roles for chromosome 19, beyond the 1p/19q co-deletion, in the future of personalized medicine for glioma patients. Data analysis: MS files (.raw) were imported into Progenesis LC-MS (version 18.214.1528, Nonlinear Dynamics) for m/z and retention time alignment. The top 5 spectra for each feature were exported (charge deconvolution, top 1000 peaks) as a combined .mgf file  for database searching in PEAKS (version 6, Bioinformatics Solutions Inc., Waterloo, ON) against the UniprotKB/Swissprot-Human database (July 2013 version, 20,264 proteins), appended with the cRAP contaminant database. PEAKS DB and Mascot (version 2.3.02, Matrix Science) searches were performed with a parent ion tolerance of 10 ppm, fragment ion tolerance of 0.025 Da, fixed carbamidomethyl cysteine, and variable modifications of oxidation (M), phosphorylation (STY), and deamidation (NQ). Trypsin was specified as the enzyme, allowing for 2 missed cleavages and a maximum of 3 PTMs per peptide. An additional search for unexpected modifications was performed with the entire Unimod database. Finally, homology searching was performed using the SPIDER algorithm to identify peptides resulting from nonspecific cleavages or amino acid substitutions. Mascot and PEAKS SPIDER searches were combined (inChorus), using a 1% false discovery rate cutoff for both search engines. The resulting peptide-spectrum matches (95% peptide probability) were imported into Progenesis LC-MS. Conflict resolution was performed manually to ensure that a single peptide sequence was assigned to each feature by removing lower scoring peptides. The resulting normalized peptide intensity data were exported, and the peptide list was filtered to remove non-unique peptides, methionine-containing peptides, and all modified peptides except cysteine carbamidomethylation. For quantification, the filtered list of peptide intensities was imported into DanteR (version 0.1.1), and intensities for peptides of the same sequence were combined to form a single entry. The resulting peptide intensities were log2 transformed and combined to protein abundances (RRollup) using the default settings, excluding one-hit wonders (50% minimum presence of at least one peptide, minimum dataset presence 3, p-value cutoff of 0.05 for Grubbs’ test, minimum of 5 peptides for Grubbs’ test). The resulting proteins were quantified by 1-way ANOVA relative to M37; p-value adjustment for multiple testing was performed according to Benjamini and Hochberg.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="24266786" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2013-11-02"/>
+        <date type="publication" value="2013-11-27"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000563</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Not available</field>
+        <field name="instrument_platform">LTQ Orbitrap Elite</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">phosphorylated residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Chromosome-centric Human Proteome Project (C-HPP)</field>
+        <field name="curator_keywords">Human Proteome Project</field>
+        <field name="submitter_keywords">Chromosome-Centric Human Proteome Project</field>
+        <field name="submitter_keywords"> proteins</field>
+        <field name="submitter_keywords"> mRNA</field>
+        <field name="submitter_keywords"> RNA-Seq</field>
+        <field name="submitter_keywords"> mass spectrometry</field>
+        <field name="submitter_keywords"> bioinfomatics</field>
+        <field name="submitter_keywords"> glioma</field>
+        <field name="submitter_keywords"> glioma stem cells</field>
+        <field name="submitter_keywords"> cancer proteomics</field>
+        <field name="submitter_keywords"> chromosome 19</field>
+        <field name="submitter_keywords"> oncolytic virus</field>
+        <field name="submitter_keywords"> neurocan core protein</field>
+        <field name="submitter_keywords"> symplekin</field>
+        <field name="submitter_keywords"> small nuclear ribonucleoprotein G-like protein</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Lichti CF, Liu H, Shavkunov AS, Mostovenko E, Sulman EP, Ezhilarasan R, Wang Q, Kroes RA, Moskal JC, Fenyö D, Oksuz BA, Conrad CA, Lang FF, Berven FS, Végvári A, Rezeli M, Marko-Varga G, Hober S, Nilsson CL; Integrated Chromosome 19 Transcriptomic and Proteomic Data Sets Derived from Glioma Cancer Stem-Cell Lines., J Proteome Res, 2013 Dec 3, </field>
+        <field name="submitter">HL Liu</field>
+        <field name="submitter_mail">hu2liu@utmb.edu</field>
+        <field name="submitter_affiliation">Department of Pharmacology and Toxicology</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/Mix37_R1_b1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/Mix37_R2_b1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/Mix37_R3_b1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/NSC17_R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/NSC17_R2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/NSC17_R3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/NSC23_R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/NSC23_R2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/NSC23_R3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/Mix37_R1_b6.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/MIX37_R2_b6.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/Mix37_R3_b6.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/NSC11_R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/NSC11_R2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/NSC11_R3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/Mix37_R1_b7.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/MIX37_R2_b7.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/Mix37_R3_b7.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/NSC13_R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/NSC13_R2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/NSC13_R3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/NSC2_R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/NSC2_R2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/NSC2_R3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/NSC8_11_R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/NSC8_11_R2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/NSC8_11_R3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/NSC17_peptides.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/NSC11_peptides.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/NSC23_peptides.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/NSC_2_NSC_13_NSC_8_11peptides.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/GSC11_24h_R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/GSC11_24h_R2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/GSC11_24h_R3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/GSC11_Control_R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/GSC11_Control_R2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/GSC11_Control_R3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/GSC11_GSC_48h_R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/GSC11_GSC_48h_R2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/GSC11_GSC_48h_R3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/GSC13_24h_R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/GSC13_24h_R2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/GSC13_24h_R3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/GSC13_48h_R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/GSC13_48h_R2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/GSC13_48h_R3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/GSC13_Control_R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/GSC13_Control_R2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/GSC13_Control_R3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/GSC23_24h_R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/GSC23_24h_R2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/GSC23_24h_R3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/GSC23_Control_R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/GSC23_Control_R2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/GSC23_Control_R3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/GSC23_GSC_48h_R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/GSC23_GSC_48h_R2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/GSC23_GSC_48h_R3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/GSC2_24h_R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/GSC2_24h_R2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/GSC2_24h_R3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/GSC2_48h_R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/GSC2_48h_R2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/GSC2_48h_R3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/GSC2_Control_R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/GSC2_Control_R2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/GSC2_Control_R3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/F004796-GSC2-Virus-triplicate-Mascot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/F004836-Mascot-GSC11-Virus-Triplicate.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/F004884-Mascot-GSC13-Virus-Triplicate.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/F004958-GSC23-Virus-Triplicate-Mascot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/Mix37_R1_b4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/MIX37_R2_b4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/Mix37_R3_b4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/Chromosome-19-Results-26July2013.xls</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000563/GSC-Virus_Fold_Changes.xls</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

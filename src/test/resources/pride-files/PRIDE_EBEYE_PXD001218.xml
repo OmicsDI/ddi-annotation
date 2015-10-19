@@ -1,0 +1,53 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001218">
+      <name>Large yellow croaker skin mucus proteome</name>
+      <description>Proteomics data demonstrate that skin mucus of the air-exposed  large yellow croaker  had a complex composition, with an unexpectedly high number of proteins (3,209), suggesting its multiple protective mechanisms possibly involved in antioxidant functions, oxygen transport, immune defence, and osmotic and ionic regulation. These results expand our knowledge of skin mucus secretion and function in fish, highlighting its importance in response to stress.</description>
+      <cross_references>
+        <ref dbkey="215358" dbname="TAXONOMY"/>
+        <ref dbkey="25835551" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-08-11"/>
+        <date type="publication" value="2015-04-17"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001218</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Skin mucus was collected from six healthy L. crocea individuals under air exposure as previously described [1]. Briefly, the fish were anesthetised with a sub-lethal dose of Tricaine-S (100 mg/L), and transferred gently to a sterile plastic bag for 3 min to slough off the mucus under air exposure. Proteins were extracted from a pool of skin mucus of six fish by the trichloroacetic acid-acetone precipitation method and then digested by the trypsin gold (Promega, USA) with a ratio of protein: trypsin = 20:1.  Peptides were separated by SCX chromatography using the Shimadzu LC-20AB HPLC Pump system. The peptides from digestion was reconstituted with 4 mL buffer A (25 mM NaH2PO4 in 25% ACN, pH 2.7) and loaded onto a 4.6 × 250 mm Ultremex SCX column containing 5-μm particles (Phenomenex). The peptides was eluted at a flow rate of 1 mL/min with a gradient of buffer A for 10 min, 5-35% buffer B (25 mM NaH2PO4, 1 M KCl in 25% ACN, pH 2.7) for 11 min, 35-80% buffer B for 1 min. The system was maintained in 80% buffer B for 3 min before equilibrating with buffer A for 10 min. Elution was monitored by measuring absorbance at 214 nm, and fractions are collected every 1 min. The eluted peptides were pooled as 20 fractions, desalted by Strata X C18 column (Phenomenex) and vacuum-dried. Separation and puriﬁcation was performed based on Triple TOF 5600. Each fraction was resuspended in certain volume of buffer A (2% ACN, 0.1% FA) and centrifuged at 20,000 g for 10 min. In each fraction, the final concentration was about 0.5 μg/μL on average. Ten microliters of supernatant were loaded on an Shimadzu LC-20AD nanoHPLC by the autosampler onto a 2 cm C18 trap column (inner diameter 200 μm) and the peptides were eluted onto a resolving 10 cm analytical C18 column (inner diameter 75 μm) made in-house. The samples were loaded at 15 μL/min for 4 min, then the 44 min gradient is run at 400 nL/min starting from 2 to 35% B (98% ACN and 0.1% FA), followed by 2 min linear gradient to 80%, and maintenance at 80% B for 4 min, and finally return to 2% in 1 min. Data acquisition was performed with a TripleTOF 5600 System (AB SCIEX, Concord, ON) fitted with a Nanospray III source (AB SCIEX, Concord, ON). Data was acquired using an ion spray voltage of 2.5 kV, curtain gas of 30 PSI, nebulizer gas of 15 PSI, and an interface heater temperature of 150 °C. The MS was operated with a RP of greater than or equal to 30, 000 FWHM for TOF MS scans. For IDA, survey scans were acquired in 250 ms and as many as 30 product ion scans were collected if exceeding a threshold of 120 counts per second (counts/s) and with a 2+ to 5+ charge-state. Total cycle time was fixed to 3.3 s. Q2 transmission window was 100 Da for 100%. Four time bins were summed for each scan at a pulser frequency value of 11 kHz through monitoring of the 40 GHz multichannel TDC detector with four-anode channel detection. A sweeping collision energy setting of 35±5 eV adjust rolling collision energy was applied to all precursor ions for collision-induced dissociation. Dynamic exclusion was set for 1/2 of peak width (18 s), and then the precursor was refreshed off the exclusion list.  [1]Subramanian S, Ross NW, MacKinnon SL: Comparison of antimicrobial activity in the epidermal mucus extracts of fish. Comp Biochem Physiol B Biochem Mol Biol 2008, 150(1):85-92.</field>
+        <field name="data_protocol">Peptide and Protein Identification---All spectra were mapped by MASCOT sever version 2.3.02 against the database of L. crocea genome with the parameters as follows: peptide mass tolerance 0.05 Da; fragment mass tolerance 0.1 Da; fixed modifications “Carbamidomethyl (C)”; variable modifications “Gln-&gt;pyro-Glu (N-term Q), Oxidation (M), Deamidated (NQ)”. The 25,026 peptides were identified, which belong to 4,489 proteins encoded by L. crocea genome. For further analyses of the function of the mucus proteome, proteins with more than two unique peptides were selected</field>
+        <field name="instrument_platform">TripleTOF 5600</field>
+        <field name="species">Larimichthys crocea (Large yellow croaker) (Pseudosciaena crocea)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">skin</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">Large yellow croaker</field>
+        <field name="submitter_keywords"> Larimichthys crocea ；Skin mucus；Air exposure；LC–MS/MS</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Ao J, Mu Y, Xiang LX, Fan D, Feng M, Zhang S, Shi Q, Zhu LY, Li T, Ding Y, Nie L, Li Q, Dong WR, Jiang L, Sun B, Zhang X, Li M, Zhang HQ, Xie S, Zhu Y, Jiang X, Wang X, Mu P, Chen W, Yue Z, Wang Z, Wang J, Shao JZ, Chen X. Genome Sequencing of the Perciform Fish Larimichthys crocea Provides Insights into Molecular and Genetic Mechanisms of Stress Adaptation. PLoS Genet. 2015 Apr 2;11(4):e1005118. eCollection 2015 Apr</field>
+        <field name="submitter">fan ding</field>
+        <field name="submitter_mail">biocomfun@qq.com</field>
+        <field name="submitter_affiliation">BGI-tech</field>
+        <field name="labhead">Xinhua Chen</field>
+        <field name="labhead_mail">chenxinhua@tio.org.cn</field>
+        <field name="labhead_affiliation">Key Laboratory of Marine Biogenetics and Resources, Third Institute of Oceanography, State Oceanic Administration, Xiamen 361005, Fujian, P.R. China</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001218/L. crocea.MASCOT.search.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001218/L. crocea.mgf.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001218/L. crocea.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001218/L.crocea.identify.summury.csv.gz</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

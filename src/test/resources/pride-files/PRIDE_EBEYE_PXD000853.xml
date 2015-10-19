@@ -1,0 +1,84 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000853">
+      <name>Profiling of human lung tissues on 11 normal control, 11 patient and 11 corresponding mouse xenograft tumours</name>
+      <description>The total protein expression level of  11 paired human normal, human lung cancer samples and correspoding mouse xenograft samples were analyzed by LC-MS/MS. These protein expression data were than compared with corresponding DNA copy number changes and mRNA expression level changes among these samples.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="25429762" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-03-19"/>
+        <date type="publication" value="2014-12-04"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000853</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">The tumor or normal tissues were lyzed in 9m urea buffer (Rush J. et al. 2005 Nat Biotechnol), trypsin digested and C18 purified. 30 ug of each samples were analyzed in Thermo Elite LC-MS/MS equipment. For LC-MS/MS analysis, the tryptic peptides were separated on a 50-cm Easy-Spray column with a 75-μm inner diameter packed with 2 μm C18 resin (Thermo Scientific, Odense Denmark). The peptides were eluted over 240 min (250 nl/min) using a 0 to 40% acetonitrile gradient in 0.1% formic acid with an EASY nLC 1000 chromatography system operating at 50 °C (Thermo-Fisher Scientific).</field>
+        <field name="data_protocol">Acquired raw files were analyzed by using MaxQuant software (version 1.4.1.2) for quantification. The Andromeda probabilistic search engine  was used to search peak lists against the Unipro-Prot database. The default search parameters were used as describe by Deeb et al. The maximum false peptide discovery rate was specified as 0.01. Bioinformatics analysis was completed with Perseus tools within the MaxQuant environment. LFQ intensity.</field>
+        <field name="instrument_platform">LTQ Orbitrap Elite</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">lung benign neoplasm</field>
+        <field name="tissue">lung</field>
+        <field name="modification">No PTMs are included in the dataset</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biomedical</field>
+        <field name="submitter_keywords">Human Lung tumor</field>
+        <field name="submitter_keywords"> mouse xenograft</field>
+        <field name="submitter_keywords">proteomics</field>
+        <field name="quantification_method">TIC</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Li L, Wei Y, To C, Zhu CQ, Tong J, Pham NA, Taylor P, Ignatchenko V, Ignatchenko A, Zhang W, Wang D, Yanagawa N, Li M, Pintilie M, Liu G, Muthuswamy L, Shepherd FA, Tsao MS, Kislinger T, Moran MF. Integrated Omic analysis of lung cancer reveals metabolism proteome signatures with prognostic impact. Nat Commun. 2014 Nov 28;5:5469</field>
+        <field name="submitter">Jiefei Tong</field>
+        <field name="submitter_mail">jiefei.tong@sickkids.ca</field>
+        <field name="submitter_affiliation">Hospital for Sickkids</field>
+        <field name="labhead">Mike F. Moran</field>
+        <field name="labhead_mail">m.moran@utoronto.ca</field>
+        <field name="labhead_affiliation">Hospital for Sickkids, University of Toronto</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000853/N24742.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000853/N31945.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000853/N32813_r.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000853/N34608_r.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000853/N35480.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000853/N36988.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000853/N37015.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000853/N37308.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000853/N41577_r.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000853/N48087_r.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000853/N52408_r.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000853/T24742.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000853/T31945.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000853/T32813_r.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000853/T34608.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000853/T35480.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000853/T36988_r.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000853/T37015.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000853/T37308.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000853/T41577.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000853/T48087.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000853/T52408.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000853/X012.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000853/X077_r.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000853/X086_r.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000853/X106.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000853/X119.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000853/X133.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000853/X134_re.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000853/X139.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000853/X154_r.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000853/X178.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000853/X191.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000853/Lung_33_result.zip</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

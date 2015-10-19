@@ -49,7 +49,7 @@ public class DDIAnnotationService {
      * @return
      */
 
-    public EnrichedDataset enrichment(DatasetTobeEnriched datasetTobeEnriched) {
+    public EnrichedDataset enrichment(DatasetTobeEnriched datasetTobeEnriched) throws JSONException {
 
         String accession = datasetTobeEnriched.getAccession();
         String database = datasetTobeEnriched.getDatabase();
@@ -87,7 +87,7 @@ public class DDIAnnotationService {
      * @param wordsInField
      * @return
      */
-    private String EnrichField(List<WordInField> wordsInField) {
+    private String EnrichField(List<WordInField> wordsInField) throws JSONException {
         if (wordsInField == null) {
            return null;
         }
@@ -113,7 +113,7 @@ public class DDIAnnotationService {
      * @param fieldText
      * @return the words which are identified in the fieldText by recommender API from bioontology.org
      */
-    private List<WordInField> getWordsInFiledFromWS(String fieldText) {
+    private List<WordInField> getWordsInFiledFromWS(String fieldText) throws JSONException {
 
         if(fieldText ==null || fieldText.equals("Not availabel")){
             return null;
@@ -179,7 +179,7 @@ public class DDIAnnotationService {
      * @param word
      * @return
      */
-    public ArrayList<String> getSynonymsForWord(String word) {
+    public ArrayList<String> getSynonymsForWord(String word) throws JSONException {
         ArrayList<String> synonyms;
         if (synonymsService.isWordExist(word)) {
             return synonymsService.getAllSynonyms(word);
@@ -226,7 +226,7 @@ public class DDIAnnotationService {
      * @param word
      * @return get synonyms of the word, by annotator API from bioontology.org
      */
-    protected ArrayList<String> getSynonymsForWordFromWS(String word) {
+    protected ArrayList<String> getSynonymsForWordFromWS(String word) throws JSONException {
         String lowerWord = word.toLowerCase();
         ArrayList<String> synonyms = new ArrayList<String>();
 
@@ -331,7 +331,7 @@ public class DDIAnnotationService {
      * @param annotationResults annotation results from annotator API, may contain multiple matched classes
      * @return
      */
-    private JSONArray findBioOntologyMatchclasses(String matchedWord, JSONArray annotationResults) {
+    private JSONArray findBioOntologyMatchclasses(String matchedWord, JSONArray annotationResults) throws JSONException {
         JSONArray matchedClasses = new JSONArray();
 //        System.out.print(annotationResults);
         for (int i = 0; i < annotationResults.length(); i++) {
@@ -369,7 +369,7 @@ public class DDIAnnotationService {
      * @param matchedTerms got from annotation results, which may overlap with other terms
      * @return matchedWords chosen word, which is the longest term in the overlapped terms
      */
-    private List<WordInField> getDistinctWordList(JSONArray matchedTerms) {
+    private List<WordInField> getDistinctWordList(JSONArray matchedTerms) throws JSONException {
         List<WordInField> matchedWords = new ArrayList<WordInField>();
         for (int i = 0; i < matchedTerms.length(); i++) {
             JSONObject matchedTerm = (JSONObject) matchedTerms.get(i);

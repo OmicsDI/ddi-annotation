@@ -1,0 +1,196 @@
+<database>
+  <name>MetabolomicsWorkbench</name>
+  <description>The Metabolomics Workbench will serve as a national and international repository for metabolomics data and metadata and will provide analysis tools and access to metabolite standards, protocols, tutorials, training, and more.</description>
+  <release>1.0</release>
+  <release_date>15-05-20</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="ST000015">
+      <name>Skeletal Muscle Treatment (palmitate and inhibitors)</name>
+      <description>Isolated skelelal muscle mitochondria incubated in the presence of fatty acid oxidation precursor and inhibitors</description>
+      <cross_references>
+        <ref dbkey="10090" dbname="TAXONOMY"/>
+        <ref dbkey="32365" dbname="ChEBI"/>
+        <ref dbkey="42504" dbname="ChEBI"/>
+        <ref dbkey="15428" dbname="ChEBI"/>
+        <ref dbkey="17295" dbname="ChEBI"/>
+        <ref dbkey="28716" dbname="ChEBI"/>
+        <ref dbkey="4167" dbname="ChEBI"/>
+        <ref dbkey="29019" dbname="ChEBI"/>
+        <ref dbkey="29069" dbname="ChEBI"/>
+        <ref dbkey="27997" dbname="ChEBI"/>
+        <ref dbkey="43703" dbname="ChEBI"/>
+        <ref dbkey="17553" dbname="ChEBI"/>
+        <ref dbkey="16113" dbname="ChEBI"/>
+        <ref dbkey="30769" dbname="ChEBI"/>
+        <ref dbkey="17596" dbname="ChEBI"/>
+        <ref dbkey="17363" dbname="ChEBI"/>
+        <ref dbkey="52742" dbname="ChEBI"/>
+        <ref dbkey="47002" dbname="ChEBI"/>
+        <ref dbkey="17148" dbname="ChEBI"/>
+        <ref dbkey="16551" dbname="ChEBI"/>
+        <ref dbkey="15891" dbname="ChEBI"/>
+        <ref dbkey="28842" dbname="ChEBI"/>
+        <ref dbkey="17115" dbname="ChEBI"/>
+        <ref dbkey="17992" dbname="ChEBI"/>
+        <ref dbkey="15741" dbname="ChEBI"/>
+        <ref dbkey="17268" dbname="ChEBI"/>
+        <ref dbkey="17191" dbname="ChEBI"/>
+        <ref dbkey="422" dbname="ChEBI"/>
+        <ref dbkey="30805" dbname="ChEBI"/>
+        <ref dbkey="17351" dbname="ChEBI"/>
+        <ref dbkey="18019" dbname="ChEBI"/>
+        <ref dbkey="30797" dbname="ChEBI"/>
+        <ref dbkey="28875" dbname="ChEBI"/>
+        <ref dbkey="30813" dbname="ChEBI"/>
+        <ref dbkey="16125" dbname="ChEBI"/>
+        <ref dbkey="32154" dbname="ChEBI"/>
+        <ref dbkey="30915" dbname="ChEBI"/>
+        <ref dbkey="30832" dbname="ChEBI"/>
+        <ref dbkey="15756" dbname="ChEBI"/>
+        <ref dbkey="16027" dbname="ChEBI"/>
+        <ref dbkey="1148" dbname="ChEBI"/>
+        <ref dbkey="17895" dbname="ChEBI"/>
+        <ref dbkey="28822" dbname="ChEBI"/>
+        <ref dbkey="16828" dbname="ChEBI"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="13-05-20"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Metabolomics</field>
+        <field name="full_dataset_link">http://www.metabolomicsworkbench.org/data/DRCCMetadata.php?Mode=Study&amp;StudyID=ST000015</field>
+        <field name="repository">MetabolomicsWorkbench</field>
+        <field name="data_protocol">GCMS positive ion mode</field>
+        <field name="instrument_platform">LECO PEGASUS III GC-TOF</field>
+        <field name="study_factor">Compartment:matrix | Minutes:0 | Skeletal Muscle Treatment:ethanol only</field>
+        <field name="study_factor">Compartment:buffer | Minutes:0 | Skeletal Muscle Treatment:ethanol only</field>
+        <field name="study_factor">Compartment:matrix | Minutes:0 | Skeletal Muscle Treatment:2 uM palmitate</field>
+        <field name="study_factor">Compartment:matrix | Minutes:0 | Skeletal Muscle Treatment:9 uM palmitate+inhibitors (rotenone+malonate)</field>
+        <field name="study_factor">Compartment:buffer | Minutes:20 | Skeletal Muscle Treatment:19 uM palmitate</field>
+        <field name="study_factor">Compartment:buffer | Minutes:0 | Skeletal Muscle Treatment:9 uM palmitate+inhibitors (rotenone+malonate)</field>
+        <field name="study_factor">Compartment:matrix | Minutes:20 | Skeletal Muscle Treatment:9 uM palmitate</field>
+        <field name="study_factor">Compartment:buffer | Minutes:20 | Skeletal Muscle Treatment:9 uM palmitate+inhibitors (rotenone+malonate)</field>
+        <field name="study_factor">Compartment:buffer | Minutes:0 | Skeletal Muscle Treatment:2 uM palmitate</field>
+        <field name="study_factor">Compartment:buffer | Minutes:0 | Skeletal Muscle Treatment:9 uM palmitate</field>
+        <field name="study_factor">Compartment:matrix | Minutes:0 | Skeletal Muscle Treatment:9 uM palmitate</field>
+        <field name="study_factor">Compartment:buffer | Minutes:20 | Skeletal Muscle Treatment:9 uM palmitate</field>
+        <field name="study_factor">Compartment:matrix | Minutes:20 | Skeletal Muscle Treatment:2 uM palmitate</field>
+        <field name="study_factor">Compartment:matrix | Minutes:20 | Skeletal Muscle Treatment:19 uM palmitate</field>
+        <field name="study_factor">Compartment:buffer | Minutes:0 | Skeletal Muscle Treatment:19 uM palmitate</field>
+        <field name="study_factor">Compartment:buffer | Minutes:20 | Skeletal Muscle Treatment:2 uM palmitate</field>
+        <field name="study_factor">Compartment:buffer | Minutes:20 | Skeletal Muscle Treatment:ethanol only</field>
+        <field name="study_factor">Compartment:matrix | Minutes:0 | Skeletal Muscle Treatment:19 uM palmitate</field>
+        <field name="study_factor">Compartment:matrix | Minutes:20 | Skeletal Muscle Treatment:ethanol only</field>
+        <field name="study_factor">Compartment:matrix | Minutes:20 | Skeletal Muscle Treatment:9 uM palmitate+inhibitors (rotenone+malonate)</field>
+        <field name="species">Mus musculus</field>
+        <field name="technology_type">mass spectrometry</field>
+        <field name="metabolite_name">heptadecanoic acid</field>
+        <field name="metabolite_name">pentadecanoic acid</field>
+        <field name="metabolite_name">glycine</field>
+        <field name="metabolite_name">phenylalanine</field>
+        <field name="metabolite_name">glycolic acid</field>
+        <field name="metabolite_name">palmitoleic acid</field>
+        <field name="metabolite_name">glucose</field>
+        <field name="metabolite_name">pelargonic acid</field>
+        <field name="metabolite_name">glycerol-alpha-phosphate</field>
+        <field name="metabolite_name">phthalic acid</field>
+        <field name="metabolite_name">elaidic acid</field>
+        <field name="metabolite_name">fructose</field>
+        <field name="metabolite_name">phosphoethanolamine</field>
+        <field name="metabolite_name">cholesterol</field>
+        <field name="metabolite_name">phosphoric acid</field>
+        <field name="metabolite_name">citric acid</field>
+        <field name="metabolite_name">inosine</field>
+        <field name="metabolite_name">hydroxylamine</field>
+        <field name="metabolite_name">ribulose-5-phosphate</field>
+        <field name="metabolite_name">ribose-5-phosphate</field>
+        <field name="metabolite_name">ribose</field>
+        <field name="metabolite_name">putrescine 3TMS</field>
+        <field name="metabolite_name">trehalose</field>
+        <field name="metabolite_name">taurine</field>
+        <field name="metabolite_name">stearic acid</field>
+        <field name="metabolite_name">serine</field>
+        <field name="metabolite_name">sucrose</field>
+        <field name="metabolite_name">succinic acid</field>
+        <field name="metabolite_name">inositol myo-</field>
+        <field name="metabolite_name">isoleucine</field>
+        <field name="metabolite_name">lactic acid</field>
+        <field name="metabolite_name">lauric acid</field>
+        <field name="metabolite_name">linoleic acid</field>
+        <field name="metabolite_name">lysine</field>
+        <field name="metabolite_name">malate</field>
+        <field name="metabolite_name">myristic acid</field>
+        <field name="metabolite_name">2-hydroxyvaleric acid</field>
+        <field name="metabolite_name">1-monostearin</field>
+        <field name="metabolite_name">capric acid</field>
+        <field name="metabolite_name">1-hexadecanol</field>
+        <field name="metabolite_name">octadecanol</field>
+        <field name="metabolite_name">alpha ketoglutaric acid</field>
+        <field name="metabolite_name">adipic acid</field>
+        <field name="metabolite_name">palmitic acid</field>
+        <field name="metabolite_name">adenosine-5-monophosphate</field>
+        <field name="metabolite_name">oleic acid</field>
+        <field name="metabolite_name">3-hydroxybutanoic acid</field>
+        <field name="metabolite_name">tyrosine</field>
+        <field name="metabolite_name">butyl stearate</field>
+        <field name="metabolite_name">arachidic acid</field>
+        <field name="metabolite_name">tryptophan</field>
+        <field name="pubchem_id">10465</field>
+        <field name="pubchem_id">13849</field>
+        <field name="pubchem_id">750</field>
+        <field name="pubchem_id">6140</field>
+        <field name="pubchem_id">3698251</field>
+        <field name="pubchem_id">445638</field>
+        <field name="pubchem_id">5793</field>
+        <field name="pubchem_id">8158</field>
+        <field name="pubchem_id">754</field>
+        <field name="pubchem_id">1017</field>
+        <field name="pubchem_id">637517</field>
+        <field name="pubchem_id">439553</field>
+        <field name="pubchem_id">1015</field>
+        <field name="pubchem_id">5997</field>
+        <field name="pubchem_id">1004</field>
+        <field name="pubchem_id">311</field>
+        <field name="pubchem_id">6021</field>
+        <field name="pubchem_id">10931771</field>
+        <field name="pubchem_id">439184</field>
+        <field name="pubchem_id">439167</field>
+        <field name="pubchem_id">447347</field>
+        <field name="pubchem_id">1045</field>
+        <field name="pubchem_id">7427</field>
+        <field name="pubchem_id">1123</field>
+        <field name="pubchem_id">5281</field>
+        <field name="pubchem_id">5951</field>
+        <field name="pubchem_id">5988</field>
+        <field name="pubchem_id">1110</field>
+        <field name="pubchem_id">892</field>
+        <field name="pubchem_id">6306</field>
+        <field name="pubchem_id">107689</field>
+        <field name="pubchem_id">3893</field>
+        <field name="pubchem_id">5280450</field>
+        <field name="pubchem_id">5962</field>
+        <field name="pubchem_id">222656</field>
+        <field name="pubchem_id">11005</field>
+        <field name="pubchem_id">98009</field>
+        <field name="pubchem_id">107036</field>
+        <field name="pubchem_id">2969</field>
+        <field name="pubchem_id">2682</field>
+        <field name="pubchem_id">8221</field>
+        <field name="pubchem_id">51</field>
+        <field name="pubchem_id">196</field>
+        <field name="pubchem_id">985</field>
+        <field name="pubchem_id">6083</field>
+        <field name="pubchem_id">965</field>
+        <field name="pubchem_id">11266</field>
+        <field name="pubchem_id">6057</field>
+        <field name="pubchem_id">31278</field>
+        <field name="pubchem_id">10467</field>
+        <field name="pubchem_id">6305</field>
+        <field name="submitter">Tobias Kind</field>
+        <field name="submitter_mail">tkind@ucdavis.edu</field>
+        <field name="submitter_affiliation">Davis Genome Center, University of California, Davis</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

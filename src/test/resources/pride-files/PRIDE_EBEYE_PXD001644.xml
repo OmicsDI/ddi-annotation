@@ -1,0 +1,62 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001644">
+      <name>Proteomic analysis of Bombus terrestris queen haemolymph</name>
+      <description>Enabled by recently available genomic resources for bumblebees, nano LC-MS/MS based proteomics was conducted to characterise the queen haemolymph proteome. The resulting mass spectrometry data were also utilised in a proteogenomic capacity to identify proteins missing from official gene sets and to improve gene models and annotation. 97 multiple-peptide supported proteins within queen bumblebee haemolymph were identified including 28 immunity-related proteins with roles in immune recognition, signalling and regulation. In addition 19 proteins with potential immune roles were identified. The haemolymph proteome is particularly rich in metabolism and transport proteins and comprised 18 proteins with unknown function.</description>
+      <cross_references>
+        <ref dbkey="30195" dbname="TAXONOMY"/>
+        <ref dbkey="D8KY58" dbname="uniprot"/>
+        <ref dbkey="K7WRE1" dbname="uniprot"/>
+        <ref dbkey="K7XH94" dbname="uniprot"/>
+        <ref dbkey="G8GU76" dbname="uniprot"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2015-01-02"/>
+        <date type="publication" value="2015-02-24"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001644</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Haemolymph from queens was collected at day three post-diapause to obtain a comprehensive catalogue of proteins present within the haemolymph . Haemolymph was removed using a microcapillary tube, transferred to 100µl autoclaved phosphate buffered saline (PBS) (Sigma, Ireland) and centrifuged at 8,000 g for 5 mins at 4°C to pellet down haemocytes and other cellular debris. The supernatant was transferred to a fresh 1.5ml collection tube and stored at -80°C for later use. Biological impurities were removed from the haemolymph sample using the 2-D clean up kit (GE Healthcare, UK) following manufacturer's instructions. The resulting protein pellets were resuspended in 300µl 50mM Ammonium bicarbonate (Ambic), 1mM calcium chloride (CaCl2). 50µg was removed from each sample and reduced with 4µl of 200mM dithiothreitol (DTT) (Fisher Scientific, Ireland) and heated to 95°C for 15 mins followed by acetylated with 1M iodoacetamide (IAA) and incubated at 25°C for 45 mins. The acetylation reaction was stopped by adding 20µl of 200mM DTT followed by incubation of samples at 25°C for 45 mins. 10µg of reduced and acetylated protein digested with 0.5µl of 0.5µg/µl trypsin, incubated at 37°C overnight. Samples were then speed vacuumed and stored at 4°C once dry. Dried peptide samples were resolubilised in 0.1% Formic Acid and subjected to LC MS/MS using a Thermo Scientific LTQ ORBITRAP XL mass spectrometer connected to an Dionex Ultimate 3000 (RSLCnano) chromatography system. Peptides were separated by an increasing acetonitrile gradient on a Biobasic C18 PicofritTM column (100 mm length, 75 mm ID), using a 60 mins reverse phase gradient  at a flow rate of 300 nL min-1. All data was acquired with the mass spectrometer operating in automatic data dependent switching mode. A high resolution MS scan (300-2000 Dalton) was performed using the Orbitrap to select the 7 most intense ions prior to MS/MS.</field>
+        <field name="data_protocol">Protein identification from the MS/MS data was performed using Proteome Discoverer to correlate the data against the NCBI reference sequences for B. terrestris (RefSeqs; downloaded February 2014). The following search parameters were used: precursor-ion mass tolerance of 1.5 Da, fragment ion mass tolerance of 6 ppm with cysteine carbamidomethylation as a fixed modification and N-acetylation of protein and oxidation of methionine as variable modifications and a maximum of 2 missed cleavage sites allowed. False Discovery Rates (FDR) were set to 0.01 for both peptides and proteins and only peptides with minimum length of six amino acid length were considered for identification. Proteins were considered indentified when more than one unique peptide for each protein was observed.</field>
+        <field name="instrument_platform">LTQ Orbitrap XL</field>
+        <field name="species">Bombus terrestris (Buff-tailed bumblebee) (Apis terrestris)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">No PTMs are included in the dataset</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">Bumblebee</field>
+        <field name="submitter_keywords"> Queen</field>
+        <field name="submitter_keywords"> Haemolymph profile</field>
+        <field name="submitter_keywords"> proteogenomics</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">COMPLETE</field>
+        <field name="software">Proteome Discoverer 1.4.0.288</field>
+        <field name="doi">10.6019/PXD001644</field>
+        <field name="submitter">James Carolan</field>
+        <field name="submitter_mail">james.carolan@nuim.ie</field>
+        <field name="submitter_affiliation">Biology</field>
+        <field name="labhead">James C Carolan</field>
+        <field name="labhead_mail">james.carolan@nuim.ie</field>
+        <field name="labhead_affiliation">Maynooth University Department of Biology  Maynooth University, Maynooth, Co. Kildare, Ireland.</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001644/110413kw_jc423.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001644/110413kw_jc423.msf-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001644/110413kw_jc424.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001644/110413kw_jc424.msf-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001644/110413kw_jc425.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001644/110413kw_jc425.msf-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001644/110413kw_jc426.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001644/110413kw_jc426.msf-pride.xml.gz</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

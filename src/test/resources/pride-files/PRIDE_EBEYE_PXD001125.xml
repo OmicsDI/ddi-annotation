@@ -1,0 +1,70 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001125">
+      <name>Maize seedling root cells LC-MS/MS</name>
+      <description>Soil waterlogging is one of the major abiotic stresses affecting maize growth and yields. To understand the molecular mechanisms underlying waterlogging tolerance in maize, the iTRAQ LC-MS/MS technique was employed to map the proteome of seedling root cells of the A3237 (tolerant inbred) and A3239 (sensitive inbred) lines under control and waterlogged conditions. Among the 3373 identified proteins, 293 were differentially abundant proteins (DAPs), of which 207 originated in A3237 and 158 in A3239. These DAPs were categorized into 11 groups that are closely related to plant defence responses, including metabolism, energy, disease/defense and transport. In the tolerant line A3237, NADP-malic enzyme, glutamate decarboxylase, coproporphyrinogen III oxidase, glutathione S-transferase TAU 25, glutathione dehydrogenase and xyloglucan endotransglycosylase 6 were specifically accumulated to manage energy, maintain pH levels and minimize oxidative damage in waterlogged root cells.</description>
+      <cross_references>
+        <ref dbkey="4577" dbname="TAXONOMY"/>
+        <ref dbkey="25316036" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-07-10"/>
+        <date type="publication" value="2014-11-18"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001125</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Root samples harvested from control (C) and waterlogged (T) seedlings of the two lines for three indepedent biological repilicates (R) were subjected to extract proteins using TCA/acetone technology. Protein concentrations were determined by the BCA protein assay reagent. Identical quantities of proteins (33.3 μg) from each line for each replicate under normal and waterlogged conditions were mixed and served as the reference sample (REF). Protein digestion was performed according to the FASP procedure described by Wiśniewski et al. (2009). The resulting peptides were collected as a filtrate, and the peptide concentration was analyzed at OD280.  From each sample, 35 μg of peptides was labelled with the iTRAQ reagent according to the manufacturer's instructions (Applied Biosystems, Foster City, CA). The 12 samples were equally randomly divided into two subgroups, and a REF sample (see above) was added to each group to form sample mix A and sample mix B.  iTRAQ labels as follow: in groupA, REF(113), A3237_T_R1 (114),  A3237_C_R1 (116), A3239_T_R1 (117), A3239_C_R1 (118), A3237_T_R2 (119), A3239_C_R2 (121); in groupB,  REF(113), A3237_C_R2 (114),  A3239_C_R3 (115), A3237_T_R3 (117), A3237_C_R3 (118), A3239_T_R2 (119), A3239_T_R3 (121). The labelling solution reaction was then incubated at room temperature for 1 h prior to further analysis. The seven labelled samples in each group were pooled into one sample and dried in a vacuum centrifuge at room temperature.  The iTRAQ-labelled peptides were subjected to SCX fractionation in an AKTA Purifier 100 (GE Healthcare) equipped with a Polysulfethyl (PolyLCInc, Maryland, U.S.A.) column (4.6 mm × 100 mm, 5 μm, 200 A). The peptides were eluted at a flow rate of 1 mL/min. Buffer A consisted of 10 mM KH2PO4 and 25% (v/v) acetonitrile, pH 3.0, and Buffer B of 10 mM KH2PO4, 25% (v/v) acetonitrile and 500 mM KCl, pH 3.0. Both were filter sterilized. To perform separation, the following gradient was applied: 100% Buffer A for 25 min, 0-10% Buffer B for 7 min, 10-20% Buffer B for 10 min, 20-45% Buffer B for 5 min, 45-100% Buffer B for 5 min, 100% Buffer B for 8 min, and finally 100% Buffer A for 15 min. The elution was monitored by absorbance at 214 nm, and fractions were collected every 1 min. The collected fractions (approximately 30 fractions) were finally combined into 8 pools and desalted on C18 cartridges (Empore™ SPE Cartridges C18 (standard density); bed I.D., 7 mm, volume 3 ml; Sigma). Each fraction was concentrated via vacuum centrifugation and reconstituted in 40 µL of 0.1% (v/v) trifluoroacetic acid. All samples were stored at -80 °C until LC-MS/MS analysis. iTRAQ labeled samples were analyzed using an Easy-nLC nanoflow HPLC system connected to a Q-Exactive mass spectrometer (Thermo Fisher, San Jose, CA). Samples of 5 ug were loaded onto a Thermo Scientific EASY column (2 cm × 100 μm, 5 μm-C18) using an auto sampler at a flow rate of 250 nL/min. Sequential separation of peptides on a Thermo Scientific EASY column (100 mm × 75 μm, 3 μm-C18) was accomplished using a segmented 2 h gradient from Solvent A (0.1% formic acid in water) to 35% Solvent B (84% acetonitrile in 0.1% formic acid) in 100 min, followed by 35 to 100% Solvent B in 8 min and then 100% Solvent B for 12 min. The mass spectrometer was operated in positive ion mode, and MS spectra were acquired over a range of 300-1800 m/z. The resolving powers of the MS scan and the MS/MS scan at 200 m/z for the Q-Exactive were set as 70,000 and 17,500, respectively. The top 10 most intense signals in acquired the MS spectra were selected for further MS/MS analysis. The isolation window was 2 m/z, and ions were fragmented through higher energy collisional dissociation with normalised collision energies of 30 eV. The maximum ion injection times were set at 10 ms for the survey scan and 60 ms for the MS/ MS scans, and the automatic gain control target values for both scan modes were set to 3.0×10-6. The dynamic exclusion duration was 40 s. The underfill ratio was defined as 0.1% on the Q-Exactive.</field>
+        <field name="data_protocol">Raw files were analyzed using Proteome Discoverer (version 1.3). Fragmentation spectra were searched using the MASCOT search engine embedded in Proteome Discoverer against the maize protein database (01-2013; 44542 entries) which was downloaded from a filtered database of maize proteins (www.maizesequence.org). The following search parameters were used: monoisotopic mass, trypsin as the cleavage enzyme, two missed cleavages, iTRAQ labeling and carbamidomethylation of cysteine as fixed modifications and peptide charges of 2+, 3+, and 4+, and oxidation of methionine was specified as a variable modification. The mass tolerance for precursor ions was set to 20 ppm and 0.1 Da for fragment ions. The results were filtered based on a false discovery rate of no more than 1%. Protein identification was supported by at least one unique peptide.  The relative quantitative analysis of proteins in the samples based on the ratios of iTRAQ reporter ions from all unique peptides belonging to that protein was performed using Proteome Discoverer (version 1.3). The relative peak intensities of the iTRAQ reporter ions released in each of the MS/MS spectra were used, and the REF sample was employed as a reference for calculating the iTRAQ ratios of all reporter ions. Then, the final ratios obtained from relative protein quantification were normalized based on the median average protein quantification ratio.</field>
+        <field name="instrument_platform">Q Exactive</field>
+        <field name="species">Zea mays (Maize)</field>
+        <field name="cell_type">plant cell</field>
+        <field name="disease">disease free</field>
+        <field name="tissue">root</field>
+        <field name="modification">iTRAQ8plex-116 reporter+balance reagent acylated residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">Maize</field>
+        <field name="submitter_keywords"> Waterlogging stress</field>
+        <field name="submitter_keywords"> LC-MS/MS</field>
+        <field name="quantification_method">iTRAQ</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Yu F, Han X, Geng C, Zhao Y, Zhang Z, Qiu F. Comparative proteomic analysis revealing the complex network associated with waterlogging stress in maize (Zea mays. L) seedling root cells. Proteomics. 2014 Oct 15</field>
+        <field name="submitter">Feng Yu</field>
+        <field name="submitter_mail">yufeng8803@webmail.hzau.edu.cn</field>
+        <field name="submitter_affiliation">Hua Zhong Agriculture University</field>
+        <field name="labhead">Fazhan Qiu</field>
+        <field name="labhead_mail">qiufazhan@mail.hzau.edu.cn</field>
+        <field name="labhead_affiliation">National Key Laboratory of Crop Genetic Improvement Huazhong Agricultural University Wuhan 430070, China</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD001125/MultiConsensus.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD001125/MultiConsensus.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD001125/P12311A_F1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD001125/P12311A_F2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD001125/P12311A_F3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD001125/P12311A_F4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD001125/P12311A_F5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD001125/P12311A_F6.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD001125/P12311A_F7.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD001125/P12311A_F8.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD001125/P12311B_F1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD001125/P12311B_F2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD001125/P12311B_F3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD001125/P12311B_F4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD001125/P12311B_F5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD001125/P12311B_F6.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD001125/P12311B_F7.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD001125/P12311B_F8.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD001125/P12311Bnew.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD001125/P12311aNEW.msf</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

@@ -1,0 +1,220 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000875">
+      <name>The membrane proteome of Medicago truncatula roots displays qualitative and quantitative changes in response to arbuscular mycorrhizal symbiosis</name>
+      <description>Arbuscular mycorrhizal (AM) symbiosis that associates roots of most land plants with soilborne fungi (Glomeromycota), is characterized by reciprocal nutritional benefits. Fungal colonization of plant roots induces massive changes in cortical cells where the fungus differentiates an arbuscule, which drives proliferation of the plasma membrane, and the de novo synthesis of the periarbuscular membrane. Despite the recognized importance of membrane proteins in sustaining AM symbiosis, the root microsomal proteome elicited upon mycorrhiza still remains to be explored. In this study, we first examined the qualitative composition of the root membrane proteome of Medicago truncatula after microsome enrichment and subsequent in depth analysis by GeLC-MS/MS. The results obtained highlighted the identification of 1226 root membrane protein candidates whose cellular and functional classifications predispose plastids and protein synthesis as prevalent organelle and function, respectively. Changes at the protein abundance level between the membrane proteomes of mycorrhizal and nonmycorrhizal roots were further monitored by spectral counting, which retrieved a total of 97 proteins that displayed a differential accumulation upon AM symbiosis. Besides the canonical markers of the periarbuscular membrane, new candidates supporting the importance of membrane trafficking events during mycorrhiza establishment/functioning were identified, including flotillin-like proteins.</description>
+      <cross_references>
+        <ref dbkey="428386" dbname="TAXONOMY"/>
+        <ref dbkey="24925269" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-04-03"/>
+        <date type="publication" value="2014-06-30"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000875</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">The current study is thus intended to investigate, using both a 2-DE- and label-free approach, the microsomal protein changes in response to the AM fungus Rhizophagus irregularis (formerly G. intraradices) in the model leguminous host M. truncatula. For that purpose, root microsomal proteins were first enriched before their subsequent in-depth analysis by GeLC-MS/MS and quantification using spectral counting. Besides depicting the first large-scale depository of membrane proteins of M. truncatula roots, this article highlights protein candidates potentially involved in sustaining the plant symbiotic program on the basis of a label-free strategy.</field>
+        <field name="data_protocol">Database search was performed with the X!Tandem software (version 2010.01.01.4) (http://www.thegpm.org/TANDEM/). Enzymatic cleavage was declared as a trypsin digestion with one possible missed cleavage. Cysteine carboxyamidomethylation and methionine oxidation were set to respectively static and possible modifications. Precursor mass precision was set to 2.0 Da with a fragment mass tolerance of 0.5 Da. Spectra search was performed against a M. truncatula EST database (http://medicago.toulouse.inra.fr/Mt/EST/, 29251 protein entries), the protein sequences from the published version of the M. truncatula genome annotations (Mt3.5v3) downloaded from the JCVI Medicago FTP server (ftp://ftp.jcvi.org/pub/data/m_truncatula/Mt3.5/Mt3.5v5/, 47529 protein entries), and the R. irregularis EST database (http://mycor.nancy.inra.fr/IMGC/GlomusGenome/index3.html, 25906 protein entries).</field>
+        <field name="instrument_platform">LTQ Orbitrap</field>
+        <field name="species">Medicago truncatula var. truncatula</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">Root membrane proteome</field>
+        <field name="submitter_keywords"> GeLC-MS/MS</field>
+        <field name="submitter_keywords"> Arbuscular mycorrhiza</field>
+        <field name="submitter_keywords"> Spectral counting</field>
+        <field name="submitter_keywords"> Rhizophagus irregularis</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Abdallah C, Valot B, Guillier C, Mounier A, Balliau T, Zivy M, van Tuinen D, Renaut J, Wipf D, Dumas-Gaudot E, Recorbet G. The membrane proteome of Medicago truncatula roots displays qualitative and quantitative changes in response to arbuscular mycorrhizal symbiosis. J Proteomics. 2014 Jun 10;108C:354-368</field>
+        <field name="submitter">cosette abdallah</field>
+        <field name="submitter_mail">cosette_a@hotmail.com</field>
+        <field name="submitter_affiliation">INSERM</field>
+        <field name="labhead">Ghislaine Recorbet</field>
+        <field name="labhead_mail">ghislaine.recorbet@dijon.inra.fr</field>
+        <field name="labhead_affiliation">UMR INRA 1347/AgroSup/Université de Bourgogne, Dijon, France</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_A03_T1-1.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_A03_T1-1.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_A04_T1-2.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_A04_T1-2.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_A05_T1-3.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_A05_T1-3.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_A06_T1-4.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_A06_T1-4.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_A07_T1-5.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_A07_T1-5.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_A08_T1-6.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_A08_T1-6.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_A09_T1-7.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_A09_T1-7.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_A10_T2-1.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_A10_T2-1.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_A11_T2-2.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_A11_T2-2.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_A12_T2-3.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_A12_T2-3.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_B01_T2-4.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_B01_T2-4.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_B02_T2-5.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_B02_T2-5.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_B03_T2-6.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_B03_T2-6.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_B04_T2-7.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_B04_T2-7.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_B05_T3-1.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_B05_T3-1.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_B06_T3-2.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_B06_T3-2.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_B07_T3-3.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_B07_T3-3.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_B08_T3-4.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_B08_T3-4.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_B09_T3-5.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_B09_T3-5.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_B10_T3-6.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_B10_T3-6.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_B11_T3-7.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_B11_T3-7.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_B12_M1-1.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_B12_M1-1.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_C01_M1-2.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_C01_M1-2.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_C02_M1-3.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_C02_M1-3.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_C03_M1-4.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_C03_M1-4.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_C04_M1-5.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_C04_M1-5.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_C05_M1-6.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_C05_M1-6.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_C06_M1-7.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_C06_M1-7.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_C07_M2-1.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_C07_M2-1.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_C08_M2-2.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_C08_M2-2.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_C09_M2-3.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_C09_M2-3.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_C10_M2-4.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_C10_M2-4.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_C11_M2-5.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_C11_M2-5.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_C12_M2-6.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_C12_M2-6.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_D01_M2-7.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_D01_M2-7.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_D02_M3-1.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_D02_M3-1.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_D03_M3-2.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_D03_M3-2.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_D04_M3-3.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_D04_M3-3.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_D05_M3-4.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_D05_M3-4.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_D06_M3-5.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_D06_M3-5.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_D07_M3-6.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_D07_M3-6.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_D08_M3-7.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_D08_M3-7.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_D09_T1P-1.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_D09_T1P-1.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_D10_T1P-2.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_D10_T1P-2.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_D11_T1P-3.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_D11_T1P-3.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_D12_T1P-4.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_D12_T1P-4.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_E01_T1P-5.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_E01_T1P-5.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_E02_T1P-6.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_E02_T1P-6.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_E03_T1P-7.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_E03_T1P-7.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_E04_T2P-1.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_E04_T2P-1.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_E05_T2P-2.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_E05_T2P-2.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_E06_T2P-3.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_E06_T2P-3.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_E07_T2P-4.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_E07_T2P-4.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_E08_T2P-5.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_E08_T2P-5.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_E09_T2P-6.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_E09_T2P-6.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_E10_T2P-7.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_E10_T2P-7.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_E11_T3P-1.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_E11_T3P-1.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_E12_T3P-2.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_E12_T3P-2.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_F01_T3P-3.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_F01_T3P-3.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_F02_T3P-4.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_F02_T3P-4.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_F03_T3P-5.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_F03_T3P-5.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_F04_T3P-6.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_F04_T3P-6.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_F05_T3P-7.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_F05_T3P-7.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_F06_M1P-1.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_F06_M1P-1.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_F07_M1P-2.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_F07_M1P-2.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_F08_M1P-3.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_F08_M1P-3.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_F09_M1P-4.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_F09_M1P-4.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_F10_M1P-5.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_F10_M1P-5.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_F11_M1P-6.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_F11_M1P-6.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_F12_M1P-7.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_F12_M1P-7.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_G01_M2P-1.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_G01_M2P-1.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_G02_M2P-2.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_G02_M2P-2.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_G03_M2P-3.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_G03_M2P-3.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_G04_M2P-4.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_G04_M2P-4.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_G05_M2P-5.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_G05_M2P-5.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_G06_M2P-6.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_G06_M2P-6.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_G07_M2P-7.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_G07_M2P-7.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_G08_M3P-1.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_G08_M3P-1.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_G09_M3P-2.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_G09_M3P-2.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_G10_M3P-3.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_G10_M3P-3.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_G11_M3P-4.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_G11_M3P-4.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_G12_M3P-5.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_G12_M3P-5.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_H01_M3P-6.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_H01_M3P-6.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_H02_M3P-7.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000875/20110128_Abdallah_Cosette_1_H02_M3P-7.xml</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

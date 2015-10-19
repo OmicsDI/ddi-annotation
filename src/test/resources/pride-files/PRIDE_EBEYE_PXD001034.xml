@@ -1,0 +1,322 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001034">
+      <name>Biomarkers for Cervical Cancer. iTRAQ Discovery.</name>
+      <description>We developed a discovery-validation mass-spectrometry based pipeline to identify a set of proteins that are regulated in serum of patients with cervical intraepithelial neoplasia (CIN) and squamous cell cervical cancer using isobaric Tags for Relative and Absolute Quantitation (iTRAQ®), label-free shotgun and targeted mass-spectrometric quantification. At the discovery stage we used a “pooling” strategy for the comparative analysis of immunodepleted serum from patients with early-(CES) and late-stage (CLS) cervical cancer versus healthy controls that revealed 15 up- and 26 down-regulated proteins. The analysis of a new of non-depleted serum samples from patients with CIN, CES, CLS, and healthy controls showed significant changes in abundance of alpha-1-acid glycoprotein 1, alpha-1-antitrypsin, serotransferrin, haptoglobin, alpha-2-HS-glycoprotein and vitamin D-binding protein. To further validate our findings we developed a fast UPLC/MRM method for the simultaneous targeted quantification of these proteins in a new set of 48 CIN, 50 CES, 34 CLS and 48 healthy controls as well as 49 serum samples from patients with ovarian cancer. The panel of six proteins showed 62% sensitivity and 82 % specificity for discrimination of patients with CIN grade 2 or worse from healthy controls, a stage of the disease where current protein-based biomarkers fail to show any discrimination.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="25232869" dbname="pubmed"/>
+        <ref dbkey="ENSP00000263413" dbname="ensembl"/>
+        <ref dbkey="P08603" dbname="uniprot"/>
+        <ref dbkey="P13645" dbname="uniprot"/>
+        <ref dbkey="P13647" dbname="uniprot"/>
+        <ref dbkey="ENSP00000278407" dbname="ensembl"/>
+        <ref dbkey="P06681" dbname="uniprot"/>
+        <ref dbkey="ENSP00000260356" dbname="ensembl"/>
+        <ref dbkey="ENSP00000263408" dbname="ensembl"/>
+        <ref dbkey="ENSP00000261336" dbname="ensembl"/>
+        <ref dbkey="ENSP00000333994" dbname="ensembl"/>
+        <ref dbkey="ENSP00000252486" dbname="ensembl"/>
+        <ref dbkey="ENSP00000378130" dbname="ensembl"/>
+        <ref dbkey="ENSP00000376793" dbname="ensembl"/>
+        <ref dbkey="ENSP00000205948" dbname="ensembl"/>
+        <ref dbkey="ENSP00000266718" dbname="ensembl"/>
+        <ref dbkey="P13671" dbname="uniprot"/>
+        <ref dbkey="P01011" dbname="uniprot"/>
+        <ref dbkey="ENSP00000372815" dbname="ensembl"/>
+        <ref dbkey="ENSP00000340888" dbname="ensembl"/>
+        <ref dbkey="P01008" dbname="uniprot"/>
+        <ref dbkey="P01009" dbname="uniprot"/>
+        <ref dbkey="O75882" dbname="uniprot"/>
+        <ref dbkey="P07225" dbname="uniprot"/>
+        <ref dbkey="ENSP00000270879" dbname="ensembl"/>
+        <ref dbkey="P01019" dbname="uniprot"/>
+        <ref dbkey="P27169" dbname="uniprot"/>
+        <ref dbkey="ENSP00000351190" dbname="ensembl"/>
+        <ref dbkey="P0C0L4" dbname="uniprot"/>
+        <ref dbkey="P0C0L5" dbname="uniprot"/>
+        <ref dbkey="P22792" dbname="uniprot"/>
+        <ref dbkey="P01031" dbname="uniprot"/>
+        <ref dbkey="ENSP00000298841" dbname="ensembl"/>
+        <ref dbkey="ENSP00000369816" dbname="ensembl"/>
+        <ref dbkey="ENSP00000372224" dbname="ensembl"/>
+        <ref dbkey="ENSP00000237014" dbname="ensembl"/>
+        <ref dbkey="P08697" dbname="uniprot"/>
+        <ref dbkey="P00738" dbname="uniprot"/>
+        <ref dbkey="P01024" dbname="uniprot"/>
+        <ref dbkey="P00734" dbname="uniprot"/>
+        <ref dbkey="P01023" dbname="uniprot"/>
+        <ref dbkey="ENSP00000342850" dbname="ensembl"/>
+        <ref dbkey="P00736" dbname="uniprot"/>
+        <ref dbkey="Q06033" dbname="uniprot"/>
+        <ref dbkey="P01042" dbname="uniprot"/>
+        <ref dbkey="P08779" dbname="uniprot"/>
+        <ref dbkey="P00742" dbname="uniprot"/>
+        <ref dbkey="ENSP00000315130" dbname="ensembl"/>
+        <ref dbkey="ENSP00000252242" dbname="ensembl"/>
+        <ref dbkey="P00748" dbname="uniprot"/>
+        <ref dbkey="P00747" dbname="uniprot"/>
+        <ref dbkey="ENSP00000252244" dbname="ensembl"/>
+        <ref dbkey="P01834" dbname="uniprot"/>
+        <ref dbkey="P00751" dbname="uniprot"/>
+        <ref dbkey="P05160" dbname="uniprot"/>
+        <ref dbkey="ENSP00000306361" dbname="ensembl"/>
+        <ref dbkey="ENSP00000292401" dbname="ensembl"/>
+        <ref dbkey="P0CF74" dbname="uniprot"/>
+        <ref dbkey="P05154" dbname="uniprot"/>
+        <ref dbkey="P05155" dbname="uniprot"/>
+        <ref dbkey="P05156" dbname="uniprot"/>
+        <ref dbkey="ENSP00000232003" dbname="ensembl"/>
+        <ref dbkey="ENSP00000264690" dbname="ensembl"/>
+        <ref dbkey="Q04756" dbname="uniprot"/>
+        <ref dbkey="P04196" dbname="uniprot"/>
+        <ref dbkey="ENSP00000278222" dbname="ensembl"/>
+        <ref dbkey="ENSP00000355627" dbname="ensembl"/>
+        <ref dbkey="P02735" dbname="uniprot"/>
+        <ref dbkey="ENSP00000304236" dbname="ensembl"/>
+        <ref dbkey="ENSP00000369654" dbname="ensembl"/>
+        <ref dbkey="ENSP00000233242" dbname="ensembl"/>
+        <ref dbkey="ENSP00000415769" dbname="ensembl"/>
+        <ref dbkey="P02749" dbname="uniprot"/>
+        <ref dbkey="P02748" dbname="uniprot"/>
+        <ref dbkey="P02747" dbname="uniprot"/>
+        <ref dbkey="P02746" dbname="uniprot"/>
+        <ref dbkey="P02745" dbname="uniprot"/>
+        <ref dbkey="Q9Y6R7" dbname="uniprot"/>
+        <ref dbkey="P02743" dbname="uniprot"/>
+        <ref dbkey="P04180" dbname="uniprot"/>
+        <ref dbkey="P80108" dbname="uniprot"/>
+        <ref dbkey="P02741" dbname="uniprot"/>
+        <ref dbkey="ENSP00000323534" dbname="ensembl"/>
+        <ref dbkey="P02649" dbname="uniprot"/>
+        <ref dbkey="P31151" dbname="uniprot"/>
+        <ref dbkey="ENSP00000350425" dbname="ensembl"/>
+        <ref dbkey="ENSP00000306477" dbname="ensembl"/>
+        <ref dbkey="P02647" dbname="uniprot"/>
+        <ref dbkey="ENSP00000226355" dbname="ensembl"/>
+        <ref dbkey="P01871" dbname="uniprot"/>
+        <ref dbkey="ENSP00000226218" dbname="ensembl"/>
+        <ref dbkey="ENSP00000262776" dbname="ensembl"/>
+        <ref dbkey="P01876" dbname="uniprot"/>
+        <ref dbkey="ENSP00000302621" dbname="ensembl"/>
+        <ref dbkey="ENSP00000265132" dbname="ensembl"/>
+        <ref dbkey="P02655" dbname="uniprot"/>
+        <ref dbkey="P02656" dbname="uniprot"/>
+        <ref dbkey="ENSP00000217407" dbname="ensembl"/>
+        <ref dbkey="P02652" dbname="uniprot"/>
+        <ref dbkey="P02654" dbname="uniprot"/>
+        <ref dbkey="ENSP00000295897" dbname="ensembl"/>
+        <ref dbkey="P02671" dbname="uniprot"/>
+        <ref dbkey="P01860" dbname="uniprot"/>
+        <ref dbkey="ENSP00000308541" dbname="ensembl"/>
+        <ref dbkey="P02042" dbname="uniprot"/>
+        <ref dbkey="P03952" dbname="uniprot"/>
+        <ref dbkey="P02776" dbname="uniprot"/>
+        <ref dbkey="ENSP00000348170" dbname="ensembl"/>
+        <ref dbkey="P02774" dbname="uniprot"/>
+        <ref dbkey="P02775" dbname="uniprot"/>
+        <ref dbkey="ENSP00000382862" dbname="ensembl"/>
+        <ref dbkey="ENSP00000348068" dbname="ensembl"/>
+        <ref dbkey="ENSP00000236850" dbname="ensembl"/>
+        <ref dbkey="ENSP00000277903" dbname="ensembl"/>
+        <ref dbkey="P02787" dbname="uniprot"/>
+        <ref dbkey="ENSP00000246662" dbname="ensembl"/>
+        <ref dbkey="ENSP00000215539" dbname="ensembl"/>
+        <ref dbkey="ENSP00000262722" dbname="ensembl"/>
+        <ref dbkey="ENSP00000356969" dbname="ensembl"/>
+        <ref dbkey="P10909" dbname="uniprot"/>
+        <ref dbkey="P02790" dbname="uniprot"/>
+        <ref dbkey="ENSP00000310861" dbname="ensembl"/>
+        <ref dbkey="O75636" dbname="uniprot"/>
+        <ref dbkey="P02750" dbname="uniprot"/>
+        <ref dbkey="P02751" dbname="uniprot"/>
+        <ref dbkey="P02753" dbname="uniprot"/>
+        <ref dbkey="P25311" dbname="uniprot"/>
+        <ref dbkey="P68871" dbname="uniprot"/>
+        <ref dbkey="P05090" dbname="uniprot"/>
+        <ref dbkey="ENSP00000319464" dbname="ensembl"/>
+        <ref dbkey="ENSP00000266041" dbname="ensembl"/>
+        <ref dbkey="P07996" dbname="uniprot"/>
+        <ref dbkey="P02760" dbname="uniprot"/>
+        <ref dbkey="P02763" dbname="uniprot"/>
+        <ref dbkey="ENSP00000296130" dbname="ensembl"/>
+        <ref dbkey="P02768" dbname="uniprot"/>
+        <ref dbkey="Q92954" dbname="uniprot"/>
+        <ref dbkey="P02765" dbname="uniprot"/>
+        <ref dbkey="P02766" dbname="uniprot"/>
+        <ref dbkey="ENSP00000374989" dbname="ensembl"/>
+        <ref dbkey="ENSP00000356037" dbname="ensembl"/>
+        <ref dbkey="P06727" dbname="uniprot"/>
+        <ref dbkey="ENSP00000264613" dbname="ensembl"/>
+        <ref dbkey="P51884" dbname="uniprot"/>
+        <ref dbkey="ENSP00000329374" dbname="ensembl"/>
+        <ref dbkey="ENSP00000364321" dbname="ensembl"/>
+        <ref dbkey="P04114" dbname="uniprot"/>
+        <ref dbkey="ENSP00000255030" dbname="ensembl"/>
+        <ref dbkey="ENSP00000360281" dbname="ensembl"/>
+        <ref dbkey="P04217" dbname="uniprot"/>
+        <ref dbkey="O14791" dbname="uniprot"/>
+        <ref dbkey="ENSP00000345179" dbname="ensembl"/>
+        <ref dbkey="Q03591" dbname="uniprot"/>
+        <ref dbkey="ENSP00000321853" dbname="ensembl"/>
+        <ref dbkey="ENSP00000273283" dbname="ensembl"/>
+        <ref dbkey="ENSP00000356399" dbname="ensembl"/>
+        <ref dbkey="P09871" dbname="uniprot"/>
+        <ref dbkey="ENSP00000264005" dbname="ensembl"/>
+        <ref dbkey="P10643" dbname="uniprot"/>
+        <ref dbkey="ENSP00000224181" dbname="ensembl"/>
+        <ref dbkey="ENSP00000223642" dbname="ensembl"/>
+        <ref dbkey="ENSP00000255040" dbname="ensembl"/>
+        <ref dbkey="ENSP00000356382" dbname="ensembl"/>
+        <ref dbkey="P06396" dbname="uniprot"/>
+        <ref dbkey="ENSP00000385834" dbname="ensembl"/>
+        <ref dbkey="Q96PD5" dbname="uniprot"/>
+        <ref dbkey="ENSP00000265983" dbname="ensembl"/>
+        <ref dbkey="ENSP00000259396" dbname="ensembl"/>
+        <ref dbkey="ENSP00000317674" dbname="ensembl"/>
+        <ref dbkey="P36955" dbname="uniprot"/>
+        <ref dbkey="P18428" dbname="uniprot"/>
+        <ref dbkey="ENSP00000322061" dbname="ensembl"/>
+        <ref dbkey="P04264" dbname="uniprot"/>
+        <ref dbkey="ENSP00000314299" dbname="ensembl"/>
+        <ref dbkey="ENSP00000393887" dbname="ensembl"/>
+        <ref dbkey="ENSP00000357711" dbname="ensembl"/>
+        <ref dbkey="P04278" dbname="uniprot"/>
+        <ref dbkey="ENSP00000328173" dbname="ensembl"/>
+        <ref dbkey="ENSP00000245907" dbname="ensembl"/>
+        <ref dbkey="P04003" dbname="uniprot"/>
+        <ref dbkey="P19827" dbname="uniprot"/>
+        <ref dbkey="P19823" dbname="uniprot"/>
+        <ref dbkey="P00450" dbname="uniprot"/>
+        <ref dbkey="ENSP00000364709" dbname="ensembl"/>
+        <ref dbkey="ENSP00000265023" dbname="ensembl"/>
+        <ref dbkey="P43251" dbname="uniprot"/>
+        <ref dbkey="ENSP00000296028" dbname="ensembl"/>
+        <ref dbkey="ENSP00000296029" dbname="ensembl"/>
+        <ref dbkey="P05543" dbname="uniprot"/>
+        <ref dbkey="P23142" dbname="uniprot"/>
+        <ref dbkey="P43652" dbname="uniprot"/>
+        <ref dbkey="P04004" dbname="uniprot"/>
+        <ref dbkey="P05546" dbname="uniprot"/>
+        <ref dbkey="P35527" dbname="uniprot"/>
+        <ref dbkey="ENSP00000299367" dbname="ensembl"/>
+        <ref dbkey="P05452" dbname="uniprot"/>
+        <ref dbkey="ENSP00000292609" dbname="ensembl"/>
+        <ref dbkey="P08571" dbname="uniprot"/>
+        <ref dbkey="P20742" dbname="uniprot"/>
+        <ref dbkey="ENSP00000466775" dbname="ensembl"/>
+        <ref dbkey="P29622" dbname="uniprot"/>
+        <ref dbkey="ENSP00000253496" dbname="ensembl"/>
+        <ref dbkey="ENSP00000356453" dbname="ensembl"/>
+        <ref dbkey="ENSP00000323929" dbname="ensembl"/>
+        <ref dbkey="ENSP00000438615" dbname="ensembl"/>
+        <ref dbkey="ENSP00000262919" dbname="ensembl"/>
+        <ref dbkey="ENSP00000465356" dbname="ensembl"/>
+        <ref dbkey="P35908" dbname="uniprot"/>
+        <ref dbkey="Q08380" dbname="uniprot"/>
+        <ref dbkey="ENSP00000356671" dbname="ensembl"/>
+        <ref dbkey="P07357" dbname="uniprot"/>
+        <ref dbkey="P07358" dbname="uniprot"/>
+        <ref dbkey="Q14624" dbname="uniprot"/>
+        <ref dbkey="ENSP00000269576" dbname="ensembl"/>
+        <ref dbkey="ENSP00000254722" dbname="ensembl"/>
+        <ref dbkey="ENSP00000363773" dbname="ensembl"/>
+        <ref dbkey="ENSP00000313967" dbname="ensembl"/>
+        <ref dbkey="ENSP00000394936" dbname="ensembl"/>
+        <ref dbkey="ENSP00000273951" dbname="ensembl"/>
+        <ref dbkey="P69905" dbname="uniprot"/>
+        <ref dbkey="ENSP00000360519" dbname="ensembl"/>
+        <ref dbkey="P07360" dbname="uniprot"/>
+        <ref dbkey="P19652" dbname="uniprot"/>
+        <ref dbkey="ENSP00000222381" dbname="ensembl"/>
+        <ref dbkey="ENSP00000333203" dbname="ensembl"/>
+        <ref dbkey="P35542" dbname="uniprot"/>
+        <ref dbkey="ENSP00000301653" dbname="ensembl"/>
+        <ref dbkey="ENSP00000377783" dbname="ensembl"/>
+        <ref dbkey="P35858" dbname="uniprot"/>
+        <ref dbkey="ENSP00000263100" dbname="ensembl"/>
+        <ref dbkey="ENSP00000251595" dbname="ensembl"/>
+        <ref dbkey="ENSP00000363768" dbname="ensembl"/>
+        <ref dbkey="ENSP00000354458" dbname="ensembl"/>
+        <ref dbkey="ENSP00000308938" dbname="ensembl"/>
+        <ref dbkey="ENSP00000230036" dbname="ensembl"/>
+        <ref dbkey="ENSP00000256733" dbname="ensembl"/>
+        <ref dbkey="Q14520" dbname="uniprot"/>
+        <ref dbkey="P08185" dbname="uniprot"/>
+        <ref dbkey="ENSP00000227667" dbname="ensembl"/>
+        <ref dbkey="P0CG06" dbname="uniprot"/>
+        <ref dbkey="P0CG05" dbname="uniprot"/>
+        <ref dbkey="ENSP00000215727" dbname="ensembl"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-06-09"/>
+        <date type="publication" value="2014-10-06"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001034</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Immunodepleted individual serum samples after pooling were cleaned-up using spin concentrators for proteins with a cut-off of 5 kDa (Agilent, #5185-5991) according to the manufacture’s recommendations. After complete drying of a solution containing 50 µg of protein per pooled sample, proteins were reduced with 2 µL of 50 mM tris-(2-carboxyethyl)phosphine by incubation at 60°C for 1 hour. Then, proteins were alkylated with 1 µL of a 15.5 mg/mL solution of 2-iodoacetamide (SigmaUltra, USA, # I1149) at room temperature for 30 min in the dark. Equivalent amounts of serum proteins after depletion constituted a “pooled” sample per group: cancer early stage (CES), cancer late stage (CLS), healthy set 1 and healthy set 2. After washing, the samples were analysed by SDS-PAGE for visual inspection to make sure that protein amount and composition of the depleted serum samples were comparable. Thereafter, the proteins were digested (16 hours) with trypsin (sequencing grade modified trypsin, Promega, USA, # V5111) at a 1:15 enzyme to total protein ratio at 37ºC with vortexing at 450 rpm in a Thermomixer (Eppendorf). Digests were labeled with stable isotope-containing reagents (iTRAQ®, 4-plex) in accordance with the experimental design. Two full analytical replicates (referred as replicate 1 and replicate 2 in the text below) starting from the immunodepletion of the high abundant proteins were analyzed to assess the reproducibility of the analytical procedure. To reduce sample complexity, iTRAQ labeled peptides were fractionated by strong cation exchange (SCX) liquid chromatography using a PolySulfoethyl A column (200 x 4.6 mm, PolyLC Inc., USA).</field>
+        <field name="data_protocol">Tandem mass spectra were extracted, charge state deconvoluted and deisotoped by the MassHunter Qualitative Analysis software version B.05.00 (Agilent) and saved as .mgf files. All MS/MS data were analyzed using Phenyx (GeneBio, Geneva, Switzerland) and X!Tandem (The GPM, thegpm.org; version CYCLONE (2010.12.01.1)). Phenyx was setup to search the uniprot swissprot database (selected for Homo sapiens, Release 2012_08 of 05-Sep-12, 20231 sequences) setting the digestion enzyme to trypsin. A fragment ion mass tolerance of 0.30 Da and a parent ion tolerance of 50 ppm were selected for a database search. Iodoacetamide derivatization of cysteine and 4-plex iTRAQ derivatization  of lysine and the N-terminus were specified as fixed modifications; oxidation of methionine was specified in Phenyx as a variable modification. X!Tandem database search was performed in the Scaffold 3.6.2 (Proteome Software Inc., Portland, OR) environment on the subsequent protein database (proteins identified with Phenyx database search) to extend the search space by taking the following variable modifications into account: amidation of the C-terminus, deamidation of asparagine and glutamine, oxidation of histidine, methionine and tryptophan, acetylation of lysine and the N-terminus and phosphorylation of serine, threonine and tyrosine.  Scaffold 3.6.2 was used to validate MS/MS based peptide and protein identifications. Peptide identifications were accepted if they had a probability of greater than 95.0 % as specified by the Peptide Prophet algorithm. Protein identifications were accepted if they had a probability of greater than 95.0 %. as specified by the Protein Prophet algorithm. Proteins that contained similar peptides and could not be differentiated based on MS/MS analysis alone were grouped to satisfy the principles of parsimony (a minimum set of proteins that accounts for all detected peptides is reported).</field>
+        <field name="instrument_platform">Agilent instrument model</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Cervix carcinoma</field>
+        <field name="tissue">blood serum</field>
+        <field name="modification">Acetyl</field>
+        <field name="modification">Oxidation</field>
+        <field name="modification">Carbamidomethyl</field>
+        <field name="modification">Phospho</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biomedical</field>
+        <field name="submitter_keywords">cervical cancer</field>
+        <field name="submitter_keywords"> intraepithelial neoplasia</field>
+        <field name="submitter_keywords"> protein panel</field>
+        <field name="submitter_keywords"> LC-MS/MS</field>
+        <field name="submitter_keywords"> alpha-1-antitrypsin</field>
+        <field name="submitter_keywords"> alpha-1-acid-glycoprotein</field>
+        <field name="submitter_keywords"> haptoglobin</field>
+        <field name="submitter_keywords"> serotransferrin</field>
+        <field name="submitter_keywords"> vitamin D-binding protein</field>
+        <field name="submitter_keywords"> alpha-2-HS-glycoprotein</field>
+        <field name="quantification_method">iTRAQ</field>
+        <field name="submission_type">COMPLETE</field>
+        <field name="software">X! Tandem CYCLONE (2010.12.01.1)</field>
+        <field name="software">Phenyx null</field>
+        <field name="software">Scaffold Scaffold_4.3.0</field>
+        <field name="doi">10.6019/PXD001034</field>
+        <field name="publication">Boichenko AP, Govorukhina N, Klip HG, van der Zee AG, Güzel C, Luider TM, Bischoff R. A Panel of Regulated Proteins in Serum from Patients with Cervical Intraepithelial Neoplasia and Cervical Cancer. J Proteome Res. 2014 Sep 29</field>
+        <field name="submitter">Alexander Boichenko</field>
+        <field name="submitter_mail">oleksandr.boychenko@gmail.com</field>
+        <field name="submitter_affiliation">University of Groningen</field>
+        <field name="labhead">Rainer Bischoff</field>
+        <field name="labhead_mail">r.p.h.bischoff@rug.nl</field>
+        <field name="labhead_affiliation">Head of Analytical Biochemistry, University of Groningen</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001034/kit 1 replicate 1.1 iTRAQ.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001034/kit 2 replicate 1.1 iTRAQ.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001034/6822_scaffold-pidres.scaffold-pidres.xml.mzid_6822_scaffold-pidres.scaffold-pidres.xml.MGF</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001034/kit 1 replicate 1.1 iTRAQ 6822 scaffold-pidres.scaffold-pidres.xml.mzid.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001034/6586_scaffold-pidres.scaffold-pidres.xml.mzid_6586_scaffold-pidres.scaffold-pidres.xml.MGF</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001034/kit 1 replicate 1.2 iTRAQ_6586_scaffold-pidres.scaffold-pidres.xml.mzid.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001034/4559_scaffold-pidres.scaffold-pidres.xml.mzid_4559_scaffold-pidres.scaffold-pidres.xml.MGF</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001034/kit 3 replicate 2 iTRAQ_4559_scaffold-pidres.scaffold-pidres.xml.mzid.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001034/6635_scaffold-pidres.scaffold-pidres.xml.mzid_6635_scaffold-pidres.scaffold-pidres.xml.MGF</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001034/kit 2 replicate 1.1 iTRAQ_6635_scaffold-pidres.scaffold-pidres.xml.mzid.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001034/6587_scaffold-pidres.scaffold-pidres.xml.mzid_6587_scaffold-pidres.scaffold-pidres.xml.MGF</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001034/kit 2 replicate 1.2 iTRAQ_6587_scaffold-pidres.scaffold-pidres.xml.mzid.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001034/4566_scaffold-pidres.scaffold-pidres.xml.mzid_4566_scaffold-pidres.scaffold-pidres.xml.MGF</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001034/kit 4 replicate 2 iTRAQ_4566_scaffold-pidres.scaffold-pidres.xml.mzid.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001034/kit 1 replicate 1.2 iTRAQ.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001034/kit 2 replicate 1.2 iTRAQ.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001034/kit 3 replicate 2 iTRAQ.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001034/kit 4 replicate 2 iTRAQ.zip</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

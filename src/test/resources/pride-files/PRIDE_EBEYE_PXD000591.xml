@@ -1,0 +1,70 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000591">
+      <name>Human Adenovirus 5 (HAdV5), LC-MSMS</name>
+      <description>Using high-resolution mass spectrometry (MS)-based proteomics in combination with multiple protease digestion, we profiled, with on average 90% sequence coverage, all 13 viral proteins present in an human adenovirus (HAdV) vector. This in-depth profile provided multiple peptide-based evidence on intrinsic protease activity affecting several HAdV proteins. Next, the generated peptide library was used to develop a targeted proteomics method using selected reaction monitoring (SRM) aimed at quantitative profiling of the stoichiometry of all 13 proteins present in the HAdV. We also used this method to probe the release of specific virus proteins initiated by thermal stimulation, mimicking the early stage of HAdV disassembly during entry into host cells. We confirmed the copy numbers of the most well characterized viral capsid components and established the copy numbers for proteins whose stoichiometry has so far not been accurately defined. We also found that heating HAdV induces the complete release of the penton base and fiber proteins as well as a substantial release of protein VIII and VI. For these latter proteins, maturational proteolysis by the adenoviral protease (AVP) leads to the differential release of fragments with certain peptides being fully released and others largely retained in the AdV particles. This information is likely to be beneficial for the ongoing interpretation of high resolution cryoEM and X-ray electron density maps.</description>
+      <cross_references>
+        <ref dbkey="28285" dbname="TAXONOMY"/>
+        <ref dbkey="24591515" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-06-09"/>
+        <date type="publication" value="2014-06-09"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000591</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">For LC-MS analysis, purified HAdV particles were resuspended in 50mM ammonium bicarbonate, 5% (w/v) sodium deoxycholate (SDC, Sigma Aldrich) and heated at 90° for 5 minutes to disrupt the virus particles. Proteins (~200µg) for each enzymatic digestion, were first reduced using dithiothreitol (DTT, Sigma Aldrich) for 30 minutes at 56°C and then alkylated by iodoacetamide (IAA, Sigma Aldrich) for 30 min in the dark. Samples were diluted such that the final concentration of SDC was 0.5%, followed by enzymatic digestion overnight at 37° employing three different proteases in parallel. Trypsin (Promega) and chymotrypsin (Roche) were added in a substrate/enzyme ratio of 50:1 (w/w), while LysN (U-Protein Express, The Netherlands) was added in a substrate/enzyme ratio of 75:1. Digestion was quenched by acidification with trifluoroacetic acid (TFA, Sigma Aldrich) to a final concentration of 0.5%. SDC removal was performed by liquid-liquid extraction. Briefly, samples were diluted 2 times with ethyl acetate, vortexed for 30 seconds, and then centrifuged at 20,000xg for 1 minute. The peptide-containing aqueous phase at the bottom of the eppendorf tubes was recovered and desalted by solid phase extraction (Sep-pack Vac C18 cartridges, Waters). Desalted peptides were eluted in 80% acetonitrile, dried in a speedvac and then resuspended in 10% formic acid solution.</field>
+        <field name="data_protocol">MS raw data from the shotgun LC-MS/MS analyses was processed by Proteome Discoverer (version 1.3, Thermo Electron). Peptide identification was performed with Mascot 2.3 (Matrix Science) against a concatenated forward-decoy UniPROT database including the HAdV protein sequences and supplemented with all the frequently observed contaminants in MS. The following parameters were used: 50 ppm precursor mass tolerance, 0.6 Da (for CID and ETD spectra) and 0.05 Da (for HCD spectra) fragment ion tolerance. In order to evaluate the adenovirus proteinase activity we allowed the identification of peptides containing one non-specific cleavage and a maximum of 2 missed cleavages. Carbamidomethyl cysteine was allowed as fixed modification, while oxidized methionine and protein N-terminal acetylation were set as variable modifications. Finally, results were filtered using the following criteria: (i) mass deviations of ±6 p.p.m., (ii) Mascot Ion Score of at least 20, (iii) a minimum of 6 amino-acid residues per peptide and (iv) position rank 1 in Mascot search. As a result, we obtained peptide FDRs below 1% for each of the three peptide mixtures analyzed.</field>
+        <field name="instrument_platform">LTQ Orbitrap</field>
+        <field name="instrument_platform">Q Exactive</field>
+        <field name="species">Human adenovirus C serotype 5 (HAdV-5) (Human adenovirus 5)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">acetylated residue</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">PRIME-XS Project</field>
+        <field name="curator_keywords">Biomedical</field>
+        <field name="submitter_keywords">Adenovirus</field>
+        <field name="submitter_keywords"> quantification</field>
+        <field name="submitter_keywords"> proteomics</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Benevento M, Di Palma S, Snijder J, Moyer CL, Reddy VS, Nemerow GR, Heck AJ. Adenovirus composition, proteolysis, and disassembly studied by in-depth qualitative and quantitative proteomics. J Biol Chem. 2014 Apr 18;289(16):11421-30</field>
+        <field name="submitter">Marco Benevento</field>
+        <field name="submitter_mail">m.benevento@uu.nl</field>
+        <field name="submitter_affiliation">Faculty of Sciences</field>
+        <field name="labhead">Albert J.R. Heck</field>
+        <field name="labhead_mail">a.j.r.heck@uu.nl</field>
+        <field name="labhead_affiliation">Biomolecular Mass Spectrometry and Proteomics, Bijvoet Center for Biomolecular Research and Utrecht Institute for Pharmaceutical Science, Utrecht University, Padualaan 8, 3584 CH Utrecht, The Netherlands; Netherlands Proteomics Centre, Padualaan 8, 3584 CH Utrecht, The Netherlands</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000591/HAdV_Chymo_OrbiXL.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000591/HAdV_Chymo_OrbiXL.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000591/HAdV_Chymo_OrbiXL.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000591/HAdV_Chymo_OrbiXL_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000591/HAdV_LysN_OrbiXL.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000591/HAdV_LysN_OrbiXL.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000591/HAdV_LysN_OrbiXL.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000591/HAdV_Trypsin_OrbiXL.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000591/HAdV_Trypsin_OrbiXL.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000591/HAdV_Trypsin_OrbiXL.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000591/HAdV_Trypsin_OrbiXL_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000591/HAdV_1h_Qexactive.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000591/HAdV_1h_Qexactive_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000591/HAdV_1h_Qexactive_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000591/HAdV_90m_Qexactive.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000591/HAdV_90m_Qexactive_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000591/HAdV_Qexactive.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000591/HAdV_Qexactive.pep.xml</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

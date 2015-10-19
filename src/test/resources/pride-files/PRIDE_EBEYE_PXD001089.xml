@@ -1,0 +1,321 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001089">
+      <name>Interactors associated to Sas3-dependent NuA3 histone acetyltransferase complex</name>
+      <description>The aim of the study is to improve the knowledge on the functionality and dynamic interactions of Sas3 as related to the presence of Gcn5.</description>
+      <cross_references>
+        <ref dbkey="4932" dbname="TAXONOMY"/>
+        <ref dbkey="P0CH08" dbname="uniprot"/>
+        <ref dbkey="P05740" dbname="uniprot"/>
+        <ref dbkey="P0CH09" dbname="uniprot"/>
+        <ref dbkey="Q08465" dbname="uniprot"/>
+        <ref dbkey="C7GVZ9" dbname="uniprot"/>
+        <ref dbkey="P38800" dbname="uniprot"/>
+        <ref dbkey="P14127" dbname="uniprot"/>
+        <ref dbkey="P14126" dbname="uniprot"/>
+        <ref dbkey="P23248" dbname="uniprot"/>
+        <ref dbkey="P21965" dbname="uniprot"/>
+        <ref dbkey="P06784" dbname="uniprot"/>
+        <ref dbkey="P06169" dbname="uniprot"/>
+        <ref dbkey="P46949" dbname="uniprot"/>
+        <ref dbkey="P38801" dbname="uniprot"/>
+        <ref dbkey="B3LLJ2" dbname="uniprot"/>
+        <ref dbkey="O13516" dbname="uniprot"/>
+        <ref dbkey="P53836" dbname="uniprot"/>
+        <ref dbkey="P05739" dbname="uniprot"/>
+        <ref dbkey="P06367" dbname="uniprot"/>
+        <ref dbkey="P07245" dbname="uniprot"/>
+        <ref dbkey="Q04217" dbname="uniprot"/>
+        <ref dbkey="P32611" dbname="uniprot"/>
+        <ref dbkey="P47128" dbname="uniprot"/>
+        <ref dbkey="P46654" dbname="uniprot"/>
+        <ref dbkey="P05737" dbname="uniprot"/>
+        <ref dbkey="B5VP69" dbname="uniprot"/>
+        <ref dbkey="P00358" dbname="uniprot"/>
+        <ref dbkey="P00560" dbname="uniprot"/>
+        <ref dbkey="P00359" dbname="uniprot"/>
+        <ref dbkey="C8Z9Z9" dbname="uniprot"/>
+        <ref dbkey="P00360" dbname="uniprot"/>
+        <ref dbkey="Q04839" dbname="uniprot"/>
+        <ref dbkey="P39685" dbname="uniprot"/>
+        <ref dbkey="P19358" dbname="uniprot"/>
+        <ref dbkey="P26786" dbname="uniprot"/>
+        <ref dbkey="P26785" dbname="uniprot"/>
+        <ref dbkey="P00549" dbname="uniprot"/>
+        <ref dbkey="C7GSL4" dbname="uniprot"/>
+        <ref dbkey="B3LSV9" dbname="uniprot"/>
+        <ref dbkey="P39985" dbname="uniprot"/>
+        <ref dbkey="A6ZUM5" dbname="uniprot"/>
+        <ref dbkey="P00330" dbname="uniprot"/>
+        <ref dbkey="P00331" dbname="uniprot"/>
+        <ref dbkey="P50102" dbname="uniprot"/>
+        <ref dbkey="P53903" dbname="uniprot"/>
+        <ref dbkey="C8ZJB0" dbname="uniprot"/>
+        <ref dbkey="P29453" dbname="uniprot"/>
+        <ref dbkey="P32494" dbname="uniprot"/>
+        <ref dbkey="P40212" dbname="uniprot"/>
+        <ref dbkey="P26783" dbname="uniprot"/>
+        <ref dbkey="P26784" dbname="uniprot"/>
+        <ref dbkey="Q03761" dbname="uniprot"/>
+        <ref dbkey="P04456" dbname="uniprot"/>
+        <ref dbkey="P02994" dbname="uniprot"/>
+        <ref dbkey="P20437" dbname="uniprot"/>
+        <ref dbkey="P19882" dbname="uniprot"/>
+        <ref dbkey="P33327" dbname="uniprot"/>
+        <ref dbkey="Q06822" dbname="uniprot"/>
+        <ref dbkey="P10664" dbname="uniprot"/>
+        <ref dbkey="P0C2H9" dbname="uniprot"/>
+        <ref dbkey="P38707" dbname="uniprot"/>
+        <ref dbkey="P35189" dbname="uniprot"/>
+        <ref dbkey="Q02208" dbname="uniprot"/>
+        <ref dbkey="Q3E792" dbname="uniprot"/>
+        <ref dbkey="P14747" dbname="uniprot"/>
+        <ref dbkey="Q06188" dbname="uniprot"/>
+        <ref dbkey="P06634" dbname="uniprot"/>
+        <ref dbkey="E7KFU6" dbname="uniprot"/>
+        <ref dbkey="P34237" dbname="uniprot"/>
+        <ref dbkey="P46990" dbname="uniprot"/>
+        <ref dbkey="Q04869" dbname="uniprot"/>
+        <ref dbkey="P33399" dbname="uniprot"/>
+        <ref dbkey="P48231" dbname="uniprot"/>
+        <ref dbkey="P07281" dbname="uniprot"/>
+        <ref dbkey="P53686" dbname="uniprot"/>
+        <ref dbkey="P53165" dbname="uniprot"/>
+        <ref dbkey="P53167" dbname="uniprot"/>
+        <ref dbkey="P07280" dbname="uniprot"/>
+        <ref dbkey="P51979" dbname="uniprot"/>
+        <ref dbkey="P24000" dbname="uniprot"/>
+        <ref dbkey="P00942" dbname="uniprot"/>
+        <ref dbkey="P33442" dbname="uniprot"/>
+        <ref dbkey="Q12680" dbname="uniprot"/>
+        <ref dbkey="P0C2H8" dbname="uniprot"/>
+        <ref dbkey="Q12060" dbname="uniprot"/>
+        <ref dbkey="P38314" dbname="uniprot"/>
+        <ref dbkey="Q03210" dbname="uniprot"/>
+        <ref dbkey="B3LK55" dbname="uniprot"/>
+        <ref dbkey="P26263" dbname="uniprot"/>
+        <ref dbkey="P02407" dbname="uniprot"/>
+        <ref dbkey="Q01852" dbname="uniprot"/>
+        <ref dbkey="P02406" dbname="uniprot"/>
+        <ref dbkey="Q01855" dbname="uniprot"/>
+        <ref dbkey="P49626" dbname="uniprot"/>
+        <ref dbkey="P00950" dbname="uniprot"/>
+        <ref dbkey="P12385" dbname="uniprot"/>
+        <ref dbkey="P02309" dbname="uniprot"/>
+        <ref dbkey="P05755" dbname="uniprot"/>
+        <ref dbkey="P38061" dbname="uniprot"/>
+        <ref dbkey="Q12692" dbname="uniprot"/>
+        <ref dbkey="P05756" dbname="uniprot"/>
+        <ref dbkey="Q12690" dbname="uniprot"/>
+        <ref dbkey="P05759" dbname="uniprot"/>
+        <ref dbkey="P52290" dbname="uniprot"/>
+        <ref dbkey="P32905" dbname="uniprot"/>
+        <ref dbkey="P34218" dbname="uniprot"/>
+        <ref dbkey="P07260" dbname="uniprot"/>
+        <ref dbkey="Q12030" dbname="uniprot"/>
+        <ref dbkey="A7A1W1" dbname="uniprot"/>
+        <ref dbkey="P38811" dbname="uniprot"/>
+        <ref dbkey="P16467" dbname="uniprot"/>
+        <ref dbkey="Q05080" dbname="uniprot"/>
+        <ref dbkey="P40525" dbname="uniprot"/>
+        <ref dbkey="P05750" dbname="uniprot"/>
+        <ref dbkey="P02294" dbname="uniprot"/>
+        <ref dbkey="P02293" dbname="uniprot"/>
+        <ref dbkey="P05745" dbname="uniprot"/>
+        <ref dbkey="P05743" dbname="uniprot"/>
+        <ref dbkey="P16474" dbname="uniprot"/>
+        <ref dbkey="P07259" dbname="uniprot"/>
+        <ref dbkey="P05749" dbname="uniprot"/>
+        <ref dbkey="P05747" dbname="uniprot"/>
+        <ref dbkey="Q03330" dbname="uniprot"/>
+        <ref dbkey="A6ZWX0" dbname="uniprot"/>
+        <ref dbkey="O14455" dbname="uniprot"/>
+        <ref dbkey="P36105" dbname="uniprot"/>
+        <ref dbkey="P36102" dbname="uniprot"/>
+        <ref dbkey="P39939" dbname="uniprot"/>
+        <ref dbkey="A6ZP47" dbname="uniprot"/>
+        <ref dbkey="Q3E764" dbname="uniprot"/>
+        <ref dbkey="P39938" dbname="uniprot"/>
+        <ref dbkey="P40961" dbname="uniprot"/>
+        <ref dbkey="P32582" dbname="uniprot"/>
+        <ref dbkey="P39936" dbname="uniprot"/>
+        <ref dbkey="P39935" dbname="uniprot"/>
+        <ref dbkey="P32589" dbname="uniprot"/>
+        <ref dbkey="P32590" dbname="uniprot"/>
+        <ref dbkey="P25386" dbname="uniprot"/>
+        <ref dbkey="P38934" dbname="uniprot"/>
+        <ref dbkey="Q12433" dbname="uniprot"/>
+        <ref dbkey="P50085" dbname="uniprot"/>
+        <ref dbkey="P22224" dbname="uniprot"/>
+        <ref dbkey="B3LT19" dbname="uniprot"/>
+        <ref dbkey="P39516" dbname="uniprot"/>
+        <ref dbkey="P50875" dbname="uniprot"/>
+        <ref dbkey="P53135" dbname="uniprot"/>
+        <ref dbkey="P48164" dbname="uniprot"/>
+        <ref dbkey="Q05541" dbname="uniprot"/>
+        <ref dbkey="Q04779" dbname="uniprot"/>
+        <ref dbkey="B3LI22" dbname="uniprot"/>
+        <ref dbkey="P53040" dbname="uniprot"/>
+        <ref dbkey="B5VKC8" dbname="uniprot"/>
+        <ref dbkey="Q04087" dbname="uniprot"/>
+        <ref dbkey="A7A0V3" dbname="uniprot"/>
+        <ref dbkey="P0CG63" dbname="uniprot"/>
+        <ref dbkey="Q05027" dbname="uniprot"/>
+        <ref dbkey="P17076" dbname="uniprot"/>
+        <ref dbkey="P38885" dbname="uniprot"/>
+        <ref dbkey="Q05022" dbname="uniprot"/>
+        <ref dbkey="A6ZLF4" dbname="uniprot"/>
+        <ref dbkey="P0CX33" dbname="uniprot"/>
+        <ref dbkey="P0CX32" dbname="uniprot"/>
+        <ref dbkey="P0CX35" dbname="uniprot"/>
+        <ref dbkey="P0CX34" dbname="uniprot"/>
+        <ref dbkey="P35177" dbname="uniprot"/>
+        <ref dbkey="P0CX31" dbname="uniprot"/>
+        <ref dbkey="P0CX30" dbname="uniprot"/>
+        <ref dbkey="P10592" dbname="uniprot"/>
+        <ref dbkey="P10591" dbname="uniprot"/>
+        <ref dbkey="P0CX37" dbname="uniprot"/>
+        <ref dbkey="B5VMH6" dbname="uniprot"/>
+        <ref dbkey="P0CX36" dbname="uniprot"/>
+        <ref dbkey="P0CX39" dbname="uniprot"/>
+        <ref dbkey="P0CX38" dbname="uniprot"/>
+        <ref dbkey="Q12311" dbname="uniprot"/>
+        <ref dbkey="B3RHV0" dbname="uniprot"/>
+        <ref dbkey="Q3E7Y3" dbname="uniprot"/>
+        <ref dbkey="P25554" dbname="uniprot"/>
+        <ref dbkey="P41805" dbname="uniprot"/>
+        <ref dbkey="P25655" dbname="uniprot"/>
+        <ref dbkey="P38754" dbname="uniprot"/>
+        <ref dbkey="Q02336" dbname="uniprot"/>
+        <ref dbkey="Q03103" dbname="uniprot"/>
+        <ref dbkey="P22203" dbname="uniprot"/>
+        <ref dbkey="P22202" dbname="uniprot"/>
+        <ref dbkey="C8ZCJ2" dbname="uniprot"/>
+        <ref dbkey="P0CX24" dbname="uniprot"/>
+        <ref dbkey="P0CX23" dbname="uniprot"/>
+        <ref dbkey="P0CX29" dbname="uniprot"/>
+        <ref dbkey="Q02326" dbname="uniprot"/>
+        <ref dbkey="P0C0T4" dbname="uniprot"/>
+        <ref dbkey="P25443" dbname="uniprot"/>
+        <ref dbkey="P22517" dbname="uniprot"/>
+        <ref dbkey="P11484" dbname="uniprot"/>
+        <ref dbkey="P00925" dbname="uniprot"/>
+        <ref dbkey="P61830" dbname="uniprot"/>
+        <ref dbkey="P00924" dbname="uniprot"/>
+        <ref dbkey="Q03533" dbname="uniprot"/>
+        <ref dbkey="P04449" dbname="uniprot"/>
+        <ref dbkey="P0CX50" dbname="uniprot"/>
+        <ref dbkey="P0CX51" dbname="uniprot"/>
+        <ref dbkey="P0CX52" dbname="uniprot"/>
+        <ref dbkey="P0CX53" dbname="uniprot"/>
+        <ref dbkey="P0CX54" dbname="uniprot"/>
+        <ref dbkey="C7GRM1" dbname="uniprot"/>
+        <ref dbkey="P0CX55" dbname="uniprot"/>
+        <ref dbkey="P0CX56" dbname="uniprot"/>
+        <ref dbkey="P40150" dbname="uniprot"/>
+        <ref dbkey="P0C0W1" dbname="uniprot"/>
+        <ref dbkey="P32445" dbname="uniprot"/>
+        <ref dbkey="A6ZM02" dbname="uniprot"/>
+        <ref dbkey="P38129" dbname="uniprot"/>
+        <ref dbkey="P0CX49" dbname="uniprot"/>
+        <ref dbkey="P0CX47" dbname="uniprot"/>
+        <ref dbkey="P0CX48" dbname="uniprot"/>
+        <ref dbkey="P06844" dbname="uniprot"/>
+        <ref dbkey="P22082" dbname="uniprot"/>
+        <ref dbkey="P0CX40" dbname="uniprot"/>
+        <ref dbkey="P33304" dbname="uniprot"/>
+        <ref dbkey="P0CX85" dbname="uniprot"/>
+        <ref dbkey="P0CX45" dbname="uniprot"/>
+        <ref dbkey="C7GPS8" dbname="uniprot"/>
+        <ref dbkey="P0CX46" dbname="uniprot"/>
+        <ref dbkey="P0CX43" dbname="uniprot"/>
+        <ref dbkey="P0CX83" dbname="uniprot"/>
+        <ref dbkey="P0CX44" dbname="uniprot"/>
+        <ref dbkey="P0CX84" dbname="uniprot"/>
+        <ref dbkey="P0CX82" dbname="uniprot"/>
+        <ref dbkey="P05317" dbname="uniprot"/>
+        <ref dbkey="Q08558" dbname="uniprot"/>
+        <ref dbkey="P12695" dbname="uniprot"/>
+        <ref dbkey="Q01802" dbname="uniprot"/>
+        <ref dbkey="P53852" dbname="uniprot"/>
+        <ref dbkey="P87262" dbname="uniprot"/>
+        <ref dbkey="Q12213" dbname="uniprot"/>
+        <ref dbkey="P38113" dbname="uniprot"/>
+        <ref dbkey="P40457" dbname="uniprot"/>
+        <ref dbkey="P32327" dbname="uniprot"/>
+        <ref dbkey="B5VNY0" dbname="uniprot"/>
+        <ref dbkey="P38915" dbname="uniprot"/>
+        <ref dbkey="P32324" dbname="uniprot"/>
+        <ref dbkey="P23500" dbname="uniprot"/>
+        <ref dbkey="P56628" dbname="uniprot"/>
+        <ref dbkey="A6ZRG7" dbname="uniprot"/>
+        <ref dbkey="P09435" dbname="uniprot"/>
+        <ref dbkey="P04911" dbname="uniprot"/>
+        <ref dbkey="P04912" dbname="uniprot"/>
+        <ref dbkey="A6ZTA5" dbname="uniprot"/>
+        <ref dbkey="P49167" dbname="uniprot"/>
+        <ref dbkey="Q06505" dbname="uniprot"/>
+        <ref dbkey="P36123" dbname="uniprot"/>
+        <ref dbkey="P11154" dbname="uniprot"/>
+        <ref dbkey="P52489" dbname="uniprot"/>
+        <ref dbkey="P40090" dbname="uniprot"/>
+        <ref dbkey="P53221" dbname="uniprot"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-06-26"/>
+        <date type="publication" value="2014-11-10"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001089</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">The samples were precipitated by TCA and wshed with cold acetone. The final pellet was dissolved with 50 µL of 50  mM ABC. The proteins were trypsin digested without alkylation. 5 µl of each sample were loaded onto a trap column (LC Packings PepMap C18 , 300 um x 5 mm; Amsterdam The Netherlands) and desalted with 0.1% TFA at 40 µl/min during  3 min. The peptides were loaded onto an analytical column (LC Packings PepMap C18 3 u 100 Å, 75 um x 15 cm; Amsterdam The Netherlands)) at a flow rate of 300nl/min and eluted by a linear gradient 5%Bto50%B for 120 minutes. A: 0.1% FA in water B: 0.1% FA in 95% ACN. Peptides were analysed in a mass spectrometer nanoESI qQTOF (QStar XL, ABSCIEX). The QTOF was operated in information-dependent acquisition mode, in which a 3-s TOF MS scan from 350–1250 m/z, was performed, followed by 3-s product ion scans from 100–1500 m/z on the 3 most intense 2-3 charged ions.</field>
+        <field name="data_protocol">The MS/MS information was sent to MASCOT v 2.3.02 or to PARAGON via the Protein Pilot v 4.5 (ABSciex). Samples 3,4 and 5 were searched combined for customer convenience. The MGF was generated by Protein Pilot (ABsciex) v 4.5. Database search was performed by MASCOT (Matrix Science) v2.4.1 on Swiss-Prot. Searches were done with tryptic specificity allowing one missed cleavage and a tolerance on the mass measurement of 50 ppm in MS mode and 0.6 Da for MS/MS ions. Carbamidomethylation of Cys was used as a fixed modification and oxidation of Met and deamidation of Asn and Gln as variable modifications. The taxonomy was fixed to Saccharomyces Cerevisiae.</field>
+        <field name="instrument_platform">QSTAR</field>
+        <field name="species">Saccharomyces cerevisiae (Baker's yeast)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">Deamidated</field>
+        <field name="modification">Oxidation</field>
+        <field name="modification">Carbamidomethyl</field>
+        <field name="technology_type">Affinity purification coupled with mass spectrometry proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">YEAST</field>
+        <field name="submitter_keywords"> histone acetyltransferase</field>
+        <field name="submitter_keywords"> SAS3</field>
+        <field name="submitter_keywords"> nanoLCMSMS</field>
+        <field name="submitter_keywords"> post-translational modification</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">COMPLETE</field>
+        <field name="software">Mascot Parser 2.4.3.0</field>
+        <field name="software">Mascot Server 2.4.1</field>
+        <field name="doi">10.6019/PXD001089</field>
+        <field name="submitter">Luz Valero</field>
+        <field name="submitter_mail">mluz.valero@uv.es</field>
+        <field name="submitter_affiliation">Universitat de Valencia</field>
+        <field name="labhead">Mercè Pamblanco Rodríguez</field>
+        <field name="labhead_mail">merce.pamblanco@uv.es</field>
+        <field name="labhead_affiliation">Departament de Bioquímica i Biologia Molecular  Universitat de Valencia</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD001089/GCN5-TAP.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD001089/GCN5-TAP.mzid.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD001089/GCN5-TAP.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD001089/GCN5-TAP-Sas3D.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD001089/GCN5-TAP-Sas3D.mzid.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD001089/GCN5-TAP-Sas3D.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD001089/SAS3-TAP.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD001089/SAS3-TAP.mzid.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD001089/SAS3-TAP.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD001089/SAS3-TAP gcn5D.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD001089/SAS3-TAP gcn5D.mzid.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/11/PXD001089/SAS3-TAP gcn5D.wiff</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

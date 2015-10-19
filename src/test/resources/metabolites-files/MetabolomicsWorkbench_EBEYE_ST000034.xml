@@ -1,0 +1,34 @@
+<database>
+  <name>MetabolomicsWorkbench</name>
+  <description>The Metabolomics Workbench will serve as a national and international repository for metabolomics data and metadata and will provide analysis tools and access to metabolite standards, protocols, tutorials, training, and more.</description>
+  <release>1.0</release>
+  <release_date>15-05-20</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="ST000034">
+      <name>Metabolomics Involved in Early Life Antibiotic Exposures(NOD-Serum)</name>
+      <description>In the NOD sub-study, a total of 18 samples from 6 week old, male NOD/ShiLtj mice; comprised of 6 serum samples, 6 cecal content samples and 6 liver tissue samples were analyzed.  Three mice/matrix were exposed to PAT and 3 mice/matrix were non-exposed Controls. The mice were housed with SPF (Helicobacter neg/MNV neg) bedding and fed a normal diet.</description>
+      <cross_references>
+        <ref dbkey="10090" dbname="TAXONOMY"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="14-03-14"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Metabolomics</field>
+        <field name="full_dataset_link">http://www.metabolomicsworkbench.org/data/DRCCMetadata.php?Mode=Study&amp;StudyID=ST000034</field>
+        <field name="repository">MetabolomicsWorkbench</field>
+        <field name="data_protocol">1H NMR 700 MHz</field>
+        <field name="instrument_platform">Bruker Avance III</field>
+        <field name="study_factor">Treatment Group:Pool QC</field>
+        <field name="study_factor">Treatment Group:Control</field>
+        <field name="study_factor">Treatment Group:PAT</field>
+        <field name="species">Mus musculus</field>
+        <field name="technology_type">Bruker Avance III</field>
+        <field name="submitter">Susan Sumner</field>
+        <field name="submitter_mail">ssumner@rti.org</field>
+        <field name="submitter_affiliation">Systems and Translational Sciences (STS), RTI International</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

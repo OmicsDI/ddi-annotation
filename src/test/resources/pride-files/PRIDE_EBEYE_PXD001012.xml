@@ -1,0 +1,101 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-08-21</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001012">
+      <name>Senescence 1</name>
+      <description>Bag3 and MVP regulate apoptosis resistance in Therapy Induced Senescence (TIS)</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="24997994" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-06-25"/>
+        <date type="publication" value="2015-08-21"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001012</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Sample were digested with trypsin and the resulting peptides separated by LC-MS/MS on an LTQ-Orbitrap  interfaced with an Agilent 1100 chromatography system.  The analysis performed was a 9 step Multidimensional Protein Identification Technology ( MudPIT).</field>
+        <field name="data_protocol">The sample data files were de novo sequenced and searched against a Human UniProtKB database Release 2013_07, 20,266 entries using the search engine PEAKS Studio 7, for peptides cleaved with trypsin. Each peptide used for protein identification met specific Peaks parameters, i.e. only peptide scores that corresponded to a false discovery rate (FDR) of ≤1% were accepted from the Peaks database search. The database searching parameters included up to two missed cleavages allowed for full tryptic digestion, and a precursor ion mass tolerance 10 ppm. A fixed modification of cysteine 57.02146 was included.</field>
+        <field name="instrument_platform">LTQ Orbitrap</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">epithelial cell</field>
+        <field name="disease">breast cancer</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">Carboxy</field>
+        <field name="modification">Ethyl</field>
+        <field name="modification">Diisopropylphosphate</field>
+        <field name="modification">Dethiomethyl</field>
+        <field name="modification">Phospho</field>
+        <field name="modification">Formyl</field>
+        <field name="modification">HexNAc</field>
+        <field name="modification">Carbamyl</field>
+        <field name="modification">Myristoyl</field>
+        <field name="modification">LG-anhyropyrrole</field>
+        <field name="modification">HNE</field>
+        <field name="modification">Ammonium</field>
+        <field name="modification">Gln-&gt;pyro-Glu</field>
+        <field name="modification">Methyl</field>
+        <field name="modification">HexN</field>
+        <field name="modification">Deamidated</field>
+        <field name="modification">Amidated</field>
+        <field name="modification">GlycerylPE</field>
+        <field name="modification">Dimethyl</field>
+        <field name="modification">Dioxidation</field>
+        <field name="modification">Arg-&gt;Orn</field>
+        <field name="modification">Dehydrated</field>
+        <field name="modification">Glu-&gt;pyro-Glu</field>
+        <field name="modification">Amidine</field>
+        <field name="modification">Cation:Na</field>
+        <field name="modification">Acetyl</field>
+        <field name="modification">Crotonaldehyde</field>
+        <field name="modification">Ammonia-loss</field>
+        <field name="modification">Oxidation</field>
+        <field name="modification">Carbamidomethyl</field>
+        <field name="modification">4-ONE+Delta:H(-2)O(-1)</field>
+        <field name="modification">Pro-&gt;pyro-Glu</field>
+        <field name="modification">CHDH</field>
+        <field name="modification">Propionamide</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="submitter_keywords">BAG3 MVP Apoptosis</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">COMPLETE</field>
+        <field name="software">PEAKS Studio 7.0 (2014-03-21)</field>
+        <field name="doi">10.6019/PXD001012</field>
+        <field name="publication">Pasillas MP, Shields S, Reilly R, Strnadel J, Behl C, Park R, Yates JR 3rd, Klemke R, Gonias SL, Coppinger JA. Proteomic analysis reveals a role for Bcl2-associated athanogene 3 and major vault protein in resistance to apoptosis in senescent cells by regulating ERK1/2 activation. Mol Cell Proteomics. 2015 Jan;14(1):1-14</field>
+        <field name="submitter">judith coppinger</field>
+        <field name="submitter_mail">judith.coppinger@ucd.ie</field>
+        <field name="submitter_affiliation">ucd</field>
+        <field name="labhead">Judith Coppinger</field>
+        <field name="labhead_mail">judith.coppinger@ucd.ie</field>
+        <field name="labhead_affiliation">Univeristy College Dublin</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001012/517sen1thy-01.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001012/517sen1thy-01.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001012/517sen1thy-02.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001012/517sen1thy-02.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001012/517sen1thy-03.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001012/517sen1thy-03.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001012/517sen1thy-04.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001012/517sen1thy-04.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001012/517sen1thy-05.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001012/517sen1thy-05.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001012/517sen1thy-06.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001012/517sen1thy-06.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001012/517sen1thy-07.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001012/517sen1thy-07.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001012/517sen1thy-08.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001012/517sen1thy-08.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001012/517sen1thy-09.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001012/517sen1thy-09.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001012/peptides_1_1_0.mzid.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001012/peptides.pep.xml</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

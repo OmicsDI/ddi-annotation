@@ -1,0 +1,33 @@
+<database>
+  <name>MetabolomicsWorkbench</name>
+  <description>The Metabolomics Workbench will serve as a national and international repository for metabolomics data and metadata and will provide analysis tools and access to metabolite standards, protocols, tutorials, training, and more.</description>
+  <release>1.0</release>
+  <release_date>15-05-20</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="ST000022">
+      <name>Biomarker Discovery in Knee Osteoarthritis (II)</name>
+      <description>This metabolomics pilot and feasibility (P &amp; F) study was conducted to provide data to be used to gain a better understanding of metabolic alterations in people with knee osteoarthritis (OA) and to discover novel biomarkers of the disease. The goal of the metabolomics study was to determine if metabolic differences, detected by a comprehensive metabolomics analysis, can be used to distinguish people who will develop symptomatic knee OA from those who will not.  &lt;br&gt;For this metabolomics study, individuals participating in T1 or T1* with 5-year follow-up at T2 were selected. At T2 subjects were on average 68.1(9.12) years old with an average BMI of 31.4(7.01) with 32% men and one-third African American. All had weight-bearing posterior-anterior knee films obtained with the Synaflexer positioning device at both time points and read paired for Kellgren-Lawrence grade and minimum joint space.   Urine samples (second morning void) collected from 36 overweight or obese participants in the JoCo at T1 or T1* were selected from two subgroups (a group that developed radiographic osteoarthritis (n=16) and an age, race, sex, and BMI matched group that did not develop osteoarthritis (n=20). Radiographic knee OA was defined as Kellgren-Lawrence grade 2-4 at T2 in a person with Kellgren-Lawrence grade 0 or 1 at T1 or T1*.&lt;br&gt;</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="14-03-04"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Metabolomics</field>
+        <field name="full_dataset_link">http://www.metabolomicsworkbench.org/data/DRCCMetadata.php?Mode=Study&amp;StudyID=ST000022</field>
+        <field name="repository">MetabolomicsWorkbench</field>
+        <field name="data_protocol">1H NMR 950 MHz</field>
+        <field name="instrument_platform">Bruker Avance III</field>
+        <field name="study_factor">Disease Status:Control </field>
+        <field name="study_factor">Disease Status:Cases </field>
+        <field name="species">Homo sapiens</field>
+        <field name="technology_type">Bruker Avance III</field>
+        <field name="submitter">Susan Sumner</field>
+        <field name="submitter_mail">ssumner@rti.org</field>
+        <field name="submitter_affiliation">Systems and Translational Sciences (STS), RTI International</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

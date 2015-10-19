@@ -1,0 +1,111 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000189">
+      <name>Searching for Pseudomonas aeruginosa MagD partners</name>
+      <description>Opportunistic pathogen Pseudomonas aeruginosa synthesizes a structural homologue of the human alpha2-Macroglobulin protein, a large spectrum protease inhibitor and important player of innate immunity. Delta-MagD and MagD-WT Pseudomonas aeruginosa strains were lysed and lysates submitted to co-immunoprecipitation using anti-MagD antibody (2 biological replicates). Immunoprecipitated proteins were in-gel digested and resulting peptides analysed by nanoLC-MS/MS. Identifications were realised using Mascot and filtered using IRMa software (1% FDR). Results were exported to a relational database (MSIdb) and processed using hEIDI software to identify proteins enriched in MagD-WT samples compared to delta-MagD samples.</description>
+      <cross_references>
+        <ref dbkey="208964" dbname="TAXONOMY"/>
+        <ref dbkey="23919994" dbname="pubmed"/>
+        <ref dbkey="Q7Z794" dbname="uniprot"/>
+        <ref dbkey="P13645" dbname="uniprot"/>
+        <ref dbkey="P13647" dbname="uniprot"/>
+        <ref dbkey="P13646" dbname="uniprot"/>
+        <ref dbkey="P50446" dbname="uniprot"/>
+        <ref dbkey="P08779" dbname="uniprot"/>
+        <ref dbkey="ENSP00000252242" dbname="ensembl"/>
+        <ref dbkey="ENSP00000252245" dbname="ensembl"/>
+        <ref dbkey="ENSP00000252244" dbname="ensembl"/>
+        <ref dbkey="ENSP00000413479" dbname="ensembl"/>
+        <ref dbkey="ENSP00000306261" dbname="ensembl"/>
+        <ref dbkey="ENSP00000252252" dbname="ensembl"/>
+        <ref dbkey="P00761" dbname="uniprot"/>
+        <ref dbkey="ENSP00000209718" dbname="ensembl"/>
+        <ref dbkey="Q04695" dbname="uniprot"/>
+        <ref dbkey="P12035" dbname="uniprot"/>
+        <ref dbkey="ENSP00000310861" dbname="ensembl"/>
+        <ref dbkey="ENSP00000328358" dbname="ensembl"/>
+        <ref dbkey="Q9CPN9" dbname="uniprot"/>
+        <ref dbkey="P20930" dbname="uniprot"/>
+        <ref dbkey="ENSP00000369361" dbname="ensembl"/>
+        <ref dbkey="ENSP00000357789" dbname="ensembl"/>
+        <ref dbkey="ENSP00000373370" dbname="ensembl"/>
+        <ref dbkey="ENSP00000308720" dbname="ensembl"/>
+        <ref dbkey="ENSP00000308452" dbname="ensembl"/>
+        <ref dbkey="ENSP00000329243" dbname="ensembl"/>
+        <ref dbkey="ENSP00000369317" dbname="ensembl"/>
+        <ref dbkey="P35527" dbname="uniprot"/>
+        <ref dbkey="Q5XKE5" dbname="uniprot"/>
+        <ref dbkey="ENSP00000293774" dbname="ensembl"/>
+        <ref dbkey="P35908" dbname="uniprot"/>
+        <ref dbkey="ENSP00000269576" dbname="ensembl"/>
+        <ref dbkey="ENSP00000357791" dbname="ensembl"/>
+        <ref dbkey="ENSMUSP00000031931" dbname="ensembl"/>
+        <ref dbkey="ENSP00000301653" dbname="ensembl"/>
+        <ref dbkey="ENSMUSP00000023788" dbname="ensembl"/>
+        <ref dbkey="Q01546" dbname="uniprot"/>
+        <ref dbkey="Q6KB66" dbname="uniprot"/>
+        <ref dbkey="Q9C075" dbname="uniprot"/>
+        <ref dbkey="ENSP00000342710" dbname="ensembl"/>
+        <ref dbkey="ENSP00000330101" dbname="ensembl"/>
+        <ref dbkey="P02533" dbname="uniprot"/>
+        <ref dbkey="P02538" dbname="uniprot"/>
+        <ref dbkey="ENSP00000295897" dbname="ensembl"/>
+        <ref dbkey="ENSP00000246662" dbname="ensembl"/>
+        <ref dbkey="ENSP00000246635" dbname="ensembl"/>
+        <ref dbkey="P02768" dbname="uniprot"/>
+        <ref dbkey="ENSP00000167586" dbname="ensembl"/>
+        <ref dbkey="Q5D862" dbname="uniprot"/>
+        <ref dbkey="P04259" dbname="uniprot"/>
+        <ref dbkey="A2A4G1" dbname="uniprot"/>
+        <ref dbkey="P04264" dbname="uniprot"/>
+        <ref dbkey="Q86YZ3" dbname="uniprot"/>
+        <ref dbkey="P19013" dbname="uniprot"/>
+        <ref dbkey="Q7RTT2" dbname="uniprot"/>
+        <ref dbkey="P08729" dbname="uniprot"/>
+        <ref dbkey="P07477" dbname="uniprot"/>
+        <ref dbkey="O95678" dbname="uniprot"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2013-03-22"/>
+        <date type="publication" value="2013-08-09"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000189</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Not available</field>
+        <field name="instrument_platform">instrument model</field>
+        <field name="instrument_platform">LTQ Orbitrap Velos</field>
+        <field name="species">Pseudomonas aeruginosa (strain ATCC 15692 / PAO1 / 1C / PRS 101 / LMG 12228)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Not available</field>
+        <field name="modification">Not available</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="submitter_keywords">Pseudomonas aeruginosa</field>
+        <field name="submitter_keywords"> co-immunoprecipitation</field>
+        <field name="submitter_keywords"> nanoLC-MS/MS</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">COMPLETE</field>
+        <field name="software">Matrix Science Mascot 2.4.1</field>
+        <field name="doi">10.6019/PXD000189</field>
+        <field name="publication">Robert-Genthon M, Casabona MG, Neves D, Couté Y, Cicéron F, Elsen S, Dessen A, Attrée I; Unique features of a Pseudomonas aeruginosa α2-macroglobulin homolog., MBio, 2013 Aug 6, 4, 4, </field>
+        <field name="submitter">Yohann CoutÃ©</field>
+        <field name="submitter_mail">yohann.coute@cea.fr</field>
+        <field name="submitter_affiliation">Laboratoire d'Etude de la Dynamique des ProtÃ©omes</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000189/Delta-1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000189/Delta-2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000189/MagD-1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000189/MagD-2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000189/PRIDE_Exp_Complete_Ac_28856.xml.gz</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

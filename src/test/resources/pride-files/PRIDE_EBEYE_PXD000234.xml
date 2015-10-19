@@ -1,0 +1,75 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000234">
+      <name>Proteomic analysis of serum from Chikungunya patients</name>
+      <description>Serum from Chikungunya patients was pooled and subjected to depletion using multiple affinity removal system to remove the abundant proteins. The depleted protein was then fractionated using SCX. All the fractions were analyzed on the high-resolution LTQ-Orbitrap Velos mass spectrometer. The data obtained was searched against the human RefSeq 52 proteins using Proteome Discoverer, version 1.3.0.339 workflow. The workflow consisted of spectrum selector and reporter ion quantification nodes in addition to SEQUEST and Mascot search nodes. Similar parameters were used in all the searches with trypsin as enzyme allowing a single missed cleavage. Other parameters include methylthiol modification of cysteine, iTRAQ labels at the peptide N-terminus and Lysine residues as static modifications and oxidation of methionine as variable modification. A mass tolerance of 20 ppm and 0.1 Da were used for the precursor ion and fragment ions, respectively with a signal to noise ratio of 1.5 for a precursor mass range of 350–10000 Da. A false discovery rate (FDR) of 1% was applied to the results.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="24124767" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2013-05-01"/>
+        <date type="publication" value="2013-12-12"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000234</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Not available</field>
+        <field name="instrument_platform">LTQ Orbitrap Velos</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Not available</field>
+        <field name="modification">Applied Biosystems iTRAQ(TM) multiplexed quantitation chemistry</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="modification">methylthiolated residue</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="submitter_keywords">iTRAQ</field>
+        <field name="submitter_keywords"> quantitative proteomics</field>
+        <field name="submitter_keywords"> arthritis</field>
+        <field name="submitter_keywords"> hyponatremia</field>
+        <field name="submitter_keywords"> neuropathology</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Puttamallesh VN, Sreenivasamurthy SK, Singh PK, Harsha HC, Ganjiwale A, Broor S, Pandey A, Narayana J, Prasad TS; Proteomic profiling of serum samples from chikungunya-infected patients provides insights into host response., Clin Proteomics, 2013 Oct 14, 10, 1, 14, </field>
+        <field name="submitter">Akhilesh Pandey</field>
+        <field name="submitter_mail">pandey@jhmi.edu</field>
+        <field name="submitter_affiliation">Johns Hopkins University</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000234/ChkGnya_2plex_iTRAQ_01.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000234/ChkGnya_2plex_iTRAQ_02.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000234/ChkGnya_2plex_iTRAQ_03.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000234/ChkGnya_2plex_iTRAQ_04.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000234/ChkGnya_2plex_iTRAQ_05.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000234/ChkGnya_2plex_iTRAQ_06.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000234/ChkGnya_2plex_iTRAQ_07.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000234/ChkGnya_2plex_iTRAQ_08.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000234/ChkGnya_2plex_iTRAQ_09.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000234/ChkGnya_2plex_iTRAQ_10.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000234/ChkGnya_2plex_iTRAQ_11.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000234/ChkGnya_2plex_iTRAQ_12.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000234/ChkGnya_2plex_iTRAQ_13.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000234/ChkGnya_2plex_iTRAQ_14.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000234/ChkGnya_2plex_iTRAQ_15.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000234/ChkGnya_2plex_iTRAQ_16.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000234/ChkGnya_2plex_iTRAQ_17.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000234/ChkGnya_2plex_iTRAQ_18.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000234/ChkGnya_2plex_iTRAQ_19.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000234/ChkGnya_2plex_iTRAQ_20.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000234/ChkGnya_2plex_iTRAQ_21.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000234/ChkGnya_2plex_iTRAQ_22.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000234/ChkGnya_2plex_iTRAQ_Sequest_Mascot.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000234/ChkGnya_2plex_iTRAQ_Sequest_Mascot.pep.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/12/PXD000234/ChkGnya_2plex_iTRAQ_Sequest_Mascot.prot.xml</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

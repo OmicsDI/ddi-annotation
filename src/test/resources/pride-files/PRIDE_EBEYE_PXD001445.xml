@@ -1,0 +1,159 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001445">
+      <name>Phosphoproteomic analyses reveal novel cross-modulation mechanisms between two signaling pathways in yeast</name>
+      <description>Cells respond to environmental stimuli via specialized signaling pathways. Concurrent stimuli trigger multiple pathways that integrate information, predominantly via protein phosphorylation.  Budding yeast respond to NaCl and pheromone via two mitogen-activated protein kinase cascades, the high osmolarity and the mating pathways, respectively. To investigate signal integration between these pathways, we quantified the time-resolved phosphorylation site dynamics after pathway co-stimulation. Using shotgun mass spectrometry, we quantified 2536 phosphopeptides across 36 conditions. Our data indicate that NaCl and pheromone affect phosphorylation events within both pathways, which thus affect each other at more levels than anticipated, allowing for information exchange and signal integration. We observed a pheromone-induced down-regulation of Hog1 phosphorylation due to Gpd1, Ste20, Ptp2, Pbs2 and Ptc1. Distinct Ste20 and Pbs2 phosphosites responded differently to the two stimuli, suggesting these proteins as key mediators of the information exchange. A set of logic models was then used to assess the role of measured phosphopeptides in the crosstalk. Our results show that the integration of the response to different stimuli requires complex interconnections between signaling pathways.</description>
+      <cross_references>
+        <ref dbkey="4932" dbname="TAXONOMY"/>
+        <ref dbkey="25492886" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-10-30"/>
+        <date type="publication" value="2014-12-19"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001445</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Cells were lysed by bead-beating. Acid washed glass beads were added to the pellet in an amount equal to the pellet itself (about 250 µl). Each cell pellet was then re-suspended into a 400 µl buffer consisting of 8 M urea, 50 mM ammonium bicarbonate, and 5 mM EDTA. Bead-beating was performed for 5’ at 4 °C, for 4 times, thus producing 1.6 ml cell lysate. Protein concentration was measured by BCA assay. For each biological replicate, 3 mg of total protein was reduced by 5mM TCEP (45’), alkylated by 12 mM iodoacetamide (1h), and then digested overnight by trypsin (1:125 w/w). Peptides were then cleaned by reverse phase chromatography. P-pep isolation was performed by titanium dioxide resin (GL Science) – 1.25 mg resin for each sample. P-peps were then again cleaned by reverse phase chromatography. The detailed procedure has been thoroughly described by Bodenmiller and Aebersold (2010).</field>
+        <field name="data_protocol">The acquired data was searched against an SGD target/decoy database (Elias and Gygi, 2007) for yeast proteins using the Sorcerer Sequest version 4.2.0 search algorithm (Eng et al., 1994; Lundgren et al., 2009). Search results were evaluated with the Trans Proteomic Pipeline (Keller et al., 2005) using the Peptide Prophet version 4.5.2 (Keller et al., 2002). Based on a decoy search (Kall et al., 2008), maximum false discovery rate was set to 1%. OpenMS version 1.9 (Sturm et al., 2008) was used to detect MS1 features (sets of spectra that OpenMS recognizes as belonging to the same peptide), annotate them, and align them between the different MS runs. Probability scores from analysis of peptides by Peptide Prophet were used to filter OpenMS results at a false discovery rate threshold less than 1%. Only the phosphorylated peptides were considered for further analysis. P-peps features with identical sequence and P-sites, but different charge states, retention times, or mass-to-charge ratios were merged together (that is, their intensities were summed). P-peps with the same amino acid sequence and the same number of phosphate groups were also merged, as the MS2 spectrum of a P-pep doesn’t always provide the information necessary to assign a phosphate to its correct P-site. Uncertain P-sites are reported within brackets, while the actual number of P-sites within each peptide can be deduced by the P-pep sequence, since only one representative sequence is reported. All the MS intensities were normalized by the total ion current (TIC) of each MS run. As the TIC is the sum of all the intensities detected within the linear elution gradient, it accounts both for sample concentration discrepancies and for LC-MS variability. This method was chosen as, to our knowledge, it is the most unbiased. Only P-peps detected in at least 1 of the 3 biological replicates, of at least 4 of the 6 NaCl and pheromone time-points were further considered for the analysis. Biological replicate values were averaged to condense the dataset. Missing values were estimated by cubic spline data interpolation.</field>
+        <field name="instrument_platform">LTQ Orbitrap</field>
+        <field name="species">Saccharomyces cerevisiae (Baker's yeast)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">phosphorylated residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">budding yeast</field>
+        <field name="submitter_keywords"> phospho-proteomics</field>
+        <field name="submitter_keywords"> signaling pathways</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Vaga S, Bernardo-Faura M, Cokelaer T, Maiolica A, Barnes CA, Gillet LC, Hegemann B, van Drogen F, Sharifian H, Klipp E, Peter M, Saez-Rodriguez J, Aebersold R. Phosphoproteomic analyses reveal novel cross-modulation mechanisms between two signaling pathways in yeast. Mol Syst Biol. 2014 Dec 9;10(12):767</field>
+        <field name="submitter">Stefania Vaga</field>
+        <field name="submitter_mail">svaga@nimr.mrc.ac.uk</field>
+        <field name="submitter_affiliation">NIMR, MRC</field>
+        <field name="labhead">Ruedi Aebersold</field>
+        <field name="labhead_mail">aebersold@imsb.biol.ethz.ch</field>
+        <field name="labhead_affiliation">IMSB, ETH Zurich</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1209_253.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1209_254.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1209_255.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1209_257.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1209_258.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1209_259.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1209_261.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1209_262.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1209_263.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1209_265.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1209_266.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1209_267.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1209_269.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1209_270.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1209_271.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1209_273.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1209_274.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1209_275.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_178.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_179.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_180.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_182.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_183.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_184.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_186.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_187.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_188.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_190.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_191.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_192.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_194.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_195.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_196.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_198.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_199.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_200.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_244.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_245.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_246.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_248.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_249.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_250_1.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_252.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_253.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_254.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_256.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_257.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_258.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_260.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_261.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_262.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_264.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_265.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_266.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_311.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_312.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_313.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_315.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_316.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_317.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_319.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_320.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_321.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_323.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_324.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_325.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_327.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_328.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_329.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_331.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_332.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_333.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_357.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_358.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_359.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_361.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_362.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_363.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_365.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_366.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_367.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_369.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_370.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_371.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_373.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_374.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_375_2.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_377.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_378.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_379.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_436.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_437.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_438.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_440.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_441.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_442.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_444.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_445.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_446_1.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_450.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_451.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_452.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_454.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_455.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_456.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_458.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_459.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/vagas_O1210_460.c.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001445/interact.pep.xml</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

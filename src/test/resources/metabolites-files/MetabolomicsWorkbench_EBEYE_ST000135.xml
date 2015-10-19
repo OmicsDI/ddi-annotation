@@ -1,0 +1,50 @@
+<database>
+  <name>MetabolomicsWorkbench</name>
+  <description>The Metabolomics Workbench will serve as a national and international repository for metabolomics data and metadata and will provide analysis tools and access to metabolite standards, protocols, tutorials, training, and more.</description>
+  <release>1.0</release>
+  <release_date>15-05-20</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="ST000135">
+      <name>LCMS analysis of Bile Acids</name>
+      <description>Mice were dosed with TCDF for 5 days</description>
+      <cross_references>
+        <ref dbkey="10090" dbname="TAXONOMY"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="15-01-13"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Metabolomics</field>
+        <field name="full_dataset_link">http://www.metabolomicsworkbench.org/data/DRCCMetadata.php?Mode=Study&amp;StudyID=ST000135</field>
+        <field name="repository">MetabolomicsWorkbench</field>
+        <field name="data_protocol">MS positive ion mode</field>
+        <field name="instrument_platform">Waters</field>
+        <field name="study_factor">Gender:Male | Genotype:Tcdf Treated</field>
+        <field name="study_factor">Gender:Male | Genotype:Wild Type</field>
+        <field name="species">Mus musculus</field>
+        <field name="technology_type">mass spectrometry</field>
+        <field name="metabolite_name">Ursodeoxycholic Acid</field>
+        <field name="metabolite_name">Taurodeoxycholic Acid</field>
+        <field name="metabolite_name">Taurolithocholic Acid</field>
+        <field name="metabolite_name">Taurochenodeoxycholic Acid</field>
+        <field name="metabolite_name">Taurocholic Acid</field>
+        <field name="metabolite_name">Tauro-alpha-Muricholic Acid</field>
+        <field name="metabolite_name">Tauro-beta-Muricholic Acid</field>
+        <field name="metabolite_name">Chenodeoxycholic Acid</field>
+        <field name="metabolite_name">Beta Muricholic Acid</field>
+        <field name="metabolite_name">Alpha Muricholic Acid</field>
+        <field name="metabolite_name">Tauro-alpha/beta-Muricholic Acid</field>
+        <field name="metabolite_name">Glycocholic Acid</field>
+        <field name="metabolite_name">Glycochenodeoxycholic Acid</field>
+        <field name="metabolite_name">Deoxycholic Acid</field>
+        <field name="metabolite_name">Cholic Acid</field>
+        <field name="metabolite_name">Omega Muricholic Acid</field>
+        <field name="metabolite_name">Lithocholic Acid</field>
+        <field name="submitter">Andrew Patterson</field>
+        <field name="submitter_mail">adp117@PSU.EDU, RGN5011@psu.edu</field>
+        <field name="submitter_affiliation">Molecular Toxicology, Pennsylvania State University</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

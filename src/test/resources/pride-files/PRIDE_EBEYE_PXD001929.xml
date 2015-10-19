@@ -1,0 +1,67 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001929">
+      <name>Label-free protein quantification in freshly ejaculated versus post-mating spermatophores of the noble crayfish Astacus astacus</name>
+      <description>Upon completion of spermatogenesis in crayfish testis, spermatozoa enter the vasa deferentia and are packaged into spermatophores that apparently function in the transfer of spermatozoa from male to the female during mating. In Astacidae and Parastacidae, spermatophores are deposited on the ventral surface of the female, where they remain for several days before initiation of ovulation and subsequent fertilization. This is accompanied by spermatophore morphological changes, suggesting that final maturation of decapod spermatozoa takes place in the seminal receptacle of the female</description>
+      <cross_references>
+        <ref dbkey="6715" dbname="TAXONOMY"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2015-03-13"/>
+        <date type="publication" value="2015-04-13"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001929</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">One hundred µg of protein from each sample was individually mixed with sample buffer (62.5 mM Tris-HCl, pH 6.8, 2% SDS, 25% glycerol, 0.01% bromophenol blue, 5% mercaptoethanol) and heated at 95 °C for 5 min. The samples were run approximately 2 cm into 12% SDS-PAGE (Criterion Precast TGX Gels, BioRad). The gel was stained using Gel Code Blue Stain Reagent (Pierce). Each of the lanes was cut into smaller fragments, destained in 50% acetonitrile (ACN) and 25 mM NH4HCO3, and dried using Speed-Vac (SAVANT, SPD131DDA, Thermo Scientific). The gel slices were reduced with 10 mM DL-dithiothreitol in 100 mM NH4HCO3 at 56 °C for 1 h. Alkylation was performed by adding 55 mM iodoacetamide in 100 mM NH4HCO3 and incubating for 45 min at room temperature in darkness. Gels were washed with 100 mM NH4HCO3 followed by ACN, washing was repeated, and gels were dried with Speed-Vac. Trypsin (12.5 ng µl-1 modified Trypsin V5111, Promega Biotech AB) in 50 mM NH4HCO3 was added to the dehydrated gels. The samples were left for 30 min at 4 °C prior to incubation at 37 °C overnight. The peptides were extracted from the gels by adding 5% trifluoroacetic acid (TFA) and 75% ACN and incubating for 30 min at room temperature. This was repeated twice to obtain three extractions, and a fourth extraction was obtained using ACN only with 10 min incubation. The extracts were combined and the volume reduced using Speed-Vac, and the samples were dissolved in 10µl of 0.1% formic acid (FA). The samples were separated and analyzed on an Eksigent 2D NanoLC system (Eksigent Technologies, Dublin, CA, USA) coupled to an LTQ Orbitrap XL (Thermo Electron, Bremen, Germany). Instrument stability was monitored by repeated injections of standard samples (6 Bovine Tryptic Digest Equal Molar Mix, Thermo-Scientific). Peptides were loaded with a constant flow of 10 µl min-1 onto a pre-column (PepMap 100, C18, 5um, 5 mm x 0.3 mm, LC Packings, Amsterdam, Netherlands) and subsequently separated on an  RP-LC analytical column (10 um) fused silica emitter, 75 um x 16 cm (PicoTipTM Emitter, New Objective, Inc. Woburn, MA, USA), packed in-house with Reprosil-Pur C18-AQ resin (3 um, Dr. Maisch Gmbh, Ammerbuch-Enteringen, Germany) with a flow rate of 300 nL min-1. The peptides were eluted with a 60 min linear gradient of 3-35% ACN (0.1% FA) followed by a 10 min linear gradient from 35 to 90% ACN (0.1% FA). The four most intense ions were selected for fragmentation with the dynamic exclusion duration of 2 min.</field>
+        <field name="data_protocol">Raw data files were imported in profile mode into Progenesis LC-MS version 3.1. Search was done against the decapod section of the Uniprot database, using Mascot version 2.3. The mass tolerance was set at 5 ppm for parent ions and 0.5 Da for fragment ions with one missed protease cleavage allowed. Cys carbamidomethylation was set as fixed modification, and Met oxidation as variable.</field>
+        <field name="instrument_platform">LTQ Orbitrap Elite</field>
+        <field name="species">Astacus astacus (Noble crayfish) (Astacus fluviatilis)</field>
+        <field name="cell_type">spermatozoon</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">spermatogonium</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="technology_type">Gel-based experiment</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">alpha-2-macroglobulin</field>
+        <field name="submitter_keywords"> hemocyanin</field>
+        <field name="submitter_keywords"> histone</field>
+        <field name="submitter_keywords"> ryanodine receptor</field>
+        <field name="submitter_keywords"> sodium/hydrogen exchanger</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="submitter">Hamid Niksirat</field>
+        <field name="submitter_mail">niksirat@frov.jcu.cz</field>
+        <field name="submitter_affiliation">University of South Bohemia</field>
+        <field name="labhead">Professor Peter James</field>
+        <field name="labhead_mail">Peter.James@immun.lth.se</field>
+        <field name="labhead_affiliation">Department of Immunotechnology (Hus 406), Medicon Village, Lund University, 223 81, Lund,  Sweden</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001929/130222_Hamid_10Aat_01.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001929/130222_Hamid_11Aat_01.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001929/130222_Hamid_12Aat_01.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001929/130222_Hamid_13Aat_01.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001929/130222_Hamid_14Aat_01.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001929/130222_Hamid_15Aat_01.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001929/130222_Hamid_16Aat_01.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001929/130222_Hamid_1Aas_01.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001929/130222_Hamid_2Aas_01.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001929/130222_Hamid_3Aas_01.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001929/130222_Hamid_4Aas_01.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001929/130222_Hamid_5Aas_01.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001929/130222_Hamid_6Aas_01.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001929/130222_Hamid_7Aas_01.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001929/130222_Hamid_8Aat_01.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001929/130222_Hamid_9Aat_01.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001929/European crayfish capacitation20032013.xml</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

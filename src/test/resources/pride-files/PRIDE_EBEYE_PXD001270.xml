@@ -1,0 +1,219 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001270">
+      <name>Identification of immunodominant antigen among Brucella species (B. abortus and B. melitensis) using hyper immune serum from naturally infected hosts</name>
+      <description>In the present study, the whole cell protein extracts of B. abortus and B. melitensis were separated using SDS-PAGE and western blotting was carried out with the antiserum from naturally infected host animals (cow, buffalo, goat and sheep). The proteins bands that matched with western blot signals were excised, trypsin digested and subjected to MALDI identification.</description>
+      <cross_references>
+        <ref dbkey="29459" dbname="TAXONOMY"/>
+        <ref dbkey="235" dbname="TAXONOMY"/>
+        <ref dbkey="234" dbname="TAXONOMY"/>
+        <ref dbkey="25446124" dbname="pubmed"/>
+        <ref dbkey="A0A076T0J4" dbname="uniprot"/>
+        <ref dbkey="A0A070B392" dbname="uniprot"/>
+        <ref dbkey="A7MZF4" dbname="uniprot"/>
+        <ref dbkey="W6A2E5" dbname="uniprot"/>
+        <ref dbkey="J2VIY5" dbname="uniprot"/>
+        <ref dbkey="Q8YE76" dbname="uniprot"/>
+        <ref dbkey="X6FX61" dbname="uniprot"/>
+        <ref dbkey="D0B9Z9" dbname="uniprot"/>
+        <ref dbkey="C6V3P9" dbname="uniprot"/>
+        <ref dbkey="A0A076QEB6" dbname="uniprot"/>
+        <ref dbkey="K4HII7" dbname="uniprot"/>
+        <ref dbkey="B5ZV65" dbname="uniprot"/>
+        <ref dbkey="Q92VL0" dbname="uniprot"/>
+        <ref dbkey="P15453" dbname="uniprot"/>
+        <ref dbkey="G8STT2" dbname="uniprot"/>
+        <ref dbkey="M1P0P1" dbname="uniprot"/>
+        <ref dbkey="C7LIY0" dbname="uniprot"/>
+        <ref dbkey="A0A070BD98" dbname="uniprot"/>
+        <ref dbkey="W3TQ64" dbname="uniprot"/>
+        <ref dbkey="C0RI80" dbname="uniprot"/>
+        <ref dbkey="X6JUV7" dbname="uniprot"/>
+        <ref dbkey="A6X216" dbname="uniprot"/>
+        <ref dbkey="A9MEA4" dbname="uniprot"/>
+        <ref dbkey="A0A076R8Y1" dbname="uniprot"/>
+        <ref dbkey="N8EJN3" dbname="uniprot"/>
+        <ref dbkey="Q8YGE8" dbname="uniprot"/>
+        <ref dbkey="Q578Y0" dbname="uniprot"/>
+        <ref dbkey="M3I4I6" dbname="uniprot"/>
+        <ref dbkey="Q8YIE8" dbname="uniprot"/>
+        <ref dbkey="G8SX45" dbname="uniprot"/>
+        <ref dbkey="V5PIJ2" dbname="uniprot"/>
+        <ref dbkey="C0RM04" dbname="uniprot"/>
+        <ref dbkey="Q8YBL4" dbname="uniprot"/>
+        <ref dbkey="Q8FVI3" dbname="uniprot"/>
+        <ref dbkey="X6IQG8" dbname="uniprot"/>
+        <ref dbkey="G8CT40" dbname="uniprot"/>
+        <ref dbkey="Q57AD7" dbname="uniprot"/>
+        <ref dbkey="J0QBQ0" dbname="uniprot"/>
+        <ref dbkey="E8TER2" dbname="uniprot"/>
+        <ref dbkey="C9TUL9" dbname="uniprot"/>
+        <ref dbkey="A0A076QBI9" dbname="uniprot"/>
+        <ref dbkey="Q64JC4" dbname="uniprot"/>
+        <ref dbkey="A0A011VL58" dbname="uniprot"/>
+        <ref dbkey="A0A024EUU3" dbname="uniprot"/>
+        <ref dbkey="D7EYH4" dbname="uniprot"/>
+        <ref dbkey="A5CJM8" dbname="uniprot"/>
+        <ref dbkey="X6CVY1" dbname="uniprot"/>
+        <ref dbkey="J6DP94" dbname="uniprot"/>
+        <ref dbkey="O85282" dbname="uniprot"/>
+        <ref dbkey="F2GTJ5" dbname="uniprot"/>
+        <ref dbkey="A0A080QMH7" dbname="uniprot"/>
+        <ref dbkey="Q6G1F9" dbname="uniprot"/>
+        <ref dbkey="A9ILH7" dbname="uniprot"/>
+        <ref dbkey="A0A076Q799" dbname="uniprot"/>
+        <ref dbkey="I3X6U5" dbname="uniprot"/>
+        <ref dbkey="X5PRB8" dbname="uniprot"/>
+        <ref dbkey="W6A296" dbname="uniprot"/>
+        <ref dbkey="A6X5M9" dbname="uniprot"/>
+        <ref dbkey="A0A070B104" dbname="uniprot"/>
+        <ref dbkey="Q5DJ08" dbname="uniprot"/>
+        <ref dbkey="X6HV14" dbname="uniprot"/>
+        <ref dbkey="Q5DJ07" dbname="uniprot"/>
+        <ref dbkey="A5CH55" dbname="uniprot"/>
+        <ref dbkey="A5VN60" dbname="uniprot"/>
+        <ref dbkey="A0A076QDU1" dbname="uniprot"/>
+        <ref dbkey="X6CG65" dbname="uniprot"/>
+        <ref dbkey="A0A076RBC6" dbname="uniprot"/>
+        <ref dbkey="K4LAP7" dbname="uniprot"/>
+        <ref dbkey="Q8YCU3" dbname="uniprot"/>
+        <ref dbkey="A1UUC3" dbname="uniprot"/>
+        <ref dbkey="G4PKM1" dbname="uniprot"/>
+        <ref dbkey="F7Y7R3" dbname="uniprot"/>
+        <ref dbkey="G4PLI9" dbname="uniprot"/>
+        <ref dbkey="P0A326" dbname="uniprot"/>
+        <ref dbkey="P0A327" dbname="uniprot"/>
+        <ref dbkey="Q05981" dbname="uniprot"/>
+        <ref dbkey="L0KD00" dbname="uniprot"/>
+        <ref dbkey="M4S172" dbname="uniprot"/>
+        <ref dbkey="N0BI52" dbname="uniprot"/>
+        <ref dbkey="M5EYR4" dbname="uniprot"/>
+        <ref dbkey="Q98DD1" dbname="uniprot"/>
+        <ref dbkey="N8ENI5" dbname="uniprot"/>
+        <ref dbkey="D6LTP7" dbname="uniprot"/>
+        <ref dbkey="Q8F3W3" dbname="uniprot"/>
+        <ref dbkey="C6AB84" dbname="uniprot"/>
+        <ref dbkey="Q2GF34" dbname="uniprot"/>
+        <ref dbkey="Q8G1H4" dbname="uniprot"/>
+        <ref dbkey="A0A070B4B4" dbname="uniprot"/>
+        <ref dbkey="Q8YBG1" dbname="uniprot"/>
+        <ref dbkey="V5PBF7" dbname="uniprot"/>
+        <ref dbkey="U4K1Y8" dbname="uniprot"/>
+        <ref dbkey="U7XAE3" dbname="uniprot"/>
+        <ref dbkey="Q8YEP9" dbname="uniprot"/>
+        <ref dbkey="Q8YF19" dbname="uniprot"/>
+        <ref dbkey="Q6G554" dbname="uniprot"/>
+        <ref dbkey="G8SQS3" dbname="uniprot"/>
+        <ref dbkey="A5CGS0" dbname="uniprot"/>
+        <ref dbkey="A9WZE3" dbname="uniprot"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-08-27"/>
+        <date type="publication" value="2014-12-01"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001270</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">The whole cell protein extracts were prepared from B. abortus isolated from infected cow from Turkey and B. melitensis isolated from infected sheep from China. Three sets of The bacterial proteins were separated on SDS-PAGE and Western blotting was carried out using hyper immune serum collected from naturally infected host species (cattle, buffalo, sheep and goat). The blotting was carried out using three serum samples in each case and the corresponding bands were excised, trypsin digested and subjected to protein identification using MALDI TOF MS.</field>
+        <field name="data_protocol">The spectra was acquired using the AutoXecute option of the Flex Analysis software version 3.3 (Bruker Daltonics, Leipzig, Germany), spectra processing were processed using Flex analysis software  version 3.3 and protein identification was carried out using Biotools 3.0 (Bruker Daltonics, Leipzig, Germany) software integrated  MASCOT search engine. The.dat, .mgf, .xml and .myIDENTxml file were exported for data deposit.</field>
+        <field name="instrument_platform">ultraflex</field>
+        <field name="species">Brucella melitensis</field>
+        <field name="species">Brucella abortus</field>
+        <field name="species">Brucella</field>
+        <field name="cell_type">cell in vitro</field>
+        <field name="disease">brucellosis</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">Brucella</field>
+        <field name="submitter_keywords"> Western blotting</field>
+        <field name="submitter_keywords"> MALDI TOF MS</field>
+        <field name="submitter_keywords"> Immunodominat proteins</field>
+        <field name="submitter_keywords"> hyper immune serum</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">COMPLETE</field>
+        <field name="software">Matrix Science Mascot 2.5.0.2</field>
+        <field name="doi">10.6019/PXD001270</field>
+        <field name="publication">Wareth G, Melzer F, Weise C, Neubauer H, Roesler U, Murugaiyan J. Proteomics-based identification of immunodominant proteins of Brucellae using sera from infected hosts points towards enhanced pathogen survival during the infection. Biochem Biophys Res Commun. 2015 Jan 2;456(1):202-6</field>
+        <field name="submitter">Jayaseelan Murugaiyan</field>
+        <field name="submitter_mail">jayaseelan.murugaiyan@fu-berlin.de</field>
+        <field name="submitter_affiliation">Freie Universitaet-Berlin,Institute of Animal Hygiene and Environmental Health</field>
+        <field name="labhead">Jayaseelan Murugaiyan</field>
+        <field name="labhead_mail">jayaseelan.murugaiyan@fu-berlin.de</field>
+        <field name="labhead_affiliation">Institute of Animal Hygiene and Environmental Health, Centre for Infections Medicine, Freie Universitaet-Berlin, Robert-von-Ostertag Str. 7 – 13, 14163 Berlin, Germany</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1A02.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1A02.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1A02.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1A02.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1A04.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1A04.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1A04.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1A05.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1A05.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1A05.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1A05.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1A06.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1A06.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1A06.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1A06.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1A08.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1A08.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1A08.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1A08.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1A10.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1A10.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1A10.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1A10.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1A12.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1A12.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1A12.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1A12.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1M02.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1M02.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1M02.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1M02.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1M03.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1M03.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1M03.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1M03.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1M04.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1M04.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1M04.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1M04.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1M05.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1M05.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1M05.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1M05.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1M06.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1M06.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1M06.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1M06.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1M07.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1M07.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1M07.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1M07.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1M08.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1M08.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1M08.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1M08.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1M09.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1M09.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1M09.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1M09.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1M10.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1M10.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1A04.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1M10.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001270/1M10.zip</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

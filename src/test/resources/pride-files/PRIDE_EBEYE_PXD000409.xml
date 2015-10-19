@@ -1,0 +1,67 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000409">
+      <name>System-wide perturbation analysis with nearly complete coverage of the yeast proteome by single-shot ultra HPLC runs on a bench top Orbitrap</name>
+      <description>Yeast remains an important model for systems biology and for evaluating proteomics strategies. In-depth shotgun proteomics studies have reached nearly comprehensive coverage, and rapid, targeted approaches have been developed for this organism. Recently, we demonstrated that single LC-MS/MS analysis using long columns and gradients coupled to a linear ion trap Orbitrap instrument had an unexpectedly large dynamic range of protein identification (Thakur, S. S., Geiger, T., Chatterjee, B., Bandilla, P., Frohlich, F., Cox, J., and Mann, M. (2011) Deep and highly sensitive proteome coverage by LC-MS/MS without prefractionation. Mol. Cell Proteomics 10, 10.1074/mcp.M110.003699). Here we couple an ultra high pressure liquid chromatography system to a novel bench top Orbitrap mass spectrometer (Q Exactive) with the goal of nearly complete, rapid, and robust analysis of the yeast proteome. Single runs of filter-aided sample preparation (FASP)-prepared and LysC-digested yeast cell lysates identified an average of 3923 proteins. Combined analysis of six single runs improved these values to more than 4000 identified proteins/run, close to the total number of proteins expressed under standard conditions, with median sequence coverage of 23%. Because of the absence of fractionation steps, only minuscule amounts of sample are required. Thus the yeast model proteome can now largely be covered within a few hours of measurement time and at high sensitivity. Median coverage of proteins in Kyoto Encyclopedia of Genes and Genomes pathways with at least 10 members was 88%, and pathways not covered were not expected to be active under the conditions used. To study perturbations of the yeast proteome, we developed an external, heavy lysine-labeled SILAC yeast standard representing different proteome states. This spike-in standard was employed to measure the heat shock response of the yeast proteome. Bioinformatic analysis of the heat shock response revealed that translation-related functions were down-regulated prominently, including nucleolar processes. Conversely, stress-related pathways were up-regulated. The proteomic technology described here is straightforward, rapid, and robust, potentially enabling widespread use in the yeast and other biological research communities. Data analysis: The raw files were processed using MaxQuant version 1.2.0.34. The fragmentation spectra were searched against the yeast ORF database (release date of February 3, 2011; 6752 entries) using the Andromeda search engine with the initial precursor and fragment mass tolerances set to 7 and 20 ppm, respectively, and with up to two missed cleavages. Carabamidomethlyation of cysteine was set as a fixed modification, and oxidation of methionine and protein N-terminal acetylation were chosen as variable modifications for database searching. Both peptide and protein identifications were filtered at 1% false discovery rate and thus were not dependent on the peptide score. Bioinformatics analysis was performed using the Perseus tools available in the MaxQuant environment.</description>
+      <cross_references>
+        <ref dbkey="4932" dbname="TAXONOMY"/>
+        <ref dbkey="22021278" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2013-08-09"/>
+        <date type="publication" value="2013-08-09"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000409</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Not available</field>
+        <field name="instrument_platform">Q Exactive</field>
+        <field name="species">Saccharomyces cerevisiae (Baker's yeast)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Not available</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">acetylated residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="submitter_keywords">Yeast</field>
+        <field name="submitter_keywords"> Q Exactive</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Nagaraj N, Kulak NA, Cox J, Neuhauser N, Mayr K, Hoerning O, Vorm O, Mann M; System-wide perturbation analysis with nearly complete coverage of the yeast proteome by single-shot ultra HPLC runs on a bench top Orbitrap., Mol Cell Proteomics, 2012 Mar, 11, 3, M111.013722, </field>
+        <field name="submitter">Mario Oroshi</field>
+        <field name="submitter_mail">oroshi@biochem.mpg.de</field>
+        <field name="submitter_affiliation">Proteomics</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000409/20110814_EXQ4_NaNa_SA_HSR_t0_01.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000409/20110814_EXQ4_NaNa_SA_HSR_t0_02.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000409/20110814_EXQ4_NaNa_SA_HSR_t0_03.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000409/20110814_EXQ4_NaNa_SA_HSR_t30_01.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000409/20110814_EXQ4_NaNa_SA_HSR_t30_02.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000409/20110814_EXQ4_NaNa_SA_HSR_t30_03.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000409/20110814_EXQ4_NaNa_SA_HSR_t75_01.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000409/20110814_EXQ4_NaNa_SA_HSR_t75_02.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000409/20110814_EXQ4_NaNa_SA_HSR_t75_03.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000409/20110815_EXQ4_NaNa_SA_HSR_t0_01.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000409/20110815_EXQ4_NaNa_SA_HSR_t0_02.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000409/20110815_EXQ4_NaNa_SA_HSR_t0_03.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000409/YeastHSR.tar.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000409/20110922_EXQ4_NaNa_SA_YeastEasy_Labelfree_01.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000409/20110922_EXQ4_NaNa_SA_YeastEasy_Labelfree_02.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000409/20110922_EXQ4_NaNa_SA_YeastEasy_Labelfree_03.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000409/20110922_EXQ4_NaNa_SA_YeastEasy_Labelfree_04.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000409/20110922_EXQ4_NaNa_SA_YeastEasy_Labelfree_05.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000409/20110922_EXQ4_NaNa_SA_YeastEasy_Labelfree_06.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000409/YeastLabelFree.tar.gz</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

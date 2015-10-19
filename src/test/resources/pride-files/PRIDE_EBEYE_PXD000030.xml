@@ -1,0 +1,223 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000030">
+      <name>Annexin A1 interacting proteins in chronic myeloid leukemia KCL22 cells</name>
+      <description>In the present study, we used a functional proteomic approach to identify Annexin A1 (Anxa1) interacting proteins in the Philadelphia-positive KCL22 cell line. We focused on Anxa1 because it is one of the major proteins upregulated in imatinib-sensitive KCL22S cells versus imatinib-resistant KCL22R. Our proteomic strategy revealed 21 interactors. Bioinformatic analysis showed that most of these proteins are involved in cell death processes. Among the proteins identified, we studied the interaction of Anxa1 with two phosphatases, Shp1 and Shp2, which were recently identified as biomarkers of imatinib sensitivity in patients affected by chronic myeloid leukemia. Our data open new perspectives in the search for annexin-mediated signaling pathways and may shed light on mechanisms of resistance to imatinib that are unrelated to Bcr-Abl activity. For data analysis, we used the MASCOT software (version 2.4) Peptide Mass Fingerprinting search program (http://www.matrixscience.com) selecting NCBInr aug2010 database (11592891 sequences) (http://www.ncbi. nlm.nih.gov), and the following six parameters: specificity of the proteolytic enzyme used for hydrolysis (trypsin); up to 1 missed cleavage; cysteines such as S-carbamidomethylcysteines; unmodified N- and C-terminal ends; unmodified and oxidized methionines; putative Gln-induced pyroGlu formation; a precursor peptide maximum mass tolerance of 400 ppm, and a maximum fragment mass tolerance of 0.6 Da. Using the probability-based Mowse score, the ion score is 10 x Log(p), p being the probability that an eventual match is a random occurrence. All MS/MS spectra with a MASCOT score of or higher than 41 (p =&lt; 0.05) had a good S/N, so the interpretation of the data was unambiguous. MS/MS spectra of peptides that had a MASCOT score below 41 were inspected manually and included in the statistics only in the presence of at least four continuous y or b ions.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="23754495" dbname="pubmed"/>
+        <ref dbkey="ENSP00000328358" dbname="ensembl"/>
+        <ref dbkey="ENSP00000286788" dbname="ensembl"/>
+        <ref dbkey="P23527" dbname="uniprot"/>
+        <ref dbkey="Q7Z794" dbname="uniprot"/>
+        <ref dbkey="P11142" dbname="uniprot"/>
+        <ref dbkey="P13645" dbname="uniprot"/>
+        <ref dbkey="P13647" dbname="uniprot"/>
+        <ref dbkey="P62263" dbname="uniprot"/>
+        <ref dbkey="P62851" dbname="uniprot"/>
+        <ref dbkey="P22695" dbname="uniprot"/>
+        <ref dbkey="O60506" dbname="uniprot"/>
+        <ref dbkey="ENSP00000247207" dbname="ensembl"/>
+        <ref dbkey="P10515" dbname="uniprot"/>
+        <ref dbkey="Q0IIN1" dbname="uniprot"/>
+        <ref dbkey="Q562R1" dbname="uniprot"/>
+        <ref dbkey="ENSP00000422753" dbname="ensembl"/>
+        <ref dbkey="Q01546" dbname="uniprot"/>
+        <ref dbkey="ENSP00000167586" dbname="ensembl"/>
+        <ref dbkey="Q86Y46" dbname="uniprot"/>
+        <ref dbkey="P98082" dbname="uniprot"/>
+        <ref dbkey="ENSP00000320171" dbname="ensembl"/>
+        <ref dbkey="ENSP00000336741" dbname="ensembl"/>
+        <ref dbkey="ENSP00000311747" dbname="ensembl"/>
+        <ref dbkey="P62249" dbname="uniprot"/>
+        <ref dbkey="ENSP00000382840" dbname="ensembl"/>
+        <ref dbkey="P14625" dbname="uniprot"/>
+        <ref dbkey="P11021" dbname="uniprot"/>
+        <ref dbkey="A0A024R9E2" dbname="uniprot"/>
+        <ref dbkey="ENSP00000295148" dbname="ensembl"/>
+        <ref dbkey="ENSP00000311028" dbname="ensembl"/>
+        <ref dbkey="C8C504" dbname="uniprot"/>
+        <ref dbkey="P14618" dbname="uniprot"/>
+        <ref dbkey="ENSP00000262982" dbname="ensembl"/>
+        <ref dbkey="B2RBS8" dbname="uniprot"/>
+        <ref dbkey="ENSP00000342710" dbname="ensembl"/>
+        <ref dbkey="Q04726" dbname="uniprot"/>
+        <ref dbkey="P04264" dbname="uniprot"/>
+        <ref dbkey="Q14568" dbname="uniprot"/>
+        <ref dbkey="ENSP00000318415" dbname="ensembl"/>
+        <ref dbkey="A5A3E0" dbname="uniprot"/>
+        <ref dbkey="V9HW84" dbname="uniprot"/>
+        <ref dbkey="ENSP00000340019" dbname="ensembl"/>
+        <ref dbkey="P08779" dbname="uniprot"/>
+        <ref dbkey="P06654" dbname="uniprot"/>
+        <ref dbkey="ENSP00000324173" dbname="ensembl"/>
+        <ref dbkey="ENSP00000252242" dbname="ensembl"/>
+        <ref dbkey="ENSP00000252245" dbname="ensembl"/>
+        <ref dbkey="ENSP00000252244" dbname="ensembl"/>
+        <ref dbkey="ENSP00000331514" dbname="ensembl"/>
+        <ref dbkey="ENSP00000319233" dbname="ensembl"/>
+        <ref dbkey="P07900" dbname="uniprot"/>
+        <ref dbkey="P08107" dbname="uniprot"/>
+        <ref dbkey="ENSP00000366235" dbname="ensembl"/>
+        <ref dbkey="ENSP00000364801" dbname="ensembl"/>
+        <ref dbkey="ENSP00000364805" dbname="ensembl"/>
+        <ref dbkey="ENSP00000308452" dbname="ensembl"/>
+        <ref dbkey="P52272" dbname="uniprot"/>
+        <ref dbkey="P54652" dbname="uniprot"/>
+        <ref dbkey="Q53G76" dbname="uniprot"/>
+        <ref dbkey="ENSP00000244537" dbname="ensembl"/>
+        <ref dbkey="ENSP00000225964" dbname="ensembl"/>
+        <ref dbkey="ENSP00000313391" dbname="ensembl"/>
+        <ref dbkey="ENSP00000313007" dbname="ensembl"/>
+        <ref dbkey="ENSP00000385536" dbname="ensembl"/>
+        <ref dbkey="ENSP00000369317" dbname="ensembl"/>
+        <ref dbkey="P04406" dbname="uniprot"/>
+        <ref dbkey="ENSP00000325875" dbname="ensembl"/>
+        <ref dbkey="P35527" dbname="uniprot"/>
+        <ref dbkey="O00571" dbname="uniprot"/>
+        <ref dbkey="Q96PK6" dbname="uniprot"/>
+        <ref dbkey="ENSP00000257497" dbname="ensembl"/>
+        <ref dbkey="ENSP00000303373" dbname="ensembl"/>
+        <ref dbkey="ENSP00000330101" dbname="ensembl"/>
+        <ref dbkey="P02533" dbname="uniprot"/>
+        <ref dbkey="Q5XKE5" dbname="uniprot"/>
+        <ref dbkey="P02538" dbname="uniprot"/>
+        <ref dbkey="P04083" dbname="uniprot"/>
+        <ref dbkey="Q9H6R7" dbname="uniprot"/>
+        <ref dbkey="P19013" dbname="uniprot"/>
+        <ref dbkey="P11940" dbname="uniprot"/>
+        <ref dbkey="P08238" dbname="uniprot"/>
+        <ref dbkey="ENSP00000299767" dbname="ensembl"/>
+        <ref dbkey="ENSP00000310219" dbname="ensembl"/>
+        <ref dbkey="P34931" dbname="uniprot"/>
+        <ref dbkey="Q04695" dbname="uniprot"/>
+        <ref dbkey="O00273" dbname="uniprot"/>
+        <ref dbkey="ENSP00000347380" dbname="ensembl"/>
+        <ref dbkey="ENSP00000293774" dbname="ensembl"/>
+        <ref dbkey="ENSP00000435096" dbname="ensembl"/>
+        <ref dbkey="ENSP00000307014" dbname="ensembl"/>
+        <ref dbkey="ENSP00000251453" dbname="ensembl"/>
+        <ref dbkey="ENSP00000227378" dbname="ensembl"/>
+        <ref dbkey="P50990" dbname="uniprot"/>
+        <ref dbkey="P17066" dbname="uniprot"/>
+        <ref dbkey="ENSP00000295897" dbname="ensembl"/>
+        <ref dbkey="P02452" dbname="uniprot"/>
+        <ref dbkey="H6VRG2" dbname="uniprot"/>
+        <ref dbkey="B3VL17" dbname="uniprot"/>
+        <ref dbkey="P35908" dbname="uniprot"/>
+        <ref dbkey="P63261" dbname="uniprot"/>
+        <ref dbkey="ENSP00000229239" dbname="ensembl"/>
+        <ref dbkey="P04908" dbname="uniprot"/>
+        <ref dbkey="P55060" dbname="uniprot"/>
+        <ref dbkey="A0A024RBS2" dbname="uniprot"/>
+        <ref dbkey="ENSP00000269576" dbname="ensembl"/>
+        <ref dbkey="ENSP00000216281" dbname="ensembl"/>
+        <ref dbkey="ENSP00000477527" dbname="ensembl"/>
+        <ref dbkey="ENSP00000246662" dbname="ensembl"/>
+        <ref dbkey="ENSP00000268379" dbname="ensembl"/>
+        <ref dbkey="P48741" dbname="uniprot"/>
+        <ref dbkey="P20700" dbname="uniprot"/>
+        <ref dbkey="P10809" dbname="uniprot"/>
+        <ref dbkey="O43143" dbname="uniprot"/>
+        <ref dbkey="Q96E39" dbname="uniprot"/>
+        <ref dbkey="ENSP00000310861" dbname="ensembl"/>
+        <ref dbkey="Q92841" dbname="uniprot"/>
+        <ref dbkey="O95678" dbname="uniprot"/>
+        <ref dbkey="ENSP00000301653" dbname="ensembl"/>
+        <ref dbkey="P62807" dbname="uniprot"/>
+        <ref dbkey="P62805" dbname="uniprot"/>
+        <ref dbkey="P02768" dbname="uniprot"/>
+        <ref dbkey="ENSP00000416706" dbname="ensembl"/>
+        <ref dbkey="ENSP00000261366" dbname="ensembl"/>
+        <ref dbkey="Q9UJV9" dbname="uniprot"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2012-09-19"/>
+        <date type="publication" value="2013-08-13"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000030</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Not available</field>
+        <field name="instrument_platform">instrument model</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="species">Homo sapiens (human)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Not available</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">deaminated residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="submitter_keywords">Annexin A1</field>
+        <field name="submitter_keywords"> protein interaction</field>
+        <field name="submitter_keywords"> chronic myeloid leukemia</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">COMPLETE</field>
+        <field name="software">Matrix Science Mascot 2.4.0</field>
+        <field name="doi">10.6019/PXD000030</field>
+        <field name="publication">Colavita I, Esposito N, Quintarelli C, Nigro E, Pane F, Ruoppolo M, Salvatore F; Identification of Annexin A1 interacting proteins in chronic myeloid leukemia KCL22 cells., Proteomics, 2013 Aug, 13, 16, 2414-8, </field>
+        <field name="submitter">Irene Colavita</field>
+        <field name="submitter_mail">colavita@ceinge.unina.it</field>
+        <field name="submitter_affiliation">Proteomics</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/1063686-slide C5.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/119587578-slide D5.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/119612225-slide D3.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/13376798-slide D3.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/14165258-slide C3.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/2696613-slide C5.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/3256007-slide F2.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/35505-slide E2.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/397501955-slide D4.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/4501887-slide F2.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/4502101-slide F6.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/4506667-slide G1.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/4529893-slide D4.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/5032051-slide I5.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/5454064-slide D4.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/6118555-slide D3.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/Analysis I5.yep</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/Analysis F2.yep</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/Analysis F2a.yep</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/Analysis C3.yep</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/Analysis D3.yep</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/Analysis D3a.yep</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/Analysis D3b.yep</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/Analysis D4.yep</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/Analysis D4a.yep</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/Analysis D4b.yep</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/Analysis C5.yep</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/Analysis C5a.yep</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/Analysis D5.yep</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/Analysis F6.yep</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/Analysis E2.yep</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/Analysis G1.yep</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/PRIDE_Exp_Complete_Ac_27250.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/PRIDE_Exp_Complete_Ac_27251.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/PRIDE_Exp_Complete_Ac_27252.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/PRIDE_Exp_Complete_Ac_27253.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/PRIDE_Exp_Complete_Ac_27254.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/PRIDE_Exp_Complete_Ac_27255.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/PRIDE_Exp_Complete_Ac_27256.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/PRIDE_Exp_Complete_Ac_27257.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/PRIDE_Exp_Complete_Ac_27258.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/PRIDE_Exp_Complete_Ac_27259.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/PRIDE_Exp_Complete_Ac_27260.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/PRIDE_Exp_Complete_Ac_27261.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/PRIDE_Exp_Complete_Ac_27262.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/PRIDE_Exp_Complete_Ac_27263.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/PRIDE_Exp_Complete_Ac_27264.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000030/PRIDE_Exp_Complete_Ac_27265.xml.gz</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

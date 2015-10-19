@@ -1,0 +1,47 @@
+<database>
+  <name>MetabolomicsWorkbench</name>
+  <description>The Metabolomics Workbench will serve as a national and international repository for metabolomics data and metadata and will provide analysis tools and access to metabolite standards, protocols, tutorials, training, and more.</description>
+  <release>1.0</release>
+  <release_date>15-05-20</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="ST000134">
+      <name>Monitoring In Vitro Response of Selenium-Treated Prostate Cells by 1H NMR Spectroscopy</name>
+      <description>Metabolomics analysis was performed on DU145 prostate cancer cells and PNT1A non-tumorigenic prostate cells after treatment with selenomethionine and Se-methylselenocysteine using 800 MHz Bruker NMR spectrometer on 18 cell samples.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="15-01-13"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Metabolomics</field>
+        <field name="full_dataset_link">http://www.metabolomicsworkbench.org/data/DRCCMetadata.php?Mode=Study&amp;StudyID=ST000134</field>
+        <field name="repository">MetabolomicsWorkbench</field>
+        <field name="data_protocol">NMR: 1D 1H</field>
+        <field name="instrument_platform">Bruker</field>
+        <field name="study_factor">Treatment:SeM | Prostate Cell Line:PNT1A</field>
+        <field name="study_factor">Treatment:SeMSC | Prostate Cell Line:PNT1A</field>
+        <field name="study_factor">Treatment:SeMSC | Prostate Cell Line:DU145</field>
+        <field name="study_factor">Treatment:SeM | Prostate Cell Line:DU145</field>
+        <field name="species">Homo sapiens</field>
+        <field name="technology_type">Bruker</field>
+        <field name="metabolite_name">Choline</field>
+        <field name="metabolite_name">b-Glucose</field>
+        <field name="metabolite_name">Phosphocholine</field>
+        <field name="metabolite_name">Alanine</field>
+        <field name="metabolite_name">Lactate</field>
+        <field name="metabolite_name">Glycine</field>
+        <field name="metabolite_name">Glycerophosphocholine</field>
+        <field name="metabolite_name">Creatine</field>
+        <field name="metabolite_name">Nicotine adenine dinucleotide phosphate (NADP)</field>
+        <field name="metabolite_name">Lipids</field>
+        <field name="metabolite_name">Taurine</field>
+        <field name="metabolite_name">Uridine 2'-diphospate</field>
+        <field name="submitter">Meden Isaac-Lam</field>
+        <field name="submitter_mail">isaaclam@pnc.edu</field>
+        <field name="submitter_affiliation">Biology/Chemistry, Purdue University North Central</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

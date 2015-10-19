@@ -1,0 +1,391 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001310">
+      <name>Polysome pellet digests</name>
+      <description>identification of proteins in polysome pellet with and without silvestrol treatment</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="P07437" dbname="uniprot"/>
+        <ref dbkey="Q71UM5" dbname="uniprot"/>
+        <ref dbkey="P36578" dbname="uniprot"/>
+        <ref dbkey="Q13200" dbname="uniprot"/>
+        <ref dbkey="ENSP00000358497" dbname="ensembl"/>
+        <ref dbkey="ENSP00000398236" dbname="ensembl"/>
+        <ref dbkey="ENSP00000286788" dbname="ensembl"/>
+        <ref dbkey="ENSP00000222247" dbname="ensembl"/>
+        <ref dbkey="ENSP00000363676" dbname="ensembl"/>
+        <ref dbkey="ENSP00000346022" dbname="ensembl"/>
+        <ref dbkey="P62750" dbname="uniprot"/>
+        <ref dbkey="ENSP00000262030" dbname="ensembl"/>
+        <ref dbkey="ENSP00000186436" dbname="ensembl"/>
+        <ref dbkey="P62753" dbname="uniprot"/>
+        <ref dbkey="ENSP00000346027" dbname="ensembl"/>
+        <ref dbkey="P27635" dbname="uniprot"/>
+        <ref dbkey="ENSP00000262442" dbname="ensembl"/>
+        <ref dbkey="ENSP00000345156" dbname="ensembl"/>
+        <ref dbkey="P11142" dbname="uniprot"/>
+        <ref dbkey="ENSP00000359727" dbname="ensembl"/>
+        <ref dbkey="ENSP00000393393" dbname="ensembl"/>
+        <ref dbkey="P62269" dbname="uniprot"/>
+        <ref dbkey="ENSP00000339027" dbname="ensembl"/>
+        <ref dbkey="P62857" dbname="uniprot"/>
+        <ref dbkey="P62266" dbname="uniprot"/>
+        <ref dbkey="P50406" dbname="uniprot"/>
+        <ref dbkey="P47914" dbname="uniprot"/>
+        <ref dbkey="Q86Y34" dbname="uniprot"/>
+        <ref dbkey="P63220" dbname="uniprot"/>
+        <ref dbkey="ENSP00000322419" dbname="ensembl"/>
+        <ref dbkey="P23396" dbname="uniprot"/>
+        <ref dbkey="P62854" dbname="uniprot"/>
+        <ref dbkey="P62263" dbname="uniprot"/>
+        <ref dbkey="ENSP00000230050" dbname="ensembl"/>
+        <ref dbkey="P62851" dbname="uniprot"/>
+        <ref dbkey="ENSP00000354591" dbname="ensembl"/>
+        <ref dbkey="ENSP00000163416" dbname="ensembl"/>
+        <ref dbkey="P68104" dbname="uniprot"/>
+        <ref dbkey="Q9NX58" dbname="uniprot"/>
+        <ref dbkey="ENSP00000225430" dbname="ensembl"/>
+        <ref dbkey="ENSP00000294189" dbname="ensembl"/>
+        <ref dbkey="ENSP00000435777" dbname="ensembl"/>
+        <ref dbkey="Q07617" dbname="uniprot"/>
+        <ref dbkey="Q92526" dbname="uniprot"/>
+        <ref dbkey="ENSP00000346037" dbname="ensembl"/>
+        <ref dbkey="ENSP00000359345" dbname="ensembl"/>
+        <ref dbkey="Q9NR97" dbname="uniprot"/>
+        <ref dbkey="ENSP00000365233" dbname="ensembl"/>
+        <ref dbkey="ENSP00000318646" dbname="ensembl"/>
+        <ref dbkey="ENSP00000278947" dbname="ensembl"/>
+        <ref dbkey="P62861" dbname="uniprot"/>
+        <ref dbkey="ENSP00000470004" dbname="ensembl"/>
+        <ref dbkey="ENSP00000331540" dbname="ensembl"/>
+        <ref dbkey="Q8TBA6" dbname="uniprot"/>
+        <ref dbkey="ENSP00000264720" dbname="ensembl"/>
+        <ref dbkey="ENSP00000295688" dbname="ensembl"/>
+        <ref dbkey="ENSP00000347271" dbname="ensembl"/>
+        <ref dbkey="Q8WXI9" dbname="uniprot"/>
+        <ref dbkey="ENSP00000251809" dbname="ensembl"/>
+        <ref dbkey="ENSP00000305857" dbname="ensembl"/>
+        <ref dbkey="Q8NC51" dbname="uniprot"/>
+        <ref dbkey="ENSP00000321706" dbname="ensembl"/>
+        <ref dbkey="P40227" dbname="uniprot"/>
+        <ref dbkey="ENSP00000346046" dbname="ensembl"/>
+        <ref dbkey="P0C091" dbname="uniprot"/>
+        <ref dbkey="ENSP00000296674" dbname="ensembl"/>
+        <ref dbkey="ENSP00000346001" dbname="ensembl"/>
+        <ref dbkey="O60939" dbname="uniprot"/>
+        <ref dbkey="P62249" dbname="uniprot"/>
+        <ref dbkey="ENSP00000331019" dbname="ensembl"/>
+        <ref dbkey="O95757" dbname="uniprot"/>
+        <ref dbkey="P11217" dbname="uniprot"/>
+        <ref dbkey="P84098" dbname="uniprot"/>
+        <ref dbkey="P62241" dbname="uniprot"/>
+        <ref dbkey="ENSP00000262193" dbname="ensembl"/>
+        <ref dbkey="P62244" dbname="uniprot"/>
+        <ref dbkey="ENSP00000357644" dbname="ensembl"/>
+        <ref dbkey="Q8TCJ2" dbname="uniprot"/>
+        <ref dbkey="Q9NTG1" dbname="uniprot"/>
+        <ref dbkey="Q9Y6H5" dbname="uniprot"/>
+        <ref dbkey="ENSP00000346050" dbname="ensembl"/>
+        <ref dbkey="P42766" dbname="uniprot"/>
+        <ref dbkey="ENSP00000345917" dbname="ensembl"/>
+        <ref dbkey="ENSP00000369703" dbname="ensembl"/>
+        <ref dbkey="P83731" dbname="uniprot"/>
+        <ref dbkey="ENSP00000264705" dbname="ensembl"/>
+        <ref dbkey="ENSP00000359321" dbname="ensembl"/>
+        <ref dbkey="ENSP00000346015" dbname="ensembl"/>
+        <ref dbkey="ENSP00000311028" dbname="ensembl"/>
+        <ref dbkey="Q92813" dbname="uniprot"/>
+        <ref dbkey="P62987" dbname="uniprot"/>
+        <ref dbkey="P06576" dbname="uniprot"/>
+        <ref dbkey="P07814" dbname="uniprot"/>
+        <ref dbkey="Q9NY72" dbname="uniprot"/>
+        <ref dbkey="ENSP00000309334" dbname="ensembl"/>
+        <ref dbkey="P62841" dbname="uniprot"/>
+        <ref dbkey="P50914" dbname="uniprot"/>
+        <ref dbkey="P26373" dbname="uniprot"/>
+        <ref dbkey="P62847" dbname="uniprot"/>
+        <ref dbkey="ENSP00000311430" dbname="ensembl"/>
+        <ref dbkey="ENSP00000353622" dbname="ensembl"/>
+        <ref dbkey="ENSP00000378160" dbname="ensembl"/>
+        <ref dbkey="O14746" dbname="uniprot"/>
+        <ref dbkey="ENSP00000234071" dbname="ensembl"/>
+        <ref dbkey="ENSP00000202773" dbname="ensembl"/>
+        <ref dbkey="ENSP00000318697" dbname="ensembl"/>
+        <ref dbkey="Q07020" dbname="uniprot"/>
+        <ref dbkey="P60709" dbname="uniprot"/>
+        <ref dbkey="ENSP00000369757" dbname="ensembl"/>
+        <ref dbkey="ENSP00000346063" dbname="ensembl"/>
+        <ref dbkey="P61353" dbname="uniprot"/>
+        <ref dbkey="ENSP00000346067" dbname="ensembl"/>
+        <ref dbkey="ENSP00000262584" dbname="ensembl"/>
+        <ref dbkey="P62899" dbname="uniprot"/>
+        <ref dbkey="P01857" dbname="uniprot"/>
+        <ref dbkey="ENSP00000218032" dbname="ensembl"/>
+        <ref dbkey="P62891" dbname="uniprot"/>
+        <ref dbkey="Q9BPX3" dbname="uniprot"/>
+        <ref dbkey="P15880" dbname="uniprot"/>
+        <ref dbkey="ENSP00000340019" dbname="ensembl"/>
+        <ref dbkey="ENSP00000475721" dbname="ensembl"/>
+        <ref dbkey="P46977" dbname="uniprot"/>
+        <ref dbkey="ENSP00000446714" dbname="ensembl"/>
+        <ref dbkey="ENSP00000310129" dbname="ensembl"/>
+        <ref dbkey="P62314" dbname="uniprot"/>
+        <ref dbkey="ENSP00000325941" dbname="ensembl"/>
+        <ref dbkey="P62318" dbname="uniprot"/>
+        <ref dbkey="P42025" dbname="uniprot"/>
+        <ref dbkey="ENSP00000363018" dbname="ensembl"/>
+        <ref dbkey="O60942" dbname="uniprot"/>
+        <ref dbkey="ENSP00000361990" dbname="ensembl"/>
+        <ref dbkey="Q8NHY0" dbname="uniprot"/>
+        <ref dbkey="ENSP00000252543" dbname="ensembl"/>
+        <ref dbkey="ENSP00000308622" dbname="ensembl"/>
+        <ref dbkey="P62736" dbname="uniprot"/>
+        <ref dbkey="ENSP00000363559" dbname="ensembl"/>
+        <ref dbkey="P25789" dbname="uniprot"/>
+        <ref dbkey="P46776" dbname="uniprot"/>
+        <ref dbkey="P14868" dbname="uniprot"/>
+        <ref dbkey="P46777" dbname="uniprot"/>
+        <ref dbkey="P46778" dbname="uniprot"/>
+        <ref dbkey="P46779" dbname="uniprot"/>
+        <ref dbkey="ENSP00000346088" dbname="ensembl"/>
+        <ref dbkey="ENSP00000295901" dbname="ensembl"/>
+        <ref dbkey="ENSP00000307889" dbname="ensembl"/>
+        <ref dbkey="Q9NRD5" dbname="uniprot"/>
+        <ref dbkey="Q9NPQ8" dbname="uniprot"/>
+        <ref dbkey="P48643" dbname="uniprot"/>
+        <ref dbkey="ENSP00000375730" dbname="ensembl"/>
+        <ref dbkey="ENSP00000357555" dbname="ensembl"/>
+        <ref dbkey="ENSP00000361076" dbname="ensembl"/>
+        <ref dbkey="ENSP00000339001" dbname="ensembl"/>
+        <ref dbkey="P46782" dbname="uniprot"/>
+        <ref dbkey="P46781" dbname="uniprot"/>
+        <ref dbkey="ENSP00000309830" dbname="ensembl"/>
+        <ref dbkey="P46783" dbname="uniprot"/>
+        <ref dbkey="ENSP00000339795" dbname="ensembl"/>
+        <ref dbkey="ENSP00000196551" dbname="ensembl"/>
+        <ref dbkey="P62081" dbname="uniprot"/>
+        <ref dbkey="ENSP00000345957" dbname="ensembl"/>
+        <ref dbkey="P25398" dbname="uniprot"/>
+        <ref dbkey="ENSP00000244534" dbname="ensembl"/>
+        <ref dbkey="P49368" dbname="uniprot"/>
+        <ref dbkey="P13639" dbname="uniprot"/>
+        <ref dbkey="ENSP00000253788" dbname="ensembl"/>
+        <ref dbkey="P62888" dbname="uniprot"/>
+        <ref dbkey="ENSP00000253255" dbname="ensembl"/>
+        <ref dbkey="ENSP00000261729" dbname="ensembl"/>
+        <ref dbkey="ENSP00000044462" dbname="ensembl"/>
+        <ref dbkey="P62333" dbname="uniprot"/>
+        <ref dbkey="P18077" dbname="uniprot"/>
+        <ref dbkey="ENSP00000332900" dbname="ensembl"/>
+        <ref dbkey="ENSP00000446503" dbname="ensembl"/>
+        <ref dbkey="ENSP00000245458" dbname="ensembl"/>
+        <ref dbkey="P04406" dbname="uniprot"/>
+        <ref dbkey="P61513" dbname="uniprot"/>
+        <ref dbkey="ENSP00000300404" dbname="ensembl"/>
+        <ref dbkey="P08865" dbname="uniprot"/>
+        <ref dbkey="Q14669" dbname="uniprot"/>
+        <ref dbkey="ENSP00000341885" dbname="ensembl"/>
+        <ref dbkey="ENSP00000264258" dbname="ensembl"/>
+        <ref dbkey="ENSP00000216181" dbname="ensembl"/>
+        <ref dbkey="ENSP00000349977" dbname="ensembl"/>
+        <ref dbkey="P61247" dbname="uniprot"/>
+        <ref dbkey="ENSP00000289753" dbname="ensembl"/>
+        <ref dbkey="ENSP00000379888" dbname="ensembl"/>
+        <ref dbkey="P61313" dbname="uniprot"/>
+        <ref dbkey="ENSP00000009589" dbname="ensembl"/>
+        <ref dbkey="ENSP00000259469" dbname="ensembl"/>
+        <ref dbkey="Q8WUA4" dbname="uniprot"/>
+        <ref dbkey="Q9NYC9" dbname="uniprot"/>
+        <ref dbkey="ENSP00000376472" dbname="ensembl"/>
+        <ref dbkey="ENSP00000265000" dbname="ensembl"/>
+        <ref dbkey="P17987" dbname="uniprot"/>
+        <ref dbkey="P49207" dbname="uniprot"/>
+        <ref dbkey="P39019" dbname="uniprot"/>
+        <ref dbkey="ENSP00000300413" dbname="ensembl"/>
+        <ref dbkey="Q96NI8" dbname="uniprot"/>
+        <ref dbkey="ENSP00000211372" dbname="ensembl"/>
+        <ref dbkey="ENSP00000349465" dbname="ensembl"/>
+        <ref dbkey="ENSP00000309572" dbname="ensembl"/>
+        <ref dbkey="ENSP00000362744" dbname="ensembl"/>
+        <ref dbkey="ENSP00000264161" dbname="ensembl"/>
+        <ref dbkey="P16402" dbname="uniprot"/>
+        <ref dbkey="Q16637" dbname="uniprot"/>
+        <ref dbkey="P61254" dbname="uniprot"/>
+        <ref dbkey="ENSP00000295770" dbname="ensembl"/>
+        <ref dbkey="Q02878" dbname="uniprot"/>
+        <ref dbkey="Q15008" dbname="uniprot"/>
+        <ref dbkey="P67936" dbname="uniprot"/>
+        <ref dbkey="Q53GS7" dbname="uniprot"/>
+        <ref dbkey="P63244" dbname="uniprot"/>
+        <ref dbkey="O00159" dbname="uniprot"/>
+        <ref dbkey="P56537" dbname="uniprot"/>
+        <ref dbkey="P39023" dbname="uniprot"/>
+        <ref dbkey="ENSP00000327191" dbname="ensembl"/>
+        <ref dbkey="ENSP00000380156" dbname="ensembl"/>
+        <ref dbkey="Q9Y483" dbname="uniprot"/>
+        <ref dbkey="P04070" dbname="uniprot"/>
+        <ref dbkey="ENSP00000307940" dbname="ensembl"/>
+        <ref dbkey="Q99832" dbname="uniprot"/>
+        <ref dbkey="P62304" dbname="uniprot"/>
+        <ref dbkey="P63173" dbname="uniprot"/>
+        <ref dbkey="P30050" dbname="uniprot"/>
+        <ref dbkey="P20618" dbname="uniprot"/>
+        <ref dbkey="ENSP00000269122" dbname="ensembl"/>
+        <ref dbkey="ENSP00000400591" dbname="ensembl"/>
+        <ref dbkey="ENSP00000435096" dbname="ensembl"/>
+        <ref dbkey="O95816" dbname="uniprot"/>
+        <ref dbkey="P62906" dbname="uniprot"/>
+        <ref dbkey="ENSP00000300036" dbname="ensembl"/>
+        <ref dbkey="P50990" dbname="uniprot"/>
+        <ref dbkey="ENSP00000251453" dbname="ensembl"/>
+        <ref dbkey="ENSP00000227378" dbname="ensembl"/>
+        <ref dbkey="Q00610" dbname="uniprot"/>
+        <ref dbkey="P50991" dbname="uniprot"/>
+        <ref dbkey="Q6DKI1" dbname="uniprot"/>
+        <ref dbkey="Q7RTY8" dbname="uniprot"/>
+        <ref dbkey="P62701" dbname="uniprot"/>
+        <ref dbkey="ENSP00000295897" dbname="ensembl"/>
+        <ref dbkey="ENSP00000215829" dbname="ensembl"/>
+        <ref dbkey="ENSP00000064571" dbname="ensembl"/>
+        <ref dbkey="P05387" dbname="uniprot"/>
+        <ref dbkey="P05386" dbname="uniprot"/>
+        <ref dbkey="ENSP00000289228" dbname="ensembl"/>
+        <ref dbkey="P05388" dbname="uniprot"/>
+        <ref dbkey="P29144" dbname="uniprot"/>
+        <ref dbkey="ENSP00000295756" dbname="ensembl"/>
+        <ref dbkey="ENSP00000332886" dbname="ensembl"/>
+        <ref dbkey="ENSP00000317334" dbname="ensembl"/>
+        <ref dbkey="ENSP00000355890" dbname="ensembl"/>
+        <ref dbkey="ENSP00000389103" dbname="ensembl"/>
+        <ref dbkey="ENSP00000467466" dbname="ensembl"/>
+        <ref dbkey="ENSP00000229239" dbname="ensembl"/>
+        <ref dbkey="ENSP00000280326" dbname="ensembl"/>
+        <ref dbkey="Q14764" dbname="uniprot"/>
+        <ref dbkey="Q86SF2" dbname="uniprot"/>
+        <ref dbkey="ENSP00000348849" dbname="ensembl"/>
+        <ref dbkey="Q9Y3U8" dbname="uniprot"/>
+        <ref dbkey="P40429" dbname="uniprot"/>
+        <ref dbkey="P62277" dbname="uniprot"/>
+        <ref dbkey="ENSP00000269243" dbname="ensembl"/>
+        <ref dbkey="ENSP00000278572" dbname="ensembl"/>
+        <ref dbkey="P62273" dbname="uniprot"/>
+        <ref dbkey="ENSP00000377865" dbname="ensembl"/>
+        <ref dbkey="P32969" dbname="uniprot"/>
+        <ref dbkey="ENSP00000287038" dbname="ensembl"/>
+        <ref dbkey="P62280" dbname="uniprot"/>
+        <ref dbkey="ENSP00000296464" dbname="ensembl"/>
+        <ref dbkey="P18621" dbname="uniprot"/>
+        <ref dbkey="P62424" dbname="uniprot"/>
+        <ref dbkey="ENSP00000354074" dbname="ensembl"/>
+        <ref dbkey="P62829" dbname="uniprot"/>
+        <ref dbkey="ENSP00000418082" dbname="ensembl"/>
+        <ref dbkey="Q9BUF5" dbname="uniprot"/>
+        <ref dbkey="Q9H981" dbname="uniprot"/>
+        <ref dbkey="ENSP00000426909" dbname="ensembl"/>
+        <ref dbkey="ENSP00000447001" dbname="ensembl"/>
+        <ref dbkey="ENSP00000431822" dbname="ensembl"/>
+        <ref dbkey="ENSP00000342787" dbname="ensembl"/>
+        <ref dbkey="Q9H4G0" dbname="uniprot"/>
+        <ref dbkey="Q02543" dbname="uniprot"/>
+        <ref dbkey="ENSP00000397798" dbname="ensembl"/>
+        <ref dbkey="ENSP00000355315" dbname="ensembl"/>
+        <ref dbkey="Q96ST3" dbname="uniprot"/>
+        <ref dbkey="P78371" dbname="uniprot"/>
+        <ref dbkey="P62910" dbname="uniprot"/>
+        <ref dbkey="P62913" dbname="uniprot"/>
+        <ref dbkey="ENSP00000341730" dbname="ensembl"/>
+        <ref dbkey="P35579" dbname="uniprot"/>
+        <ref dbkey="P83881" dbname="uniprot"/>
+        <ref dbkey="P35580" dbname="uniprot"/>
+        <ref dbkey="ENSP00000293842" dbname="ensembl"/>
+        <ref dbkey="P10809" dbname="uniprot"/>
+        <ref dbkey="O95294" dbname="uniprot"/>
+        <ref dbkey="P62917" dbname="uniprot"/>
+        <ref dbkey="ENSP00000330054" dbname="ensembl"/>
+        <ref dbkey="ENSP00000202028" dbname="ensembl"/>
+        <ref dbkey="ENSP00000300933" dbname="ensembl"/>
+        <ref dbkey="ENSP00000275603" dbname="ensembl"/>
+        <ref dbkey="ENSP00000377958" dbname="ensembl"/>
+        <ref dbkey="ENSP00000388107" dbname="ensembl"/>
+        <ref dbkey="ENSP00000270625" dbname="ensembl"/>
+        <ref dbkey="ENSP00000299333" dbname="ensembl"/>
+        <ref dbkey="ENSP00000262424" dbname="ensembl"/>
+        <ref dbkey="ENSP00000302896" dbname="ensembl"/>
+        <ref dbkey="P18124" dbname="uniprot"/>
+        <ref dbkey="Q9H0B8" dbname="uniprot"/>
+        <ref dbkey="ENSP00000472469" dbname="ensembl"/>
+        <ref dbkey="P35268" dbname="uniprot"/>
+        <ref dbkey="ENSP00000283943" dbname="ensembl"/>
+        <ref dbkey="ENSP00000405854" dbname="ensembl"/>
+        <ref dbkey="ENSP00000224784" dbname="ensembl"/>
+        <ref dbkey="Q92545" dbname="uniprot"/>
+        <ref dbkey="ENSP00000251496" dbname="ensembl"/>
+        <ref dbkey="ENSP00000377640" dbname="ensembl"/>
+        <ref dbkey="Q6PIZ9" dbname="uniprot"/>
+        <ref dbkey="P27708" dbname="uniprot"/>
+        <ref dbkey="ENSP00000258091" dbname="ensembl"/>
+        <ref dbkey="ENSP00000299300" dbname="ensembl"/>
+        <ref dbkey="ENSP00000374991" dbname="ensembl"/>
+        <ref dbkey="ENSP00000336842" dbname="ensembl"/>
+        <ref dbkey="P35749" dbname="uniprot"/>
+        <ref dbkey="P60866" dbname="uniprot"/>
+        <ref dbkey="P02768" dbname="uniprot"/>
+        <ref dbkey="P60660" dbname="uniprot"/>
+        <ref dbkey="Q9Y5L0" dbname="uniprot"/>
+        <ref dbkey="ENSP00000354739" dbname="ensembl"/>
+        <ref dbkey="P57678" dbname="uniprot"/>
+        <ref dbkey="ENSP00000164139" dbname="ensembl"/>
+        <ref dbkey="ENSP00000261367" dbname="ensembl"/>
+        <ref dbkey="Q8IWV8" dbname="uniprot"/>
+        <ref dbkey="P08708" dbname="uniprot"/>
+        <ref dbkey="ENSP00000339095" dbname="ensembl"/>
+        <ref dbkey="ENSP00000349960" dbname="ensembl"/>
+        <ref dbkey="P42677" dbname="uniprot"/>
+        <ref dbkey="Q13885" dbname="uniprot"/>
+        <ref dbkey="ENSP00000352834" dbname="ensembl"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-09-12"/>
+        <date type="publication" value="2014-09-16"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001310</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">wash polysome preparation pellet, denature in 8 M urea, lys C digest followed by trypsin digest at 4M urea</field>
+        <field name="data_protocol">Simple mascot search of MassHunter generated mgf without decoy database</field>
+        <field name="instrument_platform">Agilent instrument model</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">dehydrated residue</field>
+        <field name="modification">deaminated residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Technical</field>
+        <field name="submitter_keywords">polysome</field>
+        <field name="submitter_keywords"> silvestrol</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">COMPLETE</field>
+        <field name="software">Matrix Science Mascot 2.2.06</field>
+        <field name="doi">10.6019/PXD001310</field>
+        <field name="submitter">Eric Fang</field>
+        <field name="submitter_mail">eric.fang@novartis.com</field>
+        <field name="submitter_affiliation">Novartis Institutes for BioMedical Research</field>
+        <field name="labhead">Isabel Zaror</field>
+        <field name="labhead_mail">isabel.zaror@novartis.com</field>
+        <field name="labhead_affiliation">Novartis</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001310/2013-02-26-001 EF CR DMSO 60m r1.d.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001310/2013-02-26-002 EF CR SV 60m r1.d.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001310/F002399.dat-pride-filtered.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001310/F002400.dat-pride-filtered.xml.gz</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

@@ -1,0 +1,76 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-08-25</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD002107">
+      <name>Glycoproteomic Analyses of Prostate Cancer Cells</name>
+      <description>Integrated Proteomic and Glycoproteomic Analyses of Prostate Cancer Cells Reveals Glycoprotein Alteration in Protein Abundance and Glycosylation</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="26256267" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2015-04-27"/>
+        <date type="publication" value="2015-08-12"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD002107</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Human prostate cancer cell lines were described in our previous publication (16). The cells were used for proteomic analysis at 80-90% confluence. The cells were washed six times with ice-cold phosphate buffered saline prior to cell lysis for protein extraction. Protein and peptide extraction from cells for proteomic analysis  The cell pellet from two 10cm dishes was first denatured in 1mL of 8M urea and 0.4M NH4HCO3 and sonicated thoroughly.  The protein concentration was measured using a BCA protein assay kit (Thermo). The proteins were then reduced by incubating in 120mM Tris (2-carboxyethyl) phosphine for 30 min and alkylated by addition of 160mM iodoacetamide at room temperature for 30 min in the dark.  Sample was diluted with buffer (100mM Tris-HCl, pH 7.5) containing 0.5ug/ul trypsin and incubated at 37°C overnight. Peptides were purified with C18 desalting columns and dried using a SpeedVac Concentrator.  iTRAQ labeling of global tryptic peptides from cell lines Each iTRAQ (isobaric tags for relative and absolute quantitation) 4-plex reagent was dissolved in 70μl of methanol. 1mg of each tryptic peptide sample was added into 250µl of iTRAQ dissolution buffer, then mixed with iTRAQ 4-plex reagent and incubated for one hour at room temperature. iTRAQ channels 114 and 115 were used to label two replicate LNCaP samples in order to determine the analytical reproducibility, iTRAQ channel 116 was used to label peptides from PC3 cells and iTRAQ channel 117 was used for labeling peptides from another cell line unrelated to this study. After iTRAQ labeling, the 4 sets of tagged peptides were combined and purified by SCX column. Then, 10% of the labeled peptides were dried and resuspended into 0.4% acetic acid solution prior to fractionation for mass spectrometry analysis. The remaining peptides were desalted for glycopeptide capture.</field>
+        <field name="data_protocol">Data generated was searched using SEQUEST in Proteome Discoverer 1.3 (Thermo Scientific, Rockford, IL) against the Human RefSeq database downloaded on 13 August 2014 containing 55926 proteins . Peptides were searched with two tryptic ends, allowing two missed cleavages. Search parameters used were 10ppm precursor tolerance for precursor mass and 0.06Da fragment ion tolerance, static modification of 4plex iTRAQ at N-terminus and lysine, carbamidomethylation at cysteine, and variable modifications of oxidation at methionine. Deamidation at asparagine was applied as a variable modification to identify N-linked glycosylation sites of formerly glycosylated peptides. Filters used for global data analysis included peptide rank 1, two peptides per protein, and 2% FDR threshold. Filters used for glycopeptide analysis was peptide rank 1, 1% FDR in Proteome Discoverer. Data was normalized by protein median.  For intact glycopeptide identification, data was searched in Byonics(18) and in house developed glycopeptide analysis software GPQuest(19)  with the same parameters as mentioned above for proteomic data in the human RefSeq database (Figure 1). Additional parameters for database search were the mammalian N-glycans database and offset was set for one and more. Results were filtered using an in-house software a) for presence of two oxonium ions, b) intensity of the highest oxonium ion being greater than the maximum reporter ion intensity, c) Results were lastly filtered on the basis of reverse database match, all the peptides were filtered below the score of the highest reverse database match.</field>
+        <field name="instrument_platform">Q Exactive</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">epithelial cell</field>
+        <field name="disease">prostate adenocarcinoma</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">No PTMs are included in the dataset</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biomedical</field>
+        <field name="submitter_keywords">Prostate Cancer</field>
+        <field name="submitter_keywords"> LNCap</field>
+        <field name="submitter_keywords"> PC3</field>
+        <field name="submitter_keywords"> glycoproteins</field>
+        <field name="quantification_method">iTRAQ</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Shah P, Wang X, Yang W, Eshghi ST, Sun S, Hoti N, Chen L, Yang S, Pasay J, Rubin A, Zhang H. Integrated Proteomic and Glycoproteomic Analyses of Prostate Cancer Cells Reveals Glycoprotein Alteration in Protein Abundance and Glycosylation. Mol Cell Proteomics. 2015 Aug 9. pii: mcp.M115.047928</field>
+        <field name="submitter">Paul Aiyetan</field>
+        <field name="submitter_mail">paiyeta1@jhmi.edu</field>
+        <field name="submitter_affiliation">Johns Hopkins Medical Institutions</field>
+        <field name="labhead">Hui Zhang</field>
+        <field name="labhead_mail">hzhang32@jhmi.edu</field>
+        <field name="labhead_affiliation">Associate Prosfessor, Johns Hopkins University, Department of Pathology Baltimore USA</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002107/053113_Wang_ITRAQ_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002107/053113_Wang_ITRAQ_10.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002107/053113_Wang_ITRAQ_11.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002107/053113_Wang_ITRAQ_12.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002107/053113_Wang_ITRAQ_13.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002107/053113_Wang_ITRAQ_14.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002107/053113_Wang_ITRAQ_15.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002107/053113_Wang_ITRAQ_16.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002107/053113_Wang_ITRAQ_17.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002107/053113_Wang_ITRAQ_18.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002107/053113_Wang_ITRAQ_19.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002107/053113_Wang_ITRAQ_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002107/053113_Wang_ITRAQ_20.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002107/053113_Wang_ITRAQ_21.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002107/053113_Wang_ITRAQ_22.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002107/053113_Wang_ITRAQ_23.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002107/053113_Wang_ITRAQ_24.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002107/053113_Wang_ITRAQ_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002107/053113_Wang_ITRAQ_4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002107/053113_Wang_ITRAQ_5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002107/053113_Wang_ITRAQ_6.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002107/053113_Wang_ITRAQ_7.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002107/053113_Wang_ITRAQ_8.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002107/053113_Wang_ITRAQ_9-07.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002107/053113_Wang_ITRAQ_9.raw</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

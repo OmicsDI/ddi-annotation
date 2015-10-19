@@ -1,0 +1,103 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000107">
+      <name>Pseudomonas aeruginosa inner membrane proteome</name>
+      <description>The present dataset provides the first description of Pseudomonas aeruginosa inner membrane proteome. To achieve this, we combined efficient separation of membranes from PAO1 reference strain using discontinuous sucrose gradient centrifugation and mass spectrometry-based proteomic analysis. Three biological replicates were prepared and analysed twice by nanoLC-MS/MS (LTQ-Orbitrap Velos pro). Using Mascot (v.2.4), IRMa (v.1.30.4) and homemade hEIDI (v.1.13), a core list of 991 non-redundant proteins was established.</description>
+      <cross_references>
+        <ref dbkey="208964" dbname="TAXONOMY"/>
+        <ref dbkey="23744604" dbname="pubmed"/>
+        <ref dbkey="Q7Z794" dbname="uniprot"/>
+        <ref dbkey="P13645" dbname="uniprot"/>
+        <ref dbkey="P13647" dbname="uniprot"/>
+        <ref dbkey="ENSP00000251643" dbname="ensembl"/>
+        <ref dbkey="P08779" dbname="uniprot"/>
+        <ref dbkey="ENSP00000252242" dbname="ensembl"/>
+        <ref dbkey="ENSP00000252245" dbname="ensembl"/>
+        <ref dbkey="ENSP00000252244" dbname="ensembl"/>
+        <ref dbkey="ENSP00000252252" dbname="ensembl"/>
+        <ref dbkey="P00761" dbname="uniprot"/>
+        <ref dbkey="ENSMUSP00000007317" dbname="ensembl"/>
+        <ref dbkey="Q04695" dbname="uniprot"/>
+        <ref dbkey="Q28582" dbname="uniprot"/>
+        <ref dbkey="Q99456" dbname="uniprot"/>
+        <ref dbkey="ENSP00000310861" dbname="ensembl"/>
+        <ref dbkey="ENSP00000328358" dbname="ensembl"/>
+        <ref dbkey="ENSP00000293308" dbname="ensembl"/>
+        <ref dbkey="Q9CPN9" dbname="uniprot"/>
+        <ref dbkey="ENSP00000373370" dbname="ensembl"/>
+        <ref dbkey="ENSP00000308452" dbname="ensembl"/>
+        <ref dbkey="ENSP00000369317" dbname="ensembl"/>
+        <ref dbkey="P35527" dbname="uniprot"/>
+        <ref dbkey="Q5XKE5" dbname="uniprot"/>
+        <ref dbkey="Q8BGZ7" dbname="uniprot"/>
+        <ref dbkey="P05787" dbname="uniprot"/>
+        <ref dbkey="P35908" dbname="uniprot"/>
+        <ref dbkey="ENSP00000269576" dbname="ensembl"/>
+        <ref dbkey="ENSP00000357791" dbname="ensembl"/>
+        <ref dbkey="ENSMUSP00000031931" dbname="ensembl"/>
+        <ref dbkey="ENSP00000301653" dbname="ensembl"/>
+        <ref dbkey="Q6IMF3" dbname="uniprot"/>
+        <ref dbkey="ENSP00000342710" dbname="ensembl"/>
+        <ref dbkey="P0C1U8" dbname="uniprot"/>
+        <ref dbkey="ENSMUSP00000023709" dbname="ensembl"/>
+        <ref dbkey="P02533" dbname="uniprot"/>
+        <ref dbkey="P02538" dbname="uniprot"/>
+        <ref dbkey="ENSP00000295897" dbname="ensembl"/>
+        <ref dbkey="ENSMUSP00000036246" dbname="ensembl"/>
+        <ref dbkey="ENSP00000246662" dbname="ensembl"/>
+        <ref dbkey="P02768" dbname="uniprot"/>
+        <ref dbkey="ENSP00000167586" dbname="ensembl"/>
+        <ref dbkey="Q6P6Q2" dbname="uniprot"/>
+        <ref dbkey="Q5D862" dbname="uniprot"/>
+        <ref dbkey="P04259" dbname="uniprot"/>
+        <ref dbkey="A2A4G1" dbname="uniprot"/>
+        <ref dbkey="P04264" dbname="uniprot"/>
+        <ref dbkey="Q86YZ3" dbname="uniprot"/>
+        <ref dbkey="P19001" dbname="uniprot"/>
+        <ref dbkey="Q922U2" dbname="uniprot"/>
+        <ref dbkey="O95678" dbname="uniprot"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2012-12-13"/>
+        <date type="publication" value="2013-07-04"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000107</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Not available</field>
+        <field name="instrument_platform">instrument model</field>
+        <field name="instrument_platform">LTQ Orbitrap Velos</field>
+        <field name="species">Pseudomonas aeruginosa (strain ATCC 15692 / PAO1 / 1C / PRS 101 / LMG 12228)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Not available</field>
+        <field name="modification">Not available</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="submitter_keywords">LC-MS/MS</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">COMPLETE</field>
+        <field name="software">Matrix Science Mascot 2.4.0</field>
+        <field name="doi">10.6019/PXD000107</field>
+        <field name="publication">Casabona MG, Vandenbrouck Y, Attree I, Couté Y; Proteomic characterization of Pseudomonas aeruginosa PAO1 inner membrane., Proteomics, 2013 Aug, 13, 16, 2419-23, </field>
+        <field name="submitter">Yohann CoutÃ©</field>
+        <field name="submitter_mail">yohann.coute@cea.fr</field>
+        <field name="submitter_affiliation">Laboratoire d'Etude de la Dynamique des ProtÃ©omes</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000107/IM-1-R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000107/IM-1-R2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000107/IM-2-R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000107/IM-2-R2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000107/IM-3-R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000107/IM-3-R2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000107/PRIDE_Exp_Complete_Ac_28014.xml.gz</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

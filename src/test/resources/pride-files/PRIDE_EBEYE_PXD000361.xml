@@ -1,0 +1,97 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000361">
+      <name>3xMBT protein pull-down</name>
+      <description>Lysine methylation of histone proteins regulates chromatin dynamics and plays important roles in diverse physiological and pathological processes. However, beyond histone proteins, the proteome-wide extent of lysine methylation is largely unknown. We have developed the naturally occurring MBT domain repeats of L3MBTL1 (3xMBT) to serve as a universal affinity reagent for detecting, enriching, and identifying proteins carrying a mono- or dimethylated lysine. The domain is broadly specific for methylated lysine ("pan-specific") and can be applied to any biological system. In experiments using two different instruments (experiment 1 - Orbitrap Elite, experiment 2 - Orbitrap Velos) we have used SILAC to compare proteins captured by 3xMBT to proteins captured by the D355N mutant, which does not bind methylated lysine. Data was analyzed using MaxQuant version 1.3.0.5 using default parameters except that mono and di-methylated lysine were included as variable modifications and modification-specific false discovery rate was set to 10%. Several hundred proteins are specifically enriched by 3xMBT and we have directly detected lysine methylation on about two dozen. We have also used our approach to identify candidate in-cell substrates of G9a and the related methyltransferase GLP. Three-way SILAC was used to compare methylated proteins between cells treated with UNC0638, a specific inhibitor of G9a and GLP, and cells treated with vehicle control. We find reduced capture of the known G9a substrates WIZ and ACIN1, as well as identifying DNA ligase 1 as a potential target for G9a/GLP. Together, our results demonstrate a powerful new approach for global and quantitative analysis of methylated lysine, and they represent the first systems biology understanding of lysine methylation.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="23583077" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2013-07-24"/>
+        <date type="publication" value="2013-11-11"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000361</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Not available</field>
+        <field name="instrument_platform">LTQ Orbitrap Velos</field>
+        <field name="instrument_platform">Q Exactive</field>
+        <field name="instrument_platform">LTQ Orbitrap Elite</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">monomethylated L-lysine</field>
+        <field name="modification">N6,N6-dimethyl-L-lysine</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biomedical</field>
+        <field name="submitter_keywords">Methylation</field>
+        <field name="submitter_keywords"> Dimethylation</field>
+        <field name="submitter_keywords"> 3xMBT</field>
+        <field name="submitter_keywords"> L3MBTL1</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Moore KE, Carlson SM, Camp ND, Cheung P, James RG, Chua KF, Wolf-Yadlin A, Gozani O; A general molecular affinity strategy for global detection and proteomic analysis of lysine methylation., Mol Cell, 2013 May 9, 50, 3, 444-56, </field>
+        <field name="submitter">Scott Carlson</field>
+        <field name="submitter_mail">scottmc@stanford.edu</field>
+        <field name="submitter_affiliation">Biology</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/20130130_Heavy_nuc_F1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/20130130_Heavy_nuc_F2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/20130130_Heavy_nuc_F3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/20130130_Heavy_nuc_F4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/20130130_Heavy_nuc_F5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/20130130_Heavy_nuc_F6.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/D3_13C-Met_F1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/D3_13C-Met_F2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/D3_13C-Met_F3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/D3_13C-Met_F4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/D3_13C-Met_F5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/D3_13C-Met_F6.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/D3_13C-Methionine.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/Expt-1_MBT-heavy_F1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/Expt-1_MBT-heavy_F2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/Expt-1_MBT-heavy_F3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/Expt-1_MBT-heavy_F4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/Expt-1_MBT-heavy_F5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/Expt-1_MBT-heavy_F6.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/Expt-1_MBT-light_F1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/Expt-1_MBT-light_F2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/Expt-1_MBT-light_F3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/Expt-1_MBT-light_F4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/Expt-1_MBT-light_F5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/Expt-1_MBT-light_F6.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/Expt-1_MBT-light_input.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/Expt-2_MBT-heavy_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/Expt-2_MBT-heavy_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/Expt-2_MBT-heavy_input.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/Expt-2_MBT-light_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/Expt-2_MBT-light_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/Expt-2_input.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/MBT Experiment 2.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/MBT_K4R6.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/MBT_light.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/UNC Heavy Nuclear 2D.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/UNC Heavy.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/UNC Light.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/UNC heavy chromatin.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/UNC heavy cytoplasmic.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/UNC heavy loading control.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/UNC heavy nuclear.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/UNC light chromatin.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/UNC light cytoplasmic.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/UNC light loading control.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/11/PXD000361/UNC light nuclear.raw</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

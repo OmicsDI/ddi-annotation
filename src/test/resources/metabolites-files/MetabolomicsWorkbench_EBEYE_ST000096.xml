@@ -1,0 +1,386 @@
+<database>
+  <name>MetabolomicsWorkbench</name>
+  <description>The Metabolomics Workbench will serve as a national and international repository for metabolomics data and metadata and will provide analysis tools and access to metabolite standards, protocols, tutorials, training, and more.</description>
+  <release>1.0</release>
+  <release_date>15-05-20</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="ST000096">
+      <name>A study of changes in lipid metabolism of ovarian cancer cells co-cultured with adipocytes: UPLC-QTRAP MS analysis</name>
+      <description>The study investigated the interaction between omental adipocytes and OvCa cells, as a follow up to preliminary data indicating this leads to reprograming of metabolic (especially lipid) profiles in both adipocytes and OvCa cells as ovarian cancer cells (OvCa) readily metastasize to the omental fat pad in the abdomen and stimulate the release of fatty acids. In order to mimic the interaction between OvCa and omental adipocytes during metastasis, a coculture system was used that employed OvCa cells and primary human adipocytes isolated from omentum. Human primary adipocytes were isolated from omental explants from patients undergoing surgery for benign conditions. After surgical removal, omental tissue was digested with collagenase I, and primary cultures of adipocytes were established, characterized, and incorporated into the co-culture. The primary adipocytes were isolated and co-cultured with the OvCa cell line Skov3ip1. In this current submission, the the samples will be collected at 4, 18 and 24 hour time points post co-culture to determine the time dependent effect on lipid mediators, including oxylipins and ceramides. The study results included in this DRCC submission were the 18 hour time point data for oxylipins and ceramides from targeted metabolomic analysis of lipid mediators performed by the Newman lab.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="34159" dbname="ChEBI"/>
+        <ref dbkey="72644" dbname="ChEBI"/>
+        <ref dbkey="72644" dbname="ChEBI"/>
+        <ref dbkey="72644" dbname="ChEBI"/>
+        <ref dbkey="72644" dbname="ChEBI"/>
+        <ref dbkey="63966" dbname="ChEBI"/>
+        <ref dbkey="63969" dbname="ChEBI"/>
+        <ref dbkey="34130" dbname="ChEBI"/>
+        <ref dbkey="34130" dbname="ChEBI"/>
+        <ref dbkey="19138" dbname="ChEBI"/>
+        <ref dbkey="19138" dbname="ChEBI"/>
+        <ref dbkey="19138" dbname="ChEBI"/>
+        <ref dbkey="38299" dbname="ChEBI"/>
+        <ref dbkey="38299" dbname="ChEBI"/>
+        <ref dbkey="19138" dbname="ChEBI"/>
+        <ref dbkey="28728" dbname="ChEBI"/>
+        <ref dbkey="28728" dbname="ChEBI"/>
+        <ref dbkey="15553" dbname="ChEBI"/>
+        <ref dbkey="15553" dbname="ChEBI"/>
+        <ref dbkey="15551" dbname="ChEBI"/>
+        <ref dbkey="15553" dbname="ChEBI"/>
+        <ref dbkey="28031" dbname="ChEBI"/>
+        <ref dbkey="15551" dbname="ChEBI"/>
+        <ref dbkey="15544" dbname="ChEBI"/>
+        <ref dbkey="15555" dbname="ChEBI"/>
+        <ref dbkey="15555" dbname="ChEBI"/>
+        <ref dbkey="15647" dbname="ChEBI"/>
+        <ref dbkey="6498" dbname="ChEBI"/>
+        <ref dbkey="63981" dbname="ChEBI"/>
+        <ref dbkey="63970" dbname="ChEBI"/>
+        <ref dbkey="34486" dbname="ChEBI"/>
+        <ref dbkey="34486" dbname="ChEBI"/>
+        <ref dbkey="28209" dbname="ChEBI"/>
+        <ref dbkey="28689" dbname="ChEBI"/>
+        <ref dbkey="63974" dbname="ChEBI"/>
+        <ref dbkey="72867" dbname="ChEBI"/>
+        <ref dbkey="28689" dbname="ChEBI"/>
+        <ref dbkey="28158" dbname="ChEBI"/>
+        <ref dbkey="28158" dbname="ChEBI"/>
+        <ref dbkey="52449" dbname="ChEBI"/>
+        <ref dbkey="52449" dbname="ChEBI"/>
+        <ref dbkey="28209" dbname="ChEBI"/>
+        <ref dbkey="28209" dbname="ChEBI"/>
+        <ref dbkey="53081" dbname="ChEBI"/>
+        <ref dbkey="53081" dbname="ChEBI"/>
+        <ref dbkey="15559" dbname="ChEBI"/>
+        <ref dbkey="27562" dbname="ChEBI"/>
+        <ref dbkey="34306" dbname="ChEBI"/>
+        <ref dbkey="71466" dbname="ChEBI"/>
+        <ref dbkey="17553" dbname="ChEBI"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="14-07-24"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Metabolomics</field>
+        <field name="full_dataset_link">http://www.metabolomicsworkbench.org/data/DRCCMetadata.php?Mode=Study&amp;StudyID=ST000096</field>
+        <field name="repository">MetabolomicsWorkbench</field>
+        <field name="data_protocol">Endocannabinoid analysis, positive</field>
+        <field name="data_protocol">Ceramide analysis, Positive</field>
+        <field name="data_protocol">Oxylipins analysis,Negative</field>
+        <field name="instrument_platform">Waters Acquity UPLC (Waters)</field>
+        <field name="instrument_platform">Waters Acquity UPLC (Waters)</field>
+        <field name="instrument_platform">Waters Acquity UPLC (Waters)</field>
+        <field name="study_factor">Sample Type:Media blank | Timepoint:4 hours</field>
+        <field name="study_factor">Sample Type:Co-culture  | Timepoint:4 hours</field>
+        <field name="study_factor">Sample Type:Control  | Timepoint:18 hours</field>
+        <field name="study_factor">Sample Type:Adipocyte  | Timepoint:4 hours</field>
+        <field name="study_factor">Sample Type:Control  | Timepoint:4 hours</field>
+        <field name="study_factor">Sample Type:Adipocyte  | Timepoint:18 hours</field>
+        <field name="study_factor">Sample Type:Media blank | Timepoint:NA</field>
+        <field name="study_factor">Sample Type:Co-culture  | Timepoint:18 hours</field>
+        <field name="species">Homo sapiens</field>
+        <field name="technology_type">mass spectrometry</field>
+        <field name="metabolite_name">15-deoxy PGJ2</field>
+        <field name="metabolite_name">15-HEPE</field>
+        <field name="metabolite_name">15,16-DiHODE</field>
+        <field name="metabolite_name">15(16)-EpODE</field>
+        <field name="metabolite_name">15-HETE</field>
+        <field name="metabolite_name">15-HEPE</field>
+        <field name="metabolite_name">15-HETE</field>
+        <field name="metabolite_name">15-HpETE</field>
+        <field name="metabolite_name">15-HpETE</field>
+        <field name="metabolite_name">15-HETrE</field>
+        <field name="metabolite_name">15-HETrE</field>
+        <field name="metabolite_name">13-HODE</field>
+        <field name="metabolite_name">13-HOTE</field>
+        <field name="metabolite_name">13-HpODE</field>
+        <field name="metabolite_name">13-HpODE</field>
+        <field name="metabolite_name">13-KODE</field>
+        <field name="metabolite_name">13-KODE</field>
+        <field name="metabolite_name">14,15-DiHETE</field>
+        <field name="metabolite_name">14,15-DiHETrE</field>
+        <field name="metabolite_name">11(12)-EpETE</field>
+        <field name="metabolite_name">11,12-DiHETrE</field>
+        <field name="metabolite_name">11,12,15-THET</field>
+        <field name="metabolite_name">14(15)-EpETE</field>
+        <field name="metabolite_name">11-HETE</field>
+        <field name="metabolite_name">11-HETE</field>
+        <field name="metabolite_name">14-HDoHE</field>
+        <field name="metabolite_name">11(12)-EpETrE</field>
+        <field name="metabolite_name">14(15)-EpETrE</field>
+        <field name="metabolite_name">11(12)-EpETrE</field>
+        <field name="metabolite_name">12,13-DiHOME</field>
+        <field name="metabolite_name">12,13-DiHODE</field>
+        <field name="metabolite_name">12-HpETE</field>
+        <field name="metabolite_name">12-HETE</field>
+        <field name="metabolite_name">12-HETE</field>
+        <field name="metabolite_name">12(13)-EpOME</field>
+        <field name="metabolite_name">12-HEPE</field>
+        <field name="metabolite_name">12(13)-EpODE</field>
+        <field name="metabolite_name">12(13)-EpOME</field>
+        <field name="metabolite_name">12(13)-Ep-9-KODE</field>
+        <field name="metabolite_name">12(13)-Ep-9-KODE</field>
+        <field name="metabolite_name">13-HODE</field>
+        <field name="metabolite_name">12-HpETE</field>
+        <field name="metabolite_name">18:1 Sphingosine</field>
+        <field name="metabolite_name">18:1 Sphingosine</field>
+        <field name="metabolite_name">18:0 Sphingosine-1P</field>
+        <field name="metabolite_name">TXB2</field>
+        <field name="metabolite_name">Resolvin E1</field>
+        <field name="metabolite_name">Resolvin D1</field>
+        <field name="metabolite_name">PGJ2/ d 12-PGJ2</field>
+        <field name="metabolite_name">PGF2a</field>
+        <field name="metabolite_name">PGE2</field>
+        <field name="metabolite_name">PGF2a</field>
+        <field name="metabolite_name">PGE3</field>
+        <field name="metabolite_name">PGE2</field>
+        <field name="metabolite_name">PGE1</field>
+        <field name="metabolite_name">PGD2</field>
+        <field name="metabolite_name">PGD2</field>
+        <field name="metabolite_name">LTB5</field>
+        <field name="metabolite_name">LTB4</field>
+        <field name="metabolite_name">Lipoxin A4</field>
+        <field name="metabolite_name">9-KODE</field>
+        <field name="metabolite_name">9-KODE</field>
+        <field name="metabolite_name">12,13-DiHOME</field>
+        <field name="metabolite_name">9-HpODE</field>
+        <field name="metabolite_name">9-HpODE</field>
+        <field name="metabolite_name">C18:1 Ceramide</field>
+        <field name="metabolite_name">C18 Ceramide</field>
+        <field name="metabolite_name">9(10)-EpOME</field>
+        <field name="metabolite_name">C16 Ceramide</field>
+        <field name="metabolite_name">9(10)-EpOME</field>
+        <field name="metabolite_name">C18:1 Ceramide</field>
+        <field name="metabolite_name">9(10)-EpODE</field>
+        <field name="metabolite_name">C14 Ceramide</field>
+        <field name="metabolite_name">C16 Ceramide</field>
+        <field name="metabolite_name">18:1 Sphingosine-1P</field>
+        <field name="metabolite_name">C14 Ceramide</field>
+        <field name="metabolite_name">C18 Ceramide</field>
+        <field name="metabolite_name">C18 dihydroceramide</field>
+        <field name="metabolite_name">9-HEPE</field>
+        <field name="metabolite_name">9-HETE</field>
+        <field name="metabolite_name">9,12,13-TriHOME</field>
+        <field name="metabolite_name">9,12,13-TriHOME</field>
+        <field name="metabolite_name">9-HODE</field>
+        <field name="metabolite_name">9-HOTE</field>
+        <field name="metabolite_name">9-HETE</field>
+        <field name="metabolite_name">9-HODE</field>
+        <field name="metabolite_name">C24 dihydroceramide</field>
+        <field name="metabolite_name">8,15-DiHETE</field>
+        <field name="metabolite_name">11(12)-EpETre EA</field>
+        <field name="metabolite_name">6-trans-LTB4</field>
+        <field name="metabolite_name">15-HETE EA</field>
+        <field name="metabolite_name">8(9)-EpETrE</field>
+        <field name="metabolite_name">1-AG b</field>
+        <field name="metabolite_name">8,9-DiHETrE</field>
+        <field name="metabolite_name">C20 Ceramide</field>
+        <field name="metabolite_name">C20 Ceramide</field>
+        <field name="metabolite_name">C24 Ceramide</field>
+        <field name="metabolite_name">C24 Ceramide</field>
+        <field name="metabolite_name">1-LG b</field>
+        <field name="metabolite_name">8-HETE</field>
+        <field name="metabolite_name">C18 dihydroceramide</field>
+        <field name="metabolite_name">8-HETE</field>
+        <field name="metabolite_name">9,10-13-TriHOME</field>
+        <field name="metabolite_name">9,10-13-TriHOME</field>
+        <field name="metabolite_name">9,10-DiHODE</field>
+        <field name="metabolite_name">9,10-DiHOME</field>
+        <field name="metabolite_name">9,10-DiHOME</field>
+        <field name="metabolite_name">AEA</field>
+        <field name="metabolite_name">aLEA</field>
+        <field name="metabolite_name">2-LG b</field>
+        <field name="metabolite_name">2-OG b</field>
+        <field name="metabolite_name">5-HETE</field>
+        <field name="metabolite_name">Dihomo GLA EA</field>
+        <field name="metabolite_name">5-HEPE</field>
+        <field name="metabolite_name">LEA</field>
+        <field name="metabolite_name">5,6-DiHETrE</field>
+        <field name="metabolite_name">DEA</field>
+        <field name="metabolite_name">5,15-DiHETE</field>
+        <field name="metabolite_name">DHEA</field>
+        <field name="metabolite_name">4-HDoHE</field>
+        <field name="metabolite_name">6-keto PGF1a</field>
+        <field name="metabolite_name">6-keto PGF1a</field>
+        <field name="metabolite_name">5-KETE</field>
+        <field name="metabolite_name">5-KETE</field>
+        <field name="metabolite_name">2-AG b</field>
+        <field name="metabolite_name">5-HETE</field>
+        <field name="metabolite_name">1-OG b</field>
+        <field name="metabolite_name">5-HpETE</field>
+        <field name="metabolite_name">PGE2 1G</field>
+        <field name="metabolite_name">19,20-DiHDoPA</field>
+        <field name="metabolite_name">PGE2 EA</field>
+        <field name="metabolite_name">17-HDoHE</field>
+        <field name="metabolite_name">PGF2a 1G</field>
+        <field name="metabolite_name">PGF2a EA</field>
+        <field name="metabolite_name">SEA</field>
+        <field name="metabolite_name">16(17)-EpDPE</field>
+        <field name="metabolite_name">15-KETE</field>
+        <field name="metabolite_name">17(18)-EpETE</field>
+        <field name="metabolite_name">17,18-DiHETE</field>
+        <field name="metabolite_name">20-carboxy-LTB4</field>
+        <field name="metabolite_name">20-HETE</field>
+        <field name="metabolite_name">20-hydroxy-LTB4</field>
+        <field name="metabolite_name">4-HDoHE</field>
+        <field name="metabolite_name">OEA</field>
+        <field name="metabolite_name">PGD2 EA</field>
+        <field name="metabolite_name">PEA</field>
+        <field name="metabolite_name">19(20)-EpDPE</field>
+        <field name="pubchem_id">5311211</field>
+        <field name="pubchem_id">53480357</field>
+        <field name="pubchem_id">16061068</field>
+        <field name="pubchem_id">16061062</field>
+        <field name="pubchem_id">9966861</field>
+        <field name="pubchem_id">53480357</field>
+        <field name="pubchem_id">9966861</field>
+        <field name="pubchem_id">44322431</field>
+        <field name="pubchem_id">44322431</field>
+        <field name="pubchem_id">44322431</field>
+        <field name="pubchem_id">44322431</field>
+        <field name="pubchem_id">5282948</field>
+        <field name="pubchem_id">10469728</field>
+        <field name="pubchem_id">10469728</field>
+        <field name="pubchem_id">10469728</field>
+        <field name="pubchem_id">6446027</field>
+        <field name="pubchem_id">6446027</field>
+        <field name="pubchem_id">16061119</field>
+        <field name="pubchem_id">5283147</field>
+        <field name="pubchem_id">16061087</field>
+        <field name="pubchem_id">5283146</field>
+        <field name="pubchem_id">16061088</field>
+        <field name="pubchem_id">14123410</field>
+        <field name="pubchem_id">14123410</field>
+        <field name="pubchem_id">11566378</field>
+        <field name="pubchem_id">5283204</field>
+        <field name="pubchem_id">11954058</field>
+        <field name="pubchem_id">5283204</field>
+        <field name="pubchem_id">10236635</field>
+        <field name="pubchem_id">16061067</field>
+        <field name="pubchem_id">13786989</field>
+        <field name="pubchem_id">13786989</field>
+        <field name="pubchem_id">13786989</field>
+        <field name="pubchem_id">5356421</field>
+        <field name="pubchem_id">10041593</field>
+        <field name="pubchem_id">16061054</field>
+        <field name="pubchem_id">5356421</field>
+        <field name="pubchem_id">10236635</field>
+        <field name="pubchem_id">10236635</field>
+        <field name="pubchem_id">5282948</field>
+        <field name="pubchem_id">13786989</field>
+        <field name="pubchem_id">42608348</field>
+        <field name="pubchem_id">42608348</field>
+        <field name="pubchem_id">5283137</field>
+        <field name="pubchem_id">5283137</field>
+        <field name="pubchem_id">10473088</field>
+        <field name="pubchem_id">44251266</field>
+        <field name="pubchem_id">5283078</field>
+        <field name="pubchem_id">5283078</field>
+        <field name="pubchem_id">5280360</field>
+        <field name="pubchem_id">5283078</field>
+        <field name="pubchem_id">5280937</field>
+        <field name="pubchem_id">5280360</field>
+        <field name="pubchem_id">5280723</field>
+        <field name="pubchem_id">448457</field>
+        <field name="pubchem_id">448457</field>
+        <field name="pubchem_id">5283125</field>
+        <field name="pubchem_id">5280492</field>
+        <field name="pubchem_id">5280914</field>
+        <field name="pubchem_id">9839084</field>
+        <field name="pubchem_id">9839084</field>
+        <field name="pubchem_id">10236635</field>
+        <field name="pubchem_id">53480359</field>
+        <field name="pubchem_id">53480359</field>
+        <field name="pubchem_id">2498</field>
+        <field name="pubchem_id">6372196</field>
+        <field name="pubchem_id">6246154</field>
+        <field name="pubchem_id">2498</field>
+        <field name="pubchem_id">6246154</field>
+        <field name="pubchem_id">2498</field>
+        <field name="pubchem_id">16061060</field>
+        <field name="pubchem_id">5176144</field>
+        <field name="pubchem_id">2498</field>
+        <field name="pubchem_id">42608348</field>
+        <field name="pubchem_id">5176144</field>
+        <field name="pubchem_id">6372196</field>
+        <field name="pubchem_id">5283573</field>
+        <field name="pubchem_id">16061129</field>
+        <field name="pubchem_id">14123398</field>
+        <field name="pubchem_id">9858729</field>
+        <field name="pubchem_id">9858729</field>
+        <field name="pubchem_id">5282944</field>
+        <field name="pubchem_id">53480359</field>
+        <field name="pubchem_id">14123398</field>
+        <field name="pubchem_id">5282944</field>
+        <field name="pubchem_id">5283571</field>
+        <field name="pubchem_id">53480358</field>
+        <field name="pubchem_id">16061183</field>
+        <field name="pubchem_id">5283128</field>
+        <field name="pubchem_id">44256595</field>
+        <field name="pubchem_id">5353364</field>
+        <field name="pubchem_id">44256595</field>
+        <field name="pubchem_id">5283144</field>
+        <field name="pubchem_id">4307993</field>
+        <field name="pubchem_id">4307993</field>
+        <field name="pubchem_id">5283571</field>
+        <field name="pubchem_id">5283571</field>
+        <field name="pubchem_id">44256595</field>
+        <field name="pubchem_id">11976122</field>
+        <field name="pubchem_id">5283573</field>
+        <field name="pubchem_id">11976122</field>
+        <field name="pubchem_id">5282965</field>
+        <field name="pubchem_id">5282965</field>
+        <field name="pubchem_id">16061066</field>
+        <field name="pubchem_id">9966640</field>
+        <field name="pubchem_id">9966640</field>
+        <field name="pubchem_id">462074</field>
+        <field name="pubchem_id">462074</field>
+        <field name="pubchem_id">44256595</field>
+        <field name="pubchem_id">44256595</field>
+        <field name="pubchem_id">9862886</field>
+        <field name="pubchem_id">5881</field>
+        <field name="pubchem_id">6439678</field>
+        <field name="pubchem_id">5283446</field>
+        <field name="pubchem_id">5283142</field>
+        <field name="pubchem_id">2186</field>
+        <field name="pubchem_id">59878863</field>
+        <field name="pubchem_id">5881</field>
+        <field name="pubchem_id">14429109</field>
+        <field name="pubchem_id">5280888</field>
+        <field name="pubchem_id">5280888</field>
+        <field name="pubchem_id">5283159</field>
+        <field name="pubchem_id">5283159</field>
+        <field name="pubchem_id">44256595</field>
+        <field name="pubchem_id">9862886</field>
+        <field name="pubchem_id">44256595</field>
+        <field name="pubchem_id">9862886</field>
+        <field name="pubchem_id">5283120</field>
+        <field name="pubchem_id">6439179</field>
+        <field name="pubchem_id">5283119</field>
+        <field name="pubchem_id">6439179</field>
+        <field name="pubchem_id">5283119</field>
+        <field name="pubchem_id">53481911</field>
+        <field name="pubchem_id">53481911</field>
+        <field name="pubchem_id">14392758</field>
+        <field name="pubchem_id">5280701</field>
+        <field name="pubchem_id">16061089</field>
+        <field name="pubchem_id">16061120</field>
+        <field name="pubchem_id">5280877</field>
+        <field name="pubchem_id">5283157</field>
+        <field name="pubchem_id">1589</field>
+        <field name="pubchem_id">14429109</field>
+        <field name="pubchem_id">5283454</field>
+        <field name="pubchem_id">5283120</field>
+        <field name="pubchem_id">1015</field>
+        <field name="pubchem_id">11631565</field>
+        <field name="submitter">Newman John</field>
+        <field name="submitter_mail">john.newman@ars.usda.gov</field>
+        <field name="submitter_affiliation">U.S.D.A. Western Human Nutrition Research Center, University of California, Davis</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

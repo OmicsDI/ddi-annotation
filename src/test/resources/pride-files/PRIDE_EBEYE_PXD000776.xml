@@ -1,0 +1,69 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000776">
+      <name>Quantitative proteomic analysis of large and small extracellular vesicles from prostate cancer cells</name>
+      <description>Extracellular vesicles (EVs) are membranous structures of variable size, shed from diverse cell types including highly invasive, fast migrating, amoeboid tumor cells. Silencing of the Diaphanous-related formin-3 (DIAPH3) protein in DU145 prostate cancer cells induces an amoeboid phenotype characterized by membrane blebbing and shedding of an atypically large population of EVs termed large oncosomes. We employed this cell system to characterize, for the first time, the global protein composition of large oncosomes and small EVs. The salient finding of this study, revealed by SILAC-based LC-MS/MS analysis was the identification of 20 unique proteins in large oncosomes and 7 in small EVs. Additionally, both types of EV were significantly enriched in proteins with cancer-related functions, suggesting that tumor interactions with the microenvironment are influenced by EV cargo. Proteins belonging to a series of functional classes, including GTPases, ESCRTs, RNA-binding proteins and membrane proteins, often identified in and which are sometimes considered specific for exosomes, appeared in both EV populations. Proteins such as CK18 and FN1, significantly enriched in large oncosomes, were selected to develop an assay to detect large oncosomes in the circulation. Finally, proteins over-represented in large oncosomes versus small EVs with at least a four-fold enrichment were significantly associated with cell migration, docetaxel resistance, angiogenesis, and prostate cancer bone metastasis, suggesting a distinct functional role in tumor progression for this larger class of EV. These observations indicate that, despite their origination from the same cell donors, the two distinct EV populations are enriched in different proteins and contribute diversified functions. These findings underscore the need for additional in-depth analyses to understand the unique contribution of subpopulations of EVs to tumor progression.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-02-25"/>
+        <date type="publication" value="2015-03-18"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000776</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">SILAC-labeled proteins were mixed at a 1:1 ratio, separated by 10% SDS-PAGE, and stained with Coomassie Brilliant Blue solution (Bio-Rad). Each lane was cut into ten gel slices of similar size and further cut into about 1 mm3 particles. Proteins were reduced by 10 mM dithiothreitol (DTT), alkylated by 55 mM iodoacetamide, and digested with mass spectrometry-grade trypsin (Promega) at 37°C for 16 h. Tryptic peptides were successively extracted with 100 μL of 5% acetic acid, 100 μL of 2.5% acetic acid and 50% acetonitrile, and 100 μL of 100% acetonitrile. Samples were dried down in a SpeedVac concentrator (Thermo Scientific) and stored at -80°C until MS analysis. Tryptic peptides were redissolved with 20 μL 1.5% acetic acid and 5% acetonitrile. Samples (10 μL each) were analyzed by online C18 nanoflow reversed-phase HPLC (Eksigent nanoLC∙2D™) connected to an LTQ Orbitrap XL mass spectrometer (Thermo Scientific). Briefly, samples were loaded onto a 15 cm nanospray column (75 μm inner diameter, Magic C18 AQ, 3 μm particle size, 200Å pore size, Precision Capillary Columns) and separated at 300 nL/min with a 60-min gradient from 5 to 35% acetonitrile in 0.1% formic acid. MS data were acquired in a data-dependent manner selecting the fragmentation events based on the precursor abundance in the survey scan (350-1600 Th). The resolution of the survey scan was set at 30,000 at m/z 400 Th. Dynamic exclusion was 90 s. After each survey scan, up to ten collision-induced dissociation (CID) MS/MS spectra were acquired in the linear ion trap.</field>
+        <field name="data_protocol">The MS data were analyzed using MaxQuant (v1.3.0.5). Proteins were identified by searching MS/MS spectra against the Uniprot database for Human (released on 09/11/2012, 84,680 entries) combined with 262 common contaminants by the Andromeda search engine, with second peptide identification enabled. Carbamidomethylation of cysteines was set as a fixed modification, oxidation of methionines and acetylation of the protein N-terminus as variable modifications. Trypsin allowing for cleavage N-terminal to proline was chosen as the enzyme specificity. A maximum of two missed cleavages were allowed. The minimum peptide length was specified to be seven amino acids. The maximal mass tolerance in MS mode was set to 20 ppm for first search and 6 ppm for main search, and in MS/MS mode 0.7 Da. The maximum false discovery rates for peptide and protein identifications were specified as 0.01.</field>
+        <field name="instrument_platform">LTQ Orbitrap</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">epithelial cell</field>
+        <field name="disease">prostate adenocarcinoma</field>
+        <field name="tissue">cell culture</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">acetylated residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biomedical</field>
+        <field name="submitter_keywords">SILAC; large oncosomes; small extracellular vesicles; prostate cancer; exosomes; DIAPH3; DU145</field>
+        <field name="quantification_method">SILAC</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="submitter">Wei Yang</field>
+        <field name="submitter_mail">omician@gmail.com</field>
+        <field name="submitter_affiliation">Cedars-Sinai Medical Center</field>
+        <field name="labhead">Wei Yang</field>
+        <field name="labhead_mail">omician@gmail.com</field>
+        <field name="labhead_affiliation">Cedars-Sinai Medical Center</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000776/SILAC101.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000776/SILAC102.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000776/SILAC103.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000776/SILAC104.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000776/SILAC105.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000776/SILAC106.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000776/SILAC107.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000776/SILAC108.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000776/SILAC109.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000776/SILAC110.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000776/SILAC201.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000776/SILAC202.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000776/SILAC203.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000776/SILAC204.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000776/SILAC205.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000776/SILAC206.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000776/SILAC207.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000776/SILAC208.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000776/SILAC209.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000776/SILAC210.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000776/txt.zip</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

@@ -1,0 +1,65 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000804">
+      <name>Exploring potential virulence regulators in Paracoccidioides brasiliensis isolates of varying virulence through quantitative proteomics</name>
+      <description>Paracoccidioides brasiliensis is the agent of paracoccidioidomycosis, an important systemic mycosis in Latin America. Few virulence factors have been identified for this pathogen. In this study, we quantitatively evaluated the protein composition of P. brasiliensis in the yeast phase using minimal and rich media to obtain a better understanding of its virulence and to gain new insights into pathogen adaptation strategies. This analysis was performed on two isolates of the Pb18 strain showing distinct infection profiles in B10.A mice. Using liquid chromatography/tandem mass spectrometry (LC-MS/MS) analysis, we identified and quantified 317 proteins in minimal medium, 29 of which were overexpressed in virulent Pb18. In rich medium, 29 out of 214 identified proteins were over-expressed in the virulent fungus. Alcohol dehydrogenase, mitochondrial peroxiredoxin PRX1 and protein vacuolar ATP synthase catalytic subunit A were up-regulated in virulent Pb18 in both media, suggesting potential roles of these proteins in virulence regulation in P. brasiliensis. Proteins up-regulated in both isolates were grouped according to their functional categories. Virulent Pb18 undergoes metabolic reorganization and increased expression of proteins involved in fermentative respiration. This approach allowed us to identify potential virulence regulators and to understand how Paracoccidioides modulates the host-pathogen interaction to its advantage. Data are available via ProteomeXchange Consortium with identifier PXD000804.</description>
+      <cross_references>
+        <ref dbkey="502780" dbname="TAXONOMY"/>
+        <ref dbkey="25145636" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-07-22"/>
+        <date type="publication" value="2014-08-28"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000804</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Protein reduction, alkylation and enzymatic digestion Proteins were processed according to the protocol of Kleifeld and co-workers (2011) with some modifications. Briefly, 200 ug of protein from each sample (vPb18 and aPb18) were denatured with 4.0 M GuHCl (guanidine hydrochloride). Following the reduction of disulfide bonds with 5 mM dithiothreitol (DTT) for 1 h at 65°C and alkylation of cysteine with 15 mM iodoacetamide (IAA) for 1 h at room temperature in the dark, the proteins were precipitated with 8 volumes of cold acetone and dried in a SpeedVac (Thermo Scientific, Bremen, GA, USA). The proteins were subsequently dissolved in 5 uL of 100 mM NaOH and digested with 2 ug of sequencing grade modified trypsin (Promega, Madison, WI, USA) in 195 L of 50 mM HEPES buffer (pH 7.5) overnight at 37°C. Dimethyl Labeling: Briefly, tryptic peptides (pH 6-7) from each sample (vPb18 and aPb18 cultivated in MM or RM) were incubated overnight at 37°C with 1 M NaBD3CN (to a final concentration of 20 mM) and labeled with 2 M 12CH2O (light formaldehyde) for the aPb18 samples or 13CD2O (heavy formaldehyde) for the vPb18 samples to a final concentration of 40 mM light/heavy formaldehyde, resulting in mass differences of +30.04 and +36.08 Da for the light and heavy formaldehyde, respectively, for each completely labeled N-terminal or Lys site. We repeated the labeling with light or heavy formaldehyde (to strengthen the labeling) via incubation for an additional 2 h at 37°C with 1 M NaBD3CN (to a final concentration of 10 mM) and labeling with 2 M 12CH2O or 13CD2O at a final concentration of 20 mM. The reaction was terminated by adding 1 M Tris (pH 6.8; to a final concentration of 200 mM) to each sample and incubating for 2 h at 37°C. Then, the samples labeled with the light and heavy isotopes were combined (1:1) and cleaned up using StageTips (C18-SCX-C18) according to the published protocol provided by Rappsilber and co-workers (2007). After desalting, the samples were finally dried in a SpeedVac and redissolved in 0.1% formic acid prior to nano-LC-MS/MS analysis. Mass spectrometric analysis All of the samples were analyzed on an LTQ-Orbitrap Velos (Thermo Fisher Scientific, Bremen, GA, USA) connected to an Easy-nLCII (Thermo Fisher Scientific, Bremen, GA, USA).</field>
+        <field name="data_protocol">Two independently produced biological replicates for each medium (MM or RM) were used to prepare the virulent and attenuated samples for proteomic analysis, and each sample was analyzed in triplicate via LC-MS/MS. The raw MS data were processed in PEAKS Studio 7 (Bioinformatics Solutions Inc., Waterloo, Canada) against the Paracoccidioides brasiliensis strain Pb18 database (8,741 entries, Paracoccidioides brasiliensis Sequencing Project, Broad Institute of Harvard and MIT, http://www.broadinstitute.org). Searches were performed with a precursor mass tolerance of 15 ppm, a fragment mass tolerances of 0.5 Da, carbamidomethylation of Cys as a fixed modification, and oxidation of Met, acetylation of protein N-termini, the deamidation of Asn/Gln and light- or heavy-dimethyl labeling of N-termini and Lys (+30 Da and +36 Da, respectively) as variable modifications and within a false discovery rate (FDR) of 1%. Two missed cleavages were allowed for trypsin, and a maximum of four variable PTMs was allowed per peptide. Relative quantification results were evaluated using PEAKS Q. The quantified proteins were accepted if they contained both light and heavy formaldehyde labeling, and if it was present in at least two out of three technical replicates for both biological duplicates. Protein ratios were calculated as vPb18/aPb18 intensities. To assess the accuracy and reliability of the quantification results, the averages of the two quantified ratios (R1 and R2) for the same protein obtained in the two biological replicates were compared according to the method described in Sui et al.</field>
+        <field name="instrument_platform">LTQ Orbitrap Velos</field>
+        <field name="species">Paracoccidioides brasiliensis (strain Pb18)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="modification">deamidated residue</field>
+        <field name="modification">2x(13)C</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biomedical</field>
+        <field name="submitter_keywords">Paracoccidioides brasiliensis; pathogenic fungus; proteomic analysis; virulence regulators</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Castilho DG, Chaves AF, Xander P, Zelanis A, Kitano ES, Serrano SM, Tashima AK, Batista WL. Exploring Potential Virulence Regulators in Paracoccidioides brasiliensis Isolates of Varying Virulence through Quantitative Proteomics. J Proteome Res. 2014 Sep 2</field>
+        <field name="submitter">Alexandre Keiji Tashima</field>
+        <field name="submitter_mail">aktashima@unifesp.br</field>
+        <field name="submitter_affiliation">Universidade Federal de Sao Paulo</field>
+        <field name="labhead">Alexandre Keiji Tashima</field>
+        <field name="labhead_mail">aktashima@unifesp.br</field>
+        <field name="labhead_affiliation">Departamento de Bioquimica, Escola Paulista de Medicina, Universidade Federal de Sao Paulo, SP, Brazil</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000804/OB_pb18_rm1_R1_20131026_04.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000804/OB_pb18_rm1_R2_20131026_05.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000804/OB_pb18_rm1_R3_20131026_06.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000804/OB_pb18_rm2_R1_20131026_07.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000804/OB_pb18_rm2_R2_20131026_08.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000804/OB_pb18_rm2_R3_20131026_09.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000804/OB_pb18_mm1_R1_20140514_26.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000804/OB_pb18_mm1_R2_20140514_27.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000804/OB_pb18_mm1_R3_20140514_28.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000804/OB_pb18_mm2_R1_20140514_29.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000804/OB_pb18_mm2_R2_20140514_30.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000804/OB_pb18_mm2_R3_20140514_31.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000804/protein-peptides_pb18_mm.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000804/protein-peptides_pb18_rm.csv</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

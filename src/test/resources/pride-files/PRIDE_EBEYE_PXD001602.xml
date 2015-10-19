@@ -1,0 +1,60 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001602">
+      <name>Threonine concentration effect on L. lactis growth</name>
+      <description>L. lactis was grown in steady-state cultures at specific growth rate 0.2 h-1. The concentration of L-threonine in the growth environment was smoothly increased from 1.24mM to 4mM and proteome measurements were carried out to detect proteins involved in threonine metabolism.</description>
+      <cross_references>
+        <ref dbkey="1358" dbname="TAXONOMY"/>
+        <ref dbkey="25743155" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-12-12"/>
+        <date type="publication" value="2015-03-19"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001602</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Cell pellets were suspended in 100 µL SDS lysis buffer (4% SDS/100 mM TRIS-HCl pH 8/100 mM DTT) and heated at 95°C for 15 min. Cell lysates were sonicated with ultrasound for a few pulses and pelleted by centrifugation. Cell lysates were digested with trypsin according to Filter Aided Sample Preparation protocol (FASP) (Wiśniewski et al. 2009) and purified with C-18 StageTips (Rappsilber et al. 2007). Peptides were separated on a Ultimate 3000 RSLCnano system (Dionex; Thermo Fisher Scientific; Waltham, MA, USA) using a cartridge trap-column in backflush configuration and an analytical 50 cm Easy-spray column (Thermo Fisher Scientific; Waltham, MA, USA). Peptides were eluted at 200 nl/min with a 8-40% B gradient (buffer B: 80% ACN + 0.1% FA, buffer A: 0.1% FA) to a Q Exactive MS/MS operating with a top-10 strategy and a maximum cycle time of 1 s. Briefly, one 350-1400 m/z MS scan at a resolution setting of R=70000 was followed by fragmentation of 10 most intense ions &gt;+1 charge state at R=17500. Dynamic exclusion was set to 70 s.</field>
+        <field name="data_protocol">Raw MS files were analysed by the MaxQuant software package version 1.3.0.5 (Cox and Mann 2008). Peak lists were searched against L. lactis database (downloaded  in 2013 from http://www.uniprot.org/) which was supplemented with common contaminants (e.g. human keratin, trypsin). Full tryptic specificity, a maximum of two missed cleavages and a mass tolerance of 0.5 Da for fragment ions, was specified in the MaxQuant search. Carbamidomethylation of cysteine was set as a fixed modification, and methionine oxidation and protein N-terminal acetylation were set as variable modifications. The required false discovery rate was set to 1 % for both peptide and protein levels and the minimum required peptide length was set to seven amino acids. “Match between runs” option with a time window of 2 min was allowed.</field>
+        <field name="instrument_platform">Q Exactive</field>
+        <field name="species">Lactococcus lactis</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">cell culture</field>
+        <field name="modification">N-acetylated residue</field>
+        <field name="modification">methionine oxidation with neutral loss of 64 Da</field>
+        <field name="modification">S-carboxamidomethyl-L-cysteine</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">Lactococcus lactis</field>
+        <field name="submitter_keywords"> threonine metabolism</field>
+        <field name="submitter_keywords"> SILAC</field>
+        <field name="quantification_method">SILAC</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Aller K, Adamberg K, Reile I, Timarova V, Peebo K, Vilu R. Excess of threonine compared to serine promotes threonine aldolase activity in Lactococcus lactis IL1403. Microbiology. 2015 Mar 5. pii: mic.0.000071</field>
+        <field name="submitter">Karl Peebo</field>
+        <field name="submitter_mail">karl@tftak.eu</field>
+        <field name="submitter_affiliation">Fermentation Department</field>
+        <field name="labhead">Raivo Vilu</field>
+        <field name="labhead_mail">Raivo@tftak.eu</field>
+        <field name="labhead_affiliation">Competence Center of Food and Fermentation Technology</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001602/131122_03_Orbi2_SK_SER_G240_T275_TFTAK_P1A.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001602/131122_05_Orbi2_SK_SER_G240_T275_TFTAK_P2A.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001602/131122_07_Orbi2_SK_SER_G240_T275_TFTAK_P3A.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001602/131122_09_Orbi2_SK_SER_G240_T275_TFTAK_P1B.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001602/131122_11_Orbi2_SK_SER_G240_T275_TFTAK_P2B.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001602/131122_14_Orbi2_SK_SER_G240_T275_TFTAK_P3B.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001602/Sample descriptions.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001602/txt.zip</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

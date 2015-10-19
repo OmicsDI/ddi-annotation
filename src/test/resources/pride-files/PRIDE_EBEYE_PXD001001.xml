@@ -1,0 +1,84 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001001">
+      <name>A substrate trapping approach identifies proteins regulated by reversible S-nitrosylation</name>
+      <description>In this study we adapted the Trx trapping strategy for global profiling of cellular nitrosylation/denitrosylation processes. Using this approach, we report the identification of hundreds of potential new nitrosylated targets in monoctyes and macrophages followed by validation using biochemical and functional assays.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="10090" dbname="TAXONOMY"/>
+        <ref dbkey="24973421" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-05-23"/>
+        <date type="publication" value="2014-07-02"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001001</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Our approach is based on nitrosothiol capture and enrichment using a thioredoxin trap mutant followed by protein identification by mass spectrometry. We identified specific proteins captured by Trx(C35S) by coupling the trapping protocol with mass spectrometry (MS)-based analysis. Two biological replicates of enriched proteins were in-gel digested and analyzed using a capillary LC-MSMS using the Orbitrap mass spectrometer platform.</field>
+        <field name="data_protocol">Identification and quantitative analysis was performed using the MaxQuant software.</field>
+        <field name="instrument_platform">LTQ Orbitrap</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="species">Mus musculus (Mouse)</field>
+        <field name="cell_type">B cell</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">S-carboxamidoethyl-L-cysteine</field>
+        <field name="technology_type">Affinity purification coupled with mass spectrometry proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="curator_keywords">Technical</field>
+        <field name="submitter_keywords">S-nitrosylation</field>
+        <field name="submitter_keywords"> human</field>
+        <field name="submitter_keywords"> proteomics</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Ben-Lulu S, Ziv T, Admon A, Weisman-Shomer P, Benhar M. A substrate trapping approach identifies proteins regulated by reversible S-nitrosylation. Mol Cell Proteomics. 2014 Jun 27. pii: mcp.M114.038166</field>
+        <field name="submitter">Tamar Ziv</field>
+        <field name="submitter_mail">tamarz@tx.technion.ac.il</field>
+        <field name="submitter_affiliation">Technion</field>
+        <field name="labhead">Moran Benhar</field>
+        <field name="labhead_mail">benhar@tx.technion.ac.il</field>
+        <field name="labhead_affiliation">Technion, Haifa, Israel</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD001001/Control1D.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD001001/Control1U.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD001001/Control2D.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD001001/Control2U.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD001001/LPS1D.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD001001/LPS1U.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD001001/LPS2D.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD001001/LPS2U.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD001001/TH_CON1_D.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD001001/TH_CON1_U.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD001001/TH_CON2_D.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD001001/TH_CON2_U.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD001001/TH_CON_CYSNO1_D.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD001001/TH_CON_CYSNO1_U.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD001001/TH_CON_CYSNO2_D.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD001001/TH_CON_CYSNO2_U.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD001001/TH_DNCB1_D.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD001001/TH_DNCB1_U.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD001001/TH_DNCB2_D.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD001001/TH_DNCB2_U.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD001001/TH_DNCB_CYSNO1_D.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD001001/TH_DNCB_CYSNO1_U.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD001001/TH_DNCB_CYSNO2_D.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD001001/TH_DNCB_CYSNO2_U.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD001001/modificationSpecificPeptides.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD001001/THPproteinGroups.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD001001/modificationSpecificPeptides2.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD001001/Raw_proteinGroups.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD001001/parameters.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD001001/THP_parameters.txt</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

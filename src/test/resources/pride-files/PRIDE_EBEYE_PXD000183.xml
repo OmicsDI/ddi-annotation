@@ -1,0 +1,54 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000183">
+      <name>Human kidney primary proximal tubule cell LC-MSMS</name>
+      <description>Angiotensin II (AngII), the effector of the renin angiotensin system causes kidney disease progression by signalling through AT-1 receptor, but there are no measures of AngII activity in the kidney. Accordingly, we sought to define an AngII-regulated proteome in primary human proximal tubular epithelial cells (PTEC) in order to identify potential markers of AngII activity in the kidney. PTECs were labeled with SILAC heavy arginine(+6) and lysine(+8) OR light arginine and lysine for 6 doubling times. Heavy-labeled PTECs were stimulated with AngII and light-labeled PTECs were stimulated with the control medium. AngII-treated and control-treated PTEC lysates were mixed in 1:1 total protein ratio and their proteomes were compared. We generated 5 biological replicates (1 supernatant, 1 replicate with reverse labeling). LTQ-Orbitrap mass spectrometer was used for LC-MSMS analysis. Of 4618 quantified proteins, 83 were differentially regulated by AngII in 4 biological replicates of PTEC lysates. We subsequently confirmed and verified 18 differentially regulated proteins by using SRM, RT-PCR and ELISA. We also went on to validate the main functional, enriched networks by using systems biology approach and an in vivo mouse model.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="23846697" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2013-03-17"/>
+        <date type="publication" value="2013-07-18"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000183</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Not available</field>
+        <field name="instrument_platform">LTQ Orbitrap</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Not available</field>
+        <field name="modification">N-acetylated residue</field>
+        <field name="modification">6x(13)C,2x(15)N labeled L-lysine</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">6x(13)C labeled L-arginine</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="submitter_keywords">human</field>
+        <field name="submitter_keywords"> kidney</field>
+        <field name="submitter_keywords"> SILAC</field>
+        <field name="submitter_keywords"> proximal tubule epithelial cell</field>
+        <field name="submitter_keywords"> LC-MSMS</field>
+        <field name="submitter_keywords"> angiotensin II</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Konvalinka A, Zhou J, Dimitromanolakis A, Drabovich AP, Fang F, Gurley S, Coffman T, John R, Zhang SL, Diamandis EP, Scholey JW; Determination of an Angiotensin II-regulated Proteome in Primary Human Kidney Cells by Stable Isotope Labeling of Amino Acids in Cell Culture (SILAC)., J Biol Chem, 2013 Aug 23, 288, 34, 24834-47, </field>
+        <field name="submitter">Ana Konvalinka</field>
+        <field name="submitter_mail">ana.konvalinka@mail.utoronto.ca</field>
+        <field name="submitter_affiliation">Department of the Institute of Medical Sciences, Division of Nephrology</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000183/Five_SILAC_Replicates.tar.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000183/MaxQuant_output.zip</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

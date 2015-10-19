@@ -1,0 +1,91 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000298">
+      <name>Neospora Caninum whole proteome study</name>
+      <description>MS/MS dataset for proteogenomics study of Neospora Caninum. The dataset was searched against the official v10 gene  model from ToxoDB, and the alternate panels of proteins predicted from RNA-SEQ evidences.</description>
+      <cross_references>
+        <ref dbkey="572307" dbname="TAXONOMY"/>
+        <ref dbkey="25867681" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-11-26"/>
+        <date type="publication" value="2015-02-09"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000298</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Datasets of N. caninum Orbitrap 1DE and Orbitrap 1DE-2 were collected from N. caninum LIV strain tachyzoites.There were 8 and 14 gel slices respectively excised from Orbitrap 1DE and Orbitrap 1DE-2 experiments. Samples were tryptically digested and analysed by on-line nanoflow liquid chromatography using the nanoACQUITY-nLC system coupled to an LTQ-Orbitrap Velos.</field>
+        <field name="data_protocol">The data processing was performed using ProteoAnnotator - http://www.proteoannotator.org/</field>
+        <field name="instrument_platform">LTQ Orbitrap Velos</field>
+        <field name="species">Neospora Caninum (strain Liverpool)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">No PTMs are included in the dataset</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="curator_keywords">Technical</field>
+        <field name="submitter_keywords">Neospora caninum</field>
+        <field name="submitter_keywords"> proteogenomics</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Krishna R, Xia D, Sanderson S, Shanmugasundram A, Vermont S, Bernal A, Daniel-Naguib G, Ghali F, Brunk B, Roos D, Wastling JM, Jones AR. A large scale proteogenomics study of apicomplexan pathogens - Toxoplasma gondii and Neospora caninum. Proteomics. 2015 Apr 13</field>
+        <field name="submitter">Ritesh Krishna</field>
+        <field name="submitter_mail">riteshk@liv.ac.uk</field>
+        <field name="submitter_affiliation">Institute of Integrative Biology</field>
+        <field name="labhead">Ritesh Krishna</field>
+        <field name="labhead_mail">riteshk@liv.ac.uk</field>
+        <field name="labhead_affiliation">Institute of Integrative Biology, University of Liverpool</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/Neo_Orb1DE.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/Neo_Orb1DE_2.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/1-ORB-2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/11-ORB-2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/2-ORB-2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/3-ORB-2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/4-ORB-2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/5-ORB-2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/6-ORB-2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/7-ORB-2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/8-ORB-2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/9-ORB-2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/N1-ORB-1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/N2-ORB-1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/N3-ORB-1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/N4-ORB-1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/N5-ORB-1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/N6-ORB-1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/N7-ORB-1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/N8-ORB-1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/NEO_combined_concatenated_target_decoy.fasta</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/NORB-1DE_Neo_Orb1DE.omx</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/NORB-1DE_Neo_Orb1DE.t.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/NORB-1DE_exportProteinsOnly.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/NORB-1DE_ToxoDB-10.0_NcaninumLIV_annotated.gff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/NORB-1DE_exportPSMs.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/NORB-1DE_exportProteinGroups.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/NORB-1DE_exportProteoAnnotator.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/NORB-1DE_exportRepProteinPerPAGOnly.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/NORB-1DE_ncanLIV.final_annotated.gff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/NORB-2-1DE__exportProteinsOnly.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/NORB-2-1DE_ToxoDB-10.0_NcaninumLIV_annotated.gff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/NORB-2-1DE__exportPSMs.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/NORB-2-1DE_exportProteinGroups.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/NORB-2-1DE_exportProteoAnnotator.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/NORB-2-1DE_exportRepProteinPerPAGOnly.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/NORB-2-1DE_ncanLIV.final_annotated.gff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/NORB-2-Neo_Orb1DE_2.omx</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/NORB-2-Neo_Orb1DE_2.t.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/ToxoDB-10.0_NcaninumLIV.gff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD000298/ncanLIV.final.gtf</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

@@ -1,0 +1,55 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001305">
+      <name>Rapid and Deep Proteomes by Faster Sequencing on a Benchtop Quadrupole Ultra-High-Field Orbitrap Mass Spectrometer</name>
+      <description>The faster sequencing speed available on the latest Q Exactive HF mass spectrometer is investigated and evaluated by four different acquisition methods and benchmarked across three generations of Q Exactive instruments. Also the instrument capabilities for offline high pH reversed-phase peptide fractionation and single-shot phosphoproteomics are evaluated.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="25349961" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-09-11"/>
+        <date type="publication" value="2014-10-31"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001305</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">HeLa cells are grown and subsequently lysed and digested. Part of it is analyzed in a single analysis run, part is fractionated by high pH fractionation, and part is enriched by TiO2. All peptides were separated online with the mass spectrometer (Q Exactive, Q Exactive Plus, and Q Exactive HF). Different acquisition methods are compared across instruments, and in dilution series.</field>
+        <field name="data_protocol">All raw LC-MS/MS data were analyzed by MaxQuant v. 1.4.1.4 using the Andromeda Search engine and searched against the human Swiss-Prot database without isoforms (May 2014 release with 20,213 protein sequences). Two analysis groups were made in MaxQuant enabling one combined analysis of all proteome and phosphoproteome data. Carbamidomethyl of cysteine was specified as fixed modification for both groups. For the proteome data, variable modifications considered were oxidation of methionine, protein N-terminal acetylation, and pyro-glutamate formation from glutamine. The phosphoproteome data was additionally searched with the variable modification phosphorylation of serine, threonine, and tyrosine. An experimental design was used where each raw file was considered an independent experiment; except for the fractionation studies where fractions were specified and each original sample were considered an experiment. The match between run feature and the second peptide option was disabled and everything else set to the default values, including the false discovery rate limit of 1% on both peptide and protein level. Phosphorylation sites were considered localized at a site localization probability above 75%.</field>
+        <field name="instrument_platform">Q Exactive HF</field>
+        <field name="instrument_platform">Q Exactive</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">cell culture</field>
+        <field name="modification">phosphorylated residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">PRIME-XS Project</field>
+        <field name="curator_keywords">Biomedical</field>
+        <field name="submitter_keywords">Orbitrap. Q Exactive HF. Shotgun proteomics. HCD. HeLa. Phosphoproteomics. Single-shot analysis. High pH Reversed-phase fractionation. Parallel acquisition. Deep proteome coverage</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Kelstrup CD, Jersie-Christensen RR, Batth TS, Arrey TN, Kuehn A, Kellmann M, Olsen JV. Rapid and Deep Proteomes by Faster Sequencing on a Benchtop Quadrupole Ultra-High-Field Orbitrap Mass Spectrometer. J Proteome Res. 2014 Oct 28</field>
+        <field name="submitter">Christian Kelstrup</field>
+        <field name="submitter_mail">chdake@cpr.ku.dk</field>
+        <field name="submitter_affiliation">University of Copenhagen</field>
+        <field name="labhead">Jesper V. Olsen</field>
+        <field name="labhead_mail">jesper.olsen@cpr.ku.dk</field>
+        <field name="labhead_affiliation">NNF Center for Protein Research, University of Copenhagen</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001305/Raw Files for Dilution Series Method Comparison.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001305/Raw Files for Instrument and Isolation Width Comparison.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001305/Raw Files for Proteome HpH-reversed Phase.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001305/Raw Files for Single Shot Phosphoproteome.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001305/Results.zip</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

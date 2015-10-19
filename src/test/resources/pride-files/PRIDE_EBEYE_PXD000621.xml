@@ -1,0 +1,148 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000621">
+      <name>Platelet Activation Results in Modulation of miRNA, mRNA, and Protein Expression Profiles: New Insights into the Pathophysiology of Platelet Activation</name>
+      <description>Leucocytes-decontaminated platelet-rich plasma (PRP) from 15 healthy volunteers was collected and activated with collagen, or Thrombin Activator Receptor  Peptide (TRAP). Total protein extracts (75 microg protein/sample), coming from two biological replicates, were precipitated using 2-D Clean Up Kit (Amersham Bioscience). Total protein extracts were precipitated and dissolved into 20 microl of iTRAQ dissolution buffer. Protein alkylation, trypsin digestion and labeling of the resulting  peptides were performed according to manufacturer’s instructions (Applied Biosystems) followed by strong cation exchange fractionation and LC-MS/MS analysis  of the peptides as previously described (Lietzén et al, PLoS Pathogens). Protein identification and relative quantitation were performed with Paragon search  algorithm using ProteinPilot 4 interface (Applied Biosystems). Database searches were performed against human protein sequences in UniProt database  (version 120813 with 20231 human entries). The search criteria were: cysteine alkylation with MMTS, trypsin digestion, biological modifications allowed, thorough  search and detected protein threshold of 95% confidence (Paragon Unused ProtScore &gt; 1.3). Additionally, automatic bias correction was used to correct for  uneven protein loading.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="25903651" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2013-12-05"/>
+        <date type="publication" value="2015-04-27"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000621</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Not available</field>
+        <field name="instrument_platform">QSTAR</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="modification">methylthiolated residue</field>
+        <field name="modification">iTRAQ4plex-116 reporter+balance reagent acylated residue</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biomedical</field>
+        <field name="submitter_keywords">Human</field>
+        <field name="submitter_keywords"> platelets</field>
+        <field name="submitter_keywords"> LC-MS/MS</field>
+        <field name="submitter_keywords"> iTRAQ-labeling</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Cimmino G, Tarallo R, Nassa G, De Filippo MR, Giurato G, Ravo M, Rizzo F, Conte S, Pellegrino G, Cirillo P, Calabro P, Öhman T, Nyman TA, Weisz A, Golino P. Activating stimuli induce platelet microRNA modulation and proteome reorganisation. Thromb Haemost. 2015 Apr 23;114(20150423)</field>
+        <field name="submitter">Tuula Nyman</field>
+        <field name="submitter_mail">tuula.nyman@helsinki.fi</field>
+        <field name="submitter_affiliation">Institute of Biotechnology</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 all.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130701 Giovanni iTRAQ2 all.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130619 Giovanni iTRAQ1 B12.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130619 Giovanni iTRAQ1 B12.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130619 Giovanni iTRAQ1 B5.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130619 Giovanni iTRAQ1 B5.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130619 Giovanni iTRAQ1 B9.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130619 Giovanni iTRAQ1 B9.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B10.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B10.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B10_2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B10_2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B11.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B11.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B11_2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B11_2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B12_2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B12_2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B13.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B13.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B13_2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B13_2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B14.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B14.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B14_2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B14_2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B3.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B3.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B3_2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B3_2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B4.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B4.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B4_2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B4_2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B5_2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B5_2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B6.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B6.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B6_2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B6_2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B7.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B7.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B7_2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B7_2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B8.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B8.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B8_2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B8_2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B9_2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130620 Giovanni iTRAQ1 B9_2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130624 Giovanni iTRAQ2 B10.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130624 Giovanni iTRAQ2 B10.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130624 Giovanni iTRAQ2 B11.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130624 Giovanni iTRAQ2 B11.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130624 Giovanni iTRAQ2 B12.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130624 Giovanni iTRAQ2 B12.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130624 Giovanni iTRAQ2 B13.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130624 Giovanni iTRAQ2 B13.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130624 Giovanni iTRAQ2 B14.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130624 Giovanni iTRAQ2 B14.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130624 Giovanni iTRAQ2 B3.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130624 Giovanni iTRAQ2 B3.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130624 Giovanni iTRAQ2 B4.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130624 Giovanni iTRAQ2 B4.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130624 Giovanni iTRAQ2 B5.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130624 Giovanni iTRAQ2 B5.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130624 Giovanni iTRAQ2 B6.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130624 Giovanni iTRAQ2 B6.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130624 Giovanni iTRAQ2 B7.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130624 Giovanni iTRAQ2 B7.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130624 Giovanni iTRAQ2 B8.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130624 Giovanni iTRAQ2 B8.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130624 Giovanni iTRAQ2 B9.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130624 Giovanni iTRAQ2 B9.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130627 Giovanni iTRAQ2 B10_2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130627 Giovanni iTRAQ2 B10_2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130627 Giovanni iTRAQ2 B11_2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130627 Giovanni iTRAQ2 B11_2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130627 Giovanni iTRAQ2 B12_2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130627 Giovanni iTRAQ2 B12_2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130627 Giovanni iTRAQ2 B13_2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130627 Giovanni iTRAQ2 B13_2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130627 Giovanni iTRAQ2 B14_2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130627 Giovanni iTRAQ2 B14_2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130627 Giovanni iTRAQ2 B3_2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130627 Giovanni iTRAQ2 B3_2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130627 Giovanni iTRAQ2 B4_2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130627 Giovanni iTRAQ2 B4_2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130627 Giovanni iTRAQ2 B5_2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130627 Giovanni iTRAQ2 B5_2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130627 Giovanni iTRAQ2 B6_2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130627 Giovanni iTRAQ2 B6_2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130627 Giovanni iTRAQ2 B7_2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130627 Giovanni iTRAQ2 B7_2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130627 Giovanni iTRAQ2 B8_2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130627 Giovanni iTRAQ2 B8_2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130627 Giovanni iTRAQ2 B9_2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000621/130627 Giovanni iTRAQ2 B9_2.wiff.scan</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

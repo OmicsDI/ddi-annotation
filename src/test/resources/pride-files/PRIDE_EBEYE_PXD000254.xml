@@ -1,0 +1,135 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000254">
+      <name>DMSO enhances electrospray response boosting sensitivity of proteomic experiments</name>
+      <description>We report that low percentages of dimethylsulfoxide (DMSO) in liquid chromatography solvents lead to a strong enhancement of electrospray ionization of peptides, improving the sensitivity of protein identification in bottom up proteomics by up to tenfold. The method can be easily implemented on any LC-MS/MS system without modification to hardware or software and at no additional cost. Peptide and protein identification and quantification: Raw MS data were processed by MaxQuant (version 1.3.0.3) for peak detection and quantification [PMID:19029910]. MS/MS spectra were searched against the IPI human database (version 3.68; 87,061 sequences. supplemented with 262 common contaminants) using the Andromeda search engine [PMID:21254760] with the following search parameters: full tryptic specificity, up to two missed cleavage sites, carbamidomethylation of cysteine residues set as a fixed modification and N-terminal protein acetylation and methionine oxidation as well as serine, threonine and tyrosine phosphorylation (where applicable) as variable modifications. Mass spectra were recalibrated within MaxQuant (first search 20 p.p.m. precursor tolerance) and subsequently re-searched with a mass tolerance of 6 p.p.m. Fragment ion mass tolerance was set to 20 p.p.m. Search results were filtered to a maximum false discovery rate (FDR) of 0.01 for proteins and peptides and a minimum peptide length of at least 6 aa was required.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="23975139" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2013-05-14"/>
+        <date type="publication" value="2013-08-07"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000254</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Not available</field>
+        <field name="instrument_platform">LTQ Orbitrap</field>
+        <field name="instrument_platform">LTQ Orbitrap Velos</field>
+        <field name="instrument_platform">LTQ Orbitrap Elite</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Not available</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">acetylated residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="submitter_keywords">Liquid chromatography-tandem mass spectrometry</field>
+        <field name="submitter_keywords"> electrospray ionization</field>
+        <field name="submitter_keywords"> proteomics</field>
+        <field name="submitter_keywords"> dimethyl sulfoxide</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Hahne H, Pachl F, Ruprecht B, Maier SK, Klaeger S, Helm D, Médard G, Wilm M, Lemeer S, Kuster B; DMSO enhances electrospray response, boosting sensitivity of proteomic experiments., Nat Methods, 2013 Aug 25, </field>
+        <field name="submitter">Hannes Hahne</field>
+        <field name="submitter_mail">hannes.hahne@tum.de</field>
+        <field name="submitter_affiliation">Chair of Proteomics and Bioanalytics</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/130218_noDMSO_Hela_4h_1ug_R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/130218_noDMSO_Hela_4h_1ug_R2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/130218_noDMSO_Hela_4h_1ug_R3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/130221_DMSO_Hela_4h_1ug_R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/130221_DMSO_Hela_4h_1ug_R2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/130221_DMSO_Hela_4h_1ug_R3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/00635_A01_P004819_B00_A00_R4.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/00635_A01_P004819_B00_A00_R5.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/00635_A01_P004819_B00_A00_R6.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/00635_A01_P004820_B00_A00_R6.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/00635_A01_P004820_B00_A00_R7.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/00635_A01_P004820_B00_A00_R8.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/20130219_Hela_1ug_before_DMSO_R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/20130219_Hela_1ug_before_DMSO_R2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/20130219_Hela_1ug_before_DMSO_R3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/20130221_Hela_1ug_after_DMSO_R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/20130221_Hela_1ug_after_DMSO_R2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/20130221_Hela_1ug_after_DMSO_R3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/20130309_Kinobead_Pulldown_beforeDMSO_R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/20130309_Kinobead_Pulldown_beforeDMSO_R2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/20130309_Kinobead_Pulldown_beforeDMSO_R3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/20130309_Kinobead_Pulldown_beforeDMSO_R4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/20130326_Kinobead_Pulldown_afterDMSO_R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/20130326_Kinobead_Pulldown_afterDMSO_R2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/20130326_Kinobead_Pulldown_afterDMSO_R3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/20130326_Kinobead_Pulldown_afterDMSO_R4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/20130309_Phosphopool_beforeDMSO_R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/20130309_Phosphopool_beforeDMSO_R2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/20130309_Phosphopool_beforeDMSO_R3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/20130309_Phosphopool_beforeDMSO_R4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/20130326_Phosphopool_afterDMSO_R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/20130326_Phosphopool_afterDMSO_R2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/20130326_Phosphopool_afterDMSO_R3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/20130326_Phosphopool_afterDMSO_R4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/combined_OrbiXL_HeLa_4h_DMSO.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/combined_Elite_HeLa_1h_noDMSO_0.1ng.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/combined_Elite_HeLa_1h_noDMSO_1ng.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/combined_Velos_KBPD_130328_DMSO.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/combined_Elite_HeLa_1h_noDMSO_1000ng.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/combined_Velos_Hela_4h_noDMSO.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/combined_Velos_Hela_4h_DMSO.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/combined_Elite_HeLa_1h_DMSO_0.1ng.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/combined_Elite_HeLa_1h_DMSO_1ng.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/combined_Elite_HeLa_1h_DMSO_10ng.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/combined_Elite_HeLa_1h_DMSO_100ng.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/combined_Elite_HeLa_1h_DMSO_1000ng.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/combined_Elite_HeLa_1h_noDMSO_10ng.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/combined_Elite_HeLa_1h_noDMSO_100ng.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/combined_OrbiXL_HeLa_4h_noDMSO.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/combined_Velos_KBPD_130328_noDMSO.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/combined_Velos_phospho_130328_DMSO.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/combined_Velos_phospho_130328_noDMSO.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/130218_noDMSO_Hela_100pg_R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/130218_noDMSO_Hela_100pg_R2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/130218_noDMSO_Hela_100pg_R3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/130218_noDMSO_Hela_1ng_R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/130218_noDMSO_Hela_1ng_R2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/130218_noDMSO_Hela_1ng_R3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/130218_noDMSO_Hela_10ng_R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/130218_noDMSO_Hela_10ng_R2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/130218_noDMSO_Hela_10ng_R3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/130218_noDMSO_Hela_100ng_R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/130218_noDMSO_Hela_100ng_R2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/130218_noDMSO_Hela_100ng_R3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/130218_noDMSO_Hela_1ug_R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/130218_noDMSO_Hela_1ug_R2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/130218_noDMSO_Hela_1ug_R3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/130221_DMSO_Hela_100pg_R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/130221_DMSO_Hela_100pg_R2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/130221_DMSO_Hela_100pg_R3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/130221_DMSO_Hela_1ng_R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/130221_DMSO_Hela_1ng_R2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/130221_DMSO_Hela_1ng_R3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/130221_DMSO_Hela_10ng_R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/130221_DMSO_Hela_10ng_R2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/130221_DMSO_Hela_10ng_R3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/130221_DMSO_Hela_100ng_R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/130221_DMSO_Hela_100ng_R2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/130221_DMSO_Hela_100ng_R3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/130221_DMSO_Hela_1ug_R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/130221_DMSO_Hela_1ug_R2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/130221_DMSO_Hela_1ug_R3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/combined_Elite_HeLa_4h_DMSO.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000254/combined_Elite_HeLa_4h_noDMSO.zip</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

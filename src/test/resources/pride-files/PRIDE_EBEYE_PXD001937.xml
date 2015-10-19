@@ -1,0 +1,78 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-08-24</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001937">
+      <name>Quantitative Proteomic Analysis of Catharanthus roseus  with Induction of Indole Alkaloids</name>
+      <description>Catharanthus roseus produces a variety of indole alkaloids with significant biological activities. The indole alkaloids including catharanthine, vindolinine, ajmalicine and the precursor strictosidine were dramatically induced in the leaves following binary stress. To profile the modification of indole alkaloids in C. roseus seedlings under the binary stress of ultraviolet-B irradiation and dark incubation, gel-free proteomic analysis was carried out to uncover the underlying molecular mechanism.</description>
+      <cross_references>
+        <ref dbkey="656367" dbname="TAXONOMY"/>
+        <ref dbkey="26284098" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2015-03-16"/>
+        <date type="publication" value="2015-08-24"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001937</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Samples were ground to a powder in liquid nitrogen and then transferred into a solution of 10% trichloroacetic acid and 0.07% 2-mercaptoethanol in acetone. After vortexing the suspension, it was then sonicated for 5 min at 4°C and incubated for 1 h at -20°C. After incubation, the suspension was centrifuged at 9,000xg for 20 min at 4°C. The supernatant was removed and the pellet was washed twice with a solution consisting of 0.07% 2-mercaptoethanol in acetone. The final pellet was dried and re-suspended by vortexing for 1 h at room temperature in lysis buffer. The extracted proteins were washed by adding methanol, chloroform and water at a ratio of 4:1:3, following which the mixture was separated to two phases by centrifugation at 15,000xg for 5 min. The upper phase was discarded, keeping the white precipitated disc, which was gently washed with methanol and the supernatant was removed. The disc was then dried. The dried pellets were resuspended in 50 mM NH4HCO3. The proteins were reduced with 50 mM dithiothreitol for 1 h at 56°C and alkylated with 50 mM iodoacetamide for 1 h at 25°C in the dark. Alkylated proteins were digested with trypsin and lysyl endopeptidase at a 1:100 enzyme/protein concentration for 16 h at 37°C. The resulting peptides were acidified with formic acid to pH &lt; 3. Peptides were analyzed on a nanospray LTQ XL Orbitrap MS operated in data-dependent acquisition mode with the installed XCalibur software (version 2.0.7, Thermo Fisher Scientific). Using an Ultimate 3,000 NanoLC system (Dionex, Germering, Gemany), peptides in 0.1% formic acid were loaded onto a C18 PepMap trap column (300 μm ID × 5 mm, Dionex). The peptides were eluted from the trap column with a linear acetonitrile gradient (8-30% for 120 min) in 0.1% formic acid and at a flow rate of 200 nL·min-1. The peptides that were eluted from the trap column were separated and sprayed on a C18 NANO HPLC NTTC-360/75-3 capillary tip column (75 μm ID × 120 mm, Nikkyo Technos) with a spray voltage of 1.5 kV. Full-scan mass spectra were acquired in the Orbitrap MS over 400-1,500 m/z with a resolution of 30,000. A lock mass function was used for high mass accuracy. The ten most intense precursor ions were selected for collision-induced fragmentation in the linear ion trap at normalized collision energy of 35%. Dynamic exclusion was employed within 90 s to prevent repetitive selection of peptides.</field>
+        <field name="data_protocol">Acquired MS/MS spectra were converted to individual DTA files using BioWorks software (version 3.3.1, Thermo Fisher Scientific). The file format of the DTA files was converted to Mascot generic format and then searched by Mascot software against the NCBInr viridiplantae database.  Parameters used in Mascot searches were as follows: Carbamido methylation of cysteine was set as a fixed modification, and oxidation of methionine was set as a variable modification. Trypsin was specified as the proteolytic enzyme and one missed cleavage was allowed. Peptide mass tolerance was set at 5 ppm, fragment mass tolerance was set at 0.5 Da, and the peptide charge was set at +2, +3, and +4. An automatic decoy database search was performed as part of the search process. Mascot results were filtered with the Mascot Percolator package to improve the accuracy and sensitivity of peptide identification]. False discovery rates for peptide identification of all search strategies were less than 1.0%.  For quantitative analyses, a commercial gel-free quantification package, SIEVE, was used for comparing relative abundance of peptides and proteins between the control and experimental groups. The chromatographic peaks that were detected by mass spectrometry were aligned and the peptide peaks were detected as frames using the following settings: a frame time width of 2.5 min; a frame m/z width of 0.02; produce frames on all parent ions subjected to the MS/MS scan. The frames with the MS/MS scan were matched to imported Mascot results to identify peptides. In the differential analyses, total ion current was used as a normalization factor. In all differential analyses, data from three biological replicates with two technical replicates were analyzed, and proteins with at least two peptide matches across the data for all of the sample groups containing replicates in a differential analysis were defined as the identified proteins.  Paired Student’s T-test was performed between treated and control group. In identifying differentially changed proteins, the minimum requirements for the identification of a protein were more than two matched peptides and the significant difference for protein abundance levels in UV-B irradiated and dark treated samples against the control samples (P &lt; 0.05).</field>
+        <field name="instrument_platform">LTQ Orbitrap</field>
+        <field name="species">Catharanthus roseus var. roseus</field>
+        <field name="cell_type">plant cell</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">leaf</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">biosynthesis pathway</field>
+        <field name="submitter_keywords"> Catharanthus roseus</field>
+        <field name="submitter_keywords"> dark incubation</field>
+        <field name="submitter_keywords"> indole alkaloids</field>
+        <field name="submitter_keywords"> gel-free proteomics</field>
+        <field name="submitter_keywords"> UV-B irradiation</field>
+        <field name="quantification_method">MS1 intensity based label-free quantification method</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Zhu W, Yang B, Komatsu S, Lu X, Li X, Tian J. Binary stress induces an increase in indole alkaloid biosynthesis in Catharanthus roseus. Front Plant Sci. 2015 Jul 28;6:582. eCollection 2015</field>
+        <field name="submitter">xiaojian Yin</field>
+        <field name="submitter_mail">xiaojian@affrc.go.jp</field>
+        <field name="submitter_affiliation">University of Tsukuba</field>
+        <field name="labhead">Setsuko Komatsu</field>
+        <field name="labhead_mail">skomatsu@affrc.go.jp</field>
+        <field name="labhead_affiliation">NARO Institute of Crop Science</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001937/C2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001937/C2.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001937/C3.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001937/C3.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001937/C4.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001937/C4.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001937/T1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001937/T1.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001937/T3.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001937/T3.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001937/T4.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001937/T4.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001937/C2.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001937/C2.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001937/C3.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001937/C3.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001937/C4.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001937/C4.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001937/T1.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001937/T1.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001937/T3.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001937/T3.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001937/T4.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD001937/T4.pep.xml</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

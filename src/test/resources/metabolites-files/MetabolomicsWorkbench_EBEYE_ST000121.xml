@@ -1,0 +1,189 @@
+<database>
+  <name>MetabolomicsWorkbench</name>
+  <description>The Metabolomics Workbench will serve as a national and international repository for metabolomics data and metadata and will provide analysis tools and access to metabolite standards, protocols, tutorials, training, and more.</description>
+  <release>1.0</release>
+  <release_date>15-05-20</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="ST000121">
+      <name>Impact of anesthesia and euthanasia on metabolomics of mammalian tissues: studies in a C57BL/6J mouse model</name>
+      <description>We examined the effect of several commonly-used methods of anesthesia and euthanasia for collection of skeletal muscle, liver, heart, adipose and serum of C57BL/6J mice.  The data revealed tissue-specific impacts of different anesthesia and euthanasia strategies.  Based on these findings, we present a more optimal collection strategy mammalian tissues and recommend that rodent tissues intended for metabolomics studies be collected under anesthesia rather than post-euthanasia.</description>
+      <cross_references>
+        <ref dbkey="10090" dbname="TAXONOMY"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="14-11-21"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Metabolomics</field>
+        <field name="full_dataset_link">http://www.metabolomicsworkbench.org/data/DRCCMetadata.php?Mode=Study&amp;StudyID=ST000121</field>
+        <field name="repository">MetabolomicsWorkbench</field>
+        <field name="data_protocol">ESI negative ion mode</field>
+        <field name="instrument_platform">Agilent 6220 TOF</field>
+        <field name="study_factor">Tissue:Serum | Anesthesia / Euthanasia method:Cervical Dislocation</field>
+        <field name="study_factor">Tissue:Epididymal white adipose (fat) | Anesthesia / Euthanasia method:Continuous isoflurane</field>
+        <field name="study_factor">Tissue:Gastrocnemius (skeletal muscle) | Anesthesia / Euthanasia method:Carbon Dioxide</field>
+        <field name="study_factor">Tissue:Liver | Anesthesia / Euthanasia method:Cervical Dislocation</field>
+        <field name="study_factor">Tissue:Epididymal white adipose (fat) | Anesthesia / Euthanasia method:Carbon Dioxide</field>
+        <field name="study_factor">Tissue:Serum | Anesthesia / Euthanasia method:Isoflurane overdose</field>
+        <field name="study_factor">Tissue:Epididymal white adipose (fat) | Anesthesia / Euthanasia method:Isoflurane overdose</field>
+        <field name="study_factor">Tissue:Serum | Anesthesia / Euthanasia method:Carbon Dioxide</field>
+        <field name="study_factor">Tissue:Heart | Anesthesia / Euthanasia method:Ketamine</field>
+        <field name="study_factor">Tissue:Gastrocnemius (skeletal muscle) | Anesthesia / Euthanasia method:Cervical Dislocation</field>
+        <field name="study_factor">Tissue:Liver | Anesthesia / Euthanasia method:Continuous isoflurane</field>
+        <field name="study_factor">Tissue:Heart | Anesthesia / Euthanasia method:Cervical Dislocation</field>
+        <field name="study_factor">Tissue:Epididymal white adipose (fat) | Anesthesia / Euthanasia method:Pentobarbital</field>
+        <field name="study_factor">Tissue:Liver | Anesthesia / Euthanasia method:Ketamine</field>
+        <field name="study_factor">Tissue:Liver | Anesthesia / Euthanasia method:Carbon Dioxide</field>
+        <field name="study_factor">Tissue:Epididymal white adipose (fat) | Anesthesia / Euthanasia method:Cervical Dislocation</field>
+        <field name="study_factor">Tissue:Gastrocnemius (skeletal muscle) | Anesthesia / Euthanasia method:Ketamine</field>
+        <field name="study_factor">Tissue:Gastrocnemius (skeletal muscle) | Anesthesia / Euthanasia method:Pentobarbital</field>
+        <field name="study_factor">Tissue:Heart | Anesthesia / Euthanasia method:Continuous isoflurane</field>
+        <field name="study_factor">Tissue:Heart | Anesthesia / Euthanasia method:Pentobarbital</field>
+        <field name="study_factor">Tissue:Gastrocnemius (skeletal muscle) | Anesthesia / Euthanasia method:Isoflurane overdose</field>
+        <field name="study_factor">Tissue:Liver | Anesthesia / Euthanasia method:Isoflurane overdose</field>
+        <field name="study_factor">Tissue:Serum | Anesthesia / Euthanasia method:Pentobarbital</field>
+        <field name="study_factor">Tissue:Serum | Anesthesia / Euthanasia method:Ketamine</field>
+        <field name="study_factor">Tissue:Heart | Anesthesia / Euthanasia method:Carbon Dioxide</field>
+        <field name="study_factor">Tissue:Heart | Anesthesia / Euthanasia method:Isoflurane overdose</field>
+        <field name="study_factor">Tissue:Serum | Anesthesia / Euthanasia method:Continuous isoflurane</field>
+        <field name="study_factor">Tissue:Gastrocnemius (skeletal muscle) | Anesthesia / Euthanasia method:Continuous isoflurane</field>
+        <field name="study_factor">Tissue:Epididymal white adipose (fat) | Anesthesia / Euthanasia method:Ketamine</field>
+        <field name="study_factor">Tissue:Liver | Anesthesia / Euthanasia method:Pentobarbital</field>
+        <field name="species">Mus musculus</field>
+        <field name="technology_type">mass spectrometry</field>
+        <field name="metabolite_name">Dihydroxy-acetone phosphate</field>
+        <field name="metabolite_name">D-Rib(ul)ose-5-phosphate</field>
+        <field name="metabolite_name">Dephospho-CoA</field>
+        <field name="metabolite_name">D-Hexose-phosphate</field>
+        <field name="metabolite_name">FAD</field>
+        <field name="metabolite_name">dTDP</field>
+        <field name="metabolite_name">Erythrose-4-phosphate</field>
+        <field name="metabolite_name">Geranyl-PP</field>
+        <field name="metabolite_name">GDP</field>
+        <field name="metabolite_name">Fructose-1,6-bisphosphate</field>
+        <field name="metabolite_name">FMN</field>
+        <field name="metabolite_name">CDP</field>
+        <field name="metabolite_name">Citrate</field>
+        <field name="metabolite_name">Citrulline</field>
+        <field name="metabolite_name">CMP</field>
+        <field name="metabolite_name">CoA</field>
+        <field name="metabolite_name">Creatine</field>
+        <field name="metabolite_name">Creatinine</field>
+        <field name="metabolite_name">CTP</field>
+        <field name="metabolite_name">6-Phospho-D-gluconate</field>
+        <field name="metabolite_name">3-Phospho-serine</field>
+        <field name="metabolite_name">3-Phosphoglycerate</field>
+        <field name="metabolite_name">dAMP</field>
+        <field name="metabolite_name">Adenine</field>
+        <field name="metabolite_name">Acetylphosphate</field>
+        <field name="metabolite_name">Deoxyuridine</field>
+        <field name="metabolite_name">Acetyl-CoA</field>
+        <field name="metabolite_name">dCTP</field>
+        <field name="metabolite_name">Acetoacetate</field>
+        <field name="metabolite_name">ADP</field>
+        <field name="metabolite_name">Adenosine</field>
+        <field name="metabolite_name">ATP/AMP</field>
+        <field name="metabolite_name">ATP</field>
+        <field name="metabolite_name">ATP/ADP</field>
+        <field name="metabolite_name">Asparagine</field>
+        <field name="metabolite_name">Aspartate</field>
+        <field name="metabolite_name">AMP</field>
+        <field name="metabolite_name">Arginine</field>
+        <field name="metabolite_name">Alanine</field>
+        <field name="metabolite_name">alpha-Ketoglutarate</field>
+        <field name="metabolite_name">Carnitine</field>
+        <field name="metabolite_name">Biotin</field>
+        <field name="metabolite_name">Taurine</field>
+        <field name="metabolite_name">Succinyl-CoA</field>
+        <field name="metabolite_name">Succinate</field>
+        <field name="metabolite_name">Stearic acid</field>
+        <field name="metabolite_name">Serine</field>
+        <field name="metabolite_name">Riboflavin</field>
+        <field name="metabolite_name">Reduced glutathione</field>
+        <field name="metabolite_name">Quinolinate</field>
+        <field name="metabolite_name">PRPP</field>
+        <field name="metabolite_name">PS_40:6</field>
+        <field name="metabolite_name">PS_38:4</field>
+        <field name="metabolite_name">Propionyl-CoA</field>
+        <field name="metabolite_name">Proline</field>
+        <field name="metabolite_name">PI_38:4</field>
+        <field name="metabolite_name">p-Hydroxybenzoate</field>
+        <field name="metabolite_name">Phosphoenolpyruvate</field>
+        <field name="metabolite_name">Phosphocreatine</field>
+        <field name="metabolite_name">Phenylpyruvate</field>
+        <field name="metabolite_name">Phenylalanine</field>
+        <field name="metabolite_name">PG_34:1</field>
+        <field name="metabolite_name">ADP-D-glucose</field>
+        <field name="metabolite_name">PE_40:6 ester</field>
+        <field name="metabolite_name">PE_40:6 ether</field>
+        <field name="metabolite_name">Tyrosine</field>
+        <field name="metabolite_name">UDP</field>
+        <field name="metabolite_name">Palmitic acid</field>
+        <field name="metabolite_name">Tryptophan</field>
+        <field name="metabolite_name">Oxidized glutathione</field>
+        <field name="metabolite_name">TTP</field>
+        <field name="metabolite_name">Orotidine-phosphate</field>
+        <field name="metabolite_name">Thymidine</field>
+        <field name="metabolite_name">Thymine</field>
+        <field name="metabolite_name">Taurocholic acid</field>
+        <field name="metabolite_name">Threonine</field>
+        <field name="metabolite_name">UDP-D-glucose</field>
+        <field name="metabolite_name">UDP-D-glucuronate</field>
+        <field name="metabolite_name">PC_34:2</field>
+        <field name="metabolite_name">PC_36:4</field>
+        <field name="metabolite_name">p-Aminobenzoate/Anthranilate</field>
+        <field name="metabolite_name">Pantothenate</field>
+        <field name="metabolite_name">PE_38:6</field>
+        <field name="metabolite_name">PE_38:6 ether</field>
+        <field name="metabolite_name">PC_38:6</field>
+        <field name="metabolite_name">PE_38:4</field>
+        <field name="metabolite_name">Valine</field>
+        <field name="metabolite_name">Methionine</field>
+        <field name="metabolite_name">Xanthine</field>
+        <field name="metabolite_name">Malonyl-CoA</field>
+        <field name="metabolite_name">Xanthosine</field>
+        <field name="metabolite_name">N-Acetyl-glucosamine-1-phosphate</field>
+        <field name="metabolite_name">Xanthosine-5-phosphate</field>
+        <field name="metabolite_name">myo-Inositol</field>
+        <field name="metabolite_name">UMP</field>
+        <field name="metabolite_name">Uracil</field>
+        <field name="metabolite_name">Uridine</field>
+        <field name="metabolite_name">UTP</field>
+        <field name="metabolite_name">N-Acetylornithine</field>
+        <field name="metabolite_name">UDP-N-acetyl-D-glucosamine</field>
+        <field name="metabolite_name">NAD+</field>
+        <field name="metabolite_name">NADH</field>
+        <field name="metabolite_name">NADP+</field>
+        <field name="metabolite_name">NADPH</field>
+        <field name="metabolite_name">Oleic acid</field>
+        <field name="metabolite_name">Ornithine</field>
+        <field name="metabolite_name">IMP</field>
+        <field name="metabolite_name">IDP</field>
+        <field name="metabolite_name">Hypoxanthine</field>
+        <field name="metabolite_name">Homocysteine</field>
+        <field name="metabolite_name">Homocysteic acid</field>
+        <field name="metabolite_name">Lysine</field>
+        <field name="metabolite_name">Malate</field>
+        <field name="metabolite_name">ITP</field>
+        <field name="metabolite_name">Lactate</field>
+        <field name="metabolite_name">Inosine</field>
+        <field name="metabolite_name">(Iso)leucine</field>
+        <field name="metabolite_name">Glycine</field>
+        <field name="metabolite_name">Glycerol-3-phosphate</field>
+        <field name="metabolite_name">Glucosamine-1-P or 6-P</field>
+        <field name="metabolite_name">Gluconate</field>
+        <field name="metabolite_name">Glutamine</field>
+        <field name="metabolite_name">Glutamate</field>
+        <field name="metabolite_name">GTP</field>
+        <field name="metabolite_name">Guanine</field>
+        <field name="metabolite_name">Guanosine</field>
+        <field name="metabolite_name">Histidine</field>
+        <field name="metabolite_name">GMP</field>
+        <field name="submitter">Evans Charles</field>
+        <field name="submitter_mail">chevans@umich.edu</field>
+        <field name="submitter_affiliation">Internal Medicine, University of Michigan</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

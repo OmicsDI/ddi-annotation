@@ -1,0 +1,198 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001272">
+      <name>Giardia duodenalis Assemblage A Quantitative Proteomics</name>
+      <description>Giardia duodenalis is a protozoan parasite of a wide range of vertebrates and one of the leading causes of gastroenteritis worldwide. G. duodenalis is a species complex of 8 assemblages with the zoonotic assemblage A as one of two discrete subtypes that is infective for humans. With increasing genomic and transcriptomic data now publicly available through the centralised giardiaDB.org, we have quantitatively analysed the proteomes of 8 G. duodenalis assemblage A strains (7 A1 and 1 A2) to provide a comprehensive proteomic baseline to complement these studies. Protein analysis identified a non-redundant total of 1220 proteins with an average of 764 proteins in each strain. At least 10% of all proteins identified were from the 4 protein families in the G. duodenalis variable genome, and substantial differences in number and abundance profiles in the Variable Surface Protein (VSP) family was observed. We also searched the 8 strains against both assemblage A genomes (subassemblage A1 and A2 genomes) and showed losses in protein identifications, especially for protein identifications associated with Giardia variable gene families which are sub-assemblage specific. We observed two expression profiles of VSPs within Giardia, which was independent to host origin, subassemblage, geographic origin and introduction to axenic culture and may indicate variation in surface antigen switching events and population heterogeneity. We hypothesise this variation may be related to karotype and chromosomal variation, which would indicate an assemblage-independent mechanism of variation in G. duodenalis.</description>
+      <cross_references>
+        <ref dbkey="941442" dbname="TAXONOMY"/>
+        <ref dbkey="25728068" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-08-28"/>
+        <date type="publication" value="2015-02-26"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001272</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">G. duodenalis strains were cultured in triplicate axenically in TYI-S33 media supplemented with 10% newborn calf serum and 1% bile as previously described [20] and harvested from confluent cultures in late log-phase. Trophozoites were harvested by centrifugation, washed twice in ice-cold PBS to remove media traces and pellets of 108 trophozoites were extracted into 1mL ice-cold SDS sample buffer containing 1mM EDTA and 5% beta-mercaptoethanol, then reduced at 75°C for 10 min. Trophozoite protein extracts were centrifuged at 0°C at 13 000 x g for 10 min to remove debris and protein concentration measured by BCA assay (Pierce).  A 500 µg protein pellet was extracted using methanol-chloroform precipitation and in-solution digestion was performed using the filter aided sample preparation (FASP) method  using  a 30K Amicon ultrafiltration device (Millipore) and modified to solubilise protein in 2,2,2-trifluorethanol (TFE)  with both Lys-C and Trypsin digestion. After peptide extraction all samples were dried using a vacuum centrifuge and reconstituted to 60 µL with 2% formic acid, 2% TFE.  Optimised GPF mass ranges were calculated using the 2.5 release of the G. duodenalis WB genome for Assemblage A from giardiaDB.org. Charge states +2 and +3 were considered as well as carbamidomethyl as a modification, and 4 mass ranges were calculated over 400-2000amu. The mass ranges were as following: the low mass range was 400-518amu, the low-medium mass range was 518-691amu, the medium-high mass range was 691-988amu and the high mass range was 988-2000amu. Each FASP protein digest for the triplicates of each strain were analysed by LC-MS/MS on an LTQ-XL linear ion trap mass spectrometer (Thermo, San Jose CA).</field>
+        <field name="data_protocol">The LTQ-XL raw output files were converted into MzMXL files and searched against the Giardiadb.org 4.0  release of G. duodenalis strain Assemblage A1 and A2 genome using the global proteome machine (GPM) software (version 2.1.1) and the X!Tandem algorithm. The 4 fractions for the GPF of each replicate were processed sequentially with output files generated for each individual fraction, and a merged, non-redundant output file for protein identifications with log(e) values &lt; – 1. Peptide identification was determined using a MS and MS/MS tolerances of +4 Da and +0.4 Da. Carbamidomethyl was considered a complete modification, and partial modifications considered included oxidation of methionine and tryptophan. Reverse database searching was used for estimating false discovery rates (FDRs)  and protein and peptide FDR were calculated. Protein identifications were considered valid only when present reproducibly in all three replicates, with a total spectral count (SpC) of ≥5. Protein abundance was calculated using normalised spectral abundance factors (NSAF), and a spectral fraction of 0.5 was added to all spectral counts, to compensate for null values and allow log transformation of the NSAF data prior to statistical analysis. Student’s t tests were performed to identify differentially expressed proteins between Giardia strains in the methods used.</field>
+        <field name="instrument_platform">LTQ</field>
+        <field name="species">Giardia intestinalis assemblage A</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">trophozoite</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">assemblage A</field>
+        <field name="submitter_keywords"> Giardia duodenalis</field>
+        <field name="submitter_keywords"> label-free quantitative shotgun proteomics</field>
+        <field name="submitter_keywords"> Variant Surface Protein</field>
+        <field name="submitter_keywords"> variable genome</field>
+        <field name="submitter_keywords"> parasite proteomics</field>
+        <field name="quantification_method">Normalized Spectral Abundance Factor - NSAF</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Emery SJ, Lacey E, Haynes PA. Quantitative proteomic analysis of Giardia duodenalis assemblage A: A baseline for host, assemblage, and isolate variation. Proteomics. 2015 Feb 27</field>
+        <field name="submitter">Samantha Emery</field>
+        <field name="submitter_mail">samantha.emery@mq.edu.au</field>
+        <field name="submitter_affiliation">Chemistry and Biomolecular Sciences</field>
+        <field name="labhead">Professor Paul A Haynes</field>
+        <field name="labhead_mail">paul.haynes@mq.edu.au</field>
+        <field name="labhead_affiliation">Macquarie University, Faculty of Science, Department of Chemistry and Biomolecular Sciences</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/1003 R1 - A1 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/1003 R1 - A2 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/1003 R2 - A1 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/1003 R2 - A2 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/1003 R3 - A1 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/1003 R3 - A2 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/1003-R1-F1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/1003-R1-F2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/1003-R1-F3.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/1003-R1-F4.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/1003-R2-F1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/1003-R2-F2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/1003-R2-F3.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/1003-R2-F4.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/1003-R3-F1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/1003-R3-F2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/1003-R3-F3.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/1003-R3-F4.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/106 R1 - A1 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/106 R1 - A2 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/106 R2 - A1 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/106 R2 - A2 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/106 R3 - A1 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/106 R3 - A2 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/106-R1-F1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/106-R1-F2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/106-R1-F3.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/106-R1-F4.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/106-R2-F1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/106-R2-F2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/106-R2-F3.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/106-R2-F4.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/106-R3-F1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/106-R3-F2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/106-R3-F3.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/106-R3-F4.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/1065 R1 - A1 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/1065 R1 - A2 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/1065 R2 - A1 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/1065 R2 - A2 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/1065 R3 - A1 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/1065 R3 - A2 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/1065-R1-F1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/1065-R1-F2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/1065-R1-F3.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/1065-R1-F4.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/1065-R2-F1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/1065-R2-F2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/1065-R2-F3.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/1065-R2-F4.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/1065-R3-F1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/1065-R3-F2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/1065-R3-F3.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/1065-R3-F4.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/2041 R1 - A1 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/2041 R1 - A2 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/2041 R2 - A1 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/2041 R2 - A2 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/2041 R3 - A1 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/2041 R3 - A2 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/2041-R1-F1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/2041-R1-F2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/2041-R1-F3.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/2041-R1-F4.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/2041-R2-F1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/2041-R2-F2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/2041-R2-F3.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/2041-R2-F4.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/2041-R3-F1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/2041-R3-F2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/2041-R3-F3.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/2041-R3-F4.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/713 R1 - A1 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/713 R1 - A2 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/713 R2 - A1 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/713 R2 - A2 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/713 R3 - A1 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/713 R3 - A2 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/713-R1-F1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/713-R1-F2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/713-R1-F3.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/713-R1-F4.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/713-R2-F1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/713-R2-F2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/713-R2-F3.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/713-R2-F4.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/713-R3-F1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/713-R3-F2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/713-R3-F3.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/713-R3-F4.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/Bac1 R1 - A1 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/Bac1 R1 - A2 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/Bac1 R2 - A1 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/Bac1 R2 - A2 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/Bac1 R3 - A1 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/Bac1 R3 - A2 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/Bac1-R1-F1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/Bac1-R1-F2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/Bac1-R1-F3.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/Bac1-R1-F4.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/Bac1-R2-F1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/Bac1-R2-F2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/Bac1-R2-F3.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/Bac1-R2-F4.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/Bac1-R3-F1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/Bac1-R3-F2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/Bac1-R3-F3.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/Bac1-R3-F4.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/OAS1 R1 - A1 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/OAS1 R1 - A2 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/OAS1 R2 - A1 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/OAS1 R2 - A2 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/OAS1 R3 - A1 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/OAS1 R3 - A2 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/OAS1-R1-F1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/OAS1-R1-F2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/OAS1-R1-F3.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/OAS1-R1-F4.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/OAS1-R2-F1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/OAS1-R2-F2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/OAS1-R2-F3.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/OAS1-R2-F4.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/OAS1-R3-F1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/OAS1-R3-F2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/OAS1-R3-F3.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/OAS1-R3-F4.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/WB R1 - A1 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/WB R1 - A2 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/WB R2 - A1 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/WB R2 - A2 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/WB R3 - A1 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/WB R3 - A2 Genome Merged.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/WB-R1-F1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/WB-R1-F2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/WB-R1-F3.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/WB-R1-F4.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/WB-R2-F1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/WB-R2-F2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/WB-R2-F3.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/WB-R2-F4.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/WB-R3-F1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/WB-R3-F2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/WB-R3-F3.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001272/WB-R3-F4.RAW</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

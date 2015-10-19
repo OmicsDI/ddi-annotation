@@ -1,0 +1,99 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000113">
+      <name>GeLC-MS/MS analysis of cereal aphid saliva</name>
+      <description>Saliva was collected from c.40,000 diet reared aphids, pooled and concentrated. Samples were coming from 2 aphid species: Metopolophium dirhodum and Sitobion avenae. Proteins were fractionated using SDS PAGE and visible bands were subjected to in gel digestion. Tryptic peptides were analysised on a Thermo LTQ-FT. Protein identification from the MS/MS data was performed using the TurboSEQUEST algorithm in BioWorks v. 3.2 (Thermo Fisher Scientific) to correlate the data against ACYPIproteins v2.1, the official protein set of the pea aphid genome assembly (33291 predicted protein models; accessed November 2011) available at http://www.aphidbase.com/aphidbase/downloads.  The following search parameters were used: precursor-ion mass tolerance of 1.5 Da, fragment ion tolerance of 1.0 Da with methionine oxidation and cysteine carboxyamidomethylation specified as differential modifications and a maximum of two missed cleavage sites allowed. Two filters were applied: XCorr vs. charge state (1, 2, 3 and 4 = 1.50, 2.00, 2.50 and 3.00 respectively) and peptide probability (p&lt;0.001). Matches with multiple unique peptides and a cumulative XCorr &gt;20 are reported. PLoS One accepted: Proteomic profiling of cereal aphid saliva reveals ubiquitous and adaptative secreted proteins. Rao S.A.K., Carolan, J.C. and Wilkinson, T.L.W.</description>
+      <cross_references>
+        <ref dbkey="44670" dbname="TAXONOMY"/>
+        <ref dbkey="44664" dbname="TAXONOMY"/>
+        <ref dbkey="23460852" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2012-12-18"/>
+        <date type="publication" value="2013-04-09"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000113</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Not available</field>
+        <field name="instrument_platform">LTQ</field>
+        <field name="species">Metopolophium dirhodum (Rose grain aphid)</field>
+        <field name="species">Sitobion avenae (English grain aphid)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Not available</field>
+        <field name="modification">iodoacetic acid derivatized residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="submitter_keywords">Aphids</field>
+        <field name="submitter_keywords"> Saliva</field>
+        <field name="submitter_keywords"> LTQ-FT</field>
+        <field name="submitter_keywords"> Metopolophium dirhodum </field>
+        <field name="submitter_keywords"> Sitobion avenae</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Rao SA, Carolan JC, Wilkinson TL; Proteomic profiling of cereal aphid saliva reveals both ubiquitous and adaptive secreted proteins., PLoS One, 2013, 8, 2, e57413, </field>
+        <field name="submitter">James Carolan</field>
+        <field name="submitter_mail">james.carolan@nuim.ie</field>
+        <field name="submitter_affiliation">Biology</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Md_saliva_01.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Md_saliva_01.srf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Md_saliva_01.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Md_saliva_02.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Md_saliva_02.srf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/MD_saliva_02.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Md_saliva_03.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Md_saliva_03.srf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Md_saliva_03.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Md_saliva_04.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Md_saliva_04.srf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Md_saliva_04.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Md_saliva_05.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Md_saliva_05.srf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Md_saliva_05.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Md_saliva_06.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Md_saliva_06.srf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Md_saliva_06.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Md_saliva_08.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Md_saliva_08.srf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Md_saliva_08.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Sa_saliva_01.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Sa_saliva_01.srf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Sa_saliva_01.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Sa_saliva_02.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Sa_saliva_02.srf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Sa_saliva_02.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Sa_saliva_03.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Sa_saliva_03.srf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Sa_saliva_03.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Sa_saliva_04.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Sa_saliva_04.srf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Sa_saliva_04.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Sa_saliva_05.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Sa_saliva_05.srf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Sa_saliva_05.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Sa_saliva_06.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Sa_saliva_06.srf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Sa_saliva_06.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Sa_saliva_07.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Sa_saliva_07.srf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Sa_saliva_07.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Sa_saliva_08.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Sa_saliva_08.srf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Sa_saliva_08.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Sa_saliva_09.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Sa_saliva_09.srf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000113/Sa_saliva_09.zip</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

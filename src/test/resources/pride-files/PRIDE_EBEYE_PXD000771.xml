@@ -1,0 +1,117 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-07-24</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000771">
+      <name>Proteomic characterisation of the salt gland-enriched tissues of the mangrove tree species Avicennia officinalis</name>
+      <description>Plant salt glands are nature’s desalination devices that harbour potentially useful information pertaining to salt and water transport during secretion.  As part of the program toward deciphering secretion mechanisms in salt glands, we adopted a shotgun approach to look into the proteome of salt-gland enriched tissues of the mangrove tree species Avicennia officinalis.  To achieve this, we isolated the adaxial epidermal peels (which harbour the salt glands), and separated them from the mesophyll tissues of the leaves.  Three biological replicates were prepared and total proteins were extracted from these tissues.  Proteins that were found to be unique in salt gland-enriched tissues were obtained by eliminating proteins found in the mesophyll tissues.  The proteins that are uniquely present in salt gland-enriched tissues were then selected and categorized by GO analysis.</description>
+      <cross_references>
+        <ref dbkey="41377" dbname="TAXONOMY"/>
+        <ref dbkey="26193361" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-02-20"/>
+        <date type="publication" value="2015-07-22"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000771</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Epidermal peels and mesophyll tissues required for protein extractions were isolated through an enzymatic approach.  Total proteins were then extracted separately from these tissues by grinding them in liquid nitrogen and resuspending in buffer containing 25mM triethylammonium bicarbonate, 8M urea, 2% Triton X-100 and 0.1% sodium dodecyl sulfate.  The samples were sonicated on ice for 30min, centrifuged (16000×g) at 15°C for 1h before supernatants were collected.  Proteins present in the supernatants were estimated.  Each sample (300µg) was reduced by 5mM tris(2-carboxyethyl)phosphine and alkylated with 10mM methyl methanethiosulfonate before overnight trypsin-digestion was carried out.   The first dimension peptide separation, which included removal of SDS and other contaminants, was carried out on a LC-10A1 Prominence Modular HPLC.  The digested sample (100μg) was diluted with 5ml strong cation-exchange mobile phase A [10mM potassium phosphate in 25% acetonitrile (ACN), pH 3.0] before solution was passed through a 3μm PolySULFOETHYL A column (35mm × 4.6mm).  Peptides were separated by gradient formed by mobile phase A and B (500mM KCl and 10mM potassium phosphate in 25% ACN, pH 3.0),: 0–0% mobile phase A in 10min, 0–36% mobile phase B in 80min, 36–70% mobile phase B in 30min, 70–100% mobile phase B in 1min, 100–100% mobile phase B in 10min and 0–0% mobile phase B in 10min, each at a flow rate of 0.5 ml/min.  The digested peptides (100μg) separated were combined to 8 fractions (~12.5µg proteins/fraction), desalted with Sep-Pak Classic C18 cartridge, lyophilized before a second-dimension reversed-phase chromatography was carried out on Eksigent nanoLC Ultra and ChiPLC-nanoflex. Desalted samples were reconstituted with 15μl diluent [2% ACN, 0.05% formic acid (FA)], 5μl of which was loaded on 200μm × 0.5mm trap column and eluted onto analytical 75μm × 150mm column.  Both columns were made of Repro-Sil-Pur C18-AQ, 3μm (Eksigent, Dr. Maisch, Germany).  Peptides were separated by gradient formed by mobile phase A (2% ACN, 0.1% FA) and B (98% ACN, 0.1% FA):  5–12% mobile phase B in 20min, 12–30% mobile phase B in 40min, 30–90% mobile phase B in 2min, each at a flow rate of 300nl/min.  The MS analysis was performed on TripleTOF 5600 system (AB SCIEX, Foster City, CA, USA) in Information Dependent Mode.  MS spectra were acquired across mass range of 400–1800m/z in high resolution mode (&gt;30000) using 250ms accumulation time/spectrum.  A maximum of 20 precursors/cycle was chosen for fragmentation from each MS spectrum with 100ms minimum accumulation time for each precursor and dynamic exclusion for 15s.  Tandem mass spectra were recorded in high sensitivity mode (resolution &gt;15000) with rolling collision energy on.</field>
+        <field name="data_protocol">The obtained MS/MS spectra were searched against a database created using AB SCIEX ProteinPilotTM Software 4.2.  Identified proteins for each biological replicate were selected based on a false discovery rate of &lt;1%.  To obtain the list of proteins from salt gland-enriched tissues, data were sorted using nwCompare.  Selected proteins were analysed and information were retrieved from the UniProt Knowledgebase website (http://www.uniprot.org/help/uniprotkb).</field>
+        <field name="instrument_platform">TripleTOF 5600</field>
+        <field name="species">Avicennia</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">leaf</field>
+        <field name="modification">acetylated residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="modification">methylthiolated residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">Avicennia</field>
+        <field name="submitter_keywords"> mangrove proteomics</field>
+        <field name="submitter_keywords"> ProteinPilot</field>
+        <field name="submitter_keywords"> salt gland-enriched tissues</field>
+        <field name="submitter_keywords"> shotgun</field>
+        <field name="submitter_keywords"> 2DLC/MS/MS</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Tan WK, Lim TK, Loh CS, Kumar P, Lin Q. Proteomic Characterisation of the Salt Gland-Enriched Tissues of the Mangrove Tree Species Avicennia officinalis. PLoS One. 2015 Jul 20;10(7):e0133386. eCollection 2015</field>
+        <field name="submitter">Qingsong Lin</field>
+        <field name="submitter_mail">dbslinqs@nus.edu.sg</field>
+        <field name="submitter_affiliation">Biological Sciences</field>
+        <field name="labhead">Qingsong Lin</field>
+        <field name="labhead_mail">dbslinqs@nus.edu.sg</field>
+        <field name="labhead_affiliation">Department of Biological Sciences, National University of Singapore, 14 Science Drive 4, Singapore 117543.</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/131108_WK_T1_2DLC_F1_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/131108_WK_T1_2DLC_F2_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/131108_WK_T1_2DLC_F3_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/131108_WK_T1_2DLC_F4_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/131108_WK_T1_2DLC_F5_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/131108_WK_T1_2DLC_F6_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/131108_WK_T1_2DLC_F7_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/131108_WK_T1_2DLC_F8_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/131108_WK_T1_2DLC_combine_F1_8.group.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/1311202_WK_T2_2DLC_F1_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/1311202_WK_T2_2DLC_F2_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/1311202_WK_T2_2DLC_F3_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/1311202_WK_T2_2DLC_F4_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/1311202_WK_T2_2DLC_F5_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/1311202_WK_T2_2DLC_F6_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/1311202_WK_T2_2DLC_F7_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/1311202_WK_T2_2DLC_F8_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/1311202_WK_T2_2DLC_combine all fractions.group.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/131201_WK_T3_2DLC_F1_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/131201_WK_T3_2DLC_F2_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/131201_WK_T3_2DLC_F3_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/131201_WK_T3_2DLC_F4_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/131201_WK_T3_2DLC_F5_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/131201_WK_T3_2DLC_F6_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/131201_WK_T3_2DLC_F7_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/131201_WK_T3_2DLC_F8_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/131217_WK_T3_2DLC_F1_F8 combine search mangrove.group.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/1311216_WK_MS3_2DLC_F1_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/1311216_WK_MS3_2DLC_F2_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/1311216_WK_MS3_2DLC_F3_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/1311216_WK_MS3_2DLC_F4_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/1311216_WK_MS3_2DLC_F5_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/1311216_WK_MS3_2DLC_F6_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/1311216_WK_MS3_2DLC_F7_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/1311216_WK_MS3_2DLC_F8_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/131218_WK_MS3_2DLC_combine all.group.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/1311218_WK_MS2_2DLC_F1_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/1311218_WK_MS2_2DLC_F2_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/1311218_WK_MS2_2DLC_F3_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/1311218_WK_MS2_2DLC_F4_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/1311218_WK_MS2_2DLC_F5_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/1311218_WK_MS2_2DLC_F6_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/1311218_WK_MS2_2DLC_F7_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/1311218_WK_MS2_2DLC_F8_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/1311218_WK_MS2_2DLC__combine search.group.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/1311221_WK_MS1_2DLC_F1.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/1311221_WK_MS1_2DLC_F2.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/1311221_WK_MS1_2DLC_F3.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/1311221_WK_MS1_2DLC_F4.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/1311221_WK_MS1_2DLC_F5.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/1311221_WK_MS1_2DLC_F6.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/1311221_WK_MS1_2DLC_F7.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/1311221_WK_MS1_2DLC_F8.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/131125_WK_MS1_2DLC_F1_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/131125_WK_MS1_2DLC_F2_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/131125_WK_MS1_2DLC_F3_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/131125_WK_MS1_2DLC_F4_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/131125_WK_MS1_2DLC_F5_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/131125_WK_MS1_2DLC_F6_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/131125_WK_MS1_2DLC_F7_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/131125_WK_MS1_2DLC_F8_5ul.mzml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/07/PXD000771/140107_WK_MS1_2DLC_combine 5ul_10ul search.group.xml</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

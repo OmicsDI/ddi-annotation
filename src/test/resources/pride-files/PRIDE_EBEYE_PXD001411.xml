@@ -1,0 +1,109 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001411">
+      <name>Ancient proteins resolve the evolutionary history of Darwin's South American ungulates</name>
+      <description>The project aimed to characterize the collagen type I (COL1) sequences from Pleistocene Macrauchenia sp. and Toxodon sp. bone samples, and by comparison with existing COL1 sequences available from genomic sources establish the phylogenetic position of both extinct species. In order to resolve their phylogenetic position, COL1 was extracted from two Toxodon (samples MLP201204, MACN201212, York12, York13) and two Macrauchenia (samples MLP201212, MACN201202, York14, York15). In addition, modern and Pleistocene COL1 was extracted from additional species currently not present in available databases (Mylodon darwinii, Cyclopes didactylus, Hippopotamus amphibius, Tapirus terrestris) or from species for which COL1 sequences are available (Equus sp., Oryceropus afer). All extractions were performed at BioArCh, University of York (UK). Analyses took place on Bruker maXis HD (Macrauchenia sp., Toxodon sp., Equus sp.) and Thermo Scientific Hybrid Quadruopole-Orbitrap (Macrauchenia sp., Toxodon sp., Mylodon darwinii, Cyclopes didactylus, Hippopotamus amphibius, Tapirus terrestris, Oryceropus afer) platforms.</description>
+      <cross_references>
+        <ref dbkey="35510" dbname="TAXONOMY"/>
+        <ref dbkey="9818" dbname="TAXONOMY"/>
+        <ref dbkey="84074" dbname="TAXONOMY"/>
+        <ref dbkey="48784" dbname="TAXONOMY"/>
+        <ref dbkey="9801" dbname="TAXONOMY"/>
+        <ref dbkey="32644" dbname="TAXONOMY"/>
+        <ref dbkey="9833" dbname="TAXONOMY"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-10-20"/>
+        <date type="publication" value="2015-03-19"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001411</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Bone samples were screened for the presence of COL1 using published ZooMS techniques (Buckley et al. 2009). Modifications include the use of trypsin and elastase as digestion enzymes for separate preparations. Resulting digests were pooled for the same bone/skin sample, and analyzed on either Bruker maXis HD or Thermo Scientific Orbitrap (or both) platforms. For Orbitrap, pooled samples were separated on an Ultimate 3000 RSLCnano LC sytem (Thermo Scientific).  Spectra acquisition was performed on a Q Exactive Hybrid Quadrupole-Orbitrap (Thermo Scientific) mass spectrometer at a resolution of 70000 @ m/z 200 and a maximum injection time of 100 ms  in mass range 380-800. Product ion spectra were acquired at a resolution of 17500 and a maximum injection time of 128 ms. For maXis HD, samples were also separated on a Ultimate 3000 RSLCnano LC system. Spectra acquisition was performed on a maXis HD UHR-Q-TOF system (Bruker Daltonik GmbH), in the range of 150-2000 m/z at a rate of 2 Hz. Further sample-specific details and platforms settings can be found in Welker et al. in press).</field>
+        <field name="data_protocol">Initially, MASCOT (Matrix Science) was used to search product ion spectra against the UniColl database to generate a list of ranked peptides for each spectrum. Sequences derived from this exercise were added to a local database of genomic and published collagen sequences and common laboratory contaminants, and the original data was then re-analysed by PEAKS (v. 6, Bioinformatics Solutions Inc.) using this new database. For UniColl, publicly available COL1α1 and COL1α2 sequences were concatenated and aligned using Mafft with subsequent manual alignment of misaligned sites using Bioedit and Geneious v 4.6. A custom python script was used to digest the COL1 with trypsin in silico. For each tryptic fragment, all variable amino acid positions across the aligned sequences were recorded. A new sequence was created for every permutation of these variable sites. These sequences were concatenated and stored in FASTA format with a header indicating the position in the original alignment. The result was a database with each entry a concatenation of sequences representing every permutation of observed mutations for that particular tryptic fragment. For PEAKS, product ion spectra were searched using the PEAKS software (v. 6, Bioinformatics Solutions Inc.) against a database comprising genomic COL1 sequences plus fossil consensus sequences derived from UniColl peptide hits. Again, common laboratory contaminants were included in database searches. For MASCOT, the highest scoring peptide was selected, with a minimum score of &gt;30. For PEAKS, false discovery rate (FDR) was put at 0.5% and peptide scores were only accepted with -10lgp scores ≥ 30 and ALC (%) ≥ 50. For all searches in MASCOT and PEAKS, peptide mass tolerance +/-10 ppm and fragment mass tolerance +/-0.07 Da were set as instrument settings, while searches allowed for allowing for the following PTMs: deamidated (NQ), Lys-&gt;Hyl(K), oxidation(M) and Pro-&gt;Hyp(P).</field>
+        <field name="instrument_platform">Q Exactive</field>
+        <field name="instrument_platform">LTQ Orbitrap Velos</field>
+        <field name="instrument_platform">maXis</field>
+        <field name="species">Equus</field>
+        <field name="species">Orycteropus afer (Aardvark)</field>
+        <field name="species">Cyclopes didactylus (Silky anteater) (Myrmecophaga didactyla)</field>
+        <field name="species">Mylodon darwinii (Giant ground sloth)</field>
+        <field name="species">Tapirus terrestris (Lowland tapir) (Brazilian tapir)</field>
+        <field name="species">unidentified</field>
+        <field name="species">Hippopotamus amphibius (Hippopotamus)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">bone</field>
+        <field name="tissue">skin</field>
+        <field name="modification">monohydroxylated proline</field>
+        <field name="modification">hydroxylated lysine</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="modification">deamidated residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">LC-MS/MS</field>
+        <field name="submitter_keywords"> Macrauchenia</field>
+        <field name="submitter_keywords"> Toxodon</field>
+        <field name="submitter_keywords"> Bruker maXis HD</field>
+        <field name="submitter_keywords"> Thermo Scientific Hybrid Quadrupole-Orbitrap</field>
+        <field name="submitter_keywords"> de novo collagen sequencing</field>
+        <field name="submitter_keywords"> Pleistocene</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="submitter">Frido Welker</field>
+        <field name="submitter_mail">frido.welker@palaeo.eu</field>
+        <field name="submitter_affiliation">PhD candidate:&#13;
+Department of Human Evolution, MPI-EVA.&#13;
+Associate Researcher:&#13;
+BioArCh, Department of Archaeology, University of York</field>
+        <field name="labhead">Matthew Collins</field>
+        <field name="labhead_mail">matthew.collins@york.ac.uk</field>
+        <field name="labhead_affiliation">BioArCh, University of York, United Kingdom</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001411/Cyclopes.1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001411/Cyclopes.2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001411/Cyclopes.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001411/Equus.1.baf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001411/Equus.2.baf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001411/Equus.3.baf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001411/Equus.4.baf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001411/Equus.5.baf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001411/Equus.6.baf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001411/Equus.7.baf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001411/Equus.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001411/Hippopotamus.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001411/Hippopotamus.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001411/MACN201202.baf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001411/MACN201202.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001411/MACN201212.baf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001411/MACN201212.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001411/MLP201204.baf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001411/MLP201204.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001411/MLP201212.1.baf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001411/MLP201212.2.baf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001411/MLP201212.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001411/Mylodon.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001411/Mylodon.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001411/Orycteropus.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001411/Orycteropus.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001411/Tapirus.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001411/Tapirus.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001411/York12.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001411/York12.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001411/York13.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001411/York13.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001411/York14.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001411/York14.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001411/York15.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001411/York15.raw</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

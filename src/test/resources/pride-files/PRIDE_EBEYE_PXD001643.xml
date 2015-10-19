@@ -1,0 +1,88 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001643">
+      <name>SILAC-iTRAQ-TAILS</name>
+      <description>Secreted proteases act on interstitial tissue secretomes released from multiple cell types. Thus, substrate proteins might be part of higher molecular complexes constituted by many proteins with diverse and potentially unknown cellular origin. In cell culture these might be reconstituted by mixing native secretomes from different cell types prior to incubation with a test protease. Although current degradomics techniques could identify novel substrate proteins in these complexes, all information on the cellular origin would be lost. To address this limitation we combined iTRAQ-based Terminal Amine Isotopic Labeling of Substrates (iTRAQ-TAILS) with stable isotope labeling by amino acids in cell culture (SILAC) to assign proteins to a specific cell type by MS1- and their cleavage by MS2-based quantification in the same experiment. We demonstrate the power of our newly established workflow by monitoring matrix metalloproteinase (MMP) 10-dependent cleavages in mixtures from heavy labeled fibroblast and light labeled keratinocyte sectretomes. This analysis correctly assigned extracellular matrix components, such as laminins and collagens, to their respective cellular origins and revealed their processing in an MMP10-dependent manner. Hence, our newly devised degradomics workflow facilitates deeper insights into protease activity in complex intercellular compartments like the epidermal-dermal interface by integrating multiple modes of quantification with positional proteomics.</description>
+      <cross_references>
+        <ref dbkey="10090" dbname="TAXONOMY"/>
+        <ref dbkey="25871442" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2015-01-02"/>
+        <date type="publication" value="2015-05-11"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001643</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Murine embryonic fibroblasts and murine primary keratinocytes were cultured in heavy (R10) and light SILAC medium, respectively, and sectretomes were collected. To record reference secretomes for each cell type, secretomes were digested with LysC and trypin and analyzed on a Thermo Q Exactive instrument. To identify cellular origins and protease substrates within the same experiment (SILAC-iTRAQ-TAILS), heavy and light secretomes were mixed in a 1:1 ratio, either incubated with GluC (test protease with canonical specificity) or with MMP10 and subjected to iTRAQ-TAILS following mass spectrometry analysis on a Thermo Q Exactive instrument.</field>
+        <field name="data_protocol">For tryptic digests (reference proteomes) peak lists were generated from raw files using Mascot Distiller v2.4.3.3 (Matrix Science). Raw files from iTRAQ-TAILS experiments were converted to centroided mzXML files by ProteoWizard’s msconvert (64-bit), from which peak lists (mgf) were extracted using the same software tool. Mascot v.2.4.1 was used to search peak lists against a mouse UniProtKB database (release 2014_01; 50807 entries) extended by common contaminants (including GluC) and human MMP10 as well as reversed decoy sequences. Following parameters were applied: reference proteomes: trypsin for enzyme specificity (up to one missed cleavages), carbamidomethyl(C) (heavy-labeled MEF secretomes: Label:13C(6)15N(4)(R))  as fixed and oxidation(M) as variable modifications. iTRAQ-TAILS experiments: semi-ArgC for enzyme specificity (up to one missed cleavages), carbamidomethyl(C) and iTRAQ4plex(K) as fixed and oxidation(M), acetyl(N-term), iTRAQ4plex(N-term) and Label:13C(6)15N(4)(R) as variable modifications. Parent mass errors were set to 10 ppm and fragment mass errors to 0.02 Da. The Trans-Proteomic Pipeline (TPP v4.6, rev 3, Build 201310301508) was used to secondary validate search results (PeptideProphet, iProphet, ProteinProphet) and to quantitate peptides on MS1 (XPRESS) and MS2 (Libra) levels. Protein lists from reference proteome searches were generated employing PeptideProphet using ‘accurate mass binning’, ‘decoy hits to pin down the negative distribution’ and a ‘non-parametric model’ followed by iProphet analysis and ProteinProphet without assembling protein groups. iTRAQ-TAILS search results were processed by PeptideProphet (‘accurate mass binning’, ‘do not use the NTT model’), iProphet, XPRESS (mass tolerance: 10 ppm, ‘For ratio set/fix light to 1, vary heavy’, residue mass difference: R: 10.008269, elution peak area: ±100) and Libra (default settings for iTRAQ - 4 channel). For protein level analysis of iTRAQ-TAILS data the same analysis was run but without Libra and including ProteinProphet (without assembling protein groups) on iProphet results. Peptides were filtered by an iProphet probability of ≥0.90 and proteins by a ProteinProphet probability of ≥0.90 for subsequent analysis.</field>
+        <field name="instrument_platform">Q Exactive</field>
+        <field name="species">Mus musculus (Mouse)</field>
+        <field name="cell_type">fibroblast</field>
+        <field name="cell_type">keratinocyte</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">6x(13)C,4x(15)N labeled L-arginine</field>
+        <field name="modification">acetylated residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="modification">iTRAQ4plex-116 reporter+balance reagent acylated residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="curator_keywords">Technical</field>
+        <field name="submitter_keywords">SILAC</field>
+        <field name="submitter_keywords"> iTRAQ</field>
+        <field name="submitter_keywords"> TAILS</field>
+        <field name="submitter_keywords"> MMP</field>
+        <field name="submitter_keywords"> skin</field>
+        <field name="submitter_keywords"> basement membrane</field>
+        <field name="quantification_method">iTRAQ</field>
+        <field name="quantification_method">SILAC</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Schlage P, Kockmann T, Kizhakkedathu JN, Keller UA. Monitoring matrix metalloproteinase activity at the epidermal-dermal interface by SILAC-iTRAQ-TAILS. Proteomics. 2015 Apr 13</field>
+        <field name="submitter">Ulrich auf dem Keller</field>
+        <field name="submitter_mail">ulrich.aufdemkeller@biol.ethz.ch</field>
+        <field name="submitter_affiliation">Department of Biology</field>
+        <field name="labhead">Ulrich auf dem Keller</field>
+        <field name="labhead_mail">ulrich.aufdemkeller@biol.ethz.ch</field>
+        <field name="labhead_affiliation">ETH Zurich, Institute of Molecular Health Sciences, Zurich, Switzerland</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001643/20141127_02_DDA_MEF.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001643/20141127_04_DDA_KC.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001643/20141127_02_DDA_MEF.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001643/20141127_04_DDA_KC.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001643/interact_20141127_02_DDA_KC_DECOY_non_param.ipro.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001643/interact_20141127_02_DDA_KC_DECOY_non_param.ipro.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001643/interact_20141127_02_DDA_MEF_DECOY_non_param.ipro.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001643/interact_20141127_02_DDA_MEF_DECOY_non_param.ipro.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001643/20131219_05_GluC_PO.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001643/20131219_05_GluC_PO.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001643/20131219_05_GluC_PO.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001643/20131219_06_GluC_NPO.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001643/20131219_06_GluC_NPO.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001643/20131219_06_GluC_NPO.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001643/interact_20131219_GluC_PO_NPO_no_DECOY_p05_l1_Libra_Xpress_10ppm_fix100.ipro.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001643/interact_20131219_GluC_PO_NPO_no_DECOY_p05_l1_Xpress_10ppm_fix100_NOGROUPS.ipro.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001643/interact_20131219_GluC_PO_NPO_no_DECOY_p05_l1_Xpress_10ppm_fix100_NOGROUPS.ipro.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001643/20140411_02_SILAC_MMP10_PO.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001643/20140411_02_SILAC_MMP10_PO.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001643/20140411_02_SILAC_MMP10_PO.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001643/20140411_03_SILAC_MMP10_NPO.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001643/20140411_03_SILAC_MMP10_NPO.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001643/20140411_03_SILAC_MMP10_NPO.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001643/interact_20140411_MMP10_PO_NPO_no_DECOY_p05_l1_Libra_Xpress_10ppm_fix100_NOGROUPS.ipro.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001643/interact_20140411_MMP10_PO_NPO_no_DECOY_p05_l1_Xpress_10ppm_fix100_NOGROUPS.ipro.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001643/interact_20140411_MMP10_PO_NPO_no_DECOY_p05_l1_Xpress_10ppm_fix100_NOGROUPS.ipro.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001643/GluC_N_termini_spectra.pdf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001643/MMP10_N_termini_spectra.pdf</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

@@ -1,0 +1,127 @@
+<database>
+  <name>MetabolomicsWorkbench</name>
+  <description>The Metabolomics Workbench will serve as a national and international repository for metabolomics data and metadata and will provide analysis tools and access to metabolite standards, protocols, tutorials, training, and more.</description>
+  <release>1.0</release>
+  <release_date>15-05-20</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="ST000018">
+      <name>1H-NMR Reproducibility</name>
+      <description>The purpose of this study is to prepare and analyze a set of samples that will test the experimental variability and reproducibility of NMR based metabolomics.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="18089" dbname="ChEBI"/>
+        <ref dbkey="15428" dbname="ChEBI"/>
+        <ref dbkey="30769" dbname="ChEBI"/>
+        <ref dbkey="17170" dbname="ChEBI"/>
+        <ref dbkey="30769" dbname="ChEBI"/>
+        <ref dbkey="30769" dbname="ChEBI"/>
+        <ref dbkey="16449" dbname="ChEBI"/>
+        <ref dbkey="18089" dbname="ChEBI"/>
+        <ref dbkey="18089" dbname="ChEBI"/>
+        <ref dbkey="27480" dbname="ChEBI"/>
+        <ref dbkey="15891" dbname="ChEBI"/>
+        <ref dbkey="15724" dbname="ChEBI"/>
+        <ref dbkey="27897" dbname="ChEBI"/>
+        <ref dbkey="27897" dbname="ChEBI"/>
+        <ref dbkey="35621" dbname="ChEBI"/>
+        <ref dbkey="17290" dbname="ChEBI"/>
+        <ref dbkey="15344" dbname="ChEBI"/>
+        <ref dbkey="35932" dbname="ChEBI"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="14-02-17"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Metabolomics</field>
+        <field name="full_dataset_link">http://www.metabolomicsworkbench.org/data/DRCCMetadata.php?Mode=Study&amp;StudyID=ST000018</field>
+        <field name="repository">MetabolomicsWorkbench</field>
+        <field name="data_protocol">1H NMR 950 MHz</field>
+        <field name="instrument_platform">Bruker Avance III</field>
+        <field name="study_factor">Aliqout:4 | Analysis_Day:3</field>
+        <field name="study_factor">Aliqout:4 | Analysis_Day:2</field>
+        <field name="study_factor">Aliqout:10 | Analysis_Day:3</field>
+        <field name="study_factor">Aliqout:2 | Analysis_Day:2</field>
+        <field name="study_factor">Aliqout:6 | Analysis_Day:2</field>
+        <field name="study_factor">Aliqout:10 | Analysis_Day:1</field>
+        <field name="study_factor">Aliqout:2 | Analysis_Day:3</field>
+        <field name="study_factor">Aliqout:6 | Analysis_Day:3</field>
+        <field name="study_factor">Aliqout:10 | Analysis_Day:2</field>
+        <field name="study_factor">Aliqout:8 | Analysis_Day:1</field>
+        <field name="study_factor">Aliqout:1 | Analysis_Day:2</field>
+        <field name="study_factor">Aliqout:2 | Analysis_Day:1</field>
+        <field name="study_factor">Aliqout:6 | Analysis_Day:1</field>
+        <field name="study_factor">Aliqout:1 | Analysis_Day:1</field>
+        <field name="study_factor">Aliqout:1 | Analysis_Day:3</field>
+        <field name="study_factor">Aliqout:8 | Analysis_Day:2</field>
+        <field name="study_factor">Aliqout:8 | Analysis_Day:3</field>
+        <field name="study_factor">Aliqout:7 | Analysis_Day:3</field>
+        <field name="study_factor">Aliqout:7 | Analysis_Day:2</field>
+        <field name="study_factor">Aliqout:7 | Analysis_Day:1</field>
+        <field name="study_factor">Aliqout:3 | Analysis_Day:3</field>
+        <field name="study_factor">Aliqout:4 | Analysis_Day:1</field>
+        <field name="study_factor">Aliqout:3 | Analysis_Day:2</field>
+        <field name="study_factor">Aliqout:3 | Analysis_Day:1</field>
+        <field name="species">Homo sapiens</field>
+        <field name="technology_type">Bruker Avance III</field>
+        <field name="metabolite_name">Hippurate</field>
+        <field name="metabolite_name">Glycine</field>
+        <field name="metabolite_name">Glycolate</field>
+        <field name="metabolite_name">Creatinine</field>
+        <field name="metabolite_name">Dimethylamine</field>
+        <field name="metabolite_name">Citrate</field>
+        <field name="metabolite_name">Creatine</field>
+        <field name="metabolite_name">Alanine</field>
+        <field name="metabolite_name">Betaine</field>
+        <field name="metabolite_name">Leucine</field>
+        <field name="metabolite_name">Isoleucine</field>
+        <field name="metabolite_name">N-Phenylacetylglycine</field>
+        <field name="metabolite_name">Tartrate</field>
+        <field name="metabolite_name">Taurine</field>
+        <field name="metabolite_name">Trimethylamine N-oxide</field>
+        <field name="metabolite_name">Tryptophan</field>
+        <field name="metabolite_name">Valine</field>
+        <field name="metabolite_name">2-Hydroxyisobutyrate</field>
+        <field name="metabolite_name">2-Aminobutyrate</field>
+        <field name="metabolite_name">Acetone</field>
+        <field name="metabolite_name">1-Methylnicotinamide</field>
+        <field name="metabolite_name">3-Indoxylsulfate</field>
+        <field name="metabolite_name">3-Hydroxyisovalerate</field>
+        <field name="metabolite_name">3-Hydroxybutyrate</field>
+        <field name="metabolite_name">2-Methylglutarate</field>
+        <field name="metabolite_name">Acetoacetate</field>
+        <field name="metabolite_name">3-Methyl-2-oxovalerate</field>
+        <field name="pubchem_id">464</field>
+        <field name="pubchem_id">750</field>
+        <field name="pubchem_id">3698251</field>
+        <field name="pubchem_id">311</field>
+        <field name="pubchem_id">674</field>
+        <field name="pubchem_id">311</field>
+        <field name="pubchem_id">311</field>
+        <field name="pubchem_id">602</field>
+        <field name="pubchem_id">104358</field>
+        <field name="pubchem_id">464</field>
+        <field name="pubchem_id">464</field>
+        <field name="pubchem_id">68144</field>
+        <field name="pubchem_id">875</field>
+        <field name="pubchem_id">1123</field>
+        <field name="pubchem_id">1145</field>
+        <field name="pubchem_id">1148</field>
+        <field name="pubchem_id">1148</field>
+        <field name="pubchem_id">11671</field>
+        <field name="pubchem_id">6657</field>
+        <field name="pubchem_id">451245</field>
+        <field name="pubchem_id">10129985</field>
+        <field name="pubchem_id">69362</field>
+        <field name="pubchem_id">69362</field>
+        <field name="pubchem_id">94318</field>
+        <field name="pubchem_id">12046</field>
+        <field name="pubchem_id">96</field>
+        <field name="pubchem_id">47</field>
+        <field name="submitter">Susan Sumner</field>
+        <field name="submitter_mail">ssumner@rti.org</field>
+        <field name="submitter_affiliation">Systems and Translational Sciences (STS), RTI International</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

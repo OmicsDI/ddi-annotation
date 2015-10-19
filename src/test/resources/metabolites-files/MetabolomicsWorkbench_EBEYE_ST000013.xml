@@ -1,0 +1,343 @@
+<database>
+  <name>MetabolomicsWorkbench</name>
+  <description>The Metabolomics Workbench will serve as a national and international repository for metabolomics data and metadata and will provide analysis tools and access to metabolite standards, protocols, tutorials, training, and more.</description>
+  <release>1.0</release>
+  <release_date>15-05-20</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="ST000013">
+      <name>Mutation Study</name>
+      <description>This experiment tests the effect of individual mutations on the metabolome of Arabidopsis. The standardized growth conditions are as follows: 1. Seeds (between 14 and 16) are sown on media in 100 x 100 x 15mm square Falcon Petri Dishes (Fisher Scientific, catalogue #08-757-11A). Seeds were arranged on the plates in a single horizontal line at the 1-cm mark from the top of the plate. 2. Each plate contains between 20 and 25-ml of sterile MS media containing 0.1% (w/v) sucrose. 3. Prior to sowing, seeds were sterilized by treating for 1-minute at room temperature with a 300-l solution of 50% (v/v) ethanol, this solution was removed and replaced with a 300-l solution consisting of 1% (v/v) Tween 20 (Fischer BioReagents, catalogue #BP33750), and 50% (v/v) bleach solution (Clorox), and incubated at room temperature for 10-minutes. The seeds were then washed with three changes of 0.3-ml of sterile water.  4. Upon sowing with seeds, the plates were wrapped with Micropore tape (3M Health Care, catalogue #1530-0), and then stored horizontally for 4-days at 4 &amp;deg;C, with illumination of 1 mol/m2. 5. On the 5th day, plates were moved to the growth room, and held in a vertical position in Plexi-glass holders for 17-days this growth room condition is labeled in Table I. 6. On 18th day Petri plates were opened and the aerial portions of these plants were harvested immediately upon plate opening. 7. Upon harvesting, plant material was quenched by immersion in liquid nitrogen and stored at 70 &amp;deg;C.</description>
+      <cross_references>
+        <ref dbkey="3702" dbname="TAXONOMY"/>
+        <ref dbkey="4167" dbname="ChEBI"/>
+        <ref dbkey="4170" dbname="ChEBI"/>
+        <ref dbkey="32398" dbname="ChEBI"/>
+        <ref dbkey="16015" dbname="ChEBI"/>
+        <ref dbkey="28860" dbname="ChEBI"/>
+        <ref dbkey="16113" dbname="ChEBI"/>
+        <ref dbkey="30769" dbname="ChEBI"/>
+        <ref dbkey="16349" dbname="ChEBI"/>
+        <ref dbkey="17242" dbname="ChEBI"/>
+        <ref dbkey="17113" dbname="ChEBI"/>
+        <ref dbkey="37655" dbname="ChEBI"/>
+        <ref dbkey="290972" dbname="ChEBI"/>
+        <ref dbkey="43703" dbname="ChEBI"/>
+        <ref dbkey="27861" dbname="ChEBI"/>
+        <ref dbkey="17505" dbname="ChEBI"/>
+        <ref dbkey="48430" dbname="ChEBI"/>
+        <ref dbkey="18012" dbname="ChEBI"/>
+        <ref dbkey="17509" dbname="ChEBI"/>
+        <ref dbkey="28159" dbname="ChEBI"/>
+        <ref dbkey="16467" dbname="ChEBI"/>
+        <ref dbkey="29073" dbname="ChEBI"/>
+        <ref dbkey="46995" dbname="ChEBI"/>
+        <ref dbkey="28822" dbname="ChEBI"/>
+        <ref dbkey="16449" dbname="ChEBI"/>
+        <ref dbkey="15676" dbname="ChEBI"/>
+        <ref dbkey="16027" dbname="ChEBI"/>
+        <ref dbkey="17431" dbname="ChEBI"/>
+        <ref dbkey="16958" dbname="ChEBI"/>
+        <ref dbkey="16414" dbname="ChEBI"/>
+        <ref dbkey="16199" dbname="ChEBI"/>
+        <ref dbkey="17895" dbname="ChEBI"/>
+        <ref dbkey="16828" dbname="ChEBI"/>
+        <ref dbkey="16551" dbname="ChEBI"/>
+        <ref dbkey="15714" dbname="ChEBI"/>
+        <ref dbkey="18145" dbname="ChEBI"/>
+        <ref dbkey="16857" dbname="ChEBI"/>
+        <ref dbkey="17992" dbname="ChEBI"/>
+        <ref dbkey="48299" dbname="ChEBI"/>
+        <ref dbkey="15741" dbname="ChEBI"/>
+        <ref dbkey="28842" dbname="ChEBI"/>
+        <ref dbkey="16119" dbname="ChEBI"/>
+        <ref dbkey="17115" dbname="ChEBI"/>
+        <ref dbkey="21077" dbname="ChEBI"/>
+        <ref dbkey="16335" dbname="ChEBI"/>
+        <ref dbkey="17203" dbname="ChEBI"/>
+        <ref dbkey="15729" dbname="ChEBI"/>
+        <ref dbkey="63154" dbname="ChEBI"/>
+        <ref dbkey="53455" dbname="ChEBI"/>
+        <ref dbkey="1305691" dbname="ChEBI"/>
+        <ref dbkey="48093" dbname="ChEBI"/>
+        <ref dbkey="15756" dbname="ChEBI"/>
+        <ref dbkey="29019" dbname="ChEBI"/>
+        <ref dbkey="16995" dbname="ChEBI"/>
+        <ref dbkey="18183" dbname="ChEBI"/>
+        <ref dbkey="17295" dbname="ChEBI"/>
+        <ref dbkey="17553" dbname="ChEBI"/>
+        <ref dbkey="18019" dbname="ChEBI"/>
+        <ref dbkey="27432" dbname="ChEBI"/>
+        <ref dbkey="30797" dbname="ChEBI"/>
+        <ref dbkey="18300" dbname="ChEBI"/>
+        <ref dbkey="28875" dbname="ChEBI"/>
+        <ref dbkey="28009" dbname="ChEBI"/>
+        <ref dbkey="17191" dbname="ChEBI"/>
+        <ref dbkey="17505" dbname="ChEBI"/>
+        <ref dbkey="17268" dbname="ChEBI"/>
+        <ref dbkey="17351" dbname="ChEBI"/>
+        <ref dbkey="15603" dbname="ChEBI"/>
+        <ref dbkey="55481" dbname="ChEBI"/>
+        <ref dbkey="30805" dbname="ChEBI"/>
+        <ref dbkey="16750" dbname="ChEBI"/>
+        <ref dbkey="15428" dbname="ChEBI"/>
+        <ref dbkey="17270" dbname="ChEBI"/>
+        <ref dbkey="15699" dbname="ChEBI"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="13-05-20"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Metabolomics</field>
+        <field name="full_dataset_link">http://www.metabolomicsworkbench.org/data/DRCCMetadata.php?Mode=Study&amp;StudyID=ST000013</field>
+        <field name="repository">MetabolomicsWorkbench</field>
+        <field name="data_protocol">GCMS positive ion mode</field>
+        <field name="instrument_platform">LECO PEGASUS III GC-TOF</field>
+        <field name="study_factor">genotype:SALK_024747</field>
+        <field name="study_factor">genotype:CS24090</field>
+        <field name="study_factor">genotype:SALK_021832</field>
+        <field name="study_factor">genotype:SALK_125505</field>
+        <field name="study_factor">genotype:SALK_148208</field>
+        <field name="study_factor">genotype:SALK_062847</field>
+        <field name="study_factor">genotype:Wild type Col0: 1</field>
+        <field name="study_factor">genotype:Wild type Col0: 2</field>
+        <field name="study_factor">genotype:SALK_077749</field>
+        <field name="study_factor">genotype:SALK_022584</field>
+        <field name="study_factor">genotype:SALK_016312</field>
+        <field name="study_factor">genotype:SAIL_6_G_02</field>
+        <field name="study_factor">genotype:SALK_083600</field>
+        <field name="study_factor">genotype:SALK_135268</field>
+        <field name="study_factor">genotype:SALK_114456</field>
+        <field name="species">Arabidopsis thaliana</field>
+        <field name="technology_type">mass spectrometry</field>
+        <field name="metabolite_name">glucoheptulose</field>
+        <field name="metabolite_name">glucose</field>
+        <field name="metabolite_name">galactose</field>
+        <field name="metabolite_name">galactose-6-phosphate_199932</field>
+        <field name="metabolite_name">glucose non-meox</field>
+        <field name="metabolite_name">glucose-1-phosphate</field>
+        <field name="metabolite_name">glucose-6-phosphate</field>
+        <field name="metabolite_name">glyceric acid</field>
+        <field name="metabolite_name">glutamine</field>
+        <field name="metabolite_name">glutamic acid</field>
+        <field name="metabolite_name">glucuronic acid</field>
+        <field name="metabolite_name">cholesterol</field>
+        <field name="metabolite_name">cis-sinapinic acid</field>
+        <field name="metabolite_name">citric acid</field>
+        <field name="metabolite_name">citrulline</field>
+        <field name="metabolite_name">dehydroascorbate</field>
+        <field name="metabolite_name">erythritol</field>
+        <field name="metabolite_name">erythronic acid</field>
+        <field name="metabolite_name">erythronic acid lactone</field>
+        <field name="metabolite_name">2-deoxyerythritol NIST</field>
+        <field name="metabolite_name">1-monostearin</field>
+        <field name="metabolite_name">1,2-anhydro-myo-inositol NIST</field>
+        <field name="metabolite_name">fructose</field>
+        <field name="metabolite_name">4-hydroxyphenyl-2-ethylglucopyranoside NIST</field>
+        <field name="metabolite_name">3,6-anhydrogalactose</field>
+        <field name="metabolite_name">galactinol</field>
+        <field name="metabolite_name">2-ketoisocaproic acid</field>
+        <field name="metabolite_name">fumarate</field>
+        <field name="metabolite_name">2-hydroxyglutaric acid</field>
+        <field name="metabolite_name">5-hydroxynorvaline NIST</field>
+        <field name="metabolite_name">5'-deoxy-5'-methylthioadenosine</field>
+        <field name="metabolite_name">asparagine</field>
+        <field name="metabolite_name">arginine + ornithine</field>
+        <field name="metabolite_name">ascorbic acid</field>
+        <field name="metabolite_name">arabinose</field>
+        <field name="metabolite_name">arachidic acid</field>
+        <field name="metabolite_name">alanine</field>
+        <field name="metabolite_name">allantoin</field>
+        <field name="metabolite_name">adenosine-5-monophosphate</field>
+        <field name="metabolite_name">agmatine</field>
+        <field name="metabolite_name">beta alanine</field>
+        <field name="metabolite_name">aspartic acid</field>
+        <field name="metabolite_name">valine</field>
+        <field name="metabolite_name">urea</field>
+        <field name="metabolite_name">tyrosine</field>
+        <field name="metabolite_name">tryptophan</field>
+        <field name="metabolite_name">trehalose</field>
+        <field name="metabolite_name">trans-sinapinic acid</field>
+        <field name="metabolite_name">tocopherol</field>
+        <field name="metabolite_name">threonine</field>
+        <field name="metabolite_name">sucrose</field>
+        <field name="metabolite_name">threonic acid</field>
+        <field name="metabolite_name">threitol</field>
+        <field name="metabolite_name">succinic acid</field>
+        <field name="metabolite_name">suberyl glycine</field>
+        <field name="metabolite_name">stearic acid</field>
+        <field name="metabolite_name">sophorose</field>
+        <field name="metabolite_name">shikimic acid</field>
+        <field name="metabolite_name">serine</field>
+        <field name="metabolite_name">ribonic acid</field>
+        <field name="metabolite_name">ribitol</field>
+        <field name="metabolite_name">raffinose</field>
+        <field name="metabolite_name">adenosine</field>
+        <field name="metabolite_name">proline</field>
+        <field name="metabolite_name">putrescine</field>
+        <field name="metabolite_name">ornithine</field>
+        <field name="metabolite_name">oleic acid</field>
+        <field name="metabolite_name">N-acetyl-D-mannosamine</field>
+        <field name="metabolite_name">xylose</field>
+        <field name="metabolite_name">xylitol</field>
+        <field name="metabolite_name">xylonic acid</field>
+        <field name="metabolite_name">palmitic acid</field>
+        <field name="metabolite_name">pelargonic acid</field>
+        <field name="metabolite_name">oxalic acid</field>
+        <field name="metabolite_name">oxoproline</field>
+        <field name="metabolite_name">phosphoric acid</field>
+        <field name="metabolite_name">phytol</field>
+        <field name="metabolite_name">phenylalanine</field>
+        <field name="metabolite_name">phosphoethanolamine</field>
+        <field name="metabolite_name">lysine</field>
+        <field name="metabolite_name">linolenic acid</field>
+        <field name="metabolite_name">malate</field>
+        <field name="metabolite_name">lyxitol</field>
+        <field name="metabolite_name">maleic acid</field>
+        <field name="metabolite_name">maltose</field>
+        <field name="metabolite_name">mannonic acid NIST</field>
+        <field name="metabolite_name">methionie sulfoxide</field>
+        <field name="metabolite_name">monopalmitin-1-glyceride</field>
+        <field name="metabolite_name">myristic acid</field>
+        <field name="metabolite_name">N-acetyl-D-hexosamine</field>
+        <field name="metabolite_name">isoleucine</field>
+        <field name="metabolite_name">isogalactinol</field>
+        <field name="metabolite_name">isofucostanol</field>
+        <field name="metabolite_name">inositol myo-</field>
+        <field name="metabolite_name">inositol-4-monophosphate</field>
+        <field name="metabolite_name">levoglucosan</field>
+        <field name="metabolite_name">linoleic acid</field>
+        <field name="metabolite_name">leucine</field>
+        <field name="metabolite_name">levanbiose</field>
+        <field name="metabolite_name">lactobionic acid</field>
+        <field name="metabolite_name">lauric acid</field>
+        <field name="metabolite_name">guanosine</field>
+        <field name="metabolite_name">glycolic acid</field>
+        <field name="metabolite_name">glycerol-alpha-phosphate</field>
+        <field name="metabolite_name">glycerol</field>
+        <field name="metabolite_name">glycine</field>
+        <field name="metabolite_name">glycerol-beta-phosphate</field>
+        <field name="metabolite_name">homoserine</field>
+        <field name="metabolite_name">hydroxycarbamate NIST</field>
+        <field name="metabolite_name">hydroxylamine</field>
+        <field name="metabolite_name">idonic acid NIST</field>
+        <field name="metabolite_name">homoglutamine</field>
+        <field name="pubchem_id">102926</field>
+        <field name="pubchem_id">5793</field>
+        <field name="pubchem_id">59083882</field>
+        <field name="pubchem_id">99058</field>
+        <field name="pubchem_id">24749</field>
+        <field name="pubchem_id">65533</field>
+        <field name="pubchem_id">5958</field>
+        <field name="pubchem_id">439194</field>
+        <field name="pubchem_id">738</field>
+        <field name="pubchem_id">33032</field>
+        <field name="pubchem_id">441478</field>
+        <field name="pubchem_id">5997</field>
+        <field name="pubchem_id">1549091</field>
+        <field name="pubchem_id">311</field>
+        <field name="pubchem_id">9750</field>
+        <field name="pubchem_id">210328</field>
+        <field name="pubchem_id">222285</field>
+        <field name="pubchem_id">2781043</field>
+        <field name="pubchem_id">5325915</field>
+        <field name="pubchem_id">18302</field>
+        <field name="pubchem_id">107036</field>
+        <field name="pubchem_id">119054</field>
+        <field name="pubchem_id">439553</field>
+        <field name="pubchem_id">159278</field>
+        <field name="pubchem_id">16069996</field>
+        <field name="pubchem_id">439451</field>
+        <field name="pubchem_id">70</field>
+        <field name="pubchem_id">444972</field>
+        <field name="pubchem_id">43</field>
+        <field name="pubchem_id">95562</field>
+        <field name="pubchem_id">439176</field>
+        <field name="pubchem_id">439600</field>
+        <field name="pubchem_id">6322</field>
+        <field name="pubchem_id">54670067</field>
+        <field name="pubchem_id">7044039</field>
+        <field name="pubchem_id">10467</field>
+        <field name="pubchem_id">602</field>
+        <field name="pubchem_id">204</field>
+        <field name="pubchem_id">6083</field>
+        <field name="pubchem_id">199</field>
+        <field name="pubchem_id">239</field>
+        <field name="pubchem_id">424</field>
+        <field name="pubchem_id">6287</field>
+        <field name="pubchem_id">1176</field>
+        <field name="pubchem_id">6057</field>
+        <field name="pubchem_id">6305</field>
+        <field name="pubchem_id">7427</field>
+        <field name="pubchem_id">637775</field>
+        <field name="pubchem_id">14985</field>
+        <field name="pubchem_id">6288</field>
+        <field name="pubchem_id">5988</field>
+        <field name="pubchem_id">5460407</field>
+        <field name="pubchem_id">8998</field>
+        <field name="pubchem_id">1110</field>
+        <field name="pubchem_id">6453952</field>
+        <field name="pubchem_id">5281</field>
+        <field name="pubchem_id">88719</field>
+        <field name="pubchem_id">8742</field>
+        <field name="pubchem_id">5951</field>
+        <field name="pubchem_id">5460677</field>
+        <field name="pubchem_id">439242</field>
+        <field name="pubchem_id">439242</field>
+        <field name="pubchem_id">60961</field>
+        <field name="pubchem_id">145742</field>
+        <field name="pubchem_id">9532</field>
+        <field name="pubchem_id">6262</field>
+        <field name="pubchem_id">965</field>
+        <field name="pubchem_id">11096158</field>
+        <field name="pubchem_id">135191</field>
+        <field name="pubchem_id">6912</field>
+        <field name="pubchem_id">6602431</field>
+        <field name="pubchem_id">985</field>
+        <field name="pubchem_id">8158</field>
+        <field name="pubchem_id">971</field>
+        <field name="pubchem_id">7405</field>
+        <field name="pubchem_id">1004</field>
+        <field name="pubchem_id">145386</field>
+        <field name="pubchem_id">6140</field>
+        <field name="pubchem_id">1015</field>
+        <field name="pubchem_id">5962</field>
+        <field name="pubchem_id">5280934</field>
+        <field name="pubchem_id">222656</field>
+        <field name="pubchem_id">94154</field>
+        <field name="pubchem_id">444266</field>
+        <field name="pubchem_id">447139</field>
+        <field name="pubchem_id">3246006</field>
+        <field name="pubchem_id">158980</field>
+        <field name="pubchem_id">14900</field>
+        <field name="pubchem_id">11005</field>
+        <field name="pubchem_id">24139</field>
+        <field name="pubchem_id">6306</field>
+        <field name="pubchem_id">439451</field>
+        <field name="pubchem_id">25244285</field>
+        <field name="pubchem_id">892</field>
+        <field name="pubchem_id">6349</field>
+        <field name="pubchem_id">79029</field>
+        <field name="pubchem_id">5280450</field>
+        <field name="pubchem_id">6106</field>
+        <field name="pubchem_id">439555</field>
+        <field name="pubchem_id">7314</field>
+        <field name="pubchem_id">3893</field>
+        <field name="pubchem_id">6802</field>
+        <field name="pubchem_id">3698251</field>
+        <field name="pubchem_id">754</field>
+        <field name="pubchem_id">11126194</field>
+        <field name="pubchem_id">750</field>
+        <field name="pubchem_id">2526</field>
+        <field name="pubchem_id">12647</field>
+        <field name="pubchem_id">16639161</field>
+        <field name="pubchem_id">10931771</field>
+        <field name="pubchem_id">193325</field>
+        <field name="pubchem_id">4153392</field>
+        <field name="submitter">Tobias Kind</field>
+        <field name="submitter_mail">tkind@ucdavis.edu</field>
+        <field name="submitter_affiliation">Davis Genome Center, University of California, Davis</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

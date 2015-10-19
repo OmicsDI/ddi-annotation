@@ -1,0 +1,165 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001286">
+      <name>The dynamics of protein-bound methionine oxidation events in Arabidopsis thaliana during oxidative stress</name>
+      <description>Reactive oxygen species such as hydrogen peroxide can modify proteins via direct oxidation of their sulfur-containing amino acids, cysteine and methionine. Methionine oxidation, studied here, is a reversible posttranslational modification, which is increasingly suggested as a mechanism by which proteins perceive oxidative stress and function in redox signalling. Identification of proteins with oxidized methionines is a first prerequisite towards understanding the functional effect of methionine oxidation on proteins and the biological processes in which they are involved. Here, we  describe a proteome-wide study of in vivo protein-bound methionine oxidation in plants upon oxidative stress, using Arabidopsis thaliana catalase 2 knock-out plants as a model system. We identified approximately 500 sites of oxidation in about 400 proteins, and quantified the differences in oxidation between wild-type and catalase 2 knock-out plants. Further, by sampling over time, we mapped the dynamics of methionine oxidation and gained new insights into this complex and dynamic landscape of the part of the plant proteome that is sculpted by oxidative stress.</description>
+      <cross_references>
+        <ref dbkey="3702" dbname="TAXONOMY"/>
+        <ref dbkey="25693801" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-09-04"/>
+        <date type="publication" value="2015-03-24"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001286</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Proteins were extracted from 0.5 g of grinded tissue by adding 0.5 ml of 250 mM Tris-HCl buffer (pH 8.7) containing 150 mM NaCl, 2 mM EDTA, 1 M guanidinium hydrochloride, 1% 3-[(3-cholamidopropyl)dimethylammonio]-1-propane-sulfonic acid (Sigma-Aldrich) and the appropriate amount of the Complete Protease Inhibitor cocktail (Roche, Applied Science). After centrifugation at 16,100 x g for 10 min twice, protein concentrations were measured using the Bradford assay. By adding the appropriate volumes of extraction buffer, the protein concentration of all samples was adjusted to 1.2 mg/ml. Then, cysteines were reduced and alkylated in 10 mM triscarboxyethylphosphine (Pierce) and 20 mM iodoacetamide (Sigma-Aldrich) upon incubation in the dark for 30 min at 30°C. Samples were subsequently desalted on a NAPTM-5 column (Amersham Biosciences) in 1 ml of 50 mM triethylammonium bicarbonate buffer (pH 8), heated for 10 min at 95°C and cooled on ice before adding sequencing-grade endoproteinase Lys-C (Promega) in a ratio of 1:200 (enzyme:substrate, w:w) to digest the samples overnight at 37°C.  Next, primary α- and ε-amines were labeled with N-hydroxysuccinimide esters of stable isotopic variants of propionate. Peptides originating from cat2-2 proteomes were 12C3-propionated, whereas those from Col-0 proteomes were 13C3-propionated by incubation for 1 h at 30°C to a final concentration of 10 mM NHS-label. After quenching remaining N-hydroxysuccinimide esters in 50 mM of glycine for 15 min at 25°C, partial O-propionylation of serine, threonine and tyrosine was reversed by adding hydroxylamine to a final concentration of 50 mM and an incubation for 15 min at 37°C. The samples were acidified to a pH of 3 with acetic acid and equal amounts of peptides were mixed. The COFRADIC technology, relying on diagonal peptide chromatography and the specificity of MSRA and MSRB3 (Jena Bioscience) to specifically isolate peptides carrying in vivo oxidized methionines was applied to the equivalent of 500 μg of protein material as described (33) after which peptides were analyzed by LC-MS/MS. The obtained peptide mixtures were introduced into an LC-MS/MS system; the Ultimate 3000 RSLC nano (Dionex, Amsterdam, The Netherlands) in-line connected to an to an LTQ Orbitrap XL (Thermo Fisher Scientific, Bremen, Germany ) for analysis. The peptide mixture was first loaded on a trapping column at a flow rate of 10 μl/min (made in-house, 100 µm internal diameter (I.D.) x 20 mm, 5 µm beads C18 Reprosil-HD, Dr. Maisch). After flushing from the trapping column, the sample was loaded on a reverse-phase column (made in-house, 75 m I.D. x 150 mm, 5 µm beads C18 Reprosil-HD, Dr. Maisch). Peptides were loaded with solvent A (0.1% trifluoroacetic acid, 2% acetonitrile), and were separated with a linear gradient from 2% solvent A’ (0.05% formic acid) to 55% solvent B’ (0.05% formic acid and 80% acetonitrile) at a flow rate of 300 nl/min followed by a wash reaching solvent B’. The mass spectrometer was operated in data-dependent mode, automatically switching between MS and MS/MS acquisition for the six most abundant peaks in a given MS spectrum. In the LTQ-Orbitrap XL, full scan MS spectra were acquired in the Orbitrap at a target value of 1E6 with a resolution of 60,000. The six most intense ions were then isolated for fragmentation in the linear ion trap, with a dynamic exclusion of 60 s. Peptides were fragmented after filling the ion trap at a target value of 1E4 ion counts.</field>
+        <field name="data_protocol">From the MS/MS data in each LC run, Mascot Generic Files were created using the Mascot Distiller software (version 2.3.2.0, Matrix Science). While generating these peak lists, grouping of spectra was allowed with a maximum intermediate retention time of 30 s and maximum intermediate scan count of 5 was used where possible. Grouping was done with 0.005 Da precursor tolerance. A peak list was only generated when the MS/MS spectrum contained more than 10 peaks. There was no de-isotoping and the relative signal to noise limit was set at 2. These peak lists were then searched with the Mascot search engine (Matrix Science) using the Mascot Daemon interface (version 2.3, Matrix Science). Spectra were searched against the TAIR database (version 10 containing 27,416 protein-coding genes). Two searches were performed as described (36). In a first search, the quantitation configuration in Mascot was employed where propionate labels were set exclusive to lysines and peptide N-termini. The second search left out the propionate label on peptide N-termini, but considered protein N-terminal acetylation and pyroglutamate formation of glutamine as variable modifications. In both searches methionine oxidation was set as a fixed modification. If a MS/MS spectrum was matched to two different peptides following both searches, the match with the highest score was retained. Mass tolerance on precursor ions was set to ±10 ppm (with Mascot’s C13 option set to 1) and on fragment ions to ±0.5 Da. The peptide charge was set to 1+,2+,3+ and the instrument setting was on ESI-TRAP. The enzyme was set to endoproteinase-LysC, allowing for 1 missed cleavage, and cleavage was also allowed when lysine was followed by proline. Only peptides that were ranked one and scored above the threshold score, set at 99% confidence, were withheld.</field>
+        <field name="instrument_platform">LTQ Orbitrap Velos</field>
+        <field name="species">Arabidopsis thaliana (Mouse-ear cress)</field>
+        <field name="cell_type">photosynthetic cell</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">leaf</field>
+        <field name="modification">N-acetylated residue</field>
+        <field name="modification">2-pyrrolidone-5-carboxylic acid (Gln)</field>
+        <field name="modification">propanoyl labeling reagent light form (N-term)</field>
+        <field name="modification">L-methionine (S)-sulfoxide</field>
+        <field name="modification">propanoyl labeling reagent heavy form (+3amu) (K)</field>
+        <field name="modification">N6-propanoyl-L-lysine</field>
+        <field name="modification">S-carboxymethyl-L-cysteine</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">Arabidopsis Thaliana</field>
+        <field name="submitter_keywords"> oxidative stress</field>
+        <field name="submitter_keywords"> methionine oxidation</field>
+        <field name="submitter_keywords"> catalase mutant</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">COMPLETE</field>
+        <field name="software">Mascot Distiller 2.2.0</field>
+        <field name="doi">10.6019/PXD001286</field>
+        <field name="publication">Jacques S, Ghesquière B, De Bock PJ, Demol H, Wahni K, Willems P, Messens J, Van Breusegem F, Gevaert K. Protein methionine sulfoxide dynamics in Arabidopsis thaliana under oxidative stress. Mol Cell Proteomics. 2015 Feb 18. pii: mcp.M114.043729</field>
+        <field name="submitter">Jonathan Vandenbussche</field>
+        <field name="submitter_mail">jonathan.vandenbussche@vib-ugent.be</field>
+        <field name="submitter_affiliation">Biochemistry</field>
+        <field name="labhead">Kris Gevaert</field>
+        <field name="labhead_mail">kris.gevaert@vib-ugent.be</field>
+        <field name="labhead_affiliation">VIB, department of Medical Protein Research Ugent, department of Biochemistry</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16521_Silke_110713_MetoxCof_TP1_1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16522_Silke_110713_MetoxCof_TP1_2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16523_Silke_110713_MetoxCof_TP1_3.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16524_Silke_110713_MetoxCof_TP1_4.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16525_Silke_110713_MetoxCof_TP1_5.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16526_Silke_110713_MetoxCof_TP1_6.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16527_Silke_110713_MetoxCof_TP1_7.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16528_Silke_110713_MetoxCof_TP1_8.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16529_Silke_110713_MetoxCof_TP1_9.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16530_Silke_110713_MetoxCof_TP1_10.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16531_Silke_110713_MetoxCof_TP1_11.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16532_Silke_110713_MetoxCof_TP1_12.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16533_Silke_110713_MetoxCof_TP1_13.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16534_Silke_110713_MetoxCof_TP1_14.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16535_Silke_110713_MetoxCof_TP1_15.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16536_Silke_110713_MetoxCof_TP1_16.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16537_Silke_110713_MetoxCof_TP1_17.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16538_Silke_110713_MetoxCof_TP1_18.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16539_Silke_110713_MetoxCof_TP1_19.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16540_Silke_110713_MetoxCof_TP1_20.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16541_Silke_110713_MetoxCof_TP1_21.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16542_Silke_110713_MetoxCof_TP1_22.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16544_Silke_110713_MetoxCof_TP1_23.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16545_Silke_110713_MetoxCof_TP1_24.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16546_Silke_110713_MetoxCof_TP1_25.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16547_Silke_110713_MetoxCof_TP1_26.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16548_Silke_110713_MetoxCof_TP1_27.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16549_Silke_110713_MetoxCof_TP1_28.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16550_Silke_110713_MetoxCof_TP1_29.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16551_Silke_110713_MetoxCof_TP1_30.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16552_Silke_110713_MetoxCof_TP1_31.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16553_Silke_110713_MetoxCof_TP1_32.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16554_Silke_110713_MetoxCof_TP1_33.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16555_Silke_110713_MetoxCof_TP1_34.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16556_Silke_110713_MetoxCof_TP1_35.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16557_Silke_110713_MetoxCof_TP1_36.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16558_Silke_110713_MetoxCof_TP1_37.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16559_Silke_110713_MetoxCof_TP1_38.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16560_Silke_110713_MetoxCof_TP1_39.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16561_Silke_110713_MetoxCof_TP1_40.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16562_Silke_110713_MetoxCof_TP1_41.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16563_Silke_110713_MetoxCof_TP1_42.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16564_Silke_110713_MetoxCof_TP1_43.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16565_Silke_110713_MetoxCof_TP1_44.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L16566_Silke_110713_MetoxCof_TP1_45.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17000_1152_Silke_TP3_MetCofr_1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17001_1152_Silke_TP3_MetCofr_2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17002_1152_Silke_TP3_MetCofr_3.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17003_1152_Silke_TP3_MetCofr_4.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17004_1152_Silke_TP3_MetCofr_5.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17005_1152_Silke_TP3_MetCofr_6.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17006_1152_Silke_TP3_MetCofr_7.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17007_1152_Silke_TP3_MetCofr_8.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17008_1152_Silke_TP3_MetCofr_9.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17009_1152_Silke_TP3_MetCofr_10.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17010_1152_Silke_TP3_MetCofr_11.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17011_1152_Silke_TP3_MetCofr_12.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17012_1152_Silke_TP3_MetCofr_13.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17013_1152_Silke_TP3_MetCofr_14.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17014_1152_Silke_TP3_MetCofr_15.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17015_1152_Silke_TP3_MetCofr_16.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17016_1152_Silke_TP3_MetCofr_17.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17017_1152_Silke_TP3_MetCofr_18.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17018_1152_Silke_TP3_MetCofr_19.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17019_1152_Silke_TP3_MetCofr_20.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17020_1152_Silke_TP3_MetCofr_21.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17021_1152_Silke_TP3_MetCofr_22.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17022_1152_Silke_TP3_MetCofr_23.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17023_1152_Silke_TP3_MetCofr_24.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17024_1152_Silke_TP3_MetCofr_25.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17025_1152_Silke_TP3_MetCofr_26.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17026_1152_Silke_TP3_MetCofr_27.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17027_1152_Silke_TP3_MetCofr_28.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17028_1152_Silke_TP3_MetCofr_29.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17029_1152_Silke_TP3_MetCofr_30.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17033_1152_Silke_TP3_MetCofr_31.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17034_1152_Silke_TP3_MetCofr_32.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17035_1152_Silke_TP3_MetCofr_33.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17036_1152_Silke_TP3_MetCofr_34.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17037_1152_Silke_TP3_MetCofr_35.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17038_1152_Silke_TP3_MetCofr_36.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17039_1152_Silke_TP3_MetCofr_37.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17040_1152_Silke_TP3_MetCofr_38.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17041_1152_Silke_TP3_MetCofr_39.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17042_1152_Silke_TP3_MetCofr_40.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17043_1152_Silke_TP3_MetCofr_41.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17044_1152_Silke_TP3_MetCofr_42.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17045_1152_Silke_TP3_MetCofr_43.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17046_1152_Silke_TP3_MetCofr_44.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17047_1152_Silke_TP3_MetCofr_45.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17048_1152_Silke_TP3_MetCofr_46.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17049_1152_Silke_TP3_MetCofr_47.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17050_1152_Silke_TP3_MetCofr_48.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17051_1152_Silke_TP3_MetCofr_49.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17052_1152_Silke_TP3_MetCofr_50.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17053_1152_Silke_TP3_MetCofr_51.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17054_1152_Silke_TP3_MetCofr_52.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17055_1152_Silke_TP3_MetCofr_53.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17056_1152_Silke_TP3_MetCofr_54.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17057_1152_Silke_TP3_MetCofr_55.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17058_1152_Silke_TP3_MetCofr_56.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17059_1152_Silke_TP3_MetCofr_57.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17060_1152_Silke_TP3_MetCofr_58.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17061_1152_Silke_TP3_MetCofr_59.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/L17062_1152_Silke_TP3_MetCofr_60.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/ms_lims_project_01150_MetO_COFRADIC_1HL_to_PRIDE_20140827_131951.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001286/ms_lims_project_01152_MetO_COFRADIC_3HL_to_PRIDE_20140827_132842.xml.gz</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

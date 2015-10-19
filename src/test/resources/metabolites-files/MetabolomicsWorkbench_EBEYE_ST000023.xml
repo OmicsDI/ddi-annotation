@@ -1,0 +1,212 @@
+<database>
+  <name>MetabolomicsWorkbench</name>
+  <description>The Metabolomics Workbench will serve as a national and international repository for metabolomics data and metadata and will provide analysis tools and access to metabolite standards, protocols, tutorials, training, and more.</description>
+  <release>1.0</release>
+  <release_date>15-05-20</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="ST000023">
+      <name>GC-MS Metabolomics Reproducibility Study</name>
+      <description>Human male serum, human female serum and pooled human male+female serum samples were prepared (extracted and derivatized) daily on three separate days. Samples were analyzed by GC-TOF-MS (Agilent 7890A gas chromatogram and Leco Pegasus IV time of flight mass spectrometer).  Metabolomics analysis was performed on a total 135 serum samples to evaluate the GC-MS Metabolomics platform for its reproducibility in sample preparation and the intraday (daily) and interday (day to day) reproducibility of the instrument.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="30797" dbname="ChEBI"/>
+        <ref dbkey="4208" dbname="ChEBI"/>
+        <ref dbkey="15603" dbname="ChEBI"/>
+        <ref dbkey="4208" dbname="ChEBI"/>
+        <ref dbkey="21547" dbname="ChEBI"/>
+        <ref dbkey="18183" dbname="ChEBI"/>
+        <ref dbkey="32154" dbname="ChEBI"/>
+        <ref dbkey="32154" dbname="ChEBI"/>
+        <ref dbkey="16015" dbname="ChEBI"/>
+        <ref dbkey="16015" dbname="ChEBI"/>
+        <ref dbkey="32398" dbname="ChEBI"/>
+        <ref dbkey="17754" dbname="ChEBI"/>
+        <ref dbkey="32365" dbname="ChEBI"/>
+        <ref dbkey="16899" dbname="ChEBI"/>
+        <ref dbkey="30805" dbname="ChEBI"/>
+        <ref dbkey="16977" dbname="ChEBI"/>
+        <ref dbkey="48430" dbname="ChEBI"/>
+        <ref dbkey="15603" dbname="ChEBI"/>
+        <ref dbkey="1148" dbname="ChEBI"/>
+        <ref dbkey="15603" dbname="ChEBI"/>
+        <ref dbkey="17475" dbname="ChEBI"/>
+        <ref dbkey="17475" dbname="ChEBI"/>
+        <ref dbkey="27897" dbname="ChEBI"/>
+        <ref dbkey="27897" dbname="ChEBI"/>
+        <ref dbkey="28842" dbname="ChEBI"/>
+        <ref dbkey="28842" dbname="ChEBI"/>
+        <ref dbkey="15903" dbname="ChEBI"/>
+        <ref dbkey="28842" dbname="ChEBI"/>
+        <ref dbkey="16737" dbname="ChEBI"/>
+        <ref dbkey="16113" dbname="ChEBI"/>
+        <ref dbkey="16113" dbname="ChEBI"/>
+        <ref dbkey="28837" dbname="ChEBI"/>
+        <ref dbkey="28837" dbname="ChEBI"/>
+        <ref dbkey="20067" dbname="ChEBI"/>
+        <ref dbkey="28837" dbname="ChEBI"/>
+        <ref dbkey="16015" dbname="ChEBI"/>
+        <ref dbkey="15903" dbname="ChEBI"/>
+        <ref dbkey="16414" dbname="ChEBI"/>
+        <ref dbkey="16586" dbname="ChEBI"/>
+        <ref dbkey="27897" dbname="ChEBI"/>
+        <ref dbkey="27897" dbname="ChEBI"/>
+        <ref dbkey="28716" dbname="ChEBI"/>
+        <ref dbkey="42504" dbname="ChEBI"/>
+        <ref dbkey="42504" dbname="ChEBI"/>
+        <ref dbkey="16914" dbname="ChEBI"/>
+        <ref dbkey="16914" dbname="ChEBI"/>
+        <ref dbkey="16119" dbname="ChEBI"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="14-02-28"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Metabolomics</field>
+        <field name="full_dataset_link">http://www.metabolomicsworkbench.org/data/DRCCMetadata.php?Mode=Study&amp;StudyID=ST000023</field>
+        <field name="repository">MetabolomicsWorkbench</field>
+        <field name="data_protocol">GCMS positive ion mode</field>
+        <field name="instrument_platform">Leco Pegasus IV</field>
+        <field name="study_factor">Gender:Female | Prep/Analysis Day:2</field>
+        <field name="study_factor">Gender:Female | Prep/Analysis Day:1</field>
+        <field name="study_factor">Gender:Female | Prep/Analysis Day:3</field>
+        <field name="study_factor">Gender:Male | Prep/Analysis Day:2</field>
+        <field name="study_factor">Gender:Male | Prep/Analysis Day:3</field>
+        <field name="study_factor">Gender:Pooled | Prep/Analysis Day:1</field>
+        <field name="study_factor">Gender:Pooled | Prep/Analysis Day:2</field>
+        <field name="study_factor">Gender:Male | Prep/Analysis Day:1</field>
+        <field name="study_factor">Gender:Pooled | Prep/Analysis Day:3</field>
+        <field name="species">Homo sapiens</field>
+        <field name="technology_type">mass spectrometry</field>
+        <field name="metabolite_name">malic acid</field>
+        <field name="metabolite_name">mannose</field>
+        <field name="metabolite_name">lysine</field>
+        <field name="metabolite_name">maleimide</field>
+        <field name="metabolite_name">N-methylalanine</field>
+        <field name="metabolite_name">myristic acid</field>
+        <field name="metabolite_name">N-acetyl-L-aspartic acid 1</field>
+        <field name="metabolite_name">oxoproline</field>
+        <field name="metabolite_name">oxalic acid</field>
+        <field name="metabolite_name">ornithine 4TMS</field>
+        <field name="metabolite_name">octadecanol</field>
+        <field name="metabolite_name">glutamic acid 2TMS</field>
+        <field name="metabolite_name">glutamine 3TMS major</field>
+        <field name="metabolite_name">glyceric acid</field>
+        <field name="metabolite_name">glycerol</field>
+        <field name="metabolite_name">heptadecanoic acid</field>
+        <field name="metabolite_name">hexitol</field>
+        <field name="metabolite_name">histidine 2</field>
+        <field name="metabolite_name">isoleucine</field>
+        <field name="metabolite_name">1-monostearin</field>
+        <field name="metabolite_name">1-monopalmitin</field>
+        <field name="metabolite_name">1,5-anydroglucitol</field>
+        <field name="metabolite_name">alpha tocopherol</field>
+        <field name="metabolite_name">lauric acid</field>
+        <field name="metabolite_name">alanine</field>
+        <field name="metabolite_name">2-ketoisocaproic acid</field>
+        <field name="metabolite_name">leucine</field>
+        <field name="metabolite_name">2-hydroxybutanoic acid</field>
+        <field name="metabolite_name">leucine</field>
+        <field name="metabolite_name">aspartate minor</field>
+        <field name="metabolite_name">aminomalonic acid</field>
+        <field name="metabolite_name">tyrosine</field>
+        <field name="metabolite_name">tryptophan</field>
+        <field name="metabolite_name">trans-4-hydroxy-L-proline minor1</field>
+        <field name="metabolite_name">threonine minor</field>
+        <field name="metabolite_name">glucose</field>
+        <field name="metabolite_name">stearic acid</field>
+        <field name="metabolite_name">creatinine</field>
+        <field name="metabolite_name">cystine</field>
+        <field name="metabolite_name">cholesterol</field>
+        <field name="metabolite_name">creatine major dehydrated TMS3</field>
+        <field name="metabolite_name">cellobiose</field>
+        <field name="metabolite_name">chlorogenic acid major</field>
+        <field name="metabolite_name">beta-hydroxybutyric acid</field>
+        <field name="metabolite_name">caprylic acid</field>
+        <field name="metabolite_name">glutamic acid</field>
+        <field name="metabolite_name">glucose 2</field>
+        <field name="metabolite_name">valine</field>
+        <field name="metabolite_name">z artifact</field>
+        <field name="metabolite_name">uric acid</field>
+        <field name="metabolite_name">valine</field>
+        <field name="metabolite_name">proline</field>
+        <field name="metabolite_name">phosphate</field>
+        <field name="metabolite_name">pelargonic acid</field>
+        <field name="metabolite_name">palmitoleic acid</field>
+        <field name="metabolite_name">phenylalanine minor</field>
+        <field name="metabolite_name">pentadecanoic acid</field>
+        <field name="metabolite_name">behenic acid</field>
+        <field name="metabolite_name">salicylic acid</field>
+        <field name="metabolite_name">serine</field>
+        <field name="metabolite_name">shikimic acid</field>
+        <field name="metabolite_name">sorbitol</field>
+        <field name="metabolite_name">ribitol</field>
+        <field name="pubchem_id">222656</field>
+        <field name="pubchem_id">18950</field>
+        <field name="pubchem_id">6106</field>
+        <field name="pubchem_id">21271766</field>
+        <field name="pubchem_id">5288725</field>
+        <field name="pubchem_id">18950</field>
+        <field name="pubchem_id">65065</field>
+        <field name="pubchem_id">7405</field>
+        <field name="pubchem_id">18676629</field>
+        <field name="pubchem_id">8221</field>
+        <field name="pubchem_id">8221</field>
+        <field name="pubchem_id">33032</field>
+        <field name="pubchem_id">33032</field>
+        <field name="pubchem_id">439194</field>
+        <field name="pubchem_id">753</field>
+        <field name="pubchem_id">10465</field>
+        <field name="pubchem_id">6251</field>
+        <field name="pubchem_id">773</field>
+        <field name="pubchem_id">773</field>
+        <field name="pubchem_id">107036</field>
+        <field name="pubchem_id">14900</field>
+        <field name="pubchem_id">2116</field>
+        <field name="pubchem_id">3893</field>
+        <field name="pubchem_id">5950</field>
+        <field name="pubchem_id">70</field>
+        <field name="pubchem_id">6106</field>
+        <field name="pubchem_id">11266</field>
+        <field name="pubchem_id">6106</field>
+        <field name="pubchem_id">100714</field>
+        <field name="pubchem_id">100714</field>
+        <field name="pubchem_id">1148</field>
+        <field name="pubchem_id">1148</field>
+        <field name="pubchem_id">5281</field>
+        <field name="pubchem_id">5281</field>
+        <field name="pubchem_id">64689</field>
+        <field name="pubchem_id">5281</field>
+        <field name="pubchem_id">588</field>
+        <field name="pubchem_id">595</field>
+        <field name="pubchem_id">5997</field>
+        <field name="pubchem_id">5997</field>
+        <field name="pubchem_id">379</field>
+        <field name="pubchem_id">379</field>
+        <field name="pubchem_id">441</field>
+        <field name="pubchem_id">379</field>
+        <field name="pubchem_id">33032</field>
+        <field name="pubchem_id">64689</field>
+        <field name="pubchem_id">6287</field>
+        <field name="pubchem_id">564</field>
+        <field name="pubchem_id">1148</field>
+        <field name="pubchem_id">1148</field>
+        <field name="pubchem_id">1004</field>
+        <field name="pubchem_id">1004</field>
+        <field name="pubchem_id">10898987</field>
+        <field name="pubchem_id">5282745</field>
+        <field name="pubchem_id">13849</field>
+        <field name="pubchem_id">13849</field>
+        <field name="pubchem_id">11551870</field>
+        <field name="pubchem_id">338</field>
+        <field name="pubchem_id">338</field>
+        <field name="pubchem_id">8742</field>
+        <field name="pubchem_id">453</field>
+        <field name="pubchem_id">1004</field>
+        <field name="submitter">Susan Sumner</field>
+        <field name="submitter_mail">ssumner@rti.org</field>
+        <field name="submitter_affiliation">Systems and Translational Sciences (STS), RTI International</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

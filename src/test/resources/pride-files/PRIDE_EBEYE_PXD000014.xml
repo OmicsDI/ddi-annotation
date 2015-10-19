@@ -1,0 +1,86 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000014">
+      <name>human 293 cells PEDF LC-MS/MS</name>
+      <description>Experiment was performed on 293 cells, details are presented in publication:   Adenoviral E4 gene stimulates secretion of PEDF that maintains long-term survival of human glomerulus-derived endothelial cells   Marina Jerebtsova‡§*, Namita Kumari‖, Yuri Obuhkov‖, and Sergei Nekhai‖†*   (to be published in Molecular and Cellular Proteomics), please see more details in paper  Workflow  HPLC on PicoFrit C18 column, gradient 60 min from 2% to 30% ACN  Nanospray 2 kV, flow rate 300 nL/min LTQ Orbitrap MS. Data dependent scan FT MS + 3 FT MS/MS.  A blank water run was performed after each sample run   Each 24 hours setup performance was tested on Apomyoglobin sample, 12 fmol. Coverage was 39-79 % Search is made by SEQUEST on human database</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="22915824" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2012-08-08"/>
+        <date type="publication" value="2012-08-08"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000014</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Not available</field>
+        <field name="instrument_platform">LTQ Orbitrap</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Not available</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">phosphorylated residue</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="submitter_keywords">angiogenesis</field>
+        <field name="submitter_keywords"> endothelium</field>
+        <field name="submitter_keywords"> pigmental epithelium derived factor</field>
+        <field name="submitter_keywords"> adenovirus</field>
+        <field name="submitter_keywords"> senecence</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Jerebtsova M, Kumari N, Obuhkov Y, Nekhai S. Adenoviral E4 gene stimulates secretion of pigmental epithelium derived factor (PEDF) that maintains long-term survival of human glomerulus-derived endothelial cells. Mol Cell Proteomics. 2012 Nov;11(11):1378-88</field>
+        <field name="submitter">Yuri Obukhov</field>
+        <field name="submitter_mail">oboukhovi.louri@howard.edu</field>
+        <field name="submitter_affiliation">Department of Medicine</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/08/PXD000014/MJ_1_10.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/08/PXD000014/MJ_1_11.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/08/PXD000014/MJ_1_12.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/08/PXD000014/MJ_1_13.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/08/PXD000014/MJ_1_14.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/08/PXD000014/MJ_1_15.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/08/PXD000014/MJ_1_16.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/08/PXD000014/MJ_1_9.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/08/PXD000014/SN2-10.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/08/PXD000014/SN2-11.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/08/PXD000014/SN2-12.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/08/PXD000014/SN2-13.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/08/PXD000014/SN2-14.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/08/PXD000014/SN2-15.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/08/PXD000014/SN2-16.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/08/PXD000014/SN2-17.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/08/PXD000014/SN2-18.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/08/PXD000014/SN2-9.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/08/PXD000014/SN2-10.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/08/PXD000014/SN2-11.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/08/PXD000014/SN2-12.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/08/PXD000014/SN2-13.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/08/PXD000014/SN2-14.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/08/PXD000014/SN2-15.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/08/PXD000014/SN2-16.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/08/PXD000014/SN2-17.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/08/PXD000014/SN2-18.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/08/PXD000014/SN2-9.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/08/PXD000014/MJ_1_10.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/08/PXD000014/MJ_1_11.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/08/PXD000014/MJ_1_12.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/08/PXD000014/MJ_1_13.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/08/PXD000014/MJ_1_14.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/08/PXD000014/MJ_1_15.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/08/PXD000014/MJ_1_16.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/08/PXD000014/MJ_1_9.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/08/PXD000014/Data_description.pptx</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

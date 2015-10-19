@@ -1,0 +1,100 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001259">
+      <name>Stadard peptide mixture plus HeLa</name>
+      <description>To test our peak detection and label-free quantitation algorithm,  practical applications of AB3D for LC-MS data sets were evaluated using  a standard peptide mixture consisting of bovine serum albumin (BSA) peptides  with different concentrations, peptides derived from four standard proteins (data set 1),  and complex peptide samples derived from HeLa cells and BSA (data set 2).</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="9913" dbname="TAXONOMY"/>
+        <ref dbkey="25420746" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-08-26"/>
+        <date type="publication" value="2014-12-04"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001259</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Bovine serum albumin digestion standard (Michrom Bioresources) was serially diluted and mixed with the tryptic digest standards of the four proteins beta galactosidase, phosphorylase b, myoglobin and cytochrome c, which were purchased from Proteabio Biosciences, to prepare peptide mixture samples. Final peptide concentrations of serially diluted BSA digestion standard were 96, 480, 2400amol, 12, 60, 300 fmol and that of four proteins were 75 fmol. LC-MS analysis of each peptide sample was performed using a LC-20AD nano LC pump (Shimadzu), a HTC-PAL autosampler (CTC Analytics) and a LTQ-orbitrap (Thermo Fisher Scientific) with an in-house-built nano-sprayer (100 um inner diameter, 150 mm length) packed with ReproSil-Pur C18 materials (3 um, Dr. Maish). Four LC-MS runs were performed for each prepared sample. The mass spectrometer was operated in the data-dependent mode to automatically switch between MS full scan and MS2 at a spray voltage of 2200 V. The MS scan range was m/z 300–1500, and the top five precursor ions were selected from the MS scan for subsequent MS/MS scans by ion trapping. The normalized Collision-induced dissociation (CID) was set to at 35.0. The mobile phases for ODS separation at LC-MS consisted of (A) 0.5% acetic acid in 4% acetonitrile and (B) 0.5% acetic acid in 80% acetonitrile. The gradient was 0% B (0-5 min), 0-37% B (5-20 min), 37-68% B (20-25 min), 68-100% B (25-26 min) and 0% B (26-60 min) at a flow rate of 500 nl/min.</field>
+        <field name="data_protocol">Peak picking was produced using by AB3D and 4 other reported methods, and then a comparison was carried out.</field>
+        <field name="instrument_platform">LTQ Orbitrap</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="species">Bos taurus (Bovine)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">HeLa cell</field>
+        <field name="tissue">serum</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Technical</field>
+        <field name="submitter_keywords">peptide mixture</field>
+        <field name="submitter_keywords"> LC-MS</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Aoshima K, Takahashi K, Ikawa M, Kimura T, Fukuda M, Tanaka S, Parry HE, Fujita Y, Yoshizawa AC, Utsunomiya SI, Kajihara S, Tanaka K, Oda Y. A simple peak detection and label-free quantitation algorithm for chromatography-mass spectrometry. BMC Bioinformatics. 2014 Nov 25;15(1):376</field>
+        <field name="submitter">Ken Aoshima</field>
+        <field name="submitter_mail">ken.aoshima@gmail.com</field>
+        <field name="submitter_affiliation">Eisai Co., Ltd.</field>
+        <field name="labhead">Ken Aoshima</field>
+        <field name="labhead_mail">k3-aoshima@hhc.eisai.co.jp</field>
+        <field name="labhead_affiliation">Eisai Co., Ltd.</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa12fmol_n1.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa12fmol_n2.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa12fmol_n3.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa12fmol_n4.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa2400amol_n1.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa2400amol_n2.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa2400amol_n3.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa2400amol_n4.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa300fmol_n1.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa300fmol_n2.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa300fmol_n3.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa300fmol_n4.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa480amol_n1.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa480amol_n2.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa480amol_n3.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa480amol_n4.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa60fmol_n1.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa60fmol_n2.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa60fmol_n3.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa60fmol_n4.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa96amol_n1.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa96amol_n2.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa96amol_n3.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa96amol_n4.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa12fmol_n1_Gpm.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa12fmol_n2_Gpm.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa12fmol_n3_Gpm.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa12fmol_n4_Gpm.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa2400amol_n1_Gpm.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa2400amol_n2_Gpm.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa2400amol_n3_Gpm.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa2400amol_n4_Gpm.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa300fmol_n1_Gpm.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa300fmol_n2_Gpm.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa300fmol_n3_Gpm.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa300fmol_n4_Gpm.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa480amol_n1_Gpm.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa480amol_n2_Gpm.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa480amol_n3_Gpm.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa480amol_n4_Gpm.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa60fmol_n1_Gpm.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa60fmol_n2_Gpm.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa60fmol_n3_Gpm.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa60fmol_n4_Gpm.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa96amol_n1_Gpm.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa96amol_n2_Gpm.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa96amol_n3_Gpm.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001259/mixture_bsa96amol_n4_Gpm.xml</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

@@ -1,0 +1,78 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000226">
+      <name>Human Uterine Smooth Muscle S-nitrosoproteome</name>
+      <description>S-nitrosoproteome of human unterine smooth muscle in different states of pregnancy (Labor, non labor, and preterm labor).  Samples were isolated by the biotin switch  and streptavidin pulldown before being analyzed by MS/MS on an Orbitrap instrument. Database Searching and bioinformatics: Tandem mass spectra were extracted; charge state deconvolution and deisotoping were not performed. All MS/MS samples were analyzed using Sequest (Thermo Fisher Scientific, San Jose, CA, version v.27, rev. 11). Sequest was initiated to search the database containing ipi.HUMAN.v3.87, the Global Proteome Machine cRAP v.2012.01.01, and random decoy sequences (183158 entries) assuming the digestion enzyme trypsin. Sequest was searched with a fragment ion mass tolerance of 1.00 Da and a parent ion tolerance of 10 ppm. Oxidation of methionine, iodoacetamide derivative of cysteine, and n-ethylmaleimide on cysteine were specified in Sequest as variable modifications. Criteria for Protein Identification-PROTEOIQ (V2.6, www.nusep.com) was used to validate MS/MS based peptide and protein identifications. Peptides were parsed before analysis with a minimum Xcorr value of 1.5 and a minimum length of 6 amino acids. There were no matches to the concatenated decoy database and therefore a false discovery value is not applicable or "0". Peptide identifications were accepted if they could be established at greater than 95.0% probability as specified by the Peptide Prophet algorithm. Protein identifications were accepted if they could be established at greater than 95.0% probability and contained at least two identified peptides with 5 spectra per peptide. Protein probabilities were assigned by the Protein Prophet algorithm. Proteins that contained similar peptides and could not be differentiated based on MS/MS analysis alone were grouped to satisfy the principles of parsimony.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="23948706" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2013-04-25"/>
+        <date type="publication" value="2014-03-02"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000226</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Not available</field>
+        <field name="instrument_platform">LTQ Orbitrap</field>
+        <field name="instrument_platform">instrument model</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">uterine smooth muscle cell</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">lung</field>
+        <field name="tissue">lung cancer cell line</field>
+        <field name="modification">Not available</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="submitter_keywords">Human</field>
+        <field name="submitter_keywords"> myometrium</field>
+        <field name="submitter_keywords"> S-nitrosation</field>
+        <field name="submitter_keywords"> preterm labor</field>
+        <field name="submitter_keywords"> pregnancy</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">COMPLETE</field>
+        <field name="software">unknown unknown</field>
+        <field name="doi">10.6019/PXD000226</field>
+        <field name="publication">Ulrich C, Quilici DR, Schlauch KA, Buxton IL. The human uterine smooth muscle S-nitrosoproteome fingerprint in pregnancy, labor, and preterm labor. Am J Physiol Cell Physiol. 2013 Oct 15;305(8):C803-16</field>
+        <field name="submitter">Craig Ulrich</field>
+        <field name="submitter_mail">culrich@medicine.nevada.edu</field>
+        <field name="submitter_affiliation">Pharmacology</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000226/Laboring_1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000226/Laboring_2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000226/Laboring_3.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000226/Non_Laboring_1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000226/Non_Laboring_2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000226/Non_Laboring_3.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000226/Preterm_Laboring_1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000226/Preterm_Laboring_2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000226/Preterm_Laboring_3.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000226/L1_50ul_NEM.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000226/L2_50ul_NEM.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000226/L3_50ul_NEM.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000226/NL1_50ul_NEM.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000226/NL2_50ul_NEM.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000226/NL3_50ul_NEM.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000226/PTL1_50ul_NEM.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000226/PTL2_50ul_NEM.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000226/PTL3_50ul_NEM.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000226/PRIDE_Exp_Complete_Ac_29476.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000226/PRIDE_Exp_Complete_Ac_29477.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000226/PRIDE_Exp_Complete_Ac_29478.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000226/PRIDE_Exp_Complete_Ac_29479.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000226/PRIDE_Exp_Complete_Ac_29480.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000226/PRIDE_Exp_Complete_Ac_29481.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000226/PRIDE_Exp_Complete_Ac_29482.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000226/PRIDE_Exp_Complete_Ac_29483.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/03/PXD000226/PRIDE_Exp_Complete_Ac_29484.xml.gz</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

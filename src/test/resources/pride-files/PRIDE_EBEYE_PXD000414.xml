@@ -1,0 +1,88 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000414">
+      <name>Quantitiative phosphoproteomic analysis of SKS1 signaling network involved in yeast filamentous growth by LC-MS in combination with SILAC</name>
+      <description>Yeast pseudohyphal growth(filamentous growth) is regulated by signaling pathways responsive to nitrogen stress and glucose deprivation, but the molecular link between pseudohyphal filamentation and glucose signaling is not fully understood. To identify the Sks1p signaling network involved in filamentous growth, we applied mass spectrometry-based quantitative phosphoproteomics in combination with SILAC. We investigated differential protein expressions and changes in phosphorylation levels in SKS1 kinase dead mutant yeast cells (SKS1-KD, Lys-4 and Arg-6 labeled) under filamentous growth condition.        Twelve SCX fractions of SILAC paired peptides derived from SKS1-KD and wild type yeast cells were subjected to phosphopeptide enrichment by using ZrO2, prior to LC-MSMS by an LTQ-Orbitrap. MaxQunat (ver 1.0.13.8) package incorporating Mascot search was used for identification and quantification of peptides and proteins. RAW files were searched against a composite target-decoy database containing yeast ORFs from SGD allowing variable modifications of phospho (STY) and oxi (M) and a fixed modification of carbamidomethyl(C) within 7 ppm (MS) and 0.5 Da (MSMS) mass tolerances. Peptide and protein identifications were maintained within 5% FDR.</description>
+      <cross_references>
+        <ref dbkey="4932" dbname="TAXONOMY"/>
+        <ref dbkey="24603354" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2013-08-14"/>
+        <date type="publication" value="2014-04-16"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000414</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Not available</field>
+        <field name="instrument_platform">LTQ Orbitrap</field>
+        <field name="species">Saccharomyces cerevisiae (Baker's yeast)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Not available</field>
+        <field name="modification">6x(13)C,2x(15)N labeled L-lysine</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">phosphorylated residue</field>
+        <field name="modification">6x(13)C,4x(15)N labeled L-arginine</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="modification">6x(13)C labeled L-arginine</field>
+        <field name="modification">(4,4,5,5-(2)H4)-L-lysine</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="submitter_keywords">Saccharomyces cerevisiae</field>
+        <field name="submitter_keywords"> SKS1</field>
+        <field name="submitter_keywords"> filamentous growth</field>
+        <field name="submitter_keywords"> LC-MS</field>
+        <field name="submitter_keywords"> phosphoproteome</field>
+        <field name="submitter_keywords"> SILAC</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Johnson C, Kweon HK, Sheidy D, Shively CA, Mellacheruvu D, Nesvizhskii AI, Andrews PC, Kumar A. The yeast sks1p kinase signaling network regulates pseudohyphal growth and glucose response. PLoS Genet. 2014 Mar 6;10(3):e1004183. eCollection 2014 Mar</field>
+        <field name="submitter">Hye Kyong Kweon</field>
+        <field name="submitter_mail">hkweon@umich.edu</field>
+        <field name="submitter_affiliation">Department of Biological Chemistry</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/04/PXD000414/yeast1_scx01.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/04/PXD000414/yeast1_scx01_control.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/04/PXD000414/yeast1_scx02.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/04/PXD000414/yeast1_scx02_control.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/04/PXD000414/yeast1_scx03.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/04/PXD000414/yeast1_scx03_control.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/04/PXD000414/yeast1_scx04.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/04/PXD000414/yeast1_scx04_control.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/04/PXD000414/yeast1_scx05.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/04/PXD000414/yeast1_scx05_control.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/04/PXD000414/yeast1_scx06.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/04/PXD000414/yeast1_scx06_control.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/04/PXD000414/yeast1_scx07.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/04/PXD000414/yeast1_scx07_control.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/04/PXD000414/yeast1_scx08_2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/04/PXD000414/yeast1_scx08_control.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/04/PXD000414/yeast1_scx09_2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/04/PXD000414/yeast1_scx09_control.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/04/PXD000414/yeast1_scx10.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/04/PXD000414/yeast1_scx10_control.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/04/PXD000414/yeast1_scx11.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/04/PXD000414/yeast1_scx11_control.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/04/PXD000414/yeast1_scx12.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/04/PXD000414/yeast1_scx12_control.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/04/PXD000414/F004716.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/04/PXD000414/F004717.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/04/PXD000414/F004718.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/04/PXD000414/F004719.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/04/PXD000414/allSpectra.CID.iso_0.msm</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/04/PXD000414/allSpectra.CID.sil0_0.msm</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/04/PXD000414/allSpectra.CID.sil1_0.msm</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/04/PXD000414/allSpectra.CID.sil2_0.msm</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/04/PXD000414/MQ_report_SKS1-KD_HK.zip</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

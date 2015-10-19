@@ -1,0 +1,58 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001182">
+      <name>Metabolic changes in adaptation to biofilm growth by streptococcus pneumoniae</name>
+      <description>Comparative analyses of protein expression between log-phase planktonic and 1-day and 7-day biofilm cultures from Streptococcus pneumoniae representing nascent and late phase biofilm growth were performed using the proteomic approach iTRAQ</description>
+      <cross_references>
+        <ref dbkey="406560" dbname="TAXONOMY"/>
+        <ref dbkey="25188255" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-07-29"/>
+        <date type="publication" value="2014-09-10"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001182</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Comparative analyses of protein expression between planktonic log-phase culture and 1-day and 7-day biofilms were performed for 3 technical replicates of 3 biological replicates. iTRAQ labelling of samples was performed according to the manufacturer’s instructions using an iTRAQ Reagent-8plex Multiplex Kit (AB Sciex U.K. Limited). To each of 4 samples containing ~60 µg of sample, 2 µl of the reducing agent and 50 mM (tris-(2-carboxyethyl) phosphine were added and mixed. Samples were incubated at 60°C for 1 h. Methyl methane-thiosulfonate in isopropanol (1 µl of 200 mM) was then added and incubated for a further 10 min at room temperature. Proteins were digested by adding 10 μl of 1 mg/ml trypsin in 80 mM CaCl2. Samples were incubated for 16 h at 37°C. Labelling of tryptic peptides with iTRAQ 8-plex tags was achieved by mixing the appropriate iTRAQ labeling reagent with the relevant sample, and incubation at room temperature for 2h.   Mass Spectrometry Two dimensional separations were performed using a nanoAcquity 2D UPLC system (Waters). For the first dimension separation, 2.0 µl of the prepared protein lysates containing 3.2  µg of iTRAQ labeled peptides were injected onto a 5 µm Xbridge BEH130 C18, 300 µm ID x 50 mm (Waters) column equilibrated in 20 mM ammonium formate, pH 10 (buffer A). The first dimension separation was achieved by increasing the concentration of acetonitrile (buffer B) in 7 steps consisting of 11, 14, 16, 20, 25, 50, 65%. At each step the programmed percentage composition was held for 1 min at a low rate of 1000 nl/min and the eluant diluted by buffer C (H20 + 0.1% formic acid) from the second dimension pump at a flow rate of 20  µl/min, effectively diluting the ammonium formate and acetonitrile, allowing trapping of the eluting peptides onto a Symmetry C18, 180 µm x 20 mm trapping cartridge (Waters). After 20 min washing of the trap column, peptides were separated using an in-line second dimension analytical separation performed on a 75 µm ID x 200 mm, 1.7 µm BEH130 C18, column (Waters) using a linear gradient of 5 to 40% B (buffer A = water containing 0.1% formic acid, buffer B = 95% acetonitrile containing 0.1% formic acid) over 120 min with a wash to 85% B at a flow rate of 300 nl/min. All separations were automated and performed on-line to the mass spectrometer. All data were acquired using a Q-tof Global Ultima (Waters Ltd, Manchester, UK) fitted with a nanoLockSpray™ source. A survey scan was acquired from m/z 350 to 1700 with the switching criteria for MS to MS/MS including ion intensity and charge state.  The collision energy used to perform MS/MS was varied according to the mass and charge state of the eluting peptide.</field>
+        <field name="data_protocol">Peak lists were generated using ProteinLynx Global Server 2.4 (Waters Ltd, Manchester, UK). The following parameters were used for processing the MS/MS spectra; normal background subtraction with a 25% background threshold and medium de-isotoping with a threshold of 1%, no smoothing was performed.  Peak list generation and database searching Peak lists from the MS/MS analysis of were submitted to the MASCOT search engine version 2.2.1 (Matrix Science, London, UK) and the data searched against a protein translation of the CGSP14 NCBI genome (http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=516950). The corresponding quantitative information using the iTRAQ reporter ions was also obtained via MASCOT. A maximum of one missed cleavage for tryptic digestion and fixed modifications for methyl methane-thiosulfonation of cysteine and the N-terminus and lysine side chains using the 8-plex iTRAQ label were allowed (Applied Biosystems, Warrington, UK). Variable modification for the oxidation of methionine and iTRAQ modification of tyrosine were also allowed. Precursor ion and sequence ion mass tolerances were set at 100 ppm and 0.3 Da respectively.  Protein identifications required the assignment of ≥2 different peptides with a significance threshold for accepting a match of p &lt; 0.05. The protein ratios were calculated using MASCOT version 2.2.1, where the peptide ratios were weighted and median normalisation was performed, automatic outlier removal was chosen and the peptide threshold was set to ‘at least homology’. False discovery rates were calculated by running all spectra against a decoy database using the MASCOT software.</field>
+        <field name="instrument_platform">Q-Tof ultima</field>
+        <field name="species">Streptococcus pneumoniae SP14-BS69</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="modification">methylthiolated residue</field>
+        <field name="modification">iTRAQ8plex-116 reporter+balance reagent acylated residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">Streptococcus pneumoniae</field>
+        <field name="submitter_keywords"> biofilm</field>
+        <field name="quantification_method">iTRAQ</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Allan RN, Skipp P, Jefferies J, Clarke SC, Faust SN, Hall-Stoodley L, Webb J. Pronounced Metabolic Changes in Adaptation to Biofilm Growth by Streptococcus pneumoniae. PLoS One. 2014 Sep 4;9(9):e107015. eCollection 2014</field>
+        <field name="submitter">Paul Skipp</field>
+        <field name="submitter_mail">pjss@soton.ac.uk</field>
+        <field name="submitter_affiliation">Centre for Proteomic Research, University of Southampton</field>
+        <field name="labhead">Dr Paul Skipp</field>
+        <field name="labhead_mail">pjss@soton.ac.uk</field>
+        <field name="labhead_affiliation">Centre for Proteomic Research, University of Southampton</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001182/2D_RayAllen__iTRAQ_extendgradient_140911__inj1.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001182/2D_RayAllen__iTRAQ_extendgradient_140911__inj2.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001182/2D_RayAllen__iTRAQ_extendgradient_140911__inj3.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001182/mascot_daemon_merge_inj1.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001182/mascot_daemon_merge_inj2.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001182/mascot_daemon_merge_inj3.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001182/F005917.dat</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

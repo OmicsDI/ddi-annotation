@@ -1,0 +1,64 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-08-19</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001082">
+      <name>Quantitative comparison of CSF proteins from T. b. gambiense and T. b. rhodesiense HAT patients</name>
+      <description>The host central nervous system (CNS) response to infection with Trypanosoma brucei (T. b.) gambiense or T. b. rhodesiense parasites, the causing agent of human African trypanosomiasis (HAT), is a poorly explored area. The two parasites are responsible for respectively a chronic and an acute form of HAT. In both cases, however, the disease progresses from a haemolymphatic first stage (S1) to a meningo-encephalitic second stage (S2) due to the penetration of parasites into the CNS. In the present study, we investigated and compared the cerebrospinal fluid (CSF) from S2 patients affected by either T. b. gambiense or T. b. rhodesiense HAT, using a mass spectrometry quantitative proteomics approach. Gene ontology and pathway analyses on the 222 quantified proteins, revealed a predominant activation of the innate immune and the acute phase responses in rhodesiense HAT. These results were further confirmed through the verification of the over-expression of two proteins involved in these mechanisms, C-reactive protein (CRP) and orosomucoid 1 (ORM1), in 126 S2 HAT patients suffering from either the chronic or the acute form of HAT. Both proteins were significantly increased (p&lt;0.0001) in the CSF of rhodesiense HAT patients. These findings contribute in better understanding the pathophysiological mechanisms of late stage HAT caused by T. b. gambiense or T. b. rhodesiense and pave the way for further investigations on the clinical significance of CRP and ORM1. See article: &lt;a href="http://www.sciencedirect.com/science/article/pii/S2212963414000126"&gt;Increased acute immune response during the meningo-encephalitic stage of Trypanosoma brucei rhodesiense sleeping sickness compared to Trypanosoma brucei gambiense&lt;/a&gt;</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-06-24"/>
+        <date type="publication" value="2015-01-23"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001082</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Six cerebrospinal fluid (CSF) samples, n=3 from T. b. gambiense patients and n=3 from T. b. rhodesiense patients, have been analysed. For each, 60 µL of sample were reduced with 50 mM tris(2-carboxyethyl)phosphine (TCEP), alkylated with 400 mM iodoacetamide and digested overnight at 37°C with trypsin (Promega, Madison, WI, USA) after having spiked 0.5 µg per sample of bovine beta-lactoglobulin (Sigma Aldrich, St. Louis, MO, USA) as an internal control. Samples were then labelled with the TMT® 6-plex tagging reagents (Thermo Fisher Scientific, Waltham, MA, USA) following manufacturer’s instructions. T. b. gambiense samples were labelled with the tags TMT-126, TMT-127 and TMT-128, while T. b. rhodesiense samples were labelled with the tags TMT-129, TMT-130 and TMT-131. After tagging, samples were pooled, desalted with C18 Macro Spin Columns (Harvard Apparatus, Holliston, MA, USA) and dried under vacuum. The pooled sample was then fractionated by off-gel electrophoresis (OGE – Agilent, Santa Clara, CA, USA) into 12 fractions using a linear IPG strip (13 cm, GE Healthcare, Uppsala, Sweden). Each OGE fraction was desalted with C18 Micro Spin Columns (Harvard Apparatus, Holliston, MA, USA), dried under vacuum and analysed by tandem mass spectrometry on an ESI LTQ OT velos from Thermo Electron (San Jose, CA, USA) equipped with a NanoAcquity system from Waters. Peptides were trapped on a home-made 5 µm 200 Å Magic C18 AQ (Michrom) 0.1 × 20 mm pre-column and separated on a home-made 5 µm 100 Å Magic C18 AQ (Michrom) 0.75 × 150 mm column with a gravity-pulled emitter. The analytical separation was run for 65 min using a gradient of H2O/FA 99.9%/0.1% (solvent A) and CH3CN/FA 99.9%/0.1% (solvent B), run as follows: 0–1 min 95% A and 5% B, then to 65% A and 35% B at 55 min, and 20% A and 80% B at 65 min at a flow rate of 220 nL/min. For MS survey scans, the OT resolution was set to 60000 and the ion population was set to 5 × 105 with an m/z window from 400 to 2000. A maximum of 3 precursors were selected for both collision-induced dissociation (CID) in the LTQ and high-energy C-trap dissociation (HCD) with analysis in the OT. For MS/MS in the LTQ, the ion population was set to 7000 (isolation width of 2 m/z) while for MS/MS detection in the OT, it was set to 2 × 10E5 (isolation width of 2.5 m/z), with resolution of 7500, first mass at m/z = 100, and maximum injection time of 750 ms. The normalized collision energies were set to 35% for CID and 60% for HCD.</field>
+        <field name="data_protocol">Protein identification was done using EasyProt platform v2.3 (Gluck F, et al., Journal of Proteomic 2013;79:146). Peak lists were generated from raw data using ReadW software. After peak list generation, the CID and HCD spectra were merged for simultaneous identification and quantification (Dayon L, et al., Journal of proteomics 2010;73:769). Peptide spectral matches were searched against SwissProt/Uniprot database (Version 13-June-2012, 536’489 entries), by choosing Homo sapiens taxonomy. Variable amino acid modifications were oxidized methionines, while carbamidomethylation of cysteines, TMT six-plex amino-termini and TMT six-plex lysines were specified as fixed modifications. Trypsin was selected as the digestion enzyme allowing only 1 missed-cleavage. Only peptides with a minimum of 6 residues were selected for identification and the precursor ion tolerance was set to 10 ppm.  Relative protein quantification was obtained with Isobar quantification tool (version 1.76) (Breitwieser FP, et al., JPR 2011;10:2758) embedded in EasyProt. Only peptides specific for a unique entry in the job were taken into account for protein quantification, and a unique quantified peptide was considered sufficient to obtain protein quantification. The protein ratio T. b. rhodesiense/T. b. gambiense was computed according to the tagging design, i.e. 129+130+131/126+127+128, after isotopic purity correction (according to the algorithm given by the manufacturer) and Isobar default normalisation.</field>
+        <field name="instrument_platform">LTQ Orbitrap Velos</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Trypanosomiasis</field>
+        <field name="tissue">cerebrospinal fluid</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">TMT6plex-126 reporter+balance reagent acylated residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biomedical</field>
+        <field name="submitter_keywords">Human cerebrospinal fluid</field>
+        <field name="submitter_keywords"> human African trypanosomiasis</field>
+        <field name="submitter_keywords"> Tandem Mass Tag (TMT)</field>
+        <field name="submitter_keywords"> ESI LTQ Orbitrap</field>
+        <field name="quantification_method">TMT</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="submitter">Natalia Tiberti</field>
+        <field name="submitter_mail">natalia.tiberti@gmail.com</field>
+        <field name="submitter_affiliation">Translational Biomarker Group, Department of Human Protein Sciences, University of Geneva, Geneva, Switzerland</field>
+        <field name="labhead">Jean-Charles Sanchez</field>
+        <field name="labhead_mail">Jean-Charles.Sanchez@unige.ch</field>
+        <field name="labhead_affiliation">Translational Biomarker Group, Department of Human Protein Sciences, University of Geneva, Geneva, Switzerland</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001082/2013_03_08_OT_ALH_161_NATi_trypa_OG_01.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001082/2013_03_08_OT_ALH_162_NATi_trypa_OG_02.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001082/2013_03_08_OT_ALH_163_NATi_trypa_OG_03.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001082/2013_03_08_OT_ALH_164_NATi_trypa_OG_04.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001082/2013_03_08_OT_ALH_165_NATi_trypa_OG_05.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001082/2013_03_08_OT_ALH_166_NATi_trypa_OG_06.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001082/2013_03_08_OT_ALH_168_NATi_trypa_OG_07.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001082/2013_03_08_OT_ALH_169_NATi_trypa_OG_08.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001082/2013_03_08_OT_ALH_170_NATi_trypa_OG_09.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001082/2013_03_08_OT_ALH_171_NATi_trypa_OG_10.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001082/2013_03_08_OT_ALH_172_NATi_trypa_OG_11.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001082/2013_03_08_OT_ALH_173_NATi_trypa_OG_12.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001082/NAT4_13001_Merged_OGE_fractions.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001082/Tiberti_N_Isobar_Result.xls</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

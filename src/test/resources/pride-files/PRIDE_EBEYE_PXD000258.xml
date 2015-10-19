@@ -1,0 +1,78 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000258">
+      <name>Proteomic response of Alicycliphilus denitrificans strain BC towards the different electron acceptors chlorate, nitrate and oxygen.</name>
+      <description>Alicycliphilus denitrificans is a versatile, ubiquitous, facultative anaerobic bacterium. A. denitrificans strain BC can use chlorate, nitrate and oxygen as electron acceptor for growth. Cells display a prolonged lag-phase when transferred from nitrate to chlorate and vice versa. Furthermore, cells adapted to aerobic growth do not easily use nitrate or chlorate as electron acceptor. We further investigated these responses of strain BC by differential proteomics, transcript analysis and enzyme activity assays. In nitrate-adapted cells transferred to chlorate and vice versa, appropriate electron acceptor reduction pathways need to be activated. In oxygen-adapted cells, adaptation to the use of chlorate or nitrate is likely difficult due to the poorly active nitrate reduction pathway and low active chlorate reduction pathway. We deduce that the Nar-type nitrate reductase of strain BC also reduces chlorate, which may result in toxic levels of chlorite if cells are transferred to chlorate. Furthermore, the activities of nitrate reductase and nitrite reductase appear to be not balanced when oxygen-adapted cells a shifted to nitrate as electron acceptor, leading to the production of a toxic amount of nitrite. These data suggest that strain BC encounters metabolic challenges in environments with fluctuations in the availability of electron acceptors.        Proteomic samples were prepared from Alicycliphilus denitrificans grown in the presence of different electron acceptors: chlorate,  nitrate and oxygen. Proteins were separated by a short SDS gel and for each sample 4 in-gel digest slices were prepared. Peptide samples were measured by nLC LTQ-Orbitrap and the data were analysed with MaxQuant using default settings  (1% FDR on peptide and protein level) and filtered extra to keep only proteins identified with at least 2 peptides and 1 unique  and 1 unmodified peptide.</description>
+      <cross_references>
+        <ref dbkey="596153" dbname="TAXONOMY"/>
+        <ref dbkey="23907812" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2013-05-16"/>
+        <date type="publication" value="2013-08-12"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000258</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Not available</field>
+        <field name="instrument_platform">LTQ Orbitrap</field>
+        <field name="species">Alicycliphilus denitrificans (strain JCM 14587 / BC)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Not available</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="modification">deamidated residue</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="submitter_keywords">Alicycliphilus denitrificans electron acceptors LTQ-Orbitrap</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Oosterkamp MJ, Boeren S, Plugge CM, Schaap PJ, Stams AJ; Metabolic response of Alicycliphilus denitrificans strain BC toward electron acceptor variation., Proteomics, 2013 Aug 1, </field>
+        <field name="submitter">Sjef Boeren</field>
+        <field name="submitter_mail">sjef.boeren@wur.nl</field>
+        <field name="submitter_affiliation">Biochemistry</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000258/MOo11_1AcNit_250-75kD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000258/MOo12_2AcNit_75-37kD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000258/MOo13_3AcNit_37-30kD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000258/MOo14_4AcNit_30-0kD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000258/MOo15_1AcChl_250-75kD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000258/MOo16_2AcChl_75-37kD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000258/MOo17_3AcChl_37-30kD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000258/MOo18_4AcChl_30-0kD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000258/MOo19_1AcOxy_250-75kD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000258/MOo20_2AcOxy_75-37kD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000258/MOo21_3AcOxy_37-30kD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000258/MOo22_4AcOxy_30-0kD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000258/MOo23_1AconNit_250-75kD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000258/MOo24_2AconNit_75-37kD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000258/MOo25_3AconNit_37-30kD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000258/MOo26_4AconNit_30-0kD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000258/Deamidation (NQ)Sites.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000258/Oxidation (M)Sites.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000258/allPeptides.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000258/evidence.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000258/modificationSpecificPeptides.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000258/msScans.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000258/msms.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000258/msmsScans.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000258/mzRange.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000258/parameters.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000258/peptides.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000258/proteinGroups.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000258/summary.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000258/Marjet Oosterkamp uniprot2011 alicycliphilus denitrificans strain BC.fasta</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000258/Marjet MOo11-26_Adenitrificans_substrates.xls</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/08/PXD000258/experimentalDesignTemplate.txt</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

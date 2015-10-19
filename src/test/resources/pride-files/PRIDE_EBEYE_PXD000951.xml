@@ -1,0 +1,127 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000951">
+      <name>29RNP kinase idetification</name>
+      <description>The 29-kDa RNA protein (29RNP), which was originally identified in rice etioplasts, has increased phosphorylation levels during de-etiolation. Here, using heparin-sepharose enriched fractions, we identified a chloroplast kinase that phosphorylated 29RNP. The chloroplast kinase phosphorylated the 29RNP and exhibited CKII biochemical characteristics in a kinase reaction test. Proteomic analysis of the chloroplast heparin-sepharose enriched fractions revealed the presence of 70 proteins, including both abundant proteins, such as plastid encoded polymerase subunits, and low-abundance proteins, such as APO2 and DAG. An inclusion list method using Fourier transform ion cyclotron resonance mass spectrometer ( FT-ICR LTQ MS ) was subsequently used to analyze the chloroplast heparin-sepharose enriched fractions. The 29RNP kinase was positively identified as a CKII alpha family protein by the presence of two unique peptides.</description>
+      <cross_references>
+        <ref dbkey="4530" dbname="TAXONOMY"/>
+        <ref dbkey="25316064" dbname="pubmed"/>
+        <ref dbkey="Q7Z794" dbname="uniprot"/>
+        <ref dbkey="Q01546" dbname="uniprot"/>
+        <ref dbkey="Q9D646" dbname="uniprot"/>
+        <ref dbkey="ENSP00000334798" dbname="ensembl"/>
+        <ref dbkey="Q9C075" dbname="uniprot"/>
+        <ref dbkey="ENSP00000305263" dbname="ensembl"/>
+        <ref dbkey="ENSP00000342710" dbname="ensembl"/>
+        <ref dbkey="ENSP00000251646" dbname="ensembl"/>
+        <ref dbkey="ENSP00000252245" dbname="ensembl"/>
+        <ref dbkey="ENSP00000413479" dbname="ensembl"/>
+        <ref dbkey="ENSP00000329165" dbname="ensembl"/>
+        <ref dbkey="ENSP00000330101" dbname="ensembl"/>
+        <ref dbkey="ENSP00000209718" dbname="ensembl"/>
+        <ref dbkey="P12035" dbname="uniprot"/>
+        <ref dbkey="P29298" dbname="uniprot"/>
+        <ref dbkey="ENSMUSP00000056622" dbname="ensembl"/>
+        <ref dbkey="Q92764" dbname="uniprot"/>
+        <ref dbkey="ENSP00000267119" dbname="ensembl"/>
+        <ref dbkey="ENSP00000377558" dbname="ensembl"/>
+        <ref dbkey="ENSP00000246646" dbname="ensembl"/>
+        <ref dbkey="ENSP00000328358" dbname="ensembl"/>
+        <ref dbkey="ENSP00000225899" dbname="ensembl"/>
+        <ref dbkey="ENSP00000293308" dbname="ensembl"/>
+        <ref dbkey="ENSP00000167588" dbname="ensembl"/>
+        <ref dbkey="P06270" dbname="uniprot"/>
+        <ref dbkey="ENSP00000254043" dbname="ensembl"/>
+        <ref dbkey="Q86Y46" dbname="uniprot"/>
+        <ref dbkey="O76013" dbname="uniprot"/>
+        <ref dbkey="O76015" dbname="uniprot"/>
+        <ref dbkey="Q3SY84" dbname="uniprot"/>
+        <ref dbkey="Q14CN4" dbname="uniprot"/>
+        <ref dbkey="ENSP00000329243" dbname="ensembl"/>
+        <ref dbkey="Q7Z3Y9" dbname="uniprot"/>
+        <ref dbkey="Q7Z3Y7" dbname="uniprot"/>
+        <ref dbkey="Q14525" dbname="uniprot"/>
+        <ref dbkey="Q5XKE5" dbname="uniprot"/>
+        <ref dbkey="P19012" dbname="uniprot"/>
+        <ref dbkey="Q14532" dbname="uniprot"/>
+        <ref dbkey="ENSP00000307014" dbname="ensembl"/>
+        <ref dbkey="P05787" dbname="uniprot"/>
+        <ref dbkey="P35900" dbname="uniprot"/>
+        <ref dbkey="Q7RTS7" dbname="uniprot"/>
+        <ref dbkey="ENSP00000355124" dbname="ensembl"/>
+        <ref dbkey="ENSP00000307240" dbname="ensembl"/>
+        <ref dbkey="P08729" dbname="uniprot"/>
+        <ref dbkey="P08727" dbname="uniprot"/>
+        <ref dbkey="ENSP00000293745" dbname="ensembl"/>
+        <ref dbkey="O95678" dbname="uniprot"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-05-02"/>
+        <date type="publication" value="2015-04-27"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000951</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Preparation and Characterization of Protein Fractions with Enriched 29RNP Kinase Activity.    The isolated chloroplasts were lysed in extraction buffer (50 mM Tris-HCl, 1 mM DTT, 1X Protein Inhibitor cocktail (Roche Applied Science Indianapolis，USA), homogenized on ice, and centrifuged at 16,100 x g for 10 min at 4°C. The supernatant was loaded onto a heparin-sepharose affinity column (GE-Healthcare Bio-Sciences AB, Uppsala, Sweden, ). The column was washed with buffer (50 mM Tris-HCl, 0.3 M KCl, 1 mM DTT and 10% (v/v) glycerol), and the fractions that likely contained 29RNP kinase activity were eluted with Elution Buffer (50 mM Tris-HCl, 1.8 M KCl, 1 mM DTT and 10% (v/v) glycerol). The eluted fractions were dialyzed overnight in 50 mM Tris-HCl, 1 mM DTT, 10% glycerol, and 1x Protease Inhibitor Cocktail. The RNP kinase activity was assayed at 30°C for 30 min in 20 mM Tris, pH 7.4, 5 mM MgCl2, 5 mM CaCl2 50M ATP, 1 Ci [32P] ATP, and 5 g of purified recombinant 28RNP-Strep tagged protein. SDS sample buffer (5X) (0.312 M Tris-HCl, pH6.8, 10% SDS, 25% glycerol, 5% mercaptoethanol, 0.05 Bromophenol) was added to each reaction, and the samples were heated at 70°C for 5 min to stop the reaction.  The reaction mixtures were loaded onto a 10% SDS-PAGE gel. The incorporation of radioactive phosphates was determined by autoradiography (Fuji X-ray film RX). The fractions containing 29RNP kinase activity were pooled and concentrated by centrifugation in Amicon Ultra-4 centrifugal filter units. The protein concentration was determined by the Bradford method.  SDS-polyacrylamide Gel Electrophoresis and In-gel Tryptic Digestion Approximately 50 g of heparin-sepharose enriched protein was loaded onto 10 cm homogeneous 12% polyacrylamide gels. After electrophoresis, the gel was cut into 5 segments along the lanes. Each segment was cut into small pieces (1 mm3) and subjected to in-gel tryptic digestion as previously described (Shevchenko et al., 1996) using sequencing grade modified trypsin (Promega, USA) at a ratio of one part trypsin to ten parts protein. Proteins were digested overnight at 37°C. After desalting with a Sep-Pak C18 column (Waters, USA), the tryptic peptides were lyophilized and stored at -80°C until analysis.   Protein Identification by LTQ-FT-ICR-MS/MS  Tryptic peptides from each fraction were re-suspended in 20 l of 5% ACN/0.2% formic acid in water and loaded onto laboratory generated silica-capillary columns (inner diameter of 75 µm, length of 9 cm; BGB Analytik AG, Böckten, Switzerland) packed with C-18 reverse phase material (Magic C18 resins; 3 µm, 100 Å pore; Michrom BioResources, Auburn, CA, USA). The peptide mixture was separated and eluted by a gradient elution from 5 to 65% ACN over 1 h followed by an increase of up to 80% ACN during an additional 7 min period. The flow rate at the tip of the column was adjusted to approximately 200 nl/min. LC was coupled to an FT-ICR LTQ-MS (2D ion trap and Fourier transform ion cyclotron resonance mass spectrometer) (Thermo Finnigan, San Jose) equipped with a nanospray source. Mass spectrometry analysis was performed with a spray voltage of 1.7 kV and analyzed with one MS full scan followed by three data-dependent MS/MS scans of the three most intense parent-ions or by m/z list inclusion of the MS/MS scan.</field>
+        <field name="data_protocol">The m/z list was generated with MS-Digest software (ProteinProspector 3.0, http://prospector.ucsf.edu/prospector/cgi-bin/msform. cgi?form=msdigest ). The dynamic exclusion function was enabled to allow two measurements of the same parent-ion for one minute followed by exclusion of measurements for one minute. MS/MS spectra were extracted with DeconMSn software (Mayampurath et al., 2008) .MS/MS spectra were searched with MASCOT v2.4 and PeptideProphet and ProteinProphet using the Trans-Proteomic Pipeline (TPP v.4.7_SQUALL; http://tools.proteomecenter.org/TPP.php) against the Oryza sativa protein database (download from ftp://ftp.plantbiology.msu.edu/pub/data/Eukaryotic_Projects/o_sativa/ annotation_dbs/pseudomolecules/version_7.0/ Feburay 2014) supplemented with contaminants. The search parameters were as follows: requirement for tryptic ends, one missed cleavage allowed, and mass tolerance = ±10 PPM, and all the other parameters were similar to those used in a previous study (Baerenfaller et al., 2008).  Because large databases are prone to increase false positive identification rates, we chose a stringent PeptideProphet cutoff of 0.90 for Peptides that were used for the ProteinProphet analysis. To filter the ProteinProphet data, a 0.95 probability cutoff value was utilized to identify proteins of interest for further analysis.</field>
+        <field name="instrument_platform">LTQ FT</field>
+        <field name="species">Rice(O. sativa)</field>
+        <field name="cell_type">plant cell</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">leaf</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Affinity purification coupled with mass spectrometry proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">29RNP</field>
+        <field name="submitter_keywords"> kinase</field>
+        <field name="submitter_keywords"> m/z list inclusion method</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">COMPLETE</field>
+        <field name="software">Matrix Science Mascot 2.4.0</field>
+        <field name="doi">10.6019/PXD000951</field>
+        <field name="publication">Lu Q, Ding S, Reiland S, Rödiger A, Roschitzki B, Xue P, Gruissem W, Lu C, Baginsky S. Identification and characterization of chloroplast casein kinase II from Oryza sativa (rice). J Exp Bot. 2015 Jan;66(1):175-87</field>
+        <field name="submitter">Qingtao Lu</field>
+        <field name="submitter_mail">lu_qingtao@ibcas.ac.cn</field>
+        <field name="submitter_affiliation">Ph.D</field>
+        <field name="labhead">Lu Qingtao</field>
+        <field name="labhead_mail">lu_qingtao@ibcas.ac.cn</field>
+        <field name="labhead_affiliation">Lu Qingtao, Ph.D. Photosynthesis Research Center, Room 230 Institute of Botany, CAS Haidian Xiangshan Nanxincun 20# Beijing. 100093 Phone, +86-10-62836254 Email, lu_qingtao@ibcas.ac.cn</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000951/F001482.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000951/F001482.dat-pride-filtered.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000951/F001484.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000951/F001484.dat-pride-filtered.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000951/F001485.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000951/F001485.dat-pride-filtered.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000951/F001486.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000951/F001486.dat-pride-filtered.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000951/F001487.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000951/F001487.dat-pride-filtered.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000951/20081112_11_HE4.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000951/20081112_11_HE4.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000951/20081112_11_HE4.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000951/20081112_12_HE3.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000951/20081112_12_HE3.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000951/20081112_12_HE3.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000951/20081112_13_HE2.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000951/20081112_13_HE2.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000951/20081112_13_HE2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000951/20081112_14_HE1.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000951/20081112_14_HE1.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000951/20081112_14_HE1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000951/20081112_30_HE2_incl.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000951/20081112_30_HE2_incl.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000951/20081112_30_HE2_incl.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000951/he-total.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD000951/he-total.prot.xml</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

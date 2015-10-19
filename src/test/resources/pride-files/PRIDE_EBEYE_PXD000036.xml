@@ -1,0 +1,130 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000036">
+      <name>Albuminome from human serum and CSF</name>
+      <description>Albuminome from human serum was isolated using ProteaPrep HSA affinity spin columns and Vivapure anti-HSA spin columns.   Albuminome from CSF was isolated using ProteaPrep HSA affinity spin columns.  Isolated albuminome was trypsin digested and  analyzed by LC-MS/MS to determine serum and CSF albuminome proteins. All raw MS/MS data originating from the Orbitrap Elite were batch searched based on albuminome isolation method (ProteaPrep vs. Vivapure).  A total of 9 files were acquired for each albuminome analyzed (3 technical reps x 3 MS technical reps).  All data were searched using the Sorcerer 2TM-SEQUEST algorithm (Sage-N Research, Milpitas, CA, USA) using default peak extraction parameters. Data were searched against the Human Uniprot database (July 2012) with an Xcorr cutoff of 1.7 using the following criteria: Fixed modification: +57 on C (carbamidomethyl); Variable modification: +16 on M (oxidation); Enzyme: Trypsin with 2 max missed cleavages; Parent Tolerance: 50 ppm; Fragment tolerance: 1.00 Da.  Post-search analysis was performed using Scaffold 3 version 3.6.2  (Proteome Software, Inc., Portland, OR, USA) with protein and peptide probability thresholds set to 95% and 90%, respectively, and one peptide required for identification. Protein and peptide false discovery rates were calculated automatically using Scaffold’s probabilistic method and were equal to or less than 0.5 % for all samples using the above thresholds. Data were imported in Protein Center (Proxeon/ThermoFisher) and all data were clustered by indistinguishable proteins to remove protein redundancy within data sets. Only proteins that were observed in all three technical replicates were included in the final protein list, although proteins observed it at least two technical replicates were included in the on-line supplement for reference.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="23300121" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2012-09-26"/>
+        <date type="publication" value="2013-02-25"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000036</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Not available</field>
+        <field name="instrument_platform">LTQ Orbitrap Elite</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Not available</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="submitter_keywords">cerebrospinal fluid</field>
+        <field name="submitter_keywords"> CSF</field>
+        <field name="submitter_keywords"> serum</field>
+        <field name="submitter_keywords"> albumin</field>
+        <field name="submitter_keywords"> albuminome</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Holewinski RJ, Jin Z, Powell MJ, Maust MD, Van Eyk JE; A fast and reproducible method for albumin isolation and depletion from serum and cerebrospinal fluid., Proteomics, 2013 Mar, 13, 5, 743-50, </field>
+        <field name="submitter">Ronald Holewinski</field>
+        <field name="submitter_mail">rholewi1@jhmi.edu</field>
+        <field name="submitter_affiliation">Johns Hopkins University</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_CSF-ABPPC_1-01.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_CSF-ABPPC_1-02.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_CSF-ABPPC_1-03.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_CSF-ABPPC_2-01.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_CSF-ABPPC_2-02.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_CSF-ABPPC_2-03.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_CSF-ABPPC_3-01.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_CSF-ABPPC_3-02.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_CSF-ABPPC_3-03.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_Serum-ABPPC_1-01.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_Serum-ABPPC_1-02.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_Serum-ABPPC_1-03.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_Serum-ABPPC_2-01.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_Serum-ABPPC_2-02.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_Serum-ABPPC_2-03.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_Serum-ABPPC_3-01.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_Serum-ABPPC_3-02.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_Serum-ABPPC_3-03.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Vivapure_Serum-ABPPC_1-01.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Vivapure_Serum-ABPPC_1-02.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Vivapure_Serum-ABPPC_1-03.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Vivapure_Serum-ABPPC_2-01.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Vivapure_Serum-ABPPC_2-02.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Vivapure_Serum-ABPPC_2-03.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Vivapure_Serum-ABPPC_3-01.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Vivapure_Serum-ABPPC_3-02.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Vivapure_Serum-ABPPC_3-03.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_CSF-ABPPC_1-01.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_CSF-ABPPC_1-02.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_CSF-ABPPC_1-03.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_CSF-ABPPC_2-01.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_CSF-ABPPC_2-02.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_CSF-ABPPC_2-03.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_CSF-ABPPC_3-01.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_CSF-ABPPC_3-02.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_CSF-ABPPC_3-03.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_Serum-ABPPC_1-01.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_Serum-ABPPC_1-02.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_Serum-ABPPC_1-03.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_Serum-ABPPC_2-01.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_Serum-ABPPC_2-02.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_Serum-ABPPC_2-03.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_Serum-ABPPC_3-01.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_Serum-ABPPC_3-02.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_Serum-ABPPC_3-03.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Vivapure_Serum-ABPPC_1-01.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Vivapure_Serum-ABPPC_1-02.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Vivapure_Serum-ABPPC_1-03.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Vivapure_Serum-ABPPC_2-01.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Vivapure_Serum-ABPPC_2-02.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Vivapure_Serum-ABPPC_2-03.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Vivapure_Serum-ABPPC_3-01.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Vivapure_Serum-ABPPC_3-02.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Vivapure_Serum-ABPPC_3-03.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_CSF-ABPPC_1-01.ms2</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_CSF-ABPPC_1-02.ms2</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_CSF-ABPPC_1-03.ms2</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_CSF-ABPPC_2-01.ms2</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_CSF-ABPPC_2-02.ms2</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_CSF-ABPPC_2-03.ms2</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_CSF-ABPPC_3-01.ms2</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_CSF-ABPPC_3-02.ms2</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_CSF-ABPPC_3-03.ms2</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_Serum-ABPPC_1-01.ms2</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_Serum-ABPPC_1-02.ms2</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_Serum-ABPPC_1-03.ms2</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_Serum-ABPPC_2-01.ms2</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_Serum-ABPPC_2-02.ms2</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_Serum-ABPPC_2-03.ms2</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_Serum-ABPPC_3-01.ms2</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_Serum-ABPPC_3-02.ms2</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Protea_Serum-ABPPC_3-03.ms2</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Vivapure_Serum-ABPPC_1-01.ms2</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Vivapure_Serum-ABPPC_1-02.ms2</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Vivapure_Serum-ABPPC_1-03.ms2</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Vivapure_Serum-ABPPC_2-01.ms2</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Vivapure_Serum-ABPPC_2-02.ms2</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Vivapure_Serum-ABPPC_2-03.ms2</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Vivapure_Serum-ABPPC_3-01.ms2</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Vivapure_Serum-ABPPC_3-02.ms2</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000036/120817_Vivapure_Serum-ABPPC_3-03.ms2</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

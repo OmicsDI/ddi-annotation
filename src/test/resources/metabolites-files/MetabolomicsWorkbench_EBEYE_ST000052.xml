@@ -1,0 +1,56 @@
+<database>
+  <name>MetabolomicsWorkbench</name>
+  <description>The Metabolomics Workbench will serve as a national and international repository for metabolomics data and metadata and will provide analysis tools and access to metabolite standards, protocols, tutorials, training, and more.</description>
+  <release>1.0</release>
+  <release_date>15-05-20</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="ST000052">
+      <name>Small cell lung cancer metabolome</name>
+      <description>The goal of this specific aim is to comprehensively evaluate metabolic underpinnings of SCLC specific lung cancer beyond that of simple glucose consumption and couple with proteome level measurements of global kinase and other enzyme level expression data to provide insight into the upstream signaling networks that may be driving the pathogenesis of SCLC.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="14-04-30"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Metabolomics</field>
+        <field name="full_dataset_link">http://www.metabolomicsworkbench.org/data/DRCCMetadata.php?Mode=Study&amp;StudyID=ST000052</field>
+        <field name="repository">MetabolomicsWorkbench</field>
+        <field name="data_protocol">MS positive ion mode</field>
+        <field name="data_protocol">MS negative ion mode</field>
+        <field name="instrument_platform">Waters Synapt-G2</field>
+        <field name="instrument_platform">Waters Synapt-G2</field>
+        <field name="study_factor">Name:N417  | Lung cancer type:SCLC  | # Cells/vial:2x10e7</field>
+        <field name="study_factor">Name:H2228  | Lung cancer type:NSCLC  | # Cells/vial:2x10e7</field>
+        <field name="study_factor">Name:NSCLCpool-QC</field>
+        <field name="study_factor">Name:86M1  | Lung cancer type:SCLC  | # Cells/vial:2x10e7</field>
+        <field name="study_factor">Name:SCLCpool-QC</field>
+        <field name="study_factor">Name:H322  | Lung cancer type:NSCLC  | # Cells/vial:2x10e7</field>
+        <field name="study_factor">Name:H358  | Lung cancer type:NSCLC  | # Cells/vial:2x10e7</field>
+        <field name="study_factor">Name:H69  | Lung cancer type:SCLC  | # Cells/vial:2x10e7</field>
+        <field name="study_factor">Name:DMS79  | Lung cancer type:SCLC  | # Cells/vial:2.5x10e7</field>
+        <field name="study_factor">Name:H524  | Lung cancer type:SCLC  | # Cells/vial:2x10e7</field>
+        <field name="study_factor">Name:H1703  | Lung cancer type:NSCLC  | # Cells/vial:2x10e7</field>
+        <field name="study_factor">Name:16HV  | Lung cancer type:SCLC  | # Cells/vial:3x10e7</field>
+        <field name="study_factor">Name:H522  | Lung cancer type:NSCLC  | # Cells/vial:2x10e7</field>
+        <field name="study_factor">Name:ALLpool-QC</field>
+        <field name="study_factor">Name:PC9  | Lung cancer type:NSCLC  | # Cells/vial:2x10e7</field>
+        <field name="study_factor">Name:A549  | Lung cancer type:NSCLC  | # Cells/vial:2x10e7</field>
+        <field name="study_factor">Name:H82  | Lung cancer type:SCLC  | # Cells/vial:2x10e7</field>
+        <field name="study_factor">Name:SW210.5  | Lung cancer type:SCLC  | # Cells/vial:2x10e7</field>
+        <field name="study_factor">Name:H209  | Lung cancer type:SCLC  | # Cells/vial:2x10e7</field>
+        <field name="study_factor">Name:H3122  | Lung cancer type:NSCLC  | # Cells/vial:2x10e7</field>
+        <field name="study_factor">Name:H187  | Lung cancer type:SCLC  | # Cells/vial:3x10e7</field>
+        <field name="study_factor">Name:HCC4006   | Lung cancer type:NSCLC  | # Cells/vial:2x10e7</field>
+        <field name="study_factor">Name:H1437  | Lung cancer type:NSCLC  | # Cells/vial:2x10e7</field>
+        <field name="species">Homo sapiens</field>
+        <field name="technology_type">mass spectrometry</field>
+        <field name="submitter">Susan Sumner</field>
+        <field name="submitter_mail">ssumner@rti.org</field>
+        <field name="submitter_affiliation">Systems and Translational Sciences (STS), RTI International</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

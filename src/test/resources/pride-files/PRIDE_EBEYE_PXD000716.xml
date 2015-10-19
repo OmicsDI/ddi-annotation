@@ -1,0 +1,73 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000716">
+      <name>Proteome-wide analysis of SUMO2 targets in response to pathological DNA replication stress in human cells</name>
+      <description>SUMOylation is a form of post-translational modification involving covalent attachment of SUMO (Small Ubiquitin-like Modifier) polypeptides to specific lysine residues in the target protein. In human cells, there are four SUMO proteins, SUMO1–4, with SUMO2 and SUMO3 forming a closely related subfamily. SUMO2/3, in contrast to SUMO1, are predominantly involved in the cellular response to certain stresses, including heat shock. Substantial evidence from studies in yeast has shown that SUMOylation plays an important role in the regulation of DNA replication and repair. Here, we report a proteomic analysis of proteins modified by SUMO2 in response to DNA replication stress in S phase in human cells. We have identified a panel of 22 SUMO2 targets with increased SUMOylation during DNA replication stress, many of which play key functions within the DNA replication machinery and/or in the cellular response to DNA damage. Interestingly, POLD3 was found modified most significantly in response to a low dose aphidicolin treatment protocol that promotes common fragile site (CFS) breakage. POLD3 is the human ortholog of POL32 in budding yeast, and has been shown to act during break-induced recombinational repair. We have also shown that deficiency of POLD3 leads to an increase in RPA-bound ssDNA when cells are under replication stress, suggesting that POLD3 plays a role in the cellular response to DNA replication stress. Considering that DNA replication stress is a source of genome instability, and that excessive replication stress is a hallmark of pre-neoplastic and tumor cells, our characterization of SUMO2 targets during a perturbed S-phase should provide a valuable resource for future functional studies in the fields of DNA metabolism and cancer biology.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-01-28"/>
+        <date type="publication" value="2014-12-09"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000716</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">U2OS-Strep-HA-SUMO2 cells were cultured in medium containing either l-arginine and l-lysine, l-arginine-U-13C6 and l-lysine-U-D4, or l-arginine-U-13C6-15N4 and l-lysine-U-13C6-15N2 (Cambridge Isotope Laboratories) as described previously (Ong et al, 2002). Cells were lysed in lysis buffer (modified RIPA buffer: 20 mM Tris–HCl, pH 7.5, 50 mM NaCl, 0.5% NP40, 0.5% sodium deoxycholate, 0.5% SDS, 1 mM EDTA) supplemented with protease and phosphatase inhibitors, and the lysates were cleared by centrifugation at 16,000 × g for 15 min at 4 °C. Protein concentration was determined using a BCA protein assay kit (Thermo Scientific) and 10 mg of protein from each cell population were mixed in a 1:1:1 ratio. Strep-tagged SUMOylated proteins were enriched using Strep-Tactin resin (IBA) for 2 h at 4 °C with rotation (10 rpm). The precipitated proteins were washed four times in lysis buffer containing 1 M NaCl and once in lysis buffer. Proteins were eluted by boiling in sample buffer (4% SDS, 120 mM Tris–HCl, 1 μM DTT), resolved by SDS-PAGE and were stained using Colloidal Blue Staining Kit (Life Technologies). The gel lane was cut into 10 slices and proteins were digested in-gel with trypsin.</field>
+        <field name="data_protocol">Peptide fractions were analyzed on a quadrupole Orbitrap (Q-Exactive, Thermo Scientific) mass spectrometer equipped with an EASY-nLC II nanoflow HPLC system (Thermo Scientific) as described previously (Michalski et al, 2011). Raw data files were analyzed using MaxQuant (Cox and Mann, 2008). Parent ion and MS2 spectra were searched against protein sequences obtained from the UniProt knowledge base using the Andromeda search engine (Cox et al, 2011). Spectra were searched with a mass tolerance of 6 ppm in MS mode, 20 ppm in HCD MS2 mode, strict trypsin specificity and allowing for up to 2 missed cleavage sites. Cysteine carbamidomethylation was included as a fixed modification and N-terminal protein acetylation and methionine oxidation were included as variable modifications. The dataset was filtered based on posterior error probability (PEP) to arrive at a false discovery rate of 1% for peptide spectrum matches and protein groups. Statistical analysis was performed using the R software environment. Gene Ontology term enrichment analysis was performed using the DAVID bioinformatics resource (Huang da et al, 2009). Network analysis of proteins was performed with the Search Tool for the Retrieval of Interacting Genes/Proteins (STRING) database (Engstrom and Ohlsson, 1990) and proteins were visualized using Cytoscape (Saito et al, 2012).&lt;br&gt;A supplemental data file has also been included post-publication: &lt;a href="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000716/Table_S1.xlsx" target="_top"&gt;Table_S1.xlsx&lt;/a&gt;.</field>
+        <field name="instrument_platform">Q Exactive</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">acetylated residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Affinity purification coupled with mass spectrometry proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biomedical</field>
+        <field name="submitter_keywords">SUMO2</field>
+        <field name="submitter_keywords"> replication stress</field>
+        <field name="submitter_keywords"> proteomics</field>
+        <field name="quantification_method">SILAC</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="submitter">Petra Beli</field>
+        <field name="submitter_mail">p.beli@imb-mainz.de</field>
+        <field name="submitter_affiliation">Institute of Molecular Biology (IMB), Mainz, Germany</field>
+        <field name="labhead">Petra Beli</field>
+        <field name="labhead_mail">p.beli@imb-mainz.de</field>
+        <field name="labhead_affiliation">Institute of Molecular Biology (IMB), Mainz, Germany</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000716/20130413_QE2_LC1_PB_COLLAB_U2OS_SILAC_SUMO2_Experiment1_ingel_08.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000716/20130413_QE2_LC1_PB_COLLAB_U2OS_SILAC_SUMO2_Experiment1_ingel_09.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000716/20130413_QE2_LC1_PB_COLLAB_U2OS_SILAC_SUMO2_Experiment1_ingel_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000716/20130413_QE2_LC1_PB_COLLAB_U2OS_SILAC_SUMO2_Experiment1_ingel_10.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000716/20130413_QE2_LC1_PB_COLLAB_U2OS_SILAC_SUMO2_Experiment1_ingel_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000716/20130413_QE2_LC1_PB_COLLAB_U2OS_SILAC_SUMO2_Experiment1_ingel_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000716/20130413_QE2_LC1_PB_COLLAB_U2OS_SILAC_SUMO2_Experiment1_ingel_4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000716/20130413_QE2_LC1_PB_COLLAB_U2OS_SILAC_SUMO2_Experiment1_ingel_5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000716/20130413_QE2_LC1_PB_COLLAB_U2OS_SILAC_SUMO2_Experiment1_ingel_6.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000716/20130413_QE2_LC1_PB_COLLAB_U2OS_SILAC_SUMO2_Experiment1_ingel_7.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000716/20130413_QE2_LC1_PB_COLLAB_U2OS_SILAC_SUMO2_Experiment2_ingel_08.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000716/20130413_QE2_LC1_PB_COLLAB_U2OS_SILAC_SUMO2_Experiment2_ingel_09.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000716/20130413_QE2_LC1_PB_COLLAB_U2OS_SILAC_SUMO2_Experiment2_ingel_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000716/20130413_QE2_LC1_PB_COLLAB_U2OS_SILAC_SUMO2_Experiment2_ingel_10.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000716/20130413_QE2_LC1_PB_COLLAB_U2OS_SILAC_SUMO2_Experiment2_ingel_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000716/20130413_QE2_LC1_PB_COLLAB_U2OS_SILAC_SUMO2_Experiment2_ingel_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000716/20130413_QE2_LC1_PB_COLLAB_U2OS_SILAC_SUMO2_Experiment2_ingel_4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000716/20130413_QE2_LC1_PB_COLLAB_U2OS_SILAC_SUMO2_Experiment2_ingel_5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000716/20130413_QE2_LC1_PB_COLLAB_U2OS_SILAC_SUMO2_Experiment2_ingel_6.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000716/20130413_QE2_LC1_PB_COLLAB_U2OS_SILAC_SUMO2_Experiment2_ingel_7.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000716/maxquant_txt.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD000716/Table_S1.xlsx</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

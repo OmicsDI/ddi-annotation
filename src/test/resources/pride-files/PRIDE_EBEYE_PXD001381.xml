@@ -1,0 +1,144 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001381">
+      <name>Highly sensitive phosphoproteomics by tailoring solid-phase extraction to electrostatic repulsion-hydrophilic interaction chromatography</name>
+      <description>The dataset contains the data of key experiments for developing a novel and highly sensitive bottom-up phosphoproteomics strategy termed ERLIC-SCX/RP-LC-MS. We compared two SPE types (RP, SCX) for an ERLIC run with 7 fractions. The results were used to design a workflow for highly sensitive bottom-up phosphoproteomics (third experiment) combing ERLIC in 21 fractions with the fractions 1-9 cleaned by SCX-SPE and the fractions 10-21 by RP-SPE. Up to 50% of the fractions were subjected to LC-MS/MS analysis with 45 h of total MS time per replicate.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="25405705" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-10-06"/>
+        <date type="publication" value="2014-12-02"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001381</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">1. Lysis of Hela cells, protein extraction, reduction and alkylation of cysteins, ethanol precipitation 2. Digest with trypsin 1:40 (trypsin sample ratio w/w) followed by desalting. 3. ERLIC fractionation: For SPE-tests: 200 µg peptide in 7 fractions.. For highly sensitive bottom-up phosphoproteomics: 100µg in 21 fractions 4. Phosphopeptide purification via SPE using RP or SCX 5. LC-MS/MS analysis using top15 CID in data dependant acquisition mode with a LTQ orbitrap velos instrument</field>
+        <field name="data_protocol">Raw-files were processed using Mascot against the Uniprot human database (www.uniprot.org, 2012-07-30, 20,323 target entries) implemented in Proteome Discoverer 1.4 with decoy search enabled; Protease: Trypsin; Fixed modifications: Carbamidomethyl Cys; variable modifications: Oxidation of Met, acetylation of N-Term and phosphorylation of Ser, Thr, Tyr. Error tolerances: 10 ppm for precursors and 0.5 Da for fragment ions. Results were filtered for high confidence (&lt; 1% on PSM level) and phosphoRS 3.1 was used for phosphorylation site validation. Phosphopeptides were considered as non-redundant if they differed either in phosphorylation level or phosphorylation pattern</field>
+        <field name="instrument_platform">LTQ Orbitrap Velos</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">cell culture</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">phosphorylated residue</field>
+        <field name="modification">acetylated residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biomedical</field>
+        <field name="submitter_keywords">Protein phosphorylation</field>
+        <field name="submitter_keywords"> Phosphoproteomics</field>
+        <field name="submitter_keywords"> LC-MS</field>
+        <field name="submitter_keywords"> RP</field>
+        <field name="submitter_keywords"> SCX</field>
+        <field name="submitter_keywords"> solid-phase extraction</field>
+        <field name="submitter_keywords"> Phosphopeptide enrichment</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Loroch S, Zahedi RP, Sickmann A. Highly sensitive phosphoproteomics by tailoring solid-phase extraction to electrostatic repulsion-hydrophilic interaction chromatography. Anal Chem. 2014 Nov 18</field>
+        <field name="submitter">Stefan Loroch</field>
+        <field name="submitter_mail">stefan.loroch@isas.de</field>
+        <field name="submitter_affiliation">Leibniz-Institut für Analytische Wissenschaften, Otto-Hahn-Straße 6b, 44227 Dortmund</field>
+        <field name="labhead">Albert Sickmann</field>
+        <field name="labhead_mail">sickmann@isas.de</field>
+        <field name="labhead_affiliation">Leibniz-Institut für Analytische Wissenschaften - ISAS - e.V. Otto-Hahn-Str. 6b, 44227 Dortmund, Germany</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06198 RP1 F7.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06199 SCX1 F7.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06200 SCX2 F7.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06201 RP2 F7.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06202 RP1 F6.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06203 SCX1 F6.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06204 SCX2 F6.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06205 RP2 F6.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06208 RP1 F5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06209 SCX1 F5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06210 SCX2 F5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06211 RP2 F5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06212 RP1 F4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06213 SCX1 F4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06214 SCX2 F4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06215 RP2 F4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06218 RP1 F3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06219 SCX1 F3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06220 SCX2 F3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06221 RP2 F3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06222 RP1 F2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06223 SCX1 F2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06224 SCX2 F2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06225 RP2 F2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06228 RP1 F1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06229 SCX1 F1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06230 SCX2 F1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06231 RP2 F1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos012418 SCXBRP1 F7.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos012419 SCXBRP2 F7.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos012420 SCXBRP2 F6.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos012421 SCXBRP1 F6.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos012422 SCXBRP1 F5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos012423 SCXBRP2 F5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos012425 SCXBRP2 F4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos012426 SCXBRP1 F4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos012427 SCXBRP1 F3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos012428 SCXBRP2 F3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos012431 SCXBRP1 F1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos012432 SCXBRP2 F1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos012572 SCXBRP1 F2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos012573 SCXBRP2 F2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06280 ERLIC1 F15.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06281 ERLIC2 F15.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06282 ERLIC2 F16.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06283 ERLIC1 F16.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06284 ERLIC1 F17.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06285 ERLIC2 F17.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06286 ERLIC1 F18.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06287 ERLIC2 F18.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06289 ERLIC1 F19.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06290 ERLIC2 F19.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06291 ERLIC1 F20.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06292 ERLIC2 F20.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06293 ERLIC1 F21.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06294 ERLIC2 F21.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06318 ERLIC1 F1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06319 ERLIC2 F1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06320 ERLIC1 F4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06321 ERLIC2 F4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06330 ERLIC1 F7.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06331 ERLIC2 F7.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06332 ERLIC1 F8.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06333 ERLIC2 F8.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06334 ERLIC1 F9.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06335 ERLIC2 F9.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06337 ERLIC1 F10.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06338 ERLIC2 F10.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06339 ERLIC1 F11.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06340 ERLIC2 F11.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06341 ERLIC1 F12.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06342 ERLIC2 F12.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06344 ERLIC1 F13.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06345 ERLIC2 F13.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06346 ERLIC1 F6.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06347 ERLIC2 F6.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06348 ERLIC1 F14.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06349 ERLIC2 F14.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06350 ERLIC1 F5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06351 ERLIC2 F5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06353 ERLIC1 F3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06354 ERLIC2 F3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06355 ERLIC1 F2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Velos02_06356 ERLIC2 F2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/ERLIC-SCX.RP_final Experiment_21 Fractions_2 Replicates.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/ERLIC-SPE-Test_RPvsSCX_7 Fractions_2 Replicates.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/ERLIC-SPE-Test_SCX_Eluates_7 Fractions_2 Replicates.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001381/Overview_All files.xls</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

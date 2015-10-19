@@ -1,0 +1,173 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001226">
+      <name>Protein deacetylation affects acetate metabolism, motility and acid stress response in Escherichia coli</name>
+      <description>Although protein acetylation is widely observed, it has been associated with few specific regulatory functions making it poorly understood. To interrogate its functionality, we analyzed the acetylome in Escherichia coli knockout mutants of cobB, the only known sirtuin-like deacetylase, and patZ, the best-known protein acetyltransferase. For four growth conditions, more than 2,000 unique acetylated peptides, belonging to 809 proteins, were identified and differentially quantified. Nearly 65% of these proteins are related to metabolism. The global activity of CobB contributes to the deacetylation of a large number of substrates and has a major impact on physiology. Apart from the regulation of acetyl-CoA synthetase, we found that CobB-controlled acetylation of isocitrate lyase contributes to the fine-tuning of the glyoxylate shunt. Acetylation of the transcription factor RcsB prevents DNA binding, activating flagella biosynthesis and motility, and increases acid stress susceptibility. Surprisingly, deletion of patZ increased acetylation in acetate cultures, which suggests that it regulates the levels of acetylating agents. The results presented offer new insights into functional roles of protein acetylation in metabolic fitness and global cell regulation.</description>
+      <cross_references>
+        <ref dbkey="562" dbname="TAXONOMY"/>
+        <ref dbkey="25518064" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-08-14"/>
+        <date type="publication" value="2014-09-30"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001226</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Escherichia coli BW25113 and its knockout mutants (∆cobB and ∆patZ) were harvested at four different conditions. Cell pellets were washed three times with PBS and then resuspended in lysis buffer containing 8 M urea, 50 mM ammonium bicarbonate, 1 tablet of complete mini EDTA-free Cocktail (Roche, Boehringer Mannhein), supplemented with 10 mM nicotinamide and 10 µM trichostatin in order to inhibit deacetylases. Cells were sonicated on ice for three cycles (20 sec each) with a probe of 3 mm of diameter in a Vibra Cell VC 375 ultrasonic processor (Sonics Materials, Danbury, CT). The lysate was clarified by centrifugation for 20 min at 20,000xg at 4ºC.  Three mg of protein of each condition and strain were reduced with 2 mM dithiotreitol for 30 min at 56ºC and alkylated with 4 mM iodoacetamide during 20 minutes in the dark, followed by LysC (1:75) digestion during 4 hours at 37ºC. Samples were diluted 4-fold in 50 mM ammonium bicarbonate buffer and digested with trypsin (Promega, Madison, WI) (1:100) during 16 hours at 37ºC.  For quantitative analysis of peptide lysine acetylation, stable isotope dimethyl labeling was used as described in Boersema et al (Boersema et al, 2009) and mixed in a 1:1:1 proportion. Acetylated peptides were immunoprecipitated as described (Choudhary et al, 2009). The peptide solution was mixed with 100 µL of anti-acetyl lysine antibody beads and incubated for 16 hours at 4ºC. Beads were washed 4 times with immunoprecipitation buffer, twice with water and eluted with 0.1% trifluoracetic acid. Lysine acetylated peptides were desalted using C18 StageTips.   Samples were resuspended in 10% formic acid (FA) / 5% DMSO and 40% of the sample was analyzed using a Proxeon Easy-nLC100 (Thermo Scientific) connected to an Orbitrap Q-Exactive mass spectrometer. Samples were first trapped (Dr Maisch Reprosil C18, 3 um, 2 cm x 100 μm) before being separated on an analytical column (Agilent Zorbax SB-C18, 1.8 μm, 40 cm x 75 μm), using a gradient of 60 min at a column flow of 150 nl min-1. Trapping was performed at 8 μL/min for 10 min in solvent A (0.1 M acetic acid in water) and the gradient was as follows: 7- 30% solvent B (0.1 M acetic acid in acetonitrile) in 91 min, 30-100% in 3 min, 100% solvent B for 2 min, and 7% solvent A for 18 min. Nanospray was performed at 1.7 kV using a fused silica capillary that was pulled in-house and coated with gold (o.d. 360 μm; i.d. 20 μm; tip i.d. 10 μm). The mass spectrometers were used in a data-dependent mode, which automatically switched between MS and MS/MS. Full scan MS spectra from m/z 350 – 1500 were acquired at a resolution of 35.000 at m/z 400 after the accumulation to a target value of 3·106. Up to ten most intense precursor ions were selected for fragmentation. HCD fragmentation was performed at normalised collision energy of 25% after the accumulation to a target value of 5·104. MS2 was acquired at a resolution of 17.500 and dynamic exclusion was enabled (exclusion size list 500, exclusion duration 30 s).    For in vitro deacetylation assays, 20 g of each sample was resuspended in lysis buffer containing 8 M urea, 50 mM ammonium bicarbonate and Complete EDTA-free Protease Inhibitor Cocktail (Roche, reduced with 4 mM DTT for 25 min at 56°C, and alkylated with 8 mM iodoacetamide for 30 min at room temperature, in the dark. The proteins were first digested with Lys-C (1:50 ratio w/w) at 37°C for 4 h and, after 4 times sample dilution in 50 mM ammonium bicarbonate, digested with trypsin (1:50 ratio w/w) at 37°C, overnight.    Samples were diluted with 10% formic acid (FA) / 5% DMSO and 25 ng of the sample was analyzed using a Proxeon Easy-nLC100 (Thermo Scientific) connected to an Orbitrap Q-Exactive mass spectrometer. Samples were first trapped (Dr Maisch Reprosil C18, 3 um, 2 cm x 100 μm) before being separated on an analytical column (Agilent Poroshell EC-C18, 2.7 μm, 40 cm x 50 μm), using a gradient of 60 min at a column flow of 150 nl min-1. Trapping was performed at 8 μL/min for 10 min in solvent A (0.1 M acetic acid in water) and the gradient was as follows 7- 30% solvent B (0.1 M acetic acid in acetonitrile) in 31 min, 30-100% in 3 min, 100% solvent B for 5 min, and 7% solvent B for 13 min. Nanospray was performed at 1.7 kV using a fused silica capillary that was pulled in-house and coated with gold (o.d. 360 μm; i.d. 20 μm; tip i.d. 10 μm). The mass spectrometers were used in a data-dependent mode, which automatically switched between MS and MS/MS. Full scan MS spectra from m/z 350 – 1500 were acquired at a resolution of 35.000 at m/z 400 after the accumulation to a target value of 3E6. Up to ten most intense precursor ions were selected for fragmentation. HCD fragmentation was performed at normalised collision energy of 25% after the accumulation to a target value of 5e4. MS2 was acquired at a resolution of 17.500 and dynamic exclusion was enabled (exclusion size list 500, exclusion duration 10 s).</field>
+        <field name="data_protocol">All raw data were analysed by MaxQuant (version 1.3.0.5) (Cox &amp; Mann, 2008). Andromeda (Cox et al, 2011) was used to search the MS/MS data against the Uniprot E.coli MG1655 database (version v2012-09, 4431 sequences), including a list of common contaminants and concatenated with the reversed version of all sequences. Trypsin/P was chosen as cleavage specificity allowing three missed cleavages. Carbamidomethylation (C) was set as a fixed modification, while Oxidation (M), Acetyl (Protein N-term) and Acetyl (K) were used as variable modifications. For dimethyl labelling DimethylLys0 and DimethylNter0 were set as light labels, DimethylLys4 and DimethylNter4 were set as medium labels, and DimethylLys8 and DimethylNter8 were set as heavy labels. The database searches were performed using a peptide tolerance of 20 ppm for the first search and 6 ppm for the main search. HCD fragment ion tolerance was set to 20 ppm. Data filtering was carried out using the following parameters: Peptide False Discovery Rate (FDR) was set to 1%; max peptide PEP was set to 1; minimum peptide length was set to 5; minimum razor peptides were set to 1; peptides used for protein quantification was set to razor and unique peptides; Protein quantification was performed by using only unmodified peptides and Oxidation (M) and Acetyl (Protein N-term); the re-quantify option was enabled.   In vitro deacetylation assays raw data were analysed by MaxQuant (version 1.3.0.5) (Cox &amp; Mann, 2008). Andromeda (Cox et al, 2011) was used to search the MS/MS data against the Uniprot E.coli MG1655 database (version v2012-09, 4431 sequences), including a list of common contaminants and concatenated with the reversed version of all sequences. Trypsin/P was chosen as cleavage specificity allowing three missed cleavages. Carbamidomethylation (C) was set as a fixed modification, while Oxidation (M), Acetyl (Protein N-term) and Acetyl (K) were used as variable modifications. The database searches were performed using a peptide tolerance of 20 ppm for the first search and 6 ppm for the main search. HCD fragment ion tolerance was set to 20 ppm. Data filtering was carried out using the following parameters: Peptide False Discovery Rate (FDR) was set to 1%; max peptide PEP was set to 1; minimum peptide length was set to 5; minimum razor peptides were set to 1; peptides used for protein quantification was set to razor and unique peptides; the re-quantify option was enabled. The log2 intensities of the acetylated peptides were normalized subtracting the log2 median of all the peptide intensities in the same run.</field>
+        <field name="instrument_platform">LTQ Orbitrap Velos</field>
+        <field name="instrument_platform">Q Exactive</field>
+        <field name="instrument_platform">LTQ Orbitrap Elite</field>
+        <field name="species">Escherichia coli</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">acetylated residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">protein acetylation</field>
+        <field name="submitter_keywords"> sirtuins</field>
+        <field name="submitter_keywords"> motility</field>
+        <field name="submitter_keywords"> acetate metabolism</field>
+        <field name="submitter_keywords"> glyoxylate shunt</field>
+        <field name="quantification_method">Isotope labeling</field>
+        <field name="quantification_method">Spectrum counting</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Castaño-Cerezo S, Bernal V, Post H, Fuhrer T, Cappadona S, Sánchez-Díaz NC, Sauer U, Heck AJ, Altelaar AF, Cánovas M. Protein acetylation affects acetate metabolism, motility and acid stress response in Escherichia coli. Mol Syst Biol. 2014 Nov 27;10:762</field>
+        <field name="submitter">Harm Post</field>
+        <field name="submitter_mail">h.post@uu.nl</field>
+        <field name="submitter_affiliation">Biomolecular Mass Spectrometry and Proteomics Group</field>
+        <field name="labhead">Manuel Cánovas</field>
+        <field name="labhead_mail">mcanovas@um.es</field>
+        <field name="labhead_affiliation">Departamento de Bioquímica y Biología Molecular B e Inmunología. Facultad de Química. Universidad de Murcia. Campus de Excelencia Mare Nostrum</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR6_120704_HP_SCC_coli_acKPD_1_40pr_mix1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR6_120704_HP_SCC_coli_acKPD_1_40pr_mix2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR6_120704_HP_SCC_coli_acKPD_1_40pr_mix3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR6_120704_HP_SCC_coli_acKPD_1_40pr_mix4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR6_120704_HP_SCC_coli_acKPD_2_40pr_mix1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR6_120704_HP_SCC_coli_acKPD_2_40pr_mix2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR6_120704_HP_SCC_coli_acKPD_2_40pr_mix3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR6_120704_HP_SCC_coli_acKPD_2_40pr_mix4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/Supplemtary data.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR5_120706_HP_SCC_E_coli_scx_mix1_1_fr10.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR5_120706_HP_SCC_E_coli_scx_mix1_1_fr11.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR5_120706_HP_SCC_E_coli_scx_mix1_1_fr12.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR5_120706_HP_SCC_E_coli_scx_mix1_1_fr13.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR5_120706_HP_SCC_E_coli_scx_mix1_1_fr15.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR5_120706_HP_SCC_E_coli_scx_mix1_1_fr16.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR5_120706_HP_SCC_E_coli_scx_mix1_1_fr17.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR5_120706_HP_SCC_E_coli_scx_mix1_1_fr18.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR5_120706_HP_SCC_E_coli_scx_mix1_1_fr19.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR5_120706_HP_SCC_E_coli_scx_mix1_1_fr20.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR5_120706_HP_SCC_E_coli_scx_mix1_1_fr21.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR5_120706_HP_SCC_E_coli_scx_mix1_1_fr22.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR5_120706_HP_SCC_E_coli_scx_mix1_1_fr23.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR5_120706_HP_SCC_E_coli_scx_mix1_1_fr24.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR5_120706_HP_SCC_E_coli_scx_mix1_1_fr25.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR5_120706_HP_SCC_E_coli_scx_mix1_1_fr27.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR5_120706_HP_SCC_E_coli_scx_mix1_1_fr28.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR5_120706_HP_SCC_E_coli_scx_mix1_1_fr29.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR5_120706_HP_SCC_E_coli_scx_mix1_1_fr30.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR5_120706_HP_SCC_E_coli_scx_mix1_1_fr31.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR5_120706_HP_SCC_E_coli_scx_mix1_1_fr32.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR5_120706_HP_SCC_E_coli_scx_mix1_1_fr33.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR5_120706_HP_SCC_E_coli_scx_mix1_1_fr34.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR5_120706_HP_SCC_E_coli_scx_mix1_1_fr35.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR5_120706_HP_SCC_E_coli_scx_mix1_2_fr24.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR5_120706_HP_SCC_E_coli_scx_mix1_2_fr26.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR5_120706_HP_SCC_E_coli_scx_mix1_3_fr13.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR5_120706_HP_SCC_E_coli_scx_mix1_3_fr15.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR6_120720_HP_SCC_acK_PD_repl_40pr_1_2_mix2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR6_120720_HP_SCC_acK_PD_repl_40pr_1_2_mix3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR6_120720_HP_SCC_acK_PD_repl_40pr_1_mix1_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR6_120720_HP_SCC_acK_PD_repl_40pr_1_mix4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR6_120720_HP_SCC_acK_PD_repl_40pr_2_2_mix1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR6_120720_HP_SCC_acK_PD_repl_40pr_2_2_mix2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR6_120720_HP_SCC_acK_PD_repl_40pr_2_2_mix3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR6_120720_HP_SCC_acK_PD_repl_40pr_2_2_mix4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR6_121009_HP_SCC_acK_PD_1_mix1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR6_121009_HP_SCC_acK_PD_1_mix2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR6_121009_HP_SCC_acK_PD_1_mix3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR6_121009_HP_SCC_acK_PD_1_mix4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR6_121009_HP_SCC_acK_PD_1_mix5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR6_121009_HP_SCC_acK_PD_1_mix6.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR6_121009_HP_SCC_acK_PD_1_mix7.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR6_121009_HP_SCC_acK_PD_1_mix8.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR6_121009_HP_SCC_acK_PD_2_mix1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR6_121009_HP_SCC_acK_PD_2_mix2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR6_121009_HP_SCC_acK_PD_2_mix3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR6_121009_HP_SCC_acK_PD_2_mix4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR6_121009_HP_SCC_acK_PD_2_mix5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR6_121009_HP_SCC_acK_PD_2_mix6.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR6_121009_HP_SCC_acK_PD_2_mix7.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR6_121009_HP_SCC_acK_PD_2_mix8.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR7_20121016_HP_SCC_3rd_mix1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR7_20121016_HP_SCC_3rd_mix2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR7_20121016_HP_SCC_3rd_mix3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR7_20121016_HP_SCC_3rd_mix4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR7_20121016_HP_SCC_4th_mix5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR7_20121016_HP_SCC_4th_mix6.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR7_20121016_HP_SCC_4th_mix7.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR7_20121016_HP_SCC_4th_mix8.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR7_20121017_HP_SCC_1st_mix2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR7_20121017_HP_SCC_1st_mix3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR7_20121017_HP_SCC_1st_mix4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR7_20121017_HP_SCC_2nd_mix2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR7_20121017_HP_SCC_2nd_mix3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR7_20121017_HP_SCC_2nd_mix4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR7_20121018_HP_SCC_2nd_mix2_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR7_20140728_HP_Prime_XS_acK_E_coli_Sara_50fm_ACS_CobB.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR7_20140728_HP_Prime_XS_acK_E_coli_Sara_50fm_ACS_control.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR7_20140728_HP_Prime_XS_acK_E_coli_Sara_50fm_ACS_NAM.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR7_20140728_HP_Prime_XS_acK_E_coli_Sara_50fm_AceA_CobB.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR7_20140728_HP_Prime_XS_acK_E_coli_Sara_50fm_AceA_control.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR7_20140728_HP_Prime_XS_acK_E_coli_Sara_50fm_AceA_NAM.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR7_20140728_HP_Prime_XS_acK_E_coli_Sara_50fm_AceA1_CobB.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR7_20140728_HP_Prime_XS_acK_E_coli_Sara_50fm_AceA1_control.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR7_20140728_HP_Prime_XS_acK_E_coli_Sara_50fm_AceA1_NAM.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR7_20140728_HP_Prime_XS_acK_E_coli_Sara_50fm_AceA2_CobB.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR7_20140728_HP_Prime_XS_acK_E_coli_Sara_50fm_AceA2_control.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR7_20140728_HP_Prime_XS_acK_E_coli_Sara_50fm_AceA2_NAM.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR7_20140728_HP_Prime_XS_acK_E_coli_Sara_50fm_AceA1_CobB_bsa.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR7_20140728_HP_Prime_XS_acK_E_coli_Sara_50fm_AceA2_CobB_bsa.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR7_20140728_HP_Prime_XS_acK_E_coli_Sara_50fm_AceA_CobB_bsa.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR7_20140728_HP_Prime_XS_acK_E_coli_Sara_50fm_AceA_CobB_bsa2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR7_20140728_HP_Prime_XS_acK_E_coli_Sara_50fm_AceA_CobB_bsa3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR7_20140728_HP_Prime_XS_acK_E_coli_Sara_50fm_ACS_CobB_bsa.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR7_20140728_HP_Prime_XS_acK_E_coli_Sara_50fm_ACS_control_bsa.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR7_20140728_HP_Prime_XS_acK_E_coli_Sara_50fm_ACS_NAM_bsa.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR8_20120806_MA_SaraSCX_2_fr11.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR8_20120806_MA_SaraSCX_2_fr12.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR8_20120806_MA_SaraSCX_2_fr13.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR8_20120806_MA_SaraSCX_2_fr14_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR8_20120806_MA_SaraSCX_2_fr15.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR8_20120806_MA_SaraSCX_2_fr15_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR8_20120806_MA_SaraSCX_2_fr16.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR8_20120806_MA_SaraSCX_2_fr17.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR8_20120806_MA_SaraSCX_2_fr18.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR8_20120806_MA_SaraSCX_2_fr19.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR8_20120806_MA_SaraSCX_2_fr20.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR8_20120806_MA_SaraSCX_2_fr21.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR8_20120806_MA_SaraSCX_2_fr22.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR8_20120806_MA_SaraSCX_2_fr23.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR8_20120806_MA_SaraSCX_2_fr24.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR8_20120806_MA_SaraSCX_2_fr25.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR8_20120806_MA_SaraSCX_2_fr26.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR8_20120806_MA_SaraSCX_2_fr27.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/OR8_20120806_MA_SaraSCX_2_fr28.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/09/PXD001226/Overview.xlsx</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

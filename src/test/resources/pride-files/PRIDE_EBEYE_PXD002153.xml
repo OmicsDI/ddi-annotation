@@ -1,0 +1,127 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-08-26</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD002153">
+      <name>Proteomic changes occurring in Anopheles gambiae and Anopheles stephensi during aging</name>
+      <description>The age of mosquitoes is a crucial determinant of their susceptibility to infection, probability of survival to transmit pathogens and tolerance to insecticides. We investigated changes to the abundance of proteins found in heads and thoraces of Anopheles gambiae and Anopheles stephensi as they aged. Protein expression changes were assessed using two-dimensional difference gel electrophoresis and the identity of differentially expressed proteins was determined by using either matrix-assisted laser desorption ionization tandem time-of-flight mass spectrometry or capillary high-pressure liquid chromatography coupled with a linear ion-trap (LTQ)-Orbitrap XL hybrid mass spectrometer. Protein biomarkers were validated by quantitative Western blot analysis.</description>
+      <cross_references>
+        <ref dbkey="7165" dbname="TAXONOMY"/>
+        <ref dbkey="30069" dbname="TAXONOMY"/>
+        <ref dbkey="26100052" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2015-05-07"/>
+        <date type="publication" value="2015-08-26"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD002153</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Protein was extracted from Heads and thoraces of five females at 1, 9 and 17 d of age for An. gambiae and 1, 9, 17 and 34 d for An. stephensi . Protein was purified using the 2D clean-up kit (GE Healthcare, Grandview Blvd, Waukesha, WI, USA) according to the manufacturer’s protocol.2D-DIGE analysis was performed.Protein spots for identification were manually excised from 2D gels. In-gel tryptic digests were analysed by either MALDI-TOF/TOF mass spectrometry or separated by CapHPLC and sprayed directly into the ion source of LTQ-Orbitrap XL hybrid MS.</field>
+        <field name="data_protocol">Protein identification was performed by searching peptide peak lists detected by TOF/TOF mass spectrometry against in-silico databases of theoretical trypsin digests of published proteins using the MASCOT database search tool (Version 2.2, Matrix Sciences, London). The database was compiled from UniProtKB database on 22/05/2012 and from VectorBase database on 26/05/14. A mass tolerance of 100 ppm for peptide precursor ions and 0.8 Daltons for fragment ions was applied in all searches except for Orbitrap dataset where a precursor ion tolerance of 20 ppm was applied. Peptides identified  by TOF/TOF mass spectrometry were reported as significant scoring peptides at a MASCOT probability based score threshold of p&lt;0.05 and for the Orbitrap dataset to estimate the false discovery rate (FDR) at which the MASCOT identification is considered correct (q-value), a Percolator algorithm implemented in Proteome Discoverer (Version 1.4.0.288, ThermoFisher Scientific) was used and proteins with peptides having a confidence threshold q-value &lt;0.01 (1% FDR) were considered to be valid.  Aa minimum of two confident peptide identifications were required to assign a protein identity.</field>
+        <field name="instrument_platform">LTQ Orbitrap</field>
+        <field name="instrument_platform">ultraflex</field>
+        <field name="species">Anopheles gambiae (African malaria mosquito)</field>
+        <field name="species">Anopheles stephensi (Asian malaria mosquito)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Plasmodium falciparum malaria</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="modification">deamidated residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Gel-based experiment</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">Anopheles gambiae</field>
+        <field name="submitter_keywords"> Anopheles stephensi</field>
+        <field name="submitter_keywords"> mass spectrometry</field>
+        <field name="submitter_keywords"> proteomics</field>
+        <field name="submitter_keywords"> Orbitrap</field>
+        <field name="submitter_keywords"> MALDI</field>
+        <field name="submitter_keywords"> Ageing</field>
+        <field name="submitter_keywords"> Malaria</field>
+        <field name="submitter_keywords"> Mosquito</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">COMPLETE</field>
+        <field name="software">Proteome Discoverer 1.4.1.14</field>
+        <field name="software">Matrix Science Mascot 2.4.1</field>
+        <field name="doi">10.6019/PXD002153</field>
+        <field name="publication">Sikulu MT, Monkman J, Dave KA, Hastie ML, Dale PE, Kitching RL, Killeen GF, Kay BH, Gorman JJ, Hugo LE. Proteomic changes occurring in the malaria mosquitoes Anopheles gambiae and Anopheles stephensi during aging. J Proteomics. 2015 Aug 3;126:234-44</field>
+        <field name="submitter">Keyur Dave</field>
+        <field name="submitter_mail">keyur.dave@qimrberghofer.edu.au</field>
+        <field name="submitter_affiliation">QIMR Berghofer Medical Research Institute, Brisbane, Queensland, Australia</field>
+        <field name="labhead">Jeffrey J. Gorman</field>
+        <field name="labhead_mail">jeffrey.gorman@qimrberghofer.edu.au</field>
+        <field name="labhead_affiliation">Protein Discovery Centre, QIMR Berghofer Medical Research Institute, Herston, Queensland, 4029, Australia.</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot1073.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot1130.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot1324.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot391.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot418.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot515.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot532.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot539.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot565.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot607.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot645.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot66134.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot66393.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot695.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot708.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot710.dat-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot1073.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot1130.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot1324.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot391.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot418.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot515.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot532.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot539.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot565.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot607.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot645.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot66134.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot66393.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot695.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot708.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot710.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/MALDI.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot501.msf-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot641.msf-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot645.msf-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot653.msf-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot659.msf-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot707.msf-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot763.msf-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot774.msf-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot836.msf-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot890.msf-pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot501.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot501.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot641.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot641.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot645.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot645.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot653.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot653.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot659.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot659.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot707.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot707.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot763.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot763.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot774.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot774.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot836.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot836.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot890.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002153/Spot890.raw</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

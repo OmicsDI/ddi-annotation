@@ -1,28 +1,27 @@
 package uk.ac.ebi.ddi.similarityCalculator;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Component;
-import org.springframework.test.context.ContextConfiguration;
 import uk.ac.ebi.ddi.annotation.service.DDIDatasetSimilarityService;
 import org.apache.commons.cli.*;
 import uk.ac.ebi.ddi.annotation.service.DDIExpDataImportService;
-import uk.ac.ebi.ddi.service.db.service.similarity.DatasetStatInfoService;
 import uk.ac.ebi.ddi.service.db.service.similarity.ExpOutputDatasetService;
 import uk.ac.ebi.ddi.service.db.service.similarity.TermInDBService;
 
 /**
  * Created by mingze on 30/09/15.
  */
-@ContextConfiguration(locations = {"/applicationTestContext.xml"})
+
 @Component
 public class SimilarityCalculator {
     @Autowired
-    TermInDBService termInDBService = new TermInDBService();
+    TermInDBService termInDBService;
 
     @Autowired
     DDIDatasetSimilarityService ddiDatasetSimilarityService = new DDIDatasetSimilarityService();
-//    DDIExpDataProcessService ddiExpDataProcessService = new DDIExpDataProcessService("MetabolomicsData");
 
     @Autowired
     ExpOutputDatasetService expOutputDatasetService = new ExpOutputDatasetService();
@@ -39,6 +38,15 @@ public class SimilarityCalculator {
         String[] args2 = {"--dataType=ProteomicsData"};
         String[] args3 = {"--dataType=MetabolomicsData"};
         args = args3;
+
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
+        termInDBService = (TermInDBService) ctx.getBean("termInDBService");
+        ddiDatasetSimilarityService = (DDIDatasetSimilarityService) ctx.getBean("ddiDatasetSimilarityService");
+        expOutputDatasetService = (ExpOutputDatasetService) ctx.getBean("expOutputDatasetService");
+        ddiExpDataImportService = (DDIExpDataImportService) ctx.getBean("expOutputDatasetService");
+        mongoTemplate = (MongoTemplate) ctx.getBean("mongoTemplate");
+
+
 
         // Definite command line
         CommandLineParser parser = new PosixParser();

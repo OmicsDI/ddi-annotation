@@ -1,0 +1,84 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001211">
+      <name>Circadian clock-dependent and -independent rhythmic proteomes implement distinct diurnal functions in mouse liver.</name>
+      <description>Diurnal oscillations of gene expression controlled by the circadian clock underlie rhythmic physiology across most living organisms. Although such rhythms have been extensively studied at the level of transcription and mRNA accumulation, little is known about the accumulation patterns of proteins. Here, we quantified temporal profiles in the murine hepatic proteome under physiological light–dark conditions using stable isotope labeling by amino acids quantitative MS.  To measure the daily accumulation of proteins, we designed an SILAC MS experiment, in which total protein extracts were harvested from C57BL/6J mice  every 3 h for 2 d (eight samples per day). Relative protein abundance in each of 16 samples was quantified against a common reference sample labeled using the SILAC method. The generated mass spectra allowed the identification of a total of 5,827 distinct proteins, of which 70% yielded relative measurements in at least 8 of 16 samples.  Our analysis identified over 5,000 proteins, of which several hundred showed robust diurnal oscillations with peak phases enriched in the morning and during the night and related to core hepatic physiological functions. Combined mathematical modeling of temporal protein and mRNA profiles indicated that proteins accumulate with reduced amplitudes and significant delays, consistent with protein half-life data. Moreover, a group comprising about one-half of the rhythmic proteins showed no corresponding rhythmic mRNAs, indicating significant translational or posttranslational diurnal control. Such rhythms were highly enriched in secreted proteins accumulating tightly during the night. Also, these rhythms persisted in clock-deficient animals subjected to rhythmic feeding, suggesting that food-related entrainment signals influence rhythms in circulating plasma factors</description>
+      <cross_references>
+        <ref dbkey="10090" dbname="TAXONOMY"/>
+        <ref dbkey="24344304" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-08-08"/>
+        <date type="publication" value="2014-08-08"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001211</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Strains and conditions: Wild-type C57BL/6J mice (Charles River Laboratory) were used throughout all experiments except mutants. The reference sample was obtained by labeling WT C57BL/6J mice with 13C6-Lysine. Efficiency of the labeling was verified in blood and tail tissues and was &gt;98%. Extracts from SILAC labelled animals tissues at different ZT times were pooled to produce  the reference sample. Cry1/Cry2 double KO mice have a C57BL/6J genetic background (van der Horst, Muijtjens et al. 1999). Bmal KO et Bmal +/+: Bmal1 floxed mice have been previously described (Storch, Paz et al. 2007). These mice were crossed with mice expressing the CRE recombinase under the control of the CMV promoter (Schwenk, Baron et al. 1995)  to obtain Bmal1 KO mice.  Sample preparation and MS analysis: Livers were homogenized in a urea lysis buffercontaining protease and phosphatase inhibitors. Equal amounts of proteins extracted from two non-SILAC mice were pooled for 16 time points. A complex and common reference SILAC protein mix (SILAC mix) was prepared from 16 SILAC protein samples. An equivalent procedure was applied for four Cry1/Cry2 KO mice samples, and the same SILAC mix was used as a reference. Samples were analyzed on an LTQ-Orbitrap Velos mass spectrometer as described with survey scan resolution at 60’000 and tandem MS spectra acquired in the ion trap.</field>
+        <field name="data_protocol">MS data were analyzed and quantified with MaxQuant version 1.3.0.5 (Cox and Mann 2008) and Andromeda (Cox et al. 2011) to search against UniProt restricted to mouse. Protein identifications were filtered at 1% FDR established by MaxQuant against a reversed sequence database.</field>
+        <field name="instrument_platform">LTQ Orbitrap Velos</field>
+        <field name="species">Mus musculus (Mouse)</field>
+        <field name="cell_type">hepatocyte</field>
+        <field name="disease">disease free</field>
+        <field name="tissue">liver</field>
+        <field name="modification">6x(13)C labeled residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">mouse</field>
+        <field name="submitter_keywords">  liver proteins</field>
+        <field name="submitter_keywords"> SILAC</field>
+        <field name="submitter_keywords"> quantitative proteomics</field>
+        <field name="submitter_keywords"> circadian rhythms</field>
+        <field name="submitter_keywords"> LC-MSMS</field>
+        <field name="quantification_method">SILAC</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Mauvoisin D, Wang J, Jouffe C, Martin E, Atger F, Waridel P, Quadroni M, Gachon F, Naef F; Circadian clock-dependent and -independent rhythmic proteomes implement distinct diurnal functions in mouse liver., Proc Natl Acad Sci U S A, 2014 Jan 7, 111, 1, 167-72, </field>
+        <field name="submitter">Manfredo Quadroni</field>
+        <field name="submitter_mail">manfredo.quadroni@unil.ch</field>
+        <field name="submitter_affiliation">University of Lausanne</field>
+        <field name="labhead">Frederic Gachon</field>
+        <field name="labhead_mail">frederic.gachon@rd.nestle.com</field>
+        <field name="labhead_affiliation">Diabetes and Circadian Rhythms Department, Nestlé Institute of Health Sciences, CH-1015 Lausanne, Switzerland</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001211/5079.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001211/5080.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001211/5155.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001211/5156.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001211/5157.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001211/5177.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001211/5178.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001211/5179.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001211/5180.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001211/5335.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001211/5336.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001211/5337.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001211/5338.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001211/5339.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001211/5340.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001211/5341.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001211/5678.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001211/5679.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001211/5680.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001211/5681.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001211/5699.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001211/5700.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001211/5701.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001211/5702.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001211/5703.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001211/5704.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001211/5705.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001211/5706.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001211/Combined WT.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001211/Combined Mut.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001211/raw_data_description.csv</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

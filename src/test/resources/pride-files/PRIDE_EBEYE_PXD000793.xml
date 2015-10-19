@@ -1,0 +1,131 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000793">
+      <name>PIA - iPRG2008 Benchmark Dataset</name>
+      <description>This dataset is no actual new study but the iPRG2008 benchmark dataset used in the PIA manuscript.</description>
+      <cross_references>
+        <ref dbkey="10090" dbname="TAXONOMY"/>
+        <ref dbkey="25938255" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2015-02-06"/>
+        <date type="publication" value="2015-05-08"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000793</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">For the exact sample procesing, please refer to http://www.abrf.org/index.cfm/group.show/ProteomicsInformaticsResearchGroup.53.htm#786. Mouse samples were trypsin digested and the peptides labeled by four-plex iTRAQ and fractionated via strong cation exchange chromatography. The fractions were measured by LC-MS/MS on a 3200 QTrap, partially multiple times with exclusion lists, which resulted into 29 files. The resulting MGF files were combined into one file for peptide identification.</field>
+        <field name="data_protocol">For the peptide identification a precursor and fragment tolerance of 0.45 Da and one missed cleavage were allowed. For the fixed modifications four-plex iTRAQ on K and N-termini as well as methylthio on C and for the variable modifications oxidation of M and protein N-terminal acetylation was used. as database, the mouse protein database provided for the iPRG2008 was used.</field>
+        <field name="instrument_platform">Q TRAP</field>
+        <field name="species">Mus musculus (Mouse)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">iTRAQ4plex</field>
+        <field name="modification">Methylthio</field>
+        <field name="modification">Acetyl</field>
+        <field name="modification">Oxidation</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Technical</field>
+        <field name="submitter_keywords">mouse</field>
+        <field name="submitter_keywords"> benchmark</field>
+        <field name="submitter_keywords"> iPRG2008</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">COMPLETE</field>
+        <field name="software">mascot 2.4.1</field>
+        <field name="software">tandem X! Tandem Sledgehammer (2013.09.01.1)</field>
+        <field name="software">MS-GF+ Beta (v9979)</field>
+        <field name="software">PIA 1.0.0-dev-201502041808</field>
+        <field name="publication">Uszkoreit J, Maerkens A, Perez-Riverol Y, Meyer HE, Marcus K, Stephan C, Kohlbacher O, Eisenacher M. PIA - An intuitive protein inference engine with a web-based user interface. J Proteome Res. 2015 May 4</field>
+        <field name="submitter">Julian Uszkoreit</field>
+        <field name="submitter_mail">julian.uszkoreit@rub.de</field>
+        <field name="submitter_affiliation">Medizinisches Proteom-Center&#13;
+Medical Bioinformatics&#13;
+Algorithmic Proteomics</field>
+        <field name="labhead">Katrin Marcus</field>
+        <field name="labhead_mail">katrin.marcus@rub.de</field>
+        <field name="labhead_affiliation">Ruhr-Universität Bochum Medizinisches Proteom-Center</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/MGI_UniProtMouse_20071203_iPRG2008_fixed__tdr.fasta</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/mascot_MSGFplus_tandem.pia.mzid.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/mascot.pia.mzid.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/MSGFplus.pia.mzid.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/tandem.pia.mzid.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/mascot_MSGFplus_tandem.pia.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/mascot.pia.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/MSGFplus.pia.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/tandem.pia.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/01 CEX1 3uL DBS EMC.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/01 CEX1 3uL DBS EMC.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/02 CEX1 3uL DBS EMC 1ex.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/02 CEX1 3uL DBS EMC 1ex.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/03 CEX1 5uL DBS EMC 2ex.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/03 CEX1 5uL DBS EMC 2ex.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/04 CEX2 3uL DBS EMC.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/04 CEX2 3uL DBS EMC.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/05 CEX2 3uL DBS EMC 1ex.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/05 CEX2 3uL DBS EMC 1ex.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/06 CEX2 5uL DBS EMC 2ex.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/06 CEX2 5uL DBS EMC 2ex.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/07 CEX3 3uL DBS EMC.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/07 CEX3 3uL DBS EMC.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/08 CEX3 3uL DBS EMC 1ex.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/08 CEX3 3uL DBS EMC 1ex.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/09 CEX3 5uL DBS EMC 2ex.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/09 CEX3 5uL DBS EMC 2ex.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/10 CEX4 3uL DBS EMC.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/10 CEX4 3uL DBS EMC.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/11 CEX4 5uL DBS EMC 1ex.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/11 CEX4 5uL DBS EMC 1ex.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/12 CEX4 6uL DBS EMC 2ex.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/12 CEX4 6uL DBS EMC 2ex.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/13 CEX5 3uL DBS EMC.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/13 CEX5 3uL DBS EMC.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/14 CEX5 5uL DBS EMC 1ex.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/14 CEX5 5uL DBS EMC 1ex.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/15 CEX5 6uL DBS EMC 2ex.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/15 CEX5 6uL DBS EMC 2ex.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/16 CEX6 3uL DBS EMC.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/16 CEX6 3uL DBS EMC.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/17 CEX6 6uL DBS EMC 1ex.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/17 CEX6 6uL DBS EMC 1ex.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/18 CEX6 6uL DBS EMC 2ex.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/18 CEX6 6uL DBS EMC 2ex.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/19 CEX7 3uL DBS EMC.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/19 CEX7 3uL DBS EMC.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/20 CEX7 6uL DBS EMC 1ex.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/20 CEX7 6uL DBS EMC 1ex.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/21 CEX8 3uL DBS EMC.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/21 CEX8 3uL DBS EMC.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/22 CEX8 6uL DBS EMC 1ex.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/22 CEX8 6uL DBS EMC 1ex.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/23 CEX9 3uL DBS EMC.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/23 CEX9 3uL DBS EMC.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/24 CEX9 6uL DBS EMC 1ex.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/24 CEX9 6uL DBS EMC 1ex.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/25 CEX10 3uL DBS EMC.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/25 CEX10 3uL DBS EMC.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/26 CEX10 6uL DBS EMC 1ex.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/26 CEX10 6uL DBS EMC 1ex.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/27 CEX11 3uL DBS EMC.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/27 CEX11 3uL DBS EMC.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/28 CEX12 3uL DBS EMC.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/28 CEX12 3uL DBS EMC.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/29 CEX13 3uL DBS EMC.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/29 CEX13 3uL DBS EMC.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/iPRG2008_combined.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/iPRG2008.F001295.0.45Da.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/iPRG2008.MSGFplus.small_pep_tol_0.45.one_psm.mzid</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/iPRG2008.small_tol_0.45Da.tandem.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/KNIME_PIA_manuscript_iPRG2008.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000793/iPRG2008_analysis.xlsx</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

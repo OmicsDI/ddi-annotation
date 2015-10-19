@@ -1,0 +1,95 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-08-18</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD002163">
+      <name>Prostasomes</name>
+      <description>Which proteins can be found in rafts enriched from human semen.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="26272980" dbname="pubmed"/>
+        <ref dbkey="P80723" dbname="uniprot"/>
+        <ref dbkey="P13164" dbname="uniprot"/>
+        <ref dbkey="P35527" dbname="uniprot"/>
+        <ref dbkey="Q8N6Q3" dbname="uniprot"/>
+        <ref dbkey="Q13443" dbname="uniprot"/>
+        <ref dbkey="ENSP00000367251" dbname="ensembl"/>
+        <ref dbkey="ENSP00000319281" dbname="ensembl"/>
+        <ref dbkey="ENSP00000369249" dbname="ensembl"/>
+        <ref dbkey="ENSP00000309503" dbname="ensembl"/>
+        <ref dbkey="P27487" dbname="uniprot"/>
+        <ref dbkey="Q16348" dbname="uniprot"/>
+        <ref dbkey="ENSP00000300060" dbname="ensembl"/>
+        <ref dbkey="Q9H4G4" dbname="uniprot"/>
+        <ref dbkey="P04264" dbname="uniprot"/>
+        <ref dbkey="ENSP00000307387" dbname="ensembl"/>
+        <ref dbkey="Q92485" dbname="uniprot"/>
+        <ref dbkey="P63104" dbname="uniprot"/>
+        <ref dbkey="ENSP00000260985" dbname="ensembl"/>
+        <ref dbkey="ENSP00000362995" dbname="ensembl"/>
+        <ref dbkey="ENSP00000367196" dbname="ensembl"/>
+        <ref dbkey="P08473" dbname="uniprot"/>
+        <ref dbkey="P02788" dbname="uniprot"/>
+        <ref dbkey="P54289" dbname="uniprot"/>
+        <ref dbkey="ENSP00000330330" dbname="ensembl"/>
+        <ref dbkey="ENSP00000246662" dbname="ensembl"/>
+        <ref dbkey="ENSP00000348589" dbname="ensembl"/>
+        <ref dbkey="Q8WUM4" dbname="uniprot"/>
+        <ref dbkey="ENSP00000353731" dbname="ensembl"/>
+        <ref dbkey="ENSP00000353679" dbname="ensembl"/>
+        <ref dbkey="ENSP00000360718" dbname="ensembl"/>
+        <ref dbkey="ENSP00000330825" dbname="ensembl"/>
+        <ref dbkey="ENSP00000231751" dbname="ensembl"/>
+        <ref dbkey="ENSP00000295605" dbname="ensembl"/>
+        <ref dbkey="P20337" dbname="uniprot"/>
+        <ref dbkey="O15393" dbname="uniprot"/>
+        <ref dbkey="O75874" dbname="uniprot"/>
+        <ref dbkey="P35908" dbname="uniprot"/>
+        <ref dbkey="ENSP00000310861" dbname="ensembl"/>
+        <ref dbkey="P15144" dbname="uniprot"/>
+        <ref dbkey="ENSP00000252244" dbname="ensembl"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2015-05-11"/>
+        <date type="publication" value="2015-08-18"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD002163</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Enrichment by differential centrifugation. For proteomics the sample was solubilized with sds which then was substituted by urea using the spinfilter method.</field>
+        <field name="data_protocol">Search through Mascot human database from SwissProt.</field>
+        <field name="instrument_platform">LTQ Orbitrap</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">Oxidation</field>
+        <field name="modification">Carbamidomethyl</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">rafts</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">COMPLETE</field>
+        <field name="software">Mascot Server 2.2.07</field>
+        <field name="software">Mascot Parser 2.5.2.0</field>
+        <field name="doi">10.6019/PXD002163</field>
+        <field name="publication">Dubois L, Ronquist KG, Ek B, Ronquist G, Larsson A. Proteomic profiling of detergent resistant membranes (lipid rafts) of prostasomes. Mol Cell Proteomics. 2015 Aug 13. pii: mcp.M114.047530</field>
+        <field name="submitter">Bo Ek</field>
+        <field name="submitter_mail">bo.ek@kemi.uu.se</field>
+        <field name="submitter_affiliation">Uppsala university&#13;
+Sweden</field>
+        <field name="labhead">Bo Ek</field>
+        <field name="labhead_mail">bo.ek@kemi.uu.se</field>
+        <field name="labhead_affiliation">Dept of chemistry BMC Uppsala university Sweden</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002163/F015286.mzid.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002163/data06.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002163/data06.raw</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

@@ -1,0 +1,197 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001858">
+      <name>Faustovirus global proteome</name>
+      <description>Global proteome study of two protein extracts of purified Faustovirus, using a bi dimensionnal nanoLC fractionnation combined to a Synapt G2 Si HDMSe monitoring enabling ion mobility</description>
+      <cross_references>
+        <ref dbkey="1477405" dbname="TAXONOMY"/>
+        <ref dbkey="P07926" dbname="uniprot"/>
+        <ref dbkey="Q01107" dbname="uniprot"/>
+        <ref dbkey="ENSBTAP00000000721" dbname="ensembl"/>
+        <ref dbkey="ENSBTAP00000040651" dbname="ensembl"/>
+        <ref dbkey="P19483" dbname="uniprot"/>
+        <ref dbkey="P19687" dbname="uniprot"/>
+        <ref dbkey="P01211" dbname="uniprot"/>
+        <ref dbkey="ENSBTAP00000005452" dbname="ensembl"/>
+        <ref dbkey="ENSBTAP00000050256" dbname="ensembl"/>
+        <ref dbkey="P17667" dbname="uniprot"/>
+        <ref dbkey="ENSBTAP00000044670" dbname="ensembl"/>
+        <ref dbkey="P21450" dbname="uniprot"/>
+        <ref dbkey="ENSBTAP00000023923" dbname="ensembl"/>
+        <ref dbkey="ENSBTAP00000024298" dbname="ensembl"/>
+        <ref dbkey="P18493" dbname="uniprot"/>
+        <ref dbkey="ENSBTAP00000018173" dbname="ensembl"/>
+        <ref dbkey="P06643" dbname="uniprot"/>
+        <ref dbkey="P06642" dbname="uniprot"/>
+        <ref dbkey="ENSBTAP00000020018" dbname="ensembl"/>
+        <ref dbkey="ENSBTAP00000019808" dbname="ensembl"/>
+        <ref dbkey="P02709" dbname="uniprot"/>
+        <ref dbkey="P04896" dbname="uniprot"/>
+        <ref dbkey="Q01361" dbname="uniprot"/>
+        <ref dbkey="P46193" dbname="uniprot"/>
+        <ref dbkey="P06504" dbname="uniprot"/>
+        <ref dbkey="ENSBTAP00000006478" dbname="ensembl"/>
+        <ref dbkey="P05059" dbname="uniprot"/>
+        <ref dbkey="Q04790" dbname="uniprot"/>
+        <ref dbkey="ENSBTAP00000029080" dbname="ensembl"/>
+        <ref dbkey="P31783" dbname="uniprot"/>
+        <ref dbkey="Q01039" dbname="uniprot"/>
+        <ref dbkey="P03968" dbname="uniprot"/>
+        <ref dbkey="P10036" dbname="uniprot"/>
+        <ref dbkey="B0JYL9" dbname="uniprot"/>
+        <ref dbkey="P23206" dbname="uniprot"/>
+        <ref dbkey="P02754" dbname="uniprot"/>
+        <ref dbkey="Q04645" dbname="uniprot"/>
+        <ref dbkey="P02081" dbname="uniprot"/>
+        <ref dbkey="P09851" dbname="uniprot"/>
+        <ref dbkey="P68102" dbname="uniprot"/>
+        <ref dbkey="D4QBB4" dbname="uniprot"/>
+        <ref dbkey="P10064" dbname="uniprot"/>
+        <ref dbkey="B0FPG6" dbname="uniprot"/>
+        <ref dbkey="ENSBTAP00000040899" dbname="ensembl"/>
+        <ref dbkey="ENSBTAP00000022141" dbname="ensembl"/>
+        <ref dbkey="ENSBTAP00000020286" dbname="ensembl"/>
+        <ref dbkey="P28801" dbname="uniprot"/>
+        <ref dbkey="ENSBTAP00000038425" dbname="ensembl"/>
+        <ref dbkey="P31836" dbname="uniprot"/>
+        <ref dbkey="P02676" dbname="uniprot"/>
+        <ref dbkey="P05630" dbname="uniprot"/>
+        <ref dbkey="ENSBTAP00000028633" dbname="ensembl"/>
+        <ref dbkey="Q02379" dbname="uniprot"/>
+        <ref dbkey="ENSBTAP00000052791" dbname="ensembl"/>
+        <ref dbkey="Q02375" dbname="uniprot"/>
+        <ref dbkey="ENSBTAP00000055280" dbname="ensembl"/>
+        <ref dbkey="Q02370" dbname="uniprot"/>
+        <ref dbkey="P20237" dbname="uniprot"/>
+        <ref dbkey="ENSBTAP00000007538" dbname="ensembl"/>
+        <ref dbkey="P08037" dbname="uniprot"/>
+        <ref dbkey="P08168" dbname="uniprot"/>
+        <ref dbkey="P24591" dbname="uniprot"/>
+        <ref dbkey="ENSBTAP00000004615" dbname="ensembl"/>
+        <ref dbkey="ENSBTAP00000019398" dbname="ensembl"/>
+        <ref dbkey="Q28053" dbname="uniprot"/>
+        <ref dbkey="ENSBTAP00000051891" dbname="ensembl"/>
+        <ref dbkey="ENSBTAP00000017497" dbname="ensembl"/>
+        <ref dbkey="Q05688" dbname="uniprot"/>
+        <ref dbkey="P19120" dbname="uniprot"/>
+        <ref dbkey="P46626" dbname="uniprot"/>
+        <ref dbkey="P07470" dbname="uniprot"/>
+        <ref dbkey="ENSBTAP00000004084" dbname="ensembl"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2015-04-21"/>
+        <date type="publication" value="2015-04-22"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001858</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">For sample preparation to perform proteomics, the Faustovirus pellet was suspended in 50 mM ammonium bicarbonate in the presence or absence of 1% of N-Lauroylsarcosine and disrupted by sonication (three times for 60 s at power = 20 without pulsing). Viral debris was removed by centrifugation (12,000 x g, 4°C, 10 min), and soluble proteins were diluted 1:1 with 50 mM ammonium bicarbonate and subjected to standard trypsin digestion protocol with reduction/carboxymethylation. Prior to MS analysis, each digested sample (30 µg) containing detergent was processed through a 125 µl detergent removal spin column (Thermo Fisher Scientific) according to the manufacturer's protocol. The protein digest was analysed using a nanoAcquity 2D-LC system connected to a Synapt G2Si Q-TOF ion mobility hybrid spectrometer. The first chromatographic dimension consisted of a C18 300µm x 50mm column (Nano Ease 5µm XBridge BEH130, Waters). Peptides were eluted onto second dimension using seven step gradients at 1.5 µL/min with 20 mM ammonium formate pH10 and 12/15/18/20/25/35/65 % acetonitrile steps respectively. A trapping column (nanoAcquity UPLC 10K-2D-V/M Trap 5µm Symmetry C18 180µm x 20mm, Waters) was used to collect first dimension peptides for concentration and desalting, after dilution into 15 µL/min of 99.9 % water 0.1 % formic acid and 0.1 % acetonitrile 0.1 % formic acid. The second dimension consisted of a C18 75µm x 250mm column (nanoAcquity UPLC 1.8µm HSS T3, Waters). Peptides eluted from the first dimension steps were separated using a 1 hour gradient (275 nl/min, 5 to 40 % acetonitrile 0.1 % formic acid). Data independent MS/MS analysis was performed with the Ion Mobility feature (HDMSe method). The capillary was set to 3 kV, the sampling cone to 40 V and source temperature to 90 degrees. The MS range was set to 50-2000 m/z, the trap cell energy was 4 V, the transfer cell low energy was 5 V and high fragmentation energy was a 19-45 V ramp. Sample loading was adjusted by injecting a known standard (E. coli Digestion Standard, Waters MasPREP) with a pseudo 1D injection method (unique first dimension elution step at 50 % acetonitrile followed by a 1.5 hours analytical gradient). Typical on-column sample load was approximately 100 ng per fraction (700 ng injected).</field>
+        <field name="data_protocol">Raw MS data were processed using PLGS 3.0.1 software (low/high energy threshold = 135/30 counts, intensity threshold = 750 counts). Lockmass correction was applied to all spectra (Leucine Enkephalin 785.8426 m/z). An internal protein sequences database was used to identify proteins in each fraction (490 sequences, January 2014).  The following workflow parameters were set: monoisotopic masses, minimum 1+ charge, 1 missed cleavage, carbamidomethyl C as fixed modification, deamination NQ and oxidation M as variable modification, 4% false discovery rate, 1 minimum peptide per protein, 3 minimum fragment ion matches per protein.</field>
+        <field name="instrument_platform">Synapt G2-S HDMS</field>
+        <field name="species">Faustovirus</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="modification">deamidated residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">SWATH MS</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">Faustovirus</field>
+        <field name="submitter_keywords"> nano2DLC-MS/MS</field>
+        <field name="submitter_keywords"> ion mobility</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">COMPLETE</field>
+        <field name="software">PLGS 3.0.2</field>
+        <field name="submitter">ARMSTRONG Nicholas</field>
+        <field name="submitter_mail">nicholas.armstrong@univ-amu.fr</field>
+        <field name="submitter_affiliation">MS Engineer</field>
+        <field name="labhead">Eric CHABRIERE</field>
+        <field name="labhead_mail">eric.chabriere@univ-amu.fr</field>
+        <field name="labhead_affiliation">Unité de Recherche sur les Maladies Infectieuses et Tropicales Émergentes (URMITE)  UMR 6236, Faculté de médecine  27 Bd Jean Moulin  13385 MARSEILLE Cedex 05  FRANCE</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/NLS_Fraction1_14250269906370_300118250615249_Pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/NLS_Fraction2_14250281262310_22036126133591083_Pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/NLS_Fraction3_14250286409290_5617582041474264_Pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/NLS_Fraction4_14250292702100_36767916936032274_Pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/NLS_Fraction5_14250296466850_8337521319649015_Pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/NLS_Fraction6_14250301486030_01263832173006374_Pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/NLS_Fraction7_14250305935410_5721216227581386_Pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/Proj__13898600621670_179875791557625_PrideSettings.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/Sonication only_Fraction1_14250282475370_8402981153491228_Pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/Sonication only_Fraction2_14250291706900_9594262393918584_Pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/Sonication only_Fraction3_14250298116410_5916379958933784_Pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/Sonication only_Fraction4_14250303722240_1256585119216982_Pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/Sonication only_Fraction5_14250308683250_2837402625249855_Pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/Sonication only_Fraction6_14250313785910_1349495113567697_Pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/Sonication only_Fraction7_14250318718340_5341816666342631_Pride.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/NLS_Fraction1.mzML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/NLS_Fraction2.mzML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/NLS_Fraction3.mzML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/NLS_Fraction4.mzML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/NLS_Fraction5.mzML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/NLS_Fraction6.mzML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/NLS_Fraction7.mzML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/Sonication only_Fraction1.mzML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/Sonication only_Fraction2.mzML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/Sonication only_Fraction3.mzML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/Sonication only_Fraction4.mzML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/Sonication only_Fraction5.mzML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/Sonication only_Fraction6.mzML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/Sonication only_Fraction7.mzML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/HDMSe_135_30_750_processing method.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/HDMSe_Faustovirus_orf2014_workflow method.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/NLS_Fraction1_IA_final_fragment.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/NLS_Fraction1_IA_final_peptide.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/NLS_Fraction1_IA_final_protein.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/NLS_Fraction2_IA_final_fragment.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/NLS_Fraction2_IA_final_peptide.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/NLS_Fraction2_IA_final_protein.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/NLS_Fraction3_IA_final_fragment.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/NLS_Fraction3_IA_final_peptide.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/NLS_Fraction3_IA_final_protein.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/NLS_Fraction4_IA_final_fragment.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/NLS_Fraction4_IA_final_peptide.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/NLS_Fraction4_IA_final_protein.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/NLS_Fraction5_IA_final_fragment.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/NLS_Fraction5_IA_final_peptide.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/NLS_Fraction5_IA_final_protein.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/NLS_Fraction6_IA_final_fragment.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/NLS_Fraction6_IA_final_peptide.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/NLS_Fraction6_IA_final_protein.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/NSL_Fraction7_IA_final_fragment.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/NSL_Fraction7_IA_final_peptide.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/NSL_Fraction7_IA_final_protein.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/Sonication only_Fraction1_IA_final_fragment.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/Sonication only_Fraction1_IA_final_peptide.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/Sonication only_Fraction1_IA_final_protein.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/Sonication only_Fraction2_IA_final_fragment.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/Sonication only_Fraction2_IA_final_peptide.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/Sonication only_Fraction2_IA_final_protein.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/Sonication only_Fraction3_IA_final_fragment.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/Sonication only_Fraction3_IA_final_peptide.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/Sonication only_Fraction3_IA_final_protein.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/Sonication only_Fraction4_IA_final_fragment.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/Sonication only_Fraction4_IA_final_peptide.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/Sonication only_Fraction4_IA_final_protein.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/Sonication only_Fraction5_IA_final_fragment.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/Sonication only_Fraction5_IA_final_peptide.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/Sonication only_Fraction5_IA_final_protein.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/Sonication only_Fraction6_IA_final_fragment.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/Sonication only_Fraction6_IA_final_peptide.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/Sonication only_Fraction6_IA_final_protein.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/Sonication only_Fraction7_IA_final_fragment.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/Sonication only_Fraction7_IA_final_peptide.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/Sonication only_Fraction7_IA_final_protein.csv</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001858/Faustovirus_Proteins_Accessions_correspondance_GI-Genbank.csv</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

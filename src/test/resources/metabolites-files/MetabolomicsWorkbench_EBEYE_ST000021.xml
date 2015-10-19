@@ -1,0 +1,90 @@
+<database>
+  <name>MetabolomicsWorkbench</name>
+  <description>The Metabolomics Workbench will serve as a national and international repository for metabolomics data and metadata and will provide analysis tools and access to metabolite standards, protocols, tutorials, training, and more.</description>
+  <release>1.0</release>
+  <release_date>15-05-20</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="ST000021">
+      <name>NMR based metabolomics of CKD</name>
+      <description>The goal of this study is to find metabolomic signatures that differentiate controls, defined as having normal kidney function with eGFR &gt; 60 and absence of microalbuminuria (ACR&lt; 30 g/mg) and those with chronic kidney disease (CKD) defined as having eGFR &lt; 60. The CKD group was further differentiated into groups by microalbuminaria ACR&lt;30-200, 200-1000, or &gt;1000. Both groups will be further characterized into high (&gt;65 mEq/day) or low (&lt;30 mEq/day) dietary acid load which is calculated as net endogenous acid production (NEAP) which is a suspected negative modulator of kidney function. THe study set consists of 49 subjects in the CKD group, 50 subjects in the control group and 9 pooled samples. Some of the control and CKD samples were examined at a followup visit and assesesd as to progression  or not for kidney disease.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="14-02-28"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Metabolomics</field>
+        <field name="full_dataset_link">http://www.metabolomicsworkbench.org/data/DRCCMetadata.php?Mode=Study&amp;StudyID=ST000021</field>
+        <field name="repository">MetabolomicsWorkbench</field>
+        <field name="data_protocol">1H NMR 700 MHz</field>
+        <field name="instrument_platform">Bruker Avance III</field>
+        <field name="study_factor">case/control:case | Gender:F  | egfr_level:G3a (45 &lt;= eGFR &lt; 60) | acr_level:A2 (30 &lt;= ACR &lt; 300 | neap_rank:Medium | race:A | age_level:56-70 yrs</field>
+        <field name="study_factor">case/control:case | Gender:F  | egfr_level:G3a (45 &lt;= eGFR &lt; 60) | acr_level:A1 (ACR &lt; 30) | neap_rank:Low | race:A | age_level:56-70 yrs</field>
+        <field name="study_factor">case/control:case | Gender:F  | egfr_level:G2 (60 &lt;= eGFR &lt; 90) | acr_level:A2 (30 &lt;= ACR &lt; 300 | neap_rank:High | race:A | age_level:35-55 yrs</field>
+        <field name="study_factor">case/control:case | Gender:F  | egfr_level:G2 (60 &lt;= eGFR &lt; 90) | acr_level:A3 (ACR &gt;= 300) | neap_rank:High | race:A | age_level:56-70 yrs</field>
+        <field name="study_factor">case/control:control | Gender:F  | egfr_level:G2 (60 &lt;= eGFR &lt; 90) | acr_level:A1 (ACR &lt; 30) | neap_rank:High | race:A | age_level:56-70 yrs</field>
+        <field name="study_factor">case/control:control | Gender:F  | egfr_level:G2 (60 &lt;= eGFR &lt; 90) | acr_level:A1 (ACR &lt; 30) | neap_rank:Low | race:A | age_level:35-55 yrs</field>
+        <field name="study_factor">case/control:Pool_Al | Gender:pool | egfr_level:POOL | acr_level:POOL | neap_rank:POOL | race:POOL | age_level:POOL</field>
+        <field name="study_factor">case/control:case | Gender:M  | egfr_level:G3a (45 &lt;= eGFR &lt; 60) | acr_level:A1 (ACR &lt; 30) | neap_rank:Medium | race:A | age_level:56-70 yrs</field>
+        <field name="study_factor">case/control:case | Gender:M  | egfr_level:G2 (60 &lt;= eGFR &lt; 90) | acr_level:A2 (30 &lt;= ACR &lt; 300 | neap_rank:Low | race:A | age_level:56-70 yrs</field>
+        <field name="study_factor">case/control:case | Gender:M  | egfr_level:G2 (60 &lt;= eGFR &lt; 90) | acr_level:A3 (ACR &gt;= 300) | neap_rank:Low | race:A | age_level:56-70 yrs</field>
+        <field name="study_factor">case/control:case | Gender:M  | egfr_level:G2 (60 &lt;= eGFR &lt; 90) | acr_level:A2 (30 &lt;= ACR &lt; 300 | neap_rank:High | race:A | age_level:35-55 yrs</field>
+        <field name="study_factor">case/control:control | Gender:F  | egfr_level:G1 (eGFR &gt;= 90) | acr_level:A1 (ACR &lt; 30) | neap_rank:High | race:A | age_level:56-70 yrs</field>
+        <field name="study_factor">case/control:control | Gender:M  | egfr_level:G1 (eGFR &gt;= 90) | acr_level:A1 (ACR &lt; 30) | neap_rank:Medium | race:A | age_level:56-70 yrs</field>
+        <field name="study_factor">case/control:case | Gender:F  | egfr_level:G2 (60 &lt;= eGFR &lt; 90) | acr_level:A3 (ACR &gt;= 300) | neap_rank:High | race:A | age_level:35-55 yrs</field>
+        <field name="study_factor">case/control:case | Gender:F  | egfr_level:G3b (30 &lt;= eGFR &lt; 45) | acr_level:A1 (ACR &lt; 30) | neap_rank:Medium | race:A | age_level:56-70 yrs</field>
+        <field name="study_factor">case/control:case | Gender:M  | egfr_level:G2 (60 &lt;= eGFR &lt; 90) | acr_level:A3 (ACR &gt;= 300) | neap_rank:High | race:A | age_level:35-55 yrs</field>
+        <field name="study_factor">case/control:control | Gender:M  | egfr_level:G2 (60 &lt;= eGFR &lt; 90) | acr_level:A1 (ACR &lt; 30) | neap_rank:High | race:A | age_level:56-70 yrs</field>
+        <field name="study_factor">case/control:control | Gender:F  | egfr_level:G1 (eGFR &gt;= 90) | acr_level:A1 (ACR &lt; 30) | neap_rank:Low | race:A | age_level:56-70 yrs</field>
+        <field name="study_factor">case/control:Pool_Ca | Gender:pool | egfr_level:POOL | acr_level:POOL | neap_rank:POOL | race:POOL | age_level:POOL</field>
+        <field name="study_factor">case/control:control | Gender:M  | egfr_level:G1 (eGFR &gt;= 90) | acr_level:A1 (ACR &lt; 30) | neap_rank:Low | race:A | age_level:35-55 yrs</field>
+        <field name="study_factor">case/control:case | Gender:F  | egfr_level:G3b (30 &lt;= eGFR &lt; 45) | acr_level:A1 (ACR &lt; 30) | neap_rank:Medium | race:A | age_level:35-55 yrs</field>
+        <field name="study_factor">case/control:control | Gender:F  | egfr_level:G1 (eGFR &gt;= 90) | acr_level:A1 (ACR &lt; 30) | neap_rank:Medium | race:A | age_level:56-70 yrs</field>
+        <field name="study_factor">case/control:control | Gender:M  | egfr_level:G2 (60 &lt;= eGFR &lt; 90) | acr_level:A1 (ACR &lt; 30) | neap_rank:Medium | race:A | age_level:56-70 yrs</field>
+        <field name="study_factor">case/control:case | Gender:M  | egfr_level:G1 (eGFR &gt;= 90) | acr_level:A3 (ACR &gt;= 300) | neap_rank:Low | race:A | age_level:56-70 yrs</field>
+        <field name="study_factor">case/control:control | Gender:M  | egfr_level:G1 (eGFR &gt;= 90) | acr_level:A1 (ACR &lt; 30) | neap_rank:High | race:A | age_level:56-70 yrs</field>
+        <field name="study_factor">case/control:case | Gender:M  | egfr_level:G1 (eGFR &gt;= 90) | acr_level:A2 (30 &lt;= ACR &lt; 300 | neap_rank:High | race:A | age_level:35-55 yrs</field>
+        <field name="study_factor">case/control:case | Gender:F  | egfr_level:G1 (eGFR &gt;= 90) | acr_level:A3 (ACR &gt;= 300) | neap_rank:Low | race:A | age_level:56-70 yrs</field>
+        <field name="study_factor">case/control:case | Gender:F  | egfr_level:G1 (eGFR &gt;= 90) | acr_level:A3 (ACR &gt;= 300) | neap_rank:High | race:A | age_level:56-70 yrs</field>
+        <field name="study_factor">case/control:case | Gender:F  | egfr_level:G3a (45 &lt;= eGFR &lt; 60) | acr_level:A2 (30 &lt;= ACR &lt; 300 | neap_rank:Low | race:A | age_level:56-70 yrs</field>
+        <field name="study_factor">case/control:case | Gender:F  | egfr_level:G1 (eGFR &gt;= 90) | acr_level:A2 (30 &lt;= ACR &lt; 300 | neap_rank:High | race:A | age_level:35-55 yrs</field>
+        <field name="study_factor">case/control:case | Gender:M  | egfr_level:G3b (30 &lt;= eGFR &lt; 45) | acr_level:A3 (ACR &gt;= 300) | neap_rank:Low | race:A | age_level:56-70 yrs</field>
+        <field name="study_factor">case/control:case | Gender:M  | egfr_level:G3a (45 &lt;= eGFR &lt; 60) | acr_level:A2 (30 &lt;= ACR &lt; 300 | neap_rank:High | race:A | age_level:56-70 yrs</field>
+        <field name="study_factor">case/control:case | Gender:F  | egfr_level:G3a (45 &lt;= eGFR &lt; 60) | acr_level:A1 (ACR &lt; 30) | neap_rank:Medium | race:A | age_level:56-70 yrs</field>
+        <field name="study_factor">case/control:control | Gender:F  | egfr_level:G1 (eGFR &gt;= 90) | acr_level:A1 (ACR &lt; 30) | neap_rank:High | race:A | age_level:35-55 yrs</field>
+        <field name="study_factor">case/control:control | Gender:F  | egfr_level:G1 (eGFR &gt;= 90) | acr_level:A1 (ACR &lt; 30) | neap_rank:Low | race:A | age_level:35-55 yrs</field>
+        <field name="study_factor">case/control:case | Gender:M  | egfr_level:G3a (45 &lt;= eGFR &lt; 60) | acr_level:A2 (30 &lt;= ACR &lt; 300 | neap_rank:Medium | race:A | age_level:56-70 yrs</field>
+        <field name="study_factor">case/control:case | Gender:F  | egfr_level:G2 (60 &lt;= eGFR &lt; 90) | acr_level:A3 (ACR &gt;= 300) | neap_rank:Medium | race:A | age_level:35-55 yrs</field>
+        <field name="study_factor">case/control:control | Gender:F  | egfr_level:G2 (60 &lt;= eGFR &lt; 90) | acr_level:A1 (ACR &lt; 30) | neap_rank:Medium | race:A | age_level:56-70 yrs</field>
+        <field name="study_factor">case/control:control | Gender:M  | egfr_level:G2 (60 &lt;= eGFR &lt; 90) | acr_level:A1 (ACR &lt; 30) | neap_rank:High | race:A | age_level:35-55 yrs</field>
+        <field name="study_factor">case/control:control | Gender:F  | egfr_level:G1 (eGFR &gt;= 90) | acr_level:A1 (ACR &lt; 30) | neap_rank:Medium | race:A | age_level:35-55 yrs</field>
+        <field name="study_factor">case/control:control | Gender:M  | egfr_level:G2 (60 &lt;= eGFR &lt; 90) | acr_level:A1 (ACR &lt; 30) | neap_rank:Medium | race:A | age_level:35-55 yrs</field>
+        <field name="study_factor">case/control:Pool_Ct | Gender:pool | egfr_level:POOL | acr_level:POOL | neap_rank:POOL | race:POOL | age_level:POOL</field>
+        <field name="study_factor">case/control:case | Gender:F  | egfr_level:G3a (45 &lt;= eGFR &lt; 60) | acr_level:A3 (ACR &gt;= 300) | neap_rank:High | race:A | age_level:56-70 yrs</field>
+        <field name="study_factor">case/control:case | Gender:F  | egfr_level:G1 (eGFR &gt;= 90) | acr_level:A3 (ACR &gt;= 300) | neap_rank:Low | race:A | age_level:35-55 yrs</field>
+        <field name="study_factor">case/control:control | Gender:M  | egfr_level:G1 (eGFR &gt;= 90) | acr_level:A1 (ACR &lt; 30) | neap_rank:Medium | race:A | age_level:35-55 yrs</field>
+        <field name="study_factor">case/control:control | Gender:F  | egfr_level:G2 (60 &lt;= eGFR &lt; 90) | acr_level:A1 (ACR &lt; 30) | neap_rank:High | race:A | age_level:35-55 yrs</field>
+        <field name="study_factor">case/control:control | Gender:F  | egfr_level:G2 (60 &lt;= eGFR &lt; 90) | acr_level:A1 (ACR &lt; 30) | neap_rank:Medium | race:A | age_level:35-55 yrs</field>
+        <field name="study_factor">case/control:case | Gender:F  | egfr_level:G3a (45 &lt;= eGFR &lt; 60) | acr_level:A3 (ACR &gt;= 300) | neap_rank:Low | race:A | age_level:56-70 yrs</field>
+        <field name="study_factor">case/control:case | Gender:F  | egfr_level:G3a (45 &lt;= eGFR &lt; 60) | acr_level:A2 (30 &lt;= ACR &lt; 300 | neap_rank:Low | race:A | age_level:35-55 yrs</field>
+        <field name="study_factor">case/control:case | Gender:M  | egfr_level:G3a (45 &lt;= eGFR &lt; 60) | acr_level:A2 (30 &lt;= ACR &lt; 300 | neap_rank:Low | race:A | age_level:56-70 yrs</field>
+        <field name="study_factor">case/control:case | Gender:F  | egfr_level:G3a (45 &lt;= eGFR &lt; 60) | acr_level:A3 (ACR &gt;= 300) | neap_rank:Low | race:A | age_level:35-55 yrs</field>
+        <field name="study_factor">case/control:case | Gender:M  | egfr_level:G1 (eGFR &gt;= 90) | acr_level:A2 (30 &lt;= ACR &lt; 300 | neap_rank:Low | race:A | age_level:35-55 yrs</field>
+        <field name="study_factor">case/control:case | Gender:F  | egfr_level:G3a (45 &lt;= eGFR &lt; 60) | acr_level:A2 (30 &lt;= ACR &lt; 300 | neap_rank:High | race:A | age_level:56-70 yrs</field>
+        <field name="study_factor">case/control:control | Gender:M  | egfr_level:G2 (60 &lt;= eGFR &lt; 90) | acr_level:A1 (ACR &lt; 30) | neap_rank:Low | race:A | age_level:35-55 yrs</field>
+        <field name="study_factor">case/control:control | Gender:M  | egfr_level:G1 (eGFR &gt;= 90) | acr_level:A1 (ACR &lt; 30) | neap_rank:High | race:A | age_level:35-55 yrs</field>
+        <field name="study_factor">case/control:case | Gender:F  | egfr_level:G3a (45 &lt;= eGFR &lt; 60) | acr_level:A1 (ACR &lt; 30) | neap_rank:High | race:A | age_level:56-70 yrs</field>
+        <field name="study_factor">case/control:case | Gender:M  | egfr_level:G1 (eGFR &gt;= 90) | acr_level:A3 (ACR &gt;= 300) | neap_rank:Medium | race:A | age_level:35-55 yrs</field>
+        <field name="study_factor">case/control:case | Gender:M  | egfr_level:G2 (60 &lt;= eGFR &lt; 90) | acr_level:A3 (ACR &gt;= 300) | neap_rank:Medium | race:A | age_level:56-70 yrs</field>
+        <field name="study_factor">case/control:control | Gender:F  | egfr_level:G2 (60 &lt;= eGFR &lt; 90) | acr_level:A1 (ACR &lt; 30) | neap_rank:Low | race:A | age_level:56-70 yrs</field>
+        <field name="species">Homo sapiens</field>
+        <field name="technology_type">Bruker Avance III</field>
+        <field name="submitter">Susan Sumner</field>
+        <field name="submitter_mail">ssumner@rti.org</field>
+        <field name="submitter_affiliation">Systems and Translational Sciences (STS), RTI International</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

@@ -1,0 +1,74 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000491">
+      <name>Proteomics reveals dynamic assembly of repair complexes during bypass of DNA cross-links part 2 of 2: AP-MS DATA (QUBIC)</name>
+      <description>DNA interstrand crosslinks (ICLs) block replication fork progression by inhibiting DNA strand separation. Repair of ICLs requires sequential incisions, translesion DNA synthesis, and homologous recombination, but the full set of factors involved in these transactions remains unknown. Here we established CHROmatin MASS spectrometry (CHROMASS) to study protein recruitment dynamics during perturbed DNA replication in Xenopus egg extracts. Using CHROMASS, we systematically monitored protein assembly and disassembly at ICL-containing chromatin. Among numerous prospective new DNA repair factors we identified SLF1 and SLF2, which form a complex with RAD18 and together define a new pathway that suppresses genome instability by recruiting the SMC5/6 cohesion complex to DNA lesions. Our study provides the first global analysis of an entire DNA repair pathway and reveals the mechanism of SMC5/6 relocalization to damaged DNA in vertebrate cells.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="25931565" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2015-05-07"/>
+        <date type="publication" value="2015-05-07"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000491</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">BACs containing the respective genes were purchased from BACPAC resource center and a GFP tag was introduce at either the N-terminus (RAD18) or the C-terminus (UBE2A, SMC6, FAM178A) of the bait. All baits are expressed under their endogenous promoter. GFP immunoprecipitations were performed as described in detail in Hubner et al. J.Cell. Biol. 189. 739-654 (2010).</field>
+        <field name="data_protocol">Raw data were analyzed with the MaxQuant software (version 1.5.0.17) using a label-free algorithm. A false discovery rate (FDR) of 0.01 for proteins and peptides and a minimum peptide length of 7 amino acids were required. MS/MS spectra were searched against a non-redundant Xenopus database (see below). For the Andromeda search trypsin allowing for cleavage N-terminal to proline was chosen as enzyme specificity. Cysteine carbamidomethylation was selected as a fixed modification, while protein N-terminal acetylation and methionine oxidation were selected as variable modifications. Maximally two missed cleavages were allowed. Initial mass deviation of precursor ion was up to 7 ppm, mass deviation for fragment ions was 0.5 Dalton. Protein identification required one unique peptide to the protein group. Quantification in MaxQuant was performed using the built in label free quantification algorithm. “Match between run” was used to transfer identities.</field>
+        <field name="instrument_platform">LTQ Orbitrap</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">cell culture</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">acetylated residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="submitter_keywords">chromatin</field>
+        <field name="submitter_keywords"> stalled replication forks</field>
+        <field name="submitter_keywords"> ICL repair</field>
+        <field name="submitter_keywords"> DNA damage response</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Räschle M, Smeenk G, Hansen RK, Temu T, Oka Y, Hein MY, Nagaraj N, Long DT, Walter JC, Hofmann K, Storchova Z, Cox J, Bekker-Jensen S, Mailand N, Mann M. DNA repair. Proteomics reveals dynamic assembly of repair complexes during bypass of DNA cross-links. Science. 2015 May 1;348(6234):1253671</field>
+        <field name="submitter">Mario Oroshi</field>
+        <field name="submitter_mail">oroshi@biochem.mpg.de</field>
+        <field name="submitter_affiliation">Proteomics</field>
+        <field name="labhead">Matthias Mann</field>
+        <field name="labhead_mail">mmann@biochem.mpg.de</field>
+        <field name="labhead_affiliation">Proteomics and Signal Transduction, Max-Planck-Institute of Biochemistry, Am Klopferspitz 18, 82152 Martinsried, Germany</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000491/20130802_HELA_1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000491/20130802_HELA_2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000491/20130802_HELA_3.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000491/INTERACTOME_Search.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000491/MCP_ky_0002346_0169_22_JBA_SMC6.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000491/MCP_ky_0002346_0170_25_JBA_SMC6.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000491/MCP_ky_0002346_0171_04_JBA_SMC6.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000491/MCP_ky_0003338_0060_35_UBE2A.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000491/MCP_ky_0003338_0139_31_UBE2A.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000491/MCP_ky_0003338_0140_08_UBE2A.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000491/MCP_ky_0006094_SLF2_1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000491/MCP_ky_0006094_SLF2_2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000491/MCP_ky_0006094_SLF2_3.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000491/MCP_ky_0006094_SLF2_4.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000491/MCP_ky_0006094_SLF2_5.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000491/MCP_ky_0006094_SLF2_6.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000491/MCP_ky_0006101_0231_09_BG_1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000491/MCP_ky_0006104_0226_46_BG_2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000491/MCP_ky_0006114_0231_05_BG_3.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000491/MCP_ky_0006618_0207_10_JBA_RAD18.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000491/MCP_ky_0006618_0208_42_JBB_RAD18.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD000491/MCP_ky_0006618_0209_35_JBA_RAD18.RAW</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

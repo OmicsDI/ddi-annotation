@@ -6,13 +6,10 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import uk.ac.ebi.ddi.annotation.service.DDIExpDataImportService;
-import uk.ac.ebi.ddi.service.db.model.similarity.ExpOutputDataset;
-import uk.ac.ebi.ddi.service.db.model.similarity.TermInDB;
 import uk.ac.ebi.ddi.xml.validator.exception.DDIException;
 import uk.ac.ebi.ddi.xml.validator.parser.OmicsXMLFile;
 import uk.ac.ebi.ddi.xml.validator.parser.marshaller.OmicsDataMarshaller;
@@ -28,7 +25,6 @@ import java.util.*;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {"/applicationTestContext.xml"})
-
 
 public class  IntersectionTest{
 
@@ -83,19 +79,18 @@ public class  IntersectionTest{
     }
 
     @Test
-    public void testImportMethod() throws Exception {
+    public void testMetabolomicsInsert() throws Exception {
 
-        PrintWriter writer = new PrintWriter("/home/mingze/work/ddi-annotation/src/test/resources/testPrideFiles/data.txt", "UTF-8");
+        URL url = IntersectionTest.class.getClassLoader().getResource("data.txt");
 
+        PrintWriter writer = new PrintWriter(new File(url.toURI()), "UTF-8");
 
-//        File folder = new File("/home/mingze/work/ddi-annotation/src/test/resources/testPrideFiles");
-//        String dataType = "ProteomicsData";
-        File folder = new File("/home/mingze/work/ddi-annotation/src/test/resources/testMetabolitesFiles");
+        URL urlMetabolomics = IntersectionTest.class.getClassLoader().getResource("metabolites-files");
+
+        File folder = new File(urlMetabolomics.toURI());
         String dataType = "MetabolomicsData";
 
         File[] listOfFiles = folder.listFiles();
-        HashMap entriesMap = new HashMap<String, ArrayList<String>>();
-        HashMap termsMap = new HashMap<String, HashSet<String>>();
 
         if (termInDBService == null) {
             System.err.println("termInDBService is null");
@@ -103,9 +98,9 @@ public class  IntersectionTest{
         }
 
         //delete all data in Mongodb
-//        expOutputDatasetService.deleteAll();
-//        termInDBService.deleteAll();
-//        datasetStatInfoService.deleteAll();
+        expOutputDatasetService.deleteAll();
+        termInDBService.deleteAll();
+        datasetStatInfoService.deleteAll();
 
 
 //        int iterTime = 199;
@@ -127,7 +122,55 @@ public class  IntersectionTest{
                     }
                 }
             }
-//            if(iterTime-- ==0)break;
+        }
+
+    }
+
+
+    @Test
+    public void testProteomicsImportMethod() throws Exception {
+
+        URL url = IntersectionTest.class.getResource("data.txt");
+
+        PrintWriter writer = new PrintWriter(new File(url.toURI()), "UTF-8");
+
+        URL urlProteomics = IntersectionTest.class.getResource("pride-files");
+
+        File folder = new File(urlProteomics.toURI());
+        String dataType = "ProteomicsData";
+
+        File[] listOfFiles = folder.listFiles();
+
+        if (termInDBService == null) {
+            System.err.println("termInDBService is null");
+            System.exit(1);
+        }
+
+        //delete all data in Mongodb
+        expOutputDatasetService.deleteAll();
+        termInDBService.deleteAll();
+        datasetStatInfoService.deleteAll();
+
+
+//        int iterTime = 199;
+        int index = 1;
+        int fileindex = 1;
+        for (File file : listOfFiles) {
+            if (file.isFile()) {
+                if(file.getName().toLowerCase().endsWith("xml")) {
+                    System.out.println("\n\n"+fileindex + "-" + file.getName()+":");
+                    fileindex++;
+                    reader = new OmicsXMLFile(file);
+                    for (int i=0; i<reader.getEntryIds().size(); i++) {
+                        System.out.println("deal the" + index + "entry in "+file.getName()+";");
+                        index++;
+                        Entry entry = reader.getEntryByIndex(i);
+                        String entryId = entry.getId().toString();
+                        List<Reference> refs = entry.getCrossReferences().getRef();
+                        ddiExpDataImportService.importDataset(dataType, entryId, refs);
+                    }
+                }
+            }
         }
 
     }

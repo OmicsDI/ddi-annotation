@@ -1,0 +1,125 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001462">
+      <name>Identification of Alpha-Synuclein Interacting Synaptosomal Proteins</name>
+      <description>α-Synuclein is an abundant presynaptic protein that when aggregated and dyslocated from the synapse is associated to Parkinson’s disease and dementia. The normal presynaptic function of α-synuclein is unclear as well as the disease triggering mechanism. In order to extend the knowledge of the α-synuclein interactome during normal function and disease, we have used porcine brain synaptosomes as a source of ligands and purified α-synuclein monomers or oligomers as bait in co-immunoprecipitation experiments. The isolated binding synaptosomal proteins were identified with LC-LTQ-orbitrap tandem mass spectrometry and quantified by peak area using the freely-available Windows client application, Skyline Targeted Proteomic Environment. To compare proteins binding to a-synuclein monomer with proteins binding to a-synuclein oligomer, quantifications were log transformed, normalized to buffer-background, and compared by students t-test. Furthermore, to specify the preferential binding an average fold increase was calculated by comparing binding to monomer and oligomer. 10 α-synuclein preferential monomer binding proteins were identified and among those, we successfully validated Abl interactor 1, and myelin proteolipid protein. 76 α-synuclein preferential oligomer binding proteins were found, including glutamate decarboxylase 2, synapsin 1, and glial fibrillary acidic protein, which were positively validated. We identified 92 proteins binding to α-synuclein, for which we were not able to detect any conformational preferences among. This study presents a catalog of proteins interacting with α-synuclein in its non-aggregated and aggregated oligomeric state, which can be used to investigate the normal and pathological roles of α-synuclein.</description>
+      <cross_references>
+        <ref dbkey="9825" dbname="TAXONOMY"/>
+        <ref dbkey="25659148" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-11-05"/>
+        <date type="publication" value="2015-02-09"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001462</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">We used porcine synaptosomal brain tissue preparations to search for interaction partners for α-synuclein in the normal monomeric conformation and for α-synuclein in the oligomeric disease-related conformation. We prepared detergent extracts of synaptosomal membranes (LP1), synaptosomal lysate (LS1), synaptic vesicles (LP2), and high speed synaptosomal cytosol (LS2) from freshly collected porcine brains. Purified recombinant α-synuclein monomer or α-synuclein oligomer was used to Co-immunoprecipitation (Co-IP) interacting proteins from the synaptic preparations, having buffer as a negative control. The interacting proteins were digested with trypsin and identified by label free proteomic analysis on a LC-LTQ-orbitrap tandem mass spectrometer followed by a semi-quantitative analysis using Skyline Targeted Proteomic Environment.</field>
+        <field name="data_protocol">RAW data files were converted to mgf and mzXML files using MS Convert (Proteowizard, v3.0.3951). The mgf files were then searched using ProteinPilot v4.1 (AB SCIEX, Framingham, MA, USA) referencing a Sus Scrofa database containing all canonical sequences plus all manually reviewed isoform sequences retrieved from UniProt (July 2012; 26,685 protein entries) for peptide and protein identification. Default settings for peptide assignments and protein identifications were used (e.g., Identification as the Sample Type, Biological modifications as the ID Focus, and Unused ProtScore of 0.05 as the Detected Protein Threshold). The mzXML files were searched using X Tandem! Database searching as part of the TransProteomics Pipeline (Institute for Systems Biology) to create spectral libraries; static carbamidomethyl modifications to cysteine and variable oxidation of methionine, as well as allowance for two missed tryptic cleavages were considered. The resulting ~pep.xml result files were grouped according to experimental condition in Skyline to create distinct spectral libraries. 36 spectral libraries were generated from the three biological replicates of Co-IP from the four different synaptosomal preparations (LP1, LS1, LP2, LS2) using the three different baits (PBS, monomer, and oligomer). All peptides from these libraries were added to the project to populate the peptide list, resulting in 11087 peptides derived from 2049 Sus scrofa proteins. The 36 RAW files from the experimental isolation conditions were then imported to create the MS1 Extracted Ion Chromatograms (XIC) for each peptide. From the spectral libraries, the identification retention time was indicated on these XICs where identification was made from the database search for that RAW file. This was done in Skyline by making connections between the RAW filename and the pep.xml filename in the spectral library. Identified proteins were pre-filtered by excluding proteins with higher peak areas in buffer controls than both monomer and oligomer samples. Peak areas of the remaining proteins were logarithmic transformed in order to reduce the variability between the biological replicates and normalized to averaged peak areas of buffer-control. The average fold increase was calculated as the ratio between peak areas for monomer and oligomers for monomer preferential binding proteins and as ratio between peak areas for oligomers and monomers for preferential oligomer binding proteins. In order for a protein to be considered as either monomer or oligomer binding Student’s t-test was applied and conventional significance of 95% was accepted. The criteria of ≥ 2-fold increase in average fold increase has to be fulfilled in order to be considered as preferential binding protein.</field>
+        <field name="instrument_platform">LTQ Orbitrap</field>
+        <field name="species">Sus scrofa domesticus (domestic pig)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Parkinson disease</field>
+        <field name="tissue">brain</field>
+        <field name="modification">No PTMs are included in the dataset</field>
+        <field name="technology_type">Affinity purification coupled with mass spectrometry proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="curator_keywords">Biomedical</field>
+        <field name="submitter_keywords">Alpha-synuclein</field>
+        <field name="submitter_keywords"> Aggregation</field>
+        <field name="submitter_keywords"> Synaptosomes</field>
+        <field name="submitter_keywords"> Protein-protein interactions</field>
+        <field name="submitter_keywords"> Proteomics</field>
+        <field name="quantification_method">TIC</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Betzer C, Movius AJ, Shi M, Gai WP, Zhang J, Jensen PH. Identification of Synaptosomal Proteins Binding to Monomeric and Oligomeric α-Synuclein. PLoS One. 2015 Feb 6;10(2):e0116473. eCollection 2015</field>
+        <field name="submitter">Min Shi</field>
+        <field name="submitter_mail">mshi70@uw.edu</field>
+        <field name="submitter_affiliation">University of Washington</field>
+        <field name="labhead">Poul Henning Jensen</field>
+        <field name="labhead_mail">phj@biokemi.au.dk</field>
+        <field name="labhead_affiliation">University of Aarhus, Denmark</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB01_23.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB02_24.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB03_25.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB04_26.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB05_27.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB06_28.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB07_30.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB08_31.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB09_32.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB10_33.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB11_34.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB12_35.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB13_37.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB14_38.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB15_39.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB16_40.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB17_41.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB18_42.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB19_03.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB20_04.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB21_05.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB22_06.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB23_07.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB24_08.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB25_10.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB26_11.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB27_12.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB28_13.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB29_14.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB30_15.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB31_17.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB32_18.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB33_19.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB34_20.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB35_21.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB36_22.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB01_23_LP1-01.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB02_24_LP1-02.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB03_25_LP1-03.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB04_26_LP1-P1.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB05_27_LP1-P2.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB06_28_LP1-P3.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB07_30_LP1-M1.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB08_31_LP1-M2.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB09_32_LP1-M3.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB10_33_LS1-01.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB11_34_LS1-02.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB12_35_LS1-03.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB13_37_LS1-P1.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB14_38_LS1-P2.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB15_39_LS1-P3.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB16_40_LS1-M1.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB17_41_LS1-M2.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB18_42_LS1-M3.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB19_03_LP2_01.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB20_04_LP2_02.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB21_05_LP2_03.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB22_06_LP2_P1.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB23_07_LP2_P2.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB24_08_LP2_P3.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB25_10_LP2_M1.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB26_11_LP2_M2.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB27_12_LP2_M3.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB28_13_LS2_01.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB29_14_LS2-02.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB30_15_LS2-03.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB31_17_LS2-P1.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB32_18_LS2-P2.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB33_19_LS2-P3.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB34_20_LS2-M1.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB35_21_LS2-M2.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001462/06252012_CB36_22_LS2-M3.xml</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

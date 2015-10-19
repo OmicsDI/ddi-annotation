@@ -1,0 +1,144 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000502">
+      <name>Mouse cerebellum (phospho)proteome LC-MSMS</name>
+      <description>Cerebella from wild-type  and cGKI knockout mice, on 129/Sv background, were subjected to protein digestion using trypsin o/n and chemically labeled with dimethyl labeling.  After labeling the samples were mixed and subjected to both strong cation exchange and phosphopeptide enrichment. The SCX fractions and the enriched phosphopeptides were then analyzed on an Orbitrap mass spectrometer. Data analysis: For each raw data file recorded by the mass spectrometer, peak lists were generated using Proteome Discoverer (version 1.3, Thermo Scientific, Bremen, Germany) using a standardized workflow. Peak lists, generated in Proteome Discoverer, were searched against a Swiss-Prot database (version 2.3.02, taxonomy Mus musculus, 32402 protein entries) supplemented with frequently observed contaminants, using Mascot (version 2.3.02 Matrix Science, London, UK). The database search was performed by using the following paramenters: a mass tolerance of 50 ppm for the precursor masses and +/-0.6 Da for CID/ETD fragment ions and +/-0.05 Da for HCD fragments. Enzyme speciﬁcity was set to Trypsin with 2 missed cleavages allowed. Carbarmidomethylation of cysteines was set as fixed modification, oxidation of methionine and dimethyl labeling (L, I, H) of lysine residues and N termini, and phosphorylation (S, T, Y) (for the phosphoproteome analysis) were used as variable modifications. Percolator was used to ﬁlter the PSMs for &lt;1% false discovery-rate. Phosphorylation sites were localized by applying phosphoRS (pRS) (v2.0). Triplex dimethyl labeling was used as quantification method, with a mass precision for the 2 ppm for consecutive precursor mass scan. A retention time tolerance of 0.5 min was used to account effect of deuterium on retention time. To further filter for high quality data we used the following parameters: high confidence peptide spectrum matches, minimal Mascot score of 20, minimal peptide length of 6 and only unique rank 1 peptide. For the phosphopeptides analysis, the search rank 1 peptide was added to the previous filters. For the identification and quantitation of the proteins, only the unique peptides were considered.</description>
+      <cross_references>
+        <ref dbkey="10090" dbname="TAXONOMY"/>
+        <ref dbkey="24925903" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2013-10-09"/>
+        <date type="publication" value="2014-06-17"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000502</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Not available</field>
+        <field name="instrument_platform">Q Exactive</field>
+        <field name="instrument_platform">LTQ Orbitrap Elite</field>
+        <field name="species">Mus musculus (Mouse)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">phosphorylated residue</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">PRIME-XS Project</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">Cerebellum</field>
+        <field name="submitter_keywords"> proteome</field>
+        <field name="submitter_keywords"> phosphoproteome</field>
+        <field name="submitter_keywords"> cGKI knock out</field>
+        <field name="submitter_keywords"> LC-MSMS</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Corradini E, Vallur R, Raaijmakers LM, Feil S, Feil R, Heck AJ, Scholten A. Alterations in the cerebellar (phospho)proteome of a cGMP-dependent protein kinase knockout mouse. Mol Cell Proteomics. 2014 Jun 12. pii: mcp.M113.035154</field>
+        <field name="submitter">Eleonora Corradini</field>
+        <field name="submitter_mail">e.corradini1@uu.nl</field>
+        <field name="submitter_affiliation">Biomolecular and mass spectrometry group</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR5_120619_EC_SCX_MIX1_mouse_cerebellum_19.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR5_120619_EC_SCX_MIX1_mouse_cerebellum_20.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR5_120619_EC_SCX_MIX1_mouse_cerebellum_21.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR5_120619_EC_SCX_MIX1_mouse_cerebellum_22.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR5_120619_EC_SCX_MIX1_mouse_cerebellum_23.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR5_120619_EC_SCX_MIX1_mouse_cerebellum_24.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR5_120619_EC_SCX_MIX1_mouse_cerebellum_24_rerun.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR5_120619_EC_SCX_MIX1_mouse_cerebellum_25.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR5_120619_EC_SCX_MIX1_mouse_cerebellum_25_rerun.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR5_120619_EC_SCX_MIX1_mouse_cerebellum_26.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR5_120619_EC_SCX_MIX1_mouse_cerebellum_27_rerun.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR5_120619_EC_SCX_MIX1_mouse_cerebellum_28_120620160506.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120619_EC_SCX_MIX1_mouse_cerebellum_10.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120619_EC_SCX_MIX1_mouse_cerebellum_11.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120619_EC_SCX_MIX1_mouse_cerebellum_12.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120619_EC_SCX_MIX1_mouse_cerebellum_12_rerun01.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120619_EC_SCX_MIX1_mouse_cerebellum_13.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120619_EC_SCX_MIX1_mouse_cerebellum_13_rerun.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120619_EC_SCX_MIX1_mouse_cerebellum_14.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120619_EC_SCX_MIX1_mouse_cerebellum_15.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120619_EC_SCX_MIX1_mouse_cerebellum_16.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120619_EC_SCX_MIX1_mouse_cerebellum_17.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120619_EC_SCX_MIX1_mouse_cerebellum_18.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120619_EC_SCX_MIX1_mouse_cerebellum_9.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR5_120621_EC_SCX_MIX2_mouse_cerebellum_19_01.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR5_120621_EC_SCX_MIX2_mouse_cerebellum_20_01.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR5_120621_EC_SCX_MIX2_mouse_cerebellum_21.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR5_120621_EC_SCX_MIX2_mouse_cerebellum_22.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR5_120621_EC_SCX_MIX2_mouse_cerebellum_23.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR5_120621_EC_SCX_MIX2_mouse_cerebellum_23_rerun.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR5_120621_EC_SCX_MIX2_mouse_cerebellum_24.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR5_120621_EC_SCX_MIX2_mouse_cerebellum_24_rerun.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR5_120621_EC_SCX_MIX2_mouse_cerebellum_25.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR5_120621_EC_SCX_MIX2_mouse_cerebellum_26.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR5_120621_EC_SCX_MIX2_mouse_cerebellum_27.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR5_120621_EC_SCX_MIX2_mouse_cerebellum_28.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR5_120621_EC_SCX_MIX2_mouse_cerebellum_29.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120718_EC_SCX_MIX2_mouse_cerebellum_09.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120718_EC_SCX_MIX2_mouse_cerebellum_10_repeat.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120718_EC_SCX_MIX2_mouse_cerebellum_11.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120718_EC_SCX_MIX2_mouse_cerebellum_11_repeat.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120718_EC_SCX_MIX2_mouse_cerebellum_12.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120718_EC_SCX_MIX2_mouse_cerebellum_12_repeat.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120718_EC_SCX_MIX2_mouse_cerebellum_13.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120718_EC_SCX_MIX2_mouse_cerebellum_13_repeat.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120718_EC_SCX_MIX2_mouse_cerebellum_14.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120718_EC_SCX_MIX2_mouse_cerebellum_15.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120718_EC_SCX_MIX2_mouse_cerebellum_16.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120718_EC_SCX_MIX2_mouse_cerebellum_17.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120718_EC_SCX_MIX2_mouse_cerebellum_18.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120807_EC_SCX_MIX3_mouse_cerebellum_11.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120807_EC_SCX_MIX3_mouse_cerebellum_12.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120807_EC_SCX_MIX3_mouse_cerebellum_13.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120807_EC_SCX_MIX3_mouse_cerebellum_14.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120807_EC_SCX_MIX3_mouse_cerebellum_14_rerun.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120807_EC_SCX_MIX3_mouse_cerebellum_15.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120807_EC_SCX_MIX3_mouse_cerebellum_15_rerun.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120807_EC_SCX_MIX3_mouse_cerebellum_16.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120807_EC_SCX_MIX3_mouse_cerebellum_17.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120807_EC_SCX_MIX3_mouse_cerebellum_18.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120807_EC_SCX_MIX3_mouse_cerebellum_19.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120807_EC_SCX_MIX3_mouse_cerebellum_20.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR9_2010809_EC_SCX_MIX3_mouse_cerebellum_21.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR9_2010809_EC_SCX_MIX3_mouse_cerebellum_22.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR9_2010809_EC_SCX_MIX3_mouse_cerebellum_23.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR9_2010809_EC_SCX_MIX3_mouse_cerebellum_24.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR9_2010809_EC_SCX_MIX3_mouse_cerebellum_24_rerun.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR9_2010809_EC_SCX_MIX3_mouse_cerebellum_25.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR9_2010809_EC_SCX_MIX3_mouse_cerebellum_25_rerun.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR9_2010809_EC_SCX_MIX3_mouse_cerebellum_26.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR9_2010809_EC_SCX_MIX3_mouse_cerebellum_27.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR9_2010809_EC_SCX_MIX3_mouse_cerebellum_28.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR9_2010809_EC_SCX_MIX3_mouse_cerebellum_29.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR9_2010809_EC_SCX_MIX3_mouse_cerebellum_30.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR9_20130208_EC_mouse_cerebellum_MIX1_TiIMAC_01.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR9_20130208_EC_mouse_cerebellum_MIX1_TiIMAC_02.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR9_20130208_EC_mouse_cerebellum_MIX2_TiIMAC_01.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR9_20130208_EC_mouse_cerebellum_MIX2_TiIMAC_02.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR9_20130208_EC_mouse_cerebellum_MIX3_TiIMAC_01.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR9_20130208_EC_mouse_cerebellum_MIX3_TiIMAC_02.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/AnnotatedMassLabeledSpectraMultiConsensus.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120619_EC_SCX_MIX1_mouse_cerebellum.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120718_EC_SCX_MIX2_mouse_cerebellum.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR9_2010809_EC_SCX_MIX3_mouse_cerebellum.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR9_20130208_EC_mouse_cerebellum_MIX1_TiIMAC.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR9_20130208_EC_mouse_cerebellum_MIX2_TiIMAC_02.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR9_20130208_EC_mouse_cerebellum_MIX3_TiIMAC.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120619_EC_SCX_MIX1_mouse_cerebellum.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR6_120718_EC_SCX_MIX2_mouse_cerebellum.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR9_2010809_EC_SCX_MIX3_mouse_cerebellum.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR9_20130208_EC_mouse_cerebellum_MIX1_TiIMAC.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR9_20130208_EC_mouse_cerebellum_MIX2_TiIMAC_02.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD000502/OR9_20130208_EC_mouse_cerebellum_MIX3_TiIMAC.pep.xml</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

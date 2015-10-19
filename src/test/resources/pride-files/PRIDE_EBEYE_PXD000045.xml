@@ -1,0 +1,74 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000045">
+      <name>LC-MS/MS of cultured Mycobacterium tuberculosis in a hypoxia/reaeration timecourse</name>
+      <description>Mycobacterium tuberculosis samples were collected during oxygen starvation and reaeration. The samples were solubized with urea, digested with trypsin, then desalted with a C18 96-well plate prior to LC-MS/MS analysis.</description>
+      <cross_references>
+        <ref dbkey="1773" dbname="TAXONOMY"/>
+        <ref dbkey="23823726" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2012-10-02"/>
+        <date type="publication" value="2013-06-25"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000045</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Not available</field>
+        <field name="instrument_platform">LTQ Orbitrap</field>
+        <field name="instrument_platform">instrument model</field>
+        <field name="species">Mycobacterium tuberculosis</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Not available</field>
+        <field name="modification">acetylated residue</field>
+        <field name="modification">iodoacetic acid derivatized amino-terminal residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="submitter_keywords">Mycobacterium tuberculosis</field>
+        <field name="submitter_keywords"> LC-MSMS</field>
+        <field name="submitter_keywords"> hypoxia</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">COMPLETE</field>
+        <field name="software">Rosetta Elucidator 3.3.0.1 SP2</field>
+        <field name="doi">10.6019/PXD000045</field>
+        <field name="publication">Galagan JE, Minch K, Peterson M, Lyubetskaya A, Azizi E, Sweet L, Gomes A, Rustad T, Dolganov G, Glotova I, Abeel T, Mahwinney C, Kennedy AD, Allard R, Brabant W, Krueger A, Jaini S, Honda B, Yu WH, Hickey MJ, Zucker J, Garay C, Weiner B, Sisk P, Stolte C, Winkler JK, Van de Peer Y, Iazzetti P, Camacho D, Dreyfuss J, Liu Y, Dorhoi A, Mollenkopf HJ, Drogaris P, Lamontagne J, Zhou Y, Piquenot J, Park ST, Raman S, Kaufmann SH, Mohney RP, Chelsky D, Moody DB, Sherman DR, Schoolnik GK; The Mycobacterium tuberculosis regulatory network and hypoxia., Nature, 2013 Jul 11, 499, 7457, 178-83, </field>
+        <field name="submitter">Gingras Olivier</field>
+        <field name="submitter_mail">ogingras@caprion.com</field>
+        <field name="submitter_affiliation">Bioinformatic</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000045/CZCV24421G11101XMS.RAW.ZIP</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000045/CZCV22821G11101XMS.RAW.ZIP</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000045/CZCV24021G11101XMS.RAW.ZIP</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000045/CZCV23821G11101XMS.RAW.ZIP</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000045/CZCV22621G11101XMS.RAW.ZIP</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000045/CZCV23421G11101XMS.RAW.ZIP</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000045/CZCV21821G11101XMS.RAW.ZIP</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000045/CZCV22021G11101XMS.RAW.ZIP</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000045/CZCV23621G11101XMS.RAW.ZIP</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000045/CZCV21021G11101XMS.RAW.ZIP</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000045/CZCV20821G11101XMS.RAW.ZIP</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000045/CZCV20621G11101XMS.RAW.ZIP</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000045/CZCV22221G11101XMS.RAW.ZIP</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000045/CZCV23021G11101XMS.RAW.ZIP</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000045/CZCV24221G11101XMS.RAW.ZIP</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000045/CZCV22421G11101XMS.RAW.ZIP</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000045/CZCV21621G11101XMS.RAW.ZIP</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000045/CZCV21421G11101XMS.RAW.ZIP</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000045/F014734.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000045/F014735.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000045/F014736.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000045/F014737.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000045/F014738.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000045/PRIDE_Exp_Complete_Ac_27370.xml.gz</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

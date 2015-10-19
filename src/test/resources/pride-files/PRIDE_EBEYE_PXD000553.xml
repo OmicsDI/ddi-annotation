@@ -1,0 +1,84 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000553">
+      <name>Polysome profiling reveals translational control of gene expression in the human malaria parasite Plasmodium falciparum</name>
+      <description>MudPIT analysis of Plasmodium polysomes. TCA precipitated pellet from Plasmodium falciparum polysomes (~50ug) was solubilized in TRIS-HCl pH8.5 and Urea; reduced and alkylated.  The protein suspension was digested overnight using Endoproteinase Lys-C followed by a second overnight digestion at 37°C using Trypsin.  Formic acid (5% final) was added to stop the reactions.  Sample was loaded on split-triple-phase fused-silica micro-capillary column and placed in-line with linear Velos pro ion-trap mass spectrometer (Thermo Scientific), coupled with quaternary Agilent 1260 series HPLC.  Fully automated 10-step chromatography run (for a total of 20 hours) was carried out on the sample.  Each full MS scan (400-1600 m/z) was followed by ten data-dependent MS/MS scans. The number of the micro scans was set to 1 both for MS and MS/MS. The dynamic exclusion settings used were as follows: repeat count 2; repeat duration 30s; exclusion list size 500 and exclusion duration 90 sec, the minimum signal threshold was set to 500. The MS/MS dataset was searched using SEQUEST (v.27; rev. 9) against a database of 72358 sequences, consisting of 5487 P. falciparum non-redundant proteins (downloaded from PlasmoDB on 2012-07-12), 30536 H. sapiens non-redundant proteins (downloaded from NCBI on 2012-08-27), 177 usual contaminants (such as human keratins, IgGs, and proteolytic enzymes), and, to estimate false discovery rates, 36179 randomized amino acid sequences derived from each non-redundant protein entry.  To account for alkylation by CAM, 57 Da were added statically to cysteine residues and to account for the oxidation of methionine residues to methionine sulfoxide (that can occur as an artifact during sample processing) 16Da were added as a differential modification to methionine residue.  Peptide/spectrum matches were sorted, selected using DTASelect/CONTRAST (v 1.9).  Proteins had to be detected by 1 peptide with 2 independent spectra, leading to FDRs at the protein and spectral levels of 2.89% and 0.26%, respectively.</description>
+      <cross_references>
+        <ref dbkey="5833" dbname="TAXONOMY"/>
+        <ref dbkey="24267660" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2013-10-30"/>
+        <date type="publication" value="2013-10-31"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000553</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Not available</field>
+        <field name="instrument_platform">LTQ</field>
+        <field name="species">Plasmodium falciparum</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Not available</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="submitter_keywords">malaria</field>
+        <field name="submitter_keywords"> cell cycle</field>
+        <field name="submitter_keywords"> transcription</field>
+        <field name="submitter_keywords"> translation</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Bunnik EM, Chung DW, Hamilton M, Ponts N, Saraf A, Prudhomme J, Florens L, Le Roch KG. Polysome profiling reveals translational control of gene expression in the human malaria parasite Plasmodium falciparum. Genome Biol. 2013 Nov 22;14(11):R128</field>
+        <field name="submitter">Anita Saraf</field>
+        <field name="submitter_mail">ans@stowers.org</field>
+        <field name="submitter_affiliation">Proteomics Center</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/10/PXD000553/Pf_3D7-unsyn_polysomes_Ti_vL2_201.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/10/PXD000553/Pf_3D7-unsyn_polysomes_Ti_vL2_201.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/10/PXD000553/Pf_3D7-unsyn_polysomes_Ti_vL2_201.sqt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/10/PXD000553/Pf_3D7-unsyn_polysomes_Ti_vL2_202.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/10/PXD000553/Pf_3D7-unsyn_polysomes_Ti_vL2_202.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/10/PXD000553/Pf_3D7-unsyn_polysomes_Ti_vL2_202.sqt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/10/PXD000553/Pf_3D7-unsyn_polysomes_Ti_vL2_203.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/10/PXD000553/Pf_3D7-unsyn_polysomes_Ti_vL2_203.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/10/PXD000553/Pf_3D7-unsyn_polysomes_Ti_vL2_203.sqt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/10/PXD000553/Pf_3D7-unsyn_polysomes_Ti_vL2_204.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/10/PXD000553/Pf_3D7-unsyn_polysomes_Ti_vL2_204.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/10/PXD000553/Pf_3D7-unsyn_polysomes_Ti_vL2_204.sqt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/10/PXD000553/Pf_3D7-unsyn_polysomes_Ti_vL2_205.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/10/PXD000553/Pf_3D7-unsyn_polysomes_Ti_vL2_205.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/10/PXD000553/Pf_3D7-unsyn_polysomes_Ti_vL2_205.sqt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/10/PXD000553/Pf_3D7-unsyn_polysomes_Ti_vL2_206.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/10/PXD000553/Pf_3D7-unsyn_polysomes_Ti_vL2_206.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/10/PXD000553/Pf_3D7-unsyn_polysomes_Ti_vL2_206.sqt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/10/PXD000553/Pf_3D7-unsyn_polysomes_Ti_vL2_207.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/10/PXD000553/Pf_3D7-unsyn_polysomes_Ti_vL2_207.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/10/PXD000553/Pf_3D7-unsyn_polysomes_Ti_vL2_207.sqt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/10/PXD000553/Pf_3D7-unsyn_polysomes_Ti_vL2_208.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/10/PXD000553/Pf_3D7-unsyn_polysomes_Ti_vL2_208.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/10/PXD000553/Pf_3D7-unsyn_polysomes_Ti_vL2_208.sqt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/10/PXD000553/Pf_3D7-unsyn_polysomes_Ti_vL2_209.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/10/PXD000553/Pf_3D7-unsyn_polysomes_Ti_vL2_209.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/10/PXD000553/Pf_3D7-unsyn_polysomes_Ti_vL2_209.sqt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/10/PXD000553/Pf_3D7-unsyn_polysomes_Ti_vL2_210.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/10/PXD000553/Pf_3D7-unsyn_polysomes_Ti_vL2_210.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/10/PXD000553/Pf_3D7-unsyn_polysomes_Ti_vL2_210.sqt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/10/PXD000553/Pf_3D7-unsyn_polysomes_Ti_vL2_211.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/10/PXD000553/Pf_3D7-unsyn_polysomes_Ti_vL2_211.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/10/PXD000553/Pf_3D7-unsyn_polysomes_Ti_vL2_211.sqt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/10/PXD000553/Pf_3D7-unsyn_polysomes_Ti_vL2_212.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/10/PXD000553/Pf_3D7-unsyn_polysomes_Ti_vL2_212.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/10/PXD000553/Pf_3D7-unsyn_polysomes_Ti_vL2_212.sqt</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

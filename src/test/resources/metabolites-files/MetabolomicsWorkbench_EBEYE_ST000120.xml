@@ -1,0 +1,120 @@
+<database>
+  <name>MetabolomicsWorkbench</name>
+  <description>The Metabolomics Workbench will serve as a national and international repository for metabolomics data and metadata and will provide analysis tools and access to metabolite standards, protocols, tutorials, training, and more.</description>
+  <release>1.0</release>
+  <release_date>15-05-20</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="ST000120">
+      <name>Disruption of Zinc homeostasis can impair maternal glucocorticoid metabolism: consequences on the developing fetus</name>
+      <description>Steroids play a broad and vital role in regulation of gene expression, secondary sexual characteristics, maturation, reproduction, and neurological functions; but an imbalance in steroid metabolism is also linked to development and progression of many diseases including autism. Prenatal stress of different nature has been demonstrated to affect both the mother and the offspring. Adverse nutritional conditions during gestation can impair the maternal hypothalamic-pituitary-adrenal axis (HPA) and expose the fetus to high levels of glucocorticoids (GC). Evenwhen GC are required for normal brain development; an increased exposure of the fetus to GC as a consequence of prenatal stress can affect fetal hypothalamic-pituitary-gonad axis (HPG) development, impair neurogenesis, and have a long term impact on the offspring&#146;s mental health. Decreased zinc availability can occur during pregnancy as a consequence of different conditions (nutritional deficiency, infections, diabetes, alcohol consumption, and exposure to certain toxicants). Importantly, several of these gestational conditions have been linked to autism. In fact, alterations in maternal zinc homeostasis upon exposure to select environmental stressors (e.g. the phthalate plasticizer bis-2-ethylhexyl phthalate (DEHP)) that have become increasingly common since the industrial revolution may underlie the recent rise in the incidence of autism.Alterations in maternal zinc homeostasis could expose the fetus to high GC concentrations secondary to a high maternal GC production and/or to a decreased capacity of the placenta to metabolize GC to inactive metabolites. The overall goal of this proposal is to investigate if alterations in zinc homeostasis during gestation triggered by either a marginal zinc nutrition or exposure to an environmental pollutant (the phthalate plasticizer bis-2-ethylhexyl phthalate (DEHP)) can impair maternal and fetal endocrine signaling leading to impaired fetal brain development.&lt;br&gt;</description>
+      <cross_references>
+        <ref dbkey="10116" dbname="TAXONOMY"/>
+        <ref dbkey="17026" dbname="ChEBI"/>
+        <ref dbkey="17347" dbname="ChEBI"/>
+        <ref dbkey="17243" dbname="ChEBI"/>
+        <ref dbkey="16581" dbname="ChEBI"/>
+        <ref dbkey="16469" dbname="ChEBI"/>
+        <ref dbkey="17263" dbname="ChEBI"/>
+        <ref dbkey="17650" dbname="ChEBI"/>
+        <ref dbkey="16962" dbname="ChEBI"/>
+        <ref dbkey="17252" dbname="ChEBI"/>
+        <ref dbkey="28750" dbname="ChEBI"/>
+        <ref dbkey="16827" dbname="ChEBI"/>
+        <ref dbkey="28689" dbname="ChEBI"/>
+        <ref dbkey="16422" dbname="ChEBI"/>
+        <ref dbkey="16330" dbname="ChEBI"/>
+        <ref dbkey="27584" dbname="ChEBI"/>
+        <ref dbkey="16973" dbname="ChEBI"/>
+        <ref dbkey="28324" dbname="ChEBI"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="14-09-30"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Metabolomics</field>
+        <field name="full_dataset_link">http://www.metabolomicsworkbench.org/data/DRCCMetadata.php?Mode=Study&amp;StudyID=ST000120</field>
+        <field name="repository">MetabolomicsWorkbench</field>
+        <field name="data_protocol">UPLC-MS/MS</field>
+        <field name="instrument_platform">waters Acquity UPLC and Xevo-TQ MS</field>
+        <field name="study_factor">Tissue/Fluid:Fetal Male brain | Treatment:Marginal Zinc deficient + DEHP</field>
+        <field name="study_factor">Tissue/Fluid:Fetal Female Liver | Treatment:Marginal Zinc deficient + DEHP</field>
+        <field name="study_factor">Tissue/Fluid:Placenta | Treatment:Control + DEHP</field>
+        <field name="study_factor">Tissue/Fluid:Maternal plasma | Treatment:Marginal Zinc deficient</field>
+        <field name="study_factor">Tissue/Fluid:Fetal Female brain | Treatment:Control + DEHP</field>
+        <field name="study_factor">Tissue/Fluid:Maternal plasma | Treatment:Marginal Zinc deficient + DEHP</field>
+        <field name="study_factor">Tissue/Fluid:Maternal Liver | Treatment:Control</field>
+        <field name="study_factor">Tissue/Fluid:Fetal Female Liver | Treatment:Control</field>
+        <field name="study_factor">Tissue/Fluid:Fetal Male brain | Treatment:Marginal Zinc deficient</field>
+        <field name="study_factor">Tissue/Fluid:Fetal Male Liver | Treatment:Marginal Zinc deficient</field>
+        <field name="study_factor">Tissue/Fluid:Maternal Liver | Treatment:Marginal Zinc deficient + DEHP</field>
+        <field name="study_factor">Tissue/Fluid:Fetal Male brain | Treatment:Control + DEHP</field>
+        <field name="study_factor">Tissue/Fluid:Adrenal gland | Treatment:Control</field>
+        <field name="study_factor">Tissue/Fluid:Amniotic fluid | Treatment:Control</field>
+        <field name="study_factor">Tissue/Fluid:Amniotic fluid | Treatment:Marginal Zinc deficient + DEHP</field>
+        <field name="study_factor">Tissue/Fluid:Placenta | Treatment:Control</field>
+        <field name="study_factor">Tissue/Fluid:Amniotic fluid | Treatment:Control + DEHP</field>
+        <field name="study_factor">Tissue/Fluid:Fetal Male Liver | Treatment:Marginal Zinc deficient + DEHP</field>
+        <field name="study_factor">Tissue/Fluid:Placenta | Treatment:Marginal Zinc deficient + DEHP</field>
+        <field name="study_factor">Tissue/Fluid:Maternal Liver | Treatment:Control + DEHP</field>
+        <field name="study_factor">Tissue/Fluid:Fetal Female brain | Treatment:Control</field>
+        <field name="study_factor">Tissue/Fluid:Adrenal gland | Treatment:Marginal Zinc deficient + DEHP</field>
+        <field name="study_factor">Tissue/Fluid:Maternal plasma | Treatment:Control</field>
+        <field name="study_factor">Tissue/Fluid:Adrenal gland | Treatment:Marginal Zinc deficient</field>
+        <field name="study_factor">Tissue/Fluid:Maternal Liver | Treatment:Marginal Zinc deficient</field>
+        <field name="study_factor">Tissue/Fluid:Maternal plasma | Treatment:Control + DEHP</field>
+        <field name="study_factor">Tissue/Fluid:Fetal Male Liver | Treatment:Control</field>
+        <field name="study_factor">Tissue/Fluid:Fetal Female brain | Treatment:Marginal Zinc deficient + DEHP</field>
+        <field name="study_factor">Tissue/Fluid:Fetal Female Liver | Treatment:Control + DEHP</field>
+        <field name="study_factor">Tissue/Fluid:Fetal Female Liver | Treatment:Marginal Zinc deficient</field>
+        <field name="study_factor">Tissue/Fluid:Placenta | Treatment:Marginal Zinc deficient</field>
+        <field name="study_factor">Tissue/Fluid:Adrenal gland | Treatment:Control + DEHP</field>
+        <field name="study_factor">Tissue/Fluid:Amniotic fluid | Treatment:Marginal Zinc deficient</field>
+        <field name="study_factor">Tissue/Fluid:Fetal Male Liver | Treatment:Control + DEHP</field>
+        <field name="study_factor">Tissue/Fluid:Fetal Female brain | Treatment:Marginal Zinc deficient</field>
+        <field name="study_factor">Tissue/Fluid:Fetal Male brain | Treatment:Control</field>
+        <field name="species">Rattus norvegicus</field>
+        <field name="technology_type">mass spectrometry</field>
+        <field name="metabolite_name">Progesterone</field>
+        <field name="metabolite_name">Testosterone</field>
+        <field name="metabolite_name">Mono-(2-ethylhexyl) phthalate</field>
+        <field name="metabolite_name">Pregnenolone</field>
+        <field name="metabolite_name">Estradiol</field>
+        <field name="metabolite_name">Estrone</field>
+        <field name="metabolite_name">Cortisol</field>
+        <field name="metabolite_name">Cortisone</field>
+        <field name="metabolite_name">17-hydroxyprogesterone</field>
+        <field name="metabolite_name">17-hydroxypregnenolone</field>
+        <field name="metabolite_name">11-Dehydrocorticosterone</field>
+        <field name="metabolite_name">Corticosterone, DOC</field>
+        <field name="metabolite_name">Androstenolone (DHEA)</field>
+        <field name="metabolite_name">Androstenedione</field>
+        <field name="metabolite_name">Allodihydrotestosterone</field>
+        <field name="metabolite_name">Aldosterone</field>
+        <field name="metabolite_name">Cortexone</field>
+        <field name="metabolite_name">Cortexolone</field>
+        <field name="pubchem_id">5994</field>
+        <field name="pubchem_id">6013</field>
+        <field name="pubchem_id">20393</field>
+        <field name="pubchem_id">8955</field>
+        <field name="pubchem_id">5757</field>
+        <field name="pubchem_id">5870</field>
+        <field name="pubchem_id">5754</field>
+        <field name="pubchem_id">222786</field>
+        <field name="pubchem_id">6238</field>
+        <field name="pubchem_id">91451</field>
+        <field name="pubchem_id">6290</field>
+        <field name="pubchem_id">5753</field>
+        <field name="pubchem_id">5881</field>
+        <field name="pubchem_id">6128</field>
+        <field name="pubchem_id">10635</field>
+        <field name="pubchem_id">5839</field>
+        <field name="pubchem_id">6166</field>
+        <field name="pubchem_id">440707</field>
+        <field name="submitter">Heidi Kucera</field>
+        <field name="submitter_mail">hrkucera@ucdavis.edu</field>
+        <field name="submitter_affiliation">Nutrition, University of California, Davis</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

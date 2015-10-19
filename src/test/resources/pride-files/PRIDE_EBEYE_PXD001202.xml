@@ -1,0 +1,108 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001202">
+      <name>Identification of cytoplasmic proteins interacting with unliganded estrogen receptor α and β- in human breast cancer cells</name>
+      <description>Estrogen Receptor subtypes (ERα and ERβ) are transcription factors sharing similar structure, however, they often perform opposite roles in breast cancer’s cell proliferation and tumor progression. Besides the well-characterized genomic actions of ERs upon ligand binding, rapid non-genomic cytoplasmic changes together with the recently discovered ligand-free action of ERs are emerging as key regulators of tumorigenesis. The identification of cytoplasmic interaction partners of unliganded ERα and ERβ may help characterize the molecular basis of the extra-nuclear mechanism of action of these receptors, revealing novel mechanisms to explain their role in breast cancer response or resistance to endocrine therapy. To this aim, in this study, cytoplasmic extracts from stably expressing TAP-ERα and -ERβ MCF-7 cell clones were subjected to interaction proteomics in the absence of estrogen stimulation, leading to the identification of 84 and 142 proteins associated with unliganded ERα and ERβ, respectively. Functional analyses of ER subtype-specific interactomes revealed significant differences in the molecular pathways associated to each receptor in the cytoplasm. This work reports the first identification of the unliganded ERα and ERβ cytoplasmic interactomes in breast cancer cells, providing novel experimental evidence on the non-genomic effects of ERs in the absence of hormonal stimulus.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="25604459" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-08-05"/>
+        <date type="publication" value="2015-03-11"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001202</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Human mammary carcinoma MCF-7 Tet-Off (Clontech-Takara, Saint-Germain-en-Laye, France) cell lines were used to generate clones stably expressing either C-TAP-ERα, N-TAP-ERα, (indicated globally as TAP-ERα), C-TAP-ERβ or N-TAP-ERβ (indicated as TAP-ERb).TAP tag alone containing clone was used as control. TAP-purification, protein separation by SDS-PAGE and identification by LC-MS/MS was done as previously described.  references: Ambrosino, C., Tarallo, R., Bamundo, A., Cuomo, D., et al., Identification of a hormone-regulated dynamic nuclear actin network associated with estrogen receptor alpha in human breast cancer cell nuclei. Mol Cell Proteomics 2010, 9, 1352-1367  Tarallo, R., Bamundo, A., Nassa, G., Nola, E., et al., Identification of proteins associated with ligand-activated estrogen receptor alpha in human breast cancer cell nuclei by tandem affinity purification and nano LC-MS/MS. Proteomics 2011, 11, 172-179.  Nassa, G., Tarallo, R., Ambrosino, C., Bamundo, A., et al., A large set of estrogen receptor beta-interacting proteins identified by tandem affinity purification in hormone-responsive human breast cancer cell nuclei. Proteomics 2011, 11, 159-165.  Cirillo, F., Nassa, G., Tarallo, R., Stellato, C., et al., Molecular mechanisms of selective estrogen receptor modulator activity in human breast cancer cells: identification of novel nuclear cofactors of antiestrogen-ERalpha complexes by interaction proteomics. J Proteome Res 2013, 12, 421-431.</field>
+        <field name="data_protocol">MS data were acquired using Analyst QS 2.0 software. The LC-MS/MS data were searched against SwissProt 2010 (517802 sequences; 182492287 residues, (human, 20283 sequences) and SwissProt 2010x (516603 sequences; 181919312 residues, human 20278 sequences). The search criteria for Mascot searches were: trypsin digestion with one missed cleavage allowed, Carbamidomethyl (C) as fixed modification and Oxidation (M), Phospho (ST), Phospho (Y) as variable modifications. For the LC-MS/MS spectra the maximum precursor ion mass tolerance was 50 ppm and MS/MS fragment ion mass tolerance 0.2 Da, and peptide charge state of +1, +2 or +3 was used. All of the reported protein identifications were statistically significant (p&lt;0.05). To eliminate the redundancy of proteins that appear in the database under different names and accession numbers, the single protein member with the highest protein score (top rank) was selected from multiprotein families to the identification results.</field>
+        <field name="instrument_platform">QSTAR</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">permanent cell line cell</field>
+        <field name="disease">breast cancer</field>
+        <field name="tissue">cell culture</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">phosphorylated residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Affinity purification coupled with mass spectrometry proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biomedical</field>
+        <field name="submitter_keywords">estrogen receptor</field>
+        <field name="submitter_keywords"> TAP-tag</field>
+        <field name="submitter_keywords"> LC-MS/MS</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Stellato C, Nassa G, Tarallo R, Giurato G, Ravo M, Rizzo F, Marchese G, Alexandrova E, Cordella A, Baumann M, Nyman TA, Weisz A, Ambrosino C. Identification of cytoplasmic proteins interacting with unliganded estrogen receptor α and β- in human breast cancer cells. Proteomics. 2015 Jan 20</field>
+        <field name="submitter">Tuula Nyman</field>
+        <field name="submitter_mail">tuula.nyman@helsinki.fi</field>
+        <field name="submitter_affiliation">Institute of Biotechnology</field>
+        <field name="labhead">Tuula Nyman</field>
+        <field name="labhead_mail">tuula.nyman@helsinki.fi</field>
+        <field name="labhead_affiliation">Institute of Biotechnology, University of Helsinki</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/10 giovanni combination swiss prot human 29_06_10.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100627 Giovanni 9C1.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100627 Giovanni 9C1.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100627 Giovanni 9C2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100627 Giovanni 9C2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100627 Giovanni 9C3.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100627 Giovanni 9C3.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100627 Giovanni 9C4.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100627 Giovanni 9C4.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100627 Giovanni 9C5.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100627 Giovanni 9C5.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100627 Giovanni 9C6.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100627 Giovanni 9C6.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100628 Giovanni 10C1.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100628 Giovanni 10C1.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100628 Giovanni 10C2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100628 Giovanni 10C2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100628 Giovanni 10C3.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100628 Giovanni 10C3.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100628 Giovanni 10C4.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100628 Giovanni 10C4.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100628 Giovanni 10C5.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100628 Giovanni 10C5.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100628 Giovanni 10C6.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100628 Giovanni 10C6.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100630 Giovanni 13-1.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100630 Giovanni 13-1.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100630 Giovanni 13-2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100630 Giovanni 13-2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100630 Giovanni 13-3.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100630 Giovanni 13-3.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100630 Giovanni 13-4.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100630 Giovanni 13-4.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100630 Giovanni 13-5.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100630 Giovanni 13-5.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100630 Giovanni 13-6.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100630 Giovanni 13-6.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100630 Giovanni 14-5.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100630 Giovanni 14-5.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100630 Giovanni 14-6.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100630 Giovanni 14-6.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100702 Giovanni 14-1.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100702 Giovanni 14-1.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100702 Giovanni 14-2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100702 Giovanni 14-2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100702 Giovanni 14-3.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100702 Giovanni 14-3.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100702 Giovanni 14-4.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/100702 Giovanni 14-4.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/13 giovanni swiss prot human 01_06_10.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/14 giovanni swiss prot human 01_07_10.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/9 giovanni combination swiss prot human 29_06_10.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/9 giovanni combination swiss prot human 29_06_10.pdf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/10 giovanni combination swiss prot human 29_06_10.pdf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/13 giovanni swiss prot human 01_06_10.pdf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001202/14 giovanni swiss prot human 01_07_10.pdf</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

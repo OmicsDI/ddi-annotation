@@ -1,0 +1,124 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-06-08</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001468">
+      <name>A mass-tolerant database search identifies a large proportion of unassigned spectra in shotgun proteomics as modified peptides</name>
+      <description>Less than half of all MS/MS spectra acquired in shotgun proteomics typically result in a confident peptide match.  Here we present an ultra-tolerant Sequest database search that allowed peptide matching even with modifications of unknown masses up to ±500 Da. From an HEK293 cell proteome-wide dataset (9,513 proteins and 396,736 peptides), a ±500-Da search matched an additional 184,000 modified peptides. These were linked to both biological and chemical modifications representing 523 distinct mass bins including phosphorylation, glycosylation, and methylation.  We attempted to localize all unknown modification masses to specific regions within a peptide, and known modifications were accurately assigned to the correct amino acids with frequencies often &gt;90%.  These data demonstrate that a large fraction of previously unassignable spectra are assignable to peptide sequences with modifications.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-11-06"/>
+        <date type="publication" value="2015-06-03"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001468</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Water and organic solvents were from J.T. Baker (Center Valley, PA). Unless otherwise noted, all other chemicals were from Sigma-Aldrich (St. Louis, MO).  HEK293 cells were cultured in DMEM media.  Cells were lysed in 8 M urea supplemented in 50 mM Tris (pH 8.5) and 1 x Roche protease inhibitors.  The lysate was reduced with 5 mM dithiothreitol for 30 minutes at 56ºC followed by alkylation with 10 mM iodoacetamide for 30 minutes at room temperature in the dark.  Reactions were quenched with 5 mM dithiothreitol for 15 minutes at room temperature in the dark.  Lysates were then methanol/chloroform precipitated using 4 parts methanol, 1 part chloroform, 1 part sample and 3 parts water, all ice cold. Protein pellets were subsequently washed twice with ice cold methanol.  Protein pellets from HEK293 cells were resuspended in 4 M urea, which was then digested overnight at room temperature with Lys-C (1:200 enzyme to protein ratio) followed by dilution to 1.5M urea and 4 hour digestion with trypsin (1:200 enzyme to protein ratio). Digests were then desalted using a Sep-Pak (Sep-Pak, Waters) column and dried down by vacuum centrifugation. The mice used in these experiments included a Mus Musculus cross (C57BL/6 x 129/sv; house mouse). Mouse brain was homogenized in 8 M urea containing 50 mM Tris (pH 8.5) and 1 x Roche protease inhibitors using an Omni TH homogenizer. Lysates were reduced with 5 mM dithiothreitol for 30 minutes at 56ºC followed by alkylation with 10 mM iodoacetamide for 30 minutes at room temperature in the dark.  Reactions were quenched with 5 mM dithiothreitol for 15 minutes at room temperature in the dark.  Lysates were then methanol/chloroform precipitated using 4 parts methanol, 1 part chloroform, 1 part sample and 3 parts water, all ice cold. Protein pellets were subsequently washed twice with ice cold methanol.  Mouse tissue protein pellets were digested with Lys-C (1:200 enzyme to protein ratio) overnight. Digests were then desalted using a Sep-Pak (Sep-Pak, Waters) column and dried down by vacuum centrifugation. HEK293 cell peptides were separated by basic pH reverse phase fractionation that was performed on ~0.5 mg sample. Using an Agilent 1100 quaternary pump equipped with a degasser and a photodiode array (PDA) detector (set at 220 and 280-nm wavelength), a 50 min linear gradient from 5% to 35% acetonitrile in 10mM ammonium bicarbonate pH 8 at a flow rate of 0.8 mL/min with an Agilent 300 Extend C18 column (5 μm particles, 4.6 mm ID and 220 mm in length) separated the peptide mixture into a total of 96 fractions which were consolidated into 24. Samples were subsequently acidified with 1% formic acid and vacuum centrifuged to near dryness. Each fraction was desalted via StageTip, dried via vacuum centrifugation, and reconstituted in 1% formic acid for LC-MS/MS processing. Mouse whole brain lysate peptides were analysed by LC-ESI-MS/MS on a hybrid dual-pressure linear ion trap/orbitrap mass spectrometer (LTQ Orbitrap Elite, Thermo Scientific, San Jose, CA) equipped with a Famos autosampler (LC Packings, Sunnyvale, CA) and an Agilent 1200 binary HPLC pump (Agilent Technologies, Palo Alto, CA). Peptide mixtures were separated on a 100 μm I.D. microcapillary column packed first with ∼0.5 cm of Magic C4 resin (5 μm, 100 Å, Michrom Bioresources, Auburn, CA) followed by 20 cm of Maccel C18AQ resin (3 μm, 200 Å, Nest Group, Southborough, MA). Peptides were separated using a 3 hr gradient of 6 to 30% acetonitrile gradient in 0.125% formic acid with a flow rate of ∼300 nL/min. In each data collection cycle, one full MS scan (300–1500 m/z) was acquired in the Orbitrap (6 × 104 resolution setting, automatic gain control (AGC) target of 1.5 x 105) and the top 10 most abundant ions were selected for isolation and fragmentation by HCD-MS2. Ions were selected for isolation when their intensity reached a threshold of 500 counts. HCD was performed using a 2 m/z isolation window, an AGC setting of 5 x 104 and a maximum ion accumulation time of 250 ms. Previously selected ions were dynamically excluded for 60 s. Normalized collision energies were set to 35% with an activation time of 2 ms for the MS2 method.  Basic pH reverse phase fractions from HEK293 cells were analyzed on a Q-Exactive Orbitrap mass spectrometer. Peptides were separated using a 3 hr gradient of 6 to 30% acetonitrile gradient in 0.125% formic acid with a flow rate of ∼300 nL/min. In each data collection cycle, one full MS scan (300–1500 m/z) was acquired in the Orbitrap (7 × 104 resolution setting, automatic gain control (AGC) target of 3 x 106) and the top 20 most abundant ions were selected for isolation and fragmentation by HCD. Ions were selected for isolation when their intensity reached a threshold of 500 counts. HCD was performed using a 2 m/z isolation window, a resolution of 1.75 x 104, an AGC setting of 5 x 105 and a maximum ion accumulation time of 60 ms. Previously selected ions were dynamically excluded for 60 s. Normalized</field>
+        <field name="data_protocol">Database Searching   Software tools were used to convert mass spectrometric data from raw file to the mzxml format 22.  Erroneous charge state and monoisotopic m/z values were corrected as per previous publication 22. MS/MS spectra assignments were made with the Sequest algorithm 3  using indexed Ensembl databases (Mouse: Mus_musculus NCBIM37.61, Human: Homo_sapiens GRCh37.61). Databases were prepared with forward and reversed sequences concatenated according to the target-decoy strategy 41.  All searches were performed using a static modification for cysteine alkylation (57.02146 Da).   Closed Searches.  Closed searches were performed with Sequest (Rev28) using indexed databases with a precursor ion tolerance of 5 ppm.  The fragment ion tolerance was set very narrow (0.01 Da).  Specificity was set based on the protease used (trypsin for HEK293 studies and Lys-C for mouse studies) and allowing 1 missed cleavage.  Oxidized methionine was considered dynamically (+15.994915 Da).  Sequest matches were filtered by linear discriminant analysis as described previously 22  to a dataset level error of 1% FDR at the protein level (~0.2% peptide level) based on matches to reversed sequences 41.  Open Searches.  Open searches were performed with Sequest exactly as for Closed searches with the following changes.  The precursor ion tolerance was set to 500 Da unless otherwise specified.  The GUI (graphical user interface) in Proteome Discoverer 2.0 (soon to be released) will allow Open searches to be conducted.  Oxidized methionine was not considered as a dynamic modification.  Post-search filtering via linear discriminant analysis did not use mass accuracy (ppm) as a feature for differentiating true and false positives.  These searches often considered more than 1000 fold greater peptide search spaces.  However, the time penalty for this increase does not scale linearly for Sequest and was ~10 fold.  Open searches for each 3-hr analysis considered on average 44,390 MS/MS spectra and finished in less than two hours on a standard 6-core CPU with 6MB RAM.  Note that using the pre-indexed database option is essential to achieving reasonable search times.   Guassian fit analysis Mass shifts were clustered using Gaussian mixture models using the mclust package for R Core 52-54. Mass shifts were binned in to 1 Da windows bounded at each half Da point. Within each bin, the number of mass shifts annotated in UniMod 55  falling within that bin were used to set the maximum number of Gaussian mixtures in the model, and the mixture models allowing for variable mixture variances were fitted within that window. An optimal number of mixture components was calculated by the software using BIC, and the model for that number of components was used. Fitted mixture components with a variance greater than 0.01 were then removed from the data set.  Ascore The Ascore algorithm 40  uses the cumulative binomial probability distribution to provide a localization score for a mass difference (phosphorylation, +79.9663) to a serine, threonine, or tyrosine.  We modified the Ascore algorithm to allow for the localization of any modification mass to any potential site within the peptide.  Because sufficient information was not always present to localize to a specific site, scores were calculated for individual sites as well as regions.  An Ascore value of &gt;20 (p&lt;0.01) was used as a threshold significance value for assigning modifications to an amino acid or region within a peptide. Supplementary table 2 contains the Ascore, Ascore sequence (potential location of modification), Ascore region (amino acids in which the score is identical) and the number of amino acids considered in the region. In addition, a modification could not be localized if the number of ions matched for a peptide does not increase when the modification is considered throughout the sequence.</field>
+        <field name="instrument_platform">Q Exactive</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">kidney</field>
+        <field name="tissue">brain</field>
+        <field name="modification">dehydrated residue</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">homoserine lactone</field>
+        <field name="modification">monosodium salt</field>
+        <field name="modification">deaminated residue</field>
+        <field name="modification">homoserine</field>
+        <field name="modification">biotinylated residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="modification">formylated residue</field>
+        <field name="modification">sulfated residue</field>
+        <field name="modification">methylthiolated residue</field>
+        <field name="modification">dihydroxylated residue</field>
+        <field name="modification">farnesylated residue</field>
+        <field name="modification">monomethylated residue</field>
+        <field name="modification">S-pyridylethyl-L-cysteine</field>
+        <field name="modification">amidated residue</field>
+        <field name="modification">phosphorylated residue</field>
+        <field name="modification">carbamoylated residue</field>
+        <field name="modification">iodoacetic acid derivatized residue</field>
+        <field name="modification">acetylated residue</field>
+        <field name="modification">(R)-5-oxo-1,4-tetrahydrothiazine-3-carboxylic acid</field>
+        <field name="modification">carboxylated residue</field>
+        <field name="modification">deamidated residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biomedical</field>
+        <field name="curator_keywords">Technical</field>
+        <field name="submitter_keywords">Proteomics</field>
+        <field name="submitter_keywords"> Sequest</field>
+        <field name="submitter_keywords"> Large scale</field>
+        <field name="submitter_keywords"> modifications</field>
+        <field name="quantification_method">Peptide counting</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="submitter">Joel Chick</field>
+        <field name="submitter_mail">chick.joel@gmail.com</field>
+        <field name="submitter_affiliation">Harvard Medical School</field>
+        <field name="labhead">Steven P Gygi</field>
+        <field name="labhead_mail">steven_gygi@hms.harvard.edu</field>
+        <field name="labhead_affiliation">Harvard medical school, Department of Cell Biology</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1906_293T_proteinID_01A_QE3_122212.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1922_293T_proteinID_02A_QE3_122212.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1923_293T_proteinID_03A_QE3_122212.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1924_293T_proteinID_04A_QE3_122212.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1925_293T_proteinID_05A_QE3_122212.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1926_293T_proteinID_06A_QE3_122212.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1927_293T_proteinID_07A_QE3_122212.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1928_293T_proteinID_08A_QE3_122212.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1929_293T_proteinID_09A_QE3_122212.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1930_293T_proteinID_10A_QE3_122212.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1931_293T_proteinID_11A_QE3_122212.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1932_293T_proteinID_12A_QE3_122212.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1937_293T_proteinID_01B_QE3_122212.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1938_293T_proteinID_02B_QE3_122212.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1939_293T_proteinID_03B_QE3_122212.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1940_293T_proteinID_04B_QE3_122212.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1941_293T_proteinID_05B_QE3_122212.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1942_293T_proteinID_06B_QE3_122212.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1943_293T_proteinID_07B_QE3_122212.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1944_293T_proteinID_08B_QE3_122212.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1945_293T_proteinID_09B_QE3_122212.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1946_293T_proteinID_10B_QE3_122212.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1947_293T_proteinID_11B_QE3_122212.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1948_293T_proteinID_12B_QE3_122212.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1906_293T_proteinID_01A_QE3_122212.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1922_293T_proteinID_02A_QE3_122212.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1923_293T_proteinID_03A_QE3_122212.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1924_293T_proteinID_04A_QE3_122212.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1925_293T_proteinID_05A_QE3_122212.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1926_293T_proteinID_06A_QE3_122212.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1927_293T_proteinID_07A_QE3_122212.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1928_293T_proteinID_08A_QE3_122212.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1929_293T_proteinID_09A_QE3_122212.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1930_293T_proteinID_10A_QE3_122212.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1931_293T_proteinID_11A_QE3_122212.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1932_293T_proteinID_12A_QE3_122212.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1937_293T_proteinID_01B_QE3_122212.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1938_293T_proteinID_02B_QE3_122212.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1939_293T_proteinID_03B_QE3_122212.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1940_293T_proteinID_04B_QE3_122212.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1941_293T_proteinID_05B_QE3_122212.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1942_293T_proteinID_06B_QE3_122212.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1943_293T_proteinID_07B_QE3_122212.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1944_293T_proteinID_08B_QE3_122212.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1945_293T_proteinID_09B_QE3_122212.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1946_293T_proteinID_10B_QE3_122212.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1947_293T_proteinID_11B_QE3_122212.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/b1948_293T_proteinID_12B_QE3_122212.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/Supplementary Table 1.xlsb</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/Supplementary Table 2.xlsb</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001468/Supplementary Table 3.xlsx</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

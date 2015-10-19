@@ -1,0 +1,78 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000719">
+      <name>Rat Brain LC-MS/MS</name>
+      <description>Voltage-gated sodium channels are responsible for the initiation and propagation of action potentials in excitable cells. While the channel is functional on its own, it is the transient and stable protein-protein interactions that modulate functional outcomes. AP-MS has been successfully applied to a number of ion channels. However to the best of our knowledge, no AP-MS study has been carried out on any member of the voltage-gated sodium channel family.</description>
+      <cross_references>
+        <ref dbkey="10116" dbname="TAXONOMY"/>
+        <ref dbkey="25724910" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-01-29"/>
+        <date type="publication" value="2015-03-03"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000719</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Crude membrane extract from whole rat brain was solubilized and used for affinity purification (AP) with Nav1.2 antibody and mouse IgG (Control) crosslinked to Protein A/B beads. Samples were eluted with 0.2 M glycine, titrated to neutral pH, reduced, alkylated, and digested with Lys-C and Trypsin. Samples were analyzed by LC-MS/MS on an Orbitrap Elite with separations performed by an online Easy-LC-1000 nanoflow HPLC with a C18 trap column and analytical column.</field>
+        <field name="data_protocol">Raw files were imported into Progenesis LC-MS (v4.1; Nonlinear Dynamics) for alignment. The top 5 spectra for each feature were exported as a combined .mgf file and searched with MASCOT (v2.1.6), X!Tandem, and PEAKS (v6, Bioinformatics Solutions Inc.) against a merged UniprotKB/Swissprot RatMouse-cRap database of canonical sequences (July 2013). Precursor ion mass tolerance set to 10 ppm and fragment mass tolerance was 0.8 Da and a maximum of 2 missed cleavages. All search results were combined with a 1% FDR and protein identifications were annotated at &gt; 95% probability. All peptides containing modifications other than oxidation of methionine or carbamidomethylation of cysteine were removed. Second, all proteins not identified by at least 2 unique peptides were removed. A table of peptide intensities were imported to SAS for analysis.</field>
+        <field name="instrument_platform">LTQ Orbitrap Elite</field>
+        <field name="species">Rattus norvegicus (Rat)</field>
+        <field name="cell_type">electrically active cell</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">brain</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">phosphorylated residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Affinity purification coupled with mass spectrometry proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="curator_keywords">Biomedical</field>
+        <field name="submitter_keywords">Mammalian Brain</field>
+        <field name="submitter_keywords"> AP-MS</field>
+        <field name="submitter_keywords"> Interactome</field>
+        <field name="quantification_method">Label free</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Wildburger NC, Ali SR, Hsu WC, Shavkunov AS, Nenov MN, Lichti CF, LeDuc RD, Mostovenko E, Panova-Elektronova NI, Emmett MR, Nilsson CL, Laezza F. Quantitative Proteomics Reveals Protein-Protein Interactions with Fibroblast Growth Factor12 as a Component of the Nav1.2 Macromolecular Complex in Mammalian Brain. Mol Cell Proteomics. 2015 Feb 27. pii: mcp.M114.040055</field>
+        <field name="submitter">Norelle Wildburger</field>
+        <field name="submitter_mail">wildburger@msn.com</field>
+        <field name="submitter_affiliation">Department of Pharmacology and Toxicology</field>
+        <field name="labhead">Carol Lynn Nilsson</field>
+        <field name="labhead_mail">clnilsso@utmb.edu</field>
+        <field name="labhead_affiliation">Department of Pharmacology &amp; Toxicology</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000719/Xcontrol_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000719/Xcontrol_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000719/Xcontrol_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000719/Xcontrol_4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000719/Xnav_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000719/Xnav_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000719/Xnav_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000719/Ycontrol_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000719/Ycontrol_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000719/Ycontrol_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000719/Ycontrol_4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000719/Ynav_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000719/Ynav_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000719/Ynav_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000719/Ynav_4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000719/Zcontrol_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000719/Zcontrol_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000719/Zcontrol_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000719/Zcontrol_4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000719/Znav_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000719/Znav_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000719/Znav_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000719/Znav_4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000719/Norelle-NAV-20Aug2013.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD000719/peptides.xml</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

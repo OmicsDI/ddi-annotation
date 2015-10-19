@@ -1,0 +1,66 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001117">
+      <name>Human Cardiac Stem Cells Receptome</name>
+      <description>Human cardiac stem cells (hCSC) express a portfolio of plasma membrane receptors that are involved in the regulatory auto/paracrine feedback loop mechanism of activation of these cells, and consequently contribute to myocardial regeneration. In order to attain a comprehensive description of hCSC receptome and overcoming the inability demonstrated by other technologies applied in receptor identification, mainly due to the transmembrane nature, high hydrophobic character and relative low concentration of these proteins, we have exploited and improved a proteomics workflow. This approach was based on the enrichment of hCSC plasma membrane fraction and addition of pre-fractionation steps prior to MS analysis. More than one hundred plasma membrane receptors were identified. The data reported herein constitute a valuable source of information to further understand cardiac stem cells activation mechanisms and the subsequent cardiac repair process.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="25504917" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-09-17"/>
+        <date type="publication" value="2015-01-30"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001117</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Cell pellets (5x106 cells/pellet) were resuspended in lysis buffer and lysed with 30 passes through the 301/2 Gauge needle at 4ºC. Enriched plasma membrane fractions were obtained as described by Dornemeyer et al., and finally rinsed twice with cold water at 20,000 x g (30 min, 4 ºC). Protein content of membrane fractions was measured using BCA™ Protein Assay Kit (Pierce). hCSC membrane enriched fractions were prepared as described  and loaded (~50 µg) on a SDS-PAGE gel for cleaning and trypsin digestion. Proteins were concentrated in a single gel band that was visualized by colloidal-Coomassie staining, excised, and cut in 15-20 small pieces. Sample was subjected to reduction and alkylation, and digested with trypsin. TFA was added to a final concentration of 1% and the peptides were desalted onto HLB Oasis cartridges and dried-down. Sample tryptic peptides were analyzed by LC-MS. The assessment of hCSC receptome was done using a long 6 hours nanoLC run online with an Orbitrap Elite.</field>
+        <field name="data_protocol">Proteins were identified with proteome Discoverer 1.3 (Thermo); two mixed cleavages were allowed, and an error of 10 ppm or 0.8 Da was set for full MS or MS/MS spectra searches, respectively. Peptide identifications were validated using the probability ratio and the refined FDR method. Peptide identifications were firstly filtered out using 0.05 FDR prior to the application of subsequent, more restrictive criteria. Because numerous proteins were identified with one peptide only, an additional filter of FDR &lt; 0.01 was applied to these proteins. In order to access the hydrophobicity and number of transmembrane domains of the identified proteins, bioinformatics tools were used to calculate putative transmembrane domains (TMD) and GRAVY index (http://www.cbs.dtu.dk/services/TMHMM/ and http://www.bioinformatics.org/sms2/protein_gravy.html). Protein classification was performed using Ingenuity Pathway Analysis software (IPA).</field>
+        <field name="instrument_platform">LTQ Orbitrap Elite</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">stem cell</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">adult stem cell</field>
+        <field name="tissue">heart</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biomedical</field>
+        <field name="submitter_keywords">Human Cardiac Stem Cells</field>
+        <field name="submitter_keywords"> nanoLC-MS/MS</field>
+        <field name="submitter_keywords"> Pre-fractionation</field>
+        <field name="submitter_keywords"> Proteomics</field>
+        <field name="submitter_keywords"> Receptome</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Gomes-Alves P, Serra M, Brito C, R-Borlado L, López JA, Vázquez J, Carrondo MJ, Bernad A, Alves PM. Exploring analytical proteomics platforms towards the definition of human cardiac stem cells receptome. Proteomics. 2014 Dec 12</field>
+        <field name="submitter">Patrícia Gomes-Alves</field>
+        <field name="submitter_mail">palves@ibet.pt</field>
+        <field name="submitter_affiliation">iBET</field>
+        <field name="labhead">Paula M. Alves</field>
+        <field name="labhead_mail">marques@ibet.pt</field>
+        <field name="labhead_affiliation">CEO, IBET, Apartado 12, 2781-901 Oeiras, Portugal  Director Animal Cell Technology Unit, ITQB-UNL Inv Associate Professor, FCT-UNL</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001117/receptome_R1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001117/receptome_R1_ID.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001117/receptome_R2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001117/receptome_R2_ID.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001117/receptome_R3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001117/receptome_R3_ID.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001117/JA_Toran_R1g.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001117/JA_Toran_R1g.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001117/JA_Toran_R2g.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001117/JA_Toran_R2g.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001117/JA_Toran_R3g.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001117/JA_Toran_R3g.prot.xml</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

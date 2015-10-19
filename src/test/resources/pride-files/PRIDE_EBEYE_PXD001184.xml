@@ -1,0 +1,66 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001184">
+      <name>Phosphoproteomic Analysis Suggests Compensatory Effects in the Piriform Cortex Region of the VX-Exposed Rat</name>
+      <description>To gain insight into the toxicity induced by VX, a mass spectrometry based phosphoproteomics approach was employed to understand the signaling modulated by VX toxicity in piriform cortex region of the rat brain.  We have employed isobaric-based TMT labeling and titanium dioxide- based enrichment strategy to identify and quantify the changes that are modulated by VX.  We observed a temporal association of changes in the phosphorylation status of proteins over a 24 hour time course in rats exposed to 1x LD50 VX, with the most notable changes by the first measured time point, 1 hour post exposure. These data fell into five main functional classes of proteins directly or indirectly influenced by changes in phosphorylation:  1) Ion channels/transporters, including ATPases, 2)   Kinases/Phosphatases, 3) GTPases, 4) Structural related proteins, and 5) Transcriptional regulatory proteins.   This study is the first quantitative phosphoproteomics analysis of VX toxicity in the brain. Understanding the toxicity and compensatory signaling mechanisms will improve the understanding of the complex toxicity of VX in the brain, and aid in the elucidation of novel molecular targets allowing for improved countermeasure development.</description>
+      <cross_references>
+        <ref dbkey="10116" dbname="TAXONOMY"/>
+        <ref dbkey="25403869" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-07-30"/>
+        <date type="publication" value="2015-01-07"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001184</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Male Sprague-Dawley rats were injected with 1 LD50 VX and animals were euthanized by decapitation at 1, 4, 8 and 24 hours after injection, and the piriform cortex regions collected from each animal.  The brain tissue was immediately snap-frozen in liquid nitrogen and stored at -80°C until use. Peptide preparation was carried out by using FASP protocol and were labeled with 8 plex TMT reagents. Labeled peptides were fractionated using bRPLC fractionation method and carried out titanium di-oxide based phosphopeptide enrichment and analyzed on Orbitrap Elite mass spectrometer.</field>
+        <field name="data_protocol">The MS derived data were searched using MASCOT (Version 2.2.0) and SEQUEST search algorithms against a rat RefSeq database (version 66) using Proteome Discoverer 1.4 (Version 1.4.0.288) (Thermo Fisher Scientific, Bremen, Germany). The search parameters for both algorithms included: Carbamidomethylation of cysteine residues (57.02 Da), peptide N-terminal of TMT 6 plex (229.16 Da), and lysine side chain of TMT 6 plex (229.16 Da) as a fixed modification and oxidation of methionine (15.99 Da), phosphorylation at serine, threonine and tyrosine (79.96 Da) as variable modifications. MS/MS spectra were searched with a precursor mass tolerance of 20 ppm and fragment mass tolerance of 0.1 Da. Trypsin was specified as protease and a maximum of two missed cleavages were allowed. The data were searched against target decoy database and the false discovery rate was set to 1% at the peptide level. The TMT ratio for each phosphopeptide-spectrum match (phosphoPSM) was calculated by the quantitation node and the probability of phosphorylation for each Ser/Thr/Tyr site on each peptide was calculated by the phosphoRS 3.1 node in the Proteome Discoverer. Phosphorylation sites with &gt;75% localization probability but assigned to different sites by the search algorithm were manually corrected based on the phosphoRS 3.0 localization probability for a given residue. Peptides with ratios greater than 1.5-fold were considered for further analysis.</field>
+        <field name="instrument_platform">LTQ Orbitrap Elite</field>
+        <field name="species">Rattus norvegicus (Rat)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">piriform area</field>
+        <field name="modification">phosphorylated residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">Phosphoproteomics</field>
+        <field name="submitter_keywords"> VX</field>
+        <field name="submitter_keywords"> signaling</field>
+        <field name="quantification_method">TMT</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Nirujogi RS, D Wright J Jr, Manda SS, Zhong J, Na CH, Meyerhoff J, Benton B, Jabbour R, Willis K, Kim MS, Pandey A, Sekowski JW. Phosphoproteomic analysis reveals compensatory effects in the piriform cortex of VX nerve agent exposed rats. Proteomics. 2014 Nov 18</field>
+        <field name="submitter">Jennifer Sekowski</field>
+        <field name="submitter_mail">jennifer.w.sekowski.civ@mail.mil</field>
+        <field name="submitter_affiliation">US Army Edgewood Chemical Biological Center</field>
+        <field name="labhead">Jennifer W. Sekowski</field>
+        <field name="labhead_mail">jennifer.w.sekowski.civ@mail.mil</field>
+        <field name="labhead_affiliation">US Army Edgewood Chemical Biological Center, Biosciences Division, E3150, Aberdeen Proving Ground, MD 21010</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001184/ECBC_PC_RatVX_8TMT_TiO2_bRPLC_All_SequestHT_Mascot_052314.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001184/ECBC_PC_RatVX_8TMT_TiO2_bRPLC_All_SequestHT_Mascot_052314.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001184/ECBC_PC_RatVX_8TMT_TiO2_bRP_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001184/ECBC_PC_RatVX_8TMT_TiO2_bRP_10.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001184/ECBC_PC_RatVX_8TMT_TiO2_bRP_11.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001184/ECBC_PC_RatVX_8TMT_TiO2_bRP_12.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001184/ECBC_PC_RatVX_8TMT_TiO2_bRP_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001184/ECBC_PC_RatVX_8TMT_TiO2_bRP_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001184/ECBC_PC_RatVX_8TMT_TiO2_bRP_4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001184/ECBC_PC_RatVX_8TMT_TiO2_bRP_5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001184/ECBC_PC_RatVX_8TMT_TiO2_bRP_6.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001184/ECBC_PC_RatVX_8TMT_TiO2_bRP_7.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001184/ECBC_PC_RatVX_8TMT_TiO2_bRP_8.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001184/ECBC_PC_RatVX_8TMT_TiO2_bRP_9.raw</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

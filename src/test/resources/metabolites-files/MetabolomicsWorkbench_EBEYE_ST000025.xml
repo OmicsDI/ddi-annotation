@@ -1,0 +1,242 @@
+<database>
+  <name>MetabolomicsWorkbench</name>
+  <description>The Metabolomics Workbench will serve as a national and international repository for metabolomics data and metadata and will provide analysis tools and access to metabolite standards, protocols, tutorials, training, and more.</description>
+  <release>1.0</release>
+  <release_date>15-05-20</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="ST000025">
+      <name>Metabolomics Analysis of Thermally Challenged Mayfly Larvae (GCMS analysis)</name>
+      <description>The purpose of this study was to examine the metabolic profiles of mayfly (Centroptilum triangulifer) larvae subjected to thermal challenge. This species is unusual in terms of its ease of culture, and its suitability as a laboratory test organism. Our purpose here was to examine how an environmentally realistic thermal challenge affects the physiology of this organism. In this study, we obtained several types of insect species and we were able to show that GC-MS Metabolomics could be used to distinguish among the different types of larvae.&lt;br&gt;</description>
+      <cross_references>
+        <ref dbkey="50553" dbname="TAXONOMY"/>
+        <ref dbkey="6650" dbname="ChEBI"/>
+        <ref dbkey="17306" dbname="ChEBI"/>
+        <ref dbkey="15603" dbname="ChEBI"/>
+        <ref dbkey="17351" dbname="ChEBI"/>
+        <ref dbkey="16899" dbname="ChEBI"/>
+        <ref dbkey="6731" dbname="ChEBI"/>
+        <ref dbkey="16196" dbname="ChEBI"/>
+        <ref dbkey="32154" dbname="ChEBI"/>
+        <ref dbkey="28875" dbname="ChEBI"/>
+        <ref dbkey="17268" dbname="ChEBI"/>
+        <ref dbkey="16414" dbname="ChEBI"/>
+        <ref dbkey="16704" dbname="ChEBI"/>
+        <ref dbkey="17712" dbname="ChEBI"/>
+        <ref dbkey="16414" dbname="ChEBI"/>
+        <ref dbkey="15903" dbname="ChEBI"/>
+        <ref dbkey="15903" dbname="ChEBI"/>
+        <ref dbkey="32398" dbname="ChEBI"/>
+        <ref dbkey="15428" dbname="ChEBI"/>
+        <ref dbkey="17497" dbname="ChEBI"/>
+        <ref dbkey="32365" dbname="ChEBI"/>
+        <ref dbkey="17596" dbname="ChEBI"/>
+        <ref dbkey="16708" dbname="ChEBI"/>
+        <ref dbkey="17191" dbname="ChEBI"/>
+        <ref dbkey="16977" dbname="ChEBI"/>
+        <ref dbkey="16027" dbname="ChEBI"/>
+        <ref dbkey="30805" dbname="ChEBI"/>
+        <ref dbkey="16335" dbname="ChEBI"/>
+        <ref dbkey="53455" dbname="ChEBI"/>
+        <ref dbkey="53455" dbname="ChEBI"/>
+        <ref dbkey="17196" dbname="ChEBI"/>
+        <ref dbkey="15843" dbname="ChEBI"/>
+        <ref dbkey="16857" dbname="ChEBI"/>
+        <ref dbkey="28842" dbname="ChEBI"/>
+        <ref dbkey="16610" dbname="ChEBI"/>
+        <ref dbkey="17115" dbname="ChEBI"/>
+        <ref dbkey="18012" dbname="ChEBI"/>
+        <ref dbkey="17115" dbname="ChEBI"/>
+        <ref dbkey="17113" dbname="ChEBI"/>
+        <ref dbkey="16000" dbname="ChEBI"/>
+        <ref dbkey="16016" dbname="ChEBI"/>
+        <ref dbkey="28878" dbname="ChEBI"/>
+        <ref dbkey="30769" dbname="ChEBI"/>
+        <ref dbkey="36592" dbname="ChEBI"/>
+        <ref dbkey="16113" dbname="ChEBI"/>
+        <ref dbkey="16217" dbname="ChEBI"/>
+        <ref dbkey="28061" dbname="ChEBI"/>
+        <ref dbkey="16199" dbname="ChEBI"/>
+        <ref dbkey="16704" dbname="ChEBI"/>
+        <ref dbkey="17895" dbname="ChEBI"/>
+        <ref dbkey="17895" dbname="ChEBI"/>
+        <ref dbkey="17898" dbname="ChEBI"/>
+        <ref dbkey="18095" dbname="ChEBI"/>
+        <ref dbkey="15729" dbname="ChEBI"/>
+        <ref dbkey="15729" dbname="ChEBI"/>
+        <ref dbkey="28716" dbname="ChEBI"/>
+        <ref dbkey="18183" dbname="ChEBI"/>
+        <ref dbkey="30746" dbname="ChEBI"/>
+        <ref dbkey="17964" dbname="ChEBI"/>
+        <ref dbkey="16227" dbname="ChEBI"/>
+        <ref dbkey="16227" dbname="ChEBI"/>
+        <ref dbkey="16914" dbname="ChEBI"/>
+        <ref dbkey="29019" dbname="ChEBI"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="14-02-28"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Metabolomics</field>
+        <field name="full_dataset_link">http://www.metabolomicsworkbench.org/data/DRCCMetadata.php?Mode=Study&amp;StudyID=ST000025</field>
+        <field name="repository">MetabolomicsWorkbench</field>
+        <field name="data_protocol">GCMS positive ion mode</field>
+        <field name="instrument_platform">Leco Pegasus IV GC x GC-TOF</field>
+        <field name="study_factor">species:Mayfly | Treatment:Mayfly controlX | wing pads:wing pads</field>
+        <field name="study_factor">species:Megalopterans | Treatment:Megalopterans control | wing pads:no wing pads</field>
+        <field name="study_factor">species:Mayfly, Megalopterans, Athorix Diptoa | Treatment:Pooled QC sample | wing pads:no wing pads</field>
+        <field name="study_factor">species:Mayfly | Treatment:Mayfly control | wing pads:no wing pads</field>
+        <field name="study_factor">species:Athorix Diptoa | Treatment:Athorix Diptoa control | wing pads:no wing pads</field>
+        <field name="study_factor">species:Mayfly | Treatment:Mayfly Heat Treated | wing pads:no wing pads</field>
+        <field name="study_factor">species:Mayfly | Treatment:Mayfly control from different study | wing pads:no wing pads</field>
+        <field name="species">Centroptilum triangulifer/Athorix diptoa/Megaloptera</field>
+        <field name="technology_type">mass spectrometry</field>
+        <field name="metabolite_name">malic acid</field>
+        <field name="metabolite_name">maltose 1</field>
+        <field name="metabolite_name">leucine</field>
+        <field name="metabolite_name">linoleic acid</field>
+        <field name="metabolite_name">methylmaleic acid</field>
+        <field name="metabolite_name">mannitol</field>
+        <field name="metabolite_name">melezitose</field>
+        <field name="metabolite_name">oleic acid</field>
+        <field name="metabolite_name">octadecanol</field>
+        <field name="metabolite_name">myristic acid</field>
+        <field name="metabolite_name">myo-inositol</field>
+        <field name="metabolite_name">valine</field>
+        <field name="metabolite_name">uridine</field>
+        <field name="metabolite_name">xanthine</field>
+        <field name="metabolite_name">valine 1TMS</field>
+        <field name="metabolite_name">glucose 4tms</field>
+        <field name="metabolite_name">glucose tms4x</field>
+        <field name="metabolite_name">glyceric acid</field>
+        <field name="metabolite_name">glycine TMS1x</field>
+        <field name="metabolite_name">glycolic acid</field>
+        <field name="metabolite_name">heptadecanoic acid</field>
+        <field name="metabolite_name">hydroxylamine</field>
+        <field name="metabolite_name">inosine</field>
+        <field name="metabolite_name">adenine</field>
+        <field name="metabolite_name"> 2,5-dihydroxypyrazine NIST</field>
+        <field name="metabolite_name">1-monostearin</field>
+        <field name="metabolite_name">arabitol</field>
+        <field name="metabolite_name">isoleucine</field>
+        <field name="metabolite_name">alanine</field>
+        <field name="metabolite_name">adenosine-5-monophosphate</field>
+        <field name="metabolite_name">lauric acid</field>
+        <field name="metabolite_name">adenosine</field>
+        <field name="metabolite_name">lactic acid</field>
+        <field name="metabolite_name">xylose</field>
+        <field name="metabolite_name">xylose</field>
+        <field name="metabolite_name">asparagine minor</field>
+        <field name="metabolite_name">arachidonic acid</field>
+        <field name="metabolite_name">threonine minor</field>
+        <field name="metabolite_name">stearic acid</field>
+        <field name="metabolite_name">spermidine TMS 3x</field>
+        <field name="metabolite_name">serine minor</field>
+        <field name="metabolite_name">fumaric acid</field>
+        <field name="metabolite_name">serine</field>
+        <field name="metabolite_name">erythritol</field>
+        <field name="metabolite_name">ethanolamine</field>
+        <field name="metabolite_name">dihydroxyacetone</field>
+        <field name="metabolite_name">dodecanol</field>
+        <field name="metabolite_name">citric acid</field>
+        <field name="metabolite_name">cystine</field>
+        <field name="metabolite_name">butyrolactam NIST</field>
+        <field name="metabolite_name">cholesterol</field>
+        <field name="metabolite_name">gluconic acid lactone</field>
+        <field name="metabolite_name">galactose</field>
+        <field name="metabolite_name">urea</field>
+        <field name="metabolite_name">uridine</field>
+        <field name="metabolite_name">tyrosine</field>
+        <field name="metabolite_name">tyrosine minor with glucose contaminant ions</field>
+        <field name="metabolite_name">tocopherol alpha-</field>
+        <field name="metabolite_name">trans-4-hydroxyproline</field>
+        <field name="metabolite_name">pelargonic acid</field>
+        <field name="metabolite_name">pantothenic acid</field>
+        <field name="metabolite_name">ornithine 4tms</field>
+        <field name="metabolite_name">ornithine 3tms minor</field>
+        <field name="metabolite_name">palmitoleic acid</field>
+        <field name="metabolite_name">oxoproline</field>
+        <field name="metabolite_name">benzoic acid</field>
+        <field name="metabolite_name">pipecolinic acid</field>
+        <field name="metabolite_name">putrescine</field>
+        <field name="metabolite_name">ribitol</field>
+        <field name="metabolite_name">salicylic acid</field>
+        <field name="metabolite_name">pelargonic acid</field>
+        <field name="pubchem_id">525</field>
+        <field name="pubchem_id">439186</field>
+        <field name="pubchem_id">6106</field>
+        <field name="pubchem_id">5280450</field>
+        <field name="pubchem_id">643798</field>
+        <field name="pubchem_id">6251</field>
+        <field name="pubchem_id">92817</field>
+        <field name="pubchem_id">445639</field>
+        <field name="pubchem_id">8221</field>
+        <field name="pubchem_id">11005</field>
+        <field name="pubchem_id">892</field>
+        <field name="pubchem_id">6287</field>
+        <field name="pubchem_id">6029</field>
+        <field name="pubchem_id">1188</field>
+        <field name="pubchem_id">6287</field>
+        <field name="pubchem_id">64689</field>
+        <field name="pubchem_id">64689</field>
+        <field name="pubchem_id">439194</field>
+        <field name="pubchem_id">750</field>
+        <field name="pubchem_id">757</field>
+        <field name="pubchem_id">10465</field>
+        <field name="pubchem_id">787</field>
+        <field name="pubchem_id">6021</field>
+        <field name="pubchem_id">190</field>
+        <field name="pubchem_id">23368901</field>
+        <field name="pubchem_id">24699</field>
+        <field name="pubchem_id">94154</field>
+        <field name="pubchem_id">6306</field>
+        <field name="pubchem_id">5950</field>
+        <field name="pubchem_id">6083</field>
+        <field name="pubchem_id">3893</field>
+        <field name="pubchem_id">60961</field>
+        <field name="pubchem_id">612</field>
+        <field name="pubchem_id">135191</field>
+        <field name="pubchem_id">135191</field>
+        <field name="pubchem_id">6267</field>
+        <field name="pubchem_id">444899</field>
+        <field name="pubchem_id">6288</field>
+        <field name="pubchem_id">5281</field>
+        <field name="pubchem_id">1102</field>
+        <field name="pubchem_id">5951</field>
+        <field name="pubchem_id">444972</field>
+        <field name="pubchem_id">5951</field>
+        <field name="pubchem_id">222285</field>
+        <field name="pubchem_id">700</field>
+        <field name="pubchem_id">670</field>
+        <field name="pubchem_id">8193</field>
+        <field name="pubchem_id">311</field>
+        <field name="pubchem_id">595</field>
+        <field name="pubchem_id">12025</field>
+        <field name="pubchem_id">5997</field>
+        <field name="pubchem_id">7027</field>
+        <field name="pubchem_id">439357</field>
+        <field name="pubchem_id">1176</field>
+        <field name="pubchem_id">6029</field>
+        <field name="pubchem_id">6057</field>
+        <field name="pubchem_id">6057</field>
+        <field name="pubchem_id">638015</field>
+        <field name="pubchem_id">5810</field>
+        <field name="pubchem_id">10898987</field>
+        <field name="pubchem_id">6613</field>
+        <field name="pubchem_id">6262</field>
+        <field name="pubchem_id">6262</field>
+        <field name="pubchem_id">445638</field>
+        <field name="pubchem_id">7405</field>
+        <field name="pubchem_id">243</field>
+        <field name="pubchem_id">849</field>
+        <field name="pubchem_id">1049</field>
+        <field name="pubchem_id">1049</field>
+        <field name="pubchem_id">338</field>
+        <field name="pubchem_id">8158</field>
+        <field name="submitter">Susan Sumner</field>
+        <field name="submitter_mail">ssumner@rti.org</field>
+        <field name="submitter_affiliation">Systems and Translational Sciences (STS), RTI International</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

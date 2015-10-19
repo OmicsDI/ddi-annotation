@@ -1,0 +1,88 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000860">
+      <name>SILAC-Based Strategy for Proteome-Wide Analysis of Protein-Ligand Binding Interactions (Part 2/2)</name>
+      <description>A quantitative mass spectrometry-based proteomics method for the large-scale thermodynamic analysis of protein-ligand binding interactions.  The methodology utilizes a chemical modification strategy termed, Stability of Proteins from Rates of Oxidation (SPROX), in combination with a Stable Isotope Labeling with Amino Acids in Cell Culture (SILAC) approach to compare the equilibrium folding/unfolding properties of proteins in the absence and presence of target ligands.  The method, which is general with respect to ligand, measures the ligand-induced changes in protein stability associated with protein-ligand binding.  The methodology is demonstrated in a proof-of-principle study in which the well-characterized protein-drug interaction between cyclosporine A and cyclophilin A is analyzed in the context of a yeast cell lysate.  The method is also utilized for the global analysis of adenosine triphosphate (ATP) binding to proteins in the yeast proteome using the non-hydrolyzable ATP analogue, adenylyl imidodiphosphate (AMP-PNP), and the proteins in a yeast cell lysate.</description>
+      <cross_references>
+        <ref dbkey="4932" dbname="TAXONOMY"/>
+        <ref dbkey="24741112" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-04-14"/>
+        <date type="publication" value="2014-07-31"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000860</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Light and heavy cell lysates were prepared according to established SILAC protocols and the test ligand was spiked into one of the cell lysates. Aliquots of each lysate were distributed into a series of denaturant-containing buffers, reacted with hydrogen peroxide under conditions that selectively oxidize exposed methionine residues, and quenched with the addition of excess methionine. The light and heavy samples generated at matching denaturant concentration were combined. Each combined protein sample was either directly submitted to a bottom-up, solution-phase, shotgun proteomics analysis using LC-MS/MS and/or further reacted with cyanogen bromide prior to a gel-based proteomics analysis.  Ultimately, L/H ratios were obtained for the peptides detected at each denaturant concentration, and the denaturant dependence of the L/H ratio’s was examined.</field>
+        <field name="data_protocol">The LC-MS/MS analyses in Solution Experiment 1B, Solution Experiment 2, and Gel Experiment 1 were performed using an LTQ Orbitrap XL mass spectrometer (Thermo-Scientific, Inc, San Jose, CA).Peak lists were extracted from the raw LC-MS/MS data files generated on the Orbitrap system and the data were searched against the 6651 Saccharomyces cerevisiae proteins in the 2013_09 release of the UniProt Knowledgebase downloaded at ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/proteomes/. using Maxquant 1.3.0.5. The following modifications were considered: methyl methanethiosulfonate at cysteine as a fixed modification for Solution Experiments 1B and 2 and carbamidomethylation at cysteines in Gel Experiment 1; SILAC labeling of lysine, and variable (0-1) oxidation of methionine and deamidation of Asparagine and Glutamine (N and Q). The enzyme was set as Lys-C, and up to 2 missed cleavages were permitted for Solution Experiment 1B and Gel Experiment 1 (up to 3 missed cleavages were allowed for Solution Experiment 2). The false discovery rate for peptide and protein identifications was set to 1%, and all other settings were set at the default parameters. As part of the default settings the mass tolerance for precursor ions was 10 ppm and the mass tolerance for fragment ions was 0.5 Da. The search results were exported to Excel for further data analysis as described below.The protein and peptide identifications and L/H (or H/L) ratios obtained from the LC-MS/MS data analyses were filtered to show only those that contained lysine residues.  In the ATP-binding study, identified peptides (and corresponding protein identifications) with L/H (or H/L) ratios ≥0 were used in subsequent data analysis steps. If multiple L/H ratio’s were calculated for a given peptide sequence and charge state at a specific denaturant concentration (e.g., both the light and heavy version of a peptide and charge state was identified in the LC-MS/MS analysis and/or a peptide and charge state was identified in multiple product ion scans) they were averaged to give a single L/H ratio for the peptide and charge state at that denaturant concentration. Ultimately, these averaged L/H ratios were used to generate SILAC-SPROX data sets. In the data analysis only peptides that were identified in multiple runs (i.e., in samples from multiple denaturant concentrations) were considered.  In ATP binding experiments, peptides that were present in 6 or more denaturant containing buffers were included in the assay except in the cases of Solution Experiment 1A and Solution Experiment 2, where peptides that were present in 4 and 8 (respectively) or more denaturant containing buffers were included in the assay. Using Microsoft Excel, peptides were filtered to identify those with significantly altered L/H ratios at 2 or more consecutive denaturant concentrations. Significantly altered L/H (or H/L) ratios in this work were taken to be those that changed by &gt;1.7-fold from the baseline value observed for each peptide. The selection of this 1.7-fold cut-off value was based on a global analysis of the L/H (or in some experiments H/L) ratios recorded in the ATP binding experiments.</field>
+        <field name="instrument_platform">LTQ Orbitrap</field>
+        <field name="species">Saccharomyces cerevisiae (Baker's yeast)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="modification">6x(13)C labeled residue</field>
+        <field name="modification">methylthiolated residue</field>
+        <field name="modification">deamidated residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">ATP</field>
+        <field name="submitter_keywords"> Cyclosporine A</field>
+        <field name="submitter_keywords"> Shot-gun proteomics</field>
+        <field name="submitter_keywords">Yeast</field>
+        <field name="quantification_method">SILAC</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Tran DT, Adhikari J, Fitzgerald MC. Stable Isotope Labeling with Amino Acids in Cell Culture (SILAC)-Based Strategy for Proteome-Wide Thermodynamic Analysis of Protein-Ligand Binding Interactions. Mol Cell Proteomics. 2014 Jul;13(7):1800-13</field>
+        <field name="submitter">Jagat Adhikari</field>
+        <field name="submitter_mail">ja117@duke.edu</field>
+        <field name="submitter_affiliation">Duke University</field>
+        <field name="labhead">Michael C. Fitzgerald</field>
+        <field name="labhead_mail">michael.c.fitzgerald@duke.edu</field>
+        <field name="labhead_affiliation">Chemistry Department, Duke University</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000860/DT071012_071212_1a.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000860/DT071012_071212_2a.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000860/DT071012_071212_3a.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000860/DT071012_071212_4a.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000860/DT071012_071212_5a.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000860/DT071012_071212_6a.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000860/DT071012_071212_7a.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000860/DT071012_071212_8a.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000860/SILACSPROXATP071212Maxquant8sample.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000860/DT031313_031813_0M.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000860/DT031313_031813_1_3M.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000860/DT031313_031813_2_0M.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000860/DT031313_031813_2_7M.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000860/DT031313_031813_3_3M.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000860/DT031313_031813_3_7M.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000860/DT031313_031813_4_4M.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000860/DT031313_031813_5_3M.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000860/DT031313_031813_6_5M.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000860/DT031313_031813_8_0M.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000860/DT031313_031813_Control.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000860/SILACSPROXSol031813.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000860/txt_31813.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000860/txt_071212.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000860/DT100512_100512_a1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000860/DT100512_100512_a2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000860/DT100512_100512_a3.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000860/DT100512_100512_a4.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000860/DT100512_100512_a5.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000860/DT100512_100512_a6.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000860/DT100512_100512_a7.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000860/DT100512_100512_a8.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000860/ATP100512MaxquantALLtxt.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000860/SILACSPROXCnBr_27M_6_12_001.d.zip</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

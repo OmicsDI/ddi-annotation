@@ -1,0 +1,211 @@
+<database>
+  <name>MetabolomicsWorkbench</name>
+  <description>The Metabolomics Workbench will serve as a national and international repository for metabolomics data and metadata and will provide analysis tools and access to metabolite standards, protocols, tutorials, training, and more.</description>
+  <release>1.0</release>
+  <release_date>15-05-20</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="ST000085">
+      <name>Salmonella Modulates Metabolism during Growth under Conditions that Induce Expression of Virulence Genes</name>
+      <description>Salmonella enterica serovar Typhimurium (S. Typhimurium) is a facultative pathogen that uses complex mechanisms to invade and proliferate within mammalian host cells. To investigate possible contributions of metabolic processes to virulence in S. Typhimurium grown under conditions known to induce expression of virulence genes, we used a metabolomics-driven systems biology approach coupled with genome scale modeling. First, we identified distinct metabolite profiles associated with bacteria grown in either rich or virulence-inducing media and report the most comprehensive coverage of the S. Typhimurium metabolome to date. Second, we applied an omics-informed genome scale modeling analysis of the functional consequences of adaptive alterations in S. Typhimurium metabolism during growth under our conditions. Modeling efforts highlighted a decreased cellular capability to both produce and utilize intracellular amino acids during stationary phase culture in virulence conditions, despite significant abundance increases for these molecules as observed by our metabolomics measurements. Furthermore, analyses of omics data in the context of the metabolic model indicated rewiring of the metabolic network to support pathways associated with virulence. For example, cellular concentrations of polyamines were perturbed, as well as the predicted capacity for secretion and uptake.</description>
+      <cross_references>
+        <ref dbkey="90371" dbname="TAXONOMY"/>
+        <ref dbkey="15603" dbname="ChEBI"/>
+        <ref dbkey="18019" dbname="ChEBI"/>
+        <ref dbkey="43433" dbname="ChEBI"/>
+        <ref dbkey="422" dbname="ChEBI"/>
+        <ref dbkey="17203" dbname="ChEBI"/>
+        <ref dbkey="16643" dbname="ChEBI"/>
+        <ref dbkey="16643" dbname="ChEBI"/>
+        <ref dbkey="16414" dbname="ChEBI"/>
+        <ref dbkey="17895" dbname="ChEBI"/>
+        <ref dbkey="16857" dbname="ChEBI"/>
+        <ref dbkey="17115" dbname="ChEBI"/>
+        <ref dbkey="15428" dbname="ChEBI"/>
+        <ref dbkey="17497" dbname="ChEBI"/>
+        <ref dbkey="17497" dbname="ChEBI"/>
+        <ref dbkey="16977" dbname="ChEBI"/>
+        <ref dbkey="17053" dbname="ChEBI"/>
+        <ref dbkey="17561" dbname="ChEBI"/>
+        <ref dbkey="15728" dbname="ChEBI"/>
+        <ref dbkey="23673" dbname="ChEBI"/>
+        <ref dbkey="15725" dbname="ChEBI"/>
+        <ref dbkey="16015" dbname="ChEBI"/>
+        <ref dbkey="28140" dbname="ChEBI"/>
+        <ref dbkey="15971" dbname="ChEBI"/>
+        <ref dbkey="17385" dbname="ChEBI"/>
+        <ref dbkey="15971" dbname="ChEBI"/>
+        <ref dbkey="15978" dbname="ChEBI"/>
+        <ref dbkey="15978" dbname="ChEBI"/>
+        <ref dbkey="15978" dbname="ChEBI"/>
+        <ref dbkey="17148" dbname="ChEBI"/>
+        <ref dbkey="30796" dbname="ChEBI"/>
+        <ref dbkey="17148" dbname="ChEBI"/>
+        <ref dbkey="5445" dbname="ChEBI"/>
+        <ref dbkey="17719" dbname="ChEBI"/>
+        <ref dbkey="17197" dbname="ChEBI"/>
+        <ref dbkey="16349" dbname="ChEBI"/>
+        <ref dbkey="15918" dbname="ChEBI"/>
+        <ref dbkey="15584" dbname="ChEBI"/>
+        <ref dbkey="16349" dbname="ChEBI"/>
+        <ref dbkey="27476" dbname="ChEBI"/>
+        <ref dbkey="15760" dbname="ChEBI"/>
+        <ref dbkey="17821" dbname="ChEBI"/>
+        <ref dbkey="30794" dbname="ChEBI"/>
+        <ref dbkey="30794" dbname="ChEBI"/>
+        <ref dbkey="15940" dbname="ChEBI"/>
+        <ref dbkey="28716" dbname="ChEBI"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="14-06-25"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Metabolomics</field>
+        <field name="full_dataset_link">http://www.metabolomicsworkbench.org/data/DRCCMetadata.php?Mode=Study&amp;StudyID=ST000085</field>
+        <field name="repository">MetabolomicsWorkbench</field>
+        <field name="data_protocol">GCMS positive ion mode</field>
+        <field name="instrument_platform">Agilent 7890A GC/Agilent MSD 5975C MS</field>
+        <field name="study_factor">Growth Conditions:Luria-Bertani (LB) medium | Time Harvested:&gt;2.5hour</field>
+        <field name="study_factor">Growth Conditions:Low pH, low magnesium, low iron (LPM) medium | Time Harvested:20hour</field>
+        <field name="study_factor">Growth Conditions:Low pH, low magnesium, low iron (LPM) medium | Time Harvested:4hour</field>
+        <field name="species">Salmonella typhimurium</field>
+        <field name="technology_type">mass spectrometry</field>
+        <field name="metabolite_name">L-leucine</field>
+        <field name="metabolite_name">L-lysine</field>
+        <field name="metabolite_name">l-isoleucine</field>
+        <field name="metabolite_name">L-Lactic acid</field>
+        <field name="metabolite_name">L-proline</field>
+        <field name="metabolite_name">L-methionine</field>
+        <field name="metabolite_name">L-ornithine</field>
+        <field name="metabolite_name">L-valine</field>
+        <field name="metabolite_name">L-tyrosine</field>
+        <field name="metabolite_name">L-threonine</field>
+        <field name="metabolite_name">L-serine</field>
+        <field name="metabolite_name">xanthine</field>
+        <field name="metabolite_name">glyceric acid</field>
+        <field name="metabolite_name">glycerol</field>
+        <field name="metabolite_name">glycine</field>
+        <field name="metabolite_name">glycolic acid</field>
+        <field name="metabolite_name">hypoxanthine</field>
+        <field name="metabolite_name">L-alanine</field>
+        <field name="metabolite_name">L-aspartic acid</field>
+        <field name="metabolite_name">L-cysteine</field>
+        <field name="metabolite_name">4-guanidinobutyric acid</field>
+        <field name="metabolite_name">2,6-diaminopimelic acid</field>
+        <field name="metabolite_name">1,3-diaminopropane</field>
+        <field name="metabolite_name">adenosine</field>
+        <field name="metabolite_name">L-glutamic acid</field>
+        <field name="metabolite_name">adenine</field>
+        <field name="metabolite_name">6-deoxy-D-glucose</field>
+        <field name="metabolite_name">L-homoserine</field>
+        <field name="metabolite_name">4-hydroxyphenyllactic acid</field>
+        <field name="metabolite_name">L-histidine</field>
+        <field name="metabolite_name">alpha-D-glucose</field>
+        <field name="metabolite_name">adenosine-5-monophosphate</field>
+        <field name="metabolite_name">stearic acid</field>
+        <field name="metabolite_name">spermidine</field>
+        <field name="metabolite_name">sn-Glycerol 3-phosphate</field>
+        <field name="metabolite_name">pyruvic acid</field>
+        <field name="metabolite_name">D-malic acid</field>
+        <field name="metabolite_name">putrescine</field>
+        <field name="metabolite_name">diphosphoric acid</field>
+        <field name="metabolite_name">DL-glyceraldehyde</field>
+        <field name="metabolite_name">D-glucose-6-phosphate</field>
+        <field name="metabolite_name">DIHYDROXYACETONE PHOSPHATE</field>
+        <field name="metabolite_name">cytosine</field>
+        <field name="metabolite_name">deoxycytidylic acid</field>
+        <field name="metabolite_name">citramalic acid</field>
+        <field name="metabolite_name">citrulline</field>
+        <field name="metabolite_name">fructose</field>
+        <field name="metabolite_name">D-ribose</field>
+        <field name="metabolite_name">urea</field>
+        <field name="metabolite_name">urocanic acid</field>
+        <field name="metabolite_name">tyramine</field>
+        <field name="metabolite_name">uracil</field>
+        <field name="metabolite_name">succinic acid</field>
+        <field name="metabolite_name">thymine</field>
+        <field name="metabolite_name">palmitic acid</field>
+        <field name="metabolite_name">oleic acid</field>
+        <field name="metabolite_name">myristic acid</field>
+        <field name="metabolite_name">malonic acid</field>
+        <field name="metabolite_name">nicotinic acid</field>
+        <field name="metabolite_name">N-Acetyl-L-glutamic acid</field>
+        <field name="metabolite_name">beta- alanine</field>
+        <field name="metabolite_name">pantothenic acid</field>
+        <field name="metabolite_name">phosphoenolpyruvic acid</field>
+        <field name="metabolite_name">phosphoric acid</field>
+        <field name="metabolite_name">porphine</field>
+        <field name="metabolite_name">palmitoleic acid</field>
+        <field name="pubchem_id">6106</field>
+        <field name="pubchem_id">5962</field>
+        <field name="pubchem_id">99288</field>
+        <field name="pubchem_id">107689</field>
+        <field name="pubchem_id">145742</field>
+        <field name="pubchem_id">6137</field>
+        <field name="pubchem_id">6137</field>
+        <field name="pubchem_id">6287</field>
+        <field name="pubchem_id">6057</field>
+        <field name="pubchem_id">6288</field>
+        <field name="pubchem_id">5951</field>
+        <field name="pubchem_id">12212752</field>
+        <field name="pubchem_id">752</field>
+        <field name="pubchem_id">11126194</field>
+        <field name="pubchem_id">750</field>
+        <field name="pubchem_id">757</field>
+        <field name="pubchem_id">757</field>
+        <field name="pubchem_id">5950</field>
+        <field name="pubchem_id">5960</field>
+        <field name="pubchem_id">5862</field>
+        <field name="pubchem_id">500</field>
+        <field name="pubchem_id">865</field>
+        <field name="pubchem_id">428</field>
+        <field name="pubchem_id">62648</field>
+        <field name="pubchem_id">33032</field>
+        <field name="pubchem_id">62648</field>
+        <field name="pubchem_id">93579</field>
+        <field name="pubchem_id">6274</field>
+        <field name="pubchem_id">9378</field>
+        <field name="pubchem_id">6274</field>
+        <field name="pubchem_id">62648</field>
+        <field name="pubchem_id">62648</field>
+        <field name="pubchem_id">439162</field>
+        <field name="pubchem_id">439162</field>
+        <field name="pubchem_id">439162</field>
+        <field name="pubchem_id">1045</field>
+        <field name="pubchem_id">92824</field>
+        <field name="pubchem_id">1045</field>
+        <field name="pubchem_id">21961011</field>
+        <field name="pubchem_id">751</field>
+        <field name="pubchem_id">439427</field>
+        <field name="pubchem_id">668</field>
+        <field name="pubchem_id">9750</field>
+        <field name="pubchem_id">13945</field>
+        <field name="pubchem_id">1081</field>
+        <field name="pubchem_id">9750</field>
+        <field name="pubchem_id">5984</field>
+        <field name="pubchem_id">441481</field>
+        <field name="pubchem_id">12212752</field>
+        <field name="pubchem_id">12212752</field>
+        <field name="pubchem_id">5610</field>
+        <field name="pubchem_id">12212752</field>
+        <field name="pubchem_id">8036</field>
+        <field name="pubchem_id">1135</field>
+        <field name="pubchem_id">5326436</field>
+        <field name="pubchem_id">965</field>
+        <field name="pubchem_id">867</field>
+        <field name="pubchem_id">867</field>
+        <field name="pubchem_id">938</field>
+        <field name="pubchem_id">185</field>
+        <field name="pubchem_id">62648</field>
+        <field name="pubchem_id">11777341</field>
+        <field name="pubchem_id">11754241</field>
+        <field name="pubchem_id">1004</field>
+        <field name="pubchem_id">5481287</field>
+        <field name="pubchem_id">5282745</field>
+        <field name="submitter">Thomas Metz</field>
+        <field name="submitter_mail">thomas.metz@pnnl.gov</field>
+        <field name="submitter_affiliation">Biological Separation and Mass Spectrometry, Pacific Northwest National Laboratory</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

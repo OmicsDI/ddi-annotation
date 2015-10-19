@@ -1,0 +1,79 @@
+<database>
+  <name>MetabolomicsWorkbench</name>
+  <description>The Metabolomics Workbench will serve as a national and international repository for metabolomics data and metadata and will provide analysis tools and access to metabolite standards, protocols, tutorials, training, and more.</description>
+  <release>1.0</release>
+  <release_date>15-05-20</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="ST000149">
+      <name>High Insulin Combined With Essential Amino Acids Stimulates Skeletal Muscle Mitochondrial Protein Synthesis While Decreasing Insulin Sensitivity in Healthy Humans</name>
+      <description>Thirty participants were randomized to 3 groups of 10 each with each participant studied twice. Study groups comprised (1) low and high insulin, (2) low insulin with and without EAAs, and (3) high insulin with and without EAAs.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="15-03-05"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Metabolomics</field>
+        <field name="full_dataset_link">http://www.metabolomicsworkbench.org/data/DRCCMetadata.php?Mode=Study&amp;StudyID=ST000149</field>
+        <field name="repository">MetabolomicsWorkbench</field>
+        <field name="data_protocol">ESI positive ion mode</field>
+        <field name="instrument_platform">API 5000 triple quadrupole mass spectrometer</field>
+        <field name="study_factor">Sample Group:High Insulin</field>
+        <field name="study_factor">Sample Group:Low Ins +EAA</field>
+        <field name="study_factor">Sample Group:High Insulin + EAA</field>
+        <field name="study_factor">Sample Group:Low Ins+ Saline</field>
+        <field name="study_factor">Sample Group:Low Insulin</field>
+        <field name="study_factor">Sample Group:High Insulin+Saline</field>
+        <field name="species">Homo sapiens</field>
+        <field name="technology_type">mass spectrometry</field>
+        <field name="metabolite_name">gamma-Amino-N-butyric-acid</field>
+        <field name="metabolite_name">Proline</field>
+        <field name="metabolite_name">Cystine</field>
+        <field name="metabolite_name">Sarcosine</field>
+        <field name="metabolite_name">Ethanolamine</field>
+        <field name="metabolite_name">Phenylalanine</field>
+        <field name="metabolite_name">Cystathionine 1</field>
+        <field name="metabolite_name">Phosphoethanolamine</field>
+        <field name="metabolite_name">Cystathionine 2</field>
+        <field name="metabolite_name">Threonine</field>
+        <field name="metabolite_name">Carnosine</field>
+        <field name="metabolite_name">Citrulline</field>
+        <field name="metabolite_name">Serine</field>
+        <field name="metabolite_name">beta-Alanine</field>
+        <field name="metabolite_name">Taurine</field>
+        <field name="metabolite_name">beta-Aminoisobutyric-acid</field>
+        <field name="metabolite_name">Glutamine</field>
+        <field name="metabolite_name">Glutamic acid</field>
+        <field name="metabolite_name">Valine</field>
+        <field name="metabolite_name">Tyrosine</field>
+        <field name="metabolite_name">Tryptophan</field>
+        <field name="metabolite_name">Glycine</field>
+        <field name="metabolite_name">Histidine</field>
+        <field name="metabolite_name">Homocystine</field>
+        <field name="metabolite_name">Hydroxylysine 1</field>
+        <field name="metabolite_name">Hydroxylysine 2</field>
+        <field name="metabolite_name">Hydroxyproline</field>
+        <field name="metabolite_name">Isoleucine</field>
+        <field name="metabolite_name">Leucine</field>
+        <field name="metabolite_name">Alanine</field>
+        <field name="metabolite_name">3-Methylhistidine</field>
+        <field name="metabolite_name">Aspartic Acid</field>
+        <field name="metabolite_name">1-Methylhistidine</field>
+        <field name="metabolite_name">Lysine</field>
+        <field name="metabolite_name">Anserine</field>
+        <field name="metabolite_name">alpha-Amino-N-butyric-acid</field>
+        <field name="metabolite_name">Ornithine</field>
+        <field name="metabolite_name">alpha-Aminoadipic-acid</field>
+        <field name="metabolite_name">Methionine</field>
+        <field name="metabolite_name">allo-Isoleucine</field>
+        <field name="metabolite_name">Asparagine</field>
+        <field name="metabolite_name">Arginine</field>
+        <field name="submitter">Sreekumaran Nair</field>
+        <field name="submitter_mail">Dasari.Surendra@mayo.edu</field>
+        <field name="submitter_affiliation">Endocrinology, Mayo Clinic</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

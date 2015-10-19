@@ -1,0 +1,117 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001647">
+      <name>Anopheles stephensi salivary gland LC-MS/MS</name>
+      <description>Salivary gland proteins of Anopheles mosquitoes offer attractive targets to understand interactions with sporozoites, blood feeding behavior, homeostasis and immunological evaluation of malaria vectors and parasite interactions. To date limited studies have been carried out to elucidate salivary proteins of An. stephensi salivary glands. The aim of the present study was to provide detailed analytical attributives of functional salivary gland proteins of urban malaria vector An. stephensi. A proteomic approach combining one-dimensional electrophoresis (1DE), ion trap liquid chromatography mass spectrometry (LC/MS/MS) and computational bioinformatic analysis was adopted to provide the first direct insight into identification and functional characterization of known salivary proteins and novel salivary proteins of An. stephensi. Computational studies by online servers namely, Mascot and OMSSA algorithms identified a total of 36 known salivary proteins and 123 novel proteins analysed by LC/MS/MS. This first report describes a baseline proteomic catalogue of 159 salivary proteins belonging to various categories of signal transduction, regulation of blood coagulation cascade, and various immune and energy pathways of An. stephensi sialo-transcriptome by mass spectrometry. Our results may serve as basis to provide a putative functional role of proteins into concept of blood feeding, biting behavior and other aspects of vector-parasite host interactions for parasite development in anopheline mosquitoes.</description>
+      <cross_references>
+        <ref dbkey="30069" dbname="TAXONOMY"/>
+        <ref dbkey="K7IT22" dbname="uniprot"/>
+        <ref dbkey="R7UKF1" dbname="uniprot"/>
+        <ref dbkey="Q178Y4" dbname="uniprot"/>
+        <ref dbkey="Q698K6" dbname="uniprot"/>
+        <ref dbkey="B0KZJ4" dbname="uniprot"/>
+        <ref dbkey="E9FZS9" dbname="uniprot"/>
+        <ref dbkey="B0X3L3" dbname="uniprot"/>
+        <ref dbkey="Q7YT37" dbname="uniprot"/>
+        <ref dbkey="W8C6L4" dbname="uniprot"/>
+        <ref dbkey="E1FII6" dbname="uniprot"/>
+        <ref dbkey="Q5PXZ1" dbname="uniprot"/>
+        <ref dbkey="Q86M95" dbname="uniprot"/>
+        <ref dbkey="A0A026VUB2" dbname="uniprot"/>
+        <ref dbkey="N6U2M8" dbname="uniprot"/>
+        <ref dbkey="Q380N3" dbname="uniprot"/>
+        <ref dbkey="Q86M90" dbname="uniprot"/>
+        <ref dbkey="F5HM00" dbname="uniprot"/>
+        <ref dbkey="E1G448" dbname="uniprot"/>
+        <ref dbkey="R4WRD8" dbname="uniprot"/>
+        <ref dbkey="Q7YT46" dbname="uniprot"/>
+        <ref dbkey="E9GCW7" dbname="uniprot"/>
+        <ref dbkey="B3RSR1" dbname="uniprot"/>
+        <ref dbkey="O96764" dbname="uniprot"/>
+        <ref dbkey="Q06DJ5" dbname="uniprot"/>
+        <ref dbkey="V4CQU1" dbname="uniprot"/>
+        <ref dbkey="Q25004" dbname="uniprot"/>
+        <ref dbkey="Q7PKX8" dbname="uniprot"/>
+        <ref dbkey="Q7QCD5" dbname="uniprot"/>
+        <ref dbkey="E9J1V9" dbname="uniprot"/>
+        <ref dbkey="F5HMU6" dbname="uniprot"/>
+        <ref dbkey="G9BQS8" dbname="uniprot"/>
+        <ref dbkey="E2BZ84" dbname="uniprot"/>
+        <ref dbkey="Q06DI7" dbname="uniprot"/>
+        <ref dbkey="Q1HPQ0" dbname="uniprot"/>
+        <ref dbkey="Q95NY5" dbname="uniprot"/>
+        <ref dbkey="Q17H74" dbname="uniprot"/>
+        <ref dbkey="E9HEB1" dbname="uniprot"/>
+        <ref dbkey="G6DTJ2" dbname="uniprot"/>
+        <ref dbkey="A7USH0" dbname="uniprot"/>
+        <ref dbkey="V3ZZ74" dbname="uniprot"/>
+        <ref dbkey="K4NUR6" dbname="uniprot"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2015-01-05"/>
+        <date type="publication" value="2015-01-08"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001647</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Mosquitoes   Anopheles stephensi mosquitoes reared in our insectary (National Institute of Malaria Research, India) were used in this study. 3-4 days old sugar fed mosquitoes were used in the experiments and were maintained and reared under identical standard conditions at 27°C ± 2 °C with 70 % ± 10 % relative humidity and a photoperiod of 12:12 (light/dark) hours. Adult mosquitoes were maintained on a 10% sucrose solution.   Dissection of salivary glands  Anopheles stephensi salivary glands were dissected on slide using fine needles under a stereomicroscope at 4X magnification using phosphate-buffered saline (PBS) and were pooled. After dissection the tissue were immediately placed in a PBS buffer (100 µl) with protease inhibitors (Complete, Roche Diagnostics, Germany) and stored at -80 °C until use.  Salivary glands extract preparation  A total of 100 pairs of salivary glands of female An. stephensi were used to prepare salivary gland extract (SGEs). Dissected salivary glands (100 pairs) in PBS were sonicated on ice consists of three pulses for 20 sec. Afterward the suspension was centrifuged for 10 min at 5000 rpm at 4°C to remove cell debris. The extracted supernatant was collected and stored at -80°C for further analysis. Protein estimation was carried out by Lowry’s method [12] and analyzed by bovine serum albumin BSA standard curve. The SGEs was stored for in gel trypsin digestion for further analysis.  Sample analysis  1D gel electrophoresis (SDS-PAGE) SGE sample were first fractionated on SDS-PAGE for separation. Briefly, 50-75 µg of SGE sample was dissolved in sample buffer (0.625 M Tris HCl, 10% SDS, Glycerol, distilled water) containing β-mercaptoethanol (10% vol/vol) and heated at 95°C for 5 min. 30 µl sample was then loaded onto a acrylamide gel (3% stacking gel and 10% resolving gel) and subjected to electrophoresis on a Bio-Rad apparatus (Biorad, USA). Protein molecular weight markers (Genei protein range marker, Bangalore Genei) were also run on the gel. The gel was silver stained according to the manufacturer’s protocol (GBiosciences). Stained gel was then sliced into different bands and these gel bands were individually subjected to digestion with proteomic grade trypsin (Roche diagnostics, USA).                                                                                                                    In-gel Protein digestion before identification by LC/MS/MS  Proteins were reduced, alkylated with iodoacetamide, and digested with trypsin overnight at 37 0C. Briefly, the excised gel slices were subjected to reduction and were dried in a vacuum centrifuge. DTT (10 mM) in ammonium bicarbonate (100 mM) was added to gel pieces and proteins were reduced for 1 hour at 56 0C. After cooling  to room temperature reduced proteins were alkylated with IAA (55 mM) in ammonium bicarbonate (100 mM) for 45 min at 25 0C. After incubation in the dark with occasional vortexing the gel pieces were washed with 50-100 μl of ammonium bicarbonate (100 mM) for 10 min, dehydrated by addition of acetonitrile, swelled by rehydration in ammonium bicarbonate (100 mM) and shrunk again by addition of the same volume of acetonitrile. After removal of the liquid phase, the gel pieces were completely dried in a vacuum centrifuge. Gel slices were then swollen in a digestion buffer containing ammonium bicarbonate (50 mM), CaCl2 (5 mM) and trypsin solution (12.5 ng/μl) (ratio 1:100) in an ice cold bath. The supernatant was removed after 45 mins and replaced with 5-10 μl of the same buffer, but without trypsin, to keep the gel pieces wet during enzymatic cleavage (37 0C, overnight). Peptides were extracted by one change of ammonium bicarbonate (20 mM) and three changes of 5% formic acid in acetonitrile (50%) (20 min for each change) at room temperature and dried down. This peptide mixture was then stored for analysis by LC/MS/MS.  Instrumentation and analysis LC/MS/MS  In- gel digested peptides were analyzed by nano LC-ESI-QTOF-MS/MS on a Bruker micrOTOF-Q II system. For LC-MS/MS analysis 15 µl of each sample was injected. Peptides were first trapped and pre concentration on a C-18 pre column (Dionex) at 30 µl flow for 5 min and later eluted on the separation column with a flow of 220 nl /min (Column dimensions were I.D. 75 µm, length 15 cm, PepMap C18, 3 µm, 100 Å). Solvents used for elution of peptides were solvent A: Water, ACN (1.0%), formic acid (0.1%)  and solvent B: ACN, formic acid (0.1%). All samples were measured in “auto” MS/MS mode, positive ion mode on the Bruker nano-spray source with a Capillary voltage: 1,500 Volt, Dry Gas Flow: 6.0 l/min, Dry Temperature: 130°C, 1 MS followed by 5 MS/MS of the most intense ions, Total cycle time of 4.4 – 8.8 sec, m/z 400 – 1,400 taken as pre-cursor ions for MS/MS, active exclusion after 2 spectra for 0.5 min and threshold for MS/MS was set to 1,000.</field>
+        <field name="data_protocol">Database search  MASCOT server: LC/MS/MS data were analyzed using Bruker Daltonics ProteinScape database system. Raw data were converted into MGF format and database searches were performed on a MASCOT server (Mascot 2.2, MS/MS Ion Search) using fixed modification (none), variable modification carbamidomethyl (Cys) and Methionine oxidation for each protein band samples (16 digested samples). Parameters used were: trypsin as an enzyme, max Missed Cleavages: 1, Peptide Mass Tolerance: ± 0.05 Da or 10 ppm, Fragment Mass Tolerance: ± 0.05 Da, data format: mascot generic, Instrument type: ESI-QUAD-TOF and database used were SwissProt and NCBInr. Searches were made against Anopheles and other mosquito species. All searches were performed as decoy searches; a minimum score of 30 for at least one peptide was required for proteins to be reported. All the protein sequences were compared against the non-redundant database for homology searching through a BLASTP search (http://www.ncbi.nlm.nih.gov/BLASTP/) and Swiss Prot. Along with that, protein sequences were also searched against data of An. stephensi peptides present in VectorBase (www.vectorbase.org/organisms/anopheles-stephensi) All identifications were manually validated and the proteins were selected and validated on basis of MOWSE scores, peptides matches and % sequence coverage.   Among all identified proteins by LC/MS/MS, further conserved domains were searched by using NCBI domain programs (www.ncbi.nlm.nih.gov/Structure/cdd/wrpsb.cgi), Interproscan analysis and also predicted by SMART programme (http://smart.embl-heidelberg.de). Signal peptides were also identified at the N- terminus of all identified proteins with the help of SignalP 4.1 (http://www.cbs.dtu.dk/services/SignalP) which shows the indicative of secretion.</field>
+        <field name="instrument_platform">ultraflex</field>
+        <field name="species">Anopheles stephensi (Asian malaria mosquito)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">salivary gland</field>
+        <field name="modification">Oxidation</field>
+        <field name="modification">Carbamidomethyl</field>
+        <field name="technology_type">Gel-based experiment</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="curator_keywords">Biomedical</field>
+        <field name="submitter_keywords">Anopheles</field>
+        <field name="submitter_keywords"> salivary gland </field>
+        <field name="submitter_keywords"> LC-MS/MS</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">COMPLETE</field>
+        <field name="software">Mascot Server 2.5.1</field>
+        <field name="software">Mascot Parser 2.5.2.0</field>
+        <field name="doi">10.6019/PXD001647</field>
+        <field name="submitter">sonam vijay</field>
+        <field name="submitter_mail">sonam.vijay@gmail.com</field>
+        <field name="submitter_affiliation">National Institute of Malaria Research</field>
+        <field name="labhead">Dr. Arun Sharma</field>
+        <field name="labhead_mail">arushar@gmail.com</field>
+        <field name="labhead_affiliation">Protein Biochemistry and Structural Biology Laboratory,  National Institute of Malaria Research (ICMR),  New Delhi, INDIA</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001647/FTgpSruTO.mzid.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001647/Sample9_5086.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001647/analysis_5086.baf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001647/FTgpSruTR.mzid.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001647/Sample10_5087.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001647/analysis_5087.baf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001647/FTgpSruOE.mzid.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001647/Sample11_5088.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001647/analysis_5088.baf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001647/FTgpSruOm.mzid.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001647/Sample12_5089.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001647/analysis_5089.baf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001647/FTgpSruwR.mzid.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001647/Sample13_5090.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001647/analysis_5090.baf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001647/FTgpSruaR.mzid.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001647/Sample14_5091.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001647/analysis_5091.baf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001647/FTgpSrunS.mzid.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001647/Sample15_5092.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001647/analysis_5092.baf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001647/FTgpSrune.mzid.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001647/Sample16_5093.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001647/analysis_5093.baf</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

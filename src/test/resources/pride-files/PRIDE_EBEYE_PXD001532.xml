@@ -1,0 +1,106 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-07-29</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001532">
+      <name>Quantitative Analysis of the erythrocyte membrane proteins in polycythemia vera patients treated with hydroxycarbamide</name>
+      <description>Polycythemia vera (PV) is a myeloproliferative disorder arising in pluripotent stem cells that causes an abnormal erythrocyte mass. More than 90% of PV patients have a mutation in JAK2 protein that is closely associated with the erythrocyte membrane. We report findings on quantitative analysis of the erythrocyte membrane proteins differentially regulated in PV patients treated with hydroxycarbamide.&lt;/br&gt;Kottahachchi et al., EuPA Open Proteomics 7, 43-53&lt;/br&gt;Quantitative analysis of the erythrocyte membrane proteins in polycythemia vera patients treated with hydroxycarbamide&lt;/br&gt;DOI:10.1016/j.euprot.2015.04.001&lt;/br&gt;&lt;a href="http://www.sciencedirect.com/science/article/pii/S2212968515000100"&gt;http://www.sciencedirect.com/science/article/pii/S2212968515000100&lt;/a&gt; </description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-11-24"/>
+        <date type="publication" value="2015-05-11"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001532</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Blood samples were obtained from five PV patients with the JAK2 V617F mutation  (P1-P5) and five healthy volunteers (N1-N5). All 5 patients were treated with  hydroxycarbamide and low dose aspirin for over 6 months and had also been  subjected to multiple therapeutic venesections. Erythrocyte membrane fractions  were isolated by osmotic lysis of erythrocytes, followed by high speed  centrifugation. The isolated membranes were solubilized by Triton X-100. The  erythrocyte membrane proteins were separated by SDS-PAGE and silver stained,  followed by in-gel digestion with trypsin. The in-gel digests were analyzed by  LC-MS/MS using a QSTAR Elite mass spectrometer (Applied Biosystems/MDS Sciex).  Also, the erythrocyte membrane proteins were in-solution digested, followed by  detergent removal and desalting. The in-solution digests were analyzed by LC- MS/MS using a Q Exactive mass spectrometer (Thermo Fisher Scientific).</field>
+        <field name="data_protocol">Database searches of QSTAR data were performed by Mascot (version 2.2) (Matrix Science)  search engine against Swiss-Prot database (2011_08) using a Homo sapiens taxonomy filter  (20,245 sequences). Carbamidomethylation of cysteines was set as a fixed modification and  oxidation of methionines was set as a variable modification. One missed trypsin cleavage  site was allowed. Mass tolerance for MS and MS/MS was set to 0.3 Da, and only proteins  identified with minimum two unique peptides were selected. In case of Q Exactive data,  Mascot search was preformed via Proteome Discoverer (version 1.3, Thermo Fisher Scientific)  with the same parameters but mass tolerances for MS and MS/MS were set to 10 ppm and 0.02  Da, respectively. Scaffold software (version 3.3.2, Proteome software) was used to provide  Gene Ontology annotations to proteins, which were further checked based on Uniprot data.</field>
+        <field name="instrument_platform">QSTAR</field>
+        <field name="instrument_platform">Q Exactive</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">erythrocyte</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Gel-based experiment</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biomedical</field>
+        <field name="submitter_keywords">Erythrocyte membrane associated proteins</field>
+        <field name="submitter_keywords"> Polycythemia vera</field>
+        <field name="submitter_keywords"> JAK2 V617F</field>
+        <field name="submitter_keywords"> LC-MS/MS</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="submitter">Susumu Imanishi</field>
+        <field name="submitter_mail">susima@meijo-u.ac.jp</field>
+        <field name="submitter_affiliation">Meijo University</field>
+        <field name="labhead">Garry L. Corthals</field>
+        <field name="labhead_mail">garry.corthals@btk.fi</field>
+        <field name="labhead_affiliation">Turku Centre for Biotechnology, University of Turku and Åbo Akademi University, Turku, Finland</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120126_1N12.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120126_1N12.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120126_2N12.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120126_2N12.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120126_3N12.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120126_3N12.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120126_4N12.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120126_4N12.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120126_5N12.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120126_5N12.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120126_6N12.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120126_6N12.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120130_10N12.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120130_10N12.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120130_11N12.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120130_11N12.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120130_12N12.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120130_12N12.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120130_13N12.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120130_13N12.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120130_14N12.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120130_14N12.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120130_7N12.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120130_7N12.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120130_8N12.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120130_8N12.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120130_9N12.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120130_9N12.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120316_1N10.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120316_1N10.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120316_1N11.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120316_1N11.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120316_1N12.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120316_1N12.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120316_1N7.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120316_1N7.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120316_1N8.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120316_1N8.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120316_1P1.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120316_1P1.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120316_1P2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120316_1P2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120316_1P3.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120316_1P3.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120316_1P4.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120316_1P4.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120316_1P5.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/120316_1P5.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/121114_N11_RBC.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/121114_P2_RBC.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/QExactive P2 N11_prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/QSTAR 40-55kDa_prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/QSTAR N12_prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD001532/Sample and file names.docx</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

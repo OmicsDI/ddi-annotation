@@ -1,0 +1,121 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000902">
+      <name>Global absolute quantification reveals tight regulation of protein expression in single Xenopus eggs</name>
+      <description>While recent developments in genomic sequencing technology have enabled comprehensive transcriptome analyses of single cells, single cell proteomics has thus far been restricted to targeted studies. Here, we perform global absolute protein quantification of single Xenopus laevis eggs using mass spectrometry-based proteomics, quantifying over 5800 proteins in the largest single cell proteome characterized to date. Absolute protein amounts in single eggs are highly consistent, thus indicating a tight regulation of global protein abundance. In contrast, comparison between the single-cell proteome and transcriptome reveal poor expression correlation. Finally, we identify 439 proteins that significantly change in abundance during early embryogenesis. Many of these proteins do not show regulation at the transcript level. Altogether, our data reveal that the transcriptome is a poor indicator of the proteome and that protein levels are tightly controlled in Xenopus leavis eggs.</description>
+      <cross_references>
+        <ref dbkey="8355" dbname="TAXONOMY"/>
+        <ref dbkey="25056316" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-07-11"/>
+        <date type="publication" value="2014-07-23"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000902</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Whole cell extracts were obtained from Xenopus eggs and embryos using homogenized in ice-cold low-salt whole cell extract buffer. These lysates were digested using filter-aided sample preparation (FASP). For absolute quantification a standard range of proteins (UPS2, Sigma) was spiked into the sample. The digested samples were applied to strong anion exchange (SAX) and the flow through (FT) and pH11, pH8 and pH2 elutions were collected. The peptides were desalted using Stage-Tips.</field>
+        <field name="data_protocol">Raw mass spectrometry data were analyzed using MaxQuant (1.3.0.5), using default settings and with the algorithms ‘match between runs’ and ‘iBAQ’ enabled, and searched against the in-house generated database. The resulting identified proteingroups were filtered for contaminants and reverse hits.</field>
+        <field name="instrument_platform">Q Exactive</field>
+        <field name="instrument_platform">LTQ Orbitrap Velos</field>
+        <field name="species">Xenopus laevis (African clawed frog)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">embryo</field>
+        <field name="tissue">Egg</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">acetylated residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">Global absolute quantification reveals tight regulation of protein expression in single Xenopus eggs</field>
+        <field name="quantification_method">Copies per cell</field>
+        <field name="quantification_method">MS1 intensity based label-free quantification method</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Smits AH, Lindeboom RG, Perino M, van Heeringen SJ, Veenstra GJ, Vermeulen M. Global absolute quantification reveals tight regulation of protein expression in single Xenopus eggs. Nucleic Acids Res. 2014 Jul 23. pii: gku661</field>
+        <field name="submitter">A.H. Smits</field>
+        <field name="submitter_mail">a.smits@ncmls.ru.nl</field>
+        <field name="submitter_affiliation">University Medical Center Utrecht</field>
+        <field name="labhead">Michiel Vermeulen</field>
+        <field name="labhead_mail">m.vermeulen@ncmls.ru.nl</field>
+        <field name="labhead_affiliation">Radboud University Nijmegen, Department of Molecular Biology, Cancer Genomics Netherlands, Faculty of Science, Radboud Institute for Molecular Life Sciences, Nijmegen 6500 HB, The Netherlands</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140212_Q1_SA_PJ_RL_Xenopus_Embryo1_Ibaq.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140212_Q1_SA_PJ_RL_Xenopus_Embryo1_SAX_FT.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140212_Q1_SA_PJ_RL_Xenopus_Embryo1_SAX_pH11.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140212_Q1_SA_PJ_RL_Xenopus_Embryo1_SAX_pH2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140212_Q1_SA_PJ_RL_Xenopus_Embryo1_SAX_pH8.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140213_Q1_SA_PJ_RL_Xenopus_Embryo2_Ibaq.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140213_Q1_SA_PJ_RL_Xenopus_Embryo2_SAX_FT.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140213_Q1_SA_PJ_RL_Xenopus_Embryo2_SAX_pH11.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140213_Q1_SA_PJ_RL_Xenopus_Embryo2_SAX_pH2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140213_Q1_SA_PJ_RL_Xenopus_Embryo2_SAX_pH8.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140214_Q1_SA_PJ_RL_Xenopus_Embryo3_Ibaq.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140214_Q1_SA_PJ_RL_Xenopus_Embryo3_SAX_FT.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140214_Q1_SA_PJ_RL_Xenopus_Embryo3_SAX_pH11.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140214_Q1_SA_PJ_RL_Xenopus_Embryo3_SAX_pH2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140214_Q1_SA_PJ_RL_Xenopus_Embryo3_SAX_pH8.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140214_Q1_SA_PJ_RL_Xenopus_Embryo4_Ibaq.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140214_Q1_SA_PJ_RL_Xenopus_Embryo4_SAX_FT.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140214_Q1_SA_PJ_RL_Xenopus_Embryo4_SAX_pH11.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140214_Q1_SA_PJ_RL_Xenopus_Embryo4_SAX_pH2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140214_Q1_SA_PJ_RL_Xenopus_Embryo4_SAX_pH8.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140214_Q1_SA_PJ_RL_Xenopus_Embryo5_Ibaq.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140214_Q1_SA_PJ_RL_Xenopus_Embryo5_SAX_FT.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140214_Q1_SA_PJ_RL_Xenopus_Embryo5_SAX_pH11.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140214_Q1_SA_PJ_RL_Xenopus_Embryo5_SAX_pH2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140214_Q1_SA_PJ_RL_Xenopus_Embryo5_SAX_pH8.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140218_Q1_SA_PJ_RL_Xenopus_Egg1_Ibaq.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140218_Q1_SA_PJ_RL_Xenopus_Egg1_SAX_FT.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140218_Q1_SA_PJ_RL_Xenopus_Egg1_SAX_pH11.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140218_Q1_SA_PJ_RL_Xenopus_Egg1_SAX_pH2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140218_Q1_SA_PJ_RL_Xenopus_Egg1_SAX_pH8.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140219_Q1_SA_PJ_RL_Xenopus_Egg2_Ibaq.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140219_Q1_SA_PJ_RL_Xenopus_Egg2_SAX_FT.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140219_Q1_SA_PJ_RL_Xenopus_Egg2_SAX_pH11.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140219_Q1_SA_PJ_RL_Xenopus_Egg2_SAX_pH2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140219_Q1_SA_PJ_RL_Xenopus_Egg2_SAX_pH8.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140220_Q1_SA_PJ_RL_Xenopus_Egg3_Ibaq.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140220_Q1_SA_PJ_RL_Xenopus_Egg3_SAX_FT.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140220_Q1_SA_PJ_RL_Xenopus_Egg3_SAX_pH11.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140220_Q1_SA_PJ_RL_Xenopus_Egg3_SAX_pH2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140220_Q1_SA_PJ_RL_Xenopus_Egg3_SAX_pH8.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140221_Q1_SA_PJ_RL_Xenopus_Egg4_Ibaq.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140221_Q1_SA_PJ_RL_Xenopus_Egg4_SAX_FT.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140221_Q1_SA_PJ_RL_Xenopus_Egg4_SAX_pH11.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140221_Q1_SA_PJ_RL_Xenopus_Egg4_SAX_pH2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140221_Q1_SA_PJ_RL_Xenopus_Egg4_SAX_pH8.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140221_Q1_SA_PJ_RL_Xenopus_Egg5_Ibaq.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140221_Q1_SA_PJ_RL_Xenopus_Egg5_SAX_FT.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140221_Q1_SA_PJ_RL_Xenopus_Egg5_SAX_pH11.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140221_Q1_SA_PJ_RL_Xenopus_Egg5_SAX_pH2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140221_Q1_SA_PJ_RL_Xenopus_Egg5_SAX_pH8.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/Deep-Proteome_Eggs_Embryos_txt.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20130716_AHS_XenopusL_Egg1_10ug_IBAQ_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20130716_AHS_XenopusL_Egg1_10ug_IBAQ_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20130716_AHS_XenopusL_Egg1_10ug_IBAQ_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20130716_AHS_XenopusL_Egg2_10ug_IBAQ_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20130716_AHS_XenopusL_Egg2_10ug_IBAQ_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20130716_AHS_XenopusL_Egg2_10ug_IBAQ_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20130716_AHS_XenopusL_Egg3_10ug_IBAQ_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20130716_AHS_XenopusL_Egg3_10ug_IBAQ_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20130716_AHS_XenopusL_Egg3_10ug_IBAQ_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/3Eggs3Replicates.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/pita_v1.71.protein.name.fa</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140528_Q1_SA_PaJa_RL_XenopusEggs_dimethyl_SAX_FT.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140528_Q1_SA_PaJa_RL_XenopusEggs_dimethyl_SAX_pH11.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140528_Q1_SA_PaJa_RL_XenopusEggs_dimethyl_SAX_pH2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140528_Q1_SA_PaJa_RL_XenopusEggs_dimethyl_SAX_pH5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/20140528_Q1_SA_PaJa_RL_XenopusEggs_dimethyl_SAX_pH8.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000902/Dimethyl_labeling_txt.zip</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

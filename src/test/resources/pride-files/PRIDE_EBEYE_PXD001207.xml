@@ -1,0 +1,61 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001207">
+      <name>The proteome of tic56-1 plastids after thermolysin treatment</name>
+      <description>Analysing of the proteome of tic56-1 (tic56-1-plus) and wild type (wt-plus) plastids after thermolysin treatment as well as the proteome of non-thermolysin treated wild type plastids (wt-minus) and comparison of the proteome data sets.</description>
+      <cross_references>
+        <ref dbkey="3702" dbname="TAXONOMY"/>
+        <ref dbkey="25588737" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-08-26"/>
+        <date type="publication" value="2015-02-03"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001207</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Plastids of tic56-1 and wild type were enriched and resulting pellets are treated with a buffer containing thermolysin (wild type: wt-plus, tic56-1: tic56-1-plus) or without (only wild type: wt-minus). Proteins of the samples were tryptic digested in-solution. The peptide-samples were analysed on an LTQ Orbitrap Velos (Thermo Scientific). Samples were separated by liquid chromatography using C18 columns. For separation a gradient consisting of water with 0.1 % formic acid (A) and acetonitrile with 0.1 % formic acid (B) was used (method: 0 150 min 5 40% B, 150 155 min 40 80 % B, 155 160 min 80 % B). Precursor detection was done in an m/z-range from 400-1850 and the 20 most intensive signals were used for MS2.</field>
+        <field name="data_protocol">The raw-files were analysed using the Proteome Discoverer 1.2 (Thermo Scientific) with the search engine SEQUEST. As database TAIR10 was used, the relaxed FDR was set to 5 %. As variable modifications N-terminal acetylation and as fixed modifications carbamidomethylation of cysteines were allowed. The precursor mass tolerance was set to 7 ppm and the fragment mass tolerance to 0.8 Da.</field>
+        <field name="instrument_platform">LTQ Orbitrap Velos</field>
+        <field name="species">Arabidopsis thaliana (Mouse-ear cress)</field>
+        <field name="cell_type">plant cell</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">rosette</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">acetylated residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">Chloroplast</field>
+        <field name="submitter_keywords"> Tic56</field>
+        <field name="submitter_keywords"> Thermolysin</field>
+        <field name="submitter_keywords"> Protease protection assay</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Köhler D, Montandon C, Hause G, Majovsky P, Kessler F, Baginsky S, Agne B. Characterization of chloroplast protein import without Tic56, a component of the 1-MDa TIC translocon. Plant Physiol. 2015 Jan 14. pii: pp.114.255562</field>
+        <field name="submitter">Sacha Baginsky</field>
+        <field name="submitter_mail">pflanzen@biochemtech.uni-halle.de</field>
+        <field name="submitter_affiliation">Institut fuer Biochemie und Biotechnologie</field>
+        <field name="labhead">Sacha Baginsky</field>
+        <field name="labhead_mail">pflanzen@biochemtech.uni-halle.de</field>
+        <field name="labhead_affiliation">Martin-Luther-University, Nat.-Fac. I, Dept. Plant Biochemistry, Weinbergweg 22, 06120 Halle (Saale), Germany</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001207/DK240614_WT_minus.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001207/DK240614_WT_plus.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001207/DK240614_tic56_1_plus.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001207/WT_minus.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001207/WT_plus.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001207/tic56_1_plus.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001207/WT_minus.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001207/WT_plus.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001207/tic56_1_plus.prot.xml</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

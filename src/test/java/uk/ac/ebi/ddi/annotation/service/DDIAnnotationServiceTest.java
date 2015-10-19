@@ -1,5 +1,6 @@
 package uk.ac.ebi.ddi.annotation.service;
 
+import org.json.JSONException;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,18 +12,6 @@ import uk.ac.ebi.ddi.annotation.model.EnrichedDataset;
 import java.io.IOException;
 import java.util.ArrayList;
 
-/**
- * Created by mingze on 22/07/15.
- */
-//public class ddiAnnotationServiceTest extends TestCase {
-//
-//    public void main() {
-//        System.out.println("hello world");
-//
-//    }
-//
-//
-//}
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {"/applicationTestContext.xml"})
@@ -32,7 +21,7 @@ public class DDIAnnotationServiceTest {
     DDIAnnotationService annotService = new DDIAnnotationService();
 
     @Test
-    public void annotationTest() throws IOException {
+    public void annotationTest() throws IOException, JSONException {
 
         long startTime = System.currentTimeMillis();
         for (int i=0; i<10; i++) {
@@ -53,7 +42,7 @@ public class DDIAnnotationServiceTest {
     }
 
     @Test
-    public void enrichmentTest() throws IOException{
+    public void enrichmentTest() throws IOException, JSONException {
 
         DatasetTobeEnriched datasetTobeEnriched1 = new DatasetTobeEnriched("PXD002287", "PRIDE");
         datasetTobeEnriched1.setTitle("Proteome-wide analysis of lysine acetylation suggests its broad regulatory scope in Saccharomyces cerevisiae.");

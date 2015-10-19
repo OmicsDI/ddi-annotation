@@ -1,0 +1,149 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000782">
+      <name>A quantitative proteomics tool to identify DNA-protein interactions in primary cells or blood</name>
+      <description>The interaction between transcription factors and genomic DNA forms the basis for spatio-temporal control of gene expression. Therefore, these interactions and their impact on disease and cellular fate are extensively studied on a global level, mainly using techniques based on next-generation sequencing. These techniques, however, do not allow an unbiased study of proteins or entire protein complexes that bind to a certain DNA sequence. In recent years, DNA pull-downs followed by quantitative mass spectrometry were introduced to close this gap. Established protocols, however, are based on metabolic labeling techniques or require enormous amounts of cellular material, thus restricting the method to cell lines grown in culture. Furthermore, they require substantial amount of expertise, thus keeping this technique restricted to a limited number of laboratories. Here, we introduce a high-throughput compatible, LC-MS/MS based DNA pull-down that combines on-bead digestion with direct dimethyl labeling or label-free protein quantification. We demonstrate, that our method can efficiently identify transcription factors binding to their known consensus DNA motifs when using nuclear extracts from model cell lines. Subsequently, we apply the method to study DNA-protein interactions in primary foreskin fibroblasts and peripheral blood mononuclear cells (PBMCs) freshly isolated from human donors. We show that the same DNA sequence binds different sets of proteins in an established model cell line as opposed to PBMCs. This stresses the importance of selecting relevant cell extracts for any interaction in question. In-depth nuclear proteomes with absolute quantification of close to 7,000 proteins in K562 cells and PBMCs clearly link these differential interactions to differences in protein abundance. In conclusion, our approach, applicable to primary material and capable of profiling DNA-protein interactions in high-throughput, will likely prove itself as a useful screening platform and will provide invaluable functional data, for example through integration with large scale GWAS.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="25546135" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-12-02"/>
+        <date type="publication" value="2015-01-05"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000782</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">DNA pull-downs based on dimethyl labeling were performed in duplicate. DNA pull-downs based on label-free quantification were performed in triplicate. Biotinylated forward and reverse oligonucleotides were annealed. For each experiment, four (dimethyl) or six (label-free) wells of a Multiscreen filter plate with 1.2 µm pores (Millipore, MSBVN1210) were incubated with 50 μl 70% ethanol for 1 min. The solvent was removed by applying vacuum using a Multiscreen vacuum manifold (Millipore). The wells were washed twice with 200 μl DNA-binding buffer (DBB) containing 10 mM HEPES pH 8.0, 1 M NaCl, 10 mM EDTA, 0.05% NP40. 20 μl slurry of high-performance streptavidin sepharose (GE Healthcare, 17511301) were added to each well together with 200 μl DBB and washed once more with 200 μl DBB. Subsequently, 50 pmol of annealed oligonucleotides (2 or 3 x motif containing, 2 or 3 x mutated motif containing) in 150 μl DBB were added to the wells and incubated 1 h at room temperature by shaking at 600 rpm on a plate shaker. Subsequent steps were all carried out at 4°C. The beads with immobilized oligonucleotides were washed twice with DBB and twice with protein binding buffer (PBB) containing 50 mM HEPES pH 8.0, 150 mM NaCl, 0.1% NP40 and 1 mM DTT. 250 μg of nuclear extract and 10 μg of competitor DNA in 200 μl PBB supplemented with EDTA-free complete protease inhibitors (Roche) were then added to each experiment and incubated for 1.5 h shaking at 4°C. The beads were then washed three times with PBB and three times with wash buffer (WB) containing 100 mM TEAB, 150mM NaCl to remove the detergent present in the PBB. To reduce the proteins, 50 μl of 100 mM TEAB containing 5 mM TCEP was added to the beads and incubated for 60 min. at 37°C in a humidified incubator. 10 mM MMTS was added for alkylation and incubated for 10 min. at room temperature. Proteins were digested on-bead by adding 0.4 μg of a trypsin/LysC mix (Promega). After incubation for 1 h at 37°C in a humidified incubator, pre-digested proteins were collected into a collection plate and the filter plate was washed once with 50 μl 100 mM TEAB into the same collection plate. Digestion was continued at 37°C over night in a humidified incubator. The next morning, samples for label-free quantification were acidified by adding 5 μl TFA and purified on stage-tips. Dimethyl labeling was based on the original protocol published by the Heck lab. After digestion of proteins over night, samples for dimethyl labeling were not acidified and purified, but dimethyl labeling reagents were added directly to the well. 4 μl of 4% CH2O (light) or CD2O (heavy) together with 4 μl of 0.6 M NaBH3CN were incubated with the sample for 1 h at room temperature, shaking. The reaction was stopped by adding 16 μl of 1% NH3. Corresponding light and heavy labeled samples were merged and acidified with 10 μl TFA before stage-tip purification. Each pull-down was performed twice, switching the labels. Sample preparation for absolute quantification of proteins in K562 and PBMC nuclear extracts has been done as followed: In short, 3.3 μg of universal protein standard 2 (UPS2, Sigma-Aldrich) was mixed with 10 μg K562 or PBMC nuclear extract and proteins were digested using the filter aided sample preparation (FASP) procedure. In addition, 30 μg of nuclear extract were digested using FASP, followed by separation in 6 fractions using strong anion exchange. All samples were purified on C18 stage-tips.</field>
+        <field name="data_protocol">Raw MS spectra were analysed using the MaxQuant software suite (version 1.3.5.7) with standard settings. For dimethyl samples, an additional mass of 28.03 Da (light) or 32.06 Da (heavy) at the N-terminus and lysines was specified as labels. For label-free pull-down samples, the ‘match between runs’ option as well as the ‘LFQ’ option was enabled. Methylthiol (Δm = 45.99) or carbamidomethylation was specified as a fixed modification on cysteines for MMTS or iodoacetamide treated samples, respectively. Acetylation of N-termini and oxidation of methionines was allowed as variable modification. Data was searched against the human Uniprot database (downloaded 13.06.2012) using the integrated Andromeda search engine. For UPS2 containing samples, a database containing identifiers for all 48 proteins (without quantities) was added in addition. The search was performed with a final mass tolerance of 4.5 ppm mass accuracy for the precursor ion. Peptides and proteins were both accepted at an FDR of 0.01. For quantification, at least two ratio counts were required. Both, dimethyl and label-free plots generated using Perseus and R. In short, protein lists were filtered for contaminants and reverse hits. Proteins were required to have 2 peptides, of which at least 1 was unique, to be considered as identified. For dimethyl experiments, the outlier significance was calculated based on protein intensity (significance B) and was required to be &lt; 0.001 for both the forward and reverse experiment. A two-dimensional plot was generated in R and significant outliers were labeled with their corresponding gene names. For label-free experiments, outliers were determined based on t-test statistics. Volcano plots including outlier lines were generated using R and proteins with an FDR &lt; 0.001 were labeled with their corresponding gene name. For absolute quantification of proteins in K562 and PBMC nuclear extracts, a linear regression based on the absolute amounts of UPS2 proteins and their corresponding iBAQ values was performed. UPS2 proteins with less than 2 unique peptides were excluded and only proteins in the highest four abundance orders of magnitude were considered. Subsequently, all proteins in the UPS2 containing digest were quantified based on their iBAQ values and the linear regression of UPS2 proteins. A second linear regression based on absolute protein amounts in the UPS2 containing sample and their corresponding iBAQ values in the FASP-SAX nuclear proteome was then performed. Each point of the plot was weighed based on its density for the linear regression. Subsequently, all proteins in the nuclear proteomes could be assigned with absolute amounts reported in [fmol/μg nuclear extract]. All values can be found in supplementary table 4. Plots and linear regressions were done in R.</field>
+        <field name="instrument_platform">Q Exactive</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">fibroblast</field>
+        <field name="cell_type">blood cell</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">blood</field>
+        <field name="tissue">primary cell</field>
+        <field name="tissue">cell suspension culture</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Affinity purification coupled with mass spectrometry proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Technical</field>
+        <field name="curator_keywords">Biomedical</field>
+        <field name="submitter_keywords">DNA pull-down</field>
+        <field name="submitter_keywords"> blood</field>
+        <field name="submitter_keywords"> primary cells</field>
+        <field name="submitter_keywords"> PBMCs</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Hubner NC, Nguyen LN, Hornig NC, Stunnenberg HG. A Quantitative Proteomics Tool To Identify DNA-Protein Interactions in Primary Cells or Blood. J Proteome Res. 2015 Jan 8</field>
+        <field name="submitter">Nina Hubner</field>
+        <field name="submitter_mail">n.hubner@ncmls.ru.nl</field>
+        <field name="submitter_affiliation">Radboud University Nijmegen, The Netherlands</field>
+        <field name="labhead">Hendrik G. Stunnenberg</field>
+        <field name="labhead_mail">h.stunnenberg@ncmls.ru.nl</field>
+        <field name="labhead_affiliation">Radboud University Nijmegen, The Netherlands</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131220_Q1_SA_LuNg_FASP-SAX_PBMC-NE_pH11.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131220_Q1_SA_LuNg_FASP-SAX_PBMC-NE_pH3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131220_Q1_SA_LuNg_FASP-SAX_PBMC-NE_pH4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131220_Q1_SA_LuNg_FASP-SAX_PBMC-NE_pH5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131220_Q1_SA_LuNg_FASP-SAX_PBMC-NE_pH6.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131220_Q1_SA_LuNg_FASP-SAX_PBMC-NE_pH8.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131224_Q1_SA_LuNg_FASP-SAX_K562-NE_pH11.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131224_Q1_SA_LuNg_FASP-SAX_K562-NE_pH3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131224_Q1_SA_LuNg_FASP-SAX_K562-NE_pH4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131224_Q1_SA_LuNg_FASP-SAX_K562-NE_pH5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131224_Q1_SA_LuNg_FASP-SAX_K562-NE_pH6.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131224_Q1_SA_LuNg_FASP-SAX_K562-NE_pH8.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131224_FASP-SAX_PBMC-K562-NE.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131220_Q1_SA_LuNg_FASP_PBMC-NE_UPS.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131224_Q1_SA_LuNg_FASP_K562-NE_UPS.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131224_FASP-UPS_PBMC-K562-NE.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20140116_Q1_SA_LuNg_FPPD_F51-NE_SP1_Fw.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20140116_Q1_SA_LuNg_FPPD_F51-NE_SP1_Rv.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/FSF - SP1.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131203_Q1_SA_LuNg_FPPD_K562_GATA1_Fw.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131203_Q1_SA_LuNg_FPPD_K562_GATA1_Rv.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131203_Q1_SA_LuNg_FPPD_K562_SP1_Fw.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131203_Q1_SA_LuNg_FPPD_K562_SP1_Rv.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/K562 - SP1, GATA1.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131203_Q1_SA_LuNg_FPPD_K562_RUNX1_Fw.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131203_Q1_SA_LuNg_FPPD_K562_RUNX1_Rv.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131217_Q1_SA_LuNg_FPPD_PBMC_RUNX1_Fw.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131217_Q1_SA_LuNg_FPPD_PBMC_RUNX1_Rv.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/RUNX1 - PBMC and K562.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131030_Q1_SA_LuNg_StdPD_LF_SP1_DTT-IAA_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131030_Q1_SA_LuNg_StdPD_LF_SP1_DTT-IAA_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131030_Q1_SA_LuNg_StdPD_LF_SP1_DTT-IAA_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/SP1 - experimental conditions_DTT.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131030_Q1_SA_LuNg_FPPD_LF_SP1_Tryp-LysC_000Rap_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131030_Q1_SA_LuNg_FPPD_LF_SP1_Tryp-LysC_000Rap_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131030_Q1_SA_LuNg_FPPD_LF_SP1_Tryp-LysC_000Rap_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131030_Q1_SA_LuNg_FPPD_LF_SP1_Tryp-LysC_005Rap_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131030_Q1_SA_LuNg_FPPD_LF_SP1_Tryp-LysC_005Rap_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131030_Q1_SA_LuNg_FPPD_LF_SP1_Tryp-LysC_005Rap_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131030_Q1_SA_LuNg_StdPD_LF_SP1_TCEP-MMTS_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131030_Q1_SA_LuNg_StdPD_LF_SP1_TCEP-MMTS_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131030_Q1_SA_LuNg_StdPD_LF_SP1_TCEP-MMTS_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131119_Q1_SA_LuNg_FPPD_LF_0000Rap_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131119_Q1_SA_LuNg_FPPD_LF_0000Rap_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131119_Q1_SA_LuNg_FPPD_LF_0000Rap_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131119_Q1_SA_LuNg_FPPD_LF_0025Rap_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131119_Q1_SA_LuNg_FPPD_LF_0025Rap_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131119_Q1_SA_LuNg_FPPD_LF_0025Rap_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131119_Q1_SA_LuNg_FPPD_LF_0050Rap_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131119_Q1_SA_LuNg_FPPD_LF_0050Rap_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131119_Q1_SA_LuNg_FPPD_LF_0050Rap_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131119_Q1_SA_LuNg_FPPD_LF_0100Rap_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131119_Q1_SA_LuNg_FPPD_LF_0100Rap_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131119_Q1_SA_LuNg_FPPD_LF_0100Rap_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/SP1 - experimental conditions_TCEP.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20130219_Q1_SA_LuNg_SP1_Fw.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20130219_Q1_SA_LuNg_SP1_Rev.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/SP1 - hand pull-down.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131029_Q1_SA_LuNg_FPPD_LF_SP1_1_131030091335.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131029_Q1_SA_LuNg_FPPD_LF_SP1_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131029_Q1_SA_LuNg_FPPD_LF_SP1_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131029_Q1_SA_LuNg_FPPD_LF_SP1ctrl_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131029_Q1_SA_LuNg_FPPD_LF_SP1ctrl_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131029_Q1_SA_LuNg_FPPD_LF_SP1ctrl_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/SP1 - LFQ.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131031_Q1_SA_LuNg_FPPD_Fw_010ug-010pmol.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131031_Q1_SA_LuNg_FPPD_Fw_010ug-050pmol.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131031_Q1_SA_LuNg_FPPD_Fw_010ug-250pmol.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131031_Q1_SA_LuNg_FPPD_Fw_010ug-500pmol.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131031_Q1_SA_LuNg_FPPD_Fw_050ug-010pmol.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131031_Q1_SA_LuNg_FPPD_Fw_050ug-050pmol.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131031_Q1_SA_LuNg_FPPD_Fw_050ug-250pmol.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131031_Q1_SA_LuNg_FPPD_Fw_050ug-500pmol.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131031_Q1_SA_LuNg_FPPD_Fw_250ug-010pmol.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131031_Q1_SA_LuNg_FPPD_Fw_250ug-050pmol.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131031_Q1_SA_LuNg_FPPD_Fw_250ug-500pmol.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131031_Q1_SA_LuNg_FPPD_Fw_500ug-010pmol.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131031_Q1_SA_LuNg_FPPD_Fw_500ug-050pmol.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131031_Q1_SA_LuNg_FPPD_Fw_500ug-500pmol.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131106_Q1_SA_LuNg_FPPD_Fw_250ug-250pmol.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131106_Q1_SA_LuNg_FPPD_Fw_500ug-250pmol.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131112_Q1_SA_LuNg_FPPD_Fw_010ug-100pmol.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131112_Q1_SA_LuNg_FPPD_Fw_050ug-100pmol.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131112_Q1_SA_LuNg_FPPD_Fw_100ug-010pmol.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131112_Q1_SA_LuNg_FPPD_Fw_100ug-050pmol.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131112_Q1_SA_LuNg_FPPD_Fw_100ug-100pmol.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131112_Q1_SA_LuNg_FPPD_Fw_100ug-250pmol.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131112_Q1_SA_LuNg_FPPD_Fw_100ug-500pmol.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131112_Q1_SA_LuNg_FPPD_Fw_250ug-100pmol.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20131112_Q1_SA_LuNg_FPPD_Fw_500ug-100pmol.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/SP1 - titrations.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/20141127_Q1_SA_LuNg_FPPD_rs6904029_A-G_Plas_Rv.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD000782/rs6904029_PBMC.zip</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

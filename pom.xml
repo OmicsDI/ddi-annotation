@@ -79,71 +79,11 @@
             <version>1.2</version>
         </dependency>
 
-        <!--<dependency>-->
-            <!--<groupId>org.springframework</groupId>-->
-            <!--<artifactId>spring-oxm</artifactId>-->
-            <!--<version>${spring.version}</version>-->
-            <!--<type>jar</type>-->
-            <!--<scope>compile</scope>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>org.springframework</groupId>-->
-            <!--<artifactId>spring-orm</artifactId>-->
-            <!--<version>${spring.orm.version}</version>-->
-        <!--</dependency>-->
-
-        <!-- web components to create some of the structures -->
-
-        <!-- The Simple Logging Facade for Java or (SLF4J) serves as a simple facade
-            or abstraction for various logging frameworks, e.g. java.util.logging, log4j
-            and logback, allowing the end user to plug in the desired logging framework
-            at deployment time. -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>${slf4j.version}</version>
         </dependency>
-
-        <!--<dependency>-->
-            <!--<groupId>taglibs</groupId>-->
-            <!--<artifactId>standard</artifactId>-->
-            <!--<version>${standard.version}</version>-->
-        <!--</dependency>-->
-
-        <!-- Data Mapper package is a high-performance data binding package built
-            on Jackson JSON processor -->
-        <!--<dependency>-->
-            <!--<groupId>org.codehaus.jackson</groupId>-->
-            <!--<artifactId>jackson-mapper-asl</artifactId>-->
-            <!--<version>${jackson.version}</version>-->
-            <!--<type>jar</type>-->
-            <!--<scope>compile</scope>-->
-        <!--</dependency>-->
-
-        <!--&lt;!&ndash; Jackson is a high-performance JSON processor (parser, generator) &ndash;&gt;-->
-        <!--<dependency>-->
-            <!--<groupId>org.codehaus.jackson</groupId>-->
-            <!--<artifactId>jackson-core-asl</artifactId>-->
-            <!--<version>${jackson.version}</version>-->
-            <!--<type>jar</type>-->
-            <!--<scope>compile</scope>-->
-        <!--</dependency>-->
-
-
-        <!--<dependency>-->
-            <!--<groupId>javax.validation</groupId>-->
-            <!--<artifactId>validation-api</artifactId>-->
-            <!--<version>${java.validation.api.version}</version>-->
-        <!--</dependency>-->
-
-        <!-- MongoDB Java Driver -->
-        <dependency>
-            <groupId>org.mongodb</groupId>
-            <artifactId>mongo-java-driver</artifactId>
-            <version>${mongo.java.driver.version}</version>
-            <type>jar</type>
-        </dependency>
-
 
         <dependency>
             <groupId>org.springframework.data</groupId>
@@ -151,23 +91,10 @@
             <version>${spring.data.mongo.version}</version>
         </dependency>
 
-        <!--&lt;!&ndash; Spring RabbitMQ &ndash;&gt;-->
-        <!--<dependency>-->
-            <!--<groupId>org.springframework.amqp</groupId>-->
-            <!--<artifactId>spring-rabbit</artifactId>-->
-            <!--<version>${spring.rmqp.version}</version>-->
-        <!--</dependency>-->
-
-        <!-- Ehcache -->
-        <!--<dependency>-->
-            <!--<groupId>net.sf.ehcache</groupId>-->
-            <!--<artifactId>ehcache-core</artifactId>-->
-            <!--<version>${ehcache-core.version}</version>-->
-        <!--</dependency>-->
         <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
-            <version>20141113</version>
+            <version>20090211</version>
         </dependency>
 
         <dependency>
@@ -192,8 +119,6 @@
             <artifactId>ddi-validator</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
- 
-
 
     </dependencies>
     <build>

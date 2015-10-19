@@ -1,0 +1,112 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000194">
+      <name>Proteomics analysis of human pericardial fluid</name>
+      <description>Pericardial fluid (PF) is considered as biochemical window of heart. Knowledge of the entire protein content, the proteome of human PF, would give insights into heart and cardiovascular diseases. To date, there have been limited attempt to perform an in-depth analysis of the PF proteome. In this study, a SDS-PAGE-LC-MS/MS platform was utilized to explore abundant protein-depleted PF samples and showed great coverage of low-abundance proteins. In total, 1,007 non-redundant proteins were identified with at least two peptides, generating the first human PF proteome. Data processing: The mass spectra were searched using MaxQuant (v1.2.2.5) against the human subset of the Uniprot database (2012/05/16), which contains 87,187 entries. The search parameters were set as follows: peptide (parent ion) tolerance of 20 ppm, fragment ion tolerance of 0.5 Da, two missed cleavages were allowed, fixed modification of carbamidomethylation on Cys (+57 Da), and a differential modification of oxidation on Met (+16 Da). The false discovery rates (FDR) for both peptides and proteins were evaluated by searching against the combined database with the reversed amino acid sequence, and calculated by MaxQuant. To get high-confidence peptide and protein identifications, the cutoffs used were 1% for peptides and 1% for proteins. Absolute protein amounts were calculated as the sum of all peptide peak intensities divided by the number of theoretically observable tryptic peptides (intensity based absolute quantification, or iBAQ).</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="23797974" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2013-03-25"/>
+        <date type="publication" value="2013-07-09"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000194</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Not available</field>
+        <field name="instrument_platform">LTQ Orbitrap Velos</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">N-acetylated residue</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Cardiovascular</field>
+        <field name="submitter_keywords">Pericardial fluid</field>
+        <field name="submitter_keywords"> Proteomics</field>
+        <field name="submitter_keywords"> Heart</field>
+        <field name="submitter_keywords"> Cardiovascular diseases</field>
+        <field name="submitter_keywords"> Biomarkers</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Xiang F, Guo X, Chen W, Wang J, Zhou T, Huang F, Cao C, Chen X; Proteomics analysis of human pericardial fluid., Proteomics, 2013 Sep, 13, 17, 2692-5, </field>
+        <field name="submitter">fei xiang</field>
+        <field name="submitter_mail">jackie-xf@163.com</field>
+        <field name="submitter_affiliation">Lab of Reproductive Medicine</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/maxquantresults.tar.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-11.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-21.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-1.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-10-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-12-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-13-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-13replace10-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-15-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-16-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-17-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-18-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-19-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-2.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-20-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-22-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-23-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-24-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-25.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-26.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-27.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-28.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-29.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-3.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-30.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-4.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-5-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-6-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-7-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-8-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-9-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-lowprotein-1-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-lowprotein-10-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-lowprotein-11-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-lowprotein-12-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-lowprotein-13-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-lowprotein-14-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-lowprotein-15-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-lowprotein-16-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-lowprotein-17-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-lowprotein-18-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-lowprotein-19-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-lowprotein-2-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-lowprotein-20-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-lowprotein-21-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-lowprotein-22-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-lowprotein-23-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-lowprotein-24-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-lowprotein-25-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-lowprotein-26-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-lowprotein-27-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-lowprotein-28-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-lowprotein-29-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-lowprotein-3-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-lowprotein-30-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-lowprotein-4-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-lowprotein-5-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-lowprotein-6-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-lowprotein-7-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-lowprotein-8-xiangfei.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000194/humanheart-SDSPAGE-lowprotein-9-xiangfei.mzXML</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

@@ -1,0 +1,137 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001370">
+      <name>Aging Mouse Brain Mitochondria LC-MS/MS</name>
+      <description>This study investigates the proteomic alterations in brain mitochondria isolated from 5- (mature), 12- (old), and 24-month-old (aged) mice to examine normal "healthy" aging. Using quantitative mass-spectrometry based super-SILAC, our findings revealed global proteomic changes in brain mitochondria identifying several metabolic pathways including glycolysis, the tricarboxylic acid cycle, and oxidative phosphorylation. Overall, we found that the bioenergetic function of these mitochondria was preserved suggesting the proteomic alterations potentially allow for compensatory mechanisms to combat aging.</description>
+      <cross_references>
+        <ref dbkey="10090" dbname="TAXONOMY"/>
+        <ref dbkey="25546256" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-09-30"/>
+        <date type="publication" value="2015-01-27"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001370</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Brain mitochondria were isolated using differential centrifugation followed by anti-TOM22 immunopurification. The unlabeled brain mitochondrial protein lysates were mixed in a 1:1 protein ratio with our mitochondrial super-SILAC mix (mitochondria isolated from four mouse cell lines grown in the presence of heavy arginine and lysine) as internal standards. Filter-aided sample preparation was performed and the resultant peptides were cleaned using an Oasis MCX cartridge. Samples were dehydrated and resuspended in 0.1% formic acid for LC-MS/MS analysis using an TTOF 5600 (AB SCIEX).</field>
+        <field name="data_protocol">ProteinPilot version 4.5 (Paragon Algorithm: 4.5.0.0, 1654) software was used to generate peptide and protein lists as well as ratios of the amount of heavy-to-light (H:L) peptide. The search parameters were set as a maximum of two missed cleavages, carbamidomethyl (C) as fixed modification, N-acetyl (protein) and oxidation (M) as variable modifications, top 6 MS/MS peaks per 100 Da, and MS/MS mass tolerance of 0.5 Da. Exclusion criteria to remove proteins from analysis were as follows: FDR of 0.05 for both peptides and proteins, peptides must contain at least 6 amino acids, contaminants as identified through the database search and proteins identified as being in the reverse database.</field>
+        <field name="instrument_platform">TripleTOF 5600</field>
+        <field name="species">Mus musculus (Mouse)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">brain</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">acetylated residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="curator_keywords">Biomedical</field>
+        <field name="submitter_keywords">Mouse</field>
+        <field name="submitter_keywords"> Mitochondria</field>
+        <field name="submitter_keywords"> TTOF 5600</field>
+        <field name="quantification_method">SILAC</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Stauch KL, Purnell PR, Villeneuve LM, Fox HS. Proteomic Analysis and Functional Characterization of Mouse Brain Mitochondria during Aging Reveals Alterations in Energy Metabolism. Proteomics. 2014 Dec 24</field>
+        <field name="submitter">Kelly Stauch</field>
+        <field name="submitter_mail">kelly.stauch@unmc.edu</field>
+        <field name="submitter_affiliation">University of Nebraska Medical Center</field>
+        <field name="labhead">Howard Fox</field>
+        <field name="labhead_mail">hfox@unmc.edu</field>
+        <field name="labhead_affiliation">University of Nebraska Medical Center</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/02Sept14_SILAC_24month_mouse_WBMito_1_2_3_grouped.group</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/02Sept14_SILAC_24month_mouse_WBMito_1_2_3_grouped_PeptideSummary.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/02Sept14_SILAC_24month_mouse_WBMito_1_2_3_grouped_ProteinSummary.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/02Sept14_SILAC_24month_mouse_WBMito_1_2_3_grouped__FDR.xlsx</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/04Jun13_24month_mouse_WBMito_2A.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/04Jun13_24month_mouse_WBMito_2A.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/05Jun13_12month_mouse_WBmito_1A.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/05Jun13_12month_mouse_WBmito_1A.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/05Jun13_12month_mouse_WBmito_1B.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/05Jun13_12month_mouse_WBmito_1B.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/05Jun13_12month_mouse_WBmito_2A.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/05Jun13_12month_mouse_WBmito_2A.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/05Jun13_12month_mouse_WBmito_2B.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/05Jun13_12month_mouse_WBmito_2B.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/05Jun13_24month_mouse_WBmito 2B.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/05Jun13_24month_mouse_WBmito_1A.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/05Jun13_24month_mouse_WBmito_1A.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/05Jun13_24month_mouse_WBmito_1B.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/05Jun13_24month_mouse_WBmito_1B.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/05Jun13_24month_mouse_WBmito_2B.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/08Aug14_12month_WBmito_mouse_3A.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/08Aug14_12month_WBmito_mouse_3A.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/08Aug14_12month_WBmito_mouse_3B.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/08Aug14_12month_WBmito_mouse_3B.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/08Aug14_24month_WBmito_mouse_3A.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/08Aug14_24month_WBmito_mouse_3A.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/08Aug14_24month_WBmito_mouse_3B.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/08Aug14_24month_WBmito_mouse_3B.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/08Aug14_5mo_WBmito_mouse_3A.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/08Aug14_5mo_WBmito_mouse_3A.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/08Aug14_5mo_WBmito_mouse_3B.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/08Aug14_5mo_WBmito_mouse_3B.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/10Oct13_5mo_WBmito_mouse_1A.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/10Oct13_5mo_WBmito_mouse_1A.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/10Oct13_5mo_WBmito_mouse_1B.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/10Oct13_5mo_WBmito_mouse_1B.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/10Oct13_5mo_WBmito_mouse_2A.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/10Oct13_5mo_WBmito_mouse_2A.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/10Oct13_5mo_WBmito_mouse_2B.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/10Oct13_5mo_WBmito_mouse_2B.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/11Aug14_5mo_WBmito_mouse_3A_3B.group</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/11Aug14_5mo_WBmito_mouse_3A_3B_PeptideSummary.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/11Aug14_5mo_WBmito_mouse_3A_3B_ProteinSummary.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/11Aug14_5mo_WBmito_mouse_3A_3B__FDR.xlsx</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/13Aug14_12month_mouse_WBmito_1A_1B.group</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/13Aug14_12month_mouse_WBmito_1A_1B_PeptideSummary.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/13Aug14_12month_mouse_WBmito_1A_1B_ProteinSummary.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/13Aug14_12month_mouse_WBmito_1A_1B__FDR.xlsx</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/14Aug14_12month_mouse_WBmito_2A_2B.group</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/14Aug14_12month_mouse_WBmito_2A_2B_PeptideSummary.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/14Aug14_12month_mouse_WBmito_2A_2B_ProteinSummary.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/14Aug14_12month_mouse_WBmito_2A_2B__FDR.xlsx</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/15Aug14_12month_WBmito_mouse_3A_3B.group</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/15Aug14_12month_WBmito_mouse_3A_3B_PeptideSummary.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/15Aug14_12month_WBmito_mouse_3A_3B_ProteinSummary.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/15Aug14_12month_WBmito_mouse_3A_3B__FDR.xlsx</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/18Aug14_24_month_mouse_WBmito_1A_1B.group</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/18Aug14_24month_mouse_WBmito_1A_1B_PeptideSummary.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/18Aug14_24month_mouse_WBmito_1A_1B_ProteinSummary.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/18Aug14_24month_mouse_WBmito_1A_1B__FDR.xlsx</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/19Aug14_24month_mouse_WBMito_2A_2B.group</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/19Aug14_24month_mouse_WBMito_2A_2B_PeptideSummary.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/19Aug14_24month_mouse_WBMito_2A_2B_ProteinSummary.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/19Aug14_24month_mouse_WBMito_2A_2B__FDR.xlsx</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/20Aug14_24month_WBmito_mouse_3A_3B.group</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/20Aug14_24month_WBmito_mouse_3A_3B_PeptideSummary.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/20Aug14_24month_WBmito_mouse_3A_3B_ProteinSummary.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/20Aug14_24month_WBmito_mouse_3A_3B__FDR.xlsx</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/26Aug14_5month_WBmito_mouse_SILAC_1_2_3_grouped.group</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/26Aug14_5month_WBmito_mouse_SILAC_1_2_3_grouped_PeptideSummary.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/26Aug14_5month_WBmito_mouse_SILAC_1_2_3_grouped_ProteinSummary.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/26Aug14_5month_WBmito_mouse_SILAC_1_2_3_grouped__FDR.xlsx</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/29Aug14_SILAC_12month_mouse_WBmito_1_2_3_grouped.group</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/29Aug14_SILAC_12month_mouse_WBmito_1_2_3_grouped_PeptideSummary.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/29Aug14_SILAC_12month_mouse_WBmito_1_2_3_grouped_ProteinSummary.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/29Aug14_SILAC_12month_mouse_WBmito_1_2_3_grouped__FDR.xlsx</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/8Aug14_5mo_WBmito_mouse_1A_1B.group</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/8Aug14_5mo_WBmito_mouse_1A_1B_PeptideSummary.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/8Aug14_5mo_WBmito_mouse_1A_1B_ProteinSummary.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/8Aug14_5mo_WBmito_mouse_1A_1B__FDR.xlsx</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/8Aug14_5mo_WBmito_mouse_2A_2B.group</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/8Aug14_5mo_WBmito_mouse_2A_2B_PeptideSummary.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/8Aug14_5mo_WBmito_mouse_2A_2B_ProteinSummary.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001370/8Aug14_5mo_WBmito_mouse_2A_2B__FDR.xlsx</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

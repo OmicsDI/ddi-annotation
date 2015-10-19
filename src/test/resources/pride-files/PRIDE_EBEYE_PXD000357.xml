@@ -1,0 +1,55 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000357">
+      <name>Identification of ERK1 direct substrates using stable isotope labeled kinase assay linked phosphoproteomics</name>
+      <description>Following the kinase assay linked phosphoproteomics strategy (KALIP) (Xue, L et al., 2012), we used extracellular signal-regulated kinases 1 (ERK1) to phosphorylate the HEK293 cell lysate under the in vitro kinase assay condition. The phosphorylated proteins were then isolated and identified by mass spectrometry. The in vitro phosphorylated proteins with new phosphates were further overlapped with reported in vivo ERK1-dependent phosphoproteomics data for the identification of bona fide direct substrates of ERK1. In total, we identified 27 direct substrates of ERK1. Data analysis procedure: Raw MS files from the LTQ-Orbitrap-Velos were analyzed by Proteome Discoverer 1.3. MS/MS spectra were searched against the IPI-human database (version 3.83) containing both forward and reverse protein sequences by the SEQUEST search engine. The false discovery rate (FDR) was set to 0.01 on the peptide level. Ingenuity Pathway Analysis (IPA) was applied for the functional annotation.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="25022875" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2013-07-22"/>
+        <date type="publication" value="2014-07-17"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000357</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Not available</field>
+        <field name="instrument_platform">LTQ Orbitrap Velos</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">phosphorylated residue</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biomedical</field>
+        <field name="submitter_keywords">Phosphoproteomics</field>
+        <field name="submitter_keywords"> Kinase substrates</field>
+        <field name="submitter_keywords"> ERK1</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Xue L, Wang P, Cao P, Zhu JK, Tao WA. Identification of ERK1 Direct Substrates using Stable Isotope Labeled Kinase Assay-Linked Phosphoproteomics. Mol Cell Proteomics. 2014 Jul 14. pii: mcp.O114.038588</field>
+        <field name="submitter">Liang Xue</field>
+        <field name="submitter_mail">xue2@purdue.edu</field>
+        <field name="submitter_affiliation">Biochemistry</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000357/rep1-erk.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000357/rep1-tap.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000357/rep2-erk.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000357/rep2-tap.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000357/rep1-erk.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000357/rep1-tap.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000357/rep2-erk.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/07/PXD000357/rep2-tap.raw</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

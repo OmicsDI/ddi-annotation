@@ -1,0 +1,85 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000083">
+      <name>Glycosyltransferases from oat (Avena) implicated in the acylation of avenacins</name>
+      <description>To study glycosyltransferases from oat, root proteins were extracted and separated gy 1D SDS gel electrophoresis. Bands were cut out, digested with trypsin, and the resulting peptides were analysed by LCMSMS on an Orbitrap mass sepctrometer. Raw data was processed with MaxQuant 1.3.0.5, and database searches on a custom database performed using Mascot.</description>
+      <cross_references>
+        <ref dbkey="38783" dbname="TAXONOMY"/>
+        <ref dbkey="23258535" dbname="pubmed"/>
+        <ref dbkey="P0A7K6" dbname="uniprot"/>
+        <ref dbkey="P38134" dbname="uniprot"/>
+        <ref dbkey="P0CE47" dbname="uniprot"/>
+        <ref dbkey="P0A9B2" dbname="uniprot"/>
+        <ref dbkey="P17952" dbname="uniprot"/>
+        <ref dbkey="P02358" dbname="uniprot"/>
+        <ref dbkey="P0A8V0" dbname="uniprot"/>
+        <ref dbkey="P0A7L0" dbname="uniprot"/>
+        <ref dbkey="P0A6Y8" dbname="uniprot"/>
+        <ref dbkey="P32170" dbname="uniprot"/>
+        <ref dbkey="P68187" dbname="uniprot"/>
+        <ref dbkey="P77243" dbname="uniprot"/>
+        <ref dbkey="P76116" dbname="uniprot"/>
+        <ref dbkey="P0AC88" dbname="uniprot"/>
+        <ref dbkey="P21889" dbname="uniprot"/>
+        <ref dbkey="P0AA89" dbname="uniprot"/>
+        <ref dbkey="P0A7D7" dbname="uniprot"/>
+        <ref dbkey="P0A6E4" dbname="uniprot"/>
+        <ref dbkey="P07118" dbname="uniprot"/>
+        <ref dbkey="P12998" dbname="uniprot"/>
+        <ref dbkey="P21189" dbname="uniprot"/>
+        <ref dbkey="P00490" dbname="uniprot"/>
+        <ref dbkey="P61889" dbname="uniprot"/>
+        <ref dbkey="P0AGD3" dbname="uniprot"/>
+        <ref dbkey="P43341" dbname="uniprot"/>
+        <ref dbkey="P50456" dbname="uniprot"/>
+        <ref dbkey="P46889" dbname="uniprot"/>
+        <ref dbkey="P0ABZ6" dbname="uniprot"/>
+        <ref dbkey="P10384" dbname="uniprot"/>
+        <ref dbkey="P0A7B1" dbname="uniprot"/>
+        <ref dbkey="P36655" dbname="uniprot"/>
+        <ref dbkey="P08312" dbname="uniprot"/>
+        <ref dbkey="P21513" dbname="uniprot"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2012-12-03"/>
+        <date type="publication" value="2013-04-24"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000083</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Not available</field>
+        <field name="instrument_platform">LTQ Orbitrap</field>
+        <field name="instrument_platform">instrument model</field>
+        <field name="species">Avena strigosa (black oat)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Not available</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="submitter_keywords">Terpenes; saponin; glycosyltransferase; cereals</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">COMPLETE</field>
+        <field name="software">Matrix Science Mascot 2.4.1</field>
+        <field name="doi">10.6019/PXD000083</field>
+        <field name="publication">Owatworakit A, Townsend B, Louveau T, Jenner H, Rejzek M, Hughes RK, Saalbach G, Qi X, Bakht S, Roy AD, Mugford ST, Goss RJ, Field RA, Osbourn A; Glycosyltransferases from oat (Avena) implicated in the acylation of avenacins., J Biol Chem, 2013 Feb 8, 288, 6, 3696-704, </field>
+        <field name="submitter">Gerhard Saalbach</field>
+        <field name="submitter_mail">gerhard.saalbach@jic.ac.uk</field>
+        <field name="submitter_affiliation">Biological Chemistry</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000083/081208_03.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000083/081209_01.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000083/Scaffold.mzid</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000083/PRIDE_Exp_Complete_Ac_27977.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/04/PXD000083/PRIDE_Exp_Complete_Ac_27978.xml.gz</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

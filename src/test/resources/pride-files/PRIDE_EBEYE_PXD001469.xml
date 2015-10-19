@@ -1,0 +1,54 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001469">
+      <name>Silkworm cocoon LC-MS/MS</name>
+      <description>Bombyx mori cocoon has a multi-layer structure that provides optimal protection for silkworm pupa. Research on the mechanical properties of the multi-layer structure revealed structure-property relationships of the cocoon. Here, we investigated the protein components of the B. mori cocoon in terms of its multi-layer structure. Liquid chromatography-tandem mass spectrometry identified 286 proteins from the multiple cocoon layers. In addition to fibroins and sericins, we identified abundant protease inhibitors, seroins and proteins of unknown function. By comparing protein abundance across layers, we found that the outermost layer contained more sericin1 and protease inhibitors and the innermost layer had more seroin1. As many as 36 protease inhibitors were identified in cocoons, indicating efficient inhibitory activities against a fungal protease. Thus, we propose that more abundant protease inhibitors in the outer cocoon layers may provide better protection for the cocoon. This study increases our understanding of the multi-layer mechanism of cocoons, and helps clarify the biological characteristics of cocoons.</description>
+      <cross_references>
+        <ref dbkey="7091" dbname="TAXONOMY"/>
+        <ref dbkey="25860555" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-11-06"/>
+        <date type="publication" value="2015-04-13"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001469</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Layers of cocoon silks (10 mg) were dissolved in 0.5 mL 9 M LiSCN with vortexing for 2 h. Solubilized proteins were recovered by centrifugation (12,000 g, 10 min, 4°C). Equal amounts of silk proteins (5 μL) were separated on 12.5% (w/v) polyacrylamide gels and visualized by silver nitrite staining. Silk proteins were digested according to the Filter Aided Sample Preparation (FASP) method and placed in an ultrafiltration tube (MWCO 10,000, Millipore, USA), washed three times with 8 M urea using centrifugation at 12,000 g, 4 °C for 20 min, reduced with 15 mM dithiothreitol for 120 min at 37 ºC and alkylated with 50 mM iodoacetamide for 60 min in the dark. Samples were washed three times with 8 M urea and three times with 50 mM NH4HCO3 and proteins were digested with trypsin at a weight ratio of 1:50 (trypsin:protein) for 20 hours at 37 ºC. Tryptic peptides were recovered by centrifugation, lyophilized, and resuspended in 80 µL 0.1% formic acid. Tryptic peptides (2 µL) separated on a Thermo Fisher Scientific EASY-nLC 1000 system using a Thermo Fisher Scientific EASY-Spray column (C18, 2 μm, 100 Å, 50 μm × 15 cm) with a 140 min gradient of 2 min 3%~8% Buffer B (100% acetonitrile, 0.1% formic acid), 100 min 8%~20% Buffer B, 10 min 20%~30% Buffer B, 5 min 30% ~70% Buffer B, 3 min 70%~90% Buffer B, and 20 min 90% Buffer B. Peptides were analyzed using a Thermo Scientific Q Exactive mass spectrometer in data-dependent mode with an automatic switch between MS and MS/MS scans using a top 20 method. Instrument parameters were: resolution 70,000 for full MS scan and 17,500 for MS2 scan, automatic gain control target 3e6 for full scan and 1e6 for MS2, maximum ion injection time 20 ms for full MS scan and 60 ms for MS2 scan.</field>
+        <field name="data_protocol">Mass spectra raw data were analyzed using MaxQuant software (version 1.3.0.1). The MaxQuant searches were executed against an integrated silkworm proteome database containing 35,379 protein sequences from NCBI and silkDB (downloaded on October 17, 2013). Peptide searches were performed with Andromeda search algorithms  using search parameters: maximum of two missed cleavages permitted, carbamidomethyl cysteine as fixed modification, and oxidation (methionine) and acetylation (N-terminus proteins) as variable modifications. Mass tolerance was 20 ppm for first search and 6 ppm for main search. False discovery rate was 0.01 for both proteins and peptides, which had a minimum length of 6 amino acids. Identified peptides were combined and reported as protein groups. A minimum of one unique peptide was required for an identified protein. All common contaminants and reverse hits were removed.  The intensity-based absolute quantification (iBAQ) algorithm in MaxQuant was used to compare abundances of different proteins within a single sample; the label-free quantification (LFQ) algorithm in MaxQuant was employed to compare the abundances of protein abundances among different samples. Relative intensity of fibroin heavy chain to other proteins was assumed to be essentially the same in all silks and was normalized as 100,000. Relative intensity of proteins was normalized to fibroin heavy chain.</field>
+        <field name="instrument_platform">Q Exactive</field>
+        <field name="species">Bombyx mori (Silk moth)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">acetylated residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">Silkworm</field>
+        <field name="submitter_keywords"> multi-layer cocoon</field>
+        <field name="submitter_keywords"> LC-MS/MS</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Zhang Y, Zhao P, Dong Z, Wang D, Guo P, Guo X, Song Q, Zhang W, Xia Q. Comparative Proteome Analysis of Multi-Layer Cocoon of the Silkworm, Bombyx mori. PLoS One. 2015 Apr 10;10(4):e0123403. eCollection 2015</field>
+        <field name="submitter">Yan Zhang</field>
+        <field name="submitter_mail">zyid123@126.com</field>
+        <field name="submitter_affiliation">State Key Laboratory of Silkworm Genome Biology</field>
+        <field name="labhead">Qingyou Xia</field>
+        <field name="labhead_mail">xiaqy@swu.edu.cn</field>
+        <field name="labhead_affiliation">State Key Laboratory of Silkworm Genome Biology, Southwest University, Chongqing 400715, China</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001469/search_txt.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001469/cocoon_layer.zip</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

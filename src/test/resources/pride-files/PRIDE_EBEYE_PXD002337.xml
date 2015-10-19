@@ -1,0 +1,61 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-08-18</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD002337">
+      <name>F1 allele specific gene expression</name>
+      <description>By comparing mouse fibroblasts from two parental strains (Bl6 and Spretus) with fibroblasts from their first generation offspring (F1) we can detect allele specific expression of proteins. The Bl6 and Spretus lines are evolutionary distant and harbour many SNPs in their genomes which when synonomous we can detect on the protein level using mass spectrometry. By mixing SILAC labeled Bl6, Spretus and F1 offspring cell lines we can detect peptides shared between all three cell lines and also SNP peptides that are only expressed in the F1 cells and either Bl6 or Spretus cells. By comparing the abundance of the shared peptides and the SNP peptides we can quantify how much of a protein in the F1 cells that comes from the paternal or maternal allele. This data were then further compared to polysome profiling data. Azidohomoalanine labeling was used to enrich newly synthesized proteins from the three cell lines.</description>
+      <cross_references>
+        <ref dbkey="10090" dbname="TAXONOMY"/>
+        <ref dbkey="26253569" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2015-06-09"/>
+        <date type="publication" value="2015-08-18"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD002337</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Fully SILAC labeled methionine starved Spretus (Lys0, Arg0), Bl6 (Lys4, Arg6) and F1 (Lys8, Arg10) cells were pulsed with azidohomoalanine for 1.5 h in methionine depleted SILAC medium. Cell were lyzed, and equal protein amounts from the three cultures were mixed 1:1:1 before AHA labeled proteins were clicked to Alkyne beads over night. Beads were stringently washed and proteins were digested "on bead" first with LysC then by trypsin over night. Peptides were stored on StageTips before being eluted in 80% acetonitrila and 0.5% acetic acid (Buffer B). Solvents were evaporated using a speed vac and peptides were resuspended in 0.5% formic acid and 15% acetonitrile and put strong cation exchange (SCX) columns. Column were washed before peptides were eluted in high salt buffer (15% acetonitrile, 500mM ammonium acetate and 0.5% formic acid). Samples were put back on StageTips before being eluted again in Buffer B, vacuum dried and resuspended in 5% acetonitrile and 15 formic acid (Buffer A). Peptides were seperated on either a 2 m monolithic with a 100 µm inner diameter or a 15 cm column with a 75 µm inner diameter packed with C18 resin. Samples were analyzed using one 8 hour gradient of increasing Buffer B with a 300nL/min flow rate on the 2 m column and two 4h gradient of 250nL/min flow rate for the 15cm columns. Peptides were analyzed using a Q-Eaxctive mass spectrometer run in "top 10" data dependent mode. Full scans had a resolution of 70,000 a target value of 3 million ions and maximum injection time of 20 ms. MS/MS scans were analyzed with a resolution of 17,500, 1 million ions and 60 ms maximum injection time.</field>
+        <field name="data_protocol">Raw files were analyzed using MaxQuant v1.5.1.2 with default settings, triple SILAC was added as labels and "match between runs" was activated. The raw files were analyzed twice once with "reQuantify" activated and one with it inactive. Two databases based on one-frame translated transcriptome data for Bl6 and Spretus respectively were searched. FDR was assed by reversing both data bases and was set to 1%.</field>
+        <field name="instrument_platform">Q Exactive</field>
+        <field name="species">Mus musculus (Mouse)</field>
+        <field name="cell_type">fibroblast</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">cell culture</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">acetylated residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">LC-MS/MS</field>
+        <field name="submitter_keywords"> F1</field>
+        <field name="submitter_keywords"> Spretus</field>
+        <field name="submitter_keywords"> Bl6</field>
+        <field name="submitter_keywords"> allele</field>
+        <field name="submitter_keywords"> azidohomoalanine</field>
+        <field name="submitter_keywords"> SILAC</field>
+        <field name="submitter_keywords"> monolithic column</field>
+        <field name="quantification_method">SILAC</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Hou J, Wang X, McShane E, Zauber H, Sun W, Selbach M, Chen W. Extensive allele-specific translational regulation in hybrid mice. Mol Syst Biol. 2015 Aug 7;11(8):825</field>
+        <field name="submitter">Erik McShane</field>
+        <field name="submitter_mail">erik.mcshane@mdc-berlin.de</field>
+        <field name="submitter_affiliation">Max-Delbrück-Centrum für Molekulare Medizin (MDC)</field>
+        <field name="labhead">Matthias Selbach</field>
+        <field name="labhead_mail">matthias.selbach@mdc-berlin.de</field>
+        <field name="labhead_affiliation">Proteome dynamics Max-Delbrück-Center for Molecular Medicine Berlin, Germany</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002337/Bibo_20140520_SEM_F1_AHA_afterSCX.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002337/Bibo_20140520_SEM_F1_AHA_beforeSCX.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002337/Kermit_20140523_SEM_F1_AHA_2m.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD002337/MaxQuant_output.zip</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

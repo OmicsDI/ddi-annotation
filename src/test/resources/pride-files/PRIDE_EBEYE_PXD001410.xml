@@ -1,0 +1,72 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001410">
+      <name>A Themis:SHP complex promotes T cell survival</name>
+      <description>THEMIS is critical for conventional T cell development but its precise molecular function remains elusive. Here we show that THEMIS constitutively associates with the phosphatases SHP-1 and SHP-2. This complex requires the adapter GRB2, which bridges SHP to Themis in a Tyr-phosphorylation-independent fashion. Rather, SHP1 and THEMIS engage with the N-SH3 and C-SH3 domains of GRB2, respectively, a configuration that allows GRB2-SH2 to recruit the complex onto LAT. Coherent with THEMIS-mediated recruitment of SHP to the TCR signalosome, THEMIS knockdown increased TCR-induced TCR- phosphorylation, Erk activation and CD69 expression, however not Lck phosphorylation. This generalized TCR signalling increase led to augmented apoptosis, a phenotype mirrored by SHP-1 knockdown. Remarkably, a KI mutation of Lck Ser59, previously suggested to be key in ERK-mediated resistance towards SHP-1 negative feedback, did not affect TCR signalling nor ligand discrimination in vivo. Thus, THEMIS:SHP complex dampens early TCR signalling by a previously unknown molecular mechanism that favors T cell survival. We discuss possible implications of this mechanism in modulating TCR output signals towards conventional T cell development and differentiation.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="25535246" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-10-17"/>
+        <date type="publication" value="2015-01-07"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001410</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">For MS analysis, resting or anti-CD3-activated Jurkat cells (10e8) expressing THEMIS-Strep were lysed and pulled down as described (Paster et al, 2013). Biotin-blocked Streptactin-Sepharose beads were used to assess background. Biotin-eluted proteins were boiled in reducing SDS NuPAGE sample buffer (Invitrogen), followed by alkylation with 55 mM iodoactamide (Sigma). In-gel digest and MS data acquisition were performed as described (Brockmeyer et al, 2011).</field>
+        <field name="data_protocol">Data were converted to .mzXML format using MSconvert (Proteowizard) and uploaded into the Central Proteomics Facility Pipeline (CPFP) (Trudgian et al, 2010) for analysis. Enzyme was set to trypsin allowing for up to 2 missed cleavages. Carbamidomethyl cysteine was set as a fixed modification and Oxidation (methionine), deamidation (NQ), acetylation (Protein‐N) and phosphotyrosine as variable modifications. Mass tolerances for MS and MS/MS peak identifications were 20 ppm and 0.1Da respectively. InterProphet probability (IP Prob) is derived by the combination of results from multiple search engines within CPFP and improves coverage and confidence over use of a single search engine. Label‐free quantitation was performed using the SINQ (Spectral index quantitation) tool within CPFP(Trudgian et al, 2011). Only proteins which were &gt;20‐fold abundant over the biotin‐blocked control sample were considered for further analysis using the CRAPOME contaminant repository (Mellacheruvu et al, 2013). Finally, proteins found in less than 5% of all Streptag background pull‐down experiments listed within CRAPOME were considered as true interactors.</field>
+        <field name="instrument_platform">LTQ Orbitrap</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">T lymphocyte</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">JURKAT cell</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">acetylated residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="modification">deamidated residue</field>
+        <field name="technology_type">Affinity purification coupled with mass spectrometry proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biomedical</field>
+        <field name="submitter_keywords">TCR</field>
+        <field name="submitter_keywords"> Themis</field>
+        <field name="submitter_keywords"> SHP1</field>
+        <field name="submitter_keywords"> negative feedback</field>
+        <field name="submitter_keywords"> apoptosis</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Paster W, Bruger AM, Katsch K, Grégoire C, Roncagalli R, Fu G, Gascoigne NR, Nika K, Cohnen A, Feller SM, Simister PC, Molder KC, Cordoba S, Dushek O, Malissen B, Acuto O. A THEMIS:SHP1 complex promotes T-cell survival. EMBO J. 2014 Dec 22. pii: e201387725</field>
+        <field name="submitter">Kristin Katsch</field>
+        <field name="submitter_mail">kristin.katsch@path.ox.ac.uk</field>
+        <field name="submitter_affiliation">University of Oxford</field>
+        <field name="labhead">Professor Oreste Acuto</field>
+        <field name="labhead_mail">oreste.acuto@path.ox.ac.uk</field>
+        <field name="labhead_affiliation">Sir William Dunn School of Pathology, Molecular Immunology Group, University of Oxford, UK</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001410/B091207_007.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001410/B091207_008.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001410/B091207_009.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001410/B091207_010.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001410/B091207_011.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001410/B091207_012.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001410/B091207_013.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001410/B091207_014.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001410/B091207_015.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001410/B091207_016.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001410/B091207_017.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001410/B091207_018.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001410/B091207_019.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001410/B091207_020.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001410/B091207_021.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001410/interact.iproph.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001410/interact.iproph.prot.xml</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

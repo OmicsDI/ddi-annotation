@@ -1,0 +1,91 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000121">
+      <name>Proteomic Profiling of the Mitochondrial Inner Membrane of Rat Renal Proximal Convoluted Tubules</name>
+      <description>The proximal convoluted tubule is the primary site of renal fluid, electrolyte and nutrient reabsorption, processes that consume large amounts of ATP. Previous proteomic studies have profiled the adaptions that occur in this segment of the nephron in response to onset of metabolic acidosis. Proximal convoluted tubule isolation and mitochondrial enrichment procedures were described previously. Briefly, rat renal cortex was digested with collagenase and proximal convoluted tubules were purified by Percoll density gradient centrifugation. Mitochondria were isolated by differential and sucrose density centrifugation, which produced an 8-fold enrichment in specific activity of cytochrome C oxidase . The isolated mitochondria were resuspended in H2O, incubated on ice for 20 min with gentle vortexing, and then centrifuged at 12,000xg for 5 min. The pellet and little remaining supernatant were centrifuged again at 12,000xg for 5 min to tighten the pellet and remove residual supernatant. The combined supernatants contain the mitochondrial outer membrane and intermembrane proteins while the final pellet contains mitoplasts. The mitoplasts were subsequently treated with 0.1 M Na2CO3, pH 11.5, incubated on ice for 20 min, and then centrifuged at 100,000xg for 30 min. The supernatant contains matrix proteins and the pellet is the enriched MIM fraction. Samples containing 50 µg of protein were precipitated with acetone and an in-solution tryptic digestion preformed with ProteaseMax (Promega). The peptides were fractionated on a reverse phase column (1200 nanoHPLC, Zorbax C18, 5 um, 75 um ID x 150mm column, Agilent) using a 90 minute linear gradient from 25%-55% buffer B (buffer B = 90% acetonitrile and 0.1% formic acid) at a flow rate of 300 nl/min. Peptides were eluted directly into the mass spectrometer (LTQ linear ion trap, Thermo Scientific) and spectra were collected over a m/z range of 200-2000 Da using a dynamic exclusion limit of 3 MS/MS spectra of a given peptide mass for 30 sec and an exclusion duration of 90 sec. The compound lists from the resulting spectra were produced using Xcalibar 2.2 software (Thermo Scientific) with an intensity threshold of 5,000 and 1 scan/group. Each biological sample was injected five times for LC-MS/MS analysis.  MS/MS spectra were searched against the Uniprot-KB Rattus norvegicus protein sequence database (74,140 sequence entries) concatenated with a reverse database using both the Mascot (version 2.3.02, Matrix Science) and SEQUEST (version v.27, rev. 11, Sorcerer, Sage-N Research) database search engines. The following search parameters were used: average mass, peptide mass tolerance of 2.5 Da, fragment ion mass tolerance of 1.0 Da, complete tryptic digestion allowing four missed cleavages, variable modifications of methionine oxidation and lysine acetylation, and a fixed modification of cysteine carbamidomethylation. Peptide identifications from both of the search engine results were combined using protein identification algorithms in Scaffold 3 (Version 3.6.0, Proteome Software). Peptide and protein probability thresholds of 90% and 99% were applied with Peptide and Protein Prophet algorithms in Scaffold 3 [6] [7]. Proteins containing shared peptides were grouped by Scaffold 3 to satisfy the laws of parsimony. A peptide false discovery rate (FDR) was determined by the target decoy approach of searching the reversed database [8]. Only proteins that were identified by a minimum of 2 unique peptides in at least 1 biological replicate were considered confidently identified. Manual validation of MS/MS spectra was performed for protein identifications that met the initial thresholds that were based on two unique peptides and for all of the acetylated peptides. The analysis confidently identified 207 proteins in the combined samples. Further proteomic analysis identified 14 peptides that contain an N-epsilon-acetyl-lysine, 7 of which are novel sites. This study provides the first proteomic profile of the mitochondrial inner membrane proteome of this segment of the rat renal nephron.</description>
+      <cross_references>
+        <ref dbkey="10116" dbname="TAXONOMY"/>
+        <ref dbkey="23780708" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2013-01-15"/>
+        <date type="publication" value="2013-06-20"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000121</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Not available</field>
+        <field name="instrument_platform">LTQ</field>
+        <field name="species">Rattus norvegicus (Rat)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Not available</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">acetylated residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="submitter_keywords">kidney</field>
+        <field name="submitter_keywords"> miotchondria</field>
+        <field name="submitter_keywords"> inner membrane</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Freund DM, Prenni JE, Curthoys NP; Proteomic profiling of the mitochondrial inner membrane of rat renal proximal convoluted tubules., Proteomics, 2013 Aug, 13, 16, 2495-9, </field>
+        <field name="submitter">Dana Freund</field>
+        <field name="submitter_mail">dana.freund@colostate.edu</field>
+        <field name="submitter_affiliation">Biochemistry &amp; Molecular Biology</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/0D3_1.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/0D3_2.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/0D3_3.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/0D3_4.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/0D3_5.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/0D4_1.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/0D4_2.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/0D4_3.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/0D4_4.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/0D4_5.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/0D_3Non1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/0D_3Non2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/0D_3Non3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/0D_3Non4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/0D_3Non5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/0D_4Non1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/0D_4Non2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/0D_4Non3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/0D_4Non4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/0D_4Non5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/0D3 1 search.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/0D3 2 search.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/0D3 3 search.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/0D3 4 search.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/0D3 5  search.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/0D4 1  search.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/0D4 2 search.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/0D4 3 search.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/0D4 5 search.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/0d4 4 search.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/0D3 1 peak.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/0D3 2 peak.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/0D3 3 peak.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/0D3 4 peak.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/0D3 5 peak.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/0D4 1 peak.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/0D4 2 peak.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/0D4 3 peak.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/0d4 5 peak.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/Supporting information.docx</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/Freund2013.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/Freund2013.mzid</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/06/PXD000121/0d4 4 peak.zip</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

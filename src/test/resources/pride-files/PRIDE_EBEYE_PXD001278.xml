@@ -1,0 +1,83 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001278">
+      <name>Off-target responses in the HeLa proteome subsequent to transient plasmid transfection using SILAC</name>
+      <description>We report a significant differential expression of  proteins, all of which are associated with a viral infection response typified by Interferon type I/II. Notably the upregulated proteins may affect several vital cellular processes, including cell cycle control, translation and post-translational modification of proteins.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="25448019" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-09-02"/>
+        <date type="publication" value="2014-12-08"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001278</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">HeLa cells were cultured in DMEM minus L-Lysine and L-Arginine with 10% dialyzed fetal calf serum, 0.03% glutamine and 0.1 mg/ml gentamicin at 5% CO2. For labelling of heavy cells L-Lysine-13C6 and L-Arginine-12C6 were added and for labelling of light cells L-Lysine-12C6 and L-Arginine-12C6 were added to the medium. Cells were allowed to undergo six doublings and the incorporation efficiency was evaluated by mass spectrometry analysis of tryptic protein extracts as described below. Subsequent to labelling, cells were grown in 15 cm dishes until 60-70% confluence. Cells were then either untreated, treated with transfection reagent alone or together with plasmid DNA (empty pECFP-N1 vector). Transfection reagent and plasmid DNA was premixed with water (56 µl Fugene®HD to 879 µl sterile deionized water with and without 19 µg ECFP plasmid) for 15 min in room temperature. Then 850 µl of this mixture was added to the cells and further incubated for 24 h. After the transfection treatment, cells were detached by trypsination and collected by centrifugation at 450 x g for 5 min at 4 °C. Cells were washed twice in PBS and equal number of heavy and light (106 each) cells were pooled and lysed in 7 M urea, 2 M thiourea, 2.5% (w/v) CHAPS and 25 mM DTT for 30 min with shaking. Lysates were clarified by centrifugation at 16000 x g for 15 min and proteins in the soluble fractions were precipitated using chloroform/methanol24 h after the transfection treatment, cells were detached by trypsination and collected by centrifugation at 450 x g for 5 min at 4 °C. Cells were washed twice in PBS and equal number of heavy and light (106 each) cells were pooled and lysed in 7 M urea, 2 M thiourea, 2.5% (w/v) CHAPS and 25 mM DTT for 30 min with shaking. Lysates were clarified by centrifugation at 16000 x g for 15 min and proteins in the soluble fractions were precipitated using chloroform/methanol. After desalting, the peptides were dried down in a SpeedVac centrifuge and resuspended in 0.1% formic acid. The peptides were analyzed on a LC-MS/MS platform consisting of an Easy-nLC 1000 UHPLC system (Thermo Scientific/Proxeon) interfaced with an LTQ-Orbitrap Elite hybrid mass spectrometer (Thermo Scientific) via a nanospray ESI ion source (Proxeon, Odense). Peptides were injected onto a C-18 trap column (Acclaim PepMap100 (75 μm i. d. x 2 cm, C18, 5 μm, 100 Å, Thermo Scientific) and further separated on a C-18 analytical column (Acclaim PepMap100 (75 μm i. d. x 50 cm, C18, 3 μm, 100 Å, Thermo Scientific) using a 240 min gradient from 10-40% CH3CN, 0.1% formic acid at a flow rate of 250 nl/min. Peptides eluted were analyzed on the LTQ-Orbitrap Elite hybrid mass spectrometer operating in positive ion- and data dependent acquisition (DDA) mode using the following parameters: Electrospray voltage 1.9 kV, CID fragmentation with normalized collision energy 35, automatic gain control (AGC) target value of 1E6 for Orbitrap MS and 1E3 for MS/MS scans. Each MS scan (m/z 400–1600) was acquired at a resolution of 120,000 FWHM, followed by 20 MS/MS scans  triggered for intensities above 500, at a maximum ion injection time of 200 ms for MS and 50 ms for MS/MS scans.</field>
+        <field name="data_protocol">Raw data files from the mass spectrometer were analyzed in Proteome Discoverer 1.4 (Thermo Scientific) using the SEQUEST HT search engine with the May 2013 version of the human protein database from UniProt. The following search parameters were used: enzyme specified as trypsin with maximum two missed cleavages allowed; precursor mass tolerance was 10 ppm and fragment mass tolerance was 0.6 Da. The isotope labelled 13C6-L-lysine, N-terminal acetylation and methionine oxidation were set as dynamic modifications. The Percolator tool was used for peptide validation and a cutoff value of 0.01 for false discovery rate (FDR). Thus peptides with high confidence only were used for final protein identification. Missing SILAC quantification values were replaced with imputed values representing the normal distribution around shifted mean and scaled standard deviation following the method described in [ref: http://www.mcponline.org/content/11/5/77.long ].</field>
+        <field name="instrument_platform">LTQ Orbitrap Elite</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">epithelial cell</field>
+        <field name="disease">Cervix carcinoma</field>
+        <field name="tissue">cell culture</field>
+        <field name="modification">6x(13)C labeled residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biomedical</field>
+        <field name="submitter_keywords">SILAC</field>
+        <field name="submitter_keywords"> Off-target</field>
+        <field name="submitter_keywords">  responses</field>
+        <field name="submitter_keywords">  HeLa</field>
+        <field name="submitter_keywords">  proteome </field>
+        <field name="submitter_keywords"> transient </field>
+        <field name="submitter_keywords"> plasmid </field>
+        <field name="submitter_keywords"> transfection</field>
+        <field name="quantification_method">SILAC</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Hagen L, Sharma A, Aas PA, Slupphaug G. Off-target responses in the HeLa proteome subsequent to transient plasmid-mediated transfection. Biochim Biophys Acta. 2014 Nov 5;1854(1):84-90</field>
+        <field name="submitter">Animesh Sharma</field>
+        <field name="submitter_mail">sharma.animesh@gmail.com</field>
+        <field name="submitter_affiliation">Engineer at NTNU, Norway</field>
+        <field name="labhead">Geir Slupphaug</field>
+        <field name="labhead_mail">geir.slupphaug@ntnu.no</field>
+        <field name="labhead_affiliation">Professor Department of Cancer Research and Molecular Medicine Faculty of Medicine  Laboratory Centre, 5th floor. Erling Skjalgssons gt. 1  Norwegian University of Science and Technology NTNU 7006 Trondheim, Norway</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001278/131019_SILAC_LN_HEc_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001278/131019_SILAC_LN_HEc_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001278/131019_SILAC_LN_HEc_Transfected.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001278/131019_SILAC_LN_HN_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001278/131019_SILAC_LN_HN_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001278/131019_SILAC_LN_HN_Normal.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001278/131019_SILAC_LN_HTr_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001278/131019_SILAC_LN_HTr_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001278/131019_SILAC_LN_HTr_Reagent.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001278/140129_SILAC_LN_HECFP_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001278/140129_SILAC_LN_HECFP_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001278/140129_SILAC_LN_HECFP_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001278/140129_SILAC_LN_HN_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001278/140129_SILAC_LN_HN_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001278/140129_SILAC_LN_HN_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001278/140129_SILAC_LN_HTr_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001278/140129_SILAC_LN_HTr_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001278/140129_SILAC_LN_HTr_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001278/140508_SILAC_transfect_HeavyECFP_LightNormal_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001278/140508_SILAC_transfect_HeavyECFP_LightNormal_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001278/140508_SILAC_transfect_HeavyECFP_LightNormal_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001278/140508_SILAC_transfect_HeavyNormal_LightNormal_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001278/140508_SILAC_transfect_HeavyNormal_LightNormal_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001278/140508_SILAC_transfect_HeavyNormal_LightNormal_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001278/140508_SILAC_transfect_HeavyReagent_LightNormal_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001278/140508_SILAC_transfect_HeavyReagent_LightNormal_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001278/140508_SILAC_transfect_HeavyReagent_LightNormal_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/12/PXD001278/maxquant_output.tar.gz</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

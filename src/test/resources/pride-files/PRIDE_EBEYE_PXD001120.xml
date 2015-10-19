@@ -1,0 +1,86 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001120">
+      <name>Adenovirus particles SILAC analysis of different batches and mutant virus</name>
+      <description>We used stable isotope labelling of amino acids in cell culture coupled with high throughput quantitative mass spectrometry to analyse the protein composition of highly purified wild type adenoviruses, mutant adenoviruses lacking an internal protein component (protein V) and recombinant adenoviruses of the type commonly used in gene therapy including one virus which had been used in a clinical trail. We found that the viral protein abundance and composition was consistent across all types of virus examined except for the virus lacking protein V which also had reduced amounts of another viral core protein, protein VII. In all the samples analysed we found no evidence of consistent packaging or contamination with cellular proteins. We believe this technique makes a powerful method to analyse the protein composition of this important gene therapy vector and genetically engineered or synthetic virus like particles.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="25096814" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-07-09"/>
+        <date type="publication" value="2014-08-08"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001120</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Viruses grown on SILAC labelled cells and purified using standard high quality virus purification techniques. The SILAC labelled virus particles were mixed and then run on SDS-PAGE gels. The viral proteins were digested with trypsin in gel and the peptides analyses by LC-MS/MS on an orbitrap Velos.</field>
+        <field name="data_protocol">We used MaxQuant 1.3.0.5 and search datasets of human proteome plus a bespoke adenovirus proteome.</field>
+        <field name="instrument_platform">LTQ Orbitrap Velos</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">epithelial cell</field>
+        <field name="disease">adenovirus infectious disease</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">6x(13)C,2x(15)N labeled L-lysine</field>
+        <field name="modification">6x(13)C,4x(15)N labeled L-arginine</field>
+        <field name="modification">6x(13)C labeled residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biomedical</field>
+        <field name="submitter_keywords">human adenovirus purified particles</field>
+        <field name="quantification_method">SILAC</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Alqahtani A, Heesom K, Bramson J, Curiel D, Ugai H, Matthews D. Analysis of purified wild type and mutant adenovirus particles by SILAC based quantitative proteomics. J Gen Virol. 2014 Aug 5. pii: vir.0.068221-0</field>
+        <field name="submitter">David Matthews</field>
+        <field name="submitter_mail">d.a.matthews@bristol.ac.uk</field>
+        <field name="submitter_affiliation">University of Bristol</field>
+        <field name="labhead">David Matthews</field>
+        <field name="labhead_mail">d.a.matthews@bristol.ac.uk</field>
+        <field name="labhead_affiliation">Cellular and Molecular Medicine University of Bristol Bristol BS8 1TD</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001120/MSMS sample 1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001120/10_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001120/10_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001120/10_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001120/11_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001120/11_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001120/11_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001120/12_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001120/12_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001120/12_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001120/MSMS sample 2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001120/MSMS sample 3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001120/MSMS sample 4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001120/MSMS sample 5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001120/MSMS sample 6.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001120/MSMS sample 7.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001120/8_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001120/8_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001120/8_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001120/9_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001120/9_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001120/9_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001120/Experiment 1.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001120/Experiment 10.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001120/Experiment 11.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001120/Experiment 12.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001120/Experiment 2.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001120/Experiment 3.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001120/Experiment 4.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001120/Experiment 5.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001120/Experiment 6.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001120/Experiment 7.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001120/Experiment 8.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001120/Experiment 9.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001120/All proteinGroups data.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD001120/Adenovirus_bespoke_protein_database.fasta</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

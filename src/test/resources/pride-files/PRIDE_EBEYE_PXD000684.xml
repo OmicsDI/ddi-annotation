@@ -1,0 +1,78 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000684">
+      <name>Proteomics of Pseudomonas aeruginosa PAO1 and PA14</name>
+      <description>Recent studies have shown that the concentrations of proteins expressed from orthologous genes are often conserved across organisms, and to a greater extent than the abundances of the corresponding mRNAs. However, such studies have not distinguished between evolutionary (e.g., sequence divergence) and environmental (e.g., growth condition) effects on the regulation of steady-state protein and mRNA abundances. Here we systematically investigated the transcriptome and proteome of two closely related Pseudomonas aeruginosa strains, PAO1 and PA14, under identical experimental conditions, thus controlling for environmental effects. For 703 genes observed by both shotgun proteomics and microarray experiments, we find that the protein-to-mRNA ratios are highly correlated between orthologous genes in the two strains, to an extent comparable to protein and mRNA abundances. In spite of this high molecular similarity between PAO1 and PA14, we found that several metabolic, virulence, and antibiotic resistance genes are differentially expressed between the two strains, mostly at the protein but not at the mRNA level. Our data demonstrate that post-transcriptional regulation is important for understanding the discordance between mRNA and protein abundance.</description>
+      <cross_references>
+        <ref dbkey="652611" dbname="TAXONOMY"/>
+        <ref dbkey="208964" dbname="TAXONOMY"/>
+        <ref dbkey="24742327" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-01-15"/>
+        <date type="publication" value="2014-05-08"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000684</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Pseudomonas aeruginosa PAO1 and UCBPP-PA14 were grown in 25 ml of synthetic cystic fibrosis sputum medium (SCFM), which mimics the nutritional environment of the cystic fibrosis lung, at 37 °C with shaking at 250 rpm. Cells were harvested at OD600 0.4 to 0.5. We performed two biological replicates for each experiment.  Cells were lysed three times with a French press and cellular lysate was collected from the supernatant after centrifugation for 20 min at 10,000 rpm. Lysis buffer consisted of 25 mM Tris-HCl (pH 7.5), 5 mM DTT, 1.0 mM EDTA, and 1×CPIOPS (Calbiochem protease inhibitor cocktail). 50 μl of diluted cell lysate (2 mg/ml; diluted with 50 mM Tris-HCl buffer) was incubated at 55 °C for 45 min with 50 μl of trifluoroethanol (TFE) and 15 mM dithiothreitol (DTT), then incubated with 55 mM iodoacetamide (IAM) in the dark for 30 min. After diluting the sample to 1 ml with buffer (50 mM TrisHCl, pH 8.0), 1:50 w/w trypsin was added for a 4.5-hour digestion (halted by adding 20 μl of formic acid, resulting in 2% v/v). The sample was lyophilized, resuspended with buffer C (95% H2O, 5% acetonitrile, 0.01% formic acid), and contaminants removed with C18 tips (Thermo Fisher). The eluted sample was again lyophilized, resuspended with 120 μl buffer C, and filtered through a Microcon-10 filter (for 45 min at 14,000 g at 4 °C). Each sample was injected 5 times into an LTQ-Orbitrap Classic mass spectrometer (Thermo Electron; mass resolution 60,000; top12 ms2 selection strategy), and data were collected in a 0 to 90% acetonitrile gradient over 5 hours with C18 column.</field>
+        <field name="data_protocol">RAW files were searched independently using the P. aeruginosa PAO1 and PA14 protein sequence database (downloaded from the PseudoCAP database, 2009-Nov-23 version). Databases of each strain contained the same number of randomly shuffled protein sequences as the decoy database. We used Bioworks/SEQUEST (Thermo Electron; version 3.3.1 SP1), X!Tandem with k-score (2009.10.01.1 LabKey and ISB version, included in TPP 4.3.1 package), InsPecT (20100331 version), and MS-GFDB (06/16/2011 version) for the database search. Then we combined these results with MSblender28 and considered peptide-spectrum matches with an estimated false discovery rate(FDR) less than 0.01. Subsequently, we calculated APEX scores5,29 with weighted spectral counts per protein (used FDR&lt;0.01 estimated by MSblender).</field>
+        <field name="instrument_platform">LTQ Orbitrap</field>
+        <field name="species">Pseudomonas aeruginosa PA14</field>
+        <field name="species">Pseudomonas aeruginosa PAO1</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">No PTMs are included in the dataset</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">Pseudomonas aeruginosa</field>
+        <field name="submitter_keywords"> Synthetic Cystic Fibrosis Medium</field>
+        <field name="submitter_keywords"> MSblender</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Kwon T, Huse HK, Vogel C, Whiteley M, Marcotte EM. Protein-to-mRNA Ratios Are Conserved between Pseudomonas aeruginosa Strains. J Proteome Res. 2014 Apr 17</field>
+        <field name="submitter">Taejoon Kwon</field>
+        <field name="submitter_mail">taejoon.kwon@marcottelab.org</field>
+        <field name="submitter_affiliation">University of Texas at Austin</field>
+        <field name="labhead">Edward Marcotte</field>
+        <field name="labhead_mail">edward.marcotte@gmail.com</field>
+        <field name="labhead_affiliation">University of Texas at Austin</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000684/20090428_SMPA14_1_1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000684/20090428_SMPA14_1_2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000684/20090501_SMPA14_1_1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000684/20090505_SMPA14_2_1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000684/20090505_SMPA14_2_2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000684/20090731_SMPAO1_1_2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000684/20090731_SMPAO1_2_1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000684/20090731_SMPAO1_2_2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000684/20090911_SMPAO1_1_1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000684/20090911_SMPAO1_1_2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000684/20090915_SMPA14_1_1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000684/20090915_SMPA14_1_2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000684/20090915_SMPA14_2_1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000684/20090915_SMPA14_2_2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000684/20090915_SMPAO1_1_1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000684/20090915_SMPAO1_1_2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000684/20090915_SMPAO1_2_2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000684/20090918_SMPA14_2_2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000684/20090918_SMPAO1_2_1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000684/20090918_SMPAO1_2_2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000684/PSEAE_PA14.PCAP.MQtxt_FDR001.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000684/PSEAE_PAO1.PCAP.MQtxt_FDR001.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000684/SMPA14_1.all.msblender_in.msblender_out.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000684/SMPA14_2.all.msblender_in.msblender_out.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000684/SMPAO1_1.all.msblender_in.msblender_out.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000684/SMPAO1_2.all.msblender_in.msblender_out.gz</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

@@ -1,0 +1,99 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001005">
+      <name>Comparative phosphoproteomic analysis of mammalian renal glomeruli</name>
+      <description>Glomerular biology is dependent on tightly controlled signal transduction networks that control phosphorylation of signaling proteins such as cytoskeletal regulators or slit diaphragm proteins of kidney podocytes. Recent, in-depth analysis of the mouse glomerular phosphoproteome by tandem mass spectrometry confidently identified thousands of phosphorylation sites providing a unique opportunity to study signaling in vivo. However, the multitude of phosphorylated residues demands for additional systems biology approaches to separate physiologically important sites from non-functional phosphorylated residues. Cross-species comparison of phosphorylation events is a powerful mean to functionally prioritize and identify physiologically meaningful phosphorylation sites. Here, we present the result of additional phosphoproteomic analyses of the glomerular phosphoproteome in cow and rat to allow cross-species comparisons. We discovered several phosphorylation sites with potentially high biological relevance, e.g. tyrosine phosphorylation of the cytoskeletal regulator synaptopodin and the slit diaphragm protein neph-1 (Kirrel). Moreover, cross-species comparisons revealed conserved phosphorylation of the slit diaphragm protein nephrin on an acidic cluster at the intracellular terminus and conserved podocin phosphorylation on the very carboxyl terminus of the protein. Given the pivotal role of podocin for glomerular biology we studied a highly conserved podocin phosphorylation site in greater detail and show that phosphorylation regulates affinity of the interaction with nephrin and CD2AP. Taken together, these results suggest that species comparisons of phosphoproteomic data may reveal regulatory principles in glomerular biology.</description>
+      <cross_references>
+        <ref dbkey="10116" dbname="TAXONOMY"/>
+        <ref dbkey="9913" dbname="TAXONOMY"/>
+        <ref dbkey="25420462" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-05-23"/>
+        <date type="publication" value="2015-01-16"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001005</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Isolation of rat glomeruli. Rat glomeruli from male Fischer F344 rats were isolated by subsequent sieving of native rat kidneys as previously described with modifications [1]. The procedure was carried out at 4 degrees or on ice. The mesh sizes were 150 µm, 100 µm and 50 µm. Glomeruli were collected on the last mesh. Purity of glomerular preparation was verified by microscopic examination.  The obtained glomeruli were centrifuged at 300xg, lysed in urea buffer (containing 8 M Urea, 50 mM ammonium bicarbonate buffer and protease and phosphatase inhibitor (Pierce)). Sonication and vortexing was performed. Lysates were then centrifuged at 14.000 g for 20min, and the supernatant was saved. Protein content was measured using a commercial BCA assay. 1 mg of protein lysate was used for phosphopeptide enrichment. The experiment was repeated twice. All animal procedures were approved by the German federal and local institutions.  Isolation of bovine glomeruli. Fresh cow kidneys from two 1 year old male cows were obtained from the local abattoir and snap-frozen. This was approved by the responsible veterinarian. Glomeruli were isolated by subsequent sieving of thawed native cow kidneys lobes as previously described with modifications [1]. The procedure was carried out at 4 degrees or on ice. Kidneys were pressed through sieves with a mesh size of 400 µm, 180 µm, 150 µm. Glomeruli were collected on the last sieve (105µm mesh size). Purity of glomerular preparation was verified by microscopic examination.  Glomeruli were centrifuged at 300xg and lysed in urea buffer. Lysates were then centrifuged at 14.000 g for 20 min, and the supernatant was saved. Sonication and vortexing was performed. Protein content was measured using a commercial BCA assay. 1 mg of protein was used for phosphopeptide enrichment. The experiment was repeated twice. Phosphopeptide enrichment and LC-MS/MS. Phosphopeptides were isolated as previously described with some modifications  [2]. Briefly, lysates were incubated with DTT and Iodoacetamide and subjected to overnight digestion with trypsin (1:50 w/w ratio). Then, peptides were desalted and submitted to offline strong cation exchange fractionation on a polysulfoethyl A column (4.6 mm ID×20 cm length, 5-μm particle size, 300-Å pore size; PolyLC, Switzerland). The gradient used was as follows: 100% solvent A and 0% solvent B for 2 min; 0-20% solvent B for 40 min; 20-100% solvent B for 5 min; 100% solvent B held for 5 min (solvent A: 5 mM KH2PO4 25% ACN, pH=2.7, solvent B: 5 mM KH2PO4, 25% ACN, 350 mM KCl, pH 2.7). Subsequently  phosphopeptide enrichment was performed using FeNTA-IMAC columns (Pierce). Phosphopeptides were then cleaned up using ZipTips. Peptides were then submitted to nLC-MS/MS analysis on an LTQ Orbitrap machine. Peptides were fractionated via nLC on a 150 mm C18 column (75 µm internal diameter; Dr. Maisch GmbH, Ammerbuch, Germany) using an EASY nLC-II system (Proxeon/Thermo Fisher Scientific). Peptide separation was performed at a flow rate of 300 nl/min over 90 minutes (5%–7% ACN in 5 minutes, 7%–45% in 60 minutes, 45%–50%in 5minutes, 50%–97% in 5 minutes, wash at 100%) (buffer A: 0.1% formic acid in H2O; buffer B: 0.1% formic acid in acetonitrile). Survey full-scan MS spectra (m/z 300–2000) of intact peptides were acquired in the Orbitrap at a resolution of 30,000 using m/z 445.12003 as a lock mass. The mass spectrometer acquired spectra in data-dependent mode and automatically switched between MS and MS/MS acquisition. The dynamic exclusion option was enabled (1 minute). The five most intense ions (charge state z higher or equal to 2) were isolated and fragmented in the linear ion trap using collision induced dissociation (CID) fragmentation. Peptides with unknown charge state were not fragmented.</field>
+        <field name="data_protocol">Bioinformatic analysis. Search of RAW files was performed using the Andromeda search engine embedded in the MaxQuant environment (v. 1.4.0.1). Data was searched against the uniprot database containing the reference proteome version of rat (December 1st, 2013), and cow (December 1st, 2013). Peptide identification criteria were as follows: 2 miscleavages were allowed, minimum peptide size was 7 amino acids, variable modifications were methionine oxidation and Serine/Threonine/Tyrosine phosphorylation, protein N-terminal acetylation, and fixed modifications were alkylation of cysteins. Three post translational variable modifications were allowed. First search mass accuracy for detecting parent ions was 20 ppm, and second search mass accuracy was 4.5 ppm. Fragment ion match was 0.5 Da. Only phosphorylation sites with a localization probablity &gt; 0.75 (class I phosphorylation sites) and a delta score &gt; 40 were used for further analysis. Other bioinformatics analysis were performed as previously described [10]. Position weighted matrices were generate using icelogo and the normal amino acid distribution of the respective species as background [14]. Analysis of conservation was performed using NCBI HomoloGene groups extracted by the CPhos program (v.1.0.5) [15,16]. Gene ontology enrichment was performed by using the mouse homologous gene symbols (as obtained from CPhos/HomoloGene as input for GORilla [17]. As background, an unranked gene list of the non-common phosphoproteins was used. P-Value threshold was 10-3, and FDR corrected q-values were reported.</field>
+        <field name="instrument_platform">LTQ Orbitrap</field>
+        <field name="species">Rattus norvegicus (Rat)</field>
+        <field name="species">Bos taurus (Bovine)</field>
+        <field name="cell_type">epithelial cell</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">kidney</field>
+        <field name="modification">phosphorylated residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">Bovine</field>
+        <field name="submitter_keywords"> Rat</field>
+        <field name="submitter_keywords"> Kidney</field>
+        <field name="submitter_keywords"> Glomerulus</field>
+        <field name="submitter_keywords"> Phosphoproteome</field>
+        <field name="submitter_keywords"> Conservation</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Rinschen MM, Pahmeyer C, Pisitkun T, Schnell N, Wu X, Maaß M, Bartram MP, Lamkemeyer T, Schermer B, Benzing T, Brinkkoetter PT. Comparative phosphoproteomic analysis of mammalian glomeruli reveals conserved podocin C-terminal phosphorylation as a determinant of slit diaphragm complex architecture. Proteomics. 2014 Nov 25</field>
+        <field name="submitter">Markus Rinschen</field>
+        <field name="submitter_mail">markus.rinschen@uk-koeln.de</field>
+        <field name="submitter_affiliation">Kidney research center cologne</field>
+        <field name="labhead">Markus Rinschen</field>
+        <field name="labhead_mail">markus.rinschen@uk-koeln.de</field>
+        <field name="labhead_affiliation">University of Cologne, CECAD</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/0089-130104MaRiS01TpD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/0089-130104MaRiS02TpD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/0089-130104MaRiS03TpD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/0089-130104MaRiS04TpD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/0089-130104MaRiS05TpD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/0089-130104MaRiS06TpD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/0089-130104MaRiS07TpD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/0089-130104MaRiS08TpD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/0089-130104MaRiS09TpD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/0089-130104MaRiS10TpD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/0089-130128MaRiS01Tscx01pD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/0089-130128MaRiS01Tscx01pDW01.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/0089-130128MaRiS01Tscx02pD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/0089-130128MaRiS01Tscx02pDW01.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/0089-130128MaRiS01Tscx05pD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/0089-130128MaRiS01Tscx05pDW01.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/0089-130128MaRiS01Tscx06pD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/0089-130128MaRiS01Tscx06pDW01.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/0089-130128MaRiS01Tscx07pD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/0089-130128MaRiS01Tscx07pDW01.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/0089-130128MaRiS01Tscxp03D.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/0089-130128MaRiS01Tscxp03DW01.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/0089-130128MaRiS01Tscxp04D.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/0089-130128MaRiS01Tscxp04DW01.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/0089-120927MaRiS01Tscx01pD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/0089-120927MaRiS01Tscx02pD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/0089-120927MaRiS01Tscx03pD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/0089-120927MaRiS01Tscx04pD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/0089-120927MaRiS01Tscx05pD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/0089-120927MaRiS01Tscx06pD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/0089-120927MaRiS01Tscx07pD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/0089-120927MaRiS01Tscx08pD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/0089-120927MaRiS01Tscx09pD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/0089-120927MaRiS01Tscx10pD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/0089-120927MaRiS01Tscx11pD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/0089-120927MaRiS02Tscx01pD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/0089-120927MaRiS02Tscx02pD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/0089-120927MaRiS02Tscx03pD_121022112124.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/0089-120927MaRiS02Tscx04pD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/0089-120927MaRiS02Tscx05pD.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/txt_cow_uni_S01.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/txt_cow_uni_S02.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/txt_130104.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001005/txt_130128.zip</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

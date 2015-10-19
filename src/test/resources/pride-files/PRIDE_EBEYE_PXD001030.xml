@@ -1,0 +1,113 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001030">
+      <name>Proteomic analysis of proteins related to rice grain chalkiness using iTRAQ based on a notched-belly mutant with white-belly</name>
+      <description>Grain chalkiness is a complex trait adversely affecting appearance and milling quality, and therefore has been one of principal targets for rice improvement. Eliminating chalkiness from rice has been a daunting task due to the complex interaction between genotype and environment and the lack of molecular markers. In addition, the molecular mechanisms underlying grain chalkiness formation are still imperfectly understood.  We identified a notched-belly mutant (DY1102) with high percentage of white-belly, which only occurs in the bottom part proximal to the embryo. Using this mutant, a novel comparison system that can minimize the effect of genetic background and growing environment was developed. An iTRAQ-based comparative display of the proteins between the bottom chalky part and the upper translucent part of grains of DY1102 was performed. A total of 113 proteins responsible for chalkiness formation was identified. Among them, 70 proteins are up-regulated and 43 down-regulated. Approximately half of these differentially expressed proteins involved in central metabolic or regulatory pathways including carbohydrate metabolism (especially cell wall synthesis) and protein synthesis, folding and degradation, providing proteomic confirmation of the notion that chalkiness formation involves diverse but delicately regulated pathways. Protein metabolism was the most abundant category, accounting for 27.4% of the total differentially expressed proteins. In addition, down regulation of PDIL 2-3 and BiP was detected in the chalky tissue, indicating the important role of protein metabolism in grain chalkiness formation.  Using this novel comparison system, our comprehensive survey of endosperm proteomics in the notched-belly mutant provides a valuable proteomic resource for the characterization of pathways contributing to chalkiness formation at molecular and biochemical levels.</description>
+      <cross_references>
+        <ref dbkey="4530" dbname="TAXONOMY"/>
+        <ref dbkey="24924297" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-06-03"/>
+        <date type="publication" value="2014-06-17"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001030</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">A notched-belly mutant with white-belly (DY1102) of Wuyujing3(Oryza sativa L. ssp. japonica) induced by EMS was used. At maturity, grains from the middle primary rachis of the panicle were collected and then dehusked as brown rice. Typical notched-belly grains with and without white-belly were selected. After the embryo removed, grains were cut into two parts along the notched line, resulting in two kinds of samples for both grain types, i.e. T1 and T2 for the translucent grains and C1 and C2 for the grains with white-belly.  Total proteins of the four parts were extracted. Samples were grinded about 0.1g were suspended with ice-cold 10% (w/v) trichloroacetic acid in acetone containing 10 mM dithiothreitol and 1 mM phenylmethylsulfonyl fluoride, and then incubated at -20°C for 1 h, followed by centrifugation at 20000×g for 30 min at 4°C in a refrigerated high-speed centrifuge. The precipitate was washed three times by suspending in cold acetone. After vacuum drying, the precipitate (~ 40 mg) was dissolved in 1 ml 0.5M triethylammonium bicarbonate buffer. Protein concentration was measured by the Bradford method using bovine serum albumin as the standard. Trypsin digestion and iTRAQ analysis were performed by Beijing Genomics Institute. Total protein (~100μg) of each sample was reduced by adding dithiothreitol to a final concentration of 10 mM and incubated for 1 h, then alkylated with 55 mM iodoacetamide for 1 h at room temperature. Samples were digested using sequencing grade trypsin solution (10 ng/μl in 25 mM ammonium bicarbonate) for 12 h at 37°C. After digestion, the peptide segment was freeze-dried in a centrifugal speed vacuum concentrator. Two replications for each sample were performed for iTRAQ analysis. The peptide segment of each sample was labeled using iTRAQ 8-plex kits according to the manufacturer's manual (AB Sciex Inc., USA). As shown in Fig. 2, two replications of T1 were labeled with reagent 113 and 117, T2 with reagent 114 and 118, C1 with reagent 115 and 119, and C2 with reagent 116 and 121, respectively. After labeling and quenching, samples were combined and lyophilized before redissolving in 4 ml of buffer A (25 mM NaH2PO4 in 25% acetonitrile, pH 2.7). Fractionation was conducted though the strong cation exchange chromatography on an Ultremex SCX column using HPLC (Shimadzu LC-20AB). The mixed sample was eluted with buffer A for 10 min, then eluted with a gradient of 5%-80% buffer B (25mM NaH2PO4, 1M KCl in 25% acetonitrile, pH2.7) for 12 min, at a flow rate of 1 ml/min. The process was monitored by absorbance at 214 nm simultaneously. The resulting 12 fractions were collected according to the peak area, and then were desalted with StrataX desalting column and lyophilized. The system of UPLC (nanoACQuity, Waters) coupled with tandem mass spectrometry (TripleTOF 5600, AB SCIEX, Concord, ON) was used for peptides identification and quantification. The data acquisition was performed according to Wang et al.. Briefly, a TripleTOF 5600 System fitted with a Nanospray III source and a pulled quartz tip as the emitter was used for tandem mass spectrometry. Data was acquired using an ion spray voltage of 2.5 kV. The MS was operated with TOF-MS scans. For information dependant acquisition, the MS survey scans were acquired in 250ms and the top 30 product ion were selected for MS/MS scans.</field>
+        <field name="data_protocol">All MS/MS spectra were searched against in the NCBInr Oryza sativa sequence databases and UniProtKB/Swiss-Prot database with MASCOT software (Matrix Science, UK; version 2.3.02). For biological replications, spectra from the 12 fractions were combined into one file and searched. The search parameters were as follows: (1) allowing one missed cleavage in the protein trypsin digests; (2) fixed modifications of carbamidomethylation at Cys, variable modifications of oxidation at Met and iTRAQ 8-plex at Tyr; (3) peptide tolerance was set at ±0.1 Da and MS/MS tolerance was set at ±0.05 Da. The peptide charge was set as Mr, and monoisotopic mass was chosen. The iTRAQ 8-plex was chosen for quantification during the search. The search results were filtered before data exportation. The filters were used for protein identification with these options: significance threshold P＜0.05 (with 95% confidence) and ion score or expected cutoff less than 0.05 (with 95% confidence). For protein quantitation, the filters were set as follows: (1) “median” was chosen for the protein ratio type; (2) the minimum precursor charge was set to 2 and minimum peptides were set to 2, and only unique peptides were used for quantitation; and (3) normalization by median intensities, and outliers were removed automatically. The peptide threshold was set as above for identity. A 1.2-fold change was set to identify significant differentially expressed proteins in addition with P-value&lt;0.05.  The differentially expressed proteins were classified using the Gene Ontology database and Kyoto Encyclopedia of Genes and Genomes database.</field>
+        <field name="instrument_platform">TripleTOF 5600</field>
+        <field name="species">Rice(O. sativa)</field>
+        <field name="cell_type">plant cell</field>
+        <field name="disease">Wounds and Injuries</field>
+        <field name="tissue">endosperm</field>
+        <field name="modification">iTRAQ8plex-116 reporter+balance reagent acylated residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">Rice</field>
+        <field name="submitter_keywords"> Grain chalkiness</field>
+        <field name="submitter_keywords"> iTRAQ</field>
+        <field name="submitter_keywords"> White-belly</field>
+        <field name="submitter_keywords"> Notched-belly mutants</field>
+        <field name="quantification_method">iTRAQ</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Lin Z, Zhang X, Yang X, Li G, Tang S, Wang S, Ding Y, Liu Z. Proteomic analysis of proteins related to rice grain chalkiness using iTRAQ and a novel comparison system based on a notched-belly mutant with white-belly. BMC Plant Biol. 2014 Jun 12;14(1):163</field>
+        <field name="submitter">Zhaomiao Lin</field>
+        <field name="submitter_mail">2012201020@njau.edu.cn</field>
+        <field name="submitter_affiliation">Nanjing Agricultural University</field>
+        <field name="labhead">Zhenghui Liu</field>
+        <field name="labhead_mail">liuzh@njau.edu.cn</field>
+        <field name="labhead_affiliation">College of Agronomy, Nanjing Agricultural University</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/ShuiDao_all.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-1.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-1.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-1.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-10.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-10.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-10.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-11.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-11.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-11.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-12.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-12.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-12.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-13.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-13.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-13.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-14.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-14.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-14.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-15.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-15.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-15.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-16.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-16.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-16.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-17.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-17.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-17.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-18.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-18.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-18.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-19.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-19.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-19.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-2.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-20.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-20.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-20.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-3.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-3.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-3.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-4.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-4.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-4.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-5.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-5.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-5.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-6.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-6.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-6.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-7.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-7.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-7.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-8.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-8.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-8.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-9.mgf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-9.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/06/PXD001030/shuidao-9.wiff.scan</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

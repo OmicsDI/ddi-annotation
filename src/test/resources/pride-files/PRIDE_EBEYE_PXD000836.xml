@@ -1,0 +1,95 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000836">
+      <name>HOPE-fixation of lung tissue allows retrospective proteome and phosphoproteome studies</name>
+      <description>Hepes-glutamic acid buffer mediated Organic solvent Protection Effect (HOPE)-fixation has been introduced as an alternative to formalin fixation of clinical samples. Beyond preservation of morphological structures for histology, HOPE-fixation was demonstrated to be compatible with recent methods for RNA and DNA sequencing. However, suitability of HOPE-fixed materials for the inspection of proteomes by mass spectrometry so far remained undefined. This is of particular interest, since proteins constitute a prime resource for drug research and can give valuable insights into the activity status of signaling pathways. In this study, we extracted proteins from human lung tissue and tested HOPE-treated and snap frozen tissues comparatively by proteome and phosphoproteome analyses. High confident data from accurate mass spectrometry allowed the identification of 2603 proteins and 3036 phosphorylation sites. HOPE-fixation did not hinder the representative extraction of proteins and investigating their biochemical properties, covered subcellular localizations and cellular processes revealed no bias caused by the type of fixation. In conclusion, proteome as well as phosphoproteome data of HOPE lung samples were qualitatively equivalent to results obtained from snap frozen tissues. Thus, HOPE-treated tissues match clinical demands both in histology and retrospective proteome analyses of patient samples by proteomics.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="24702127" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-03-17"/>
+        <date type="publication" value="2014-05-22"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000836</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Protein digestion Aliquots of 0.5 mg or 2 mg protein were precipitated for proteomic and phosphoproteomic analyses  according to Wessel and Flügge. In brief, one part of sample was mixed with four parts of methanol, one part of chloroform and three parts of ddH2O, mixed vigorously and centrifuged at 5000 x g for 15 min at 4°C. The pellets were washed with methanol, dried at RT and dissolved in 1 ml digestion buffer containing 50 mM TEAB, 10 % ACN  and supplemented with 10 mM NaF, 2.5 mM Na3VO4 and 1% phosphatase inhibitor cocktail (Sigma) for phosphopeptide analysis.  The proteins were reduced with 100 µl of 50 mM TCEP for one hour at 60 °C, alkylated with 50 μl of 200 mM MMTS for 10 min at RT and digested with trypsin at a protein to enzyme ratio 70:1 overnight at 37 °C. The digested samples were centrifuged at 4000 x g for 10 min at RT, acidified to pH 2-3 with formic acid, desalted with Strata C18-E columns (Phenomenex) and eluted with 65 % (v/v) MeOH in H2O containing 0.5 % formic acid according to the manufacturer's manual. The peptides were dried completely and then dissolved in 3 % ACN, 0.2 % TFA for LC-MS/MS or in IMAC-buffer for phosphopeptide enrichment.  Phosphopeptide enrichment  Ga-Fe sepharose was utilized for phosphopeptide enrichment. In brief, 1 ml of IMAC Sepharose™ High Performance (GE Healthcare) was  mixed with 10 ml 0.1 M Ga(NO3)3 solution and incubated at +4 °C . After that,  Ga-sepharose was saturated with 10 ml 0.1 M FeCl3, washed three times with ultrapure water, packed into Pierce Spin Columns (Thermo Scientific) and pre-equilibrated with IMAC buffer (27 % MeOH, 27% ACN, 20 % acetic acid, pH 2.5). The desalted peptide pellets were resuspended in 40 µl of the same buffer, loaded onto the spin columns and incubated for 1 hour at RT. The unbound peptides were removed by a series of washing steps: nine times with 300 μl IMAC buffer and 3 times with 300 μl IMAC 0.2 M NaCl salt buffer. The samples were briefly centrifuged at 2000x g for 10 seconds after every washing step. Finally, the retained phosphopeptides were eluted with 500 µl of 100 mM ammonium phosphate buffer, pH 4.5 and then with 300 μl of 1 M Di-potassium hydrogen phosphate pH 9.0. Eluted peptides were reconstituted in TFA for further desalting and dried in vacuo for further storage. To increase the proportion of phosphopeptides, the eluted peptide fraction was subjected to a second identical IMAC. The peptides were analyzed on an UltiMate 3000 RSLCnano LC system connected to an LTQ Orbitrap Velos Pro mass spectrometer (both Thermo Scientific). MS scans were combined with Collision Induced Dissociation (CID) in the linear ion trap or with Higher energy Collision Dissociation (HCD) for peptides and phosphopeptides, respectively. Briefly, the peptide mixture was loaded onto a 75 μm x 2 cm pre-column (Acclaim PepMap 100, C18, 3µm, Thermo Scientific) and eluted over 180 min for peptides and 120 min for phosphopeptides using a 75 μm x 25 cm analytical column (Acclaim PepMap RSLC, C18, 2µm, Thermo Scientific) with a gradient buffer 0–95% acetonitrile in 0.1% formic acid. We employed the data-dependent top10 method with the following standard mass spectrometric conditions: spray voltage 19 kV, ion transfer tube temperature 300 °C, 40 % collision energy for MS/MS. The data were acquired using the Xcalibur 2.2 software (Thermo Scientific) and processed with Proteome Discoverer (Version 1.3.0.339, Thermo Scientific).</field>
+        <field name="data_protocol">Raw MS/MS data were searched in the UniProtKB/Swiss-Prot protein database (release 2012_09, with 538,010 entries; taxonomy Homo sapiens with 20,235 entries) using the following Mascot search parameters: enzyme, trypsin and maximum missed cleavages, 2. For phosphopeptides variable modifications were phosphorylation (S, T, Y) and oxidation (M); static modification was carbamidomethylation (C); peptide tolerance, 10 ppm and MS/MS tolerance, 0.4 Da. The peptides were considered as unique if they were identified at least once having an individual Mascot peptide score above 30 for peptides and 20 for phosphopeptides. To distinguish between correct and non-correct peptide identification, a false discovery rate (FDR) filter lower than 1% was applied in the Decoy database search. Localization and scoring of phosphorylated sites on the peptides were performed using PhosphoRS integrated in Proteome Discoverer.</field>
+        <field name="instrument_platform">LTQ Orbitrap Velos</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">lung</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">phosphorylated residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="submitter_keywords">lung tissues</field>
+        <field name="submitter_keywords"> HOPE-fixation technique</field>
+        <field name="submitter_keywords"> proteome</field>
+        <field name="submitter_keywords"> post-translational modifications</field>
+        <field name="submitter_keywords"> phosphorylation</field>
+        <field name="submitter_keywords"> biobank</field>
+        <field name="submitter_keywords"> LC-MS/MS</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Shevchuk O, Abidi N, Klawonn F, Wissing J, Nimtz M, Kugler C, Steinert M, Goldmann T, Jänsch L. HOPE-Fixation of Lung Tissue Allows Retrospective Proteome and Phosphoproteome Studies. J Proteome Res. 2014 Apr 28</field>
+        <field name="submitter">Olga Shevchuk</field>
+        <field name="submitter_mail">Olga.Shevchuk@helmholtz-hzi.de</field>
+        <field name="submitter_affiliation">CPRO</field>
+        <field name="labhead">Lothar Jänsch</field>
+        <field name="labhead_mail">Lothar.Jaensch@helmholtz-hzi.de</field>
+        <field name="labhead_affiliation">Helmholtz Center for Infection Research</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000836/Proteome HOPE1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000836/Proteome HOPE2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000836/Proteome HOPE3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000836/Proteome HOPE4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000836/Proteome HOPE5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000836/Proteome HOPE6.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000836/Proteome HOPE7.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000836/Proteome HOPE8.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000836/Proteome SF1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000836/Proteome SF2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000836/Proteome SF3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000836/Proteome SF4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000836/Proteome SF5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000836/Proteome SF6.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000836/Proteome SF7.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000836/Proteome SF8.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000836/Phosphoproteome HOPE1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000836/Phosphoproteome HOPE2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000836/Phosphoproteome HOPE3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000836/Phosphoproteome HOPE4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000836/Phosphoproteome HOPE5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000836/Phosphoproteome HOPE6.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000836/Phosphoproteome HOPE7.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000836/Phosphoproteome HOPE8.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000836/Phosphoproteome SF1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000836/Phosphoproteome SF2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000836/Phosphoproteome SF3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000836/Phosphoproteome SF4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000836/Phosphoproteome SF5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000836/Phosphoproteome SF6.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000836/Phosphoproteome SF7.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000836/Phosphoproteome SF8.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000836/Phosphoproteome  SF.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000836/Phosphoproteome  SF.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000836/Phosphoproteome HOPE.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000836/Phosphoproteome HOPE.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000836/Proteome HOPE.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000836/Proteome HOPE.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000836/Proteome SF.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000836/Proteome SF.prot.xml</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

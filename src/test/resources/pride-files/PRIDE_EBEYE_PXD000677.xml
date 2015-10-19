@@ -1,0 +1,131 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000677">
+      <name>14-3-3 affinity capture to identify new targets of 14-3-3 signaling during dsRNA-stimulation in human keratinocytes.</name>
+      <description>We have combined two proteomic approaches, phosphoproteomics and 14-3-3 affinity capture, to examine the signaling pathways in which 14-3-3 proteins participate and to identify new targets of 14-3-3 signaling during dsRNA-stimulation.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="24997996" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-01-09"/>
+        <date type="publication" value="2014-08-05"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000677</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">HaCaT cells (~100 million cells) were tranfected with polyI:C for 4-5 h, which after the cells were extracted in 5 ml lysis buffer containing 50 mM Tris, 1 % Tx-100, 350 mM NaCl, 1 mM EDTA, and 50 mM NaF supplemented with Protease inhibitor cocktail and Phosphatase inhibitor cocktail 1 and 3 (Sigma). The clarified solutions were pre-cleared with blocked CH Sepharose 4B for 1 h at 4 degrees Celsius. Purified BMH1 and BMH2 were coupled to Sepharose (Moorhead et al, 1999), and HaCaT cell lysates were mixed with the affinity matrix for 1 h at 4 degrees Celsius. As control, we used BSA coupled Sepharose. The mixture was washed extensively with 500 mM NaCl, and proteins that bind to the phosphopeptide-binding site of 14-3-3s were eluted with 1 mM ARAApSAPA phosphopeptide (Pozuelo Rubio et al, 2004).  The eluted phosphoproteins were concentrated to 200 µl with Amicon-4 centrifugal filter units (cut-off 3 kDa) and precipitated with 2-D Clean-Up Kit. The 14-3-3-affinity-purified proteins were resuspended with iTRAQ dissolution buffer followed by protein alkylation, trypsin digestion and iTRAQ labelling of the resulting peptides according to manufacturer´s instructions (Applied Biosystems). After labelling the samples were pooled and dried, and the peptides were fractionated by strong cation exchange chromatography using an Ettan HPLC system (Amersham Biosciences) connected to a PolySULFOETHYL A column. Peptide elution was performed with a 30 min linear gradient of 0-500 mM KCl (in 20 mM KH2PO4, pH 3) at a flow rate 0.2 ml/min and 1 min fractions were collected. Each SCX-fraction containing labelled peptides was analyzed twice with LC-MS/MS. MS data were acquired automatically using Analyst QS 2.0 software. Three independent biological experiments were performed.</field>
+        <field name="data_protocol">Protein identification and relative quantitation of 14-3-3 interacting proteins was performed using ProteinPilot 4.0 interface (Applied Biosystems) and Paragon algorithm. Data files from both technical replicates of an iTRAQ sample set were processed together. Database searching was done against UniProt human protein sequences (08/2012). The search criteria were: cysteine alkylation with MMTS, trypsin digestion, biological modifications allowed, thorough search and detected protein threshold of 95% confidence (Unused ProtScore &gt; 1.3). Automatic bias correction was used in quantitation.</field>
+        <field name="instrument_platform">QSTAR</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">keratinocyte</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">cell culture</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="modification">methylthiolated residue</field>
+        <field name="modification">iTRAQ4plex-116 reporter+balance reagent acylated residue</field>
+        <field name="technology_type">Affinity purification coupled with mass spectrometry proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biomedical</field>
+        <field name="submitter_keywords">Human</field>
+        <field name="submitter_keywords"> HaCaT keratinocytes</field>
+        <field name="submitter_keywords"> iTRAQ</field>
+        <field name="submitter_keywords"> LC-MS/MS</field>
+        <field name="quantification_method">iTRAQ</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Ohman T, Soderholm S, Hintsanen P, Valimaki E, Lietzen N, MacKintosh C, Aittokallio T, Matikainen S, Nyman TA. Phosphoproteomics Combined with Quantitative 14-3-3-affinity Capture Identifies SIRT1 and RAI as Novel Regulators of Cytosolic dsRNA Recognition Pathway. Mol Cell Proteomics. 2014 Jul 5. pii: mcp.M114.038968</field>
+        <field name="submitter">Tuula Nyman</field>
+        <field name="submitter_mail">tuula.nyman@helsinki.fi</field>
+        <field name="submitter_affiliation">Institute of Biotechnology</field>
+        <field name="labhead">Tuula A Nyman</field>
+        <field name="labhead_mail">tuula.nyman@helsinki.fi</field>
+        <field name="labhead_affiliation">Institute of Biotechnology, University of Helsinki, Finland</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/130206 14-3-3 iTRAQ biol1 and 2.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/130206 14-3-3 iTRAQ biol3.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100510 Tiina B2B1.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100510 Tiina B2B1.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100510 Tiina B7.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100510 Tiina B7.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100510 Tiina B8.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100510 Tiina B8.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100511 Tiina B10.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100511 Tiina B10.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100511 Tiina B3.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100511 Tiina B3.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100511 Tiina B4.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100511 Tiina B4.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100511 Tiina B5.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100511 Tiina B5.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100511 Tiina B6.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100511 Tiina B6.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100511 Tiina B9.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100511 Tiina B9.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100511 Tiina C2C1.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100511 Tiina C2C1.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100512 Tiina C3C4.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100512 Tiina C3C4.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100512 Tiina C5C6.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100512 Tiina C5C6.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100512 Tiina C7C8.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100512 Tiina C7C8.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100512 Tiina2 B10.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100512 Tiina2 B10.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100512 Tiina2 B8.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100512 Tiina2 B8.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100512 Tiina2 B9.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100512 Tiina2 B9.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100513 Tiina2 B2B1.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100513 Tiina2 B2B1.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100513 Tiina2 B3.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100513 Tiina2 B3.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100513 Tiina2 B4.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100513 Tiina2 B4.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100513 Tiina2 B5.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100513 Tiina2 B5.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100513 Tiina2 B6.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100513 Tiina2 B6.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100513 Tiina2 B7.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100513 Tiina2 B7.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100513 Tiina2 C1C2.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100513 Tiina2 C1C2.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100513 Tiina2 C3C4.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100513 Tiina2 C3C4.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100513 Tiina2 C5C6.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100513 Tiina2 C5C6.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100513 Tiina2 C7C8.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/100513 Tiina2 C7C8.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/101122 14-3-3 A12A13.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/101122 14-3-3 A12A13.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/101122 14-3-3 A14A15.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/101122 14-3-3 A14A15.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/101122 14-3-3 B11B10.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/101122 14-3-3 B11B10.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/101122 14-3-3 B13B12.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/101122 14-3-3 B13B12.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/101122 14-3-3 B15B14.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/101122 14-3-3 B15B14.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/101122 14-3-3 B9B8.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/101122 14-3-3 B9B8.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/101122 14-3-3 toisto A12A13.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/101122 14-3-3 toisto A12A13.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/101122 14-3-3 toisto A14A15.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/101122 14-3-3 toisto A14A15.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/101122 14-3-3 toisto B11B10.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/101122 14-3-3 toisto B11B10.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/101122 14-3-3 toisto B13B12.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/101122 14-3-3 toisto B13B12.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/101122 14-3-3 toisto B14B15.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/101122 14-3-3 toisto B14B15.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/101122 14-3-3 toisto B9B8.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/08/PXD000677/101122 14-3-3 toisto B9B8.wiff.scan</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

@@ -1,0 +1,108 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001186">
+      <name>A role for CPT1A to prevent blood vessel permeability revealed by in depth proteomics</name>
+      <description>Endothelial cells (ECs) line the inner wall of blood vessels and maintain vascular stability. Vascular stability alteration is a hallmark of pathologies such as cancer and thrombosis. A role for fatty acid oxidation (FAO) in this process is unknown. Integrating MS-proteomics and metabolic modeling revealed that FAO increases when ECs cultured on matrigel are assembled into a fully formed network. Inhibition of CPT1A in ECs, a limiting enzyme in FAO, results in disruption of this network. Acute CPT1A inhibition reduces cellular ATP levels and oxygen consumption, which can be restored replenishing the tricarboxylic acid cycle (TCAc). Phosphoproteomic changes upon acute CPT1A inhibition evoked those triggered by thrombin, a potent inducer of EC permeability through calcium signaling. Indeed, CPT1A inhibition increased EC permeability and vascular leakage, which were restored replenishing the TCAc or, partially, inhibiting calcium influx. Our study shows the possibility of altering FAO to interfere with ECs in diseases.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-07-30"/>
+        <date type="publication" value="2015-01-28"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001186</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">HUVECs were lysed in 2% SDS, 100mM Tris HCl pH 7.4 buffer. Proteome: Proteins were precipitated and solubilized in 8M urea, 75mM NaCl and 50mM TrisHCl. After reduction with dithiothreitol and alkylation with iodoacetamide, proteins were digested with trypsin. Phosphoproteome: Light, medium and heavy SILAC-labeled cell lysates were mixed in equal amount, digested by filter-aided sample preparation method and enriched for phosphorylated peptides using strong cation exchange chromatography followed by phosphopeptide enrichment using TiO2 resin.  Digested peptides were de-salted and stored at -80°C until MS analysis. Tryptic peptides were separated on 20 cm fused silica emitter (New Objective) packed in-house with the reverse phase ReproSil-Pur C18-AQ, 1.9 μm resin (Dr. Maisch, GmbH) and analyzed on a LTQ-Orbitrap Elite (Thermo Scientific) coupled on line with reverse chromatography (Easy nLC, Thermo Scientific). MS spectra were acquired in the Orbitrap analyzer at a resolution of 120 000 at 400 m/z, and a target value of 106 charges. High collision dissociation fragmentation of the 10 most intense ions was performed using a target value of 40 000 charges and acquired in the Orbitrap at resolution 15 000 at 400 m/z. Data were acquired with Xcalibur software. MS data were processed using the MaxQuant software and searched with Andromeda search engine against the human UniProt database. False discovery rate (FDR) of 1% was used for peptides, proteins and phosphosites identification. For the phosphosites, a minimum Andromeda score of 40 was required. Proteome: ~2µg of digested peptides were eluted from reverse phase column with a flow of 200 nl/min from 5% to 30% ACN in 0.5% acetic acid, in a 190 min gradient. For each time points three replicates were performed and each was run at the MS twice. Phosphoproteome: for each experiment, 10 samples enriched for phosphorylated peptides were analyzed at the MS. 2/3 of each sample was loaded onto reverse phase column and eluted with a flow of 200 nl/min from 5% to 30% ACN in 0.5% acetic acid, in 90 min gradient. The remaining 1/3 was pooled into two fractions which were analyzed at the MS using 190 min gradient. Triplicates experiments were performed each time swapping SILAC labeling conditions.</field>
+        <field name="data_protocol">Proteome: Peptides and proteins were quantified according to the MaxLFQ algorithm of MaxQuant version 1.4.1.0. Only proteins uniquely identified with minimum 1 unique peptide and quantified in at least three MS runs were used for the analysis.  Phosphoproteome: The relative quantification of the phosphorylation sites against their labeled counterpart was performed by MaxQuant version 1.4.1.6. Only sites accurately localized (localization probability &gt; 0.75 and score difference &gt;5) were used for the analysis. Phosphorylation sites were considered upregulated if the SILAC ratio was higher than 0.4 (log2 scale), which is more than 1 standard deviation from the mean of the all calculated ratios, in a minimum of two replicates.</field>
+        <field name="instrument_platform">LTQ Orbitrap Elite</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">endothelial cell of umbilical vein</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">phosphorylated residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biomedical</field>
+        <field name="submitter_keywords">SILAC</field>
+        <field name="submitter_keywords"> label-free</field>
+        <field name="submitter_keywords"> FAO</field>
+        <field name="submitter_keywords"> CPT1A</field>
+        <field name="submitter_keywords"> human</field>
+        <field name="submitter_keywords"> endothelial cells</field>
+        <field name="quantification_method">SILAC</field>
+        <field name="quantification_method">Label free</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="submitter">Sara Zanivan</field>
+        <field name="submitter_mail">s.zanivan@beatson.gla.ac.uk</field>
+        <field name="submitter_affiliation">Vascular Proteomics</field>
+        <field name="labhead">Sara Zanivan</field>
+        <field name="labhead_mail">s.zanivan@beatson.gla.ac.uk</field>
+        <field name="labhead_affiliation">CRUK Beatson Institute</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20130910_Elite_FrPa_Lipid_Exp53_22h_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20130910_Elite_FrPa_Lipid_Exp53_22h_1b.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20130910_Elite_FrPa_Lipid_Exp53_22h_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20130910_Elite_FrPa_Lipid_Exp53_22h_2b.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20130910_Elite_FrPa_Lipid_Exp53_22h_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20130910_Elite_FrPa_Lipid_Exp53_22h_3b.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20130910_Elite_FrPa_Lipid_Exp53_30h_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20130910_Elite_FrPa_Lipid_Exp53_30h_1b.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20130910_Elite_FrPa_Lipid_Exp53_30h_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20130910_Elite_FrPa_Lipid_Exp53_30h_2b.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20130910_Elite_FrPa_Lipid_Exp53_30h_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20130910_Elite_FrPa_Lipid_Exp53_30h_3b.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20130910_Elite_FrPa_Lipid_Exp53_4h_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20130910_Elite_FrPa_Lipid_Exp53_4h_1b.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20130910_Elite_FrPa_Lipid_Exp53_4h_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20130910_Elite_FrPa_Lipid_Exp53_4h_2b.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20130910_Elite_FrPa_Lipid_Exp53_4h_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20130910_Elite_FrPa_Lipid_Exp53_4h_3b.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/proteome_matrigel.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20140225_Elite_FrPa_LIPID_SILACexpA_flowthr1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20140225_Elite_FrPa_LIPID_SILACexpA_flowthr2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20140225_Elite_FrPa_LIPID_SILACexpA_flowthr3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20140225_Elite_FrPa_LIPID_SILACexpA_flowthr4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20140225_Elite_FrPa_LIPID_SILACexpA_fraction1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20140225_Elite_FrPa_LIPID_SILACexpA_fraction2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20140225_Elite_FrPa_LIPID_SILACexpA_fraction3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20140225_Elite_FrPa_LIPID_SILACexpA_fraction4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20140225_Elite_FrPa_LIPID_SILACexpA_fraction5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20140225_Elite_FrPa_LIPID_SILACexpA_fraction6.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20140225_Elite_FrPa_LIPID_SILACexpA_pooled-flowthr_140302171552.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20140225_Elite_FrPa_LIPID_SILACexpA_pooled-fractions-OK.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20140225_Elite_FrPa_LIPID_SILACexpA_pooled-fractions.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20140225_Elite_FrPa_LIPID_SILACexpB_flowthr1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20140225_Elite_FrPa_LIPID_SILACexpB_flowthr2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20140225_Elite_FrPa_LIPID_SILACexpB_flowthr3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20140225_Elite_FrPa_LIPID_SILACexpB_flowthr4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20140225_Elite_FrPa_LIPID_SILACexpB_fraction1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20140225_Elite_FrPa_LIPID_SILACexpB_fraction2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20140225_Elite_FrPa_LIPID_SILACexpB_fraction3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20140225_Elite_FrPa_LIPID_SILACexpB_fraction4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20140225_Elite_FrPa_LIPID_SILACexpB_fraction5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20140225_Elite_FrPa_LIPID_SILACexpB_fraction6.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20140225_Elite_FrPa_LIPID_SILACexpB_pooled-fractions_140302224201.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20140225_Elite_FrPa_LIPID_SILACexpC_flowthr1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20140225_Elite_FrPa_LIPID_SILACexpC_flowthr2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20140225_Elite_FrPa_LIPID_SILACexpC_flowthr3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20140225_Elite_FrPa_LIPID_SILACexpC_flowthr4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20140225_Elite_FrPa_LIPID_SILACexpC_fraction1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20140225_Elite_FrPa_LIPID_SILACexpC_fraction2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20140225_Elite_FrPa_LIPID_SILACexpC_fraction3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20140225_Elite_FrPa_LIPID_SILACexpC_fraction4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20140225_Elite_FrPa_LIPID_SILACexpC_fraction5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20140225_Elite_FrPa_LIPID_SILACexpC_fraction6.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20140225_Elite_FrPa_LIPID_SILACexpC_pooled-flowthr.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/20140225_Elite_FrPa_LIPID_SILACexpC_pooled-fractions.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/01/PXD001186/phosphoproteome.zip</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

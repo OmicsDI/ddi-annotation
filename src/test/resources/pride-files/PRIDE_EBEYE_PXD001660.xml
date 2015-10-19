@@ -1,0 +1,165 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001660">
+      <name>Histone deacetylase inhibitors cause the selective depletion of bromodomain containing proteins</name>
+      <description>Histone deacetylases (HDACs) and acetyltransferases control the epigenetic regulation of gene expression through modification of histone marks. Histone deacetylase inhibitors (HDACi) are small molecules that interfere with histone tail modification thus altering chromatin structure and epigenetically controlled pathways. They promote apoptosis in proliferating cells and are promising anti-cancer drugs. While some HDACis have already been approved for therapy and others are in different phases of clinical trials, the exact mechanism of action of this drug class remains elusive. Previous studies have shown that HDACis cause massive changes in chromatin structure but only moderate changes in gene expression. To which extent these changes manifest at the protein level has never been investigated on a proteome-wide scale. Here, we have studied HDACi-treated cells by large-scale mass spectrometry based proteomics. We show that HDACi treatment affects primarily the nuclear proteome and induces a selective decrease of bromodomain containing proteins (BCPs), the main readers of acetylated histone marks. By combining time-resolved proteome and transcriptome profiling, we show that BCPs are affected at the protein level as early as 12 hours after HDACi treatment and that their abundance is regulated by a combination of transcriptional and post-transcriptional mechanisms. Using gene silencing, we demonstrate that the decreased abundance of BCPs is sufficient to mediate important transcriptional changes induced by HDACi. Our data reveals a new aspect of the mechanism of action of HDACi that is mediated by an interplay between histone acetylation and the abundance of BCPs.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="25755299" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2015-01-08"/>
+        <date type="publication" value="2015-03-18"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001660</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Proteins were solubilized by adding urea buffer (10 M urea in 250 mM NH4HCO3) and 2% (w/v) Rapigest (Waters) to a final concentration of 4 M and 0.2% (w/v), respectively. Samples were then sonicated in a vial tweeter for 3x 30 s, each time followed by one minute rest on ice, and stored at -80°C until further processing. Samples were rapidly thawed in a bath sonicator and further sonicated in a vial tweeter for 3x 30 s, each time followed by one minute rest on ice. Samples were reduced using 10 mM DTT (30 min at 37°C) and cysteines were alkylated with 15 mM iodoacetamide (30 min in the dark). Protein digestion was performed in two steps, first using 1:100 (w/w) LysC (Wako Chemicals GmbH, Neuss, Germany) for 4 h at 37°C then finalized with 1:50 (w/w) trypsin (Promega GmbH, Mannheim, Germany) overnight at 37°C, after the urea concentration was diluted to 1.5 M. Samples were then acidified with 10% (v/v) TFA and the cleavage of Rapigest was allowed to proceed for 30 min at 37°C. Samples were clarified by centrifugation at 17,000x g for 5 min at room temperature and desalted using C18 spin columns (Harvard Apparatus, Holliston MA, USA) following standard procedures  Samples were analyzed using a nanoAcquity UPLC system (Waters GmbH) connected online to a LTQ-Orbitrap Velos Pro instrument (Thermo Fisher Scientific GmbH). Peptides were separated on a BEH300 C18 (75 µm x 250 mm, 1.7 µm) nanoAcquity UPLC column (Waters GmbH) using a stepwise 145 min gradient between 3 and 85% (v/v) ACN in 0.1% (v/v) FA. Data acquisition was performed by collision-induced dissociation using a TOP-20 strategy with standard parameters. Charge states 1 and unknown were rejected.</field>
+        <field name="data_protocol">Raw files from the Orbitrap were analyzed using MaxQuant (version 1.2.2.5). MS/MS spectra were searched against the human Swiss-Prot entries of the Uniprot KB (database release 2012_04, 23270 entries) using the Andromeda search engine.  The search criteria were set as follows: full tryptic specificity was required (cleavage after lysine or arginine residues, unless followed by proline); 2 missed cleavages were allowed; carbamidomethylation (C) was set as fixed modification; oxidation (M) and acetylation (protein N-term) were applied as variable modifications, if applicable; mass tolerance of 20 ppm (precursor) and 0.5 Da (fragments). The retention times were matched between runs, using a time window of 2 minutes. The reversed sequences of the target database were used as decoy database. Peptide and protein hits were filtered at a false discovery rate of 1% using a target-decoy strategy.</field>
+        <field name="instrument_platform">LTQ Orbitrap Velos</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">HeLa cell</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biomedical</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">HDACi</field>
+        <field name="submitter_keywords"> LC-MS/MS</field>
+        <field name="submitter_keywords"> bromodomain</field>
+        <field name="submitter_keywords"> gene expression</field>
+        <field name="submitter_keywords"> nucleus</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Mackmull MT, Iskar M, Parca L, Singer S, Bork P, Ori A, Beck M. Histone deacetylase inhibitors cause the selective depletion of bromodomain containing proteins. Mol Cell Proteomics. 2015 Mar 9. pii: mcp.M114.042499</field>
+        <field name="submitter">Alessandro Ori</field>
+        <field name="submitter_mail">aleori@gmail.com</field>
+        <field name="submitter_affiliation">EMBL</field>
+        <field name="labhead">Martin Beck</field>
+        <field name="labhead_mail">martin.beck@embl.de</field>
+        <field name="labhead_affiliation">Structural and Computational Biology Unit  European Molecular Biology Laboratory Meyerhofstr. 1  69117 Heidelberg Germany</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_Cytosol_Con_1a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_Cytosol_Con_2b.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_Cytosol_Con_3a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_Cytosol_Con_3b.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/Cytosol_Control_48h_txt.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_Cytosol_Con_1b.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_Cytosol_Con_2a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_Cytosol_TSA_1a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_Cytosol_TSA_2a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_Cytosol_TSA_2b.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_Cytosol_TSA_3a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_Cytosol_TSA_3b.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/Cytosol_TSA_48h_txt.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_Cytosol_TSA_1b.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_Cytosol_Vor_1a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_Cytosol_Vor_2b.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_Cytosol_Vor_3a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_Cytosol_Vor_3b.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/Cytosol_Vorinostat_48h_txt.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_Cytosol_Vor_1b.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_Cytosol_Vor_2a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/121114_Con_12h_1_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/121114_Con_12h_2_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/121114_Con_12h_3_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/121114_Con_12h_3_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/Nuclei_Control_NaB_12h_txt.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/121114_Con_12h_1_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/121114_Con_12h_2_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/12h_Control_TV_1_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/12h_Control_TV_2_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/12h_Control_TV_3_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/12h_Control_TV_3_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/12h_Control_TV_1_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/12h_Control_TV_2_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/Nuclei_Control_TSA_Vorinostat_12h_txt.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/Nuclei_NaB_12h_txt.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/12h_NaB_3_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/12h_NaB_3_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/121114_N_12h_1_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/121114_N_12h_1_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/121114_N_12h_2_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/121114_N_12h_2_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/12h_TSA_1_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/12h_TSA_3_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/12h_TSA_2_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/12h_TSA_3_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/12h_TSA_1_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/12h_TSA_2_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/Nuclei_TSA_12h_txt.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/12h_Vor_1_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/12h_Vor_3_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/12h_Vor_2_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/12h_Vor_2_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/12h_Vor_1_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/12h_Vor_3_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/Nuclei_Vorinostat_12h_txt.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/CPT_1_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/CPT_3_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/CPT_2_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/CPT_1_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/CPT_2_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/CPT_3_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/Nuclei_CPT_48h_txt.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/Control_CPT_1_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/Control_CPT_2_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/Control_CPT_3_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/Control_CPT_1_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/Control_CPT_2_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/Control_CPT_3_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/Nuclei_Control_CPT_48h_txt.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/48h_Control_NaB_1_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/48h_Control_NaB_2_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/48h_Control_NaB_3_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/48h_Control_NaB_3_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/48h_Control_NaB_1_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/48h_Control_NaB_2_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/Nuclei_Control_NaB_48h_txt.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_Control_2a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_Control_3b.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_Control_4b.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_Control_2b.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_Control_3a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_Control_4a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/Nuclei_Control_TSA_48h_txt.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_Control_2_1a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_Control_2_2b.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_Control_2_3b.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_Control_2_1b.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_Control_2_2a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_Control_2_3a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/Nuclei_Control_Vorinostat_48h_txt.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/48h_NaB_1_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/48h_NaB_2_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/48h_NaB_3_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/48h_NaB_3_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/48h_NaB_1_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/48h_NaB_2_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/Nuclei_NaB_48h_txt.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_TSA_1,5_1a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_TSA_1,5_2b.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_TSA_1,5_3a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_TSA_1,5_3b.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_TSA_1,5_1b.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_TSA_1,5_2a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/Nuclei_TSA_48h_txt.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_Vorinostat_1a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_Vorinostat_2b.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_Vorinostat_3a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_Vorinostat_3b.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_Vorinostat_1b.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/MM_Vorinostat_2a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001660/Nuclei_Vorinostat_48h_txt.zip</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

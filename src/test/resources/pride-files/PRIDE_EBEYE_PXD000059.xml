@@ -1,0 +1,80 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000059">
+      <name>Proteomics of the Milk Fat Globule Membrane from Camelus dromedarius</name>
+      <description>Camel milk is widely characterized with regard to caseins and whey proteins. However, in camelids, close to nothing is known about the Milk Fat Globule Membrane (MFGM), the membrane surrounding fat globules in milk. The purpose of this study was thus to identify MFGM proteins from Camelus dromedarius milk. Major MFGM proteins (namely, fatty acid synthase, xanthine oxidase, butyrophilin, lactadherin, and adipophilin) already evidenced in cow milk were identified in camel milk using mass spectrometry. In addition, a 1D-LC-MS/MS approach led us to identify 322 functional groups of proteins associated with the camel Milk Fat Globule Membrane. We hope that these findings will contribute to a better characterization of camel milk and to an improved understanding of lipid droplet formation in the mammary epithelial cell.</description>
+      <cross_references>
+        <ref dbkey="9838" dbname="TAXONOMY"/>
+        <ref dbkey="23349047" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2012-10-25"/>
+        <date type="publication" value="2013-02-05"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000059</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Not available</field>
+        <field name="instrument_platform">LTQ Orbitrap</field>
+        <field name="species">Camelus dromedarius (Dromedary) (Arabian camel)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">dromedarius</field>
+        <field name="submitter_keywords"> MFGM</field>
+        <field name="submitter_keywords"> LS-MSMS</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Saadaoui B, Henry C, Khorchani T, Mars M, Martin P, Cebo C. Proteomics of the milk fat globule membrane from Camelus dromedarius. Proteomics. 2013 Apr;13(7):1180-4</field>
+        <field name="submitter">HENRY CELINE</field>
+        <field name="submitter_mail">celine.henry@jouy.inra.fr</field>
+        <field name="submitter_affiliation">INRA</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000059/Cebo_droma_03.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000059/Cebo_droma_06.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000059/Cebo_droma_07.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000059/Cebo_droma_09.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000059/Cebo_droma_10.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000059/Cebo_droma_12.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000059/Cebo_droma_13.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000059/Cebo_droma_14.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000059/Cebo_droma_15.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000059/Cebo_droma_16.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000059/Cebo_droma_17.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000059/Cebo_droma_18.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000059/Cebo_droma_21.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000059/Cebo_droma_22.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000059/Cebo_droma_23.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000059/Cebo_droma_25.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000059/Cebo_droma_03.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000059/Cebo_droma_06.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000059/Cebo_droma_07.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000059/Cebo_droma_09.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000059/Cebo_droma_10.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000059/Cebo_droma_12.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000059/Cebo_droma_13.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000059/Cebo_droma_14.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000059/Cebo_droma_15.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000059/Cebo_droma_16.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000059/Cebo_droma_17.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000059/Cebo_droma_18.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000059/Cebo_droma_21.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000059/Cebo_droma_22.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000059/Cebo_droma_23.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/02/PXD000059/Cebo_droma_25.xml</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

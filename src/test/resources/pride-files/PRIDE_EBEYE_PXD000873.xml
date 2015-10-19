@@ -1,0 +1,87 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000873">
+      <name>Analyses of the Xylem Sap Proteomes Identified Candidate Fusarium virguliforme Proteinacious Toxins</name>
+      <description>Sudden death syndrome (SDS) is caused by the ascomycete fungus, Fusarium virguliforme. The pathogen secretes one or more toxins into the infected soybean roots to cause foliar SDS.  This study investigated if the xylem sap of F. virguliforme-infected soybean plants contains secreted F. virguliforme-proteins, some of which could be involved in foliar SDS development.</description>
+      <cross_references>
+        <ref dbkey="3847" dbname="TAXONOMY"/>
+        <ref dbkey="232082" dbname="TAXONOMY"/>
+        <ref dbkey="24845418" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-05-23"/>
+        <date type="publication" value="2014-05-23"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000873</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Xylem sap samples and the cell-free F. virguliforme culture filtrate were analyzed by nano LC-ESI/MS/MS.</field>
+        <field name="data_protocol">All raw data were searched using Mascot 2.2 (Matrix Science) software against the NCBI public database with taxonomy of Green Plants or the F. virguliforme genome sequence database containing 14,845 predicted F. virguliforme genes (http://fvgbrowse.agron.iastate.edu).</field>
+        <field name="instrument_platform">LTQ Orbitrap Velos</field>
+        <field name="species">Glycine max (Soybean) (Glycine hispida)</field>
+        <field name="species">Fusarium virguliforme</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="modification">deamidated residue</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biomedical</field>
+        <field name="submitter_keywords">Fusarium</field>
+        <field name="submitter_keywords"> soybean</field>
+        <field name="submitter_keywords"> toxins</field>
+        <field name="submitter_keywords"> xylem sap</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Abeysekara NS, Bhattacharyya MK. Analyses of the Xylem Sap Proteomes Identified Candidate Fusarium virguliforme Proteinacious Toxins. PLoS One. 2014 May 20;9(5):e93667. eCollection 2014</field>
+        <field name="submitter">Nilwala Abeysekara</field>
+        <field name="submitter_mail">nilwala@iastate.edu</field>
+        <field name="submitter_affiliation">Post-doctoral research associate</field>
+        <field name="labhead">Madan K Bhattacharyya</field>
+        <field name="labhead_mail">mbhattac@iastate.edu</field>
+        <field name="labhead_affiliation">Associate professor, Department of Agronomy, Iowa State University, Ames, IA, 50011, USA</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000873/F389481-NCBI-R2C.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000873/F389482-NCBI-R2T.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000873/F389483NCBI-R3C.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000873/F389484-NCBI-R3T.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000873/F389485-NCBI-R4C.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000873/F389486-NCBI-R4T.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000873/F389487-NCBI-R5C.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000873/F389492-NCBI-CF.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000873/F389513Fu-CF.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000873/F389538Fu-R5T.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000873/F389539Fu-R3T.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000873/F389540Fu-R1T.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000873/F389541Fu-R4T.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000873/F389542Fu-R2T.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000873/F389543Fu-R3C.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000873/F389544Fu-R1C.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000873/F389545Fu-R4C.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000873/F389546Fu-R2C.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000873/F389547Fu-R5C.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000873/Nilwala_Culture_Filtrate.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000873/Nilwala_R1_CP.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000873/Nilwala_R1_TP.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000873/Nilwala_R2_PC.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000873/Nilwala_R2_PT.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000873/Nilwala_R3_PC.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000873/Nilwala_R3_PT.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000873/Nilwala_R4_PC.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000873/Nilwala_R4_PT.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000873/Nilwala_R5_PC.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000873/Nilwala_R5_PT.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000873/F389479-NCBI-R1C.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000873/F389480-NCBI-R1T.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/05/PXD000873/F389478-NCBI-R5T.dat</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

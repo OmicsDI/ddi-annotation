@@ -1,0 +1,1855 @@
+<database>
+  <name>MetabolomicsWorkbench</name>
+  <description>The Metabolomics Workbench will serve as a national and international repository for metabolomics data and metadata and will provide analysis tools and access to metabolite standards, protocols, tutorials, training, and more.</description>
+  <release>1.0</release>
+  <release_date>15-05-20</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="ST000017">
+      <name>Rat HCR/LCR Stamina Study</name>
+      <description>To determine the basis of running capacity and health differences in outbread male N/NIH rats selected for high capacity (HCR) and low capacity (LCR) running (a surrogate for VO2max) (see:Science. 2005 Jan 21;307(5708):418-20). Plasma collected at 12 months of age in generation 28 rats after ad lib feeding or 40% caloric restriction beginning at week 8 of age. All animals fasted 4 hours prior to collection between 5-8 pm.</description>
+      <cross_references>
+        <ref dbkey="10116" dbname="TAXONOMY"/>
+        <ref dbkey="893310" dbname="ChEBI"/>
+        <ref dbkey="17361" dbname="ChEBI"/>
+        <ref dbkey="16436" dbname="ChEBI"/>
+        <ref dbkey="17562" dbname="ChEBI"/>
+        <ref dbkey="7916" dbname="ChEBI"/>
+        <ref dbkey="16509" dbname="ChEBI"/>
+        <ref dbkey="16259" dbname="ChEBI"/>
+        <ref dbkey="16814" dbname="ChEBI"/>
+        <ref dbkey="40410" dbname="ChEBI"/>
+        <ref dbkey="30813" dbname="ChEBI"/>
+        <ref dbkey="16879" dbname="ChEBI"/>
+        <ref dbkey="16879" dbname="ChEBI"/>
+        <ref dbkey="29019" dbname="ChEBI"/>
+        <ref dbkey="39246" dbname="ChEBI"/>
+        <ref dbkey="17197" dbname="ChEBI"/>
+        <ref dbkey="53486" dbname="ChEBI"/>
+        <ref dbkey="28136" dbname="ChEBI"/>
+        <ref dbkey="603631" dbname="ChEBI"/>
+        <ref dbkey="15964" dbname="ChEBI"/>
+        <ref dbkey="17012" dbname="ChEBI"/>
+        <ref dbkey="28821" dbname="ChEBI"/>
+        <ref dbkey="17620" dbname="ChEBI"/>
+        <ref dbkey="16238" dbname="ChEBI"/>
+        <ref dbkey="27470" dbname="ChEBI"/>
+        <ref dbkey="17263" dbname="ChEBI"/>
+        <ref dbkey="17884" dbname="ChEBI"/>
+        <ref dbkey="16497" dbname="ChEBI"/>
+        <ref dbkey="15732" dbname="ChEBI"/>
+        <ref dbkey="16217" dbname="ChEBI"/>
+        <ref dbkey="16552" dbname="ChEBI"/>
+        <ref dbkey="29069" dbname="ChEBI"/>
+        <ref dbkey="42280" dbname="ChEBI"/>
+        <ref dbkey="17964" dbname="ChEBI"/>
+        <ref dbkey="16497" dbname="ChEBI"/>
+        <ref dbkey="28821" dbname="ChEBI"/>
+        <ref dbkey="16497" dbname="ChEBI"/>
+        <ref dbkey="28821" dbname="ChEBI"/>
+        <ref dbkey="28125" dbname="ChEBI"/>
+        <ref dbkey="16199" dbname="ChEBI"/>
+        <ref dbkey="28834" dbname="ChEBI"/>
+        <ref dbkey="17775" dbname="ChEBI"/>
+        <ref dbkey="27967" dbname="ChEBI"/>
+        <ref dbkey="4676" dbname="ChEBI"/>
+        <ref dbkey="17409" dbname="ChEBI"/>
+        <ref dbkey="53488" dbname="ChEBI"/>
+        <ref dbkey="16450" dbname="ChEBI"/>
+        <ref dbkey="37946" dbname="ChEBI"/>
+        <ref dbkey="39567" dbname="ChEBI"/>
+        <ref dbkey="4676" dbname="ChEBI"/>
+        <ref dbkey="39567" dbname="ChEBI"/>
+        <ref dbkey="16469" dbname="ChEBI"/>
+        <ref dbkey="17775" dbname="ChEBI"/>
+        <ref dbkey="39567" dbname="ChEBI"/>
+        <ref dbkey="30745" dbname="ChEBI"/>
+        <ref dbkey="28792" dbname="ChEBI"/>
+        <ref dbkey="18186" dbname="ChEBI"/>
+        <ref dbkey="16244" dbname="ChEBI"/>
+        <ref dbkey="39567" dbname="ChEBI"/>
+        <ref dbkey="16552" dbname="ChEBI"/>
+        <ref dbkey="36575" dbname="ChEBI"/>
+        <ref dbkey="18332" dbname="ChEBI"/>
+        <ref dbkey="16765" dbname="ChEBI"/>
+        <ref dbkey="39567" dbname="ChEBI"/>
+        <ref dbkey="18139" dbname="ChEBI"/>
+        <ref dbkey="39567" dbname="ChEBI"/>
+        <ref dbkey="15873" dbname="ChEBI"/>
+        <ref dbkey="15960" dbname="ChEBI"/>
+        <ref dbkey="743540" dbname="ChEBI"/>
+        <ref dbkey="18102" dbname="ChEBI"/>
+        <ref dbkey="1139229" dbname="ChEBI"/>
+        <ref dbkey="17311" dbname="ChEBI"/>
+        <ref dbkey="144308" dbname="ChEBI"/>
+        <ref dbkey="17929" dbname="ChEBI"/>
+        <ref dbkey="15783" dbname="ChEBI"/>
+        <ref dbkey="27468" dbname="ChEBI"/>
+        <ref dbkey="27468" dbname="ChEBI"/>
+        <ref dbkey="16171" dbname="ChEBI"/>
+        <ref dbkey="27468" dbname="ChEBI"/>
+        <ref dbkey="17458" dbname="ChEBI"/>
+        <ref dbkey="17154" dbname="ChEBI"/>
+        <ref dbkey="15846" dbname="ChEBI"/>
+        <ref dbkey="18186" dbname="ChEBI"/>
+        <ref dbkey="28934" dbname="ChEBI"/>
+        <ref dbkey="28123" dbname="ChEBI"/>
+        <ref dbkey="28044" dbname="ChEBI"/>
+        <ref dbkey="16811" dbname="ChEBI"/>
+        <ref dbkey="43419" dbname="ChEBI"/>
+        <ref dbkey="30745" dbname="ChEBI"/>
+        <ref dbkey="15633" dbname="ChEBI"/>
+        <ref dbkey="893310" dbname="ChEBI"/>
+        <ref dbkey="30865" dbname="ChEBI"/>
+        <ref dbkey="18697" dbname="ChEBI"/>
+        <ref dbkey="15756" dbname="ChEBI"/>
+        <ref dbkey="283119" dbname="ChEBI"/>
+        <ref dbkey="15633" dbname="ChEBI"/>
+        <ref dbkey="29069" dbname="ChEBI"/>
+        <ref dbkey="16199" dbname="ChEBI"/>
+        <ref dbkey="44897" dbname="ChEBI"/>
+        <ref dbkey="17287" dbname="ChEBI"/>
+        <ref dbkey="16359" dbname="ChEBI"/>
+        <ref dbkey="30851" dbname="ChEBI"/>
+        <ref dbkey="16755" dbname="ChEBI"/>
+        <ref dbkey="18135" dbname="ChEBI"/>
+        <ref dbkey="30817" dbname="ChEBI"/>
+        <ref dbkey="15727" dbname="ChEBI"/>
+        <ref dbkey="16695" dbname="ChEBI"/>
+        <ref dbkey="17026" dbname="ChEBI"/>
+        <ref dbkey="28837" dbname="ChEBI"/>
+        <ref dbkey="35420" dbname="ChEBI"/>
+        <ref dbkey="17750" dbname="ChEBI"/>
+        <ref dbkey="16704" dbname="ChEBI"/>
+        <ref dbkey="17859" dbname="ChEBI"/>
+        <ref dbkey="17859" dbname="ChEBI"/>
+        <ref dbkey="17858" dbname="ChEBI"/>
+        <ref dbkey="17858" dbname="ChEBI"/>
+        <ref dbkey="16856" dbname="ChEBI"/>
+        <ref dbkey="15842" dbname="ChEBI"/>
+        <ref dbkey="32398" dbname="ChEBI"/>
+        <ref dbkey="16160" dbname="ChEBI"/>
+        <ref dbkey="16870" dbname="ChEBI"/>
+        <ref dbkey="30842" dbname="ChEBI"/>
+        <ref dbkey="15428" dbname="ChEBI"/>
+        <ref dbkey="17687" dbname="ChEBI"/>
+        <ref dbkey="16742" dbname="ChEBI"/>
+        <ref dbkey="44715" dbname="ChEBI"/>
+        <ref dbkey="35699" dbname="ChEBI"/>
+        <ref dbkey="15558" dbname="ChEBI"/>
+        <ref dbkey="41321" dbname="ChEBI"/>
+        <ref dbkey="15890" dbname="ChEBI"/>
+        <ref dbkey="30769" dbname="ChEBI"/>
+        <ref dbkey="19289" dbname="ChEBI"/>
+        <ref dbkey="53487" dbname="ChEBI"/>
+        <ref dbkey="18053" dbname="ChEBI"/>
+        <ref dbkey="19289" dbname="ChEBI"/>
+        <ref dbkey="27596" dbname="ChEBI"/>
+        <ref dbkey="19289" dbname="ChEBI"/>
+        <ref dbkey="16196" dbname="ChEBI"/>
+        <ref dbkey="16113" dbname="ChEBI"/>
+        <ref dbkey="16176" dbname="ChEBI"/>
+        <ref dbkey="16196" dbname="ChEBI"/>
+        <ref dbkey="7815" dbname="ChEBI"/>
+        <ref dbkey="18107" dbname="ChEBI"/>
+        <ref dbkey="16742" dbname="ChEBI"/>
+        <ref dbkey="17712" dbname="ChEBI"/>
+        <ref dbkey="15756" dbname="ChEBI"/>
+        <ref dbkey="16827" dbname="ChEBI"/>
+        <ref dbkey="217069" dbname="ChEBI"/>
+        <ref dbkey="7815" dbname="ChEBI"/>
+        <ref dbkey="16349" dbname="ChEBI"/>
+        <ref dbkey="15652" dbname="ChEBI"/>
+        <ref dbkey="4047" dbname="ChEBI"/>
+        <ref dbkey="27967" dbname="ChEBI"/>
+        <ref dbkey="15756" dbname="ChEBI"/>
+        <ref dbkey="17750" dbname="ChEBI"/>
+        <ref dbkey="17033" dbname="ChEBI"/>
+        <ref dbkey="17682" dbname="ChEBI"/>
+        <ref dbkey="18202" dbname="ChEBI"/>
+        <ref dbkey="18202" dbname="ChEBI"/>
+        <ref dbkey="29073" dbname="ChEBI"/>
+        <ref dbkey="30754" dbname="ChEBI"/>
+        <ref dbkey="63931" dbname="ChEBI"/>
+        <ref dbkey="15956" dbname="ChEBI"/>
+        <ref dbkey="1148" dbname="ChEBI"/>
+        <ref dbkey="60872" dbname="ChEBI"/>
+        <ref dbkey="17625" dbname="ChEBI"/>
+        <ref dbkey="17720" dbname="ChEBI"/>
+        <ref dbkey="30763" dbname="ChEBI"/>
+        <ref dbkey="30763" dbname="ChEBI"/>
+        <ref dbkey="18089" dbname="ChEBI"/>
+        <ref dbkey="18089" dbname="ChEBI"/>
+        <ref dbkey="16104" dbname="ChEBI"/>
+        <ref dbkey="16411" dbname="ChEBI"/>
+        <ref dbkey="30763" dbname="ChEBI"/>
+        <ref dbkey="15753" dbname="ChEBI"/>
+        <ref dbkey="17368" dbname="ChEBI"/>
+        <ref dbkey="30831" dbname="ChEBI"/>
+        <ref dbkey="16259" dbname="ChEBI"/>
+        <ref dbkey="16411" dbname="ChEBI"/>
+        <ref dbkey="17720" dbname="ChEBI"/>
+        <ref dbkey="17768" dbname="ChEBI"/>
+        <ref dbkey="17012" dbname="ChEBI"/>
+        <ref dbkey="16039" dbname="ChEBI"/>
+        <ref dbkey="17697" dbname="ChEBI"/>
+        <ref dbkey="17596" dbname="ChEBI"/>
+        <ref dbkey="17697" dbname="ChEBI"/>
+        <ref dbkey="17072" dbname="ChEBI"/>
+        <ref dbkey="16325" dbname="ChEBI"/>
+        <ref dbkey="16325" dbname="ChEBI"/>
+        <ref dbkey="36062" dbname="ChEBI"/>
+        <ref dbkey="1387" dbname="ChEBI"/>
+        <ref dbkey="17385" dbname="ChEBI"/>
+        <ref dbkey="48939" dbname="ChEBI"/>
+        <ref dbkey="17191" dbname="ChEBI"/>
+        <ref dbkey="15694" dbname="ChEBI"/>
+        <ref dbkey="30805" dbname="ChEBI"/>
+        <ref dbkey="28866" dbname="ChEBI"/>
+        <ref dbkey="17351" dbname="ChEBI"/>
+        <ref dbkey="16831" dbname="ChEBI"/>
+        <ref dbkey="17351" dbname="ChEBI"/>
+        <ref dbkey="15793" dbname="ChEBI"/>
+        <ref dbkey="6650" dbname="ChEBI"/>
+        <ref dbkey="15727" dbname="ChEBI"/>
+        <ref dbkey="15727" dbname="ChEBI"/>
+        <ref dbkey="27732" dbname="ChEBI"/>
+        <ref dbkey="31348" dbname="ChEBI"/>
+        <ref dbkey="15584" dbname="ChEBI"/>
+        <ref dbkey="17759" dbname="ChEBI"/>
+        <ref dbkey="613590" dbname="ChEBI"/>
+        <ref dbkey="17397" dbname="ChEBI"/>
+        <ref dbkey="17069" dbname="ChEBI"/>
+        <ref dbkey="1547" dbname="ChEBI"/>
+        <ref dbkey="38635" dbname="ChEBI"/>
+        <ref dbkey="32398" dbname="ChEBI"/>
+        <ref dbkey="16530" dbname="ChEBI"/>
+        <ref dbkey="17687" dbname="ChEBI"/>
+        <ref dbkey="35932" dbname="ChEBI"/>
+        <ref dbkey="32398" dbname="ChEBI"/>
+        <ref dbkey="41721" dbname="ChEBI"/>
+        <ref dbkey="28661" dbname="ChEBI"/>
+        <ref dbkey="17395" dbname="ChEBI"/>
+        <ref dbkey="48861" dbname="ChEBI"/>
+        <ref dbkey="18012" dbname="ChEBI"/>
+        <ref dbkey="18012" dbname="ChEBI"/>
+        <ref dbkey="17650" dbname="ChEBI"/>
+        <ref dbkey="17609" dbname="ChEBI"/>
+        <ref dbkey="27471" dbname="ChEBI"/>
+        <ref dbkey="17609" dbname="ChEBI"/>
+        <ref dbkey="16962" dbname="ChEBI"/>
+        <ref dbkey="127762" dbname="ChEBI"/>
+        <ref dbkey="16919" dbname="ChEBI"/>
+        <ref dbkey="16737" dbname="ChEBI"/>
+        <ref dbkey="17645" dbname="ChEBI"/>
+        <ref dbkey="30753" dbname="ChEBI"/>
+        <ref dbkey="2710" dbname="ChEBI"/>
+        <ref dbkey="18344" dbname="ChEBI"/>
+        <ref dbkey="18353" dbname="ChEBI"/>
+        <ref dbkey="30776" dbname="ChEBI"/>
+        <ref dbkey="846276" dbname="ChEBI"/>
+        <ref dbkey="17597" dbname="ChEBI"/>
+        <ref dbkey="18101" dbname="ChEBI"/>
+        <ref dbkey="31009" dbname="ChEBI"/>
+        <ref dbkey="30769" dbname="ChEBI"/>
+        <ref dbkey="16891" dbname="ChEBI"/>
+        <ref dbkey="16827" dbname="ChEBI"/>
+        <ref dbkey="16344" dbname="ChEBI"/>
+        <ref dbkey="16349" dbname="ChEBI"/>
+        <ref dbkey="17164" dbname="ChEBI"/>
+        <ref dbkey="32389" dbname="ChEBI"/>
+        <ref dbkey="32389" dbname="ChEBI"/>
+        <ref dbkey="32389" dbname="ChEBI"/>
+        <ref dbkey="28918" dbname="ChEBI"/>
+        <ref dbkey="18243" dbname="ChEBI"/>
+        <ref dbkey="422" dbname="ChEBI"/>
+        <ref dbkey="23965" dbname="ChEBI"/>
+        <ref dbkey="37550" dbname="ChEBI"/>
+        <ref dbkey="17113" dbname="ChEBI"/>
+        <ref dbkey="18243" dbname="ChEBI"/>
+        <ref dbkey="30865" dbname="ChEBI"/>
+        <ref dbkey="18243" dbname="ChEBI"/>
+        <ref dbkey="17263" dbname="ChEBI"/>
+        <ref dbkey="16914" dbname="ChEBI"/>
+        <ref dbkey="17033" dbname="ChEBI"/>
+        <ref dbkey="17033" dbname="ChEBI"/>
+        <ref dbkey="50371" dbname="ChEBI"/>
+        <ref dbkey="16914" dbname="ChEBI"/>
+        <ref dbkey="32816" dbname="ChEBI"/>
+        <ref dbkey="17015" dbname="ChEBI"/>
+        <ref dbkey="17310" dbname="ChEBI"/>
+        <ref dbkey="16709" dbname="ChEBI"/>
+        <ref dbkey="27647" dbname="ChEBI"/>
+        <ref dbkey="16675" dbname="ChEBI"/>
+        <ref dbkey="28941" dbname="ChEBI"/>
+        <ref dbkey="30746" dbname="ChEBI"/>
+        <ref dbkey="18323" dbname="ChEBI"/>
+        <ref dbkey="15652" dbname="ChEBI"/>
+        <ref dbkey="48093" dbname="ChEBI"/>
+        <ref dbkey="45919" dbname="ChEBI"/>
+        <ref dbkey="16828" dbname="ChEBI"/>
+        <ref dbkey="17568" dbname="ChEBI"/>
+        <ref dbkey="17775" dbname="ChEBI"/>
+        <ref dbkey="16704" dbname="ChEBI"/>
+        <ref dbkey="43419" dbname="ChEBI"/>
+        <ref dbkey="17712" dbname="ChEBI"/>
+        <ref dbkey="18332" dbname="ChEBI"/>
+        <ref dbkey="17748" dbname="ChEBI"/>
+        <ref dbkey="16525" dbname="ChEBI"/>
+        <ref dbkey="28865" dbname="ChEBI"/>
+        <ref dbkey="15891" dbname="ChEBI"/>
+        <ref dbkey="28279" dbname="ChEBI"/>
+        <ref dbkey="49059" dbname="ChEBI"/>
+        <ref dbkey="36259" dbname="ChEBI"/>
+        <ref dbkey="17347" dbname="ChEBI"/>
+        <ref dbkey="28862" dbname="ChEBI"/>
+        <ref dbkey="16192" dbname="ChEBI"/>
+        <ref dbkey="15918" dbname="ChEBI"/>
+        <ref dbkey="1148" dbname="ChEBI"/>
+        <ref dbkey="1148" dbname="ChEBI"/>
+        <ref dbkey="18386" dbname="ChEBI"/>
+        <ref dbkey="16540" dbname="ChEBI"/>
+        <ref dbkey="16489" dbname="ChEBI"/>
+        <ref dbkey="15573" dbname="ChEBI"/>
+        <ref dbkey="18112" dbname="ChEBI"/>
+        <ref dbkey="17256" dbname="ChEBI"/>
+        <ref dbkey="16174" dbname="ChEBI"/>
+        <ref dbkey="17713" dbname="ChEBI"/>
+        <ref dbkey="28846" dbname="ChEBI"/>
+        <ref dbkey="15698" dbname="ChEBI"/>
+        <ref dbkey="17252" dbname="ChEBI"/>
+        <ref dbkey="16020" dbname="ChEBI"/>
+        <ref dbkey="39567" dbname="ChEBI"/>
+        <ref dbkey="39567" dbname="ChEBI"/>
+        <ref dbkey="39567" dbname="ChEBI"/>
+        <ref dbkey="39567" dbname="ChEBI"/>
+        <ref dbkey="39567" dbname="ChEBI"/>
+        <ref dbkey="39567" dbname="ChEBI"/>
+        <ref dbkey="18414" dbname="ChEBI"/>
+        <ref dbkey="39567" dbname="ChEBI"/>
+        <ref dbkey="15887" dbname="ChEBI"/>
+        <ref dbkey="28843" dbname="ChEBI"/>
+        <ref dbkey="18406" dbname="ChEBI"/>
+        <ref dbkey="28171" dbname="ChEBI"/>
+        <ref dbkey="16964" dbname="ChEBI"/>
+        <ref dbkey="17319" dbname="ChEBI"/>
+        <ref dbkey="27551" dbname="ChEBI"/>
+        <ref dbkey="17509" dbname="ChEBI"/>
+        <ref dbkey="45564" dbname="ChEBI"/>
+        <ref dbkey="27551" dbname="ChEBI"/>
+        <ref dbkey="18261" dbname="ChEBI"/>
+        <ref dbkey="17794" dbname="ChEBI"/>
+        <ref dbkey="30753" dbname="ChEBI"/>
+        <ref dbkey="17645" dbname="ChEBI"/>
+        <ref dbkey="32374" dbname="ChEBI"/>
+        <ref dbkey="15728" dbname="ChEBI"/>
+        <ref dbkey="846276" dbname="ChEBI"/>
+        <ref dbkey="17405" dbname="ChEBI"/>
+        <ref dbkey="16831" dbname="ChEBI"/>
+        <ref dbkey="17397" dbname="ChEBI"/>
+        <ref dbkey="114444" dbname="ChEBI"/>
+        <ref dbkey="742324" dbname="ChEBI"/>
+        <ref dbkey="15793" dbname="ChEBI"/>
+        <ref dbkey="1547" dbname="ChEBI"/>
+        <ref dbkey="15765" dbname="ChEBI"/>
+        <ref dbkey="36062" dbname="ChEBI"/>
+        <ref dbkey="18258" dbname="ChEBI"/>
+        <ref dbkey="16104" dbname="ChEBI"/>
+        <ref dbkey="16767" dbname="ChEBI"/>
+        <ref dbkey="16325" dbname="ChEBI"/>
+        <ref dbkey="11909" dbname="ChEBI"/>
+        <ref dbkey="41941" dbname="ChEBI"/>
+        <ref dbkey="16865" dbname="ChEBI"/>
+        <ref dbkey="48991" dbname="ChEBI"/>
+        <ref dbkey="18145" dbname="ChEBI"/>
+        <ref dbkey="27584" dbname="ChEBI"/>
+        <ref dbkey="16708" dbname="ChEBI"/>
+        <ref dbkey="16865" dbname="ChEBI"/>
+        <ref dbkey="16865" dbname="ChEBI"/>
+        <ref dbkey="48991" dbname="ChEBI"/>
+        <ref dbkey="15947" dbname="ChEBI"/>
+        <ref dbkey="27410" dbname="ChEBI"/>
+        <ref dbkey="32805" dbname="ChEBI"/>
+        <ref dbkey="27823" dbname="ChEBI"/>
+        <ref dbkey="17549" dbname="ChEBI"/>
+        <ref dbkey="18183" dbname="ChEBI"/>
+        <ref dbkey="16811" dbname="ChEBI"/>
+        <ref dbkey="17780" dbname="ChEBI"/>
+        <ref dbkey="16168" dbname="ChEBI"/>
+        <ref dbkey="17111" dbname="ChEBI"/>
+        <ref dbkey="48928" dbname="ChEBI"/>
+        <ref dbkey="16628" dbname="ChEBI"/>
+        <ref dbkey="15929" dbname="ChEBI"/>
+        <ref dbkey="15929" dbname="ChEBI"/>
+        <ref dbkey="17405" dbname="ChEBI"/>
+        <ref dbkey="1883" dbname="ChEBI"/>
+        <ref dbkey="15901" dbname="ChEBI"/>
+        <ref dbkey="17296" dbname="ChEBI"/>
+        <ref dbkey="18145" dbname="ChEBI"/>
+        <ref dbkey="18145" dbname="ChEBI"/>
+        <ref dbkey="18145" dbname="ChEBI"/>
+        <ref dbkey="17460" dbname="ChEBI"/>
+        <ref dbkey="30915" dbname="ChEBI"/>
+        <ref dbkey="30915" dbname="ChEBI"/>
+        <ref dbkey="15676" dbname="ChEBI"/>
+        <ref dbkey="17431" dbname="ChEBI"/>
+        <ref dbkey="30837" dbname="ChEBI"/>
+        <ref dbkey="16449" dbname="ChEBI"/>
+        <ref dbkey="28875" dbname="ChEBI"/>
+        <ref dbkey="16761" dbname="ChEBI"/>
+        <ref dbkey="15422" dbname="ChEBI"/>
+        <ref dbkey="28037" dbname="ChEBI"/>
+        <ref dbkey="15741" dbname="ChEBI"/>
+        <ref dbkey="16027" dbname="ChEBI"/>
+        <ref dbkey="27781" dbname="ChEBI"/>
+        <ref dbkey="17636" dbname="ChEBI"/>
+        <ref dbkey="16335" dbname="ChEBI"/>
+        <ref dbkey="15891" dbname="ChEBI"/>
+        <ref dbkey="16335" dbname="ChEBI"/>
+        <ref dbkey="15741" dbname="ChEBI"/>
+        <ref dbkey="15344" dbname="ChEBI"/>
+        <ref dbkey="28177" dbname="ChEBI"/>
+        <ref dbkey="17347" dbname="ChEBI"/>
+        <ref dbkey="317612" dbname="ChEBI"/>
+        <ref dbkey="48131" dbname="ChEBI"/>
+        <ref dbkey="40992" dbname="ChEBI"/>
+        <ref dbkey="15843" dbname="ChEBI"/>
+        <ref dbkey="28037" dbname="ChEBI"/>
+        <ref dbkey="15843" dbname="ChEBI"/>
+        <ref dbkey="28009" dbname="ChEBI"/>
+        <ref dbkey="28832" dbname="ChEBI"/>
+        <ref dbkey="1015" dbname="ChEBI"/>
+        <ref dbkey="28822" dbname="ChEBI"/>
+        <ref dbkey="15843" dbname="ChEBI"/>
+        <ref dbkey="21547" dbname="ChEBI"/>
+        <ref dbkey="21547" dbname="ChEBI"/>
+        <ref dbkey="17786" dbname="ChEBI"/>
+        <ref dbkey="2700" dbname="ChEBI"/>
+        <ref dbkey="9532" dbname="ChEBI"/>
+        <ref dbkey="28279" dbname="ChEBI"/>
+        <ref dbkey="17748" dbname="ChEBI"/>
+        <ref dbkey="18332" dbname="ChEBI"/>
+        <ref dbkey="30794" dbname="ChEBI"/>
+        <ref dbkey="16796" dbname="ChEBI"/>
+        <ref dbkey="16208" dbname="ChEBI"/>
+        <ref dbkey="18183" dbname="ChEBI"/>
+        <ref dbkey="16811" dbname="ChEBI"/>
+        <ref dbkey="44747" dbname="ChEBI"/>
+        <ref dbkey="15699" dbname="ChEBI"/>
+        <ref dbkey="16566" dbname="ChEBI"/>
+        <ref dbkey="16393" dbname="ChEBI"/>
+        <ref dbkey="16610" dbname="ChEBI"/>
+        <ref dbkey="15746" dbname="ChEBI"/>
+        <ref dbkey="38358" dbname="ChEBI"/>
+        <ref dbkey="17164" dbname="ChEBI"/>
+        <ref dbkey="15440" dbname="ChEBI"/>
+        <ref dbkey="18086" dbname="ChEBI"/>
+        <ref dbkey="16668" dbname="ChEBI"/>
+        <ref dbkey="17594" dbname="ChEBI"/>
+        <ref dbkey="29750" dbname="ChEBI"/>
+        <ref dbkey="17890" dbname="ChEBI"/>
+        <ref dbkey="16411" dbname="ChEBI"/>
+        <ref dbkey="16031" dbname="ChEBI"/>
+        <ref dbkey="16235" dbname="ChEBI"/>
+        <ref dbkey="16927" dbname="ChEBI"/>
+        <ref dbkey="16680" dbname="ChEBI"/>
+        <ref dbkey="16680" dbname="ChEBI"/>
+        <ref dbkey="15414" dbname="ChEBI"/>
+        <ref dbkey="16119" dbname="ChEBI"/>
+        <ref dbkey="17588" dbname="ChEBI"/>
+        <ref dbkey="123715" dbname="ChEBI"/>
+        <ref dbkey="28790" dbname="ChEBI"/>
+        <ref dbkey="27585" dbname="ChEBI"/>
+        <ref dbkey="17552" dbname="ChEBI"/>
+        <ref dbkey="16356" dbname="ChEBI"/>
+        <ref dbkey="17345" dbname="ChEBI"/>
+        <ref dbkey="18089" dbname="ChEBI"/>
+        <ref dbkey="18295" dbname="ChEBI"/>
+        <ref dbkey="16709" dbname="ChEBI"/>
+        <ref dbkey="28593" dbname="ChEBI"/>
+        <ref dbkey="16410" dbname="ChEBI"/>
+        <ref dbkey="17015" dbname="ChEBI"/>
+        <ref dbkey="17336" dbname="ChEBI"/>
+        <ref dbkey="15367" dbname="ChEBI"/>
+        <ref dbkey="50372" dbname="ChEBI"/>
+        <ref dbkey="52742" dbname="ChEBI"/>
+        <ref dbkey="16796" dbname="ChEBI"/>
+        <ref dbkey="17306" dbname="ChEBI"/>
+        <ref dbkey="17840" dbname="ChEBI"/>
+        <ref dbkey="17596" dbname="ChEBI"/>
+        <ref dbkey="17808" dbname="ChEBI"/>
+        <ref dbkey="16581" dbname="ChEBI"/>
+        <ref dbkey="26276" dbname="ChEBI"/>
+        <ref dbkey="28867" dbname="ChEBI"/>
+        <ref dbkey="26276" dbname="ChEBI"/>
+        <ref dbkey="17148" dbname="ChEBI"/>
+        <ref dbkey="18265" dbname="ChEBI"/>
+        <ref dbkey="17310" dbname="ChEBI"/>
+        <ref dbkey="17148" dbname="ChEBI"/>
+        <ref dbkey="73054" dbname="ChEBI"/>
+        <ref dbkey="29063" dbname="ChEBI"/>
+        <ref dbkey="17202" dbname="ChEBI"/>
+        <ref dbkey="18344" dbname="ChEBI"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="13-09-24"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Metabolomics</field>
+        <field name="full_dataset_link">http://www.metabolomicsworkbench.org/data/DRCCMetadata.php?Mode=Study&amp;StudyID=ST000017</field>
+        <field name="repository">MetabolomicsWorkbench</field>
+        <field name="data_protocol">LC/Electro-spray /QTOF negative ion mode</field>
+        <field name="data_protocol">LC/Electro-spray /QTOF positive ion mode</field>
+        <field name="instrument_platform">Agilent 1200 LC/6530 qTOF MS</field>
+        <field name="instrument_platform">Agilent 1200 LC/6530 qTOF MS</field>
+        <field name="study_factor">Feeeding:Calorie restricted | Running Capacity:High</field>
+        <field name="study_factor">Feeeding:Calorie restricted | Running Capacity:Low</field>
+        <field name="study_factor">Feeeding:Ad lib | Running Capacity:High</field>
+        <field name="study_factor">Feeeding:Ad lib | Running Capacity:Low</field>
+        <field name="species">Rattus norvegicus</field>
+        <field name="technology_type">mass spectrometry</field>
+        <field name="metabolite_name">PENTITOL</field>
+        <field name="metabolite_name">PENTOPYRANOSE</field>
+        <field name="metabolite_name">PALMITOYL SPHINGOMYELIN</field>
+        <field name="metabolite_name">PANTOLACTONE</field>
+        <field name="metabolite_name">DECANOYLCARNITINE</field>
+        <field name="metabolite_name">PALMITOLEOYLGLYCEROPHOSPHOCHOLINE</field>
+        <field name="metabolite_name">CYTIDINE 5`-MONOPHOSPHATE</field>
+        <field name="metabolite_name">PALMITOYLGLYCEROPHOSPHOCHOLINE</field>
+        <field name="metabolite_name">CYTIDINE 5'-DIPHOSPHOCHOLINE</field>
+        <field name="metabolite_name">P-BROMO-DL-PHENYLALANINE</field>
+        <field name="metabolite_name">CYTIDINE</field>
+        <field name="metabolite_name">PENTADECANOYLGLYCEROPHOSPHOCHOLINE/STEAROYLGLYCEROPHOSPHOETHANOLAMINE</field>
+        <field name="metabolite_name">CYSTINE</field>
+        <field name="metabolite_name">PANTOTHENIC ACID</field>
+        <field name="metabolite_name">CYSTINE</field>
+        <field name="metabolite_name">P-BENZOQUINONE</field>
+        <field name="metabolite_name">N-ACETYL-L-PHENYLALANINE</field>
+        <field name="metabolite_name">DEHYDROISOANDROSTERONE 3-SULFATE</field>
+        <field name="metabolite_name">CYS-GLY, OXIDIZED</field>
+        <field name="metabolite_name">N-ACETYLGLYCINE</field>
+        <field name="metabolite_name">DECANOATE</field>
+        <field name="metabolite_name">CYSTAMINE</field>
+        <field name="metabolite_name">CYCLOHEX-1-ENECARBOXYLIC ACID</field>
+        <field name="metabolite_name">CYCLOHEXANE-1,3-DIONE</field>
+        <field name="metabolite_name">DIHEXOSE</field>
+        <field name="metabolite_name">DIETHYL 2-METHYL-3-OXOSUCCINATE</field>
+        <field name="metabolite_name">DESMETHYLNAPROXEN SULFATE</field>
+        <field name="metabolite_name">DEOXYCORTICOSTERONE ACETATE</field>
+        <field name="metabolite_name">NONANOATE</field>
+        <field name="metabolite_name">DIMETHYLXANTHINE</field>
+        <field name="metabolite_name">NONADECANOATE / METHYLSTEARATE (*)</field>
+        <field name="metabolite_name">DIHYDROXYACETONE PHOSPHATE</field>
+        <field name="metabolite_name">N-OLEOYLGLYCINE</field>
+        <field name="metabolite_name">DIHOMO-LINOLENATE</field>
+        <field name="metabolite_name">N-METHYLTRYPTAMINE</field>
+        <field name="metabolite_name">DIHOMO-LINOLEATE</field>
+        <field name="metabolite_name">N-FORMYLGLYCINE</field>
+        <field name="metabolite_name">N-CYCLOHEXYLSULFAMIC ACID</field>
+        <field name="metabolite_name">N-BENZYLOXYCARBONYLGLYCINE</field>
+        <field name="metabolite_name">N-ACETYLNEURAMINATE</field>
+        <field name="metabolite_name">ETHYLMALONIC ACID</field>
+        <field name="metabolite_name">POSSIBLY C42H80NO7P, Na ADDUCT</field>
+        <field name="metabolite_name">FERULATE</field>
+        <field name="metabolite_name">FLAVIN ADENINE DINUCLEOTIDE</field>
+        <field name="metabolite_name">FOLIC ACID</field>
+        <field name="metabolite_name">ETHYL 3-INDOLE ACETATE</field>
+        <field name="metabolite_name">ETHYL 4-OXOCYCLOHEXANECARBOXYLATE</field>
+        <field name="metabolite_name">PHENYLACETYLGLUTAMINE</field>
+        <field name="metabolite_name">DIACYL-PHOSPHATIDYLCHOLINE</field>
+        <field name="metabolite_name">PHENYLHYDRAZINE</field>
+        <field name="metabolite_name">PHOSPHOCHOLINE</field>
+        <field name="metabolite_name">PHOSPHONOACETATE</field>
+        <field name="metabolite_name">D-GLUCONO-1,5-LACTONE</field>
+        <field name="metabolite_name">FORMYL-L-METHIONINE</field>
+        <field name="metabolite_name">PHTHALATE</field>
+        <field name="metabolite_name">DETHIOBIOTIN</field>
+        <field name="metabolite_name">FRUCTOSE 1,6-BIPHOSPHATE</field>
+        <field name="metabolite_name">PIPECOLIC ACID</field>
+        <field name="metabolite_name">DIACYL-GLYCEROPHOSPHOCHOLINE (C50H82NO8P PROBABLY)</field>
+        <field name="metabolite_name">GAMMA-BUTYROLACTONE</field>
+        <field name="metabolite_name">PIPERINE</field>
+        <field name="metabolite_name">DGTP</field>
+        <field name="metabolite_name">GAMMA-GLUTAMYLISOLEUCINE</field>
+        <field name="metabolite_name">POSSIBLY C10H13NO2</field>
+        <field name="metabolite_name">DOCOSAHEXAENOIC ACID</field>
+        <field name="metabolite_name">UREA</field>
+        <field name="metabolite_name">DEOXYCHOLATE</field>
+        <field name="metabolite_name">1,2-DIPALMITOYL-SN-GLYCEROL</field>
+        <field name="metabolite_name">URATE</field>
+        <field name="metabolite_name">DEOXYCORTICOSTERONE ACETATE</field>
+        <field name="metabolite_name">11-BETA-HYDROXYANDROST-4-ENE-3,17-DIONE</field>
+        <field name="metabolite_name">DODECANEDIOATE</field>
+        <field name="metabolite_name">DEOXYRIBOSE</field>
+        <field name="metabolite_name">10-HYDROXYDECANOATE</field>
+        <field name="metabolite_name">DOCOSAPENTAENOATE</field>
+        <field name="metabolite_name">DEOXYURIDINE</field>
+        <field name="metabolite_name">DOPAMINE 3-O-SULFATE</field>
+        <field name="metabolite_name">TRYPTOPHANAMIDE</field>
+        <field name="metabolite_name">[13C]-GLUTAMATE</field>
+        <field name="metabolite_name">DODECENOATE</field>
+        <field name="metabolite_name">TRYPTOPHAN</field>
+        <field name="metabolite_name">[13C]-ASPARTIC ACID</field>
+        <field name="metabolite_name">ESTRADIOL-17BETA</field>
+        <field name="metabolite_name">URATE</field>
+        <field name="metabolite_name">[13C]-ARGININE</field>
+        <field name="metabolite_name">PHENYLACETIC ACID</field>
+        <field name="metabolite_name">ERUCIC ACID</field>
+        <field name="metabolite_name">TYROSINE</field>
+        <field name="metabolite_name">DEOXYCARNITINE</field>
+        <field name="metabolite_name">12-HYDROXY-DODECANOIC ACID</field>
+        <field name="metabolite_name">FORMYL-L-METHIONINE</field>
+        <field name="metabolite_name">TRANS-CYCLOHEXANE-1,2-DIOL</field>
+        <field name="metabolite_name">FORMYLANTHRANILATE</field>
+        <field name="metabolite_name">TIGLYL CARNITINE</field>
+        <field name="metabolite_name">TRYPTAMINE</field>
+        <field name="metabolite_name">[13C]-ISOLEUCINE</field>
+        <field name="metabolite_name">FRUCTOSE 1,6-BIPHOSPHATE</field>
+        <field name="metabolite_name">TRIMETHYLAMINE</field>
+        <field name="metabolite_name">[13C]-HISTIDINE</field>
+        <field name="metabolite_name">GAMMA-GLUTAMYLPHENYLALANINE</field>
+        <field name="metabolite_name">GAMMA-GLUTAMYLTYROSINE</field>
+        <field name="metabolite_name">GAMMA-GLUTAMYLMETHIONINE</field>
+        <field name="metabolite_name">GLUCOSAMINE 6-PHOSPHATE</field>
+        <field name="metabolite_name">O-ACETYL-L-CARNITINE</field>
+        <field name="metabolite_name">GLUCOSAMINE 6-SULFATE</field>
+        <field name="metabolite_name">OCTANOYLCARNITINE</field>
+        <field name="metabolite_name">GLUCARIC/GULARIC/SACCHARIC ACID</field>
+        <field name="metabolite_name">N,N,N-TRIMETHYLLYSINE</field>
+        <field name="metabolite_name">GLUCOSAMINATE</field>
+        <field name="metabolite_name">NORMETANEPHRINE</field>
+        <field name="metabolite_name">DIMETHYLARGININE</field>
+        <field name="metabolite_name">GLUTAMINE</field>
+        <field name="metabolite_name">N,N-DIMETHYL-1,4-PHENYLENEDIAMINE</field>
+        <field name="metabolite_name">DI-LINOLEOYL-3-SN-PHOSPHATIDYLCHOLINE (PROBABLY)</field>
+        <field name="metabolite_name">N-NITROSODIETHANOLAMINE</field>
+        <field name="metabolite_name">DI-LINOLEOYL-3-SN-PHOSPHATIDYLCHOLINE (???)</field>
+        <field name="metabolite_name">GLUTAMIC ACID</field>
+        <field name="metabolite_name">NICOTINAMIDE MONONUCLEOTIDE</field>
+        <field name="metabolite_name">DIHYDROTHYMINE</field>
+        <field name="metabolite_name">GLUTAMINE</field>
+        <field name="metabolite_name">N-METHYLTYRAMINE</field>
+        <field name="metabolite_name">NICOTINAMIDE</field>
+        <field name="metabolite_name">NICOTINAMIDE ADENINE DINUCLEOTIDE</field>
+        <field name="metabolite_name">[C13] TYROSINE</field>
+        <field name="metabolite_name">VITAMIN D2</field>
+        <field name="metabolite_name">DIETHANOLAMINE</field>
+        <field name="metabolite_name">[C13] PHENYLALANINE</field>
+        <field name="metabolite_name">VITAMIN B12</field>
+        <field name="metabolite_name">DIETHYL AMINOMALONATE</field>
+        <field name="metabolite_name">[C13] METHIONINE</field>
+        <field name="metabolite_name">VALINE</field>
+        <field name="metabolite_name">BOC-THR-OH</field>
+        <field name="metabolite_name">URSODIOL</field>
+        <field name="metabolite_name">PHENYLACETATE</field>
+        <field name="metabolite_name">DIHYDROFOLATE</field>
+        <field name="metabolite_name">PENTITOL</field>
+        <field name="metabolite_name">DIHYDROOROTATE</field>
+        <field name="metabolite_name">PANTOATE</field>
+        <field name="metabolite_name">DIHEXOSE</field>
+        <field name="metabolite_name">PALMITOYLGLYCEROPHOSPHOINOSITOL</field>
+        <field name="metabolite_name">VITAMIN D3</field>
+        <field name="metabolite_name">DIHYDROFOLATE</field>
+        <field name="metabolite_name">PHTHALATE</field>
+        <field name="metabolite_name">UREA</field>
+        <field name="metabolite_name">PHOSPHO(ENOL)PYRUVIC ACID</field>
+        <field name="metabolite_name">PHOSPHOCREATINE</field>
+        <field name="metabolite_name">CHOLATE</field>
+        <field name="metabolite_name">PHENYLPYRUVATE</field>
+        <field name="metabolite_name">CHENODEOXYCHOLATE</field>
+        <field name="metabolite_name">CATECHOL</field>
+        <field name="metabolite_name">UROCANATE</field>
+        <field name="metabolite_name">CARNOSINE</field>
+        <field name="metabolite_name">URIDINE-5-MONOPHOSPHATE</field>
+        <field name="metabolite_name">PROGESTERONE</field>
+        <field name="metabolite_name">CAPRYLIC ACID</field>
+        <field name="metabolite_name">URIDINE 5'-DIPHOSPHO-N-ACETYLGALACTOSAMINE</field>
+        <field name="metabolite_name">PREGN STEROID MONOSULFATE</field>
+        <field name="metabolite_name">[C13] VALINE</field>
+        <field name="metabolite_name">URIDINE</field>
+        <field name="metabolite_name">GLUTARATE</field>
+        <field name="metabolite_name">GLUTAROYL CARNITINE</field>
+        <field name="metabolite_name">GLUTATHIONE OXIDIZED</field>
+        <field name="metabolite_name">GLUTATHIONE OXIDIZED</field>
+        <field name="metabolite_name">GLUTATHIONE REDUCED</field>
+        <field name="metabolite_name">OROTIDINE 5'-MONOPHOSPHATE</field>
+        <field name="metabolite_name">GLYCERIC ACID</field>
+        <field name="metabolite_name">O-SUCCINYL-L-HOMOSERINE</field>
+        <field name="metabolite_name">GLYCEROPHOSPHOCHOLINE</field>
+        <field name="metabolite_name">OXOMALONATE</field>
+        <field name="metabolite_name">GLYCINE</field>
+        <field name="metabolite_name">DOCOSAHEXAENOYLGLYCEROPHOSPHOCHOLINE</field>
+        <field name="metabolite_name">GLYCOCHOLATE</field>
+        <field name="metabolite_name">O-PHOSPHONOHEXOPYRANOSE</field>
+        <field name="metabolite_name">DI-TERT-BUTYL DICARBONATE</field>
+        <field name="metabolite_name">GLYCOLITHOCHOLIC ACID ETHYL ESTER</field>
+        <field name="metabolite_name">OPHTHALMIC ACID</field>
+        <field name="metabolite_name">ORNITHINE</field>
+        <field name="metabolite_name">DOCOSAHEXAENOYLGLYCEROPHOSPHOCHOLINE</field>
+        <field name="metabolite_name">OROTATE</field>
+        <field name="metabolite_name">OCTOPAMINE</field>
+        <field name="metabolite_name">OLEAMIDE</field>
+        <field name="metabolite_name">OLEOYLGLYCEROPHOSPHOCHOLINE</field>
+        <field name="metabolite_name">CINNAMIC ACID</field>
+        <field name="metabolite_name">15(S)-HETE</field>
+        <field name="metabolite_name">CHOLESTEROL SULFATE</field>
+        <field name="metabolite_name">13(S)-HPODE</field>
+        <field name="metabolite_name">DIMETHYLBENZIMIDAZOLE</field>
+        <field name="metabolite_name">CITRATE</field>
+        <field name="metabolite_name">1-HYDROXY-2-NAPHTHOATE</field>
+        <field name="metabolite_name">DIMETHYLGUANOSINE</field>
+        <field name="metabolite_name">CIS-7,10,13,16-DOCOSATETRAENOIC ACID</field>
+        <field name="metabolite_name">1-AMINOCYCLOPROPANE-1-CARBOXYLATE</field>
+        <field name="metabolite_name">DIMETHYL MALEATE</field>
+        <field name="metabolite_name">N(PAI)-METHYL-L-HISTIDINE</field>
+        <field name="metabolite_name">DIMETHYL MALEATE</field>
+        <field name="metabolite_name">DIMETHYLXANTHINE</field>
+        <field name="metabolite_name">OLEATE</field>
+        <field name="metabolite_name">CHOLESTEROL</field>
+        <field name="metabolite_name">DIOLEOYLPHOSPHATIDYLCHOLINE</field>
+        <field name="metabolite_name">OCTADECANEDIOATE</field>
+        <field name="metabolite_name">DIPALMITOYLGLYCEROL</field>
+        <field name="metabolite_name">ORNITHINE</field>
+        <field name="metabolite_name">OLEOYLGLYCEROPHOSPHOETHANOLAMINE</field>
+        <field name="metabolite_name">CYSTATHIONINE</field>
+        <field name="metabolite_name">OXALOSUCCINATE</field>
+        <field name="metabolite_name">XANTHOSINE</field>
+        <field name="metabolite_name">OROTATE</field>
+        <field name="metabolite_name">XANTHINE</field>
+        <field name="metabolite_name">PALMITIC ACID</field>
+        <field name="metabolite_name">CORTICOSTERONE</field>
+        <field name="metabolite_name">XANTHURENIC ACID</field>
+        <field name="metabolite_name">P-ACETAMIDOPHENYLGLUCURONIDE</field>
+        <field name="metabolite_name">CITRULLINE</field>
+        <field name="metabolite_name">XANTHOSINE 5`-MONOPHOSPHATE</field>
+        <field name="metabolite_name">CYS-GLY</field>
+        <field name="metabolite_name">11-BETA-HYDROXYANDROST-4-ENE-3,17-DIONE</field>
+        <field name="metabolite_name">PALMITOYLGLYCEROPHOSPHOETHANOLAMINE  / PALMITOYLPLASMENYLETHANOLAMINE </field>
+        <field name="metabolite_name">CYCLOHEPTANECARBOXYLIC ACID</field>
+        <field name="metabolite_name">11BETA,21-DIHYDROXY-5BETA-PREGNANE-3,20-DIONE</field>
+        <field name="metabolite_name">BETAINE</field>
+        <field name="metabolite_name">BILIVERDIN</field>
+        <field name="metabolite_name">ASPARAGINE</field>
+        <field name="metabolite_name">BENZOIN</field>
+        <field name="metabolite_name">HEXURONIC ACID</field>
+        <field name="metabolite_name">ARG-VAL-TRP</field>
+        <field name="metabolite_name">HEXITOL</field>
+        <field name="metabolite_name">ASCORBATE</field>
+        <field name="metabolite_name">ANTHRANILATE</field>
+        <field name="metabolite_name">ARACHIDONOYLGLYCEROPHOSPHOCHOLINE</field>
+        <field name="metabolite_name">BIOPTERIN</field>
+        <field name="metabolite_name">BIOTIN</field>
+        <field name="metabolite_name">2-HYDROXYSTEARATE</field>
+        <field name="metabolite_name">2-OXO-3-HYDROXY-4-PHOSPHOBUTANOATE</field>
+        <field name="metabolite_name">2-HYDROXYBUTYRIC ACID</field>
+        <field name="metabolite_name">2-HYDROXYGLUTARATE</field>
+        <field name="metabolite_name">2-CARBOXY-2,3-DIHYDRO-5,6-DIHYDROXYINDOLE</field>
+        <field name="metabolite_name">2`-DEOXYURIDINE 5`-TRIPHOSPHATE</field>
+        <field name="metabolite_name">2,3-DIPHOSPHO-D-GLYCERIC ACID</field>
+        <field name="metabolite_name">HYDROXYBENZOIC ACID</field>
+        <field name="metabolite_name">HYDROXYDECANOATE</field>
+        <field name="metabolite_name">HIPPURATE</field>
+        <field name="metabolite_name">HYDROXYACETAMINOPHEN SULFATE</field>
+        <field name="metabolite_name">INDICAN</field>
+        <field name="metabolite_name">3-(2-HYDROXYPHENYL)PROPANOATE</field>
+        <field name="metabolite_name">INDOLE-3-ACETIC ACID</field>
+        <field name="metabolite_name">HYDROXYISOVALERATE</field>
+        <field name="metabolite_name">2-OXOADIPATE</field>
+        <field name="metabolite_name">HYPOXANTHINE</field>
+        <field name="metabolite_name">2-OXOBUTANOATE</field>
+        <field name="metabolite_name">BOC-ASP-OH</field>
+        <field name="metabolite_name">BOC-GLY-OH</field>
+        <field name="metabolite_name">BOC-HIS-OH</field>
+        <field name="metabolite_name">N-ACETYL-L-PHENYLALANINE</field>
+        <field name="metabolite_name">BOC-PRO-OH</field>
+        <field name="metabolite_name">INDOLEPROPIONATE</field>
+        <field name="metabolite_name">BISPHOSPHOGLYCERATE</field>
+        <field name="metabolite_name">N-ACETYLPUTRESCINE</field>
+        <field name="metabolite_name">BIURET</field>
+        <field name="metabolite_name">N-ACETYLNEURAMINATE</field>
+        <field name="metabolite_name">INOSINE 5`-TRIPHOSPHATE</field>
+        <field name="metabolite_name">BOC-ALA-OH</field>
+        <field name="metabolite_name">N-ALPHA-ACETYL-L-ASPARAGINE</field>
+        <field name="metabolite_name">INOSINE</field>
+        <field name="metabolite_name">BOC-ASN</field>
+        <field name="metabolite_name">N-ACETYLSEROTONIN</field>
+        <field name="metabolite_name">N-CYCLOHEXYLFORMAMIDE</field>
+        <field name="metabolite_name">N-AMIDINO-L-ASPARTATE</field>
+        <field name="metabolite_name">N-ETHYLMALEIMIDE</field>
+        <field name="metabolite_name">N-CYCLOHEXYLFORMAMIDE</field>
+        <field name="metabolite_name">BOC-SER-OH</field>
+        <field name="metabolite_name">N-FORMYLGLYCINE</field>
+        <field name="metabolite_name">3ALPHA,7ALPHA,12ALPHA-TRIHYDROXY-5BETA-CHOLESTANOATE</field>
+        <field name="metabolite_name">3ALPHA,7ALPHA-DIHYDROXY-5BETA-CHOLESTANATE</field>
+        <field name="metabolite_name">3ALPHA-HYDROXY-5BETA-CHOLANATE</field>
+        <field name="metabolite_name">3-CARBOXY-4-METHYL-5-PROPYL-2-FURANPROPANOATE</field>
+        <field name="metabolite_name">3,4-DIHYDROXYBENZOATE</field>
+        <field name="metabolite_name">3,4-DIHYDROXYPHENYL GLYCOL</field>
+        <field name="metabolite_name">3-(4-HYDROXYPHENYL)LACTATE</field>
+        <field name="metabolite_name">3ALPHA,7ALPHA,12ALPHA,26-TETRAHYDROXY-5BETA-CHOLESTANE</field>
+        <field name="metabolite_name">ISOLEUCINE/LEUCINE</field>
+        <field name="metabolite_name">LACTOYLGLUTATHIONE</field>
+        <field name="metabolite_name">LAURIC ACID</field>
+        <field name="metabolite_name">BIS(2-ETHYLHEXYL)PHTHALATE</field>
+        <field name="metabolite_name">LIGNOCERIC ACID</field>
+        <field name="metabolite_name">LINOLEATE</field>
+        <field name="metabolite_name">3-HYDROXY-3-METHYLGLUTARATE</field>
+        <field name="metabolite_name">LINOLEOYLGLYCEROPHOSPHOETHANOLAMINE</field>
+        <field name="metabolite_name">3-HYDROXYANTHRANILATE</field>
+        <field name="metabolite_name">MALATE</field>
+        <field name="metabolite_name">CARNOSINE</field>
+        <field name="metabolite_name">C-GLYCOSYLTRYPTOPHAN</field>
+        <field name="metabolite_name">CAFFEINE</field>
+        <field name="metabolite_name">CAPECITABINE</field>
+        <field name="metabolite_name">CIS-4-DECENOYL CARNITINE</field>
+        <field name="metabolite_name">CITRAMALATE</field>
+        <field name="metabolite_name">CHOLESTA-5,7-DIEN-3BETA-OL</field>
+        <field name="metabolite_name">CINNAMOYLGLYCINE</field>
+        <field name="metabolite_name">3-HYDROXYBENZALDEHYDE</field>
+        <field name="metabolite_name">3-METHOXY-L-TYROSINE</field>
+        <field name="metabolite_name">3-METHYL-2-OXINDOLE</field>
+        <field name="metabolite_name">3-HYDROXYBENZYL ALCOHOL</field>
+        <field name="metabolite_name">3-HYDROXY-DL-KYNURENINE</field>
+        <field name="metabolite_name">3-METHYLADENINE</field>
+        <field name="metabolite_name">3-NITRO-L-TYROSINE</field>
+        <field name="metabolite_name">GLYCEROL PHOSPHATE</field>
+        <field name="metabolite_name">3-METHYL-2-OXOBUTANOIC ACID</field>
+        <field name="metabolite_name">GLYCOCHOLATE</field>
+        <field name="metabolite_name">3-METHYL-2-OXOVALERIC ACID</field>
+        <field name="metabolite_name">GLUTAMINE</field>
+        <field name="metabolite_name">GLYCERIC ACID</field>
+        <field name="metabolite_name">GLUCURONOLACTONE</field>
+        <field name="metabolite_name">3-SULFINO-L-ALANINE</field>
+        <field name="metabolite_name">GLUTAMIC ACID</field>
+        <field name="metabolite_name">GAMMA-LINOLENIC ACID</field>
+        <field name="metabolite_name">CAFFEIC ACID</field>
+        <field name="metabolite_name">GERANYL PYROPHOSPHATE</field>
+        <field name="metabolite_name">BUTYRYLCARNITINE</field>
+        <field name="metabolite_name">FUMARIC ACID</field>
+        <field name="metabolite_name">GAMA-L-GLUTAMYL-L-ALANINE</field>
+        <field name="metabolite_name">CORTISOL</field>
+        <field name="metabolite_name">CORTISOL 21-ACETATE</field>
+        <field name="metabolite_name">GLYCODEOXYCHOLATE / GLYCOCHENODEOXYCHOLATE</field>
+        <field name="metabolite_name">CORTISOL 21-ACETATE</field>
+        <field name="metabolite_name">CORTISONE</field>
+        <field name="metabolite_name">COTININE</field>
+        <field name="metabolite_name">CREATINE</field>
+        <field name="metabolite_name">CREATININE FROM COMPLEX</field>
+        <field name="metabolite_name">4-ACETAMIDOBUTANOATE</field>
+        <field name="metabolite_name">4-(2-AMINO-3-HYDROXYPHENYL)-2,4-DIOXOBUTANOATE</field>
+        <field name="metabolite_name">4-AMINOBENZOATE</field>
+        <field name="metabolite_name">4-ANDROSTEN-3BETA,17BETA-DIOL DISULFATE</field>
+        <field name="metabolite_name">4-HYDROXY-2-QUINOLINECARBOXYLIC ACID</field>
+        <field name="metabolite_name">4-HYDROXY-3-METHOXY-BENZENEMETHANOL</field>
+        <field name="metabolite_name">HEXANOATE</field>
+        <field name="metabolite_name">4-HYDROXY-3-METHOXYPHENYLGLYCOL</field>
+        <field name="metabolite_name">4-HYDROXYBENZALDEHYDE</field>
+        <field name="metabolite_name">4-HYDROXYPHENYLACETATE</field>
+        <field name="metabolite_name">4-OXOGLUTARAMATE</field>
+        <field name="metabolite_name">GULONO-1,4-LACTONE</field>
+        <field name="metabolite_name">HEPTANOIC ACID</field>
+        <field name="metabolite_name">HEXACOSANOIC ACID</field>
+        <field name="metabolite_name">HEXADECANEDIOATE</field>
+        <field name="metabolite_name">GLYCOLITHOCHOLIC ACID ETHYL ESTER</field>
+        <field name="metabolite_name">CITRATE</field>
+        <field name="metabolite_name">GLYOXAL</field>
+        <field name="metabolite_name">GLYOXYLATE</field>
+        <field name="metabolite_name">CORTICOSTERONE</field>
+        <field name="metabolite_name">GUANIDINOACETATE</field>
+        <field name="metabolite_name">CITRULLINE</field>
+        <field name="metabolite_name">STACHYOSE</field>
+        <field name="metabolite_name">STEARIDONATE</field>
+        <field name="metabolite_name">STEAROYLGLYCEROPHOSPHOETHANOLAMINE</field>
+        <field name="metabolite_name">STEAROYLGLYCEROPHOSPHOETHANOLAMINE</field>
+        <field name="metabolite_name">SERINE</field>
+        <field name="metabolite_name">EPINEPHRINE</field>
+        <field name="metabolite_name">S-HEXYL-GLUTATHIONE</field>
+        <field name="metabolite_name">ENKEPHALINE, (D-ALA)2-LEU</field>
+        <field name="metabolite_name">(S)-LACTATE</field>
+        <field name="metabolite_name">ESTRADIOL 17 ALPHA</field>
+        <field name="metabolite_name">SPHINGOSINE 1-PHOSPHATE</field>
+        <field name="metabolite_name">ERYTHRITOL</field>
+        <field name="metabolite_name">DOCOSAPENTAENOYLGLYCEROPHOSPHOCHOLINE</field>
+        <field name="metabolite_name">DOCOSAHEXAENOYLGLYCEROPHOSPHOETHANOLAMINE</field>
+        <field name="metabolite_name">S-CARBOXYMETHYL-L-CYSTEINE</field>
+        <field name="metabolite_name">EICOSATRIENOYLGLYCEROPHOSPHOCHOLINE</field>
+        <field name="metabolite_name">(S)-DIHYDROOROTATE</field>
+        <field name="metabolite_name">DOPAMINE</field>
+        <field name="metabolite_name">ESTRIOL</field>
+        <field name="metabolite_name">ESTRONE</field>
+        <field name="metabolite_name">BOC-ASN</field>
+        <field name="metabolite_name">BOC-ASP-OH</field>
+        <field name="metabolite_name">SALICYLURIC GLUCURONIDE</field>
+        <field name="metabolite_name">BILIVERDIN</field>
+        <field name="metabolite_name">BOC-A-(1-NAPHTHYLMETHYL)-DL-PRO-OH</field>
+        <field name="metabolite_name">ROSMARINIC ACID</field>
+        <field name="metabolite_name">BOC-PRO-OH</field>
+        <field name="metabolite_name">SALICYLIC ACID</field>
+        <field name="metabolite_name">PYRUVATE</field>
+        <field name="metabolite_name">BOC-MET-OH</field>
+        <field name="metabolite_name">RIBOFLAVIN</field>
+        <field name="metabolite_name">BOC-PHE-OH</field>
+        <field name="metabolite_name">PYRIDOXAL</field>
+        <field name="metabolite_name">PYRIDOXINE</field>
+        <field name="metabolite_name">PROSTAGLANDIN G2</field>
+        <field name="metabolite_name">PYRIDINE-2,3-DICARBOXYLATE</field>
+        <field name="metabolite_name">BEHENIC ACID</field>
+        <field name="metabolite_name">PROSTAGLANDIN E1</field>
+        <field name="metabolite_name">BENZOATE</field>
+        <field name="metabolite_name">B-ALANYL-N(PAI)-METHYL-L-HISTIDINE</field>
+        <field name="metabolite_name">XANTHOSINE 5'-MONOPHOSPHATE</field>
+        <field name="metabolite_name">XYLONATE</field>
+        <field name="metabolite_name">TRIDECANOIC ACID</field>
+        <field name="metabolite_name">TRYPTOPHAN</field>
+        <field name="metabolite_name">URACIL</field>
+        <field name="metabolite_name">URATE</field>
+        <field name="metabolite_name">URIDINE</field>
+        <field name="metabolite_name">UROCORTISONE</field>
+        <field name="metabolite_name">URSODIOL</field>
+        <field name="metabolite_name">XANTHINE</field>
+        <field name="metabolite_name">THYROXINE</field>
+        <field name="metabolite_name">THYMIDINE</field>
+        <field name="metabolite_name">THYROTROPIN RELEASING HORMONE</field>
+        <field name="metabolite_name">TAUROCHENODEOXYCHOLATE</field>
+        <field name="metabolite_name">TAUROCHOLATE</field>
+        <field name="metabolite_name">TAURINE</field>
+        <field name="metabolite_name">THIOPURINE S-METHYLETHER</field>
+        <field name="metabolite_name">THREONATE</field>
+        <field name="metabolite_name">TAUROLITHOCHOLATE</field>
+        <field name="metabolite_name">TESTOSTERONE</field>
+        <field name="metabolite_name">2'-DEOXYGUANOSINE 5'-DIPHOSPHATE</field>
+        <field name="metabolite_name">2`-DEOXYGUANOSINE 5`-MONOPHOSPHATE</field>
+        <field name="metabolite_name">2'-DEOXYCYTIDINE 5'-MONOPHOSPHATE</field>
+        <field name="metabolite_name">2-DEOXY-D-GLUCOSE</field>
+        <field name="metabolite_name">2-HYDROXYPHENYLACETIC ACID</field>
+        <field name="metabolite_name">2-HYDROXYBUTYRIC ACID</field>
+        <field name="metabolite_name">2-HYDROXYBUTYRIC ACID</field>
+        <field name="metabolite_name">2-QUINOLINECARBOXYLIC ACID</field>
+        <field name="metabolite_name">2-METHYLGLUTARIC ACID</field>
+        <field name="metabolite_name">2-HYDROXYQUINOLINE</field>
+        <field name="metabolite_name">2-HYDROXYPYRIDINE</field>
+        <field name="metabolite_name">2,4-DIHYDROXYPTERIDINE</field>
+        <field name="metabolite_name">2,5-DIMETHYLPYRAZINE</field>
+        <field name="metabolite_name">2,6-DIHYDROXYPYRIDINE</field>
+        <field name="metabolite_name">2-AMINO-2-DEOXYHEXOPYRANOSE</field>
+        <field name="metabolite_name">(2-AMINOETHYL)PHOSPHONATE</field>
+        <field name="metabolite_name">2-AMINOPHENOL</field>
+        <field name="metabolite_name">2'-DEOXYADENOSINE</field>
+        <field name="metabolite_name">2`-DEOXYADENOSINE 5`-DIPHOSPHATE</field>
+        <field name="metabolite_name">2'-DEOXYADENOSINE 5'-MONOPHOSPHATE</field>
+        <field name="metabolite_name">2`-DEOXYCYTIDINE 5`-DIPHOSPHATE</field>
+        <field name="metabolite_name">2'-DEOXYCYTIDINE</field>
+        <field name="metabolite_name">1-NAPHTHYLAMINE</field>
+        <field name="metabolite_name">17ALPHA-HYDROXYPROGESTERONE</field>
+        <field name="metabolite_name">1-METHYLADENOSINE</field>
+        <field name="metabolite_name">[13C]-TYROSINE</field>
+        <field name="metabolite_name">[13C]-VALINE</field>
+        <field name="metabolite_name">[13C]-PROLINE</field>
+        <field name="metabolite_name">[13C]-THREONINE</field>
+        <field name="metabolite_name">[13C]-LYSINE</field>
+        <field name="metabolite_name">[13C]-PHENYLALANINE</field>
+        <field name="metabolite_name">2',4'-DIHYDROXYACETOPHENONE</field>
+        <field name="metabolite_name">1-OLEOYL-RAC-GLYCEROL</field>
+        <field name="metabolite_name">[13C]-LEUCINE</field>
+        <field name="metabolite_name">5-AMINOPENTANOATE</field>
+        <field name="metabolite_name">5-Aminoimidazole ribotide</field>
+        <field name="metabolite_name">5-AMINOIMIDAZOLE-4-CARBOXAMIDE-1-BETA-D-RIBOFURANOSYL 5`-MONOPHOSPHATE</field>
+        <field name="metabolite_name">5-HYDROXY-L-TRYPTOPHAN</field>
+        <field name="metabolite_name">5-HYDROXYMETHYLURACIL</field>
+        <field name="metabolite_name">5BETA-DIHYDROTESTOSTERONE</field>
+        <field name="metabolite_name">5'-DEOXYADENOSINE</field>
+        <field name="metabolite_name">5-METHYLCYTOSINE</field>
+        <field name="metabolite_name">5`-METHYLTHIOADENOSINE</field>
+        <field name="metabolite_name">5-HYDROXYPENTANOIC ACID</field>
+        <field name="metabolite_name">5-METHYLCYTOSINE</field>
+        <field name="metabolite_name">3-UREIDOPROPIONIC ACID</field>
+        <field name="metabolite_name">3-PHOSPHOGLYCERIC ACID</field>
+        <field name="metabolite_name">4-AMINOBENZOATE</field>
+        <field name="metabolite_name">4-ACETAMIDOBUTANOATE</field>
+        <field name="metabolite_name">4-AMINOBENZOYLGLUTAMIC ACID</field>
+        <field name="metabolite_name">4-COUMARATE</field>
+        <field name="metabolite_name">4-GUANIDINOBUTANOIC ACID</field>
+        <field name="metabolite_name">4-HYDROXY-3-METHOXYPHENYLGLYCOL</field>
+        <field name="metabolite_name">4-NITROPHENYL PHOSPHATE</field>
+        <field name="metabolite_name">4-PYRIDOXATE</field>
+        <field name="metabolite_name">4-QUINOLINECARBOXYLIC ACID</field>
+        <field name="metabolite_name">3-HYDROXY-3-METHYLGLUTARATE</field>
+        <field name="metabolite_name">3'-DEPHOSPHO COA</field>
+        <field name="metabolite_name">3-DEHYDROSHIKIMATE</field>
+        <field name="metabolite_name">3-(CYSTEIN-S-YL)ACETAMINOPHEN</field>
+        <field name="metabolite_name">3-(CYSTEIN-S-YL)ACETAMINOPHEN</field>
+        <field name="metabolite_name">3-METHYL-2-OXINDOLE</field>
+        <field name="metabolite_name">3-METHYLHISTAMINE</field>
+        <field name="metabolite_name">3-METHOXY-L-TYROSINE</field>
+        <field name="metabolite_name">3-METHOXYTYRAMINE</field>
+        <field name="metabolite_name">3-HYDROXYANTHRANILATE</field>
+        <field name="metabolite_name">3-HYDROXY-DL-KYNURENINE</field>
+        <field name="metabolite_name">3,4-DIHYDROXY-L-PHENYLALANINE</field>
+        <field name="metabolite_name">3,4-DIHYDROXYBENZOATE</field>
+        <field name="metabolite_name">3,3',5-TRIIODO-L-THYRONINE</field>
+        <field name="metabolite_name">3-(2-HYDROXYPHENYL)PROPANOATE</field>
+        <field name="metabolite_name">3,4-DICHLOROANILINE</field>
+        <field name="metabolite_name">3,3'-DITHIODIVALINE</field>
+        <field name="metabolite_name">3-ALPHA,11-BETA,17-ALPHA,21-TETRAHYDROXY- 5-ALPHA-PREGNAN-20-ONE</field>
+        <field name="metabolite_name">3ALPHA-HYDROXY-5BETA-CHOLANATE</field>
+        <field name="metabolite_name">3BETA-HYDROXY-5ALPHA-PREGNAN-20-ONE</field>
+        <field name="metabolite_name">3'-CMP</field>
+        <field name="metabolite_name">3,4-DIHYDROXYPHENYLACETATE</field>
+        <field name="metabolite_name">AMINOBUTANOIC ACID</field>
+        <field name="metabolite_name">METHYLXANTHINE</field>
+        <field name="metabolite_name">ALPHA-TOCOPHEROL</field>
+        <field name="metabolite_name">METHYL PARABEN</field>
+        <field name="metabolite_name">ALDOSTERONE</field>
+        <field name="metabolite_name">ADENINE</field>
+        <field name="metabolite_name">MYRISTOYLGLYCEROPHOSPHOCHOLINE</field>
+        <field name="metabolite_name">MYRISTOYLGLYCEROPHOSPHOCHOLINE</field>
+        <field name="metabolite_name">AMINOPENTANOIC ACID</field>
+        <field name="metabolite_name">MONO-ETHYL MALONATE</field>
+        <field name="metabolite_name">AMINOHYDROXYBUTANOIC ACID</field>
+        <field name="metabolite_name">MEVALOLACTONE</field>
+        <field name="metabolite_name">N6-(DELTA2-ISOPENTENYL)-ADENINE</field>
+        <field name="metabolite_name">N-ACETYL-BETA-D-GLUCOSAMINYLAMINE</field>
+        <field name="metabolite_name">N1-METHYL-2-PYRIDONE-5-CARBOXAMIDE</field>
+        <field name="metabolite_name">N4-ACETYLCYTIDINE</field>
+        <field name="metabolite_name">ACETYLENEDICARBOXYLATE</field>
+        <field name="metabolite_name">ACONITATE</field>
+        <field name="metabolite_name">7-ALPHA-HYDROXY-3-OXO-4-CHOLESTENOATE</field>
+        <field name="metabolite_name">9(10)-EPOME</field>
+        <field name="metabolite_name">5-HYDROXYINDOLE-3-ACETIC ACID</field>
+        <field name="metabolite_name">5-AMINOLEVULINIC ACID</field>
+        <field name="metabolite_name">5-OXO-PROLINE</field>
+        <field name="metabolite_name">METHIONINE</field>
+        <field name="metabolite_name">5-HYDROXY-L-TRYPTOPHAN</field>
+        <field name="metabolite_name">6-HYDROXYNICOTINATE</field>
+        <field name="metabolite_name">METHYL ACETOACETATE</field>
+        <field name="metabolite_name">5-PHOSPHO-ALPHA-D-RIBOSE</field>
+        <field name="metabolite_name">METHIONYLALANINE</field>
+        <field name="metabolite_name">METHYLGLUTAROYLCARNITINE</field>
+        <field name="metabolite_name">6-PHOSPHOGLUCONIC ACID</field>
+        <field name="metabolite_name">METHYL BETA-D-GALACTOSIDE</field>
+        <field name="metabolite_name">METHYLGUANIDINE</field>
+        <field name="metabolite_name">METHYL INDOLE-3-ACETATE</field>
+        <field name="metabolite_name">METHYL JASMONATE</field>
+        <field name="metabolite_name">METHYL JASMONATE</field>
+        <field name="metabolite_name">METHYLMALONATE</field>
+        <field name="metabolite_name">4-PYRIDOXATE</field>
+        <field name="metabolite_name">4-VINYLPHENOL SULFATE</field>
+        <field name="metabolite_name">5,6-DIHYDROURACIL</field>
+        <field name="metabolite_name">ANILINE</field>
+        <field name="metabolite_name">AMINOHYDROXYBUTANOIC ACID</field>
+        <field name="metabolite_name">AMINOHYDROXYBENZOIC ACID</field>
+        <field name="metabolite_name">ALPHA-TOCOPHEROL</field>
+        <field name="metabolite_name">ALPHA-LIPOAMIDE</field>
+        <field name="metabolite_name">ALPHA-KETO-GLUTARATE</field>
+        <field name="metabolite_name">ALPHA-KETO-GLUTARATE</field>
+        <field name="metabolite_name">ALLANTOIN</field>
+        <field name="metabolite_name">AGMATINE</field>
+        <field name="metabolite_name">ALLANTOATE</field>
+        <field name="metabolite_name">ALANINE</field>
+        <field name="metabolite_name">MYRISTIC ACID</field>
+        <field name="metabolite_name">ADENOSINE DIPHOSPHATE</field>
+        <field name="metabolite_name">METHYL BETA-D-GALACTOSIDE</field>
+        <field name="metabolite_name">ADENOSINE 5`-TRIPHOSPHATE</field>
+        <field name="metabolite_name">N-ACETYL-D-GALACTOSAMINE</field>
+        <field name="metabolite_name">SUCCINATE</field>
+        <field name="metabolite_name">ADENOSINE 5'-MONOPHOSPHATE</field>
+        <field name="metabolite_name">MYRISTOLEIC ACID</field>
+        <field name="metabolite_name">STEAROYL SPHINGOMYELIN</field>
+        <field name="metabolite_name">ADENOSINE 2',3'-CYCLIC MONOPHOSPHATE</field>
+        <field name="metabolite_name">N-ACETYL-D-TRYPTOPHAN</field>
+        <field name="metabolite_name">TAURINE</field>
+        <field name="metabolite_name">ADENOSINE</field>
+        <field name="metabolite_name">N-ACETYL-DL-GLUTAMIC ACID</field>
+        <field name="metabolite_name">SUCCINATE</field>
+        <field name="metabolite_name">ACETOACETATE</field>
+        <field name="metabolite_name">THEOPHYLLINE</field>
+        <field name="metabolite_name">7-AMINOCEPHALOSPORANIC ACID</field>
+        <field name="metabolite_name">TESTOSTERONE</field>
+        <field name="metabolite_name">6-HYDROXYDOPAMINE</field>
+        <field name="metabolite_name">6,7-DIHYDROBIOPTERIN</field>
+        <field name="metabolite_name">N-ACETYL-DL-METHIONINE</field>
+        <field name="metabolite_name">AZELAIC ACID</field>
+        <field name="metabolite_name">N-ACETYL-DL-METHIONINE</field>
+        <field name="metabolite_name">N-ACETYL-L-ALANINE</field>
+        <field name="metabolite_name">N-ACETYL-D-TRYPTOPHAN</field>
+        <field name="metabolite_name">ARACHIDONOYLGLYCEROPHOSPHOINOSITOL</field>
+        <field name="metabolite_name">N-ACETYL-D-GALACTOSAMINE</field>
+        <field name="metabolite_name">ARACHIDONOYLGLYCEROPHOSPHOETHANOLAMINE</field>
+        <field name="metabolite_name">ASPARTATE</field>
+        <field name="metabolite_name">N-ACETYL-DL-GLUTAMIC ACID</field>
+        <field name="metabolite_name">ARGININE</field>
+        <field name="metabolite_name">N-ACETYL-D-HEXOSAMINE</field>
+        <field name="metabolite_name">ANDROSTERONE GLUCURONIDE</field>
+        <field name="metabolite_name">ANILINE-2-SULFONIC ACID</field>
+        <field name="metabolite_name">ARACHIDIC ACID</field>
+        <field name="metabolite_name">ARACHIDONATE</field>
+        <field name="metabolite_name">N-ACETYL-L-ASPARTIC ACID</field>
+        <field name="metabolite_name">N-ACETYL-L-ASPARTIC ACID</field>
+        <field name="metabolite_name">N-ACETYL-L-LEUCINE</field>
+        <field name="metabolite_name">ANANDAMIDE</field>
+        <field name="metabolite_name">THIAMINE PYROPHOSPHATE</field>
+        <field name="metabolite_name">THIOPURINE S-METHYLETHER</field>
+        <field name="metabolite_name">THYMIDINE</field>
+        <field name="metabolite_name">THYROXINE</field>
+        <field name="metabolite_name">MALONATE</field>
+        <field name="metabolite_name">MELATONIN</field>
+        <field name="metabolite_name">MERCAPTOPYRUVATE</field>
+        <field name="metabolite_name">5-OXO-PROLINE</field>
+        <field name="metabolite_name">METHIONINE</field>
+        <field name="metabolite_name">5-VALEROLACTONE</field>
+        <field name="metabolite_name">HOMOGENTISATE</field>
+        <field name="metabolite_name">HOMOSERINE</field>
+        <field name="metabolite_name">SPHINGANINE</field>
+        <field name="metabolite_name">SPHINGOSINE</field>
+        <field name="metabolite_name">SPERMIDINE</field>
+        <field name="metabolite_name">SPERMINE</field>
+        <field name="metabolite_name">SORBIC ACID</field>
+        <field name="metabolite_name">STEAROYLGLYCEROPHOSPHOCHOLINE</field>
+        <field name="metabolite_name">STEAROYLCARNITINE</field>
+        <field name="metabolite_name">STEARAMIDE</field>
+        <field name="metabolite_name">STACHYOSE</field>
+        <field name="metabolite_name">SQUALENE</field>
+        <field name="metabolite_name">INDOLE-3-ACETALDEHYDE</field>
+        <field name="metabolite_name">HYPOTAURINE</field>
+        <field name="metabolite_name">HYDROQUINONE</field>
+        <field name="metabolite_name">HOMOSTACHYDRINE</field>
+        <field name="metabolite_name">INDOLEPYRUVATE</field>
+        <field name="metabolite_name">INDOLE-3-ETHANOL</field>
+        <field name="metabolite_name">INDOLE-3-ACETIC ACID</field>
+        <field name="metabolite_name">INDOLE-3-ACETAMIDE</field>
+        <field name="metabolite_name">GUANINE</field>
+        <field name="metabolite_name">SACCHAROPINE</field>
+        <field name="metabolite_name">S-ADENOSYL-L-HOMOCYSTEINE</field>
+        <field name="metabolite_name">S-ADENOSYL-L-HOMOCYSTEINE</field>
+        <field name="metabolite_name">S-ADENOSYL METHIONINE</field>
+        <field name="metabolite_name">SHIKIMATE</field>
+        <field name="metabolite_name">HOMOCYSTEINE</field>
+        <field name="metabolite_name">S-HEXYL-GLUTATHIONE</field>
+        <field name="metabolite_name">SELENOCYSTAMINE</field>
+        <field name="metabolite_name">SALSOLINOL</field>
+        <field name="metabolite_name">SEROTONIN</field>
+        <field name="metabolite_name">SELENOMETHIONINE</field>
+        <field name="metabolite_name">GUANOSINE 5'-DIPHOSPHATE</field>
+        <field name="metabolite_name">GUANOSINE 3`,5`-CYCLIC MONOPHOSPHATE</field>
+        <field name="metabolite_name">HEPTADECANOYLGLYCEROPHOSPHOCHOLINE</field>
+        <field name="metabolite_name">GUANOSINE 5' MONOPHOSPHATE</field>
+        <field name="metabolite_name">HIPPURATE</field>
+        <field name="metabolite_name">HEXOSE</field>
+        <field name="metabolite_name">HISTIDINE</field>
+        <field name="metabolite_name">HISTAMINE</field>
+        <field name="metabolite_name">LINOLEOYLGLYCEROPHOSPHOCHOLINE</field>
+        <field name="metabolite_name">LINOLEOYLGLYCEROPHOSPHOCHOLINE (??)</field>
+        <field name="metabolite_name">LEUCINE</field>
+        <field name="metabolite_name">LEUCYLPHENYLALANINE</field>
+        <field name="metabolite_name">PYRIDOXINE</field>
+        <field name="metabolite_name">QUINATE</field>
+        <field name="metabolite_name">PYRIDOXAMINE</field>
+        <field name="metabolite_name">RIBOFLAVIN</field>
+        <field name="metabolite_name">RETINOL</field>
+        <field name="metabolite_name">RETINOATE</field>
+        <field name="metabolite_name">RAFFINOSE</field>
+        <field name="metabolite_name">ROSMARINIC ACID</field>
+        <field name="metabolite_name">RIBULOSE 1,5-BISPHOSPHATE</field>
+        <field name="metabolite_name">RIBOSE 5-PHOSPHATE</field>
+        <field name="metabolite_name">MENAQUINONE</field>
+        <field name="metabolite_name">MELATONIN</field>
+        <field name="metabolite_name">MALTOSE</field>
+        <field name="metabolite_name">LYSINE</field>
+        <field name="metabolite_name">L-LEUCYL-L-LEUCINE</field>
+        <field name="metabolite_name">LL-2,6-DIAMINOHEPTANEDIOATE</field>
+        <field name="metabolite_name">INDOXYL</field>
+        <field name="metabolite_name">INOSINE</field>
+        <field name="metabolite_name">INOSINE 5'-DIPHOSPHATE</field>
+        <field name="metabolite_name">PREGNENOLONE</field>
+        <field name="metabolite_name">PRO-HYDROXY-PRO</field>
+        <field name="metabolite_name">PROMETRYN</field>
+        <field name="metabolite_name">PROLINE</field>
+        <field name="metabolite_name">PROPIONYLCARNITINE</field>
+        <field name="metabolite_name">PROMETRYN</field>
+        <field name="metabolite_name">PUTRESCINE</field>
+        <field name="metabolite_name">PTERIN</field>
+        <field name="metabolite_name">PYRIDOXAL</field>
+        <field name="metabolite_name">PYRIDINE CARBOXYLIC ACID</field>
+        <field name="metabolite_name">LENTICIN</field>
+        <field name="metabolite_name">LAUROYLCARNITINE</field>
+        <field name="metabolite_name">LEUCENOL</field>
+        <field name="metabolite_name">ISOVALERYLCARNITINE</field>
+        <field name="metabolite_name">INOSINE 5'-MONOPHOSPHATE</field>
+        <field name="metabolite_name">KYNURENINE</field>
+        <field name="metabolite_name">KYNURENIC ACID</field>
+        <field name="pubchem_id">827</field>
+        <field name="pubchem_id">641630</field>
+        <field name="pubchem_id">53394029</field>
+        <field name="pubchem_id">439368</field>
+        <field name="pubchem_id">10245190</field>
+        <field name="pubchem_id">24779461</field>
+        <field name="pubchem_id">6131</field>
+        <field name="pubchem_id">86555</field>
+        <field name="pubchem_id">13804</field>
+        <field name="pubchem_id">85681</field>
+        <field name="pubchem_id">6175</field>
+        <field name="pubchem_id">85681</field>
+        <field name="pubchem_id">595</field>
+        <field name="pubchem_id">988</field>
+        <field name="pubchem_id">595</field>
+        <field name="pubchem_id">4650</field>
+        <field name="pubchem_id">74839</field>
+        <field name="pubchem_id">12594</field>
+        <field name="pubchem_id">333293</field>
+        <field name="pubchem_id">10972</field>
+        <field name="pubchem_id">2969</field>
+        <field name="pubchem_id">2915</field>
+        <field name="pubchem_id">69470</field>
+        <field name="pubchem_id">10434</field>
+        <field name="pubchem_id">97750</field>
+        <field name="pubchem_id">97750</field>
+        <field name="pubchem_id">5952</field>
+        <field name="pubchem_id">5952</field>
+        <field name="pubchem_id">8158</field>
+        <field name="pubchem_id">185974</field>
+        <field name="pubchem_id">12591</field>
+        <field name="pubchem_id">668</field>
+        <field name="pubchem_id">6436908</field>
+        <field name="pubchem_id">5280581</field>
+        <field name="pubchem_id">6088</field>
+        <field name="pubchem_id">6439848</field>
+        <field name="pubchem_id">75606</field>
+        <field name="pubchem_id">7533</field>
+        <field name="pubchem_id">14349</field>
+        <field name="pubchem_id">439197</field>
+        <field name="pubchem_id">11756</field>
+        <field name="pubchem_id">638024</field>
+        <field name="pubchem_id">445858</field>
+        <field name="pubchem_id">643975</field>
+        <field name="pubchem_id">6037</field>
+        <field name="pubchem_id">5870</field>
+        <field name="pubchem_id">317638</field>
+        <field name="pubchem_id">92258</field>
+        <field name="pubchem_id">65103</field>
+        <field name="pubchem_id">14325810</field>
+        <field name="pubchem_id">1014</field>
+        <field name="pubchem_id">546</field>
+        <field name="pubchem_id">7027</field>
+        <field name="pubchem_id">6995182</field>
+        <field name="pubchem_id">1017</field>
+        <field name="pubchem_id">445027</field>
+        <field name="pubchem_id">172313</field>
+        <field name="pubchem_id">849</field>
+        <field name="pubchem_id">65103</field>
+        <field name="pubchem_id">7302</field>
+        <field name="pubchem_id">638024</field>
+        <field name="pubchem_id">65103</field>
+        <field name="pubchem_id">14253342</field>
+        <field name="pubchem_id">638024</field>
+        <field name="pubchem_id">445580</field>
+        <field name="pubchem_id">1176</field>
+        <field name="pubchem_id">222528</field>
+        <field name="pubchem_id">644078</field>
+        <field name="pubchem_id">1175</field>
+        <field name="pubchem_id">5952</field>
+        <field name="pubchem_id">94141</field>
+        <field name="pubchem_id">12736</field>
+        <field name="pubchem_id">9828112</field>
+        <field name="pubchem_id">74300</field>
+        <field name="pubchem_id">5497182</field>
+        <field name="pubchem_id">13712</field>
+        <field name="pubchem_id">122136</field>
+        <field name="pubchem_id">439356</field>
+        <field name="pubchem_id">79034</field>
+        <field name="pubchem_id">12736</field>
+        <field name="pubchem_id">53481655</field>
+        <field name="pubchem_id">79034</field>
+        <field name="pubchem_id">5757</field>
+        <field name="pubchem_id">1175</field>
+        <field name="pubchem_id">79034</field>
+        <field name="pubchem_id">999</field>
+        <field name="pubchem_id">5281116</field>
+        <field name="pubchem_id">1153</field>
+        <field name="pubchem_id">725</field>
+        <field name="pubchem_id">79034</field>
+        <field name="pubchem_id">6995182</field>
+        <field name="pubchem_id">92886</field>
+        <field name="pubchem_id">101399</field>
+        <field name="pubchem_id">5819</field>
+        <field name="pubchem_id">1150</field>
+        <field name="pubchem_id">79034</field>
+        <field name="pubchem_id">172313</field>
+        <field name="pubchem_id">1146</field>
+        <field name="pubchem_id">79034</field>
+        <field name="pubchem_id">111299</field>
+        <field name="pubchem_id">94340</field>
+        <field name="pubchem_id">14253342</field>
+        <field name="pubchem_id">439217</field>
+        <field name="pubchem_id">1</field>
+        <field name="pubchem_id">72361</field>
+        <field name="pubchem_id">11953814</field>
+        <field name="pubchem_id">607</field>
+        <field name="pubchem_id">440120</field>
+        <field name="pubchem_id">73563</field>
+        <field name="pubchem_id">1237</field>
+        <field name="pubchem_id">123831</field>
+        <field name="pubchem_id">738</field>
+        <field name="pubchem_id">7472</field>
+        <field name="pubchem_id">93556</field>
+        <field name="pubchem_id">14223</field>
+        <field name="pubchem_id">93556</field>
+        <field name="pubchem_id">611</field>
+        <field name="pubchem_id">14180</field>
+        <field name="pubchem_id">93556</field>
+        <field name="pubchem_id">738</field>
+        <field name="pubchem_id">9727</field>
+        <field name="pubchem_id">936</field>
+        <field name="pubchem_id">10897651</field>
+        <field name="pubchem_id">1153</field>
+        <field name="pubchem_id">5280793</field>
+        <field name="pubchem_id">8113</field>
+        <field name="pubchem_id">994</field>
+        <field name="pubchem_id">16212801</field>
+        <field name="pubchem_id">81272</field>
+        <field name="pubchem_id">876</field>
+        <field name="pubchem_id">5237032</field>
+        <field name="pubchem_id">45357648</field>
+        <field name="pubchem_id">127601</field>
+        <field name="pubchem_id">999</field>
+        <field name="pubchem_id">98792</field>
+        <field name="pubchem_id">827</field>
+        <field name="pubchem_id">648</field>
+        <field name="pubchem_id">439251</field>
+        <field name="pubchem_id">81272</field>
+        <field name="pubchem_id">985</field>
+        <field name="pubchem_id">10883523</field>
+        <field name="pubchem_id">98792</field>
+        <field name="pubchem_id">1017</field>
+        <field name="pubchem_id">1176</field>
+        <field name="pubchem_id">1005</field>
+        <field name="pubchem_id">587</field>
+        <field name="pubchem_id">221493</field>
+        <field name="pubchem_id">997</field>
+        <field name="pubchem_id">10133</field>
+        <field name="pubchem_id">289</field>
+        <field name="pubchem_id">736715</field>
+        <field name="pubchem_id">439224</field>
+        <field name="pubchem_id">6030</field>
+        <field name="pubchem_id">5994</field>
+        <field name="pubchem_id">379</field>
+        <field name="pubchem_id">1167</field>
+        <field name="pubchem_id">105074</field>
+        <field name="pubchem_id">247</field>
+        <field name="pubchem_id">6029</field>
+        <field name="pubchem_id">743</field>
+        <field name="pubchem_id">743</field>
+        <field name="pubchem_id">975</field>
+        <field name="pubchem_id">975</field>
+        <field name="pubchem_id">124886</field>
+        <field name="pubchem_id">160617</field>
+        <field name="pubchem_id">439194</field>
+        <field name="pubchem_id">439406</field>
+        <field name="pubchem_id">71920</field>
+        <field name="pubchem_id">10132</field>
+        <field name="pubchem_id">750</field>
+        <field name="pubchem_id">53480465</field>
+        <field name="pubchem_id">10140</field>
+        <field name="pubchem_id">5280634</field>
+        <field name="pubchem_id">52911111</field>
+        <field name="pubchem_id">16219441</field>
+        <field name="pubchem_id">7018721</field>
+        <field name="pubchem_id">389</field>
+        <field name="pubchem_id">53480465</field>
+        <field name="pubchem_id">967</field>
+        <field name="pubchem_id">440266</field>
+        <field name="pubchem_id">1930</field>
+        <field name="pubchem_id">5280634</field>
+        <field name="pubchem_id">5372954</field>
+        <field name="pubchem_id">5280724</field>
+        <field name="pubchem_id">65076</field>
+        <field name="pubchem_id">1426</field>
+        <field name="pubchem_id">675</field>
+        <field name="pubchem_id">311</field>
+        <field name="pubchem_id">6844</field>
+        <field name="pubchem_id">92919</field>
+        <field name="pubchem_id">5497181</field>
+        <field name="pubchem_id">535</field>
+        <field name="pubchem_id">92919</field>
+        <field name="pubchem_id">64969</field>
+        <field name="pubchem_id">92919</field>
+        <field name="pubchem_id">185974</field>
+        <field name="pubchem_id">445639</field>
+        <field name="pubchem_id">5997</field>
+        <field name="pubchem_id">6437081</field>
+        <field name="pubchem_id">70095</field>
+        <field name="pubchem_id">644078</field>
+        <field name="pubchem_id">71082</field>
+        <field name="pubchem_id">445639</field>
+        <field name="pubchem_id">10104953</field>
+        <field name="pubchem_id">972</field>
+        <field name="pubchem_id">64959</field>
+        <field name="pubchem_id">967</field>
+        <field name="pubchem_id">1188</field>
+        <field name="pubchem_id">985</field>
+        <field name="pubchem_id">5753</field>
+        <field name="pubchem_id">5699</field>
+        <field name="pubchem_id">972</field>
+        <field name="pubchem_id">9750</field>
+        <field name="pubchem_id">73323</field>
+        <field name="pubchem_id">439498</field>
+        <field name="pubchem_id">94141</field>
+        <field name="pubchem_id">985</field>
+        <field name="pubchem_id">15091</field>
+        <field name="pubchem_id">44263339</field>
+        <field name="pubchem_id">247</field>
+        <field name="pubchem_id">5280353</field>
+        <field name="pubchem_id">236</field>
+        <field name="pubchem_id">8400</field>
+        <field name="pubchem_id">5460044</field>
+        <field name="pubchem_id">24779476</field>
+        <field name="pubchem_id">5460044</field>
+        <field name="pubchem_id">54670067</field>
+        <field name="pubchem_id">227</field>
+        <field name="pubchem_id">24779476</field>
+        <field name="pubchem_id">445040</field>
+        <field name="pubchem_id">171548</field>
+        <field name="pubchem_id">439887</field>
+        <field name="pubchem_id">25245610</field>
+        <field name="pubchem_id">11266</field>
+        <field name="pubchem_id">43</field>
+        <field name="pubchem_id">161255</field>
+        <field name="pubchem_id">65070</field>
+        <field name="pubchem_id">186004</field>
+        <field name="pubchem_id">135</field>
+        <field name="pubchem_id">135</field>
+        <field name="pubchem_id">464</field>
+        <field name="pubchem_id">464</field>
+        <field name="pubchem_id">92769</field>
+        <field name="pubchem_id">873</field>
+        <field name="pubchem_id">802</field>
+        <field name="pubchem_id">135</field>
+        <field name="pubchem_id">71</field>
+        <field name="pubchem_id">790</field>
+        <field name="pubchem_id">58</field>
+        <field name="pubchem_id">302432</field>
+        <field name="pubchem_id">78288</field>
+        <field name="pubchem_id">87308</field>
+        <field name="pubchem_id">74839</field>
+        <field name="pubchem_id">85083</field>
+        <field name="pubchem_id">802</field>
+        <field name="pubchem_id">186004</field>
+        <field name="pubchem_id">122356</field>
+        <field name="pubchem_id">7913</field>
+        <field name="pubchem_id">439197</field>
+        <field name="pubchem_id">8583</field>
+        <field name="pubchem_id">85082</field>
+        <field name="pubchem_id">903</field>
+        <field name="pubchem_id">6021</field>
+        <field name="pubchem_id">82035</field>
+        <field name="pubchem_id">903</field>
+        <field name="pubchem_id">13017</field>
+        <field name="pubchem_id">439918</field>
+        <field name="pubchem_id">4362</field>
+        <field name="pubchem_id">13017</field>
+        <field name="pubchem_id">98766</field>
+        <field name="pubchem_id">75606</field>
+        <field name="pubchem_id">440460</field>
+        <field name="pubchem_id">440384</field>
+        <field name="pubchem_id">9903</field>
+        <field name="pubchem_id">9903</field>
+        <field name="pubchem_id">72</field>
+        <field name="pubchem_id">91528</field>
+        <field name="pubchem_id">9378</field>
+        <field name="pubchem_id">24771793</field>
+        <field name="pubchem_id">6306</field>
+        <field name="pubchem_id">440018</field>
+        <field name="pubchem_id">3893</field>
+        <field name="pubchem_id">8343</field>
+        <field name="pubchem_id">11197</field>
+        <field name="pubchem_id">5280450</field>
+        <field name="pubchem_id">1662</field>
+        <field name="pubchem_id">5280450</field>
+        <field name="pubchem_id">86</field>
+        <field name="pubchem_id">525</field>
+        <field name="pubchem_id">439224</field>
+        <field name="pubchem_id">439224</field>
+        <field name="pubchem_id">2519</field>
+        <field name="pubchem_id">60953</field>
+        <field name="pubchem_id">57357170</field>
+        <field name="pubchem_id">1081</field>
+        <field name="pubchem_id">439423</field>
+        <field name="pubchem_id">709625</field>
+        <field name="pubchem_id">101</field>
+        <field name="pubchem_id">9307</field>
+        <field name="pubchem_id">150923</field>
+        <field name="pubchem_id">102</field>
+        <field name="pubchem_id">89</field>
+        <field name="pubchem_id">1673</field>
+        <field name="pubchem_id">235719</field>
+        <field name="pubchem_id">439194</field>
+        <field name="pubchem_id">49</field>
+        <field name="pubchem_id">10140</field>
+        <field name="pubchem_id">47</field>
+        <field name="pubchem_id">738</field>
+        <field name="pubchem_id">439194</field>
+        <field name="pubchem_id">439782</field>
+        <field name="pubchem_id">439270</field>
+        <field name="pubchem_id">611</field>
+        <field name="pubchem_id">5280933</field>
+        <field name="pubchem_id">1549111</field>
+        <field name="pubchem_id">447277</field>
+        <field name="pubchem_id">213144</field>
+        <field name="pubchem_id">444972</field>
+        <field name="pubchem_id">444972</field>
+        <field name="pubchem_id">5754</field>
+        <field name="pubchem_id">5744</field>
+        <field name="pubchem_id">22833539</field>
+        <field name="pubchem_id">5744</field>
+        <field name="pubchem_id">222786</field>
+        <field name="pubchem_id">408</field>
+        <field name="pubchem_id">586</field>
+        <field name="pubchem_id">588</field>
+        <field name="pubchem_id">18189</field>
+        <field name="pubchem_id">440741</field>
+        <field name="pubchem_id">978</field>
+        <field name="pubchem_id">10634</field>
+        <field name="pubchem_id">3845</field>
+        <field name="pubchem_id">62348</field>
+        <field name="pubchem_id">8892</field>
+        <field name="pubchem_id">10805</field>
+        <field name="pubchem_id">126</field>
+        <field name="pubchem_id">127</field>
+        <field name="pubchem_id">440726</field>
+        <field name="pubchem_id">165105</field>
+        <field name="pubchem_id">12222843</field>
+        <field name="pubchem_id">10469</field>
+        <field name="pubchem_id">10459</field>
+        <field name="pubchem_id">16219441</field>
+        <field name="pubchem_id">311</field>
+        <field name="pubchem_id">7860</field>
+        <field name="pubchem_id">760</field>
+        <field name="pubchem_id">5753</field>
+        <field name="pubchem_id">763</field>
+        <field name="pubchem_id">9750</field>
+        <field name="pubchem_id">439531</field>
+        <field name="pubchem_id">5282837</field>
+        <field name="pubchem_id">5282837</field>
+        <field name="pubchem_id">5282837</field>
+        <field name="pubchem_id">617</field>
+        <field name="pubchem_id">5816</field>
+        <field name="pubchem_id">97536</field>
+        <field name="pubchem_id">681</field>
+        <field name="pubchem_id">107689</field>
+        <field name="pubchem_id">68570</field>
+        <field name="pubchem_id">5283560</field>
+        <field name="pubchem_id">222285</field>
+        <field name="pubchem_id">53480465</field>
+        <field name="pubchem_id">53480465</field>
+        <field name="pubchem_id">193653</field>
+        <field name="pubchem_id">681</field>
+        <field name="pubchem_id">648</field>
+        <field name="pubchem_id">681</field>
+        <field name="pubchem_id">3269</field>
+        <field name="pubchem_id">5870</field>
+        <field name="pubchem_id">82035</field>
+        <field name="pubchem_id">302432</field>
+        <field name="pubchem_id">338</field>
+        <field name="pubchem_id">5280353</field>
+        <field name="pubchem_id">5280353</field>
+        <field name="pubchem_id">5281792</field>
+        <field name="pubchem_id">85083</field>
+        <field name="pubchem_id">338</field>
+        <field name="pubchem_id">1060</field>
+        <field name="pubchem_id">111051</field>
+        <field name="pubchem_id">493570</field>
+        <field name="pubchem_id">77857</field>
+        <field name="pubchem_id">1050</field>
+        <field name="pubchem_id">1054</field>
+        <field name="pubchem_id">5280883</field>
+        <field name="pubchem_id">1066</field>
+        <field name="pubchem_id">8215</field>
+        <field name="pubchem_id">214</field>
+        <field name="pubchem_id">243</field>
+        <field name="pubchem_id">112072</field>
+        <field name="pubchem_id">73323</field>
+        <field name="pubchem_id">6602431</field>
+        <field name="pubchem_id">12530</field>
+        <field name="pubchem_id">6305</field>
+        <field name="pubchem_id">1174</field>
+        <field name="pubchem_id">1175</field>
+        <field name="pubchem_id">6029</field>
+        <field name="pubchem_id">618110</field>
+        <field name="pubchem_id">127601</field>
+        <field name="pubchem_id">1188</field>
+        <field name="pubchem_id">5819</field>
+        <field name="pubchem_id">5789</field>
+        <field name="pubchem_id">638678</field>
+        <field name="pubchem_id">387316</field>
+        <field name="pubchem_id">6675</field>
+        <field name="pubchem_id">1123</field>
+        <field name="pubchem_id">5778</field>
+        <field name="pubchem_id">151152</field>
+        <field name="pubchem_id">439763</field>
+        <field name="pubchem_id">6013</field>
+        <field name="pubchem_id">439220</field>
+        <field name="pubchem_id">65059</field>
+        <field name="pubchem_id">13945</field>
+        <field name="pubchem_id">439268</field>
+        <field name="pubchem_id">11914</field>
+        <field name="pubchem_id">11266</field>
+        <field name="pubchem_id">11266</field>
+        <field name="pubchem_id">7124</field>
+        <field name="pubchem_id">12046</field>
+        <field name="pubchem_id">6038</field>
+        <field name="pubchem_id">8871</field>
+        <field name="pubchem_id">10250</field>
+        <field name="pubchem_id">31252</field>
+        <field name="pubchem_id">69371</field>
+        <field name="pubchem_id">739</field>
+        <field name="pubchem_id">339</field>
+        <field name="pubchem_id">5801</field>
+        <field name="pubchem_id">13730</field>
+        <field name="pubchem_id">188966</field>
+        <field name="pubchem_id">12599</field>
+        <field name="pubchem_id">150855</field>
+        <field name="pubchem_id">13711</field>
+        <field name="pubchem_id">8640</field>
+        <field name="pubchem_id">6238</field>
+        <field name="pubchem_id">27476</field>
+        <field name="pubchem_id">79034</field>
+        <field name="pubchem_id">79034</field>
+        <field name="pubchem_id">79034</field>
+        <field name="pubchem_id">79034</field>
+        <field name="pubchem_id">79034</field>
+        <field name="pubchem_id">79034</field>
+        <field name="pubchem_id">6990</field>
+        <field name="pubchem_id">5283468</field>
+        <field name="pubchem_id">79034</field>
+        <field name="pubchem_id">138</field>
+        <field name="pubchem_id">161500</field>
+        <field name="pubchem_id">65110</field>
+        <field name="pubchem_id">144</field>
+        <field name="pubchem_id">78168</field>
+        <field name="pubchem_id">15</field>
+        <field name="pubchem_id">439182</field>
+        <field name="pubchem_id">65040</field>
+        <field name="pubchem_id">439176</field>
+        <field name="pubchem_id">25945</field>
+        <field name="pubchem_id">65040</field>
+        <field name="pubchem_id">111</field>
+        <field name="pubchem_id">439183</field>
+        <field name="pubchem_id">978</field>
+        <field name="pubchem_id">18189</field>
+        <field name="pubchem_id">53421255</field>
+        <field name="pubchem_id">637542</field>
+        <field name="pubchem_id">500</field>
+        <field name="pubchem_id">10805</field>
+        <field name="pubchem_id">378</field>
+        <field name="pubchem_id">6723</field>
+        <field name="pubchem_id">10243</field>
+        <field name="pubchem_id">1662</field>
+        <field name="pubchem_id">444485</field>
+        <field name="pubchem_id">439774</field>
+        <field name="pubchem_id">171264</field>
+        <field name="pubchem_id">171264</field>
+        <field name="pubchem_id">150923</field>
+        <field name="pubchem_id">69520</field>
+        <field name="pubchem_id">9307</field>
+        <field name="pubchem_id">1669</field>
+        <field name="pubchem_id">86</field>
+        <field name="pubchem_id">89</field>
+        <field name="pubchem_id">6047</field>
+        <field name="pubchem_id">72</field>
+        <field name="pubchem_id">5920</field>
+        <field name="pubchem_id">873</field>
+        <field name="pubchem_id">7257</field>
+        <field name="pubchem_id">258527</field>
+        <field name="pubchem_id">5864</field>
+        <field name="pubchem_id">9903</field>
+        <field name="pubchem_id">92787</field>
+        <field name="pubchem_id">66535</field>
+        <field name="pubchem_id">547</field>
+        <field name="pubchem_id">119</field>
+        <field name="pubchem_id">68374</field>
+        <field name="pubchem_id">14985</field>
+        <field name="pubchem_id">7456</field>
+        <field name="pubchem_id">5839</field>
+        <field name="pubchem_id">190</field>
+        <field name="pubchem_id">53480465</field>
+        <field name="pubchem_id">53480465</field>
+        <field name="pubchem_id">119</field>
+        <field name="pubchem_id">70615</field>
+        <field name="pubchem_id">119</field>
+        <field name="pubchem_id">68374</field>
+        <field name="pubchem_id">92180</field>
+        <field name="pubchem_id">439454</field>
+        <field name="pubchem_id">69698</field>
+        <field name="pubchem_id">269438</field>
+        <field name="pubchem_id">371</field>
+        <field name="pubchem_id">643757</field>
+        <field name="pubchem_id">53481411</field>
+        <field name="pubchem_id">5316080</field>
+        <field name="pubchem_id">1826</field>
+        <field name="pubchem_id">137</field>
+        <field name="pubchem_id">7405</field>
+        <field name="pubchem_id">876</field>
+        <field name="pubchem_id">439280</field>
+        <field name="pubchem_id">72924</field>
+        <field name="pubchem_id">7757</field>
+        <field name="pubchem_id">7339</field>
+        <field name="pubchem_id">7009581</field>
+        <field name="pubchem_id">94214</field>
+        <field name="pubchem_id">91493</field>
+        <field name="pubchem_id">94214</field>
+        <field name="pubchem_id">10111</field>
+        <field name="pubchem_id">74706</field>
+        <field name="pubchem_id">5281929</field>
+        <field name="pubchem_id">5281929</field>
+        <field name="pubchem_id">487</field>
+        <field name="pubchem_id">6723</field>
+        <field name="pubchem_id">62453</field>
+        <field name="pubchem_id">649</field>
+        <field name="pubchem_id">6115</field>
+        <field name="pubchem_id">14985</field>
+        <field name="pubchem_id">14985</field>
+        <field name="pubchem_id">14985</field>
+        <field name="pubchem_id">863</field>
+        <field name="pubchem_id">51</field>
+        <field name="pubchem_id">51</field>
+        <field name="pubchem_id">204</field>
+        <field name="pubchem_id">199</field>
+        <field name="pubchem_id">203</field>
+        <field name="pubchem_id">602</field>
+        <field name="pubchem_id">11005</field>
+        <field name="pubchem_id">6022</field>
+        <field name="pubchem_id">94214</field>
+        <field name="pubchem_id">5957</field>
+        <field name="pubchem_id">35717</field>
+        <field name="pubchem_id">1110</field>
+        <field name="pubchem_id">6083</field>
+        <field name="pubchem_id">5281119</field>
+        <field name="pubchem_id">53481362</field>
+        <field name="pubchem_id">60961</field>
+        <field name="pubchem_id">439917</field>
+        <field name="pubchem_id">1123</field>
+        <field name="pubchem_id">60961</field>
+        <field name="pubchem_id">185</field>
+        <field name="pubchem_id">1110</field>
+        <field name="pubchem_id">96</field>
+        <field name="pubchem_id">2153</field>
+        <field name="pubchem_id">441328</field>
+        <field name="pubchem_id">6013</field>
+        <field name="pubchem_id">4624</field>
+        <field name="pubchem_id">133246</field>
+        <field name="pubchem_id">6180</field>
+        <field name="pubchem_id">2266</field>
+        <field name="pubchem_id">6180</field>
+        <field name="pubchem_id">88064</field>
+        <field name="pubchem_id">439917</field>
+        <field name="pubchem_id">444899</field>
+        <field name="pubchem_id">35717</field>
+        <field name="pubchem_id">444899</field>
+        <field name="pubchem_id">424</field>
+        <field name="pubchem_id">185</field>
+        <field name="pubchem_id">232</field>
+        <field name="pubchem_id">24139</field>
+        <field name="pubchem_id">114833</field>
+        <field name="pubchem_id">6926</field>
+        <field name="pubchem_id">10467</field>
+        <field name="pubchem_id">444899</field>
+        <field name="pubchem_id">65065</field>
+        <field name="pubchem_id">65065</field>
+        <field name="pubchem_id">70912</field>
+        <field name="pubchem_id">5281969</field>
+        <field name="pubchem_id">1132</field>
+        <field name="pubchem_id">5778</field>
+        <field name="pubchem_id">5789</field>
+        <field name="pubchem_id">5819</field>
+        <field name="pubchem_id">867</field>
+        <field name="pubchem_id">896</field>
+        <field name="pubchem_id">98</field>
+        <field name="pubchem_id">7405</field>
+        <field name="pubchem_id">876</field>
+        <field name="pubchem_id">10953</field>
+        <field name="pubchem_id">780</field>
+        <field name="pubchem_id">12647</field>
+        <field name="pubchem_id">91486</field>
+        <field name="pubchem_id">5280335</field>
+        <field name="pubchem_id">1102</field>
+        <field name="pubchem_id">1103</field>
+        <field name="pubchem_id">643460</field>
+        <field name="pubchem_id">52922056</field>
+        <field name="pubchem_id">52922056</field>
+        <field name="pubchem_id">31292</field>
+        <field name="pubchem_id">439531</field>
+        <field name="pubchem_id">5280370</field>
+        <field name="pubchem_id">800</field>
+        <field name="pubchem_id">107812</field>
+        <field name="pubchem_id">785</field>
+        <field name="pubchem_id">441447</field>
+        <field name="pubchem_id">15030923</field>
+        <field name="pubchem_id">10685</field>
+        <field name="pubchem_id">802</field>
+        <field name="pubchem_id">397</field>
+        <field name="pubchem_id">764</field>
+        <field name="pubchem_id">160556</field>
+        <field name="pubchem_id">439155</field>
+        <field name="pubchem_id">439155</field>
+        <field name="pubchem_id">16757548</field>
+        <field name="pubchem_id">8742</field>
+        <field name="pubchem_id">91552</field>
+        <field name="pubchem_id">97536</field>
+        <field name="pubchem_id">115119</field>
+        <field name="pubchem_id">54456</field>
+        <field name="pubchem_id">5202</field>
+        <field name="pubchem_id">15103</field>
+        <field name="pubchem_id">8977</field>
+        <field name="pubchem_id">24316</field>
+        <field name="pubchem_id">53480465</field>
+        <field name="pubchem_id">6804</field>
+        <field name="pubchem_id">464</field>
+        <field name="pubchem_id">206</field>
+        <field name="pubchem_id">773</field>
+        <field name="pubchem_id">774</field>
+        <field name="pubchem_id">5280646</field>
+        <field name="pubchem_id">5280646</field>
+        <field name="pubchem_id">5255803</field>
+        <field name="pubchem_id">6992310</field>
+        <field name="pubchem_id">1054</field>
+        <field name="pubchem_id">441074</field>
+        <field name="pubchem_id">1052</field>
+        <field name="pubchem_id">493570</field>
+        <field name="pubchem_id">445354</field>
+        <field name="pubchem_id">444795</field>
+        <field name="pubchem_id">439242</field>
+        <field name="pubchem_id">639655</field>
+        <field name="pubchem_id">123658</field>
+        <field name="pubchem_id">439167</field>
+        <field name="pubchem_id">5280374</field>
+        <field name="pubchem_id">896</field>
+        <field name="pubchem_id">439186</field>
+        <field name="pubchem_id">866</field>
+        <field name="pubchem_id">76807</field>
+        <field name="pubchem_id">1549100</field>
+        <field name="pubchem_id">50591</field>
+        <field name="pubchem_id">6021</field>
+        <field name="pubchem_id">644173</field>
+        <field name="pubchem_id">8955</field>
+        <field name="pubchem_id">3952518</field>
+        <field name="pubchem_id">4929</field>
+        <field name="pubchem_id">614</field>
+        <field name="pubchem_id">107738</field>
+        <field name="pubchem_id">4929</field>
+        <field name="pubchem_id">1045</field>
+        <field name="pubchem_id">73000</field>
+        <field name="pubchem_id">1050</field>
+        <field name="pubchem_id">1045</field>
+        <field name="pubchem_id">442106</field>
+        <field name="pubchem_id">10427569</field>
+        <field name="pubchem_id">440473</field>
+        <field name="pubchem_id">6426851</field>
+        <field name="pubchem_id">8582</field>
+        <field name="pubchem_id">846</field>
+        <field name="pubchem_id">3845</field>
+        <field name="submitter">Nathan Qi</field>
+        <field name="submitter_mail">nathanqi@med.umich.edu</field>
+        <field name="submitter_affiliation">Internal Medicine, University of Michigan</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

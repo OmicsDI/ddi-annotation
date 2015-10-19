@@ -1,0 +1,78 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001908">
+      <name>The fission yeast MTREC complex targets CUTs and unspliced mRNAs to the nuclear exosome</name>
+      <description>Cryptic unstable transcripts (CUTs) are rapidly degraded by the nuclear exosome. However, the mechanism by which they are recognized and targeted to the exosome is not fully understood. Here, we report that the MTREC complex, which has recently been shown to promote degradation of meiotic mRNAs and regulatory ncRNAs, is also the major nuclear exosome targeting complex for CUTs and unspliced pre-mRNAs in Schizosaccharomyces pombe. MTREC complex specifically binds to CUTs, meiotic mRNAs and unspliced pre-mRNA transcripts and targets these RNAs for degradation by the nuclear exosome, while the TRAMP complex has only a minor role in this process. The MTREC complex physically interacts with the nuclear exosome and with various RNA-binding and -processing complexes, coupling RNA processing to the RNA degradation machinery. Our study reveals the central role of the evolutionarily conserved MTREC complex in RNA quality control, and in the recognition and elimination of CUTs.</description>
+      <cross_references>
+        <ref dbkey="4896" dbname="TAXONOMY"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2015-03-12"/>
+        <date type="publication" value="2015-04-22"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001908</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Flag-TEV-protein A (FTP)-tagged bait proteins were harvested from 2 L YEA cultures of yeast strains grown to OD600 1.8-2.2. Cell pellets were snap-frozen in liquid nitrogen and ground into powder using the Cryo-mill MM-400 (Retsch). Cells were re-suspended in purification buffer (50 mM HEPES, pH 7.0; 100 mM NaCl; 1.5 mM MgCl2; 0.15% NP-40), supplemented with 1 mM DTT (Carl Roth), 1 mM PMSF (Sigma-Aldrich) and protease inhibitor mix (Serva Electrophoresis). Cell extracts were centrifuged at 3,500 xg for 10 min at 4°C, then supernatants were further centrifuged at 27,000 xg for 45 min at 4°C. Clarified supernatants were then incubated with 150 μl slurry of IgG beads (GE Healthcare) for 2 h at 4°C on a turning wheel. After binding, the beads were washed with 2x15 ml purification buffer and TEV cleavage was performed in purification buffer containing 20 units TEV (Life Technologies) and 0.5 mM DTT, for 2 h at 16°C. The eluate was collected and incubated with 100 μl slurry of anti-Flag beads (Sigma-Aldrich) for 1 h at 4°C. The protein-bound anti-Flag beads were washed with 2x10 ml purification buffer and the proteins were subsequently eluted from the beads by competition with 200 μl Flag peptide (100 μg/ml, Sigma-Aldrich). The eluted proteins were analyzed by Coomassie staining using Brilliant Blue G (Sigma-Aldrich) or silver staining using SilverXpress staining kit (Life Technologies) on 4-12% NuPAGE Bis-Tris gels (Life Technologies), followed by mass spectrometry analysis. All samples were treated with 50 units of Benzonase (Millipore) for the removal of nucleic acids during the TEV cleavage, except for Mtl1.1 and Cbc1.</field>
+        <field name="data_protocol">Mass spectrometry was performed at the 'FingerPrints' Proteomics and Mass Spectrometry Facility at the College of Life Sciences, University of Dundee. The raw data was processed with MaxQuant v1.3.0.5 software. The MaxQuant analysis was done with 108 input RAW files, from which we show the data of the 24 samples included in our paper. The protein search was performed against a curated S. pombe protein list. To check the relative protein amounts in the samples we used the sum of all peptide peak intensities divided by the number of theoretically observable tryptic peptides (intensity based absolute quantification, or iBAQ values). An identified protein was considered as non-significant if its iBAQ value was less than 50000 or had zero spectral counts. iBAQ values were normalized to the iBAQ value of the bait protein and indicated as percentage of the bait.</field>
+        <field name="instrument_platform">LTQ Orbitrap</field>
+        <field name="species">Schizosaccharomyces pombe</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">No PTMs are included in the dataset</field>
+        <field name="technology_type">Affinity purification coupled with mass spectrometry proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">ncRNA</field>
+        <field name="submitter_keywords"> CUTs</field>
+        <field name="submitter_keywords"> RNA decay</field>
+        <field name="submitter_keywords"> RNA surveillance</field>
+        <field name="submitter_keywords"> TRAMP</field>
+        <field name="submitter_keywords"> MTREC</field>
+        <field name="submitter_keywords"> splicing</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="submitter">Tamas Fischer</field>
+        <field name="submitter_mail">tamas.fischer@bzh.uni-heidelberg.de</field>
+        <field name="submitter_affiliation">BZH Heidelberg University</field>
+        <field name="labhead">Dr. Tamas Fischer</field>
+        <field name="labhead_mail">tamas.fischer@bzh.uni-heidelberg.de</field>
+        <field name="labhead_affiliation">AG Fischer BZH University Heidelberg INF 328 69120 Heidelberg Germany</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001908/MaxQuantOutput.tar.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001908/Schizosaccharomyces_pombe.ASM294v1.16.pep.all.fa</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001908/Ars2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001908/Cbc1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001908/Ctr1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001908/Mtl1.1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001908/Mtl1.2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001908/Mtl1.Cbc1-6F.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001908/Mtl1.Iss10-6F.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001908/Mtl1.Null-6F.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001908/Mtl1.Pab2-6F.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001908/Mtl1.iss10d.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001908/Mtl1.pab2d.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001908/Mtl1.red1d.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001908/Mtl1.rmn1d.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001908/Nrl1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001908/Red1.iss10d.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001908/Red1.pab2d.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001908/Red1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001908/Red1.rmn1d.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001908/Red1.rrp6d.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001908/Red5.iss10d.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001908/Red5.pab2d.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001908/Red5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001908/Red5.red1d.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD001908/Red5.rmn1d.raw</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

@@ -1,0 +1,62 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000283">
+      <name>Comparison and applications of label-free absolute proteome quantification methods on Escherichia coli</name>
+      <description>Three different label-free proteome quantification methods - APEX, emPAI and iBAQ - were evaluated to measure proteome-wide protein concentrations in the cell. All the methods were applied to a sample from Escherichia coli chemostat culture. A Pearson squared correlation of approximately 0.6 among the three quantification methods was demonstrated. Importantly, the sum of quantified proteins by iBAQ and emPAI corresponded with the Lowry total protein quantification, demonstrating applicability of label-free methods for an accurate calculation of protein concentrations at the proteome level. The iBAQ method showed the best correlation between biological replicates, a normal distribution among all protein abundances, and the lowest variation among ribosomal protein abundances, which are expected to have equal amounts. Absolute quantitative proteome data enabled us to evaluate metabolic cost for protein synthesis and apparent catalytic activities of enzymes by integration with flux analysis. All the methods demonstrated similar ATP costs for protein synthesis for different cellular processes and that costs for expressing biomass synthesis related proteins were higher than those for energy generation. Importantly, catalytic activities of energy metabolism enzymes were an order or two higher than those of monomer synthesis. Interestingly, a staircase-like protein expression was demonstrated for most of the transcription units.        Fragment MS/MS spectra from raw files were extracted as MSM files and then merged to peak lists using the Raw2MSM version 1.7 [29], selecting top six peaks for 100 Da. MSM files for the three technical replicates of the same sample were concatenated to generate a single large peak list file with a MultiRawPrepare.pl script (http://msquant.alwaysdata.net) and subsequently searched with the Mascot 2.2 search engine (Matrix Science, London, UK) against the E. coli K-12 MG1655 protein sequence database downloaded 22.09.2009 from EcoGene 2.0 (http://ecogene.org), supplemented with common contaminants. Search parameters were as follows: two missed trypsin cleavage, fixed modification was set as carbamidomethyl (C), variable modifications were set as oxidation (M) and acetyl (protein N-term), 5 ppm precursor mass tolerance and 0.6 Da MS/MS mass tolerance. In order to estimate the false discovery rate (FDR) decoy search option was allowed.        The Mascot search results were validated by the PeptideProphet and ProteinProphet algorithms [30] before the absolute protein expression indexes (APEX) [19] were calculated by the APEX Quantitative Proteomics Tool [25]. An estimated false positive rate (FPR) cut-off of less than 5% was used, which corresponded to the ProteinProphet probability p greater than 0.5. FPR less than 5% was chosen, as this resulted in a reasonable number of quantified proteins (1220), comparable with the iBAQ dataset (1334 proteins). Limiting the FPR to less than 1% would result in the loss of more than 200 proteins.</description>
+      <cross_references>
+        <ref dbkey="562" dbname="TAXONOMY"/>
+        <ref dbkey="22771841" dbname="pubmed"/>
+        <ref dbkey="P00761" dbname="uniprot"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2013-06-26"/>
+        <date type="publication" value="2013-07-24"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000283</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Not available</field>
+        <field name="instrument_platform">LTQ Orbitrap</field>
+        <field name="instrument_platform">instrument model</field>
+        <field name="species">Escherichia coli</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">cell culture</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">acetylated residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="submitter_keywords">E. coli</field>
+        <field name="submitter_keywords"> shotgun proteomics</field>
+        <field name="submitter_keywords"> UPS2</field>
+        <field name="submitter_keywords"> iBAQ</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">COMPLETE</field>
+        <field name="software">Matrix Science Mascot 2.3.02</field>
+        <field name="doi">10.6019/PXD000283</field>
+        <field name="publication">Arike L, Valgepea K, Peil L, Nahku R, Adamberg K, Vilu R; Comparison and applications of label-free absolute proteome quantification methods on Escherichia coli., J Proteomics, 2012 Sep 18, 75, 17, 5437-48, </field>
+        <field name="submitter">Liisa Arike</field>
+        <field name="submitter_mail">liisa@tftak.eu</field>
+        <field name="submitter_affiliation">Competence Center for Food and Fermentation Technologies</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000283/E.coli B1T1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000283/E.coli B1T2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000283/E.coli B1T3.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000283/E.coli B2T1.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000283/E.coli B2T2.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000283/E.coli B2T3.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000283/Read me.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000283/Sample information.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000283/PRIDE_Exp_Complete_Ac_29780.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/07/PXD000283/PRIDE_Exp_Complete_Ac_29781.xml.gz</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

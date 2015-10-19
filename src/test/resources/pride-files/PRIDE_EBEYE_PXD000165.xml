@@ -1,0 +1,148 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000165">
+      <name>Analysis of botrytis cinerea mycelium proteins</name>
+      <description>Comparison of Botrytis cinerea wild-type B.05.10 and T4 strains using label-free nUPLC-MSE and 2-DE approaches. B. cinerea strain mycelium were grown in synthetic minimal medium-modified Czapeck-Dox. Protein extracts were obtained from pulverized mycelium using TCA-phenol method. Acquired spectra were internally calibrated with peptides from trypsin 180 autolysis (M+H+=842.509,M+H+=2211.104) with an m/z precision of ±20 ppm. A combined search (PMF and MS/MS) was performed with GPS ExplorerTM software v3.5 (Applied Biosystems) over non-redundant NCBI databases using the MASCOT search engine. The database search utilized the following parameters: taxonomy restrictions to Fungi (06.17.2011), one missed cleavage sites, 100 ppm mass tolerance in MS and 0.5 Da for MS/MS data, cysteine carbamidomethylation as a fixed modification, and methionine oxidation as a variable modification. The confidence in the peptide mass fingerprinting matches (p&lt;0.05) was based on the MOWSE score.</description>
+      <cross_references>
+        <ref dbkey="999810" dbname="TAXONOMY"/>
+        <ref dbkey="332648" dbname="TAXONOMY"/>
+        <ref dbkey="23627497" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2013-02-28"/>
+        <date type="publication" value="2013-05-02"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000165</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Not available</field>
+        <field name="instrument_platform">4800 Proteomics Analyzer</field>
+        <field name="instrument_platform">Synapt MS</field>
+        <field name="species">Botryotinia fuckeliana (strain T4) (Noble rot fungus) (Botrytis cinerea)</field>
+        <field name="species">Botryotinia fuckeliana (strain B05.10) (Noble rot fungus) (Botrytis cinerea)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Not available</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">acetylated residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="modification">deamidated residue</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="submitter_keywords">Botrytis cinerea</field>
+        <field name="submitter_keywords"> 2DE</field>
+        <field name="submitter_keywords"> MSE</field>
+        <field name="submitter_keywords"> quantification</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Gonzalez-Fernandez R, Aloria K, Arizmendi JM, Jorrin-Novo JV; Application of label-free shotgun nUPLC-MS(E) and 2-DE approaches in the study of Botrytis cinerea mycelium., J Proteome Res, 2013 Jun 7, 12, 6, 3042-56, </field>
+        <field name="submitter">Kerman Aloria</field>
+        <field name="submitter_mail">kerman.aloria@ehu.es</field>
+        <field name="submitter_affiliation">Proteomics Core Facility</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/Spot_SSP_1008.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/Spot_SSP_1008.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/Spot_SSP_2010.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/Spot_SSP_2010.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/Spot_SSP_2315.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/Spot_SSP_2315.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/Spot_SSP_2405.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/Spot_SSP_2405.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/Spot_SSP_3502.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/Spot_SSP_3502.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/Spot_SSP_3805.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/Spot_SSP_3805.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/Spot_SSP_7003.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/Spot_SSP_7003.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/Spot_SSP_7214.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/Spot_SSP_7214.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/Spot_SSP_8402.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/Spot_SSP_8402.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/Spot_SSP_8408.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/Spot_SSP_8408.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/B_05_10_1.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/B_05_10_2.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/B_05_10_3.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/B_05_10_4.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/B_05_10_5.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_1_1.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_1_2.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_1_3.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_2_1.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_2_2.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_2_3.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_3_1.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_3_2.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_3_3.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_4_1.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_4_2.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_4_3.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_5_1.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_5_2.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_5_3.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/T4_1.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/T4_2.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/T4_3.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/T4_4.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/T4_5.raw.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/B_05_10_1_APEX3D_PEPTIDE3D.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/B_05_10_2_APEX3D_PEPTIDE3D.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/B_05_10_3_APEX3D_PEPTIDE3D.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/B_05_10_4_APEX3D_PEPTIDE3D.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/B_05_10_5_APEX3D_PEPTIDE3D.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_1_1_APEX3D_PEPTIDE3D.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_1_2_APEX3D_PEPTIDE3D.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_1_3_APEX3D_PEPTIDE3D.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_2_1_APEX3D_PEPTIDE3D.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_2_2_APEX3D_PEPTIDE3D.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_2_3_APEX3D_PEPTIDE3D.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_3_1_APEX3D_PEPTIDE3D.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_3_2_APEX3D_PEPTIDE3D.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_3_3_APEX3D_PEPTIDE3D.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_4_1_APEX3D_PEPTIDE3D.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_4_2_APEX3D_PEPTIDE3D.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_4_3_APEX3D_PEPTIDE3D.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_5_1_APEX3D_PEPTIDE3D.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_5_2_APEX3D_PEPTIDE3D.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_5_3_APEX3D_PEPTIDE3D.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/T4_1_APEX3D_PEPTIDE3D.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/T4_2_APEX3D_PEPTIDE3D.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/T4_3_APEX3D_PEPTIDE3D.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/T4_4_APEX3D_PEPTIDE3D.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/T4_5_APEX3D_PEPTIDE3D.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/B_05_10_1_ION_ACCOUNTING.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/B_05_10_2_ION_ACCOUNTING.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/B_05_10_3_ION_ACCOUNTING.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/B_05_10_4_ION_ACCOUNTING.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/B_05_10_5_ION_ACCOUNTING.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_1_1_ION_ACCOUNTING.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_1_2_ION_ACCOUNTING.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_1_3_ION_ACCOUNTING.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_2_1_ION_ACCOUNTING.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_2_2_ION_ACCOUNTING.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_2_3_ION_ACCOUNTING.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_3_1_ION_ACCOUNTING.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_3_2_ION_ACCOUNTING.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_3_3_ION_ACCOUNTING.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_4_1_ION_ACCOUNTING.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_4_2_ION_ACCOUNTING.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_4_3_ION_ACCOUNTING.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_5_1_ION_ACCOUNTING.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_5_2_ION_ACCOUNTING7.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/DIL_5_3_ION_ACCOUNTING.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/T4_1_ION_ACCOUNTING.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/T4_2_ION_ACCOUNTING.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/T4_3_ION_ACCOUNTING.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/T4_4_ION_ACCOUNTING.zip</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2013/05/PXD000165/T4_5_ION_ACCOUNTING.zip</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

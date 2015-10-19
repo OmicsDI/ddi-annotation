@@ -1,0 +1,99 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-21</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD002210">
+      <name>iTRAQ of NTHi phasevarions</name>
+      <description>iTRAQ quantitative mass spec of proteins differentially regulated by biphasic switching of modA methyltransferase alleles in the human pathogen non-typeable Haemophilus influenzae</description>
+      <cross_references>
+        <ref dbkey="727" dbname="TAXONOMY"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2015-05-20"/>
+        <date type="publication" value="2015-05-20"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD002210</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">10ug OMP preps in duplicate. Samples buffer exchanged into 0.25M TEAD and 0.05% SDS. Samples reduced with TCEP, alkylated with MMTS and trypsin digested. Samples were then labelled, SDS removed by SDS removal column and dried. Samples were then resuspended in 0.1% formic acid and 2% acetonitril. 20ul sample was injected into a peptide trap and desalted. Peptides were eluted with 90% acetonitrile 0.1% fomic acid in a linear gradient over 100mins. The elutant was subject to positive ion nanoflow electrospray analysis in an information dependent acquisition mode (IDA). A TOFMS survey scan was acquired (m/z 400 - 1500, 0.25 second) with the ten most intense multiply charged ions in the survey scan subject to MS/MS analysis. Spectra were accumulated for 200ms in the mass range m/z 100-1500 with the total cyle time 2.3secs</field>
+        <field name="data_protocol">Experimental ms/ms data were subjected to ProteinPilot V4.2b (AB Sciex) using the Genbank file from NCBI for the strains of interest</field>
+        <field name="instrument_platform">TripleTOF 5600</field>
+        <field name="species">Haemophilus influenzae</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">iTRAQ4plex-116 reporter+balance reagent acylated residue</field>
+        <field name="technology_type">Top-down proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="curator_keywords">Biomedical</field>
+        <field name="submitter_keywords">Haemophilus; phasevarion</field>
+        <field name="quantification_method">iTRAQ</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="submitter">John Atack</field>
+        <field name="submitter_mail">j.atack@griffith.edu.au</field>
+        <field name="submitter_affiliation">Griffith University</field>
+        <field name="labhead">Michael Jennings</field>
+        <field name="labhead_mail">m.jennings@griffith.edu.au</field>
+        <field name="labhead_affiliation">Griffith University, Institute for Glycomics, Queensland, Australia</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj14884_Griffith_130213_1D.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj14884_Griffith_130213_1D.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj14884_Griffith_130502_723_ModA2_PeptideSummary_114.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj14884_Griffith_130502_723_ModA2_PeptideSummary_115.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj14884_Griffith_130502_723_ModA2_PeptideSummary_116.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj14884_Griffith_130502_723_ModA2_PeptideSummary_117.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj14884_Griffith_130502_723_ModA2_ProteinSummary_114.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj14884_Griffith_130502_723_ModA2_ProteinSummary_115.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj14884_Griffith_130502_723_ModA2_ProteinSummary_116.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj14884_Griffith_130502_723_ModA2_ProteinSummary_117.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15237_130605_A4_1D_SCX.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15237_130605_A4_1D_SCX.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15237_130605_A4_1D_SCX_PeptideSummary_114.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15237_130605_A4_1D_SCX_PeptideSummary_115.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15237_130605_A4_1D_SCX_PeptideSummary_116.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15237_130605_A4_1D_SCX_PeptideSummary_117.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15237_130605_A4_1D_SCX_ProteinSummary_114.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15237_130605_A4_1D_SCX_ProteinSummary_115.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15237_130605_A4_1D_SCX_ProteinSummary_116.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15237_130605_A4_1D_SCX_ProteinSummary_117.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15237_130605_A5_1D_SCX_PeptideSummary_114.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15237_130605_A5_1D_SCX_PeptideSummary_115.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15237_130605_A5_1D_SCX_PeptideSummary_116.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15237_130605_A5_1D_SCX_PeptideSummary_117.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15237_130605_A5_1D_SCX_ProteinSummary_114.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15237_130605_A5_1D_SCX_ProteinSummary_115.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15237_130605_A5_1D_SCX_ProteinSummary_116.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15237_130605_A5_1D_SCX_ProteinSummary_117.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15237_130604_A5.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15237_130604_A5.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15237_130605_A5_1D_SCX.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15237_130605_A5_1D_SCX.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15237_130530_A9_1D.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15237_130530_A9_1D.wiff.scan</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15237_130530_A9_1D_PeptideSummary_114.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15237_130530_A9_1D_PeptideSummary_115.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15237_130530_A9_1D_PeptideSummary_116.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15237_130530_A9_1D_PeptideSummary_117.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15237_130530_A9_1D_ProteinSummary_114.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15237_130530_A9_1D_ProteinSummary_115.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15237_130530_A9_1D_ProteinSummary_116.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15237_130530_A9_1D_ProteinSummary_117.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15075_Griffith_130404_R2866_PeptideSummary_114.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15075_Griffith_130404_R2866_PeptideSummary_115.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15075_Griffith_130404_R2866_PeptideSummary_116.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15075_Griffith_130404_R2866_PeptideSummary_117.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15075_Griffith_130404_R2866_ProteinSummary_114.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15075_Griffith_130404_R2866_ProteinSummary_115.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15075_Griffith_130404_R2866_ProteinSummary_116.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15075_Griffith_130404_R2866_ProteinSummary_117.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15075_Griffith_130404_1D.wiff</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/05/PXD002210/Proj15075_Griffith_130404_1D.wiff.scan</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

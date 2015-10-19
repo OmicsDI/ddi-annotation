@@ -1,0 +1,87 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD002072">
+      <name>Low pH Solid Phase Amino-Labeling of Complex Peptide Digests with TMTs Improves Peptide Identification Rates for Multiplexed Global Phosphopeptide Analysis</name>
+      <description>We present a novel Tandem Mass Tag Solid Phase Amino Labeling (TMT-SPAL) protocol using reversible immobilization of peptides onto octadecyl-derivatised (C18) solid supports. This method can reduce the number of steps required in complex protocols saving time and potentially reducing sample losses. In our global phosphopeptide profiling workflow (SysQuant) we can cut 24 hours from the protocol while increasing peptide identifications (20%) and reducing side-reactions. Solid phase labeling with TMTs does require some modification to typical labeling conditions particularly pH. It has been found that complete labeling equivalent to 2 standard basic pH solution phase labeling for small and large samples can be achieved on C18 resins using slightly acidic buffer conditions. Improved labeling behaviour on C18 compared to standard basic pH solution phase labeling is demonstrated. We analysed our samples for histidine, serine, threonine and tyrosine-labeling to determine the degree of over-labeling and observed higher than expected levels (25% of all Peptide Spectral Matches (PSMs)) of overlabeling at all of these amino acids (predominantly at tyrosine and serine) in our standard solution phase labeling protocol. Over-labeling at all these sites is greatly reduced (four-fold to 7% of all PSMs) by the low pH conditions used in the TMT-SPAL protocol. Over-labeling seems to represent a so-far overlooked mechanism causing reductions in peptide identification rates with NHS-activated TMT-labeling compared to label-free methods. Our results also highlight the importance of searching data for over-labeling when labeling methods are used.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2015-04-15"/>
+        <date type="publication" value="2015-04-21"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD002072</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Sample Materials: a series of 8 MCF7 Cell line samples of differing sample size were pooled to give a single large homogenous sample of about 48 mg of protein to provide enough sample material to enable meaningful comparison between the SysQuant protocol with standard solution phase TMT-labeling and the SysQuant protocol employing our new TMT-SPAL protocol. The sample material was split into 3 mg aliquots for further analysis. Detailed Sample processing protocols can be found in the orginal article.</field>
+        <field name="data_protocol">In total there were 30 Raw data files (2 x TMT 8-plex samples (Solution Phase vs TMT-SPAL) X 15 fractions X 1 replicate on the Fusion. Each set of 15 raw data files from the Fusion instrument for the TMT-SPAL and Solution Phase 8-plex samples respectively were analysed together as single MudPIT searches using Proteome Discoverer, as described below. Total Peptide Identifications: Raw data were submitted to the Thermo Scientific Proteome Discoverer 1.3 software, using the Spectrum Files node. Spectrum selector was set to its default values, while the Mascot node, was set up to search data against the uniprot_sprot database, taxonomy homo sapiens (UniprotKB Homo Sapiens complete proteome canonical + isoforms/Release 2014_01). This node was programmed to search for tryptic peptides (two missed cleavages: missed cleavage data for both protocols is shown in Supplementary Figure 1 indicating very little difference between the two protocols in this respect) with static modifications of carbamidomethyl (C), TMT 6/10-plex (K), and TMT 6/10-plex (N-Term). Dynamic modifications were set to deamidation (N/Q), oxidation (M), and phosphorylation of STY. Precursor mass tolerance was set to 20 ppm and fragment (b and y ions) mass tolerance to 20 mmu. Spectra were also searched against SEQUEST (16), using the same database, modifications, and tolerances as the Mascot (17) node. For total peptide identification purposes, Sequest and Mascot identifications were merged and FDRs homogenized using the Percolator (18) node. Spectra were also searched using the PhosphoRS 2.0 (19) (fragment mass tolerance of 20 mmu, considering neutral loss peaks for CID and HCD). Additional searches were carried out with just SEQUEST for speed to determine rates of labeling efficiency as well as over-labeling. In these searches, the SEQUEST node was 12 programmed to search for tryptic peptides (two missed cleavages) with the following modification settings: Labeling efficiency: static modifications of carbamidomethyl (C) and TMT 6/10-plex (K). Dynamic modifications were set to TMT 6/10-plex (N-Term). Over-labeling: static modifications of carbamidomethyl (C), TMT 6/10-plex (K), and TMT 6/10-plex (N-Term). Dynamic modifications were set to TMT-labeling of HSTY together, to determine total as well as individual over-labeling. Site-specific over-labeling was quantified by an in-house R script that separated out the individual amino acid over-labeling rates from the total over-labeling data. The reporter ions quantifier node was set up to measure the raw intensity values of TMT 8- plex mono-isotopic ions, from all identified PSMs, at; 126.12773 m/z (126), 127.12476 m/z (127e), 127.13108 m/z (127), 128.13444 m/z (128), 129.13147 m/z (129e), 129.13779 m/z (129), 130.14115 m/z (130), 131.13818 m/z (131), using a tolerance of 20ppm after centroiding. No filters were applied at this stage using Proteome Discoverer, therefore all raw intensity values were exported to excel for later processing and filtering using in-house software.</field>
+        <field name="instrument_platform">LTQ Orbitrap</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">primary cell line cell</field>
+        <field name="disease">breast cancer</field>
+        <field name="tissue">cell culture</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">phosphorylated residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="modification">deamidated residue</field>
+        <field name="modification">TMT6plex-126 reporter+balance reagent acylated residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Technical</field>
+        <field name="submitter_keywords">TMT</field>
+        <field name="submitter_keywords"> Low pH Solid Phase Amino-Labeling</field>
+        <field name="submitter_keywords">SPAL</field>
+        <field name="submitter_keywords"> SysQuant</field>
+        <field name="quantification_method">TMT</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="submitter">Vikram Mitra</field>
+        <field name="submitter_mail">vikram.mitra@proteomics.com</field>
+        <field name="submitter_affiliation">Proteome Sciences</field>
+        <field name="labhead">Andrew H. Thompson</field>
+        <field name="labhead_mail">andrew.thompson@proteomics.com</field>
+        <field name="labhead_affiliation">Proteome Sciences Plc, Coveham House, Downside Bridge Road, Cobham KT11 3E, UK</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD002072/20140210_gib437-1-1_Fr01a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD002072/20140210_gib437-1-1_Fr02a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD002072/20140210_gib437-1-1_Fr03a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD002072/20140210_gib437-1-1_Fr04a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD002072/20140210_gib437-1-1_Fr05a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD002072/20140210_gib437-1-1_Fr06a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD002072/20140210_gib437-1-1_Fr07a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD002072/20140212_ppr140106_Fr_01a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD002072/20140212_ppr140106_Fr_02a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD002072/20140212_ppr140106_Fr_03a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD002072/20140212_ppr140106_Fr_04a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD002072/20140212_ppr140106_Fr_05a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD002072/20140212_ppr140106_Fr_06a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD002072/20140212_ppr140106_Fr_07a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD002072/20140212_ppr140106_Fr_08a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD002072/30-040_InSoln_Enr&amp;Non-Enr_MudpitAll_Lon_ungrouped.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD002072/20140213_ppr140107_Fr_01a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD002072/20140213_ppr140107_Fr_02a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD002072/20140213_ppr140107_Fr_03a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD002072/20140213_ppr140107_Fr_04a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD002072/20140213_ppr140107_Fr_05a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD002072/20140213_ppr140107_Fr_06a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD002072/20140213_ppr140107_Fr_07a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD002072/20140213_ppr140107_Fr_08a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD002072/20140215_gib437-2-1_Fr01a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD002072/20140215_gib437-2-1_Fr02a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD002072/20140215_gib437-2-1_Fr03a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD002072/20140215_gib437-2-1_Fr04a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD002072/20140215_gib437-2-1_Fr05a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD002072/20140215_gib437-2-1_Fr06a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD002072/20140215_gib437-2-1_Fr07a.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD002072/30-40_SPAL_Enr&amp;NonEnr_MudpitAll_Lon_ungrouped.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD002072/UniProt_HUMAN_20140130.fasta</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/04/PXD002072/Experimental details Meta information.xlsx</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

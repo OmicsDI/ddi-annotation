@@ -1,0 +1,99 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000170">
+      <name>Identifying sources of tick blood meals using unidentified tandem mass spectral libraries</name>
+      <description>Rapid and reliable identification of the vertebrate species on which a disease vector previously parasitized is imperative to study ecological factors that affect pathogen distribution and can aid the development of public health programs. We here describe a proteome profiling technique designed to identify the source of blood meals of hematophagous arthropods. This method employs direct spectral matching and thus does not require a priori knowledge of any genetic or protein sequence information. Using this technology, we can detect remnants of blood in blacklegged ticks (Ixodes scapularis) and correctly determine the vertebrate species from which the blood was derived even six months after the tick had fed. This biological fingerprinting methodology is sensitive, fast, cost-effective, and can potentially be adapted for other biological and medical applications when existing genome-based methods are impractical or ineffective.</description>
+      <cross_references>
+        <ref dbkey="9689" dbname="TAXONOMY"/>
+        <ref dbkey="9321" dbname="TAXONOMY"/>
+        <ref dbkey="8496" dbname="TAXONOMY"/>
+        <ref dbkey="9925" dbname="TAXONOMY"/>
+        <ref dbkey="33548" dbname="TAXONOMY"/>
+        <ref dbkey="57075" dbname="TAXONOMY"/>
+        <ref dbkey="51866" dbname="TAXONOMY"/>
+        <ref dbkey="30640" dbname="TAXONOMY"/>
+        <ref dbkey="44491" dbname="TAXONOMY"/>
+        <ref dbkey="77216" dbname="TAXONOMY"/>
+        <ref dbkey="96731" dbname="TAXONOMY"/>
+        <ref dbkey="8839" dbname="TAXONOMY"/>
+        <ref dbkey="9407" dbname="TAXONOMY"/>
+        <ref dbkey="6945" dbname="TAXONOMY"/>
+        <ref dbkey="9638" dbname="TAXONOMY"/>
+        <ref dbkey="9694" dbname="TAXONOMY"/>
+        <ref dbkey="261756" dbname="TAXONOMY"/>
+        <ref dbkey="10090" dbname="TAXONOMY"/>
+        <ref dbkey="8485" dbname="TAXONOMY"/>
+        <ref dbkey="320637" dbname="TAXONOMY"/>
+        <ref dbkey="9172" dbname="TAXONOMY"/>
+        <ref dbkey="9940" dbname="TAXONOMY"/>
+        <ref dbkey="10041" dbname="TAXONOMY"/>
+        <ref dbkey="582580" dbname="TAXONOMY"/>
+        <ref dbkey="8595" dbname="TAXONOMY"/>
+        <ref dbkey="45474" dbname="TAXONOMY"/>
+        <ref dbkey="23612287" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2013-03-01"/>
+        <date type="publication" value="2014-04-03"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000170</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Not available</field>
+        <field name="instrument_platform">LCQ Classic</field>
+        <field name="species">Panthera leo (Lion)</field>
+        <field name="species">Macropus rufus (Red kangaroo) (Megaleia rufa)</field>
+        <field name="species">Alligator mississippiensis (American alligator)</field>
+        <field name="species">Capra hircus (Goat)</field>
+        <field name="species">Colobus guereza (Mantled guereza) (Eastern black-and-white colobus monkey)</field>
+        <field name="species">Strix varia (Barred owl)</field>
+        <field name="species">Eryx colubrinus loveridgei</field>
+        <field name="species">Sciurus carolinensis (Gray squirrel)</field>
+        <field name="species">Chelodina longicollis (Snake-necked turtle) (Testudo longicollis)</field>
+        <field name="species">Pteropus rodricensis (Rodriguez flying fox)</field>
+        <field name="species">Corucia zebrata</field>
+        <field name="species">Anas platyrhynchos (Domestic duck) (Anas boschas)</field>
+        <field name="species">Rousettus aegyptiacus (Egyptian rousette) (Egyptian fruit bat)</field>
+        <field name="species">Ixodes scapularis (Black-legged tick) (Deer tick)</field>
+        <field name="species">Tremarctos ornatus (Spectacled bear)</field>
+        <field name="species">Panthera tigris (Tiger)</field>
+        <field name="species">Nanger dama mhorr</field>
+        <field name="species">Mus musculus (Mouse)</field>
+        <field name="species">Malaclemys terrapin (Diamondback terrapin) (Testudo terrapin)</field>
+        <field name="species">Rhynchocyon petersi (black and rufous elephant shrew)</field>
+        <field name="species">Sturnus vulgaris (Starling)</field>
+        <field name="species">Ovis aries (Sheep)</field>
+        <field name="species">Peromyscus leucopus (White-footed mouse)</field>
+        <field name="species">Equus asinus africanus</field>
+        <field name="species">Pituophis melanoleucus (Pine snake) (Coluber melanoleucus)</field>
+        <field name="species">Tamias striatus (Eastern chipmunk)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Not available</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="submitter_keywords">Unknown genome proteomics</field>
+        <field name="submitter_keywords"> ecological proteomics</field>
+        <field name="submitter_keywords"> spectral libraries</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Önder Ö, Shao W, Kemps BD, Lam H, Brisson D. Identifying sources of tick blood meals using unidentified tandem mass spectral libraries. Nat Commun. 2013;4:1746</field>
+        <field name="submitter">Wenguang Shao</field>
+        <field name="submitter_mail">wgshao@ust.hk</field>
+        <field name="submitter_affiliation">Bioengineering</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/04/PXD000170/onder_blood_source_tracking_unidentified_spectral_library.tgz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/04/PXD000170/README.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/04/PXD000170/filetospeciesmapping.txt</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

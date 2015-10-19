@@ -1,0 +1,87 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-06-20</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001335">
+      <name>Comprehensive temporal protein dynamics during the diauxic shift in Saccharomyces cerevisiae, part 4</name>
+      <description>Yeast (Saccharomyces cerevisea) has served as a key model system in biology and as a benchmark for “omics” technology. Although near-complete proteomes of log phase yeast have been measured, protein abundance in yeast is dynamic, particularly during the transition from log to stationary phase. Defining the dynamics of proteomic changes during this transition, termed the diauxic shift, is important to understand the basic biology of proliferative versus quiescent cells. Here, we perform temporal quantitative proteomics to fully capture protein induction and repression during the diauxic shift. Accurate and sensitive quantitation at a high temporal resolution and depth of proteome coverage was achieved using TMT10 reagents and LC-MS3 analysis on an Orbitrap Fusion tribrid mass spectrometer deploying synchronous precursor selection (SPS). We devised a simple template matching strategy to reveal temporal patterns of protein induction and repression. Within these groups are functionally distinct groups of proteins such as those of glyoxylate metabolism, as well as many proteins of unknown function not previously associated with the diauxic shift (e.g. YNR034W-A and FMP16). We also perform a dual time-course to determine Hap2-dependent proteins during the diauxic shift. These data serve as an important basic model for fermentative versus respiratory growth of yeast and other eukaryotes and are a benchmark for temporal quantitative proteomics.</description>
+      <cross_references>
+        <ref dbkey="4932" dbname="TAXONOMY"/>
+        <ref dbkey="26077900" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-09-17"/>
+        <date type="publication" value="2015-06-20"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001335</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Please see the publication materials and methods for sample processing.</field>
+        <field name="data_protocol">Please see the publication materials and methods for data processing.</field>
+        <field name="instrument_platform">LTQ Orbitrap Elite</field>
+        <field name="species">Saccharomyces cerevisiae (Baker's yeast)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">TMT6plex-126 reporter+balance reagent acylated residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">Yeast</field>
+        <field name="submitter_keywords"> Temporal Data</field>
+        <field name="submitter_keywords"> TMT</field>
+        <field name="quantification_method">TMT</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Murphy JP, Stepanova E, Everley RA, Paulo JA, Gygi SP. Comprehensive temporal protein dynamics during the diauxic shift in Saccharomyces cerevisiae. Mol Cell Proteomics. 2015 Jun 15. pii: mcp.M114.045849</field>
+        <field name="submitter">Patrick Murphy</field>
+        <field name="submitter_mail">pitter9@gmail.com</field>
+        <field name="submitter_affiliation">Mass Spectrometry</field>
+        <field name="labhead">Steve Gygi</field>
+        <field name="labhead_mail">steven_gygi@hms.harvard.edu</field>
+        <field name="labhead_affiliation">Harvard Medical School</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001335/Elite_fraction_1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001335/Elite_fraction_10.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001335/Elite_fraction_11.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001335/Elite_fraction_12.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001335/Elite_fraction_2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001335/Elite_fraction_3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001335/Elite_fraction_4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001335/Elite_fraction_5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001335/Elite_fraction_6.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001335/Elite_fraction_7.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001335/Elite_fraction_8.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001335/Elite_fraction_9.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001335/Elite_fraction_1.dta.tgz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001335/Elite_fraction_10.dta.tgz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001335/Elite_fraction_11.dta.tgz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001335/Elite_fraction_12.dta.tgz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001335/Elite_fraction_2.dta.tgz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001335/Elite_fraction_3.dta.tgz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001335/Elite_fraction_4.dta.tgz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001335/Elite_fraction_5.dta.tgz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001335/Elite_fraction_6.dta.tgz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001335/Elite_fraction_7.dta.tgz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001335/Elite_fraction_8.dta.tgz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001335/Elite_fraction_9.dta.tgz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001335/Elite_fraction_10_out.tgz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001335/Elite_fraction_11_out.tgz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001335/Elite_fraction_12_out.tgz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001335/Elite_fraction_1_out.tgz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001335/Elite_fraction_2_out.tgz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001335/Elite_fraction_3_out.tgz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001335/Elite_fraction_4_out.tgz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001335/Elite_fraction_5_out.tgz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001335/Elite_fraction_6_out.tgz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001335/Elite_fraction_7_out.tgz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001335/Elite_fraction_8_out.tgz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/06/PXD001335/Elite_fraction_9_out.tgz</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

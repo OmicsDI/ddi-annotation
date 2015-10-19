@@ -1,0 +1,74 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000460">
+      <name>Pithovirus particle proteome</name>
+      <description>Proteomic analysis of purified Pithovirus particles. The virus was grown in A. castellanii amobea before being purified. Viral particules were enriched after centrifugation and proteins solubilised by SDS before being stacked in the top of a SDS-PAGE gel. After in-gel digestion, resulting peptides were injected for a 120min nanoLC-MS/MS analysis using an Ultimate U3000 system and a LTQ-Orbitrap Velos pro hybrid mass spectrometer (Top 20).Data processing and bioinformatics: Data were processed automatically using Mascot Daemon software (version 2.3.2, Matrix Science). Concomitant searches against Pithovirus and A. castellanii protein sequence databanks as well as classical contaminants database and the corresponding reversed databases were performed using Mascot (version 2.4). ESI-TRAP was chosen as the instrument, trypsin/P as the enzyme and 2 missed cleavage allowed. Precursor and fragment mass error tolerances were set respectively at 10 ppm and 0.6 Da. Peptide modifications allowed during the search were: carbamidomethyl (C, fixed) acetyl (N-ter, variable), oxidation (M, variable) and deamidation (NQ, variable). The IRMa software (Dupierris et al., Bioinformatics, 2009, 25:1980-1, version 1.30.4) was used to filter the results: selection of rank 1 peptides, peptide identification FDR &lt; 1% (as calculated by employing the reverse database strategy), and minimum of 1 specific peptide per identified protein group.</description>
+      <cross_references>
+        <ref dbkey="32644" dbname="TAXONOMY"/>
+        <ref dbkey="24591590" dbname="pubmed"/>
+        <ref dbkey="P13645" dbname="uniprot"/>
+        <ref dbkey="P13647" dbname="uniprot"/>
+        <ref dbkey="Q9CPN9" dbname="uniprot"/>
+        <ref dbkey="ENSP00000167586" dbname="ensembl"/>
+        <ref dbkey="Q5D862" dbname="uniprot"/>
+        <ref dbkey="P04264" dbname="uniprot"/>
+        <ref dbkey="P08779" dbname="uniprot"/>
+        <ref dbkey="ENSP00000252242" dbname="ensembl"/>
+        <ref dbkey="ENSP00000252244" dbname="ensembl"/>
+        <ref dbkey="ENSP00000373370" dbname="ensembl"/>
+        <ref dbkey="ENSP00000413479" dbname="ensembl"/>
+        <ref dbkey="ENSP00000308720" dbname="ensembl"/>
+        <ref dbkey="ENSP00000252250" dbname="ensembl"/>
+        <ref dbkey="P00761" dbname="uniprot"/>
+        <ref dbkey="P35527" dbname="uniprot"/>
+        <ref dbkey="P02533" dbname="uniprot"/>
+        <ref dbkey="P48668" dbname="uniprot"/>
+        <ref dbkey="P12035" dbname="uniprot"/>
+        <ref dbkey="P35908" dbname="uniprot"/>
+        <ref dbkey="ENSP00000269576" dbname="ensembl"/>
+        <ref dbkey="ENSP00000246662" dbname="ensembl"/>
+        <ref dbkey="ENSMUSP00000031931" dbname="ensembl"/>
+        <ref dbkey="ENSP00000310861" dbname="ensembl"/>
+        <ref dbkey="P07477" dbname="uniprot"/>
+        <ref dbkey="ENSP00000301653" dbname="ensembl"/>
+        <ref dbkey="Q6IMF3" dbname="uniprot"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2013-09-12"/>
+        <date type="publication" value="2014-02-12"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000460</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Not available</field>
+        <field name="instrument_platform">instrument model</field>
+        <field name="instrument_platform">LTQ Orbitrap Velos</field>
+        <field name="species">unidentified</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Not available</field>
+        <field name="modification">Not available</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="submitter_keywords">Pithovirus; proteins; nanoLC-MS/MS</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">COMPLETE</field>
+        <field name="software">Matrix Science Mascot 2.4.1</field>
+        <field name="doi">10.6019/PXD000460</field>
+        <field name="publication">Legendre M, Bartoli J, Shmakova L, Jeudy S, Labadie K, Adrait A, Lescot M, Poirot O, Bertaux L, Bruley C, Couté Y, Rivkina E, Abergel C, Claverie JM. Thirty-thousand-year-old distant relative of giant icosahedral DNA viruses with a pandoravirus morphology. Proc Natl Acad Sci U S A. 2014 Mar 3</field>
+        <field name="submitter">Yohann CoutÃ©</field>
+        <field name="submitter_mail">yohann.coute@cea.fr</field>
+        <field name="submitter_affiliation">Laboratoire d'Etude de la Dynamique des ProtÃ©omes</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/02/PXD000460/Pithovirus.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/02/PXD000460/PRIDE_Exp_Complete_Ac_31250.xml.gz</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

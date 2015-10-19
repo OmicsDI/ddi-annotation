@@ -1,0 +1,104 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001062">
+      <name>Substrate Trapping Proteomics Reveals Targets of the βTrCP2/FBXW11 Ubiquitin Ligase</name>
+      <description>We inhibited the proteosome to ‘trap’ ubiquitylated substrates on the SCFFBXW11 E3 complex. Comparative mass spectrometry analysis of immunopurified FBXW11 protein complexes before and after proteosome inhibition revealed known and putatively novel substrates.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="25332235" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-06-13"/>
+        <date type="publication" value="2014-10-24"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001062</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">For streptavidin and FLAG affinity purification, cells were lysed in 0.1% Triton lysis. Cell lysates were incubated with streptavidin or FLAG resin for overnight affinity purification. The beads were washed 4 times with ice cold lysis buffer. Proteins bound on beads were reduced with dithiothreitol (DTT), alkylated with chloroacetamide, and digested with trypsin. This on-beads digestion was adapted from FASP protocol using spin filter column (VIVACON 500 30,000 MWCO cutoff). After overnight digestion at 37 °C, tryptic peptides were collected by centrifugation and acidified with 0.5% TFA. After SpeedVac concentration, tryptic peptides were saved at -20 °C before mass spectrometric analysis.   The peptide mixture was analyzed in positive mode using a nanoAquity UPLC coupled LTQ Orbitrap Elite mass spectrometer (Thermo Scientific). Chromatographic separation used a 2-cm trapping column and a self-packed 25-cm analytical column (75-μm ID, Michrom Magic C18 beads of 5.0-μm particle size, 100-Å pore size). The HPLC flow rate was set to 350 nl/min over a gradient of 1% buffer B (0.1% formic acid in acetonitrile) to 35% buffer B in 200 min. The full mass scan (300 to 2000 m/z) was acquired at a resolution of 60,000 with a maximum injection time of 500 ms, and MS/MS was performed in a data-dependent manner for the top 15 intense ions in the linear ion trap by collision-induced dissociation.</field>
+        <field name="data_protocol">All raw data were converted to mzXML format before a search of the resultant spectra with Sorcerer-SEQUEST (build 4.3.0, Sage-N Research) and the Trans-Proteomic Pipeline (TPP v4.6.2). Data were searched against the human UniProtKB/Swiss-Prot sequence database (Release 2013_07) supplemented with common contaminants, such as porcine (Swiss-Prot P00761) and bovine (P00760) trypsin, and further concatenated with its reversed copy as a decoy (40,526 total sequences). Search parameters used were a precursor mass between 400 and 4500 atomic mass units (amu), up to 2 missed cleavages, a precursor-ion tolerance of 3 amu, accurate mass binning within PeptideProphet, semi-tryptic digestion, a static carbamidomethyl cysteine modification, and variable methionine oxidation. False discovery rates (FDRs) were determined by ProteinProphet, and minimum protein probability cutoffs resulting in a 1% FDR were selected individually for each experiment.</field>
+        <field name="instrument_platform">LTQ Orbitrap Velos</field>
+        <field name="instrument_platform">LTQ Orbitrap Elite</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">permanent cell line cell</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">cell culture</field>
+        <field name="modification">phosphorylated residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="technology_type">Affinity purification coupled with mass spectrometry proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biomedical</field>
+        <field name="submitter_keywords">FBXW11</field>
+        <field name="submitter_keywords"> BTRC</field>
+        <field name="submitter_keywords"> E3 Ubiquitin Ligase</field>
+        <field name="quantification_method">Spectrum counting</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Kim TY, Siesser PF, Rossman KL, Goldfarb D, Mackinnon K, Yan F, Yi X, MacCoss MJ, Moon RT, Der CJ, Major MB. Substrate Trapping Proteomics Reveals Targets of the βTrCP2/FBXW11 Ubiquitin Ligase. Mol Cell Biol. 2014 Oct 20. pii: MCB.00857-14</field>
+        <field name="submitter">Dennis Goldfarb</field>
+        <field name="submitter_mail">dennisg@email.unc.edu</field>
+        <field name="submitter_affiliation">Cell and Developmental Biology</field>
+        <field name="labhead">Michael Ben Major</field>
+        <field name="labhead_mail">ben_major@med.unc.edu</field>
+        <field name="labhead_affiliation">Department of Cell Biology and Physiology, Lineberger Comprehensive Cancer Center, University of North Carolina at Chapel Hill, Chapel Hill, North Carolina, USA.</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/102406-bTRCP_NP40.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/102406-bTRCP_NP40.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/102406-bTRCP_NP40.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/121406-bTRCP1_Triton.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/121406-bTRCP1_Triton.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/121406-bTRCP1_Triton.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/MA677_TRCP2_DMSO_TaiYoung.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/MA677_TRCP2_DMSO_TaiYoung.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/MA677_TRCP2_DMSO_TaiYoung.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/MA540_TRCP2_TaiYoung.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/MA540_TRCP2_TaiYoung.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/MA540_TRCP2_TaiYoung.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/MA540_TRCP2_TaiYoung_B.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/MA678_TRCP2_MG132_TaiYoung.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/MA678_TRCP2_MG132_TaiYoung.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/MA678_TRCP2_MG132_TaiYoung.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/MA541_TRCP2_MF132_TaiYoung.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/MA541_TRCP2_MF132_TaiYoung.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/MA541_TRCP2_MF132_TaiYoung.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/MA541_TRCP2_MF132_TaiYoung_B.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/042207-HOS-DMSO.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/042207-HOS-DMSO.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/042207-HOS-DMSO.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/HOS_DMSO.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/HOS_DMSO.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/HOS_DMSO.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/042307-HOS-MG132.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/042307-HOS-MG132.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/042307-HOS-MG132.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/HOS_MG132.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/HOS_MG132.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/HOS_MG132.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/102406-HOSbTRCP2_NP40.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/102406-HOSbTRCP2_NP40.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/102406-HOSbTRCP2_NP40.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/121406-HOSbTrCP2_Triton.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/121406-HOSbTrCP2_Triton.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/121406-HOSbTrCP2_Triton.RAW</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/MA460_RAPGEF2_Low_TaiYoung.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/MA460_RAPGEF2_Low_TaiYoung.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/MA460_RAPGEF2_Low_TaiYoung.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/MA458_RAPGEF2_High_TaiYoung.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/MA458_RAPGEF2_High_TaiYoung.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/MA458_RAPGEF2_High_TaiYoung.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/MA461_RAPGEF2_LowMG132_TaiYoung.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/MA461_RAPGEF2_LowMG132_TaiYoung.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/MA461_RAPGEF2_LowMG132_TaiYoung.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/MA459_RAPGEF2_HignMG132_TaiYoung.pep.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/MA459_RAPGEF2_HignMG132_TaiYoung.prot.xml</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/MA459_RAPGEF2_HignMG132_TaiYoung.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2014/10/PXD001062/ExperimentNameMapping.tsv</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

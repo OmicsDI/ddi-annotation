@@ -1,0 +1,82 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-08-21</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000525">
+      <name>Candida albicans SC5314 and RMLU2 secretome and vesicle proteins</name>
+      <description>The commensal fungus Candida albicans secretes a considerable number of proteins and, as in different fungal pathogens, extracellular vesicles (EVs) have also been observed in the extracellular medium. Our report contains the first proteomic analysis of EVs in C. albicans and a comparative proteomic study with the soluble secreted proteins. To this end, cell-free culture supernatants from C. albicans were harvested by centrifugation, separated into EVs and vesicle-free secretome and analyzed by LC-MS/MS. A total of 96 proteins were identified including 75 and 61 proteins in EVs and vesicle-free secretome, respectively. Out of these, 40 proteins were found in secretome by proteomic analysis for the first time. The soluble proteins were enriched in cell wall and secreted pathogenesis related proteins. Interestingly, more than 90% of these vesicle-free proteins were classical secretory proteins with N-terminal signal peptide, whereas all the leaderless proteins involved in metabolism or the exocytosis and endocytosis process were exclusively cargo of the EVs. We propose a model of the different mechanisms used for C. albicans secreted proteins to reach the extracellular medium. Furthermore, we tested the potential of the Bgl2 protein, identified in vesicles and vesicle-free secretome, to protect against a systemic candidiasis in a murine model. </description>
+      <cross_references>
+        <ref dbkey="5476" dbname="TAXONOMY"/>
+        <ref dbkey="25367658" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2013-10-17"/>
+        <date type="publication" value="2015-08-21"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000525</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Not available</field>
+        <field name="instrument_platform">LTQ Orbitrap Velos</field>
+        <field name="species">Candida albicans (Yeast)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biological</field>
+        <field name="submitter_keywords">candida albicans secretome vesicles</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Gil-Bona A, Llama-Palacios A, Parra CM, Vivanco F, Nombela C, Monteoliva L, Gil C. Proteomics unravels extracellular vesicles as carriers of classical cytoplasmic proteins in Candida albicans. J Proteome Res. 2015 Jan 2;14(1):142-53</field>
+        <field name="submitter">Vital Vialas</field>
+        <field name="submitter_mail">vital@farm.ucm.es</field>
+        <field name="submitter_affiliation">Unidad de ProteÃ³mica UCM-PCM</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD000525/SC5314_secretome_1_CGD21actualDB.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD000525/SC5314_vesicles_1_CGD21actualDB.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD000525/SC5314_secretome_2_CGD21.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD000525/SC5314_secretome_3_CGD21.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD000525/SC5314_vesicles_2_CGD21.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD000525/SC5314_vesicles_3_CGD21.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD000525/SC5314_secretome_1_CGD21actualDB.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD000525/SC5314_vesicles_1_CGD21actualDB.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD000525/SC5314_secretome_2_CGD21.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD000525/SC5314_secretome_3_CGD21.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD000525/SC5314_vesicles_2_CGD21.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD000525/SC5314_vesicles_3_CGD21.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD000525/RMLU2_secretome_1_CGD21actualDB.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD000525/RMLU2_vesicles_1_CGD21actualDB.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD000525/RMLU2_secretome_2_CGD21120715B.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD000525/RMLU2_secretome_3_CGD21120715B.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD000525/RMLU2_vesicles_2_CGD21120715B.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD000525/RMLU2_vesicles_3_CGD21.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD000525/RMLU2_secretome_1_CGD21actualDB.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD000525/RMLU2_vesicles_1_CGD21actualDB.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD000525/RMLU2_secretome_2_CGD21120715B.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD000525/RMLU2_secretome_3_CGD21120715B.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD000525/RMLU2_vesicles_2_CGD21120715B.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD000525/RMLU2_vesicles_3_CGD21.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD000525/RMLU2_secretome_1_CGD21actualDB.mzid</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD000525/RMLU2_secretome_2_CGD21120715B.mzid</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD000525/RMLU2_secretome_3_CGD21120715B.mzid</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD000525/RMLU2_vesicles_1_CGD21actualDB.mzid</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD000525/RMLU2_vesicles_2_CGD21120715B.mzid</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD000525/RMLU2_vesicles_3_CGD21.mzid</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD000525/SC5314_secretome_1_CGD21actualDB.mzid</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD000525/SC5314_secretome_2_CGD21.mzid</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD000525/SC5314_secretome_3_CGD21.mzid</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD000525/SC5314_vesicles_1_CGD21actualDB.mzid</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD000525/SC5314_vesicles_2_CGD21.mzid</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/08/PXD000525/SC5314_vesicles_3_CGD21.mzid</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

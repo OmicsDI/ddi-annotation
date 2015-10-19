@@ -1,0 +1,85 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001573">
+      <name>Enrichment or depletion? The impact of stool pretreatment on metaproteomic characterization of the human gut microbiota</name>
+      <description>Up to date, most metaproteomic studies of the gut microbiota describe the use of stool sample pretreatment methods to enrich for microbial components. However, a specific investigation aimed at assessing if, how and to what extent this may impact on the final taxonomic and functional results is still lacking. Here, stool replicates were either pretreated by differential centrifugation (DC) or not centrifuged (NC). Protein extracts were then processed by filter-aided sample preparation, single-run LC and high-resolution MS, and the metaproteomic data were compared by spectral counting. DC led to a higher number of identifications, a significantly richer microbial diversity, as well as to reduced information on the non-microbial components (host and food) when compared to NC. Nevertheless, dramatic differences in the relative abundance of many gut microbial taxa were also observed, including a significant change in the Firmicutes/Bacteroidetes ratio. Furthermore, several microbial functional categories, including cell surface enzymes, membrane-associate proteins, and flagella, were significant reduced after DC. In conclusion, this work underlines that a critical evaluation is needed when selecting the appropriate stool sample processing protocol in the context of a metaproteomic study, depending on the specific target to which the research is aimed.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="25677681" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-12-05"/>
+        <date type="publication" value="2015-02-25"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001573</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">The human feces used for this study were provided by a healthy volunteer who gave consent to their use for research purposes. Feces were split into ten samples: five (average wet weight 337 mg) were directly subjected to protein extraction, while the remaining five (average wet weight 1,191 mg) underwent differential centrifugation. Stool samples were subjected to differential centrifugation to enrich for microbial cells, according to VerBerkmoes et al. 2009 and Tanca et al. 2014, with minor modifications. Briefly, samples were resuspended in PBS to reach a final volume of 50 ml, vortexed, shaken in a tube rotator for 45 min, and subjected to low-speed centrifugation at 500 x g for 5 min aimed to eliminate particulate and insoluble material. The supernatants were then carefully transferred to a clean polyallomer centrifuge bottle (Beckman Coulter, Brea, CA, USA) and kept at 4°C, whereas the pellets were suspended again in PBS. The entire procedure was repeated for a total of three rounds. Finally, the supernatants (one per round, therefore three per sample) were centrifuged at 20,000 x g for 15 min, and the derivative pellets were subjected to protein extraction following the protocol described below. Samples were resuspended by vortexing in extraction buffer (2% SDS, 100 mM DTT, 20 mM Tris-HCl pH 8.8) pre-heated at 95°C. Specifically, a 1:2 (mg/μl) sample-to-buffer ratio was used for the stool samples subjected to direct extraction, whereas the three microbial pellets per sample obtained upon differential centrifugation were first resuspended in the extraction buffer (1:1 ratio) and then pooled, in order to obtain a single tube per sample. Samples were then heated and subjected to a combination of bead-beating and freeze-thawing steps. The protein extract concentration was estimated by whole lane densitometry using QuantityOne software (Bio-Rad, Hercules, CA, USA) after electrophoretic separation through an Any kD Mini-PROTEAN TGX Gel (Bio-Rad) and gel staining with SimplyBlue SafeStain (Invitrogen, Carlsbad, CA, USA). Protein extracts were subjected to on-filter reduction, alkylation, and trypsin digestion according to the filter-aided sample preparation (FASP) protocol, using Amicon Ultra-0.5 centrifugal filter units with Ultracel-10 membrane (Millipore, Billerica, MA, USA). Peptide mixtures concentration was estimated by measuring absorbance at 280 nm with a NanoDrop 2000 spectrophotometer (Thermo Scientific, San Jose, CA, USA), using dilutions of the MassPREP E. coli Digest Standard (Waters, Milford, MA, USA) to generate a calibration curve. LC-MS/MS analysis was carried out using an LTQ-Orbitrap Velos mass spectrometer (Thermo Scientific) interfaced with an UltiMate 3000 RSLCnano LC system (Thermo Scientific). The single-run 1D LC peptide separation was performed as described in Tanca et al. 2014, and the mass spectrometer was set up in a data dependent MS/MS mode, with Higher Energy Collision Dissociation as the fragmentation method.</field>
+        <field name="data_protocol">Peptide identification was performed using Proteome Discoverer (version 1.4.1; Thermo Scientific), with a workflow consisting of the following nodes (and respective parameters): Spectrum Selector for spectra pre-processing (precursor mass range: 350-5,000 Da; S/N Threshold: 1.5), Sequest-HT as search engine (Protein Database: see below; Enzyme: Trypsin; Max. missed cleavage sites: 2; Peptide length range 5-50 amino acids; Max. Delta Cn: 0.05; Precursor mass tolerance: 10 ppm; Fragment mass tolerance: 0.02 Da; Static modification: cysteine carbamidomethylation; Dynamic modification: methionine oxidation), and Percolator for peptide validation (FDR &lt; 1% based on peptide q-value). Results were filtered in order to keep only rank 1 peptides, and protein grouping was allowed according to the maximum parsimony principle. The protein database was generated based on taxonomic information following an iterative approach. Specifically, a preliminary search was performed against the complete UniProtKB database (release 2013_12). Then, the peptide sequences identified in all the samples through the preliminary search were uploaded into the Unipept web application (v.2.4, http://unipept.ugent.be) to carry out a taxonomic assignment based on the lowest common ancestor (LCA) approach. In keeping with this, sequences from 298 detected microbial genera (from Archaea, Bacteria and Fungi) were appended to the human sequences from SwissProt (release 2013_12) in order to generate a customized “host-microbiome” database containing sequences from specific taxa and the host (5,990,075 protein sequences in total). Furthermore, an additional search was carried out using a “food” database containing all UniProtKB sequences belonging to the 6 most abundant plant genera detected in the preliminary search (namely, Arachis, Musa, Corylus, Theobroma, Glycine and Pisum; 117,047 total protein sequences), and the results were merged to those obtained with the “host-microbiome” database. The Normalized Spectral Abundance Factor (NSAF) was used in order to estimate peptide abundance. The relative abundance of a feature (protein, taxon, functional categories or combined taxonomic-functional feature) was calculated by summing the NSAF values of all peptides matched to that given feature. The NSAF log ratio was calculated using 2 as correction factor, and employed to estimate the extent of differential abundance between the two pretreatment methods compared. Statistical significance of differential expression was assessed by applying a t-test on logarithmic NSAF values, after replacing missing values with 0.01.</field>
+        <field name="instrument_platform">LTQ Orbitrap Velos</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Biomedical</field>
+        <field name="submitter_keywords">differential centrifugation; gut microbiome; host; metaproteomics; sample preparation</field>
+        <field name="quantification_method">Normalized Spectral Abundance Factor - NSAF</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Tanca A, Palomba A, Pisanu S, Addis MF, Uzzau S. Enrichment or depletion? The impact of stool pretreatment on metaproteomic characterization of the human gut microbiota. Proteomics. 2015 Feb 11</field>
+        <field name="submitter">Alessandro Tanca</field>
+        <field name="submitter_mail">tanca@portocontericerche.it</field>
+        <field name="submitter_affiliation">Proteomics Laboratory, Porto Conte Ricerche, Alghero, Italy</field>
+        <field name="labhead">Maria Filippa Addis</field>
+        <field name="labhead_mail">addis@portocontericerche.it</field>
+        <field name="labhead_affiliation">Proteomics Laboratory, Porto Conte Ricerche, Alghero, Italy</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001573/DC_5repl_vs_NC_5repl_food_identified_PSMs.xlsx</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001573/DC_5repl_vs_NC_5repl_food_identified_peptides.xlsx</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001573/DC_5repl_vs_NC_5repl_food_identified_proteins.xlsx</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001573/DC_5repl_vs_NC_5repl_host-microbiome_identified_PSMs.xlsx</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001573/DC_5repl_vs_NC_5repl_host-microbiome_identified_peptides.xlsx</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001573/DC_5repl_vs_NC_5repl_host-microbiome_identified_proteins.xlsx</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001573/DC_repl1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001573/DC_repl1_food.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001573/DC_repl1_host-microbiome.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001573/DC_repl2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001573/DC_repl2_food.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001573/DC_repl2_host-microbiome.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001573/DC_repl3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001573/DC_repl3_food.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001573/DC_repl3_host-microbiome.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001573/DC_repl4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001573/DC_repl4_food.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001573/DC_repl4_host-microbiome.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001573/DC_repl5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001573/DC_repl5_food.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001573/DC_repl5_host-microbiome.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001573/NC_repl1.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001573/NC_repl1_food.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001573/NC_repl1_host-microbiome.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001573/NC_repl2.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001573/NC_repl2_food.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001573/NC_repl2_host-microbiome.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001573/NC_repl3.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001573/NC_repl3_food.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001573/NC_repl3_host-microbiome.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001573/NC_repl4.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001573/NC_repl4_food.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001573/NC_repl4_host-microbiome.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001573/NC_repl5.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001573/NC_repl5_food.msf</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/02/PXD001573/NC_repl5_host-microbiome.msf</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

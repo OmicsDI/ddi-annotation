@@ -1,0 +1,52 @@
+<database>
+  <name>MetabolomicsWorkbench</name>
+  <description>The Metabolomics Workbench will serve as a national and international repository for metabolomics data and metadata and will provide analysis tools and access to metabolite standards, protocols, tutorials, training, and more.</description>
+  <release>1.0</release>
+  <release_date>15-05-20</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="ST000115">
+      <name>Impact of insulin deprivation and treatment on sphingolipid distribution in different muscle subcellular compartments of streptozotocin-diabetic C57Bl/6 mice</name>
+      <description>Experiments were conducted using 13-wk-old male C57BL/6J mice (Jackson Laboratory, Bar Harbor, ME). Mice were housed individually with free access to water and chow (TD.10112; Harlan Laboratories, Indianapolis, IN), with a 12:12-h light-dark cycle and temperature and humidity control. Mice were acclimated for 1 wk prior to the beginning of the experiment. The protocol was approved by the Mayo Clinic Institutional Animal Care and Use Committee. Following a 6-h fast, mice were given intraperitoneal injections of STZ (125 mg/kg; in sodium acetate buffer, pH = 4.5) (67). Injections were repeated on the following day. Control animals received intraperitoneal injection of vehicle. Only mice that displayed blood glucose ?300 mg/dl and an increase in blood ketones (both values by Precision Xtra glucometer; Abbott Laboratories, Abbott Park, IL), hyperphagia, and polyuria and were positive for urine glucose presence via dipstick (Uristix, Bayer, Pittsburgh, PA) on day 7 after the first STZ dose were included in the experiment. Animals that were positive for STZ diabetes received LinBit subcutaneous insulin implant (LinShin Canada, Toronto, ON, Canada) (79) under pentobarbital sodium anesthesia (Nebutal, 40 mg/kg of body wt) according to the manufacturer's protocol. Each animal received two subcutaneous implants (total dose: 0.2 U/24 h for &gt;30 days, 10 U/kg for 20-g mice). Insulin treatment was continued for 3 wk. Control animals (C; n = 13) received blank implants. Diabetic control was confirmed by biweekly measurements of blood and urinary glucose. In some cases, when urine glucose was present and blood glucose was &gt;288 mg/dl, the animal received a third implant. The insulin treatment was continued until initially lower plasma glucose content in diabetic animals reached control values. Three weeks following implantation, diabetic mice were divided randomly into diabetic-treated (D + I; n = 13) and diabetic-deprived (D ? I; n = 13) groups. Insulin implants were removed from the D ? I group under pentobarbital anesthesia, which led to the return of the diabetic phenotype within 24 h. Animals from the D + I group continued on insulin treatment (Fig. 1). At the age of 18 wk, animals from all groups were analyzed for body composition by an Echo-MRI Body Composition Analyzer (EchoMRI, Houston, TX) and euthanized by decapitation 5 wk after the initial STZ or vehicle dose. Figure 1 depicts the timeline of the experiment and blood glucose profiles for each experimental group. Additional animals were used for estimation of skeletal muscle insulin sensitivity by acute insulin stimulation. The mice were divided into the C (n = 6), D ? I (n = 7), and D + I (n = 7) groups and followed appropriate experimental treatment, except for acute insulin stimulation 10 min prior to euthanization by pentobarbital overdose. Figure 1 of the attached PDF of the article summarizes the study design</description>
+      <cross_references>
+        <ref dbkey="10090" dbname="TAXONOMY"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="14-09-30"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Metabolomics</field>
+        <field name="full_dataset_link">http://www.metabolomicsworkbench.org/data/DRCCMetadata.php?Mode=Study&amp;StudyID=ST000115</field>
+        <field name="repository">MetabolomicsWorkbench</field>
+        <field name="data_protocol">UHPLC-ESI-MS/MS positive ion mode</field>
+        <field name="data_protocol">QTOF negative ion mode</field>
+        <field name="instrument_platform">UHPLC-ESI-MS/MS</field>
+        <field name="instrument_platform">API5000 mass spectrometer</field>
+        <field name="study_factor">Treatment:control</field>
+        <field name="study_factor">Treatment:diabetic untreated</field>
+        <field name="study_factor">Treatment:diabetic treated</field>
+        <field name="species">Mus musculus</field>
+        <field name="technology_type">mass spectrometry</field>
+        <field name="metabolite_name">CoA(C18:2)</field>
+        <field name="metabolite_name">CoA(C20:0)</field>
+        <field name="metabolite_name">CoA(C18:0)</field>
+        <field name="metabolite_name">CoA(C18:1)</field>
+        <field name="metabolite_name">CoA(C16:0)</field>
+        <field name="metabolite_name">CoA(C16:1)</field>
+        <field name="metabolite_name">linoleic acid</field>
+        <field name="metabolite_name">elaidic acid</field>
+        <field name="metabolite_name">arachidonic acid</field>
+        <field name="metabolite_name">CoA(C14:0)</field>
+        <field name="metabolite_name">palmitic acid</field>
+        <field name="metabolite_name">oleic acid</field>
+        <field name="metabolite_name">myristic acid</field>
+        <field name="metabolite_name">linolenic acid</field>
+        <field name="metabolite_name">stearic acid</field>
+        <field name="metabolite_name">palmitoleic acid</field>
+        <field name="submitter">Sreekumaran Nair</field>
+        <field name="submitter_mail">Dasari.Surendra@mayo.edu</field>
+        <field name="submitter_affiliation">Endocrinology, Mayo Clinic</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

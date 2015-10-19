@@ -1,0 +1,79 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD001385">
+      <name>Intensity-based label-free proteomics using a quadrupole orbitrap mass spectrometer</name>
+      <description>We present a unique data set for benchmarking label free quantitative proteomics using a quadrupole orbitrap mass spectrometer. Soluble Escherichia coli digest was spiked into a HeLa digest in four different concentrations, simulating protein expression differences. The data set, which is available online, provides a unique opportunity to test the proteomic platform (instrumentation and software) in its ability to perform intensity based label free quantification. We show that the presented combination of informatics and instrumentation produces high precision and quantification accuracy.</description>
+      <cross_references>
+        <ref dbkey="562" dbname="TAXONOMY"/>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+        <ref dbkey="25780947" dbname="pubmed"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2014-10-08"/>
+        <date type="publication" value="2015-03-25"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD001385</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Four groups of samples, called 3, 7.5, 10 and 15 were prepared in three replicates. The numbers indicate the amount of E. Coli (in nanograms) spike into 200ng HeLa digestion, which was loaded onto the LC column for each sample. This simulated 5, 2 and 1.5 fold changes relative to the 15ng sample.</field>
+        <field name="data_protocol">Raw data was imported into the Expressionist data analysis system (Genedata). Data was filtered, smoothed and aligned in retention time. This was followed by feature detection based on peak volume and isotopic clustering. The parameters for all processing steps are provided in the Supplementary Information. MS/MS spectra was then extracted by the Expressionist software and sent to database searching using Mascot v2.5 (Matrix sciences). Data was searched against a forward and reversed, concatenated Swiss-Prot  version 2014_07 from human and  Escherichia coli. It was also appended with 125 common contaminants for a total of 24,557 entries. Identifications were then imported into Expressionist and detected isotopic cluster annotated. The resulting data was then imported into a Matlab script for grouping based on shared peptides and filtered to achieve maximum, global false discovery rate of 0.7% at the protein level. Protein intensities were calculated based on the Hi-3 method7, unless identified with less than three peptides. The final data set used for analysis included only proteins that had at least one peptide that could be uniquely mapped to the protein in the database. Ratio calculations were made by the product of the arithmetic mean each group.</field>
+        <field name="instrument_platform">Q Exactive</field>
+        <field name="species">Escherichia coli</field>
+        <field name="species">Homo sapiens (Human)</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">cell culture</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="modification">iodoacetamide derivatized residue</field>
+        <field name="technology_type">Shotgun proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">Technical</field>
+        <field name="submitter_keywords">Proteomics</field>
+        <field name="submitter_keywords"> Q Exactive</field>
+        <field name="submitter_keywords"> Quadrupole Orbitrap</field>
+        <field name="submitter_keywords"> label-free</field>
+        <field name="quantification_method">MS1 intensity based label-free quantification method</field>
+        <field name="submission_type">PARTIAL</field>
+        <field name="software">Not available</field>
+        <field name="publication">Shalit T, Elinger D, Savidor A, Gabashvili A, Levin Y. MS1-Based Label-Free Proteomics Using a Quadrupole Orbitrap Mass Spectrometer. J Proteome Res. 2015 Mar 24</field>
+        <field name="submitter">Yishai Levin</field>
+        <field name="submitter_mail">yishai.levin@gmail.com</field>
+        <field name="submitter_affiliation">Weizmann Institute of Science, Israel</field>
+        <field name="labhead">Yishai Levin</field>
+        <field name="labhead_mail">yishai.levin@weizmann.ac.il</field>
+        <field name="labhead_affiliation">de Botton Institute for Protein Profiling, The Nancy and Stephen Grand Israel National Center for Personalized Medicine, Weizmann Institute of Science</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001385/QEP1_SpikeIn_230914_10_15ng_270914.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001385/QEP1_SpikeIn_230914_11_15ng_270914.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001385/QEP1_SpikeIn_230914_12_15ng_270914.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001385/QEP1_SpikeIn_230914_1_3ng_270914.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001385/QEP1_SpikeIn_230914_2_3ng_270914.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001385/QEP1_SpikeIn_230914_3_3ng_270914.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001385/QEP1_SpikeIn_230914_4_7-5ng_270914.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001385/QEP1_SpikeIn_230914_5_7-5ng_270914.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001385/QEP1_SpikeIn_230914_6_7-5ng_270914.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001385/QEP1_SpikeIn_230914_7_10ng_270914.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001385/QEP1_SpikeIn_230914_8_10ng_270914.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001385/QEP1_SpikeIn_230914_9_10ng_270914.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001385/QEP1_SpikeIn_230914_10_15ng_270914.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001385/QEP1_SpikeIn_230914_11_15ng_270914.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001385/QEP1_SpikeIn_230914_12_15ng_270914.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001385/QEP1_SpikeIn_230914_1_3ng_270914.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001385/QEP1_SpikeIn_230914_2_3ng_270914.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001385/QEP1_SpikeIn_230914_3_3ng_270914.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001385/QEP1_SpikeIn_230914_4_7-5ng_270914.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001385/QEP1_SpikeIn_230914_5_7-5ng_270914.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001385/QEP1_SpikeIn_230914_6_7-5ng_270914.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001385/QEP1_SpikeIn_230914_7_10ng_270914.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001385/QEP1_SpikeIn_230914_8_10ng_270914.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001385/QEP1_SpikeIn_230914_9_10ng_270914.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2015/03/PXD001385/SPhum_canon_2014_06_ecoliK12-201408_contm.fasta</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>
