@@ -20,6 +20,8 @@ import org.apache.http.params.HttpConnectionParams;
 import org.apache.http.params.HttpParams;
 import org.json.*;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import sun.net.www.http.HttpClient;
 import uk.ac.ebi.ddi.annotation.model.AnnotedWord;
@@ -37,6 +39,8 @@ import uk.ac.ebi.ddi.service.db.service.enrichment.SynonymsService;
  * @author Mingze
  */
 public class DDIAnnotationService {
+
+    public static final Logger logger = LoggerFactory.getLogger(DDIAnnotationService.class);
 
     @Autowired
     SynonymsService synonymsService = new SynonymsService();
@@ -125,12 +129,9 @@ public class DDIAnnotationService {
         fieldText = fieldText.replace("%", "");//to avoid malformed error
         String recommenderUrl = recommenderPreUrl + fieldText.replace(" ", "%20");
         String output = "";
-        try {
-            output = getFromWSAPI(recommenderUrl);
-        } catch (IOException e) {
-            System.out.println("error in getting words in fieldText:" + fieldText + "at this url" + recommenderUrl);
-            e.printStackTrace();
-        }
+        output = getFromWSAPI(recommenderUrl);
+        if(output == null)
+            return null;
 
         annotationResults = new JSONArray(output);
 
@@ -149,12 +150,6 @@ public class DDIAnnotationService {
             int numberOfTerms = coverageResult.getInt("numberTermsCovered");
             JSONArray matchedTerms = coverageResult.getJSONArray("annotations");
 
-
-//            System.out.println(ontologyName);
-//            System.out.println("number of terms" + numberOfTerms);
-//
-//            System.out.println(recommenderUrl);
-//            System.out.println(matchedTerms);
             matchedWords.addAll(getDistinctWordList(matchedTerms));
             for (WordInField matchedWord : matchedWords) {
                 System.out.println(matchedWord.getText() + ":" + matchedWord.getFrom() + "-" + matchedWord.getTo());
@@ -233,13 +228,10 @@ public class DDIAnnotationService {
         String annotationPreUrl = "http://data.bioontology.org/annotator?ontologies=MESH,MS&longest_only=true&whole_word_only=false&apikey=807fa818-0a7c-43be-9bac-51576e8795f5&text=";
         String annotatorUrl = annotationPreUrl + lowerWord.replace(" ", "%20") ;
         String output = "";
-        try {
-            output = getFromWSAPI(annotatorUrl);
-        } catch (IOException e) {
-            System.out.println("error to get synonyms for word:" + word + "at this url" + annotatorUrl);
-            System.out.println("error info:" + e);
+        output = getFromWSAPI(annotatorUrl);
+        if(output == null)
             return null;
-        }
+
 
         JSONArray annotationResults = new JSONArray(output);
 
@@ -274,13 +266,10 @@ public class DDIAnnotationService {
             String ontologyName = matchedClass.getString("ontologyName");
 
             String wordDetailUrl = "http://data.bioontology.org/ontologies/" + ontologyName + "/classes/" + wordId + "?apikey=807fa818-0a7c-43be-9bac-51576e8795f5";
-            try {
-                output = getFromWSAPI(wordDetailUrl);
-            } catch (IOException e) {
-                System.out.println("error in getting synonyms for word:" + word + "at this url" + wordDetailUrl);
-                e.printStackTrace();
+            output = getFromWSAPI(wordDetailUrl);
+            if(output == null)
                 return null;
-            }
+
             JSONObject wordDetailsInCls = new JSONObject(output);
             JSONArray synonymsInCls = wordDetailsInCls.getJSONArray("synonym");
 
@@ -299,28 +288,27 @@ public class DDIAnnotationService {
      * @return access url by HTTP client
      * @throws IOException
      */
-    private String getFromWSAPI(String url) throws IOException {
-        final RequestConfig params = RequestConfig.custom().setConnectTimeout(600*1000).setSocketTimeout(600*1000).build();
-        CloseableHttpClient httpClient = HttpClientBuilder.create().build();
-        System.out.println("Getting from: "+url);
-        HttpGet getRequest = new HttpGet(url);
-        getRequest.setConfig(params);
-        getRequest.addHeader("accept", "application/json");
-        HttpResponse response = httpClient.execute(getRequest);
-//        System.out.println("Trying to accessing webservice from:" + url);
-        if (response.getStatusLine().getStatusCode() != 200) {
-//            throw new RuntimeException("Failed : HTTP error code : "
-//                    + response.getStatusLine().getStatusCode());
-            System.out.println("Failed: HTTP error code:" + response.getStatusLine().getStatusCode());
-            System.out.println(response);
-            IOException ioException = new IOException(response.toString());
-            throw ioException;
+    private String getFromWSAPI(String url){
+        String output = null;
+        try {
+            final RequestConfig params = RequestConfig.custom().setConnectTimeout(600*1000).setSocketTimeout(600*1000).build();
+            CloseableHttpClient httpClient = HttpClientBuilder.create().build();
+            System.out.println("Getting from: "+url);
+            HttpGet getRequest = new HttpGet(url);
+            getRequest.setConfig(params);
+            getRequest.addHeader("accept", "application/json");
+            HttpResponse response = null;
+            response = httpClient.execute(getRequest);
+            BufferedReader br = new BufferedReader(
+                    new InputStreamReader((response.getEntity().getContent())));
+            if (response.getStatusLine().getStatusCode() != 200) {
+                logger.error("Failed: HTTP error code:" + response.getStatusLine().toString());
+            }else
+                output = br.readLine();
+
+        } catch (IOException e) {
+            logger.error("Failed: HTTP error code:" + e.getMessage());
         }
-
-        BufferedReader br = new BufferedReader(
-                new InputStreamReader((response.getEntity().getContent())));
-
-        String output = br.readLine();
         return output;
     }
 

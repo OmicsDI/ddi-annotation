@@ -7,8 +7,5 @@ import java.io.IOException;
  */
 public class DDISynonymServiceTest { //extends TestCase {
 
-    public void testGetSynonyms() throws Exception {
-
-    }
 
 }

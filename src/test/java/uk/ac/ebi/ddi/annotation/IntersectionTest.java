@@ -62,11 +62,6 @@ public class  IntersectionTest{
 
     }
 
-    @After
-    public void tearDown() throws Exception {
-
-    }
-
     @Test
     public void testGetEntryById() throws Exception {
 
@@ -130,11 +125,11 @@ public class  IntersectionTest{
     @Test
     public void testProteomicsImportMethod() throws Exception {
 
-        URL url = IntersectionTest.class.getResource("data.txt");
+        URL url = IntersectionTest.class.getClassLoader().getResource("data.txt");
 
         PrintWriter writer = new PrintWriter(new File(url.toURI()), "UTF-8");
 
-        URL urlProteomics = IntersectionTest.class.getResource("pride-files");
+        URL urlProteomics = IntersectionTest.class.getClassLoader().getResource("pride-files");
 
         File folder = new File(urlProteomics.toURI());
         String dataType = "ProteomicsData";
