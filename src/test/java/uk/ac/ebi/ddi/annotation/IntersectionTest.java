@@ -43,27 +43,28 @@ public class  IntersectionTest{
     @Autowired
     DatasetStatInfoService datasetStatInfoService= new DatasetStatInfoService();
 
-
-    public static int getIntersection(HashSet<String> set1, HashSet<String> set2) {
-        boolean set1IsLarger = set1.size() > set2.size();
-        Set<String> cloneSet = new HashSet<String>(set1IsLarger ? set2 : set1);
-        cloneSet.retainAll(set1IsLarger ? set1 : set2);
-        return cloneSet.size();
-    }
-
-
-    File file;
-
     OmicsXMLFile reader;
 
     @Before
     public void setUp() throws Exception {
 
+        URL fileURL = IntersectionTest.class.getClassLoader().getResource("pride-files/PRIDE_EBEYE_PRD000123.xml");
+
+        reader = new OmicsXMLFile(new File(fileURL.toURI()));
+
+    }
+
+    @Test
+    public void testGetEntryIds() throws Exception {
+
+        Assert.assertEquals(reader.getEntryIds().size(),1);
 
     }
 
     @Test
     public void testGetEntryById() throws Exception {
+
+
 
         Entry entry = reader.getEntryById("PRD000123");
 
@@ -170,12 +171,7 @@ public class  IntersectionTest{
 
     }
 
-    @Test
-    public void testGetEntryIds() throws Exception {
 
-        Assert.assertEquals(reader.getEntryIds().size(),1);
-
-    }
 
     @Test
     public void marshall() throws DDIException {
@@ -214,11 +210,20 @@ public class  IntersectionTest{
 
         int index = 0;
 
+
+
         Entry entry = reader.getEntryByIndex(index);
 
         Assert.assertEquals(entry.getName().getValue(), "Large scale qualitative and quantitative profiling of tyrosine phosphorylation using a combination of phosphopeptide immuno-affinity purification and stable isotope dimethyl labeling");
 
         System.out.println(entry.toString());
 
+    }
+
+    public static int getIntersection(HashSet<String> set1, HashSet<String> set2) {
+        boolean set1IsLarger = set1.size() > set2.size();
+        Set<String> cloneSet = new HashSet<String>(set1IsLarger ? set2 : set1);
+        cloneSet.retainAll(set1IsLarger ? set1 : set2);
+        return cloneSet.size();
     }
 }
