@@ -33,8 +33,9 @@ public class SimilarityCalculator {
     private MongoTemplate mongoTemplate;
 
 
-//    public static void main( String[] args ) {
     private  void startMain( String[] args ) {
+
+        //Todo: This tool needs to be refined
         String[] args2 = {"--dataType=ProteomicsData"};
         String[] args3 = {"--dataType=MetabolomicsData"};
         args = args3;

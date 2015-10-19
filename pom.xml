@@ -13,7 +13,7 @@
 
     <groupId>uk.ac.ebi.ddi</groupId>
     <artifactId>ddi-annotation</artifactId>
-    <version>0.1-SNAPSHOT</version>
+    <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
 

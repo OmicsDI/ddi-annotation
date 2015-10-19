@@ -13,11 +13,7 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
-import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
-import org.apache.http.params.BasicHttpParams;
-import org.apache.http.params.HttpConnectionParams;
-import org.apache.http.params.HttpParams;
 import org.json.*;
 
 import org.slf4j.Logger;
@@ -157,12 +153,8 @@ public class DDIAnnotationService {
 
         }
 
-        if (matchedWords != null) {
-            Collections.sort(matchedWords);
-            return matchedWords;
-        } else {
-            return null;
-        }
+        Collections.sort(matchedWords);
+        return matchedWords;
     }
 
 

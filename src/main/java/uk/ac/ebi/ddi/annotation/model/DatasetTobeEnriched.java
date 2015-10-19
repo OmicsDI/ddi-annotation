@@ -4,6 +4,7 @@ package uk.ac.ebi.ddi.annotation.model;
  * Created by mingze on 05/10/15.
  */
 public class DatasetTobeEnriched {
+
     private String accession;
     private String database;
 
@@ -15,6 +16,29 @@ public class DatasetTobeEnriched {
     public DatasetTobeEnriched(String accession, String database) {
         this.accession = accession;
         this.database = database;
+    }
+
+    /**
+     * This constructor is more general and can be use to create an object with all the attributes
+     * @param accession accession of the dataset
+     * @param database  database of the dataset
+     * @param title     dataset title
+     * @param abstractDescription description of the dataset
+     * @param sampleProtocol sample protocol
+     * @param dataProtocol   data protocol
+     */
+    public DatasetTobeEnriched(String accession,
+                               String database,
+                               String title,
+                               String abstractDescription,
+                               String sampleProtocol,
+                               String dataProtocol) {
+        this.accession = accession;
+        this.database = database;
+        this.title = title;
+        this.abstractDescription = abstractDescription;
+        this.sampleProtocol = sampleProtocol;
+        this.dataProtocol = dataProtocol;
     }
 
     public String getAccession() {

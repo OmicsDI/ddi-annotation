@@ -19,7 +19,6 @@ import uk.ac.ebi.ddi.service.db.service.similarity.*;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.net.URL;
 import java.util.*;
 
@@ -50,6 +49,7 @@ public class  IntersectionTest{
 
         URL fileURL = IntersectionTest.class.getClassLoader().getResource("pride-files/PRIDE_EBEYE_PRD000123.xml");
 
+        assert fileURL != null;
         reader = new OmicsXMLFile(new File(fileURL.toURI()));
 
     }
@@ -64,8 +64,6 @@ public class  IntersectionTest{
     @Test
     public void testGetEntryById() throws Exception {
 
-
-
         Entry entry = reader.getEntryById("PRD000123");
 
         Assert.assertEquals(entry.getName().getValue(), "Large scale qualitative and quantitative profiling of tyrosine phosphorylation using a combination of phosphopeptide immuno-affinity purification and stable isotope dimethyl labeling");
@@ -77,12 +75,9 @@ public class  IntersectionTest{
     @Test
     public void testMetabolomicsInsert() throws Exception {
 
-        URL url = IntersectionTest.class.getClassLoader().getResource("data.txt");
-
-        PrintWriter writer = new PrintWriter(new File(url.toURI()), "UTF-8");
-
         URL urlMetabolomics = IntersectionTest.class.getClassLoader().getResource("metabolites-files");
 
+        assert urlMetabolomics != null;
         File folder = new File(urlMetabolomics.toURI());
         String dataType = "MetabolomicsData";
 
@@ -102,6 +97,7 @@ public class  IntersectionTest{
 //        int iterTime = 199;
         int index = 1;
         int fileindex = 1;
+        assert listOfFiles != null;
         for (File file : listOfFiles) {
             if (file.isFile()) {
                 if(file.getName().toLowerCase().endsWith("xml")) {
@@ -126,12 +122,9 @@ public class  IntersectionTest{
     @Test
     public void testProteomicsImportMethod() throws Exception {
 
-        URL url = IntersectionTest.class.getClassLoader().getResource("data.txt");
-
-        PrintWriter writer = new PrintWriter(new File(url.toURI()), "UTF-8");
-
         URL urlProteomics = IntersectionTest.class.getClassLoader().getResource("pride-files");
 
+        assert urlProteomics != null;
         File folder = new File(urlProteomics.toURI());
         String dataType = "ProteomicsData";
 
@@ -151,6 +144,7 @@ public class  IntersectionTest{
 //        int iterTime = 199;
         int index = 1;
         int fileindex = 1;
+        assert listOfFiles != null;
         for (File file : listOfFiles) {
             if (file.isFile()) {
                 if(file.getName().toLowerCase().endsWith("xml")) {
@@ -209,8 +203,6 @@ public class  IntersectionTest{
     public void testGetEntryByIndex() throws Exception {
 
         int index = 0;
-
-
 
         Entry entry = reader.getEntryByIndex(index);
 
