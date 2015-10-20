@@ -3,10 +3,8 @@ package uk.ac.ebi.ddi.annotation.service;
 
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Date;
-import java.util.List;
+import java.net.URLEncoder;
+import java.util.*;
 import java.util.regex.Pattern;
 
 import org.apache.http.HttpResponse;
@@ -23,6 +21,7 @@ import sun.net.www.http.HttpClient;
 import uk.ac.ebi.ddi.annotation.model.AnnotedWord;
 import uk.ac.ebi.ddi.annotation.model.DatasetTobeEnriched;
 import uk.ac.ebi.ddi.annotation.model.EnrichedDataset;
+import uk.ac.ebi.ddi.annotation.utils.Utils;
 import uk.ac.ebi.ddi.service.db.model.enrichment.DatasetEnrichmentInfo;
 import uk.ac.ebi.ddi.service.db.model.enrichment.WordInField;
 import uk.ac.ebi.ddi.service.db.model.enrichment.Synonym;
@@ -49,7 +48,7 @@ public class DDIAnnotationService {
      * @return
      */
 
-    public EnrichedDataset enrichment(DatasetTobeEnriched datasetTobeEnriched) throws JSONException {
+    public EnrichedDataset enrichment(DatasetTobeEnriched datasetTobeEnriched) throws JSONException, UnsupportedEncodingException {
 
         String accession = datasetTobeEnriched.getAccession();
         String database = datasetTobeEnriched.getDatabase();
@@ -88,7 +87,7 @@ public class DDIAnnotationService {
      * @return
      */
     private String EnrichField(List<WordInField> wordsInField) throws JSONException {
-        if (wordsInField == null) {
+        if (wordsInField == null || wordsInField.isEmpty()) {
            return null;
         }
         String enrichedField = "";
@@ -113,7 +112,7 @@ public class DDIAnnotationService {
      * @param fieldText
      * @return the words which are identified in the fieldText by recommender API from bioontology.org
      */
-    private List<WordInField> getWordsInFiledFromWS(String fieldText) throws JSONException {
+    private List<WordInField> getWordsInFiledFromWS(String fieldText) throws JSONException, UnsupportedEncodingException {
 
         if(fieldText ==null || fieldText.equals("Not availabel")){
             return null;
@@ -123,7 +122,8 @@ public class DDIAnnotationService {
         JSONArray annotationResults;
         String recommenderPreUrl = "http://data.bioontology.org/recommender?ontologies=MESH,MS&apikey=807fa818-0a7c-43be-9bac-51576e8795f5&input=";
         fieldText = fieldText.replace("%", "");//to avoid malformed error
-        String recommenderUrl = recommenderPreUrl + fieldText.replace(" ", "%20");
+        String recommenderUrl = recommenderPreUrl + URLEncoder.encode(fieldText, "UTF-8");
+        //String recommenderUrl = recommenderPreUrl + fieldText.replace(" ", "%20");
         String output = "";
         output = getFromWSAPI(recommenderUrl);
         if(output == null)
