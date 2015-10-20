@@ -34,9 +34,13 @@ public class DDIExpDataProcessServiceTest {
     private MongoTemplate mongoTemplate;
 
     @Test
-    public void testCalculate() throws Exception {
-//        ddiExpDataProcessService.calculateIDFWeight("ProteomicsData");
-//        ddiExpDataProcessService.calculateSimilarity("ProteomicsData");
+    public void testCalculateProteomicsData() throws Exception {
+        ddiExpDataProcessService.calculateIDFWeight("ProteomicsData");
+        ddiExpDataProcessService.calculateSimilarity("ProteomicsData");
+    }
+
+    @Test
+    public void testCalculateMetabolomicsData() throws Exception {
         ddiExpDataProcessService.calculateIDFWeight("MetabolomicsData");
         ddiExpDataProcessService.calculateSimilarity("MetabolomicsData");
     }
