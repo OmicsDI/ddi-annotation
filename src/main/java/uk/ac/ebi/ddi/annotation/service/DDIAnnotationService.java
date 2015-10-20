@@ -3,25 +3,20 @@ package uk.ac.ebi.ddi.annotation.service;
 
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Date;
-import java.util.List;
+import java.net.URLEncoder;
+import java.util.*;
 import java.util.regex.Pattern;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
-import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
-import org.apache.http.params.BasicHttpParams;
-import org.apache.http.params.HttpConnectionParams;
-import org.apache.http.params.HttpParams;
 import org.json.*;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import sun.net.www.http.HttpClient;
 import uk.ac.ebi.ddi.annotation.model.AnnotedWord;
 import uk.ac.ebi.ddi.annotation.model.DatasetTobeEnriched;
 import uk.ac.ebi.ddi.annotation.model.EnrichedDataset;
@@ -38,6 +33,8 @@ import uk.ac.ebi.ddi.service.db.service.enrichment.SynonymsService;
  */
 public class DDIAnnotationService {
 
+    public static final Logger logger = LoggerFactory.getLogger(DDIAnnotationService.class);
+
     @Autowired
     SynonymsService synonymsService = new SynonymsService();
     @Autowired
@@ -49,7 +46,7 @@ public class DDIAnnotationService {
      * @return
      */
 
-    public EnrichedDataset enrichment(DatasetTobeEnriched datasetTobeEnriched) {
+    public EnrichedDataset enrichment(DatasetTobeEnriched datasetTobeEnriched) throws JSONException, UnsupportedEncodingException {
 
         String accession = datasetTobeEnriched.getAccession();
         String database = datasetTobeEnriched.getDatabase();
@@ -87,8 +84,8 @@ public class DDIAnnotationService {
      * @param wordsInField
      * @return
      */
-    private String EnrichField(List<WordInField> wordsInField) {
-        if (wordsInField == null) {
+    private String EnrichField(List<WordInField> wordsInField) throws JSONException {
+        if (wordsInField == null || wordsInField.isEmpty()) {
            return null;
         }
         String enrichedField = "";
@@ -113,7 +110,7 @@ public class DDIAnnotationService {
      * @param fieldText
      * @return the words which are identified in the fieldText by recommender API from bioontology.org
      */
-    private List<WordInField> getWordsInFiledFromWS(String fieldText) {
+    private List<WordInField> getWordsInFiledFromWS(String fieldText) throws JSONException, UnsupportedEncodingException {
 
         if(fieldText ==null || fieldText.equals("Not availabel")){
             return null;
@@ -123,14 +120,12 @@ public class DDIAnnotationService {
         JSONArray annotationResults;
         String recommenderPreUrl = "http://data.bioontology.org/recommender?ontologies=MESH,MS&apikey=807fa818-0a7c-43be-9bac-51576e8795f5&input=";
         fieldText = fieldText.replace("%", "");//to avoid malformed error
-        String recommenderUrl = recommenderPreUrl + fieldText.replace(" ", "%20");
+        String recommenderUrl = recommenderPreUrl + URLEncoder.encode(fieldText, "UTF-8");
+        //String recommenderUrl = recommenderPreUrl + fieldText.replace(" ", "%20");
         String output = "";
-        try {
-            output = getFromWSAPI(recommenderUrl);
-        } catch (IOException e) {
-            System.out.println("error in getting words in fieldText:" + fieldText + "at this url" + recommenderUrl);
-            e.printStackTrace();
-        }
+        output = getFromWSAPI(recommenderUrl);
+        if(output == null)
+            return null;
 
         annotationResults = new JSONArray(output);
 
@@ -149,12 +144,6 @@ public class DDIAnnotationService {
             int numberOfTerms = coverageResult.getInt("numberTermsCovered");
             JSONArray matchedTerms = coverageResult.getJSONArray("annotations");
 
-
-//            System.out.println(ontologyName);
-//            System.out.println("number of terms" + numberOfTerms);
-//
-//            System.out.println(recommenderUrl);
-//            System.out.println(matchedTerms);
             matchedWords.addAll(getDistinctWordList(matchedTerms));
             for (WordInField matchedWord : matchedWords) {
                 System.out.println(matchedWord.getText() + ":" + matchedWord.getFrom() + "-" + matchedWord.getTo());
@@ -162,12 +151,8 @@ public class DDIAnnotationService {
 
         }
 
-        if (matchedWords != null) {
-            Collections.sort(matchedWords);
-            return matchedWords;
-        } else {
-            return null;
-        }
+        Collections.sort(matchedWords);
+        return matchedWords;
     }
 
 
@@ -179,7 +164,7 @@ public class DDIAnnotationService {
      * @param word
      * @return
      */
-    public ArrayList<String> getSynonymsForWord(String word) {
+    public ArrayList<String> getSynonymsForWord(String word) throws JSONException {
         ArrayList<String> synonyms;
         if (synonymsService.isWordExist(word)) {
             return synonymsService.getAllSynonyms(word);
@@ -226,20 +211,17 @@ public class DDIAnnotationService {
      * @param word
      * @return get synonyms of the word, by annotator API from bioontology.org
      */
-    protected ArrayList<String> getSynonymsForWordFromWS(String word) {
+    protected ArrayList<String> getSynonymsForWordFromWS(String word) throws JSONException {
         String lowerWord = word.toLowerCase();
         ArrayList<String> synonyms = new ArrayList<String>();
 
         String annotationPreUrl = "http://data.bioontology.org/annotator?ontologies=MESH,MS&longest_only=true&whole_word_only=false&apikey=807fa818-0a7c-43be-9bac-51576e8795f5&text=";
         String annotatorUrl = annotationPreUrl + lowerWord.replace(" ", "%20") ;
         String output = "";
-        try {
-            output = getFromWSAPI(annotatorUrl);
-        } catch (IOException e) {
-            System.out.println("error to get synonyms for word:" + word + "at this url" + annotatorUrl);
-            System.out.println("error info:" + e);
+        output = getFromWSAPI(annotatorUrl);
+        if(output == null)
             return null;
-        }
+
 
         JSONArray annotationResults = new JSONArray(output);
 
@@ -274,13 +256,10 @@ public class DDIAnnotationService {
             String ontologyName = matchedClass.getString("ontologyName");
 
             String wordDetailUrl = "http://data.bioontology.org/ontologies/" + ontologyName + "/classes/" + wordId + "?apikey=807fa818-0a7c-43be-9bac-51576e8795f5";
-            try {
-                output = getFromWSAPI(wordDetailUrl);
-            } catch (IOException e) {
-                System.out.println("error in getting synonyms for word:" + word + "at this url" + wordDetailUrl);
-                e.printStackTrace();
+            output = getFromWSAPI(wordDetailUrl);
+            if(output == null)
                 return null;
-            }
+
             JSONObject wordDetailsInCls = new JSONObject(output);
             JSONArray synonymsInCls = wordDetailsInCls.getJSONArray("synonym");
 
@@ -299,28 +278,27 @@ public class DDIAnnotationService {
      * @return access url by HTTP client
      * @throws IOException
      */
-    private String getFromWSAPI(String url) throws IOException {
-        final RequestConfig params = RequestConfig.custom().setConnectTimeout(600*1000).setSocketTimeout(600*1000).build();
-        CloseableHttpClient httpClient = HttpClientBuilder.create().build();
-        System.out.println("Getting from: "+url);
-        HttpGet getRequest = new HttpGet(url);
-        getRequest.setConfig(params);
-        getRequest.addHeader("accept", "application/json");
-        HttpResponse response = httpClient.execute(getRequest);
-//        System.out.println("Trying to accessing webservice from:" + url);
-        if (response.getStatusLine().getStatusCode() != 200) {
-//            throw new RuntimeException("Failed : HTTP error code : "
-//                    + response.getStatusLine().getStatusCode());
-            System.out.println("Failed: HTTP error code:" + response.getStatusLine().getStatusCode());
-            System.out.println(response);
-            IOException ioException = new IOException(response.toString());
-            throw ioException;
+    private String getFromWSAPI(String url){
+        String output = null;
+        try {
+            final RequestConfig params = RequestConfig.custom().setConnectTimeout(600*1000).setSocketTimeout(600*1000).build();
+            CloseableHttpClient httpClient = HttpClientBuilder.create().build();
+            System.out.println("Getting from: "+url);
+            HttpGet getRequest = new HttpGet(url);
+            getRequest.setConfig(params);
+            getRequest.addHeader("accept", "application/json");
+            HttpResponse response = null;
+            response = httpClient.execute(getRequest);
+            BufferedReader br = new BufferedReader(
+                    new InputStreamReader((response.getEntity().getContent())));
+            if (response.getStatusLine().getStatusCode() != 200) {
+                logger.error("Failed: HTTP error code:" + response.getStatusLine().toString());
+            }else
+                output = br.readLine();
+
+        } catch (IOException e) {
+            logger.error("Failed: HTTP error code:" + e.getMessage());
         }
-
-        BufferedReader br = new BufferedReader(
-                new InputStreamReader((response.getEntity().getContent())));
-
-        String output = br.readLine();
         return output;
     }
 
@@ -331,7 +309,7 @@ public class DDIAnnotationService {
      * @param annotationResults annotation results from annotator API, may contain multiple matched classes
      * @return
      */
-    private JSONArray findBioOntologyMatchclasses(String matchedWord, JSONArray annotationResults) {
+    private JSONArray findBioOntologyMatchclasses(String matchedWord, JSONArray annotationResults) throws JSONException {
         JSONArray matchedClasses = new JSONArray();
 //        System.out.print(annotationResults);
         for (int i = 0; i < annotationResults.length(); i++) {
@@ -369,7 +347,7 @@ public class DDIAnnotationService {
      * @param matchedTerms got from annotation results, which may overlap with other terms
      * @return matchedWords chosen word, which is the longest term in the overlapped terms
      */
-    private List<WordInField> getDistinctWordList(JSONArray matchedTerms) {
+    private List<WordInField> getDistinctWordList(JSONArray matchedTerms) throws JSONException {
         List<WordInField> matchedWords = new ArrayList<WordInField>();
         for (int i = 0; i < matchedTerms.length(); i++) {
             JSONObject matchedTerm = (JSONObject) matchedTerms.get(i);

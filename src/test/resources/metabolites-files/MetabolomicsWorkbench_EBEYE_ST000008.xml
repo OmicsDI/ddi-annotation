@@ -1,0 +1,47 @@
+<database>
+  <name>MetabolomicsWorkbench</name>
+  <description>The Metabolomics Workbench will serve as a national and international repository for metabolomics data and metadata and will provide analysis tools and access to metabolite standards, protocols, tutorials, training, and more.</description>
+  <release>1.0</release>
+  <release_date>15-05-20</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="ST000008">
+      <name>Metabolomics Analysis of Population Genetics (PopGen) for Response to Cholera Vaccination)</name>
+      <description>Metabolomics analysis was performed on 112 serum samples that were collected in India at baseline (before Cholera vaccination) and 28 days after Cholera vaccination under the Population Genetics Project (National Institute of Allergy and Infectious Diseases (NIAID), National Institutes of Health (NIH) contract HHSN2004000676C). The 112 samples were selected based on titer results which indicated subjects who were either high responders or low responders to the vaccination. 950MHz 1H NMR spectra were acquired for the 112 serum samples.</description>
+      <cross_references>
+        <ref dbkey="9606" dbname="TAXONOMY"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="13-02-17"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Metabolomics</field>
+        <field name="full_dataset_link">http://www.metabolomicsworkbench.org/data/DRCCMetadata.php?Mode=Study&amp;StudyID=ST000008</field>
+        <field name="repository">MetabolomicsWorkbench</field>
+        <field name="data_protocol">1H NMR 950 MHz</field>
+        <field name="instrument_platform">Bruker Avance III</field>
+        <field name="study_factor">ethnicity:muslim | gender:female | respose to vaccine:high | sample day:0</field>
+        <field name="study_factor">ethnicity:hindu | gender:male | respose to vaccine:low | sample day:0</field>
+        <field name="study_factor">ethnicity:hindu | gender:female | respose to vaccine:high | sample day:28</field>
+        <field name="study_factor">ethnicity:muslim | gender:female | respose to vaccine:high | sample day:28</field>
+        <field name="study_factor">ethnicity:hindu | gender:male | respose to vaccine:high | sample day:28</field>
+        <field name="study_factor">ethnicity:hindu | gender:male | respose to vaccine:high | sample day:0</field>
+        <field name="study_factor">ethnicity:muslim | gender:male | respose to vaccine:low | sample day:28</field>
+        <field name="study_factor">ethnicity:muslim | gender:male | respose to vaccine:high | sample day:0</field>
+        <field name="study_factor">ethnicity:muslim | gender:female | respose to vaccine:low | sample day:0</field>
+        <field name="study_factor">ethnicity:muslim | gender:male | respose to vaccine:high | sample day:28</field>
+        <field name="study_factor">ethnicity:muslim | gender:male | respose to vaccine:low | sample day:0</field>
+        <field name="study_factor">ethnicity:muslim | gender:female | respose to vaccine:low | sample day:28</field>
+        <field name="study_factor">ethnicity:hindu | gender:male | respose to vaccine:low | sample day:28</field>
+        <field name="study_factor">ethnicity:hindu | gender:female | respose to vaccine:high | sample day:0</field>
+        <field name="study_factor">ethnicity:hindu | gender:female | respose to vaccine:low | sample day:0</field>
+        <field name="study_factor">ethnicity:hindu | gender:female | respose to vaccine:low | sample day:28</field>
+        <field name="species">Homo sapiens</field>
+        <field name="technology_type">Bruker Avance III</field>
+        <field name="submitter">Susan Sumner</field>
+        <field name="submitter_mail">ssumner@rti.org</field>
+        <field name="submitter_affiliation">Systems and Translational Sciences (STS), RTI International</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

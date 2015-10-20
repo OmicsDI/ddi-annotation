@@ -1,0 +1,65 @@
+<database>
+  <name>PRIDE Archive</name>
+  <description/>
+  <release>3</release>
+  <release_date>2015-05-13</release_date>
+  <entry_count>1</entry_count>
+  <entries>
+    <entry id="PXD000001">
+      <name>TMT spikes</name>
+      <description>Expected reporter ion ratios: Erwinia peptides:    1:1:1:1:1:1 Enolase spike (sp|P00924|ENO1_YEAST):  10:5:2.5:1:2.5:10 BSA spike (sp|P02769|ALBU_BOVIN):  1:2.5:5:10:5:1 PhosB spike (sp|P00489|PYGM_RABIT):  2:2:2:2:1:1 Cytochrome C spike (sp|P62894|CYC_BOVIN): 1:1:1:1:1:2</description>
+      <cross_references>
+        <ref dbkey="554" dbname="TAXONOMY"/>
+        <ref dbkey="23692960" dbname="pubmed"/>
+        <ref dbkey="P00489" dbname="uniprot"/>
+        <ref dbkey="P62894" dbname="uniprot"/>
+        <ref dbkey="P00761" dbname="uniprot"/>
+        <ref dbkey="ENSBTAP00000007918" dbname="ensembl"/>
+        <ref dbkey="P00924" dbname="uniprot"/>
+        <ref dbkey="P02769" dbname="uniprot"/>
+      </cross_references>
+      <dates>
+        <date type="submission" value="2012-03-13"/>
+        <date type="publication" value="2012-03-07"/>
+      </dates>
+      <additional_fields>
+        <field name="omics_type">Proteomics</field>
+        <field name="full_dataset_link">http://www.ebi.ac.uk/pride/archive/projects/PXD000001</field>
+        <field name="repository">pride</field>
+        <field name="sample_protocol">Not available</field>
+        <field name="data_protocol">Two extra files have been added post-publication:&lt;br&gt;&lt;a href="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/03/PXD000001/TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01-20141210.mzML" target="_top"&gt;TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01-20141210.mzML&lt;/a&gt;&lt;br&gt;&lt;a href="ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/03/PXD000001/TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01-20141210.mzXML" target="_top"&gt;TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01-20141210.mzXML&lt;/a&gt;</field>
+        <field name="instrument_platform">instrument model</field>
+        <field name="instrument_platform">LTQ Orbitrap Velos</field>
+        <field name="species">Erwinia carotovora</field>
+        <field name="cell_type">Not available</field>
+        <field name="disease">Not available</field>
+        <field name="tissue">Tissue not applicable to dataset</field>
+        <field name="modification">monohydroxylated residue</field>
+        <field name="modification">methylthiolated residue</field>
+        <field name="modification">TMT6plex-126 reporter+balance reagent acylated residue</field>
+        <field name="technology_type">Bottom-up proteomics</field>
+        <field name="technology_type">Mass Spectrometry</field>
+        <field name="curator_keywords">PRIME-XS Project</field>
+        <field name="submitter_keywords">TMT</field>
+        <field name="submitter_keywords">Eriwinia</field>
+        <field name="submitter_keywords">spikes</field>
+        <field name="quantification_method">Not available</field>
+        <field name="submission_type">COMPLETE</field>
+        <field name="software">Matrix Science Mascot 2.3.02</field>
+        <field name="doi">10.6019/PXD000001</field>
+        <field name="publication">Gatto L, Christoforou A; Using R and Bioconductor for proteomics data analysis., Biochim Biophys Acta, 2013 May 18, </field>
+        <field name="submitter">Laurent Gatto</field>
+        <field name="submitter_mail">lg390@cam.ac.uk</field>
+        <field name="submitter_affiliation">Department of Biochemistry, University of Cambridge</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/03/PXD000001/erwinia_carotovora.fasta</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/03/PXD000001/F063721.dat</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/03/PXD000001/F063721.dat-mztab.txt</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/03/PXD000001/TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01.raw</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/03/PXD000001/TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/03/PXD000001/PRIDE_Exp_Complete_Ac_22134.xml.gz</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/03/PXD000001/TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01-20141210.mzXML</field>
+        <field name="dataset_file">ftp://ftp.pride.ebi.ac.uk/pride/data/archive/2012/03/PXD000001/TMT_Erwinia_1uLSike_Top10HCD_isol2_45stepped_60min_01-20141210.mzML</field>
+      </additional_fields>
+    </entry>
+  </entries>
+</database>

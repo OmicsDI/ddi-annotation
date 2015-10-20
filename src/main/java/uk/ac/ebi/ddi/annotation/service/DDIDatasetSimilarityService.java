@@ -1,5 +1,7 @@
 package uk.ac.ebi.ddi.annotation.service;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import uk.ac.ebi.ddi.service.db.model.similarity.*;
@@ -13,6 +15,9 @@ import java.util.*;
  * Created by mingze on 11/09/15.
  */
 public class DDIDatasetSimilarityService {
+
+    public static final Logger logger = LoggerFactory.getLogger(DDIDatasetSimilarityService.class);
+
     @Autowired
     TermInDBService termInDBService = new TermInDBService();
     @Autowired
@@ -21,21 +26,20 @@ public class DDIDatasetSimilarityService {
     DatasetStatInfoService datasetStatInfoService= new DatasetStatInfoService();
 
     private double[][] cosineScores = null;
+
     private List<ExpOutputDataset> expOutputDatasets = null;
+
     private HashMap<String, Integer> indecies = null;
+
     private List<TermInDB> termsInDB;
+
     private HashMap<String, Double> idfWeightMap;
+
     private String dataType;
 
 
-//    public DDIExpDataProcessService(String dataType) {
-//        this.expOutputDatasets = this.expOutputDatasetService.readAllInOneType(dataType);
-//        this.termsInDB = termInDBService.readAllInOneType(dataType);
-//        this.dataType = dataType;
-//    }
-
     /**
-     * default datatype
+     * Default Constructor
      */
     public DDIDatasetSimilarityService() {
         this.idfWeightMap = new HashMap<>();
@@ -60,10 +64,8 @@ public class DDIDatasetSimilarityService {
             tempscore = (double) numberOfDatasets / (double) term.getDatasetFrequency();
             double idfWeigt = Math.log(tempscore) / Math.log(2);
             this.idfWeightMap.put(term.getTermName(), idfWeigt);
-//            term.setIdfWeight(idfWeigt);   //here we have to write it to the termStatInfo, just creat a new termStatInfo;
-//            termInDBService.update(term);
         }
-        System.out.println("end of calculating IDFWeight for" + dataType);
+        logger.info("End of calculating IDFWeight for" + dataType);
     }
 
     /**
@@ -77,10 +79,11 @@ public class DDIDatasetSimilarityService {
             throw new IllegalStateException("The dataType for calculate Intersections is" + dataType + ", not same as prev calculated dataType" + this.dataType);
         }
 
-        System.out.println("start to calculate similarity for" + dataType);
+        logger.info("start to calculate similarity for" + dataType);
 
         long numberOfDatasets = expOutputDatasets.size();
-        System.out.println("The number of Datasets for calculate Intersections:" + numberOfDatasets);
+
+        logger.info("The number of Datasets for calculate Intersections:" + numberOfDatasets);
 
         int i = 0;
         this.indecies = new HashMap<String, Integer>();
@@ -100,20 +103,20 @@ public class DDIDatasetSimilarityService {
                 datasetIntersectionInfos.addAll(tempIntersectionInfos);
             }
 
-//            dataset.setTerms(terms);
             datasetIntersectionInfos = mergeIntersectionInfos(datasetIntersectionInfos);
 
             DatasetStatInfo datasetStatInfo = new DatasetStatInfo(dataset.getAccession(), "unkownDatabase", dataType, datasetIntersectionInfos);
             datasetStatInfoService.insert(datasetStatInfo);
         }
-        System.out.println("end of calculating similarity for" + dataType);
+        logger.info("End of calculating similarity for" + dataType);
     }
 
     /**
-     * If one dataset share multiple terms with another dataset, merge the multiple Intersection Informations into one and set the right SharedTermNo
+     * If one dataset share multiple terms with another dataset, merge the multiple Intersection Informations into one and set
+     * the right SharedTermNo
      *
-     * @param datasetIntersectionInfos
-     * @return
+     * @param datasetIntersectionInfos The dataset Interseptions
+     * @return a List of intersections
      */
     private List<IntersectionInfo> mergeIntersectionInfos(List<IntersectionInfo> datasetIntersectionInfos) {
         List<IntersectionInfo> newIntersectionInfos = new ArrayList<>();
@@ -187,7 +190,6 @@ public class DDIDatasetSimilarityService {
                 List<TermInList> termsOfThatDataset = dataset2.getTerms();
                 if (termsOfThisDataset == termsOfThatDataset) { //same dataset
                     cosineScores[indexOfThisDataset][indexOfThatDataset] = -1;
-                    continue;
                 } else {
                     if (cosineScores[indexOfThisDataset][indexOfThatDataset] != 0) {//already calculated
                         continue;
@@ -206,9 +208,6 @@ public class DDIDatasetSimilarityService {
                     double scoreFinal = score / (normMap.get(dataset.getAccession()) * normMap.get(dataset2.getAccession()));
                     cosineScores[indexOfThisDataset][indexOfThatDataset] = scoreFinal;
                     cosineScores[indexOfThatDataset][indexOfThisDataset] = scoreFinal;
-//                    if(intersectionTerms.size()>1) {
-//                        System.out.println(dataset.getAccession() + "share with" + dataset2.getAccession() + ":" + intersectionTerms.size());
-//                    }
                 }
             }
         }

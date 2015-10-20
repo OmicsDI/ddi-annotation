@@ -19,22 +19,6 @@
 		<constructor-arg ref="mongo" />
 		<constructor-arg name="databaseName" value="test" />
 	</bean>
-	
-<!-- alternate config with in memory java driver to mongo With this, you are not going through mongo local db, instead of that, you are using a inmemory mongo instance --> 
-	<!--<bean name="fongo" class="com.github.fakemongo.Fongo">-->
-		<!--<constructor-arg value="InMemoryMongo" />-->
-	<!--</bean>-->
-	
-	<!--<bean id="mongofongo" factory-bean="fongo" factory-method="getMongo" />-->
-
-	<!--<mongo:db-factory id="mongoDbFactory" mongo-ref="mongofongo" />-->
-
-	<!-- localhost settings for mongo -->
-	<!--<mongo:db-factory id="mongoDbFactory" /> -->
-<!--  -->
-	<!--<bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">-->
-		<!--<constructor-arg ref="mongoDbFactory" />-->
-	<!--</bean>-->
 
     <bean id="service" class="uk.ac.ebi.ddi.service.db.service.logger.DatasetResourceService"/>
     <bean id="accessService" class="uk.ac.ebi.ddi.service.db.service.logger.HttpEventService"/>

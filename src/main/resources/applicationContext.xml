@@ -11,7 +11,7 @@
 
 
 	<!-- See http://stackoverflow.com/questions/2129876/using-spring-mapping-to-root-in-web-xml-static-resources-arent-found -->
-	<import resource="spring-data-mongo-Test.xml" />
+	<import resource="spring-data-mongo.xml" />
 
 
 </beans>
