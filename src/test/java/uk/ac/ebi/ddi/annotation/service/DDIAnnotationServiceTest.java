@@ -27,6 +27,7 @@ public class DDIAnnotationServiceTest {
         long startTime = System.currentTimeMillis();
         for (int i=0; i<10; i++) {
             for (int j = 0; j < 20; j++) {
+
                 ArrayList<String> temp = annotService.getSynonymsForWord("cancer");
                 for (String temp2 : temp) {
                     System.out.println(temp2);

@@ -19,26 +19,26 @@ import uk.ac.ebi.ddi.service.db.service.similarity.TermInDBService;
 @Component
 public class SimilarityCalculator {
 
-    TermInDBService termInDBService;
+    public static void main(String[] args) {
 
-    DDIDatasetSimilarityService ddiDatasetSimilarityService = new DDIDatasetSimilarityService();
-
-    ExpOutputDatasetService expOutputDatasetService = new ExpOutputDatasetService();
-
-    DDIExpDataImportService ddiExpDataImportService = new DDIExpDataImportService();
-
-    private MongoTemplate mongoTemplate;
+        //For test, avoid inputing argument
+        String[] argsExample = {"--dataType=ProteomicsData"};
+        args = argsExample;
 
 
-    public void main( String[] args ) {
+        TermInDBService termInDBService;
+        DDIDatasetSimilarityService ddiDatasetSimilarityService = new DDIDatasetSimilarityService();
+        ExpOutputDatasetService expOutputDatasetService = new ExpOutputDatasetService();
+        DDIExpDataImportService ddiExpDataImportService = new DDIExpDataImportService();
+        MongoTemplate mongoTemplate;
 
+        //JavaBeans
         ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
         termInDBService = (TermInDBService) ctx.getBean("termInDBService");
         ddiDatasetSimilarityService = (DDIDatasetSimilarityService) ctx.getBean("ddiDatasetSimilarityService");
         expOutputDatasetService = (ExpOutputDatasetService) ctx.getBean("expOutputDatasetService");
-        ddiExpDataImportService = (DDIExpDataImportService) ctx.getBean("expOutputDatasetService");
+        ddiExpDataImportService = (DDIExpDataImportService) ctx.getBean("ddiExpDataImportService");
         mongoTemplate = (MongoTemplate) ctx.getBean("mongoTemplate");
-
 
 
         // Definite command line
@@ -49,7 +49,7 @@ public class SimilarityCalculator {
         String helpOpt = "help";
         options.addOption("h", helpOpt, false, "print help message");
 
-        String dataTypeOpt= "dataType";
+        String dataTypeOpt = "dataType";
         Option dataTypeOption = OptionBuilder
                 .withLongOpt(dataTypeOpt)
                 .withArgName("Omics Data Type")
@@ -65,28 +65,27 @@ public class SimilarityCalculator {
         try {
             // parse the command line arguments
 
-            CommandLine line = parser.parse( options, args );
-            if (line.hasOption(helpOpt) || line.getOptions().length ==0) {
+            CommandLine line = parser.parse(options, args);
+            if (line.hasOption(helpOpt) || line.getOptions().length == 0) {
                 HelpFormatter formatter = new HelpFormatter();
                 formatter.printHelp("SimilarityCalculator", options);
-            }else {
+            } else {
                 if (line.hasOption("dataType")) {
                     System.out.println("the option is:" + line.getOptionValue(dataTypeOpt));
                     dataTypeInput = line.getOptionValue(dataTypeOpt);
                 }
             }
 
-        }
-        catch( ParseException exp ) {
+        } catch (ParseException exp) {
             // oops, something went wrong
-            System.err.println( "Parsing failed.  Reason: " + exp.getMessage() );
+            System.err.println("Parsing failed.  Reason: " + exp.getMessage());
         }
 
 
-//        DDIDatasetSimilarityService similarityService = new DDIDatasetSimilarityService();
-        if(dataTypeInput!=null) {
+        if (dataTypeInput != null) {
             ddiDatasetSimilarityService.calculateIDFWeight(dataTypeInput);
             ddiDatasetSimilarityService.calculateSimilarity(dataTypeInput);
         }
     }
+
 }
