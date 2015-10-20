@@ -3,7 +3,6 @@ package uk.ac.ebi.ddi.annotation.service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
 import uk.ac.ebi.ddi.service.db.model.similarity.*;
 import uk.ac.ebi.ddi.service.db.service.similarity.DatasetStatInfoService;
 import uk.ac.ebi.ddi.service.db.service.similarity.ExpOutputDatasetService;
@@ -16,7 +15,7 @@ import java.util.*;
  */
 public class DDIDatasetSimilarityService {
 
-    public static final Logger logger = LoggerFactory.getLogger(DDIDatasetSimilarityService.class);
+    private static final Logger logger = LoggerFactory.getLogger(DDIDatasetSimilarityService.class);
 
     @Autowired
     TermInDBService termInDBService = new TermInDBService();
@@ -33,7 +32,7 @@ public class DDIDatasetSimilarityService {
 
     private List<TermInDB> termsInDB;
 
-    private HashMap<String, Double> idfWeightMap;
+    private final HashMap<String, Double> idfWeightMap;
 
     private String dataType;
 
@@ -86,7 +85,7 @@ public class DDIDatasetSimilarityService {
         logger.info("The number of Datasets for calculate Intersections:" + numberOfDatasets);
 
         int i = 0;
-        this.indecies = new HashMap<String, Integer>();
+        this.indecies = new HashMap<>();
         for (ExpOutputDataset dataset : expOutputDatasets) {
             this.indecies.put(dataset.getAccession(), i++);
         }
@@ -157,7 +156,7 @@ public class DDIDatasetSimilarityService {
      * @return
      */
     private List<IntersectionInfo> getIntersectionInfos(TermInList term, ExpOutputDataset dataset, List<ExpOutputDataset> relatedDatasets) {
-        List<IntersectionInfo> intersectionInfos = new ArrayList<IntersectionInfo>();
+        List<IntersectionInfo> intersectionInfos = new ArrayList<>();
         int indexOfThisDataset = this.indecies.get(dataset.getAccession());
         for (ExpOutputDataset relateddataset : relatedDatasets) {
             int indexOfThatDataset = this.indecies.get(relateddataset.getAccession());
@@ -179,7 +178,7 @@ public class DDIDatasetSimilarityService {
     private double[][] calculateCosineScore(List<ExpOutputDataset> expOutputDatasets, long numberOfDatasets) {
 
         double[][] cosineScores = new double[(int) numberOfDatasets][(int) numberOfDatasets];
-        List<TermInList> intersectionTerms = null;
+        List<TermInList> intersectionTerms;
         HashMap<String, Double> normMap = CalculateNormArray();
 
         for (ExpOutputDataset dataset : expOutputDatasets) {
@@ -216,7 +215,7 @@ public class DDIDatasetSimilarityService {
     }
 
     private HashMap<String, Double> CalculateNormArray() {
-        HashMap<String, Double> normMap = new HashMap<String, Double>();
+        HashMap<String, Double> normMap = new HashMap<>();
 
         for (ExpOutputDataset dataset : expOutputDatasets) {
             double norm = 0;
@@ -231,7 +230,7 @@ public class DDIDatasetSimilarityService {
     }
 
     private List<ExpOutputDataset> getRelatedDatasets(ExpOutputDataset originDataset, TermInList term, List<ExpOutputDataset> expOutputDatasets) {
-        List<ExpOutputDataset> relatedDatasets = new ArrayList<ExpOutputDataset>();
+        List<ExpOutputDataset> relatedDatasets = new ArrayList<>();
         for (ExpOutputDataset possibleDataset : expOutputDatasets) {
             if (possibleDataset.getAccession().equals(originDataset.getAccession())) {
                 continue;
@@ -248,7 +247,7 @@ public class DDIDatasetSimilarityService {
     }
 
     private static List<TermInList> getIntersectionSet(List<TermInList> set1, List<TermInList> set2) {
-        List<TermInList> cloneSet = new ArrayList<TermInList>();
+        List<TermInList> cloneSet = new ArrayList<>();
         for (TermInList termInList : set1) {
             for (TermInList termInList2 : set2) {
                 if (termInList.getTermName().equals(termInList2.getTermName())) {

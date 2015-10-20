@@ -1,6 +1,5 @@
 package uk.ac.ebi.ddi.annotation.model;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 /**

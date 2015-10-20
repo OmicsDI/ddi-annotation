@@ -20,6 +20,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import uk.ac.ebi.ddi.annotation.model.AnnotedWord;
 import uk.ac.ebi.ddi.annotation.model.DatasetTobeEnriched;
 import uk.ac.ebi.ddi.annotation.model.EnrichedDataset;
+import uk.ac.ebi.ddi.annotation.utils.Constants;
 import uk.ac.ebi.ddi.service.db.model.enrichment.DatasetEnrichmentInfo;
 import uk.ac.ebi.ddi.service.db.model.enrichment.WordInField;
 import uk.ac.ebi.ddi.service.db.model.enrichment.Synonym;
@@ -33,7 +34,7 @@ import uk.ac.ebi.ddi.service.db.service.enrichment.SynonymsService;
  */
 public class DDIAnnotationService {
 
-    public static final Logger logger = LoggerFactory.getLogger(DDIAnnotationService.class);
+    private static final Logger logger = LoggerFactory.getLogger(DDIAnnotationService.class);
 
     @Autowired
     SynonymsService synonymsService = new SynonymsService();
@@ -42,8 +43,9 @@ public class DDIAnnotationService {
 
     /**
      * Enrichment on the dataset, includes title, abstraction, sample protocol, data protocol.
-     * @param datasetTobeEnriched
-     * @return
+     *
+     * @param datasetTobeEnriched the dataset to be enrich by the service
+     * @return and enriched dataset
      */
 
     public EnrichedDataset enrichment(DatasetTobeEnriched datasetTobeEnriched) throws JSONException, UnsupportedEncodingException {
@@ -81,8 +83,9 @@ public class DDIAnnotationService {
 
     /**
      * Transfer the words found in field to the synonyms String
-     * @param wordsInField
-     * @return
+     *
+     * @param wordsInField the words provided by the service
+     * @return the final string of the enrichment
      */
     private String EnrichField(List<WordInField> wordsInField) throws JSONException {
         if (wordsInField == null || wordsInField.isEmpty()) {
@@ -107,7 +110,7 @@ public class DDIAnnotationService {
     /**
      * Get the biology related words in one field from WebService at bioontology.org
      *
-     * @param fieldText
+     * @param fieldText a field Text
      * @return the words which are identified in the fieldText by recommender API from bioontology.org
      */
     private List<WordInField> getWordsInFiledFromWS(String fieldText) throws JSONException, UnsupportedEncodingException {
@@ -116,14 +119,12 @@ public class DDIAnnotationService {
             return null;
         }
 
-        List<WordInField> matchedWords = new ArrayList<WordInField>();
+        List<WordInField> matchedWords = new ArrayList<>();
         JSONArray annotationResults;
         String recommenderPreUrl = "http://data.bioontology.org/recommender?ontologies=MESH,MS&apikey=807fa818-0a7c-43be-9bac-51576e8795f5&input=";
         fieldText = fieldText.replace("%", "");//to avoid malformed error
         String recommenderUrl = recommenderPreUrl + URLEncoder.encode(fieldText, "UTF-8");
-        //String recommenderUrl = recommenderPreUrl + fieldText.replace(" ", "%20");
-        String output = "";
-        output = getFromWSAPI(recommenderUrl);
+        String output = getFromWSAPI(recommenderUrl);
         if(output == null)
             return null;
 
@@ -139,9 +140,7 @@ public class DDIAnnotationService {
 
             JSONObject ontology = annotationResult.getJSONArray("ontologies").getJSONObject(0);
 
-            String ontologyName = (String) ontology.get("acronym");
             JSONObject coverageResult = annotationResult.getJSONObject("coverageResult");
-            int numberOfTerms = coverageResult.getInt("numberTermsCovered");
             JSONArray matchedTerms = coverageResult.getJSONArray("annotations");
 
             matchedWords.addAll(getDistinctWordList(matchedTerms));
@@ -161,8 +160,8 @@ public class DDIAnnotationService {
      * Get all synonyms for a word from mongoDB. If this word is not in the DB, then get it's synonyms from Web Service,
      * and insert them into the mongoDB. One assumption: if word1 == word2, word2 == word3, then word1 == word3, == means
      * synonym.
-     * @param word
-     * @return
+     * @param word to retrieve the given synonyms
+     * @return the list of synonyms
      */
     public ArrayList<String> getSynonymsForWord(String word) throws JSONException {
         ArrayList<String> synonyms;
@@ -183,13 +182,13 @@ public class DDIAnnotationService {
                 mainWordLabel = word;
                 Synonym mainWordSynonym = synonymsService.insert(mainWordLabel);
                 for (String synonym : synonyms) {
-                    if (synonym != mainWordLabel && !synonymsService.isWordExist(synonym)) {
+                    if (synonym.equalsIgnoreCase(mainWordLabel) && !synonymsService.isWordExist(synonym)) {
                         synonymsService.insertAsSynonym(mainWordSynonym, synonym);
                     }
                 }
 
             } else {  //main word already exist, insert others as main word's synonyms
-                System.out.println("We have a special situation: " + mainWordLabel + " is a synonym of " + word + ", " + mainWordLabel + "exists but not" + word);
+                logger.debug("We have a special situation: " + mainWordLabel + " is a synonym of " + word + ", " + mainWordLabel + "exists but not" + word);
 
                 Synonym mainWordSynonym = synonymsService.readByLabel(mainWordLabel);
                 for (String synonym : synonyms) {
@@ -208,14 +207,14 @@ public class DDIAnnotationService {
     /**
      * get synonyms for a word, from the bioportal web service API
      *
-     * @param word
+     * @param word the word to look for synonyms
      * @return get synonyms of the word, by annotator API from bioontology.org
      */
     protected ArrayList<String> getSynonymsForWordFromWS(String word) throws JSONException {
         String lowerWord = word.toLowerCase();
-        ArrayList<String> synonyms = new ArrayList<String>();
+        ArrayList<String> synonyms = new ArrayList<>();
 
-        String annotationPreUrl = "http://data.bioontology.org/annotator?ontologies=MESH,MS&longest_only=true&whole_word_only=false&apikey=807fa818-0a7c-43be-9bac-51576e8795f5&text=";
+        String annotationPreUrl = Constants.OBO_URL;
         String annotatorUrl = annotationPreUrl + lowerWord.replace(" ", "%20") ;
         String output = "";
         output = getFromWSAPI(annotatorUrl);
@@ -243,9 +242,6 @@ public class DDIAnnotationService {
 
         String matchedWord = annotation.getString("text").toLowerCase();
         int suffixStartPos = annotation.getInt("to");
-        String suffixString = word.substring(suffixStartPos, word.length());
-
-        int wordLength = word.length();
 
         JSONArray matchedClasses = findBioOntologyMatchclasses(matchedWord, annotationResults);
 
@@ -274,9 +270,8 @@ public class DDIAnnotationService {
     /**
      * get WebService output from bioportal
      *
-     * @param url
+     * @param url the url to retrieve the information form the web service
      * @return access url by HTTP client
-     * @throws IOException
      */
     private String getFromWSAPI(String url){
         String output = null;
@@ -287,7 +282,7 @@ public class DDIAnnotationService {
             HttpGet getRequest = new HttpGet(url);
             getRequest.setConfig(params);
             getRequest.addHeader("accept", "application/json");
-            HttpResponse response = null;
+            HttpResponse response;
             response = httpClient.execute(getRequest);
             BufferedReader br = new BufferedReader(
                     new InputStreamReader((response.getEntity().getContent())));
@@ -307,7 +302,7 @@ public class DDIAnnotationService {
      *
      * @param matchedWord       chosen from the first annotation result from annotator API as the matched ontology word
      * @param annotationResults annotation results from annotator API, may contain multiple matched classes
-     * @return
+     * @return a JSONArray with all the terms and annotations
      */
     private JSONArray findBioOntologyMatchclasses(String matchedWord, JSONArray annotationResults) throws JSONException {
         JSONArray matchedClasses = new JSONArray();
@@ -337,18 +332,12 @@ public class DDIAnnotationService {
         return matchedClasses;
     }
 
-    private ArrayList<AnnotedWord> annotate(JSONArray annotationResults, ArrayList<String> removedWords) {
-
-        return null;
-    }
-
-
     /**
      * @param matchedTerms got from annotation results, which may overlap with other terms
      * @return matchedWords chosen word, which is the longest term in the overlapped terms
      */
     private List<WordInField> getDistinctWordList(JSONArray matchedTerms) throws JSONException {
-        List<WordInField> matchedWords = new ArrayList<WordInField>();
+        List<WordInField> matchedWords = new ArrayList<>();
         for (int i = 0; i < matchedTerms.length(); i++) {
             JSONObject matchedTerm = (JSONObject) matchedTerms.get(i);
 
@@ -399,9 +388,7 @@ public class DDIAnnotationService {
     private WordInField findOverlappedWordInList(WordInField word, List<WordInField> matchedWords) {
         WordInField overlappedWord = null;
 
-        for (int i = 0; i < matchedWords.size(); i++) {
-            WordInField wordInList = matchedWords.get(i);
-
+        for (WordInField wordInList : matchedWords) {
             if (word.getFrom() <= wordInList.getTo() && word.getTo() >= wordInList.getTo()) {
                 System.out.println("find a overlapped word for '" + word + "':" + wordInList);
                 overlappedWord = wordInList;

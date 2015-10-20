@@ -35,13 +35,8 @@ public class DDIExpDataProcessServiceTest {
 
     @Test
     public void testCalculate() throws Exception {
-//        ddiExpDataProcessService.calculateIDFWeight("ProteomicsData");
-//        ddiExpDataProcessService.calculateSimilarity("ProteomicsData");
         ddiExpDataProcessService.calculateIDFWeight("MetabolomicsData");
         ddiExpDataProcessService.calculateSimilarity("MetabolomicsData");
     }
 
-    @Test
-    public void testCalculateIntersections() throws Exception {
-    }
 }

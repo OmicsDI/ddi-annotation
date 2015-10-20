@@ -13,6 +13,11 @@ public class DatasetTobeEnriched {
     private String sampleProtocol;
     private String dataProtocol;
 
+    /**
+     * Default contructor
+     * @param accession accession of the dataaset
+     * @param database database or repository where this dataset has been found
+     */
     public DatasetTobeEnriched(String accession, String database) {
         this.accession = accession;
         this.database = database;
