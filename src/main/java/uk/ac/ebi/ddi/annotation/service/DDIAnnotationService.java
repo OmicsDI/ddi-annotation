@@ -278,7 +278,7 @@ public class DDIAnnotationService {
         try {
             final RequestConfig params = RequestConfig.custom().setConnectTimeout(600*1000).setSocketTimeout(600*1000).build();
             CloseableHttpClient httpClient = HttpClientBuilder.create().build();
-            System.out.println("Getting from: "+url);
+            logger.debug("Getting from: "+url);
             HttpGet getRequest = new HttpGet(url);
             getRequest.setConfig(params);
             getRequest.addHeader("accept", "application/json");
@@ -359,10 +359,10 @@ public class DDIAnnotationService {
     }
 
     /**
-     * Todo: add here the description
+     * Choose the longer one between word and overlapped word, write it in the matchedWords
      * @param word the word to be search in the
      * @param overlappedWordInList
-     * @param matchedWords         choose the longer one between word and overlapped word, write it in the matchedWords
+     * @param matchedWords
      */
     private void modifyWordList(WordInField word, WordInField overlappedWordInList, List<WordInField> matchedWords) {
         int from = word.getFrom();
@@ -382,10 +382,10 @@ public class DDIAnnotationService {
     }
 
     /**
-     * Todo: add here the description
+     * Find the words in matchedWords which is overlapped with "word"
      * @param word
      * @param matchedWords
-     * @return find the words in matchedWords which is overlapped with "word"
+     * @return
      */
     private WordInField findOverlappedWordInList(WordInField word, List<WordInField> matchedWords) {
         WordInField overlappedWord = null;
