@@ -1,6 +1,7 @@
 package uk.ac.ebi.ddi.annotation.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import uk.ac.ebi.ddi.annotation.utils.DataType;
 import uk.ac.ebi.ddi.service.db.model.similarity.TermInList;
 import uk.ac.ebi.ddi.service.db.model.similarity.ExpOutputDataset;
 import uk.ac.ebi.ddi.service.db.model.similarity.TermInDB;
@@ -51,9 +52,9 @@ public class DDIExpDataImportService {
     private List<TermInList> getTermsInDataset(String dataType, String datasetAcc, List<Reference> refs) {
         List<TermInList> terms = new ArrayList<>();
         String refKeyWord = null;
-        if (dataType.equals("ProteomicsData")) {
+        if (dataType.equals(DataType.PROTEOMICS_DATA.getName())) {
             refKeyWord = "uniprot";
-        } else if (dataType.equals("MetabolomicsData")) {
+        } else if (dataType.equals(DataType.METABOLOMICS_DATA.getName())) {
             refKeyWord = "ChEBI";
         }
 

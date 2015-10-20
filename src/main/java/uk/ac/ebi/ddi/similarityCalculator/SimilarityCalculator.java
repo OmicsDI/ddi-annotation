@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 import uk.ac.ebi.ddi.annotation.service.DDIDatasetSimilarityService;
 import org.apache.commons.cli.*;
 import uk.ac.ebi.ddi.annotation.service.DDIExpDataImportService;
+import uk.ac.ebi.ddi.annotation.utils.DataType;
 import uk.ac.ebi.ddi.service.db.service.similarity.ExpOutputDatasetService;
 import uk.ac.ebi.ddi.service.db.service.similarity.TermInDBService;
 
@@ -53,8 +54,8 @@ public class SimilarityCalculator {
                 .withLongOpt(dataTypeOpt)
                 .withArgName("Omics Data Type")
                 .hasArgs()
-                .withDescription("ProteomicsData/MetabolomicsData")
-                .create();
+                .withDescription(DataType.PROTEOMICS_DATA.getName() + "/" + DataType.METABOLOMICS_DATA.getName())
+                        .create();
         options.addOption(dataTypeOption);
 
 

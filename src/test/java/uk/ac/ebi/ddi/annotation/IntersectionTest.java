@@ -9,6 +9,7 @@ import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import uk.ac.ebi.ddi.annotation.service.DDIExpDataImportService;
+import uk.ac.ebi.ddi.annotation.utils.DataType;
 import uk.ac.ebi.ddi.xml.validator.exception.DDIException;
 import uk.ac.ebi.ddi.xml.validator.parser.OmicsXMLFile;
 import uk.ac.ebi.ddi.xml.validator.parser.marshaller.OmicsDataMarshaller;
@@ -78,7 +79,7 @@ public class  IntersectionTest{
 
         assert urlMetabolomics != null;
         File folder = new File(urlMetabolomics.toURI());
-        String dataType = "MetabolomicsData";
+        String dataType = DataType.METABOLOMICS_DATA.getName();
 
         File[] listOfFiles = folder.listFiles();
 
@@ -125,7 +126,7 @@ public class  IntersectionTest{
 
         assert urlProteomics != null;
         File folder = new File(urlProteomics.toURI());
-        String dataType = "ProteomicsData";
+        String dataType = DataType.PROTEOMICS_DATA.getName();
 
         File[] listOfFiles = folder.listFiles();
 
