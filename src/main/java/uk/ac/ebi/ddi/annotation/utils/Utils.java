@@ -4,7 +4,7 @@ package uk.ac.ebi.ddi.annotation.utils;
  * @author Yasset Perez-Riverol (ypriverol@gmail.com)
  * @date 20/10/15
  */
-public class Utils {
+class Utils {
 
     public static String encode(String input) {
         StringBuilder resultStr = new StringBuilder();
@@ -25,8 +25,6 @@ public class Utils {
     }
 
     private static boolean isUnsafe(char ch) {
-        if (ch > 128 || ch < 0)
-            return true;
-        return " %$&+,/:;=?@<>#%".indexOf(ch) >= 0;
+        return ch > 128 || ch < 0 || " %$&+,/:;=?@<>#%".indexOf(ch) >= 0;
     }
 }

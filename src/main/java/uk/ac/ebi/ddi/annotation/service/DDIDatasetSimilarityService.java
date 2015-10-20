@@ -132,11 +132,11 @@ public class DDIDatasetSimilarityService {
     }
 
     /**
-     * locate the index of intersectionInfo in the new merged intersectionInfo list
+     * Locate the index of intersectionInfo in the new merged intersectionInfo list
      *
-     * @param datasetIntersectionInfos
-     * @param tempIntersectionInfo
-     * @return
+     * @param datasetIntersectionInfos the dataset list to compute the interception
+     * @param tempIntersectionInfo a temporary interception information
+     * @return index of the word in a given list
      */
     private int contains(List<IntersectionInfo> datasetIntersectionInfos, IntersectionInfo tempIntersectionInfo) {
         for (int i = 0; i < datasetIntersectionInfos.size(); i++) {
@@ -150,9 +150,9 @@ public class DDIDatasetSimilarityService {
     /**
      * Get intersectionInfos from related datasets, which linked by term
      *
-     * @param term
-     * @param dataset
-     * @param relatedDatasets
+     * @param term the term to compute the interception
+     * @param dataset the dataset
+     * @param relatedDatasets related datasets
      * @return
      */
     private List<IntersectionInfo> getIntersectionInfos(TermInList term, ExpOutputDataset dataset, List<ExpOutputDataset> relatedDatasets) {

@@ -359,7 +359,8 @@ public class DDIAnnotationService {
     }
 
     /**
-     * @param word
+     * Todo: add here the description
+     * @param word the word to be search in the
      * @param overlappedWordInList
      * @param matchedWords         choose the longer one between word and overlapped word, write it in the matchedWords
      */
@@ -381,6 +382,7 @@ public class DDIAnnotationService {
     }
 
     /**
+     * Todo: add here the description
      * @param word
      * @param matchedWords
      * @return find the words in matchedWords which is overlapped with "word"
