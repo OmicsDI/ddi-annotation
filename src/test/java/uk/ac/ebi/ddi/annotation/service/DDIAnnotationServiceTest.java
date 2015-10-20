@@ -8,6 +8,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import uk.ac.ebi.ddi.annotation.model.DatasetTobeEnriched;
 import uk.ac.ebi.ddi.annotation.model.EnrichedDataset;
+import uk.ac.ebi.ddi.xml.validator.exception.DDIException;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -41,7 +42,7 @@ public class DDIAnnotationServiceTest {
     }
 
     @Test
-    public void enrichmentTest() throws IOException, JSONException {
+    public void enrichmentTest() throws IOException, JSONException, DDIException {
 
         DatasetTobeEnriched datasetTobeEnriched1 = new DatasetTobeEnriched("PXD002287", "PRIDE");
         datasetTobeEnriched1.setTitle("Proteome-wide analysis of lysine acetylation suggests its broad regulatory scope in Saccharomyces cerevisiae.");

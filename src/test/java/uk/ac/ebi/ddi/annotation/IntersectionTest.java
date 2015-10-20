@@ -1,6 +1,5 @@
 package uk.ac.ebi.ddi.annotation;
 
-import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -42,7 +41,7 @@ public class  IntersectionTest{
     @Autowired
     DatasetStatInfoService datasetStatInfoService= new DatasetStatInfoService();
 
-    OmicsXMLFile reader;
+    private OmicsXMLFile reader;
 
     @Before
     public void setUp() throws Exception {
@@ -108,7 +107,7 @@ public class  IntersectionTest{
                         System.out.println("deal the" + index + "entry in "+file.getName()+";");
                         index++;
                         Entry entry = reader.getEntryByIndex(i);
-                        String entryId = entry.getId().toString();
+                        String entryId = entry.getId();
                         List<Reference> refs = entry.getCrossReferences().getRef();
                         ddiExpDataImportService.importDataset(dataType, entryId, refs);
                     }
@@ -155,7 +154,7 @@ public class  IntersectionTest{
                         System.out.println("deal the" + index + "entry in "+file.getName()+";");
                         index++;
                         Entry entry = reader.getEntryByIndex(i);
-                        String entryId = entry.getId().toString();
+                        String entryId = entry.getId();
                         List<Reference> refs = entry.getCrossReferences().getRef();
                         ddiExpDataImportService.importDataset(dataType, entryId, refs);
                     }
@@ -214,7 +213,7 @@ public class  IntersectionTest{
 
     public static int getIntersection(HashSet<String> set1, HashSet<String> set2) {
         boolean set1IsLarger = set1.size() > set2.size();
-        Set<String> cloneSet = new HashSet<String>(set1IsLarger ? set2 : set1);
+        Set<String> cloneSet = new HashSet<>(set1IsLarger ? set2 : set1);
         cloneSet.retainAll(set1IsLarger ? set1 : set2);
         return cloneSet.size();
     }
