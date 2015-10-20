@@ -27,7 +27,6 @@
 	<bean id="ddiExpDataImportService" class="uk.ac.ebi.ddi.annotation.service.DDIExpDataImportService"/>
 	<bean id="ddiDatasetSimilarityService" class="uk.ac.ebi.ddi.annotation.service.DDIDatasetSimilarityService"/>
 	<bean id="datasetStatInfoService" class="uk.ac.ebi.ddi.service.db.service.similarity.DatasetStatInfoService"/>
-
 	<bean id="InDBServiceRepo" class="uk.ac.ebi.ddi.service.db.repo.similarity.ITermInDBRepoImpl"/>
     <bean class="uk.ac.ebi.ddi.service.db.utils.CascadingMongoEventListener" />
 

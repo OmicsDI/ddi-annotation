@@ -45,7 +45,4 @@ public class DDIExpDataProcessServiceTest {
         ddiExpDataProcessService.calculateSimilarity("MetabolomicsData");
     }
 
-    @Test
-    public void testCalculateIntersections() throws Exception {
-    }
 }
