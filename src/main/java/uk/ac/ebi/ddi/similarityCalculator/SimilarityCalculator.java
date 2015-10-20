@@ -17,19 +17,15 @@ import uk.ac.ebi.ddi.service.db.service.similarity.TermInDBService;
 
 @Component
 public class SimilarityCalculator {
-    @Autowired
+
     TermInDBService termInDBService;
 
-    @Autowired
     DDIDatasetSimilarityService ddiDatasetSimilarityService = new DDIDatasetSimilarityService();
 
-    @Autowired
     ExpOutputDatasetService expOutputDatasetService = new ExpOutputDatasetService();
 
-    @Autowired
     DDIExpDataImportService ddiExpDataImportService = new DDIExpDataImportService();
 
-    @Autowired
     private MongoTemplate mongoTemplate;
 
 

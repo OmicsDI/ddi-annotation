@@ -190,7 +190,6 @@ public class DDIDatasetSimilarityService {
                 List<TermInList> termsOfThatDataset = dataset2.getTerms();
                 if (termsOfThisDataset == termsOfThatDataset) { //same dataset
                     cosineScores[indexOfThisDataset][indexOfThatDataset] = -1;
-                    continue;
                 } else {
                     if (cosineScores[indexOfThisDataset][indexOfThatDataset] != 0) {//already calculated
                         continue;
