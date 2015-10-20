@@ -29,12 +29,7 @@ public class SimilarityCalculator {
     private MongoTemplate mongoTemplate;
 
 
-    private  void startMain( String[] args ) {
-
-        //Todo: This tool needs to be refined
-        String[] args2 = {"--dataType=ProteomicsData"};
-        String[] args3 = {"--dataType=MetabolomicsData"};
-        args = args3;
+    public void main( String[] args ) {
 
         ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
         termInDBService = (TermInDBService) ctx.getBean("termInDBService");
@@ -93,9 +88,4 @@ public class SimilarityCalculator {
             ddiDatasetSimilarityService.calculateSimilarity(dataTypeInput);
         }
     }
-    public static void main(String[] args) {
-        SimilarityCalculator p = new SimilarityCalculator();
-        p.startMain(args);
-    }
-
 }
