@@ -104,13 +104,14 @@ public class  IntersectionTest{
                     System.out.println("\n\n"+fileindex + "-" + file.getName()+":");
                     fileindex++;
                     reader = new OmicsXMLFile(file);
+                    String database = reader.getName();
                     for (int i=0; i<reader.getEntryIds().size(); i++) {
                         System.out.println("deal the" + index + "entry in "+file.getName()+";");
                         index++;
                         Entry entry = reader.getEntryByIndex(i);
-                        String entryId = entry.getId();
+                        String entryAccession = entry.getAcc();
                         List<Reference> refs = entry.getCrossReferences().getRef();
-                        ddiExpDataImportService.importDataset(dataType, entryId, refs);
+                        ddiExpDataImportService.importDatasetTerms(dataType, entryAccession, database, refs);
                     }
                 }
             }
@@ -151,13 +152,14 @@ public class  IntersectionTest{
                     System.out.println("\n\n"+fileindex + "-" + file.getName()+":");
                     fileindex++;
                     reader = new OmicsXMLFile(file);
+                    String database = reader.getName();
                     for (int i=0; i<reader.getEntryIds().size(); i++) {
                         System.out.println("deal the" + index + "entry in "+file.getName()+";");
                         index++;
                         Entry entry = reader.getEntryByIndex(i);
                         String entryId = entry.getId();
                         List<Reference> refs = entry.getCrossReferences().getRef();
-                        ddiExpDataImportService.importDataset(dataType, entryId, refs);
+                        ddiExpDataImportService.importDatasetTerms(dataType, entryId,database,refs);
                     }
                 }
             }

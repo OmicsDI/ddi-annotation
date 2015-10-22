@@ -63,16 +63,50 @@ public class DDIAnnotationService {
         String sampleProtocol = datasetTobeEnriched.getSampleProtocol();
         String dataProtocol = datasetTobeEnriched.getDataProtocol();
 
-        List<WordInField> wordsInTitle = getWordsInFiledFromWS(title);
-        List<WordInField> wordsInAbstractDesc = getWordsInFiledFromWS(abstractDescription);
-        List<WordInField> wordsInSampleProtocol = getWordsInFiledFromWS(sampleProtocol);
-        List<WordInField> wordsInDataProtocol = getWordsInFiledFromWS(dataProtocol);
+        DatasetEnrichmentInfo prevDatasetInfo = enrichmentInfoService.readByAccession(accession, database);
 
+        List<WordInField> wordsInTitle = null;
+        List<WordInField> wordsInAbstractDesc = null;
+        List<WordInField> wordsInSampleProtocol = null;
+        List<WordInField> wordsInDataProtocol = null;
+        if(prevDatasetInfo == null) {
+            wordsInTitle = getWordsInFiledFromWS(title);
+            wordsInAbstractDesc = getWordsInFiledFromWS(abstractDescription);
+            wordsInSampleProtocol = getWordsInFiledFromWS(sampleProtocol);
+            wordsInDataProtocol = getWordsInFiledFromWS(dataProtocol);
+        }
+        else {
+            if (title!=null && !prevDatasetInfo.getTitleString().equals(title)) {
+                wordsInTitle = getWordsInFiledFromWS(title);
+            } else {
+                wordsInTitle = prevDatasetInfo.getTitle();
+            }
+            if (abstractDescription!=null && !prevDatasetInfo.getAbstractString().equals(abstractDescription)) {
+                wordsInAbstractDesc = getWordsInFiledFromWS(abstractDescription);
+            } else {
+                wordsInAbstractDesc = prevDatasetInfo.getAbstractDescription();
+            }
+            if (sampleProtocol!=null && !prevDatasetInfo.getSampleProtocolString().equals(sampleProtocol)) {
+                wordsInSampleProtocol = getWordsInFiledFromWS(sampleProtocol);
+            } else {
+                wordsInSampleProtocol = prevDatasetInfo.getSampleProtocol();
+            }
+            if (dataProtocol!=null && !prevDatasetInfo.getDataProtocolString().equals(dataProtocol)) {
+                wordsInDataProtocol = getWordsInFiledFromWS(dataProtocol);
+            } else {
+                wordsInDataProtocol = prevDatasetInfo.getDataProtocol();
+            }
+        }
         datasetEnrichmentInfo.setTitle(wordsInTitle);
         datasetEnrichmentInfo.setAbstractDescription(wordsInAbstractDesc);
         datasetEnrichmentInfo.setSampleProtocol(wordsInSampleProtocol);
         datasetEnrichmentInfo.setDataProtocol(wordsInDataProtocol);
         datasetEnrichmentInfo.setEnrichTime(new Date());
+
+        datasetEnrichmentInfo.setTitleString(datasetTobeEnriched.getTitle());
+        datasetEnrichmentInfo.setAbstractString(datasetTobeEnriched.getAbstractDescription());
+        datasetEnrichmentInfo.setSampleProtocolString(datasetTobeEnriched.getSampleProtocol());
+        datasetEnrichmentInfo.setDataProtocolString(datasetTobeEnriched.getDataProtocol());
         enrichmentInfoService.insert(datasetEnrichmentInfo);
 
         enrichedDataset.setEnrichedTitle(EnrichField(wordsInTitle));

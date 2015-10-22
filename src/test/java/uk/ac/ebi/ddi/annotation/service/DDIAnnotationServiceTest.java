@@ -8,6 +8,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import uk.ac.ebi.ddi.annotation.model.DatasetTobeEnriched;
 import uk.ac.ebi.ddi.annotation.model.EnrichedDataset;
+import uk.ac.ebi.ddi.annotation.utils.DataType;
 import uk.ac.ebi.ddi.xml.validator.exception.DDIException;
 
 import java.io.IOException;
@@ -44,7 +45,7 @@ public class DDIAnnotationServiceTest {
     @Test
     public void enrichmentTest() throws IOException, JSONException, DDIException {
 
-        DatasetTobeEnriched datasetTobeEnriched1 = new DatasetTobeEnriched("PXD002287", "PRIDE");
+        DatasetTobeEnriched datasetTobeEnriched1 = new DatasetTobeEnriched("PXD002287", "PRIDE", DataType.PROTEOMICS_DATA.getName());
         datasetTobeEnriched1.setTitle("Proteome-wide analysis of lysine acetylation suggests its broad regulatory scope in Saccharomyces cerevisiae.");
 
         String abstraction = "Post-translational modification of proteins by lysine acetylation plays important regulatory roles in living cells. The budding yeast Saccharomyces cerevisiae is a widely used unicellular eukaryotic model organism in biomedical research. S. cerevisiae contains several evolutionary conserved lysine acetyltransferases and deacetylases. However, only a few dozen acetylation sites in S. cerevisiae are known, presenting a major obstacle for further understanding the regulatory roles of acetylation in this organism. Here we use high resolution mass spectrometry to identify about 4000 lysine acetylation sites in S. cerevisiae. Acetylated proteins are implicated in the regulation of diverse cytoplasmic and nuclear processes including chromatin organization, mitochondrial metabolism, and protein synthesis. Bioinformatic analysis of yeast acetylation sites shows that acetylated lysines are significantly more conserved compared with nonacetylated lysines. A large fraction of the conserved acetylation sites are present on proteins involved in cellular metabolism, protein synthesis, and protein folding. Furthermore, quantification of the Rpd3-regulated acetylation sites identified several previously known, as well as new putative substrates of this deacetylase. Rpd3 deficiency increased acetylation of the SAGA (Spt-Ada-Gcn5-Acetyltransferase) complex subunit Sgf73 on K33. This acetylation site is located within a critical regulatory domain in Sgf73 that interacts with Ubp8 and is involved in the activation of the Ubp8-containing histone H2B deubiquitylase complex. Our data provides the first global survey of acetylation in budding yeast, and suggests a wide-ranging regulatory scope of this modification. The provided dataset may serve as an important resource for the functional analysis of lysine acetylation in eukaryotes.";

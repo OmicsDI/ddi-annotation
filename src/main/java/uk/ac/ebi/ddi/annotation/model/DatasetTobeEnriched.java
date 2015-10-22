@@ -7,6 +7,7 @@ public class DatasetTobeEnriched {
 
     private String accession;
     private String database;
+    private String dataType;
 
     private String title;
     private String abstractDescription;
@@ -18,9 +19,10 @@ public class DatasetTobeEnriched {
      * @param accession accession of the dataaset
      * @param database database or repository where this dataset has been found
      */
-    public DatasetTobeEnriched(String accession, String database) {
+    public DatasetTobeEnriched(String accession, String database, String dataType) {
         this.accession = accession;
         this.database = database;
+        this.dataType = dataType;
     }
 
     /**
@@ -92,5 +94,13 @@ public class DatasetTobeEnriched {
 
     public void setDataProtocol(String dataProtocol) {
         this.dataProtocol = dataProtocol;
+    }
+
+    public String getDataType() {
+        return dataType;
+    }
+
+    public void setDataType(String dataType) {
+        this.dataType = dataType;
     }
 }

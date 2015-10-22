@@ -27,19 +27,43 @@ public class DDIExpDataImportService {
      * Import dataset from the reference data in XML files
      * @param dataType omics type of the dataset
      * @param datasetAcc Accession of the dataset
-     * @param refs cross reference data in XML files, contains cross ref id and DB
+     * @param refs cross reference molecule data in XML files, contains cross ref id and DB
      * @return sucess
      */
-    public String importDataset(String dataType, String datasetAcc, List<Reference> refs) {
-        if (expOutputDatasetService.isDatasetExist(datasetAcc)) {
-            System.out.println("Dataset" + datasetAcc + " has been imported before, please check it");
-        } else {
-            List<TermInList> terms = getTermsInDataset(dataType, datasetAcc, refs);
+    public String importDatasetTerms(String dataType, String datasetAcc, String database, List<Reference> refs) {
 
+        ExpOutputDataset importedExpDataset = expOutputDatasetService.readByAccession(datasetAcc, database);
+        List<TermInList> terms = getTermsInDataset(dataType, datasetAcc, refs);
+        if(importedExpDataset!=null){
+            if(isTermsChanged(importedExpDataset.getTerms(),terms)){
+                importedExpDataset.setTerms(terms);
+                expOutputDatasetService.update(importedExpDataset);
+                return "Updated dataset successfully";
+            }
+            else return "Unchanged, did nothing";
+        }
+        else {
             ExpOutputDataset newExpDataset = new ExpOutputDataset(datasetAcc, "NA", dataType, terms);
             expOutputDatasetService.insert(newExpDataset);
+            return "Inserted new dataset successfully";
         }
-        return "Success";
+
+    }
+
+    private boolean isTermsChanged(List<TermInList> importedTerms, List<TermInList> terms) {
+
+        if(terms.size()!=importedTerms.size()){
+            return false;
+        } else {
+            importedTerms.retainAll(terms);
+            if (terms.size() != importedTerms.size()) {
+                return false;
+            } else{
+                return true;
+            }
+        }
+
+
     }
 
     /**
