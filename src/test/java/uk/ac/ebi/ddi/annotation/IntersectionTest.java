@@ -109,7 +109,7 @@ public class  IntersectionTest{
                         System.out.println("deal the" + index + "entry in "+file.getName()+";");
                         index++;
                         Entry entry = reader.getEntryByIndex(i);
-                        String entryAccession = entry.getAcc();
+                        String entryAccession = entry.getId();
                         List<Reference> refs = entry.getCrossReferences().getRef();
                         ddiExpDataImportService.importDatasetTerms(dataType, entryAccession, database, refs);
                     }

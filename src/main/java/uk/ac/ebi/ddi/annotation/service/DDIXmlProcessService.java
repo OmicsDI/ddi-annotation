@@ -27,6 +27,7 @@ import java.util.*;
  * @author Mingze
  */
 public class DDIXmlProcessService {
+
     private static final Logger logger = LoggerFactory.getLogger(DDIXmlProcessService.class);
 
     @Autowired
