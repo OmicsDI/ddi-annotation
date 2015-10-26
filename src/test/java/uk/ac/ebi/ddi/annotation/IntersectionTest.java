@@ -15,6 +15,8 @@ import uk.ac.ebi.ddi.xml.validator.parser.OmicsXMLFile;
 import uk.ac.ebi.ddi.xml.validator.parser.marshaller.OmicsDataMarshaller;
 import uk.ac.ebi.ddi.xml.validator.parser.model.*;
 import uk.ac.ebi.ddi.service.db.service.similarity.*;
+import uk.ac.ebi.ddi.xml.validator.utils.*;
+import uk.ac.ebi.ddi.xml.validator.utils.Field;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -105,13 +107,13 @@ public class  IntersectionTest{
                     fileindex++;
                     reader = new OmicsXMLFile(file);
                     String database = reader.getName();
-                    for (int i=0; i<reader.getEntryIds().size(); i++) {
+                    for (int i=0; i < reader.getEntryIds().size(); i++) {
                         System.out.println("deal the" + index + "entry in "+file.getName()+";");
                         index++;
                         Entry entry = reader.getEntryByIndex(i);
                         String entryAccession = entry.getId();
                         List<Reference> refs = entry.getCrossReferences().getRef();
-                        ddiExpDataImportService.importDatasetTerms(dataType, entryAccession, database, refs);
+                        ddiExpDataImportService.importDatasetTerms(dataType, entryAccession, entry.getAdditionalFieldValue(Field.REPOSITORY.getName()), refs);
                     }
                 }
             }
