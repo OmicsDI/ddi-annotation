@@ -13,6 +13,7 @@ import uk.ac.ebi.ddi.xml.validator.exception.DDIException;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -29,7 +30,7 @@ public class DDIAnnotationServiceTest {
         for (int i=0; i<10; i++) {
             for (int j = 0; j < 20; j++) {
 
-                ArrayList<String> temp = annotService.getSynonymsForWord("cancer");
+                List<String> temp = annotService.getSynonymsForWord("cancer");
                 for (String temp2 : temp) {
                     System.out.println(temp2);
                 }

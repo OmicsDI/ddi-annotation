@@ -8,8 +8,11 @@ import java.util.ArrayList;
  * ClusterNo is used to cluster the synonyms into a single set
  */
 public class AnnotedWord {
+
     private String label;
+
     private ArrayList<String> synonymsOfWord;
+
     private int ClusterNo;
 
     public int getFrequent() {
