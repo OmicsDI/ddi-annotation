@@ -43,7 +43,7 @@ public class DDIExpDataImportService {
             else return "Unchanged, did nothing";
         }
         else {
-            ExpOutputDataset newExpDataset = new ExpOutputDataset(datasetAcc, "NA", dataType, terms);
+            ExpOutputDataset newExpDataset = new ExpOutputDataset(datasetAcc, database, dataType, terms);
             expOutputDatasetService.insert(newExpDataset);
             return "Inserted new dataset successfully";
         }
