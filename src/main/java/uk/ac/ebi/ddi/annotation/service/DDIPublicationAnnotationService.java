@@ -1,6 +1,10 @@
 package uk.ac.ebi.ddi.annotation.service;
 
 import uk.ac.ebi.ddi.annotation.utils.DOIUtils;
+import uk.ac.ebi.ddi.extservices.pubmed.client.PubmedWsClient;
+import uk.ac.ebi.ddi.extservices.pubmed.config.PubmedWsConfigProd;
+import uk.ac.ebi.ddi.extservices.pubmed.model.PubmedJSON;
+import uk.ac.ebi.ddi.extservices.pubmed.model.Record;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -20,10 +24,18 @@ public class DDIPublicationAnnotationService {
 
     private static DDIPublicationAnnotationService instance;
 
-    private DDIPublicationAnnotationService(){
+    PubmedWsClient clientPMC = new PubmedWsClient(new PubmedWsConfigProd());
 
-    }
 
+    /**
+     * Private Constructor
+     */
+    private DDIPublicationAnnotationService(){}
+
+    /**
+     * Public instance to be retrieved
+     * @return Public-Unique instance
+     */
     public static DDIPublicationAnnotationService getInstance(){
         if(instance == null){
             instance = new DDIPublicationAnnotationService();
@@ -32,9 +44,16 @@ public class DDIPublicationAnnotationService {
     }
 
 
-    List<String> getPubMedIDs(List<String> textList){
+    /**
+     * This function find a set of no n-redundant DOI ids inside free-text, it can be use in high-troughput
+     * for the annotation of public DOI
+     *
+     * @param textList The list of free text
+     * @return A list of DOI ids
+     */
+    public List<String> getDOIListFromText(List<String> textList){
 
-        Set<String> pubmedSet = new HashSet<>();
+        Set<String> doiSet = new HashSet<>();
 
         String fullText = "";
 
@@ -42,19 +61,41 @@ public class DDIPublicationAnnotationService {
             fullText = fullText + text + " ";
 
         if(DOIUtils.containsDOI(fullText))
-            pubmedSet.addAll(DOIUtils.extractDOIs(fullText));
+            doiSet.addAll(DOIUtils.extractDOIs(fullText));
 
-        if(pubmedSet != null && pubmedSet.size() > 0){
+        if(doiSet != null && doiSet.size() > 0){
             Set results = new HashSet();
-            for(String pubmedid: pubmedSet){
-                pubmedid = DOIUtils.cleanDOI(pubmedid);
-                pubmedid = DOIUtils.cleanDOITrail(pubmedid);
-                results.add(pubmedid);
+            for(String doID: doiSet){
+                doID = DOIUtils.cleanDOI(doID);
+                doID = DOIUtils.cleanDOITrail(doID);
+                results.add(doID);
             }
 
-            pubmedSet = results;
+            doiSet = results;
         }
-        return new ArrayList<>(pubmedSet);
-
+        return new ArrayList<>(doiSet);
     }
+
+    /**
+     * Return a list of pubmed ids from the doi list for those doi ids that cab be found in pubmed
+     *
+     * @param doiList
+     * @return
+     */
+    public List<String> getPubMedIDsFromDOIList(List<String> doiList){
+        List<String> pubmedIds = new ArrayList<>();
+        if(doiList != null && doiList.size() > 0){
+            PubmedJSON resultJSON = clientPMC.getPubmedIds(doiList);
+            if(resultJSON != null && resultJSON.getRecords() != null && resultJSON.getRecords().length > 0){
+                for(Record record: resultJSON.getRecords()){
+                    if(record != null && record.getPmid() != null && !record.getPmid().isEmpty())
+                        pubmedIds.add(record.getPmid());
+                }
+            }
+        }
+
+        return pubmedIds;
+    }
+
+
 }

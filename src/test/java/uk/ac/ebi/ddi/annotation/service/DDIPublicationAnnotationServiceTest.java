@@ -50,14 +50,14 @@ public class DDIPublicationAnnotationServiceTest {
                 " a powerful tool for understanding the molecular composition of living cells.";
 
         List<String> listTerms = new ArrayList<>();
+
         listTerms.add(example);
-        List<String> dois = service.getPubMedIDs(listTerms);
 
-        PubmedWsClient clientPMC = new PubmedWsClient(new PubmedWsConfigProd());
+        List<String> dois = service.getDOIListFromText(listTerms);
 
-        PubmedJSON pubmedResult = clientPMC.getPubmedIds(dois);
+        List<String> ids = service.getPubMedIDsFromDOIList(dois);
 
-        System.out.println(pubmedResult.getRecords().length);
+        System.out.println(ids.size());
 
 
     }
