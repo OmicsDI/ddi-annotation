@@ -163,6 +163,7 @@ public class DDIDatasetSimilarityService {
             int indexOfThatDataset = this.indecies.get(relateddataset.getAccession());
             IntersectionInfo intersectionInfo = new IntersectionInfo();
             intersectionInfo.setRelatedDatasetAcc(relateddataset.getAccession());
+            intersectionInfo.setRelatedDatasetDatabase(relateddataset.getDatabase());
             intersectionInfo.setCosineScore(this.cosineScores[indexOfThisDataset][indexOfThatDataset]);
             intersectionInfos.add(intersectionInfo);
         }
