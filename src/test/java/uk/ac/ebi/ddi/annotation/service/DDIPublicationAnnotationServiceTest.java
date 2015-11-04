@@ -3,6 +3,9 @@ package uk.ac.ebi.ddi.annotation.service;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import uk.ac.ebi.ddi.extservices.pubmed.client.PubmedWsClient;
+import uk.ac.ebi.ddi.extservices.pubmed.config.PubmedWsConfigProd;
+import uk.ac.ebi.ddi.extservices.pubmed.model.PubmedJSON;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,7 +51,14 @@ public class DDIPublicationAnnotationServiceTest {
 
         List<String> listTerms = new ArrayList<>();
         listTerms.add(example);
-        service.getPubMedIDs(listTerms);
+        List<String> dois = service.getPubMedIDs(listTerms);
+
+        PubmedWsClient clientPMC = new PubmedWsClient(new PubmedWsConfigProd());
+
+        PubmedJSON pubmedResult = clientPMC.getPubmedIds(dois);
+
+        System.out.println(pubmedResult.getRecords().length);
+
 
     }
 }

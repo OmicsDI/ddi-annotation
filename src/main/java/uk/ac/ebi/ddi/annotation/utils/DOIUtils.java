@@ -1,5 +1,9 @@
 package uk.ac.ebi.ddi.annotation.utils;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import uk.ac.ebi.ddi.annotation.service.DDIDatasetSimilarityService;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -15,6 +19,8 @@ import java.util.regex.Pattern;
  *
  */
 public class DOIUtils {
+
+    private static final Logger logger = LoggerFactory.getLogger(DOIUtils.class);
 
 	/**
 	 * Host name of the DOI resolver. 
@@ -76,15 +82,16 @@ public class DOIUtils {
 	 * @param string
 	 * @return The extracted DOI.
 	 */
-	public static List<String> extractDOI(final String string) {
+	public static List<String> extractDOIs(final String string) {
         Set<String> values = new HashSet<>();
 		if (string != null) {
             Matcher matcher = ONLY_DOI_PATTERN.matcher(string);
-            while (matcher.find())
-                System.out.println(matcher.group(2));
-				return new ArrayList<>(values);
-			}
-		return null;
+            while (matcher.find()){
+                logger.debug(matcher.group(2));
+                values.add(matcher.group(2));
+            }
+        }
+        return new ArrayList<>(values);
 	}
 	
 	/**
@@ -146,5 +153,15 @@ public class DOIUtils {
 		}
 		return s;
 	}
+
+    public static String cleanDOITrail(String doi){
+        if(doi.endsWith(".")){
+            doi = doi.substring(0,doi.length()-1);
+            cleanDOITrail(doi);
+        }
+        return doi;
+    }
+
+
  
 }

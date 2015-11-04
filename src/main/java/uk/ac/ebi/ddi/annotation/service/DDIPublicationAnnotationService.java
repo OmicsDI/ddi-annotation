@@ -1,14 +1,11 @@
 package uk.ac.ebi.ddi.annotation.service;
 
-import uk.ac.ebi.ddi.annotation.utils.Constants;
 import uk.ac.ebi.ddi.annotation.utils.DOIUtils;
 
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 /**
  * This class help to lookup for doi in text and get the pubmed if
@@ -44,12 +41,19 @@ public class DDIPublicationAnnotationService {
         for(String text: textList)
             fullText = fullText + text + " ";
 
-        if(DOIUtils.containsDOI(fullText)){
-            List string = DOIUtils.extractDOI(fullText);
-            System.out.println(string);
+        if(DOIUtils.containsDOI(fullText))
+            pubmedSet.addAll(DOIUtils.extractDOIs(fullText));
+
+        if(pubmedSet != null && pubmedSet.size() > 0){
+            Set results = new HashSet();
+            for(String pubmedid: pubmedSet){
+                pubmedid = DOIUtils.cleanDOI(pubmedid);
+                pubmedid = DOIUtils.cleanDOITrail(pubmedid);
+                results.add(pubmedid);
+            }
+
+            pubmedSet = results;
         }
-
-
         return new ArrayList<>(pubmedSet);
 
     }
