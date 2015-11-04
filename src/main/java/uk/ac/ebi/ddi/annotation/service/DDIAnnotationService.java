@@ -213,40 +213,6 @@ public class DDIAnnotationService {
             Synonym synonym = synonymsService.insert(word, synonyms);
             if(synonym != null && synonym.getSynonyms() != null)
                 synonyms = synonym.getSynonyms();
-
-
-//            if(synonyms==null)
-//                return synonyms;
-//
-//            String mainWordLabel = null;
-//
-//            for (String synonym : synonyms) {
-//                if (synonymsService.isWordExist(synonym)) {
-//                    mainWordLabel = synonym;
-//                    break;
-//                }
-//            }
-//
-//            if (mainWordLabel == null) {
-//                mainWordLabel = word;
-//                Synonym mainWordSynonym = synonymsService.insert(mainWordLabel);
-//                for (String synonym : synonyms) {
-//                    if (synonym.equalsIgnoreCase(mainWordLabel) && !synonymsService.isWordExist(synonym)) {
-//                        synonymsService.insert(mainWordSynonym, synonym);
-//                    }
-//                }
-//
-//            } else {  //main word already exist, insert others as main word's synonyms
-//                logger.debug("We have a special situation: " + mainWordLabel + " is a synonym of " + word + ", " + mainWordLabel + "exists but not" + word);
-//
-//                Synonym mainWordSynonym = synonymsService.readByLabel(mainWordLabel);
-//                for (String synonym : synonyms) {
-//                    if (!synonym.equals(mainWordLabel) && !synonymsService.isWordExist(synonym)) {
-//                        synonymsService.insertAsSynonym(mainWordSynonym, synonym);
-//                    }
-//                }
-//            }
-//            synonyms = synonymsService.getAllSynonyms(word);
         }
 
         return synonyms;

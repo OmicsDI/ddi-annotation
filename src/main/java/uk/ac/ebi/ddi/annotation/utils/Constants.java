@@ -24,4 +24,5 @@ public class Constants {
     public static final String OBO_URL = "http://data.bioontology.org/ontologies/";
     public static final String OBO_API_KEY = "?apikey=807fa818-0a7c-43be-9bac-51576e8795f5";
     public static final String CLASSES = "/classes/";
+
 }

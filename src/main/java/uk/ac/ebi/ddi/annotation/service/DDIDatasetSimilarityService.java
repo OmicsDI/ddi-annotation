@@ -7,6 +7,7 @@ import uk.ac.ebi.ddi.service.db.model.similarity.*;
 import uk.ac.ebi.ddi.service.db.service.similarity.DatasetStatInfoService;
 import uk.ac.ebi.ddi.service.db.service.similarity.ExpOutputDatasetService;
 import uk.ac.ebi.ddi.service.db.service.similarity.TermInDBService;
+import uk.ac.ebi.ddi.service.db.utils.Constants;
 
 import java.util.*;
 
@@ -104,7 +105,7 @@ public class DDIDatasetSimilarityService {
 
             datasetIntersectionInfos = mergeIntersectionInfos(datasetIntersectionInfos);
 
-            DatasetStatInfo datasetStatInfo = new DatasetStatInfo(dataset.getAccession(), "unkownDatabase", dataType, datasetIntersectionInfos);
+            DatasetStatInfo datasetStatInfo = new DatasetStatInfo(dataset.getAccession(), dataset.getDatabase(), dataType, datasetIntersectionInfos);
             datasetStatInfoService.insert(datasetStatInfo);
         }
         logger.info("End of calculating similarity for" + dataType);
