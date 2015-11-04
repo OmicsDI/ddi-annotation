@@ -91,9 +91,9 @@ public class  IntersectionTest{
         }
 
         //delete all data in Mongodb
-        expOutputDatasetService.deleteAll();
-        termInDBService.deleteAll();
-        datasetStatInfoService.deleteAll();
+//        expOutputDatasetService.deleteAll();
+//        termInDBService.deleteAll();
+//        datasetStatInfoService.deleteAll();
 
 
 //        int iterTime = 199;
