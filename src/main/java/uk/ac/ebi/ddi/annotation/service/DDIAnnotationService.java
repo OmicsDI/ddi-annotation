@@ -7,7 +7,6 @@ import java.net.URLEncoder;
 import java.util.*;
 import java.util.regex.Pattern;
 
-import com.sun.tools.xjc.addon.code_injector.Const;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.methods.HttpGet;
@@ -18,7 +17,6 @@ import org.json.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import uk.ac.ebi.ddi.annotation.model.AnnotedWord;
 import uk.ac.ebi.ddi.annotation.model.DatasetTobeEnriched;
 import uk.ac.ebi.ddi.annotation.model.EnrichedDataset;
 import uk.ac.ebi.ddi.annotation.utils.Constants;
@@ -74,8 +72,7 @@ public class DDIAnnotationService {
             wordsInAbstractDesc = getWordsInFiledFromWS(abstractDescription);
             wordsInSampleProtocol = getWordsInFiledFromWS(sampleProtocol);
             wordsInDataProtocol = getWordsInFiledFromWS(dataProtocol);
-        }
-        else {
+        }else {
             if (title!=null && !prevDatasetInfo.getTitleString().equals(title)) {
                 wordsInTitle = getWordsInFiledFromWS(title);
             } else {
@@ -86,7 +83,7 @@ public class DDIAnnotationService {
             } else {
                 wordsInAbstractDesc = prevDatasetInfo.getAbstractDescription();
             }
-            if (sampleProtocol!=null && !prevDatasetInfo.getSampleProtocolString().equals(sampleProtocol)) {
+            if (sampleProtocol!=null && prevDatasetInfo.getSampleProtocolString() != null && !prevDatasetInfo.getSampleProtocolString().equals(sampleProtocol)) {
                 wordsInSampleProtocol = getWordsInFiledFromWS(sampleProtocol);
             } else {
                 wordsInSampleProtocol = prevDatasetInfo.getSampleProtocol();

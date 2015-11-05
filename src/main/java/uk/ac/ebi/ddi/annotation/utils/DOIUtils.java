@@ -155,7 +155,7 @@ public class DOIUtils {
 	}
 
     public static String cleanDOITrail(String doi){
-        if(doi.endsWith(".")){
+        if(doi.endsWith(".") || doi.endsWith("]") || doi.endsWith(",")){
             doi = doi.substring(0,doi.length()-1);
             cleanDOITrail(doi);
         }
