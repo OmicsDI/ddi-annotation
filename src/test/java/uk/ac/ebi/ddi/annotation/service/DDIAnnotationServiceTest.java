@@ -10,8 +10,15 @@ import uk.ac.ebi.ddi.annotation.model.DatasetTobeEnriched;
 import uk.ac.ebi.ddi.annotation.model.EnrichedDataset;
 import uk.ac.ebi.ddi.annotation.utils.DataType;
 import uk.ac.ebi.ddi.xml.validator.exception.DDIException;
+import uk.ac.ebi.ddi.xml.validator.parser.OmicsXMLFile;
+import uk.ac.ebi.ddi.xml.validator.parser.model.Entry;
+import uk.ac.ebi.ddi.xml.validator.parser.model.Reference;
 
+import java.io.File;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.URISyntaxException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,6 +30,7 @@ public class DDIAnnotationServiceTest {
     @Autowired
     DDIAnnotationService annotService = new DDIAnnotationService();
 
+    private OmicsXMLFile reader;
 //    @Test
 //    public void annotationTest() throws IOException, JSONException {
 //
@@ -64,6 +72,50 @@ public class DDIAnnotationServiceTest {
         System.out.println(enrichedDataset1.getEnrichedAbstractDescription());
         System.out.println(enrichedDataset1.getEnrichedSampleProtocol());
         System.out.println(enrichedDataset1.getEnrichedDataProtocol());
+
+    }
+
+    @Test
+    public void proteomicFilsAnnotationTest() throws URISyntaxException, DDIException, UnsupportedEncodingException, JSONException {
+        URL urlProteomics = DDIXmlProcessServiceTest.class.getClassLoader().getResource("pride-files");
+
+        assert urlProteomics != null;
+        File folder = new File(urlProteomics.toURI());
+        String dataType = DataType.PROTEOMICS_DATA.getName();
+
+        File[] listOfFiles = folder.listFiles();
+        int index = 1;
+        int fileindex = 1;
+        assert listOfFiles != null;
+        for (File file : listOfFiles) {
+            if (file.isFile()) {
+                if (file.getName().toLowerCase().endsWith("xml")) {
+                    System.out.println("\n\n" + fileindex + "-" + file.getName() + ":");
+                    fileindex++;
+                    reader = new OmicsXMLFile(file);
+                    String database = reader.getName();
+                    for (int i = 0; i < reader.getEntryIds().size(); i++) {
+                        System.out.println("deal the" + index + "entry in " + file.getName() + ";");
+                        index++;
+                        Entry entry = reader.getEntryByIndex(i);
+                        String entryId = entry.getId();
+
+                        String title = entry.getName().getValue();
+                        String description = entry.getDescription();
+                        String sampleProtocol = entry.getAdditionalFieldValue("sample_protocl");
+                        String dataProtocol = entry.getAdditionalFieldValue("data_protocl");
+                        DatasetTobeEnriched datasetTobeEnriched1 = new DatasetTobeEnriched(entryId, database, DataType.PROTEOMICS_DATA.getName());
+
+                        datasetTobeEnriched1.setTitle(title);
+                        datasetTobeEnriched1.setAbstractDescription(description);
+                        datasetTobeEnriched1.setSampleProtocol(sampleProtocol);
+                        datasetTobeEnriched1.setDataProtocol(dataProtocol);
+
+                        EnrichedDataset enrichedDataset1 = annotService.enrichment(datasetTobeEnriched1);
+                    }
+                }
+            }
+        }
 
     }
 }
