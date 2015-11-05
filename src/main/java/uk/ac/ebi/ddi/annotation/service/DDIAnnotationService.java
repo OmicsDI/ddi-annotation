@@ -72,23 +72,24 @@ public class DDIAnnotationService {
             wordsInAbstractDesc = getWordsInFiledFromWS(abstractDescription);
             wordsInSampleProtocol = getWordsInFiledFromWS(sampleProtocol);
             wordsInDataProtocol = getWordsInFiledFromWS(dataProtocol);
-        }else {
-            if (title!=null && !prevDatasetInfo.getTitleString().equals(title)) {
+        }
+        else {
+            if (title!=null && !title.equals(prevDatasetInfo.getTitleString())) {
                 wordsInTitle = getWordsInFiledFromWS(title);
             } else {
                 wordsInTitle = prevDatasetInfo.getTitle();
             }
-            if (abstractDescription!=null && !prevDatasetInfo.getAbstractString().equals(abstractDescription)) {
+            if (abstractDescription!=null && !abstractDescription.equals(prevDatasetInfo.getAbstractString())) {
                 wordsInAbstractDesc = getWordsInFiledFromWS(abstractDescription);
             } else {
                 wordsInAbstractDesc = prevDatasetInfo.getAbstractDescription();
             }
-            if (sampleProtocol!=null && prevDatasetInfo.getSampleProtocolString() != null && !prevDatasetInfo.getSampleProtocolString().equals(sampleProtocol)) {
+            if (sampleProtocol!=null && !sampleProtocol.equals(prevDatasetInfo.getSampleProtocolString())) {
                 wordsInSampleProtocol = getWordsInFiledFromWS(sampleProtocol);
             } else {
                 wordsInSampleProtocol = prevDatasetInfo.getSampleProtocol();
             }
-            if (dataProtocol!=null && !prevDatasetInfo.getDataProtocolString().equals(dataProtocol)) {
+            if (dataProtocol!=null && !dataProtocol.equals(prevDatasetInfo.getDataProtocolString())) {
                 wordsInDataProtocol = getWordsInFiledFromWS(dataProtocol);
             } else {
                 wordsInDataProtocol = prevDatasetInfo.getDataProtocol();
@@ -155,7 +156,7 @@ public class DDIAnnotationService {
         List<WordInField> matchedWords = new ArrayList<>();
         JSONArray annotationResults;
         String recommenderPreUrl = Constants.OBO_INPUT_URL;
-        fieldText = fieldText.replace("%", "");//to avoid malformed error
+        fieldText = fieldText.replace("%", " ");//to avoid malformed error
         String recommenderUrl = recommenderPreUrl + URLEncoder.encode(fieldText, "UTF-8");
         String output = getFromWSAPI(recommenderUrl);
         if(output == null)
