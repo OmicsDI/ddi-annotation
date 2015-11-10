@@ -132,6 +132,7 @@ public class DDIAnnotationService {
             for (String synonym : synonymsForWord) {
                 enrichedField += synonym + ", ";
             }
+            logger.debug("synonymsForWord:" + synonymsForWord.toString());
             enrichedField = enrichedField.substring(0, enrichedField.length() - 2); //remove the last comma
             enrichedField += "; ";
         }
@@ -257,7 +258,7 @@ public class DDIAnnotationService {
 
         JSONArray matchedClasses = findBioOntologyMatchclasses(matchedWord, annotationResults);
 
-        synonyms.add(lowerWord);
+//        synonyms.add(lowerWord);
         for (int i = 0; i < matchedClasses.length(); i++) {
             JSONObject matchedClass = (JSONObject) matchedClasses.get(i);
             String wordId = matchedClass.getString(Constants.WORD_ID);
