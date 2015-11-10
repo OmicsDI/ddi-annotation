@@ -37,9 +37,9 @@ public class DDIAnnotationService {
     private static final Logger logger = LoggerFactory.getLogger(DDIAnnotationService.class);
 
     @Autowired
-    SynonymsService synonymsService = new SynonymsService();
+    SynonymsService synonymsService;
     @Autowired
-    EnrichmentInfoService enrichmentInfoService = new EnrichmentInfoService();
+    EnrichmentInfoService enrichmentInfoService;
 
     /**
      * Enrichment on the dataset, includes title, abstraction, sample protocol, data protocol.
