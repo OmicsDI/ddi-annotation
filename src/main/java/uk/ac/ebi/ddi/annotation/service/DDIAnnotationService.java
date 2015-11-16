@@ -405,13 +405,19 @@ public class DDIAnnotationService {
         WordInField overlappedWord = null;
 
         for (WordInField wordInList : matchedWords) {
+
+            if (word.getFrom() == wordInList.getFrom() && word.getTo() == wordInList.getTo()) {
+                logger.debug("find same word for '" + word + "':" + wordInList);
+                overlappedWord = wordInList;
+                break;
+            }
             if (word.getFrom() <= wordInList.getTo() && word.getTo() >= wordInList.getTo()) {
-                logger.debug("find a overlapped word for '" + word + "':" + wordInList);
+                logger.debug("find an overlapped word for '" + word + "':" + wordInList);
                 overlappedWord = wordInList;
                 break;
             }
             if (word.getTo() >= wordInList.getFrom() && word.getTo() <= wordInList.getTo()) {
-                logger.debug("find a overlapped word for '" + word + "':" + wordInList);
+                logger.debug("find an overlapped word for '" + word + "':" + wordInList);
                 overlappedWord = wordInList;
                 break;
             }
