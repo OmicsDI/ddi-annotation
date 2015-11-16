@@ -133,11 +133,15 @@ public class DDIAnnotationService {
                 enrichedField += synonym + ", ";
             }
             logger.debug("synonymsForWord:" + synonymsForWord.toString());
-            enrichedField = enrichedField.substring(0, enrichedField.length() - 2); //remove the last comma
-            enrichedField += "; ";
+            if(enrichedField != null && !enrichedField.isEmpty()){
+                enrichedField = enrichedField.substring(0, enrichedField.length() - 2); //remove the last comma
+                enrichedField += "; ";
+            }
         }
-        enrichedField = enrichedField.substring(0, enrichedField.length() - 2); //remove the last comma
-        enrichedField += ".";
+        if(enrichedField != null && !enrichedField.isEmpty()){
+            enrichedField = enrichedField.substring(0, enrichedField.length() - 2); //remove the last comma
+            enrichedField += ".";
+        }
         return enrichedField;
     }
 
