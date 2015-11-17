@@ -51,5 +51,3 @@ Thumbs.db
 log/
 target/
 .idea/
-src/test/resources/testMetabolitesFiles/
-src/test/resources/testPrideFiles/
