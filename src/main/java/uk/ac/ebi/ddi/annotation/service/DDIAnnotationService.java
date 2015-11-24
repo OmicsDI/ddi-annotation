@@ -128,14 +128,16 @@ public class DDIAnnotationService {
         String enrichedField = "";
         for (WordInField word : wordsInField) {
             List<String> synonymsForWord = getSynonymsForWord(word.getText());
-            if(synonymsForWord==null) return null;
-            for (String synonym : synonymsForWord) {
-                enrichedField += synonym + ", ";
-            }
-            logger.debug("synonymsForWord:" + synonymsForWord.toString());
-            if(enrichedField != null && !enrichedField.isEmpty()){
-                enrichedField = enrichedField.substring(0, enrichedField.length() - 2); //remove the last comma
-                enrichedField += "; ";
+//            if(synonymsForWord==null) return null;
+            if(synonymsForWord != null){
+                for (String synonym : synonymsForWord) {
+                    enrichedField += synonym + ", ";
+                }
+                logger.debug("synonymsForWord:" + synonymsForWord.toString());
+                if(enrichedField != null && !enrichedField.isEmpty()){
+                    enrichedField = enrichedField.substring(0, enrichedField.length() - 2); //remove the last comma
+                    enrichedField += "; ";
+                }
             }
         }
         if(enrichedField != null && !enrichedField.isEmpty()){
