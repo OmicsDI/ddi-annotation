@@ -128,7 +128,6 @@ public class DDIAnnotationService {
         String enrichedField = "";
         for (WordInField word : wordsInField) {
             List<String> synonymsForWord = getSynonymsForWord(word.getText());
-//            if(synonymsForWord==null) return null;
             if(synonymsForWord != null){
                 for (String synonym : synonymsForWord) {
                     enrichedField += synonym + ", ";

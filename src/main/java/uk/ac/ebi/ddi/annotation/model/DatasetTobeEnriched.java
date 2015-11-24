@@ -1,5 +1,6 @@
 package uk.ac.ebi.ddi.annotation.model;
 
+import java.util.Map;
 /**
  * Created by mingze on 05/10/15.
  */

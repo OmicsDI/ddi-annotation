@@ -1,15 +1,18 @@
 package uk.ac.ebi.ddi.annotation.service;
 
 import uk.ac.ebi.ddi.annotation.utils.DOIUtils;
+import uk.ac.ebi.ddi.ebe.ws.dao.client.publication.PublicationWsClient;
+import uk.ac.ebi.ddi.ebe.ws.dao.config.AbstractEbeyeWsConfig;
+import uk.ac.ebi.ddi.ebe.ws.dao.config.EbeyeWsConfigDev;
+import uk.ac.ebi.ddi.ebe.ws.dao.model.common.Entry;
+import uk.ac.ebi.ddi.ebe.ws.dao.model.common.Field;
+import uk.ac.ebi.ddi.ebe.ws.dao.model.common.QueryResult;
 import uk.ac.ebi.ddi.extservices.pubmed.client.PubmedWsClient;
 import uk.ac.ebi.ddi.extservices.pubmed.config.PubmedWsConfigProd;
 import uk.ac.ebi.ddi.extservices.pubmed.model.PubmedJSON;
 import uk.ac.ebi.ddi.extservices.pubmed.model.Record;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 /**
  * This class help to lookup for doi in text and get the pubmed if
@@ -25,6 +28,8 @@ public class DDIPublicationAnnotationService {
     private static DDIPublicationAnnotationService instance;
 
     PubmedWsClient clientPMC = new PubmedWsClient(new PubmedWsConfigProd());
+
+    PublicationWsClient publicationWsClient = new PublicationWsClient(new EbeyeWsConfigDev());
 
 
     /**
@@ -95,6 +100,27 @@ public class DDIPublicationAnnotationService {
         }
 
         return pubmedIds;
+    }
+
+    /**
+     * This function retrieve from the web service the publication information to be index in the database, also we will generate all the information
+     * about the publication reference from the dataset.
+     * @param idList
+     * @return
+     */
+    public List<Map<String,String[]>> getAbstractPublication(List<String> idList){
+        String[] fields         = { "description","name", "author" };
+        List<Map<String, String[]>> publications = new ArrayList<>();
+        Set<String> finalIds = new HashSet<String>(idList);
+        QueryResult pride = publicationWsClient.getPublications(fields, finalIds);
+        if(pride != null && pride.getEntries() != null && pride.getEntries().length > 0){
+            for(Entry entry: pride.getEntries()){
+                if(entry.getFields() != null){
+                    publications.add(entry.getFields());
+                }
+            }
+        }
+        return publications;
     }
 
 
