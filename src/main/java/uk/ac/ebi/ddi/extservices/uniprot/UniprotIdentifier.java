@@ -1,5 +1,8 @@
 package uk.ac.ebi.ddi.extservices.uniprot;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
@@ -8,7 +11,7 @@ import java.net.URLConnection;
 import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Logger;
+
 /**
  * @author Yasset Perez-Riverol (ypriverol@gmail.com)
  * @date 03/12/2015
@@ -16,7 +19,7 @@ import java.util.logging.Logger;
 public class UniprotIdentifier {
 
     private static final String UNIPROT_SERVER = "http://www.uniprot.org/";
-    private static final Logger LOG = Logger.getAnonymousLogger();
+    private static final Logger logger = LoggerFactory.getLogger(UniprotIdentifier.class);
 
     private static List<String> run(String tool, ParameterNameValue[] params) throws Exception{
         List<String> newIdentifiers = new ArrayList<String>();
@@ -30,7 +33,7 @@ public class UniprotIdentifier {
 
         String location = locationBuilder.toString();
         URL url = new URL(location);
-        LOG.info("Submitting...");
+        logger.debug("Submitting...");
 
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
         HttpURLConnection.setFollowRedirects(true);
@@ -47,7 +50,7 @@ public class UniprotIdentifier {
                 wait = Integer.valueOf(header);
             if (wait == 0)
                 break;
-            LOG.info("Waiting (" + wait + ")...");
+            logger.debug("Waiting (" + wait + ")...");
             conn.disconnect();
             Thread.sleep(wait * 1000);
             conn = (HttpURLConnection) new URL(location).openConnection();
@@ -56,7 +59,7 @@ public class UniprotIdentifier {
             status = conn.getResponseCode();
         }
         if (status == HttpURLConnection.HTTP_OK){
-            LOG.info("Got a OK reply");
+            logger.info("Got a OK reply");
             InputStream reader = conn.getInputStream();
             URLConnection.guessContentTypeFromStream(reader);
             StringBuilder builder = new StringBuilder();
@@ -64,8 +67,19 @@ public class UniprotIdentifier {
             while ((a = reader.read()) != -1)
                 builder.append((char) a);
             System.out.println(builder.toString());
+            if(builder.toString() != null && !builder.toString().isEmpty()){
+                int count = 0;
+                for(String line: builder.toString().split("\n")){
+                   if(line != null && !line.isEmpty()){
+                       String[] value = line.split("\t");
+                       if(value.length > 1 && count != 0)
+                           newIdentifiers.add(value[1].trim());
+                   }
+                    count++;
+                }
+            }
         }else
-            LOG.severe("Failed, got " + conn.getResponseMessage() + " for " + location);
+            logger.debug("Failed, got " + conn.getResponseMessage() + " for " + location);
         conn.disconnect();
         return newIdentifiers;
     }
@@ -86,7 +100,7 @@ public class UniprotIdentifier {
                     new ParameterNameValue("query", identiferString),
             });
         } catch (Exception e) {
-            LOG.severe(e.getMessage());
+            logger.debug(e.getMessage());
         }
         return newIdentifiers;
     }

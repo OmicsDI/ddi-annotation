@@ -108,7 +108,7 @@ public class CrossReferencesProteinDatabasesService {
                 }
             }
             if(!accUniprot.isEmpty()){
-                for(String id: UniprotIdentifier.retrieve(accUniprot, "ACC", "ID"))
+                for(String id: UniprotIdentifier.retrieve(accUniprot, "ID", "ACC"))
                     mapIdentifiers.put(id, Constants.UNIPROT_DATABASE);
             }
         }
