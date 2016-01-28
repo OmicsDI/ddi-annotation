@@ -6,9 +6,9 @@ package uk.ac.ebi.ddi.annotation.utils;
  */
 public enum DataType {
 
-    PROTEOMICS_DATA("ProteomicsData"),
-    GENOMICS_DATA("GenomicsData"),
-    METABOLOMICS_DATA("MetabolomicsData");
+    PROTEOMICS_DATA("Proteomics"),
+    GENOMICS_DATA("Genomics"),
+    METABOLOMICS_DATA("Metabolomics");
 
     private final String name;
 
