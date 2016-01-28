@@ -1,5 +1,8 @@
 package uk.ac.ebi.ddi.annotation.service;
 
+import uk.ac.ebi.ddi.annotation.utils.Constants;
+import uk.ac.ebi.ddi.extservices.uniprot.UniprotIdentifier;
+import uk.ac.ebi.ddi.gpmdb.GetGPMDBInformation;
 import uk.ac.ebi.ddi.pride.web.service.client.assay.AssayWsClient;
 import uk.ac.ebi.ddi.pride.web.service.client.project.ProjectWsClient;
 import uk.ac.ebi.ddi.pride.web.service.config.ArchiveWsConfigProd;
@@ -7,11 +10,15 @@ import uk.ac.ebi.ddi.pride.web.service.model.assay.AssayDetail;
 import uk.ac.ebi.ddi.pride.web.service.model.project.ProjectDetails;
 import uk.ac.ebi.ddi.xml.validator.parser.model.CrossReferences;
 import uk.ac.ebi.ddi.xml.validator.parser.model.Entry;
+import uk.ac.ebi.ddi.xml.validator.parser.model.Field;
 import uk.ac.ebi.ddi.xml.validator.parser.model.Reference;
+import uk.ac.ebi.pride.tools.protein_details_fetcher.ProteinDetailFetcher;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author Yasset Perez-Riverol (ypriverol@gmail.com)
@@ -59,6 +66,56 @@ public class CrossReferencesProteinDatabasesService {
             dataset.setCrossReferences(newCrossReferences);
         }
         return dataset;
+    }
+
+
+    public static Entry annotateGPMDBProteins(Entry dataset){
+        if(dataset != null && dataset.getAdditionalFields() != null && !dataset.getAdditionalFields().isEmpty()){
+            List<String> models = new ArrayList<String>();
+            for(Field field: dataset.getAdditionalFields().getField()){
+                if(field != null && field.getName().equalsIgnoreCase(uk.ac.ebi.ddi.xml.validator.utils.Field.GPMDB_MODEL.getName())){
+                    String valueModel = field.getValue();
+                    String[] valueString = valueModel.split("=");
+                    if(valueString.length > 1)
+                        models.add(valueString[1].trim());
+                }
+            }
+            if(!models.isEmpty()){
+                uk.ac.ebi.ddi.gpmdb.GetGPMDBInformation gpmdbInformation = GetGPMDBInformation.getInstance();
+                Map<String, String> proteins = mapProteinToDatabase(gpmdbInformation.getUniqueProteinList(models));
+                if(proteins != null && !proteins.isEmpty())
+                    for(String proteinId: proteins.keySet())
+                        dataset.addCrossReferenceValue(proteins.get(proteinId), proteinId);
+
+            }
+        }
+        return dataset;
+    }
+
+    private static Map<String, String> mapProteinToDatabase(List<String> proteinIds){
+
+        Map<String, String> mapIdentifiers = new HashMap<String, String>();
+        if(proteinIds != null && !proteinIds.isEmpty()){
+            List<String> accUniprot = new ArrayList<String>();
+            for(String accession: proteinIds){
+                ProteinDetailFetcher accessionResolver = new ProteinDetailFetcher();
+                ProteinDetailFetcher.AccessionType accessionType = accessionResolver.getAccessionType(accession);
+                if(accessionType == ProteinDetailFetcher.AccessionType.ENSEMBL) {
+                    mapIdentifiers.put(accession, Constants.ENSEMBL_DATABASE);
+                } else if(accessionType == ProteinDetailFetcher.AccessionType.ENSEMBL_TRANSCRIPT){
+                    mapIdentifiers.put(accession, Constants.ENSEMBL_DATABASE);
+                }else if(accessionType == ProteinDetailFetcher.AccessionType.UNIPROT_ID){
+                    mapIdentifiers.put(accession, Constants.UNIPROT_DATABASE);
+                }else if(accessionType == ProteinDetailFetcher.AccessionType.UNIPROT_ACC){
+                    accUniprot.add(accession);
+                }
+            }
+            if(!accUniprot.isEmpty()){
+                for(String id: UniprotIdentifier.retrieve(accUniprot, "ID", "ACC"))
+                    mapIdentifiers.put(id, Constants.UNIPROT_DATABASE);
+            }
+        }
+        return mapIdentifiers;
     }
 
 }
