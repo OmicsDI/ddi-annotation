@@ -8,7 +8,8 @@ public enum DataType {
 
     PROTEOMICS_DATA("ProteomicsData"),
     GENOMICS_DATA("GenomicsData"),
-    METABOLOMICS_DATA("MetabolomicsData");
+    METABOLOMICS_DATA("MetabolomicsData"),
+    TRANSCRIPTOMIC_DATA("TranscriptomicData");
 
     private final String name;
 
