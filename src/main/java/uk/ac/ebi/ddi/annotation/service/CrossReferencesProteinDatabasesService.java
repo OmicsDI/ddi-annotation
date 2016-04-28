@@ -8,6 +8,7 @@ import uk.ac.ebi.ddi.pride.web.service.client.project.ProjectWsClient;
 import uk.ac.ebi.ddi.pride.web.service.config.ArchiveWsConfigProd;
 import uk.ac.ebi.ddi.pride.web.service.model.assay.AssayDetail;
 import uk.ac.ebi.ddi.pride.web.service.model.project.ProjectDetails;
+import uk.ac.ebi.ddi.xml.validator.parser.model.CrossReferences;
 import uk.ac.ebi.ddi.xml.validator.parser.model.Entry;
 import uk.ac.ebi.ddi.xml.validator.parser.model.Field;
 import uk.ac.ebi.ddi.xml.validator.parser.model.Reference;
@@ -60,7 +61,9 @@ public class CrossReferencesProteinDatabasesService {
                     finalReferences.add(crossRef);
                 }
             }
-            dataset.setCrossReferences(finalReferences);
+            CrossReferences newCrossReferences = new CrossReferences();
+            newCrossReferences.setRef(finalReferences);
+            dataset.setCrossReferences(newCrossReferences);
         }
         return dataset;
     }

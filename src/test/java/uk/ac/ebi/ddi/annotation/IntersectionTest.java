@@ -1,5 +1,7 @@
 package uk.ac.ebi.ddi.annotation;
 
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.filefilter.TrueFileFilter;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -168,6 +170,57 @@ public class  IntersectionTest{
         }
 
     }
+
+
+    @Test
+     public void testImportMethod() throws Exception {
+
+        URL urlFiles= IntersectionTest.class.getClassLoader().getResource("201512new/gpmdb");
+        assert urlFiles!= null;
+        File folder = new File(urlFiles.toURI());
+
+//        File[] listOfFiles = folder.listFiles();
+        List<File> listOfFiles = (List<File>) FileUtils.listFiles(folder, TrueFileFilter.INSTANCE, TrueFileFilter.INSTANCE);
+
+        if (termInDBService == null) {
+            System.err.println("termInDBService is null");
+            System.exit(1);
+        }
+
+        //delete all data in Mongodb
+//        expOutputDatasetService.deleteAll();
+//        termInDBService.deleteAll();
+//        datasetStatInfoService.deleteAll();
+
+
+//        int iterTime = 199;
+        int index = 1;
+        int fileindex = 1;
+        assert listOfFiles != null;
+        for (File file : listOfFiles) {
+            if (file.isFile()) {
+                if(file.getName().toLowerCase().endsWith("xml")) {
+                    System.out.println("\n\n"+fileindex + "-" + file.getName()+":");
+                    fileindex++;
+                    reader = new OmicsXMLFile(file);
+                    String database = reader.getName();
+                    for (int i=0; i<reader.getEntryIds().size(); i++) {
+                        System.out.println("deal the " + index + " entry in "+file.getName()+";");
+                        index++;
+                        Entry entry = reader.getEntryByIndex(i);
+                        String entryId = entry.getId();
+                        String dataType = entry.getAdditionalFieldValue("omics_type");
+                        List<Reference> refs = entry.getCrossReferences().getRef();
+                        ddiExpDataImportService.importDatasetTerms(dataType, entryId,database,refs);
+                    }
+                }
+            }
+        }
+
+    }
+
+
+
 
 
 

@@ -76,15 +76,17 @@ public class DDIExpDataImportService {
     private List<TermInList> getTermsInDataset(String dataType, String datasetAcc, List<Reference> refs) {
         List<TermInList> terms = new ArrayList<>();
         String refKeyWord = null;
+        String refKeyWord2 = null;
         if (dataType.equals(DataType.PROTEOMICS_DATA.getName())) {
             refKeyWord = "uniprot";
+            refKeyWord2 = "ensembl";
         } else if (dataType.equals(DataType.METABOLOMICS_DATA.getName())) {
             refKeyWord = "ChEBI";
         }
 
         refs = removeRedundancy(refs);
         for (Reference ref : refs) {
-            if (ref.getDbname().equals(refKeyWord)) {
+            if (ref.getDbname().equals(refKeyWord) || ref.getDbname().equals(refKeyWord2)) {
                 String dbkey = ref.getDbkey();
                 dbkey = dbkey.replace("CHEBI:", "");
                 if (termInDBService.isTermExist(dbkey)) {

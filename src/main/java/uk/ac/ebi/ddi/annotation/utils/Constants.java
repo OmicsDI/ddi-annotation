@@ -15,6 +15,9 @@ public class Constants {
     public static final String MATCH_TYPE = "matchType";
     public static final String FROM = "from";
     public static final String TEXT = "text";
+    public static final String ANNOTATEDCLASS = "annotatedClass";
+    public static final String LINKS = "links";
+    public static final String SELF = "self";
     public static final String WORD_ID = "wordId";
     public static final String ONTOLOGY_NAME = "ontologyName";
     public static final String SYNONYM = "synonym";
