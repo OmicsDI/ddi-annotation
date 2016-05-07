@@ -4,6 +4,7 @@ package uk.ac.ebi.ddi.annotation.model;
  * Created by mingze on 05/10/15.
  */
 public class EnrichedDataset {
+
     private String accession;
     private String database;
 

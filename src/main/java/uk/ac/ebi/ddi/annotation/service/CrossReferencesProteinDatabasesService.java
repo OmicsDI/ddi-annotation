@@ -31,7 +31,7 @@ public class CrossReferencesProteinDatabasesService {
 
     /**
      * Annotated Cross References.
-     * @param dataset Dataset to be added
+     * @param dataset INSERTED to be added
      * @return Resulting dataset
      */
     public static Entry annotateCrossReferences(Entry dataset){
