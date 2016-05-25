@@ -10,14 +10,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import uk.ac.ebi.ddi.annotation.service.DDIExpDataImportService;
+import uk.ac.ebi.ddi.annotation.service.synonyms.DDIExpDataImportService;
 import uk.ac.ebi.ddi.annotation.utils.DataType;
 import uk.ac.ebi.ddi.xml.validator.exception.DDIException;
 import uk.ac.ebi.ddi.xml.validator.parser.OmicsXMLFile;
 import uk.ac.ebi.ddi.xml.validator.parser.marshaller.OmicsDataMarshaller;
 import uk.ac.ebi.ddi.xml.validator.parser.model.*;
 import uk.ac.ebi.ddi.service.db.service.similarity.*;
-import uk.ac.ebi.ddi.xml.validator.utils.*;
 import uk.ac.ebi.ddi.xml.validator.utils.Field;
 
 import java.io.File;

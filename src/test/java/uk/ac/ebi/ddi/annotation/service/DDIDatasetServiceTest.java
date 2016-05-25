@@ -6,8 +6,10 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import uk.ac.ebi.ddi.annotation.service.dataset.DDIDatasetAnnotationService;
 import uk.ac.ebi.ddi.xml.validator.exception.DDIException;
 import uk.ac.ebi.ddi.xml.validator.parser.OmicsXMLFile;
+import uk.ac.ebi.ddi.xml.validator.parser.model.Entry;
 
 import java.io.File;
 import java.net.URL;
@@ -22,7 +24,7 @@ import java.net.URL;
 public class DDIDatasetServiceTest {
 
     @Autowired
-    DDIDatasetAnnotationService annotDatasetService = new DDIDatasetAnnotationService();
+    DDIDatasetAnnotationService annotDatasetService;
 
     private OmicsXMLFile reader;
 
@@ -44,5 +46,19 @@ public class DDIDatasetServiceTest {
                 e.printStackTrace();
             }
         });
+    }
+
+    @Test
+    public void updateDataset(){
+        reader.getEntryIds().parallelStream().forEach( id ->{
+            try {
+                Entry dataset = reader.getEntryById(id);
+                dataset.addDate("reload", "2016-06-13");
+                annotDatasetService.insertDataset(dataset);
+            } catch (DDIException e) {
+                e.printStackTrace();
+            }
+        });
+
     }
 }

@@ -9,6 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import uk.ac.ebi.ddi.annotation.service.synonyms.DDIExpDataImportService;
+import uk.ac.ebi.ddi.annotation.service.synonyms.DDIXmlProcessService;
 import uk.ac.ebi.ddi.annotation.utils.DataType;
 import uk.ac.ebi.ddi.service.db.service.enrichment.EnrichmentInfoService;
 import uk.ac.ebi.ddi.service.db.service.similarity.DatasetStatInfoService;
@@ -28,8 +30,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URL;
 import java.util.List;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by mingze on 22/10/15.

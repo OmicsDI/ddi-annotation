@@ -1,4 +1,4 @@
-package uk.ac.ebi.ddi.annotation.service;
+package uk.ac.ebi.ddi.annotation.service.crossreferences;
 
 import uk.ac.ebi.ddi.annotation.utils.Constants;
 import uk.ac.ebi.ddi.extservices.uniprot.UniprotIdentifier;

@@ -1,4 +1,4 @@
-package uk.ac.ebi.ddi.annotation.service;
+package uk.ac.ebi.ddi.annotation.service.synonyms;
 
 /**
  * Created by mingze on 22/10/15.
@@ -10,8 +10,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import uk.ac.ebi.ddi.annotation.model.DatasetTobeEnriched;
 import uk.ac.ebi.ddi.annotation.model.EnrichedDataset;
-import uk.ac.ebi.ddi.annotation.service.DDIExpDataImportService;
-import uk.ac.ebi.ddi.annotation.utils.DataType;
 import uk.ac.ebi.ddi.xml.validator.exception.DDIException;
 import uk.ac.ebi.ddi.xml.validator.parser.OmicsXMLFile;
 import uk.ac.ebi.ddi.xml.validator.parser.model.*;
@@ -23,6 +21,7 @@ import java.util.*;
 
 /**
  * Provide service for dataset XML file processing, do enrichment annotation and similarity calculation
+ * This a Testing class and should be deprecated in the future because is not use by any of the services.
  *
  * @author Mingze
  */
@@ -33,10 +32,8 @@ public class DDIXmlProcessService {
     @Autowired
     DDIAnnotationService annotService = new DDIAnnotationService();
 
-
     @Autowired
     DDIExpDataImportService ddiExpDataImportService = new DDIExpDataImportService();
-
 
     private OmicsXMLFile reader;
 

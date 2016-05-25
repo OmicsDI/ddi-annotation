@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import uk.ac.ebi.ddi.annotation.service.crossreferences.DDIDatasetSimilarityService;
+import uk.ac.ebi.ddi.annotation.service.synonyms.DDIExpDataImportService;
 import uk.ac.ebi.ddi.annotation.utils.DataType;
 import uk.ac.ebi.ddi.service.db.service.similarity.ExpOutputDatasetService;
 import uk.ac.ebi.ddi.service.db.service.similarity.TermInDBService;

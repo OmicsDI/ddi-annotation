@@ -3,14 +3,10 @@ package uk.ac.ebi.ddi.annotation.service;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import uk.ac.ebi.ddi.extservices.pubmed.client.PubmedWsClient;
-import uk.ac.ebi.ddi.extservices.pubmed.config.PubmedWsConfigProd;
-import uk.ac.ebi.ddi.extservices.pubmed.model.PubmedJSON;
+import uk.ac.ebi.ddi.annotation.service.publication.DDIPublicationAnnotationService;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import static org.junit.Assert.*;
 
 public class DDIPublicationAnnotationServiceTest {
 

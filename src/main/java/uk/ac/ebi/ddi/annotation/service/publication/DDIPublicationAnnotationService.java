@@ -1,11 +1,9 @@
-package uk.ac.ebi.ddi.annotation.service;
+package uk.ac.ebi.ddi.annotation.service.publication;
 
 import uk.ac.ebi.ddi.annotation.utils.DOIUtils;
 import uk.ac.ebi.ddi.ebe.ws.dao.client.publication.PublicationWsClient;
-import uk.ac.ebi.ddi.ebe.ws.dao.config.AbstractEbeyeWsConfig;
 import uk.ac.ebi.ddi.ebe.ws.dao.config.EbeyeWsConfigDev;
 import uk.ac.ebi.ddi.ebe.ws.dao.model.common.Entry;
-import uk.ac.ebi.ddi.ebe.ws.dao.model.common.Field;
 import uk.ac.ebi.ddi.ebe.ws.dao.model.common.QueryResult;
 import uk.ac.ebi.ddi.extservices.pubmed.client.PubmedWsClient;
 import uk.ac.ebi.ddi.extservices.pubmed.config.PubmedWsConfigProd;
@@ -30,7 +28,6 @@ public class DDIPublicationAnnotationService {
     PubmedWsClient clientPMC = new PubmedWsClient(new PubmedWsConfigProd());
 
     PublicationWsClient publicationWsClient = new PublicationWsClient(new EbeyeWsConfigDev());
-
 
     /**
      * Private Constructor

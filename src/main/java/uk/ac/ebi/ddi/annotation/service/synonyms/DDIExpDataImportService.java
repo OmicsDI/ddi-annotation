@@ -1,4 +1,4 @@
-package uk.ac.ebi.ddi.annotation.service;
+package uk.ac.ebi.ddi.annotation.service.synonyms;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import uk.ac.ebi.ddi.annotation.utils.DataType;

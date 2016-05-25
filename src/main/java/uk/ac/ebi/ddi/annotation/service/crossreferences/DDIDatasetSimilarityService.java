@@ -1,4 +1,4 @@
-package uk.ac.ebi.ddi.annotation.service;
+package uk.ac.ebi.ddi.annotation.service.crossreferences;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -7,7 +7,6 @@ import uk.ac.ebi.ddi.service.db.model.similarity.*;
 import uk.ac.ebi.ddi.service.db.service.similarity.DatasetStatInfoService;
 import uk.ac.ebi.ddi.service.db.service.similarity.ExpOutputDatasetService;
 import uk.ac.ebi.ddi.service.db.service.similarity.TermInDBService;
-import uk.ac.ebi.ddi.service.db.utils.Constants;
 
 import java.util.*;
 

@@ -24,13 +24,13 @@
     <bean id="accessService" class="uk.ac.ebi.ddi.service.db.service.logger.HttpEventService"/>
 	<bean id="termInDBService" class="uk.ac.ebi.ddi.service.db.service.similarity.TermInDBService"/>
 	<bean id="expOutputDatasetService" class="uk.ac.ebi.ddi.service.db.service.similarity.ExpOutputDatasetService"/>
-	<bean id="ddiExpDataImportService" class="uk.ac.ebi.ddi.annotation.service.DDIExpDataImportService"/>
-	<bean id="ddiDatasetSimilarityService" class="uk.ac.ebi.ddi.annotation.service.DDIDatasetSimilarityService"/>
+	<bean id="ddiExpDataImportService" class="uk.ac.ebi.ddi.annotation.service.synonyms.DDIExpDataImportService"/>
+	<bean id="ddiDatasetSimilarityService" class="uk.ac.ebi.ddi.annotation.service.crossreferences.DDIDatasetSimilarityService"/>
 	<bean id="datasetStatInfoService" class="uk.ac.ebi.ddi.service.db.service.similarity.DatasetStatInfoService"/>
 	<bean id="InDBServiceRepo" class="uk.ac.ebi.ddi.service.db.repo.similarity.ITermInDBRepoImpl"/>
     <bean class="uk.ac.ebi.ddi.service.db.utils.CascadingMongoEventListener" />
 
-	<bean id="annotService" class="uk.ac.ebi.ddi.annotation.service.DDIAnnotationService"/>
+	<bean id="annotService" class="uk.ac.ebi.ddi.annotation.service.synonyms.DDIAnnotationService"/>
 	<bean id="termService" class="uk.ac.ebi.ddi.service.db.service.similarity.TermInDBService"/>
 	<bean id="enrichmentInfoService" class="uk.ac.ebi.ddi.service.db.service.enrichment.EnrichmentInfoService"/>
 	<bean id="synonymsService" class="uk.ac.ebi.ddi.service.db.service.enrichment.SynonymsService"/>

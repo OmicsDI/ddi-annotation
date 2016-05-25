@@ -1,8 +1,11 @@
-package uk.ac.ebi.ddi.annotation.service;
+package uk.ac.ebi.ddi.annotation.service.taxonomy;
 
+import uk.ac.ebi.ddi.annotation.utils.DatasetUtils;
 import uk.ac.ebi.ddi.extservices.entrez.client.taxonomy.TaxonomyWsClient;
 import uk.ac.ebi.ddi.extservices.entrez.config.TaxWsConfigProd;
 import uk.ac.ebi.ddi.extservices.entrez.ncbiresult.NCBITaxResult;
+import uk.ac.ebi.ddi.service.db.model.dataset.Dataset;
+import uk.ac.ebi.ddi.xml.validator.utils.Field;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -64,5 +67,21 @@ public class NCBITaxonomyService {
                     taxonomies.add(tax);
         }
         return  taxonomies;
+    }
+
+    public Dataset annotateSpecies(Dataset dataset){
+        if (dataset.getAdditional() != null && getAdditionalField(dataset, Field.SPECIE_FIELD.getName()) != null) {
+            List<String> taxonomies = NCBITaxonomyService.getInstance().getNCBITaxonomy(new ArrayList<String>(getAdditionalField(dataset,Field.SPECIE_FIELD.getName())));
+            if (taxonomies != null && taxonomies.size() > 0)
+                for (String tax : taxonomies)
+                    dataset = DatasetUtils.addCrossReferenceValue(dataset, Field.TAXONOMY.getName(), tax);
+        }
+        return dataset;
+    }
+
+    private Set<String> getAdditionalField(Dataset dataset, String key) {
+        if(dataset.getAdditional() != null && dataset.getAdditional().containsKey(key))
+            return dataset.getAdditional().get(key);
+        return null;
     }
 }

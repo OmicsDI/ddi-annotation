@@ -1,5 +1,5 @@
 
-package uk.ac.ebi.ddi.annotation.service;
+package uk.ac.ebi.ddi.annotation.service.synonyms;
 
 
 import java.io.*;

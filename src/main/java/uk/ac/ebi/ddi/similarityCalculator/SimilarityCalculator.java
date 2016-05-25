@@ -1,13 +1,12 @@
 package uk.ac.ebi.ddi.similarityCalculator;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Component;
-import uk.ac.ebi.ddi.annotation.service.DDIDatasetSimilarityService;
+import uk.ac.ebi.ddi.annotation.service.crossreferences.DDIDatasetSimilarityService;
 import org.apache.commons.cli.*;
-import uk.ac.ebi.ddi.annotation.service.DDIExpDataImportService;
+import uk.ac.ebi.ddi.annotation.service.synonyms.DDIExpDataImportService;
 import uk.ac.ebi.ddi.annotation.utils.DataType;
 import uk.ac.ebi.ddi.service.db.service.similarity.ExpOutputDatasetService;
 import uk.ac.ebi.ddi.service.db.service.similarity.TermInDBService;
