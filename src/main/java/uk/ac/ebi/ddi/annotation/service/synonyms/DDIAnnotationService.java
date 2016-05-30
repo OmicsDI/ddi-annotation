@@ -17,9 +17,13 @@ import org.json.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.client.RestClientException;
 import uk.ac.ebi.ddi.annotation.model.DatasetTobeEnriched;
 import uk.ac.ebi.ddi.annotation.model.EnrichedDataset;
 import uk.ac.ebi.ddi.annotation.utils.Constants;
+import uk.ac.ebi.ddi.extservices.annotator.client.BioOntologyClient;
+import uk.ac.ebi.ddi.extservices.annotator.config.BioOntologyWsConfigProd;
+import uk.ac.ebi.ddi.extservices.annotator.model.*;
 import uk.ac.ebi.ddi.service.db.model.enrichment.DatasetEnrichmentInfo;
 import uk.ac.ebi.ddi.service.db.model.enrichment.WordInField;
 import uk.ac.ebi.ddi.service.db.model.enrichment.Synonym;
@@ -41,6 +45,8 @@ public class DDIAnnotationService {
     SynonymsService synonymsService;
     @Autowired
     EnrichmentInfoService enrichmentInfoService;
+
+    BioOntologyClient recommenderClient = new BioOntologyClient(new BioOntologyWsConfigProd());
 
     Map<String, String> cachedSynonymUrlForWords = new HashMap<>();
 
@@ -155,6 +161,50 @@ public class DDIAnnotationService {
      * @param fieldText a field Text
      * @return the words which are identified in the fieldText by recommender API from bioontology.org
      */
+//    private List<WordInField> getWordsInFiledFromWS(String fieldText) throws JSONException, UnsupportedEncodingException, DDIException {
+//
+//        if (fieldText == null || fieldText.equals(Constants.NOT_AVAILABLE)) {
+//            return null;
+//        }
+//
+//        List<WordInField> matchedWords = new ArrayList<>();
+//        JSONArray annotationResults;
+//        String recommenderPreUrl = Constants.OBO_INPUT_URL;
+//        fieldText = fieldText.replace("%", " ");//to avoid malformed error
+//        String recommenderUrl = recommenderPreUrl + URLEncoder.encode(fieldText, "UTF-8");
+//        String output = getFromWSAPI(recommenderUrl);
+//        if (output == null)
+//            return null;
+//        System.out.print(output);
+//        annotationResults = new JSONArray(output);
+//
+//        for (int i = 0; i < annotationResults.length(); i++) {
+//            JSONObject annotationResult = (JSONObject) annotationResults.get(i);
+//
+//            if (annotationResult.getJSONArray(Constants.ONTOLOGIES).length() > 1) {
+//                logger.debug("There are more than one ontologies here, something must be wrong");
+//                throw new DDIException("There are more than one ontologies here, something must be wrong");
+//            }
+//
+//            JSONObject ontology = annotationResult.getJSONArray(Constants.ONTOLOGIES).getJSONObject(0);
+//
+//            JSONObject coverageResult = annotationResult.getJSONObject(Constants.COVERAGE_RESULT);
+//            JSONArray matchedTerms = coverageResult.getJSONArray(Constants.ANNOTATIONS);
+//
+//            matchedWords.addAll(getDistinctWordList(matchedTerms));
+//        }
+//
+//        Collections.sort(matchedWords);
+//        return matchedWords;
+//    }
+
+    /**
+     * Get the biology related words in one field from WebService at bioontology.org
+     *
+     * @param fieldText a field Text
+     * @return the words which are identified in the fieldText by recommender API from bioontology.org
+     */
+
     private List<WordInField> getWordsInFiledFromWS(String fieldText) throws JSONException, UnsupportedEncodingException, DDIException {
 
         if (fieldText == null || fieldText.equals(Constants.NOT_AVAILABLE)) {
@@ -162,37 +212,31 @@ public class DDIAnnotationService {
         }
 
         List<WordInField> matchedWords = new ArrayList<>();
-        JSONArray annotationResults;
-        String recommenderPreUrl = Constants.OBO_INPUT_URL;
         fieldText = fieldText.replace("%", " ");//to avoid malformed error
-        String recommenderUrl = recommenderPreUrl + URLEncoder.encode(fieldText, "UTF-8");
-        String output = getFromWSAPI(recommenderUrl);
-        if (output == null)
-            return null;
-        System.out.print(output);
-        annotationResults = new JSONArray(output);
+        try{
+            RecomendedOntologyQuery[] annotationResults = recommenderClient.postRecommendedTerms(fieldText, Constants.OBO_ONTOLOGIES);
+            if (annotationResults == null)
+                return null;
+            logger.debug(annotationResults.toString());
 
-        for (int i = 0; i < annotationResults.length(); i++) {
-            JSONObject annotationResult = (JSONObject) annotationResults.get(i);
+            for (int i = 0; i < annotationResults.length; i++) {
+                RecomendedOntologyQuery annotationResult = annotationResults[i];
 
-            if (annotationResult.getJSONArray(Constants.ONTOLOGIES).length() > 1) {
-                logger.debug("There are more than one ontologies here, something must be wrong");
-                throw new DDIException("There are more than one ontologies here, something must be wrong");
+                if (annotationResult.getOntologies() == null || annotationResult.getOntologies().length  > 1) {
+                    logger.debug("There are more than one ontologies here, something must be wrong");
+                    throw new DDIException("There are more than one ontologies here, something must be wrong");
+                }
+                if(annotationResult.getResults() != null && annotationResult.getResults().getAnnotations() != null)
+                    matchedWords.addAll(getDistinctWordList(annotationResult.getResults().getAnnotations()));
             }
 
-            JSONObject ontology = annotationResult.getJSONArray(Constants.ONTOLOGIES).getJSONObject(0);
+            Collections.sort(matchedWords);
 
-            JSONObject coverageResult = annotationResult.getJSONObject(Constants.COVERAGE_RESULT);
-            JSONArray matchedTerms = coverageResult.getJSONArray(Constants.ANNOTATIONS);
-
-            matchedWords.addAll(getDistinctWordList(matchedTerms));
-//            for (WordInField matchedWord : matchedWords) {
-//                System.out.println(matchedWord.getText() + ":" + matchedWord.getFrom() + "-" + matchedWord.getTo());
-//            }
-
+        }catch (RestClientException ex){
+            logger.debug(ex.getMessage());
+            return null;
         }
 
-        Collections.sort(matchedWords);
         return matchedWords;
     }
 
@@ -238,64 +282,60 @@ public class DDIAnnotationService {
 
         String wordDetailUrl = cachedSynonymUrlForWords.get(lowerWord);
         if (wordDetailUrl != null) {
-            String output = getFromWSAPI(wordDetailUrl + Constants.OBO_API_KEY);
-            if (output == null)
+            try {
+                SynonymQuery output = recommenderClient.getAllSynonymByURL(wordDetailUrl);
+                if (output == null)
+                    return null;
+
+                String[] synonymsInCls = output.getSynonyms();
+
+                for (int i = 0; i < synonymsInCls.length; i++) {
+                    String synonymInCls = synonymsInCls[i];
+                    synonyms.add(synonymInCls);
+                }
+            }catch (RestClientException ex){
+                logger.debug(ex.getMessage());
                 return null;
-
-            JSONObject wordDetailsInCls = new JSONObject(output);
-            JSONArray synonymsInCls = wordDetailsInCls.getJSONArray(Constants.SYNONYM);
-
-            for (int i = 0; i < synonymsInCls.length(); i++) {
-                String synonymInCls = synonymsInCls.getString(i);
-                synonyms.add(synonymInCls);
             }
         } else {
-            String annotationPreUrl = Constants.OBO_LONG_URL;
-            String annotatorUrl = annotationPreUrl + URLEncoder.encode(lowerWord, "UTF-8");
-            String output = "";
-            output = getFromWSAPI(annotatorUrl);
-            if (output == null)
+            AnnotatedOntologyQuery[] annotatedTerms = recommenderClient.getAnnotatedTerms(lowerWord, Constants.OBO_ONTOLOGIES);
+            if (annotatedTerms == null)
                 return null;
 
-
-            JSONArray annotationResults = new JSONArray(output);
-
-            if (annotationResults.length() == 0) {
+            if (annotatedTerms == null || annotatedTerms.length == 0) {
                 synonyms.add(Constants.NOT_ANNOTATION_FOUND);
                 return synonyms;
             }
 
-            JSONArray annotations = annotationResults.getJSONObject(0).getJSONArray(Constants.ANNOTATIONS);
-            JSONObject annotation = annotations.getJSONObject(0);
+            Annotation[] annotations = annotatedTerms[0].getAnnotations();
+            Annotation annotation = annotations[0];
 
-            String matchType = annotation.getString(Constants.MATCH_TYPE);
-            int startPos = annotation.getInt(Constants.FROM);
+            String matchType = annotation.getMatchType();
+            int startPos = annotation.getFromPosition();
 
             if (startPos > 1) {
                 synonyms.add(Constants.NOT_ANNOTATION_FOUND);
                 return synonyms;
             }
 
-            String matchedWord = annotation.getString(Constants.TEXT).toLowerCase();
+            String matchedWord = annotation.getText().toLowerCase();
 
-            JSONArray matchedClasses = findBioOntologyMatchclasses(matchedWord, annotationResults);
+            JSONArray matchedClasses = findBioOntologyMatchclasses(matchedWord, annotatedTerms);
 
-//        synonyms.add(lowerWord);
             for (int i = 0; i < matchedClasses.length(); i++) {
+
                 JSONObject matchedClass = (JSONObject) matchedClasses.get(i);
                 String wordId = matchedClass.getString(Constants.WORD_ID);
                 String ontologyName = matchedClass.getString(Constants.ONTOLOGY_NAME);
 
-                wordDetailUrl = Constants.OBO_URL + ontologyName + Constants.CLASSES + wordId + Constants.OBO_API_KEY;
-                output = getFromWSAPI(wordDetailUrl);
+                SynonymQuery output = recommenderClient.getAllSynonyms(ontologyName, wordId);
                 if (output == null)
                     return null;
 
-                JSONObject wordDetailsInCls = new JSONObject(output);
-                JSONArray synonymsInCls = wordDetailsInCls.getJSONArray(Constants.SYNONYM);
+                String[] synonymsInCls = output.getSynonyms();
 
-                for (i = 0; i < synonymsInCls.length(); i++) {
-                    String synonymInCls = synonymsInCls.getString(i);
+                for (i = 0; i < synonymsInCls.length; i++) {
+                    String synonymInCls = synonymsInCls[i];
                     synonyms.add(synonymInCls);
                 }
             }
@@ -306,6 +346,81 @@ public class DDIAnnotationService {
 
     }
 
+//    @Deprecated
+//    protected ArrayList<String> getSynonymsForWordFromWS(String word) throws JSONException, UnsupportedEncodingException {
+//        String lowerWord = word.toLowerCase();
+//        ArrayList<String> synonyms = new ArrayList<>();
+//
+//        String wordDetailUrl = cachedSynonymUrlForWords.get(lowerWord);
+//        if (wordDetailUrl != null) {
+//            String output = getFromWSAPI(wordDetailUrl + Constants.OBO_API_KEY);
+//            if (output == null)
+//                return null;
+//
+//            JSONObject wordDetailsInCls = new JSONObject(output);
+//            JSONArray synonymsInCls = wordDetailsInCls.getJSONArray(Constants.SYNONYM);
+//
+//            for (int i = 0; i < synonymsInCls.length(); i++) {
+//                String synonymInCls = synonymsInCls.getString(i);
+//                synonyms.add(synonymInCls);
+//            }
+//        } else {
+//            String annotationPreUrl = Constants.OBO_LONG_URL;
+//            String annotatorUrl = annotationPreUrl + URLEncoder.encode(lowerWord, "UTF-8");
+//            String output = "";
+//            output = getFromWSAPI(annotatorUrl);
+//            if (output == null)
+//                return null;
+//
+//
+//            JSONArray annotationResults = new JSONArray(output);
+//
+//            if (annotationResults.length() == 0) {
+//                synonyms.add(Constants.NOT_ANNOTATION_FOUND);
+//                return synonyms;
+//            }
+//
+//            JSONArray annotations = annotationResults.getJSONObject(0).getJSONArray(Constants.ANNOTATIONS);
+//            JSONObject annotation = annotations.getJSONObject(0);
+//
+//            String matchType = annotation.getString(Constants.MATCH_TYPE);
+//            int startPos = annotation.getInt(Constants.FROM);
+//
+//            if (startPos > 1) {
+//                synonyms.add(Constants.NOT_ANNOTATION_FOUND);
+//                return synonyms;
+//            }
+//
+//            String matchedWord = annotation.getString(Constants.TEXT).toLowerCase();
+//
+//            JSONArray matchedClasses = findBioOntologyMatchclasses(matchedWord, annotationResults);
+//
+////        synonyms.add(lowerWord);
+//            for (int i = 0; i < matchedClasses.length(); i++) {
+//                JSONObject matchedClass = (JSONObject) matchedClasses.get(i);
+//                String wordId = matchedClass.getString(Constants.WORD_ID);
+//                String ontologyName = matchedClass.getString(Constants.ONTOLOGY_NAME);
+//
+//                wordDetailUrl = Constants.OBO_URL + ontologyName + Constants.CLASSES + wordId + Constants.OBO_API_KEY;
+//                output = getFromWSAPI(wordDetailUrl);
+//                if (output == null)
+//                    return null;
+//
+//                JSONObject wordDetailsInCls = new JSONObject(output);
+//                JSONArray synonymsInCls = wordDetailsInCls.getJSONArray(Constants.SYNONYM);
+//
+//                for (i = 0; i < synonymsInCls.length(); i++) {
+//                    String synonymInCls = synonymsInCls.getString(i);
+//                    synonyms.add(synonymInCls);
+//                }
+//            }
+//        }
+//
+//        return synonyms;
+//
+//
+//    }
+
     /**
      * get WebService output from bioportal
      *
@@ -315,6 +430,7 @@ public class DDIAnnotationService {
     private String getFromWSAPI(String url) {
         String output = null;
         try {
+            //Todo: This function is not working properly
             final RequestConfig params = RequestConfig.custom().setConnectTimeout(60 * 1000).setSocketTimeout(60 * 1000).build();
             CloseableHttpClient httpClient = HttpClientBuilder.create().build();
 
@@ -338,13 +454,7 @@ public class DDIAnnotationService {
         return output;
     }
 
-    /**
-     * get the clasess which has the same matched word as matchedWord
-     *
-     * @param matchedWord       chosen from the first annotation result from annotator API as the matched ontology word
-     * @param annotationResults annotation results from annotator API, may contain multiple matched classes
-     * @return a JSONArray with all the terms and annotations
-     */
+    @Deprecated
     private JSONArray findBioOntologyMatchclasses(String matchedWord, JSONArray annotationResults) throws JSONException {
         JSONArray matchedClasses = new JSONArray();
         for (int i = 0; i < annotationResults.length(); i++) {
@@ -372,10 +482,47 @@ public class DDIAnnotationService {
         return matchedClasses;
     }
 
+
+    /**
+     * get the clasess which has the same matched word as matchedWord
+     *
+     * @param matchedWord       chosen from the first annotation result from annotator API as the matched ontology word
+     * @param annotationResults annotation results from annotator API, may contain multiple matched classes
+     * @return a JSONArray with all the terms and annotations
+     */
+    private JSONArray findBioOntologyMatchclasses(String matchedWord, AnnotatedOntologyQuery[] annotationResults) throws JSONException {
+        JSONArray matchedClasses = new JSONArray();
+        for (int i = 0; i < annotationResults.length; i++) {
+
+            AnnotatedOntologyQuery annotationResult = annotationResults[i];
+            Annotation[]  annotations = annotationResult.getAnnotations();
+            Annotation annotation = annotations[0];
+
+            String matchedWordHere = annotation.getText().toLowerCase();
+            if (!matchedWordHere.equals(matchedWord)) {
+                continue;
+            }
+
+            String wordIdString = annotationResult.getAnnotatedClass().getId();
+            if (Pattern.matches("http:\\/\\/purl\\.bioontology\\.org\\/ontology\\/(.*?)\\/(.*?)", wordIdString)) {
+                String ontologyName = wordIdString.replaceAll("http:\\/\\/purl\\.bioontology\\.org\\/ontology\\/(.*)\\/(.*)", "$1");
+                String wordId = wordIdString.replaceAll("http:\\/\\/purl\\.bioontology\\.org\\/ontology\\/(.*)\\/(.*)", "$2");
+                JSONObject matchedClass = new JSONObject();
+                matchedClass.put(Constants.WORD_ID, wordId);
+                matchedClass.put(Constants.ONTOLOGY_NAME, ontologyName);
+                matchedClasses.put(matchedClass);
+                logger.debug(Constants.WORD_ID + " " + matchedClass.get(Constants.WORD_ID));
+            }
+
+        }
+        return matchedClasses;
+    }
+
     /**
      * @param matchedTerms got from annotation results, which may overlap with other terms
      * @return matchedWords chosen word, which is the longest term in the overlapped terms
      */
+    @Deprecated
     private List<WordInField> getDistinctWordList(JSONArray matchedTerms) throws JSONException {
         List<WordInField> matchedWords = new ArrayList<>();
         for (int i = 0; i < matchedTerms.length(); i++) {
@@ -401,6 +548,39 @@ public class DDIAnnotationService {
                 modifyWordList(word, overlappedWordInList, matchedWords);
             }
         }
+
+        return matchedWords;
+    }
+
+    private List<WordInField> getDistinctWordList(Annotation[] matchedTerms) throws JSONException {
+        List<WordInField> matchedWords = new ArrayList<>();
+        if(matchedTerms != null && matchedTerms.length > 0){
+            for (int i = 0; i < matchedTerms.length; i++) {
+                Annotation matchedTerm = matchedTerms[i];
+
+                String text = matchedTerm.getText();
+                int from = matchedTerm.getFromPosition();
+                int to = matchedTerm.getToPosition();
+                WordInField word = new WordInField(text.toLowerCase(), from, to);
+
+                WordInField overlappedWordInList = findOverlappedWordInList(word, matchedWords);
+
+                if (null == overlappedWordInList) {
+                    matchedWords.add(word);
+
+                    if (!synonymsService.isWordExist(word.getText())) {
+                        if(matchedTerm.getAnnotatedClass() != null && matchedTerm.getAnnotatedClass().getLinks() != null
+                                && matchedTerm.getAnnotatedClass().getLinks().getSelf() != null){
+                            String word_url = matchedTerm.getAnnotatedClass().getLinks().getSelf();
+                            cachedSynonymUrlForWords.put(word.getText().toLowerCase(), word_url);
+                        }
+                    }
+                } else {
+                    modifyWordList(word, overlappedWordInList, matchedWords);
+                }
+            }
+        }
+
 
         return matchedWords;
     }

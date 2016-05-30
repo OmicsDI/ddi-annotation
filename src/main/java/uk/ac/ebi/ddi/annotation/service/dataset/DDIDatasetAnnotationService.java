@@ -44,7 +44,7 @@ public class DDIDatasetAnnotationService {
      * @param dataset
      */
     public void insertDataset(Entry dataset){
-        Dataset dbDataset = transformEntryDataset(dataset);
+        Dataset dbDataset = DatasetUtils.transformEntryDataset(dataset);
         Dataset currentDataset = datasetService.read(dbDataset.getAccession(), dbDataset.getDatabase());
         if(currentDataset == null){
             insertDataset(dbDataset);
@@ -61,7 +61,8 @@ public class DDIDatasetAnnotationService {
     }
 
     public void annotateDataset(Dataset exitingDataset) {
-        exitingDataset.setCurrentStatus(DatasetCategory.UPDATED.getType());
+        if(!exitingDataset.getCurrentStatus().equalsIgnoreCase(DatasetCategory.DELETED.getType()))
+            exitingDataset.setCurrentStatus(DatasetCategory.UPDATED.getType());
         datasetService.update(exitingDataset.getId(), exitingDataset);
         if(exitingDataset.getCrossReferences() != null && !DatasetUtils.getCrossReferenceFieldValue(exitingDataset, Field.PUBMED.getName()).isEmpty()){
             for(String pubmedId: DatasetUtils.getCrossReferenceFieldValue(exitingDataset, Field.PUBMED.getName())){
@@ -71,8 +72,13 @@ public class DDIDatasetAnnotationService {
         }
     }
 
+    public List<PublicationDataset> getPublicationDatasets(){
+        return publicationService.readAll();
+    }
+
     public void enrichedDataset(Dataset existingDataset) {
-        existingDataset.setCurrentStatus(DatasetCategory.ENRICHED.getType());
+        if(!existingDataset.getCurrentStatus().equalsIgnoreCase(DatasetCategory.DELETED.getType()))
+            existingDataset.setCurrentStatus(DatasetCategory.ENRICHED.getType());
         datasetService.update(existingDataset.getId(), existingDataset);
     }
 
@@ -92,6 +98,8 @@ public class DDIDatasetAnnotationService {
     public List<Dataset> getAllDatasetsByDatabase(String databaseName){
         return datasetService.readDatasetHashCode(databaseName);
     }
+
+
 
     public Dataset getDataset(String accession, String database) {
         return datasetService.read(accession, database);
@@ -120,30 +128,12 @@ public class DDIDatasetAnnotationService {
 
     }
 
-    private Dataset transformEntryDataset(Entry dataset){
-
-        Map<String, Set<String>> dates = dataset.getDates().getDate().parallelStream().collect(Collectors.groupingBy(Date::getType, Collectors.mapping(Date::getValue, Collectors.toSet())));
-
-        Map<String, Set<String>> crossReferences = new HashMap<>();
-        if(dataset.getCrossReferences() != null && dataset.getCrossReferences().getRef() != null){
-            crossReferences = dataset.getCrossReferences().getRef()
-                    .stream().parallel()
-                    .collect(Collectors.groupingBy(Reference::getDbname, Collectors.mapping(Reference::getDbkey, Collectors.toSet())));
-        }
-
-        Map<String, Set<String>> additionals = dataset.getAdditionalFields().getField()
-                .stream().parallel()
-                .collect(Collectors.groupingBy(uk.ac.ebi.ddi.xml.validator.parser.model.Field::getName, Collectors.mapping(uk.ac.ebi.ddi.xml.validator.parser.model.Field::getValue, Collectors.toSet())));
-
-        return new Dataset(dataset.getId(), dataset.getDatabase(), dataset.getName().getValue(), dataset.getDescription(),dates, additionals, crossReferences, DatasetCategory.INSERTED);
-
-    }
-
     private String getDate(){
         DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
         return dateFormat.format(new java.util.Date());
     }
 
-
-
+    public void updateDataset(Dataset dataset) {
+        datasetService.update(dataset.getId(), dataset);
+    }
 }

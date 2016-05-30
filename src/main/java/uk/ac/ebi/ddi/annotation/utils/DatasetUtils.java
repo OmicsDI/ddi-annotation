@@ -1,8 +1,12 @@
 package uk.ac.ebi.ddi.annotation.utils;
 
 import uk.ac.ebi.ddi.service.db.model.dataset.Dataset;
+import uk.ac.ebi.ddi.service.db.utils.DatasetCategory;
+import uk.ac.ebi.ddi.xml.validator.parser.model.*;
 
 import java.util.*;
+import java.util.Date;
+import java.util.stream.Collectors;
 
 /**
  * Created by yperez on 25/05/2016.
@@ -11,20 +15,17 @@ public class DatasetUtils {
 
 
     public static Dataset addCrossReferenceValue(Dataset dataset, String key, String value) {
-        if(dataset.getCrossReferences() == null)
-            dataset.setCrossReferences(new HashMap<>());
-
         Map<String, Set<String>> fields = dataset.getCrossReferences();
+        if(fields == null)
+            fields = new HashMap<String, Set<String>>();
         if(key != null && value != null){
-            Set<String> values = null;
-            if(!fields.containsKey(key))
-                values = new HashSet<>();
-            else
+            Set<String> values = new HashSet<String>();
+            if(fields.containsKey(key))
                 values = fields.get(key);
             values.add(value);
             fields.put(key, values);
+            dataset.setCrossReferences(fields);
         }
-        dataset.setCrossReferences(fields);
         return dataset;
     }
 
@@ -37,11 +38,13 @@ public class DatasetUtils {
     }
 
     public static Dataset addAdditionalField(Dataset dataset, String key, String value) {
+        Map<String, Set<String>> additional = dataset.getAdditional();
+        if(additional == null)
+            additional = new HashMap<String, Set<String>>();
         if(key != null && value != null){
-            Map<String, Set<String>> additional = dataset.getAdditional();
-            if(additional == null)
-                additional = new HashMap();
-            Set<String> values = new HashSet<>();
+            Set<String> values = new HashSet<String>();
+            if(additional.containsKey(key))
+                values = additional.get(key);
             values.add(value);
             additional.put(key, values);
             dataset.setAdditional(additional);
@@ -56,5 +59,40 @@ public class DatasetUtils {
                 return new ArrayList<>(dataset.getAdditional().get(key)).get(0);
         return null;
 
+    }
+
+    public static Dataset transformEntryDataset(Entry dataset){
+
+        Map<String, Set<String>> dates = dataset.getDates().getDate().parallelStream().collect(Collectors.groupingBy(uk.ac.ebi.ddi.xml.validator.parser.model.Date::getType, Collectors.mapping(uk.ac.ebi.ddi.xml.validator.parser.model.Date::getValue, Collectors.toSet())));
+
+        Map<String, Set<String>> crossReferences = new HashMap<>();
+        if(dataset.getCrossReferences() != null && dataset.getCrossReferences().getRef() != null){
+            crossReferences = dataset.getCrossReferences().getRef()
+                    .stream().parallel()
+                    .collect(Collectors.groupingBy(x -> x.getDbname().trim(), Collectors.mapping(x -> x.getDbkey().trim(), Collectors.toSet())));
+        }
+        Map<String, Set<String>> additionals = dataset.getAdditionalFields().getField()
+                .stream().parallel()
+                .collect(Collectors.groupingBy(x -> x.getName().trim(), Collectors.mapping(x -> x.getValue().trim(), Collectors.toSet())));
+
+        return new Dataset(dataset.getId(), dataset.getDatabase(), dataset.getName().getValue(), dataset.getDescription(),dates, additionals, crossReferences, DatasetCategory.INSERTED);
+
+    }
+
+    public static Entry tansformDatasetToEntry(Dataset dataset){
+
+        Entry entry = new Entry();
+        entry.setId(dataset.getAccession());
+        entry.setAcc(dataset.getAccession());
+        entry.setDescription(dataset.getDescription());
+        entry.setName(dataset.getName());
+        if(dataset.getDates() != null)
+            dataset.getDates().entrySet().stream().forEach( date -> date.getValue().stream().forEach(value -> entry.addDate(date.getKey(), value)));
+        if(dataset.getCrossReferences() != null)
+            dataset.getCrossReferences().entrySet().stream().forEach( cross -> cross.getValue().stream().forEach(value -> entry.addCrossReferenceValue(cross.getKey(), value)));
+        if(dataset.getAdditional() != null)
+            dataset.getAdditional().entrySet().stream().forEach( additional -> additional.getValue().stream().forEach(value -> entry.addAdditionalField(additional.getKey(), value)));
+
+        return entry;
     }
 }

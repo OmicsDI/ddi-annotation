@@ -2,6 +2,7 @@ package uk.ac.ebi.ddi.extservices.pubmed.client;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.web.client.RestClientException;
 import uk.ac.ebi.ddi.extservices.pubmed.config.PubmedWsConfigProd;
 import uk.ac.ebi.ddi.extservices.pubmed.model.PubmedJSON;
 
@@ -25,7 +26,7 @@ public class PubmedWsClient extends WsClient {
     }
 
 
-    public PubmedJSON getPubmedIds(List<String> dois){
+    public PubmedJSON getPubmedIds(List<String> dois) throws RestClientException{
 
         if(dois != null && dois.size() > 0){
 

@@ -1,8 +1,10 @@
 package uk.ac.ebi.ddi.annotation.service.publication;
 
+import org.springframework.web.client.RestClientException;
 import uk.ac.ebi.ddi.annotation.utils.DOIUtils;
 import uk.ac.ebi.ddi.ebe.ws.dao.client.publication.PublicationWsClient;
 import uk.ac.ebi.ddi.ebe.ws.dao.config.EbeyeWsConfigDev;
+import uk.ac.ebi.ddi.ebe.ws.dao.config.EbeyeWsConfigProd;
 import uk.ac.ebi.ddi.ebe.ws.dao.model.common.Entry;
 import uk.ac.ebi.ddi.ebe.ws.dao.model.common.QueryResult;
 import uk.ac.ebi.ddi.extservices.pubmed.client.PubmedWsClient;
@@ -27,7 +29,7 @@ public class DDIPublicationAnnotationService {
 
     PubmedWsClient clientPMC = new PubmedWsClient(new PubmedWsConfigProd());
 
-    PublicationWsClient publicationWsClient = new PublicationWsClient(new EbeyeWsConfigDev());
+    PublicationWsClient publicationWsClient = new PublicationWsClient(new EbeyeWsConfigProd());
 
     /**
      * Private Constructor
@@ -84,7 +86,7 @@ public class DDIPublicationAnnotationService {
      * @param doiList
      * @return
      */
-    public List<String> getPubMedIDsFromDOIList(List<String> doiList){
+    public List<String> getPubMedIDsFromDOIList(List<String> doiList) throws RestClientException{
         List<String> pubmedIds = new ArrayList<>();
         if(doiList != null && doiList.size() > 0){
             PubmedJSON resultJSON = clientPMC.getPubmedIds(doiList);
@@ -105,7 +107,7 @@ public class DDIPublicationAnnotationService {
      * @param idList
      * @return
      */
-    public List<Map<String,String[]>> getAbstractPublication(List<String> idList){
+    public List<Map<String,String[]>> getAbstractPublication(List<String> idList) throws RestClientException{
         String[] fields         = { "description","name", "author" };
         List<Map<String, String[]>> publications = new ArrayList<>();
         Set<String> finalIds = new HashSet<String>(idList);
