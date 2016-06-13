@@ -70,11 +70,6 @@ public class DDIXmlProcessServiceTest {
 
         reader = new OmicsXMLFile(new File(fileURL.toURI()));
 
-//
-//        expOutputDatasetService.deleteAll();
-//        termInDBService.deleteAll();
-//        datasetStatInfoService.deleteAll();
-
 
     }
 

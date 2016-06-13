@@ -9,6 +9,7 @@ import uk.ac.ebi.ddi.service.db.service.similarity.ExpOutputDatasetService;
 import uk.ac.ebi.ddi.service.db.service.similarity.TermInDBService;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * Created by mingze on 11/09/15.
@@ -98,7 +99,7 @@ public class DDIDatasetSimilarityService {
             List<TermInList> terms = dataset.getTerms();
             for (TermInList term : terms) {
                 List<ExpOutputDataset> relatedDatasets = getRelatedDatasets(dataset, term, expOutputDatasets);
-                List<IntersectionInfo> tempIntersectionInfos = getIntersectionInfos(term, dataset, relatedDatasets);
+                List<IntersectionInfo> tempIntersectionInfos = getIntersectionInfos(dataset, relatedDatasets);
                 datasetIntersectionInfos.addAll(tempIntersectionInfos);
             }
 
@@ -150,12 +151,11 @@ public class DDIDatasetSimilarityService {
     /**
      * Get intersectionInfos from related datasets, which linked by term
      *
-     * @param term the term to compute the interception
      * @param dataset the dataset
      * @param relatedDatasets related datasets
      * @return
      */
-    private List<IntersectionInfo> getIntersectionInfos(TermInList term, ExpOutputDataset dataset, List<ExpOutputDataset> relatedDatasets) {
+    private List<IntersectionInfo> getIntersectionInfos(ExpOutputDataset dataset, List<ExpOutputDataset> relatedDatasets) {
         List<IntersectionInfo> intersectionInfos = new ArrayList<>();
         int indexOfThisDataset = this.indecies.get(dataset.getAccession());
         for (ExpOutputDataset relateddataset : relatedDatasets) {
@@ -250,13 +250,7 @@ public class DDIDatasetSimilarityService {
     private static List<TermInList> getIntersectionSet(List<TermInList> set1, List<TermInList> set2) {
         List<TermInList> cloneSet = new ArrayList<>();
         for (TermInList termInList : set1) {
-            for (TermInList termInList2 : set2) {
-                if (termInList.getTermName().equals(termInList2.getTermName())) {
-                    cloneSet.add(termInList);
-                }
-
-            }
-
+            cloneSet.addAll(set2.stream().filter(termInList2 -> termInList.getTermName().equals(termInList2.getTermName())).map(termInList2 -> termInList).collect(Collectors.toList()));
         }
         return cloneSet;
     }

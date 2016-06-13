@@ -37,7 +37,7 @@ public class DDIExpDataImportService {
     public String importDatasetTerms(String dataType, String datasetAcc, String database, List<Reference> refs) {
 
         ExpOutputDataset importedExpDataset = expOutputDatasetService.readByAccession(datasetAcc, database);
-        List<TermInList> terms = getTermsInDataset(dataType, datasetAcc, refs);
+        List<TermInList> terms = getTermsInDataset(dataType, refs);
         if(importedExpDataset!=null){
             if(isTermsChanged(importedExpDataset.getTerms(),terms)){
                 importedExpDataset.setTerms(terms);
@@ -57,7 +57,7 @@ public class DDIExpDataImportService {
     public String importDatasetTerms(String dataType, String datasetAcc, String database, Map<String, Set<String>> refs) {
 
         ExpOutputDataset importedExpDataset = expOutputDatasetService.readByAccession(datasetAcc, database);
-        List<TermInList> terms = getTermsInDataset(dataType, datasetAcc, refs);
+        List<TermInList> terms = getTermsInDataset(dataType, refs);
         if(importedExpDataset!=null){
             if(isTermsChanged(importedExpDataset.getTerms(),terms)){
                 importedExpDataset.setTerms(terms);
@@ -80,11 +80,7 @@ public class DDIExpDataImportService {
             return false;
         } else {
             importedTerms.retainAll(terms);
-            if (terms.size() != importedTerms.size()) {
-                return false;
-            } else{
-                return true;
-            }
+            return terms.size() == importedTerms.size();
         }
 
 
@@ -93,12 +89,11 @@ public class DDIExpDataImportService {
     /**
      * Get terms(molecules: metabolites/peptides in the dataset)
      * @param dataType omics type of the dataset
-     * @param datasetAcc Accession of the dataset
      * @param refs cross reference data in XML files, contains cross ref id and DB
      * @return
      */
     @Deprecated
-    private List<TermInList> getTermsInDataset(String dataType, String datasetAcc, List<Reference> refs) {
+    private List<TermInList> getTermsInDataset(String dataType, List<Reference> refs) {
         List<TermInList> terms = new ArrayList<>();
         String refKeyWord = null;
         String refKeyWord2 = null;
@@ -138,7 +133,7 @@ public class DDIExpDataImportService {
     }
 
 
-    private List<TermInList> getTermsInDataset(String dataType, String datasetAcc, Map<String, Set<String>> refs) {
+    private List<TermInList> getTermsInDataset(String dataType, Map<String, Set<String>> refs) {
         CopyOnWriteArrayList<TermInList> terms = new CopyOnWriteArrayList<>();
         String refKeyWord = null;
         String refKeyWord2 = null;
@@ -187,12 +182,10 @@ public class DDIExpDataImportService {
         List<Reference> tempRefs = new ArrayList<>();
         List<String> refTerms = new ArrayList<>();
 
-        for (Reference ref : refs) {
-            if (!refTerms.contains(ref.getDbkey())) {
-                tempRefs.add(ref);
-                refTerms.add(ref.getDbkey());
-            }
-        }
+        refs.stream().filter(ref -> !refTerms.contains(ref.getDbkey())).forEach(ref -> {
+            tempRefs.add(ref);
+            refTerms.add(ref.getDbkey());
+        });
         return tempRefs;
     }
 }

@@ -11,6 +11,7 @@ public class BioOntologyWsConfigProd {
     public BioOntologyWsConfigProd(String protocol, String hostName) {
         this.hostName = hostName;
         this.protocol = protocol;
+
     }
 
     public BioOntologyWsConfigProd() {

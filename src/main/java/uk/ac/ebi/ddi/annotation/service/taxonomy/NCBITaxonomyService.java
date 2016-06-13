@@ -50,7 +50,7 @@ public class NCBITaxonomyService {
 
     public List<String> getNCBITaxonomy(List<String> term){
         if(term != null && !term.isEmpty()){
-            Set<String> terms = new HashSet<String>(term);
+            Set<String> terms = new HashSet<>(term);
             NCBITaxResult ncbiTax = taxonomyClient.getNCBITax(terms);
             if(ncbiTax != null && ncbiTax.getNCBITaxonomy() != null && ncbiTax.getNCBITaxonomy().length > 0){
                 return getTaxonomyArr(ncbiTax.getNCBITaxonomy());
@@ -60,7 +60,7 @@ public class NCBITaxonomyService {
     }
 
     private List<String> getTaxonomyArr(String[] taxonomy){
-        List<String> taxonomies = new ArrayList<String>();
+        List<String> taxonomies = new ArrayList<>();
         if(taxonomy != null && taxonomy.length > 0){
             for(String tax: taxonomy)
                 if(tax != null && !tax.isEmpty())
@@ -70,8 +70,9 @@ public class NCBITaxonomyService {
     }
 
     public Dataset annotateSpecies(Dataset dataset){
-        if (dataset.getAdditional() != null && getAdditionalField(dataset, Field.SPECIE_FIELD.getName()) != null) {
-            List<String> taxonomies = NCBITaxonomyService.getInstance().getNCBITaxonomy(new ArrayList<String>(getAdditionalField(dataset,Field.SPECIE_FIELD.getName())));
+
+        if (dataset.getCrossReferences() != null && !dataset.getCrossReferences().containsKey(Field.TAXONOMY.getName()) && dataset.getAdditional() != null && getAdditionalField(dataset, Field.SPECIE_FIELD.getName()) != null) {
+            List<String> taxonomies = NCBITaxonomyService.getInstance().getNCBITaxonomy(new ArrayList<>(getAdditionalField(dataset, Field.SPECIE_FIELD.getName())));
             if (taxonomies != null && taxonomies.size() > 0)
                 for (String tax : taxonomies)
                     dataset = DatasetUtils.addCrossReferenceValue(dataset, Field.TAXONOMY.getName(), tax);

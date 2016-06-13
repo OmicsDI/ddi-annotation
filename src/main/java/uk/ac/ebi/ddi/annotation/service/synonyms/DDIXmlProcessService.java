@@ -13,6 +13,8 @@ import uk.ac.ebi.ddi.annotation.model.EnrichedDataset;
 import uk.ac.ebi.ddi.xml.validator.exception.DDIException;
 import uk.ac.ebi.ddi.xml.validator.parser.OmicsXMLFile;
 import uk.ac.ebi.ddi.xml.validator.parser.model.*;
+import uk.ac.ebi.ddi.xml.validator.utils.*;
+import uk.ac.ebi.ddi.xml.validator.utils.Field;
 
 import java.io.File;
 import java.io.UnsupportedEncodingException;
@@ -91,20 +93,14 @@ public class DDIXmlProcessService {
         String accession = entry.getId();
         DatasetTobeEnriched datasetTobeEnriched = new DatasetTobeEnriched(accession, database, dataType);
 
-        String title = entry.getName().getValue();
-        String abstractDesc = entry.getDescription();
-        String sampleProtocol = entry.getAdditionalFieldValue("sample_protocol");
-        String dataProtocol = entry.getAdditionalFieldValue("data_protocol");
-
-        datasetTobeEnriched.setTitle(title);
-        datasetTobeEnriched.setAbstractDescription(abstractDesc);
-        datasetTobeEnriched.setSampleProtocol(sampleProtocol);
-        datasetTobeEnriched.setDataProtocol(dataProtocol.substring(0, dataProtocol.length()));
-
+        datasetTobeEnriched.addAttribute(Field.NAME.getName(), entry.getName().getValue());
+        datasetTobeEnriched.addAttribute(Field.DESCRIPTION.getName(), entry.getDescription());
+        datasetTobeEnriched.addAttribute(Field.SAMPLE.getName(), entry.getAdditionalFieldValue("sample_protocol"));
+        datasetTobeEnriched.addAttribute(Field.DATA.getName(), entry.getAdditionalFieldValue("data_protocol"));
         return datasetTobeEnriched;
     }
 
-    public void enrichTheDataset(DatasetTobeEnriched datasetTobeEnriched, List<Reference> refs) {
+    public EnrichedDataset enrichTheDataset(DatasetTobeEnriched datasetTobeEnriched, List<Reference> refs) {
         String dataType = datasetTobeEnriched.getDataType();
         String accession = datasetTobeEnriched.getAccession();
         String database = datasetTobeEnriched.getDatabase();
@@ -112,15 +108,11 @@ public class DDIXmlProcessService {
         ddiExpDataImportService.importDatasetTerms(dataType, accession, database, refs);
 
         try {
-            EnrichedDataset enrichedDataset = annotService.enrichment(datasetTobeEnriched);
-        } catch (JSONException e) {
-            e.printStackTrace();
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        } catch (DDIException e) {
+            return annotService.enrichment(datasetTobeEnriched);
+        } catch (JSONException | UnsupportedEncodingException | DDIException e) {
             e.printStackTrace();
         }
-
+        return null;
     }
 
 

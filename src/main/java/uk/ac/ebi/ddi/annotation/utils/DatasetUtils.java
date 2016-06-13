@@ -3,9 +3,9 @@ package uk.ac.ebi.ddi.annotation.utils;
 import uk.ac.ebi.ddi.service.db.model.dataset.Dataset;
 import uk.ac.ebi.ddi.service.db.utils.DatasetCategory;
 import uk.ac.ebi.ddi.xml.validator.parser.model.*;
+import uk.ac.ebi.ddi.xml.validator.utils.Field;
 
 import java.util.*;
-import java.util.Date;
 import java.util.stream.Collectors;
 
 /**
@@ -17,9 +17,9 @@ public class DatasetUtils {
     public static Dataset addCrossReferenceValue(Dataset dataset, String key, String value) {
         Map<String, Set<String>> fields = dataset.getCrossReferences();
         if(fields == null)
-            fields = new HashMap<String, Set<String>>();
+            fields = new HashMap<>();
         if(key != null && value != null){
-            Set<String> values = new HashSet<String>();
+            Set<String> values = new HashSet<>();
             if(fields.containsKey(key))
                 values = fields.get(key);
             values.add(value);
@@ -40,9 +40,9 @@ public class DatasetUtils {
     public static Dataset addAdditionalField(Dataset dataset, String key, String value) {
         Map<String, Set<String>> additional = dataset.getAdditional();
         if(additional == null)
-            additional = new HashMap<String, Set<String>>();
+            additional = new HashMap<>();
         if(key != null && value != null){
-            Set<String> values = new HashSet<String>();
+            Set<String> values = new HashSet<>();
             if(additional.containsKey(key))
                 values = additional.get(key);
             values.add(value);
@@ -61,6 +61,7 @@ public class DatasetUtils {
 
     }
 
+    @Deprecated
     public static Dataset transformEntryDataset(Entry dataset){
 
         Map<String, Set<String>> dates = dataset.getDates().getDate().parallelStream().collect(Collectors.groupingBy(uk.ac.ebi.ddi.xml.validator.parser.model.Date::getType, Collectors.mapping(uk.ac.ebi.ddi.xml.validator.parser.model.Date::getValue, Collectors.toSet())));
@@ -79,6 +80,35 @@ public class DatasetUtils {
 
     }
 
+    /**
+     * This function with use a database as a fixed name. That means that the user will use
+     * the name provided in the function and not the one provided in the File.
+     * @param dataset Dataset Entry from the XML
+     * @param databaseName The database Name
+     * @return Dataset from the dtabase.
+     */
+    public static Dataset transformEntryDataset(Entry dataset, String databaseName){
+
+        Map<String, Set<String>> dates = dataset.getDates().getDate().parallelStream().collect(Collectors.groupingBy(uk.ac.ebi.ddi.xml.validator.parser.model.Date::getType, Collectors.mapping(uk.ac.ebi.ddi.xml.validator.parser.model.Date::getValue, Collectors.toSet())));
+
+        Map<String, Set<String>> crossReferences = new HashMap<>();
+        if(dataset.getCrossReferences() != null && dataset.getCrossReferences().getRef() != null){
+            crossReferences = dataset.getCrossReferences().getRef()
+                    .stream().parallel()
+                    .collect(Collectors.groupingBy(x -> x.getDbname().trim(), Collectors.mapping(x -> x.getDbkey().trim(), Collectors.toSet())));
+        }
+        Map<String, Set<String>> additionals = dataset.getAdditionalFields().getField()
+                .stream().parallel()
+                .collect(Collectors.groupingBy(x -> x.getName().trim(), Collectors.mapping(x -> x.getValue().trim(), Collectors.toSet())));
+
+        //** Rewrite the respoitory with the name we would like to handle ***/
+        Set<String> databases = new HashSet<>();
+        databases.add(databaseName);
+        additionals.put(Field.REPOSITORY.getName(), databases);
+        return new Dataset(dataset.getId(), databaseName, dataset.getName().getValue(), dataset.getDescription(),dates, additionals, crossReferences, DatasetCategory.INSERTED);
+
+    }
+
     public static Entry tansformDatasetToEntry(Dataset dataset){
 
         Entry entry = new Entry();
@@ -94,5 +124,19 @@ public class DatasetUtils {
             dataset.getAdditional().entrySet().stream().forEach( additional -> additional.getValue().stream().forEach(value -> entry.addAdditionalField(additional.getKey(), value)));
 
         return entry;
+    }
+
+    public static Dataset removeCrossReferences(Dataset dataset, String key) {
+        if(dataset.getCrossReferences().containsKey(key))
+            dataset.getCrossReferences().remove(key);
+        return dataset;
+    }
+
+    public static Dataset addCrossReferenceValues(Dataset dataset, String dbName, Set<String> newKeys) {
+        if(dataset.getCrossReferences() == null)
+            dataset.setCrossReferences(new HashMap<>());
+        dataset.getCrossReferences().put(dbName, newKeys);
+        return dataset;
+
     }
 }

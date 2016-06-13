@@ -3,8 +3,8 @@ package uk.ac.ebi.ddi.annotation.service.synonyms;
 
 
 import java.io.*;
-import java.net.URLEncoder;
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.regex.Pattern;
 
 import org.apache.http.HttpResponse;
@@ -37,6 +37,7 @@ import uk.ac.ebi.ddi.xml.validator.exception.DDIException;
  *
  * @author Mingze
  */
+@SuppressWarnings("UnusedAssignment")
 public class DDIAnnotationService {
 
     private static final Logger logger = LoggerFactory.getLogger(DDIAnnotationService.class);
@@ -57,7 +58,8 @@ public class DDIAnnotationService {
      * @return and enriched dataset
      */
 
-    public EnrichedDataset enrichment(DatasetTobeEnriched datasetTobeEnriched) throws JSONException, UnsupportedEncodingException, DDIException {
+    @SuppressWarnings("UnusedAssignment")
+    public EnrichedDataset enrichment(DatasetTobeEnriched datasetTobeEnriched) throws JSONException, UnsupportedEncodingException, RestClientException,DDIException {
 
         String accession = datasetTobeEnriched.getAccession();
         String database = datasetTobeEnriched.getDatabase();
@@ -65,60 +67,38 @@ public class DDIAnnotationService {
         EnrichedDataset enrichedDataset = new EnrichedDataset(accession, database);
         DatasetEnrichmentInfo datasetEnrichmentInfo = new DatasetEnrichmentInfo(accession, database);
 
-        String title = datasetTobeEnriched.getTitle();
-        String abstractDescription = datasetTobeEnriched.getAbstractDescription();
-        String sampleProtocol = datasetTobeEnriched.getSampleProtocol();
-        String dataProtocol = datasetTobeEnriched.getDataProtocol();
-
         DatasetEnrichmentInfo prevDatasetInfo = enrichmentInfoService.readByAccession(accession, database);
 
-        List<WordInField> wordsInTitle = null;
-        List<WordInField> wordsInAbstractDesc = null;
-        List<WordInField> wordsInSampleProtocol = null;
-        List<WordInField> wordsInDataProtocol = null;
-        if (prevDatasetInfo == null) {
-            wordsInTitle = getWordsInFiledFromWS(title);
-            wordsInAbstractDesc = getWordsInFiledFromWS(abstractDescription);
-            wordsInSampleProtocol = getWordsInFiledFromWS(sampleProtocol);
-            wordsInDataProtocol = getWordsInFiledFromWS(dataProtocol);
-        } else {
-            if (title != null && (!title.equals(prevDatasetInfo.getTitleString())) || prevDatasetInfo.getTitle() == null) {
-                wordsInTitle = getWordsInFiledFromWS(title);
-            } else {
-                wordsInTitle = prevDatasetInfo.getTitle();
-            }
-            if (abstractDescription != null && (!abstractDescription.equals(prevDatasetInfo.getAbstractString())) || prevDatasetInfo.getAbstractDescription() == null) {
-                wordsInAbstractDesc = getWordsInFiledFromWS(abstractDescription);
-            } else {
-                wordsInAbstractDesc = prevDatasetInfo.getAbstractDescription();
-            }
-            if (sampleProtocol != null && (!sampleProtocol.equals(prevDatasetInfo.getSampleProtocolString())) || prevDatasetInfo.getSampleProtocol() == null) {
-                wordsInSampleProtocol = getWordsInFiledFromWS(sampleProtocol);
-            } else {
-                wordsInSampleProtocol = prevDatasetInfo.getSampleProtocol();
-            }
-            if (dataProtocol != null && (!dataProtocol.equals(prevDatasetInfo.getDataProtocolString())) || prevDatasetInfo.getDataProtocol() == null) {
-                wordsInDataProtocol = getWordsInFiledFromWS(dataProtocol);
-            } else {
-                wordsInDataProtocol = prevDatasetInfo.getDataProtocol();
+        Map<String, List<WordInField>> synonyms = new HashMap<String, List<WordInField>>();
+
+        if (prevDatasetInfo == null)
+            synonyms     = getWordsInFiledFromWS(datasetTobeEnriched.getAttributes());
+        else {
+            for (String key : datasetTobeEnriched.getAttributes().keySet()) {
+                if (prevDatasetInfo.getSynonyms() != null && prevDatasetInfo.getSynonyms().containsKey(key) && prevDatasetInfo.getOriginalAttributes().get(key).equals(datasetTobeEnriched.getAttributes().get(key)))
+                    synonyms.put(key, prevDatasetInfo.getSynonyms().get(key));
+                else {
+                    List<WordInField> words = getWordsInFiledFromWS(datasetTobeEnriched.getAttributes().get(key));
+                    if (words != null && !words.isEmpty())
+                        synonyms.put(key, words);
+                }
             }
         }
-        datasetEnrichmentInfo.setTitle(wordsInTitle);
-        datasetEnrichmentInfo.setAbstractDescription(wordsInAbstractDesc);
-        datasetEnrichmentInfo.setSampleProtocol(wordsInSampleProtocol);
-        datasetEnrichmentInfo.setDataProtocol(wordsInDataProtocol);
+
+        datasetEnrichmentInfo.setSynonyms(synonyms);
         datasetEnrichmentInfo.setEnrichTime(new Date());
 
-        datasetEnrichmentInfo.setTitleString(datasetTobeEnriched.getTitle());
-        datasetEnrichmentInfo.setAbstractString(datasetTobeEnriched.getAbstractDescription());
-        datasetEnrichmentInfo.setSampleProtocolString(datasetTobeEnriched.getSampleProtocol());
-        datasetEnrichmentInfo.setDataProtocolString(datasetTobeEnriched.getDataProtocol());
+        datasetEnrichmentInfo.setOriginalAttributes(datasetTobeEnriched.getAttributes());
         enrichmentInfoService.insert(datasetEnrichmentInfo);
-
-        enrichedDataset.setEnrichedTitle(EnrichField(wordsInTitle));
-        enrichedDataset.setEnrichedAbstractDescription(EnrichField(wordsInAbstractDesc));
-        enrichedDataset.setEnrichedSampleProtocol(EnrichField(wordsInSampleProtocol));
-        enrichedDataset.setEnrichedDataProtocol(EnrichField(wordsInDataProtocol));
+        Map<String, String> fields = new HashMap<>();
+        synonyms.entrySet().stream().forEach(x -> {
+            try {
+                fields.put(x.getKey(), EnrichField(x.getValue()));
+            } catch (JSONException | UnsupportedEncodingException e) {
+                e.printStackTrace();
+            }
+        });
+        enrichedDataset.setEnrichedAttributes(fields);
 
         return enrichedDataset;
     }
@@ -129,7 +109,7 @@ public class DDIAnnotationService {
      * @param wordsInField the words provided by the service
      * @return the final string of the enrichment
      */
-    private String EnrichField(List<WordInField> wordsInField) throws JSONException, UnsupportedEncodingException {
+    private String EnrichField(List<WordInField> wordsInField) throws JSONException, UnsupportedEncodingException, RestClientException {
         if (wordsInField == null || wordsInField.isEmpty()) {
             return null;
         }
@@ -219,14 +199,12 @@ public class DDIAnnotationService {
                 return null;
             logger.debug(annotationResults.toString());
 
-            for (int i = 0; i < annotationResults.length; i++) {
-                RecomendedOntologyQuery annotationResult = annotationResults[i];
-
-                if (annotationResult.getOntologies() == null || annotationResult.getOntologies().length  > 1) {
+            for (RecomendedOntologyQuery annotationResult : annotationResults) {
+                if (annotationResult.getOntologies() == null || annotationResult.getOntologies().length > 1) {
                     logger.debug("There are more than one ontologies here, something must be wrong");
                     throw new DDIException("There are more than one ontologies here, something must be wrong");
                 }
-                if(annotationResult.getResults() != null && annotationResult.getResults().getAnnotations() != null)
+                if (annotationResult.getResults() != null && annotationResult.getResults().getAnnotations() != null)
                     matchedWords.addAll(getDistinctWordList(annotationResult.getResults().getAnnotations()));
             }
 
@@ -240,6 +218,42 @@ public class DDIAnnotationService {
         return matchedWords;
     }
 
+    private Map<String, List<WordInField>> getWordsInFiledFromWS(Map<String, String> fields) throws JSONException, UnsupportedEncodingException, DDIException {
+
+        ConcurrentHashMap<String, List<WordInField>> results = new ConcurrentHashMap<>();
+
+        if (fields == null || fields.isEmpty()) {
+            return results;
+        }
+
+        fields.entrySet().parallelStream().forEach( field ->{
+            if(field.getValue() != null && !field.getValue().equalsIgnoreCase(Constants.NOT_AVAILABLE)){
+                List<WordInField> matchedWords = new ArrayList<>();
+                String fieldText = field.getValue().replace("%", " ");//to avoid malformed error
+                try{
+                    RecomendedOntologyQuery[] annotationResults = recommenderClient.postRecommendedTerms(fieldText, Constants.OBO_ONTOLOGIES);
+                    if (annotationResults != null){
+                        for (RecomendedOntologyQuery annotationResult : annotationResults) {
+                            if (annotationResult.getOntologies() == null || annotationResult.getOntologies().length > 1) {
+                                logger.debug("There are more than one ontologies here, something must be wrong");
+                                throw new DDIException("There are more than one ontologies here, something must be wrong");
+                            }
+                            if (annotationResult.getResults() != null && annotationResult.getResults().getAnnotations() != null)
+                                matchedWords.addAll(getDistinctWordList(annotationResult.getResults().getAnnotations()));
+                        }
+                    }
+                    logger.debug(annotationResults.toString());
+
+                }catch (UnsupportedEncodingException | JSONException | DDIException | RestClientException ex){
+                    logger.debug(ex.getMessage());
+                }
+                Collections.sort(matchedWords);
+                results.put(field.getKey(), matchedWords);
+            }
+        });
+
+        return results;
+    }
 
     /**
      * Get all synonyms for a word from mongoDB. If this word is not in the DB, then get it's synonyms from Web Service,
@@ -249,7 +263,7 @@ public class DDIAnnotationService {
      * @param word to retrieve the given synonyms
      * @return the list of synonyms
      */
-    public List<String> getSynonymsForWord(String word) throws JSONException, UnsupportedEncodingException {
+    public List<String> getSynonymsForWord(String word) throws JSONException, UnsupportedEncodingException, RestClientException {
 
         List<String> synonyms;
 
@@ -276,28 +290,28 @@ public class DDIAnnotationService {
      * @param word the word to look for synonyms
      * @return get synonyms of the word, by annotator API from bioontology.org
      */
-    protected ArrayList<String> getSynonymsForWordFromWS(String word) throws JSONException, UnsupportedEncodingException {
+    protected ArrayList<String> getSynonymsForWordFromWS(String word) throws JSONException, UnsupportedEncodingException, RestClientException {
         String lowerWord = word.toLowerCase();
         ArrayList<String> synonyms = new ArrayList<>();
 
-        String wordDetailUrl = cachedSynonymUrlForWords.get(lowerWord);
-        if (wordDetailUrl != null) {
-            try {
-                SynonymQuery output = recommenderClient.getAllSynonymByURL(wordDetailUrl);
-                if (output == null)
-                    return null;
-
-                String[] synonymsInCls = output.getSynonyms();
-
-                for (int i = 0; i < synonymsInCls.length; i++) {
-                    String synonymInCls = synonymsInCls[i];
-                    synonyms.add(synonymInCls);
-                }
-            }catch (RestClientException ex){
-                logger.debug(ex.getMessage());
-                return null;
-            }
-        } else {
+        //Todo: Mingze the cache system is not working
+//        String wordDetailUrl = cachedSynonymUrlForWords.get(lowerWord);
+//        wordDetailUrl = null;
+//        if (wordDetailUrl != null) {
+//            try {
+//                SynonymQuery output = recommenderClient.getAllSynonymByURL(wordDetailUrl);
+//                if (output == null)
+//                    return null;
+//
+//                String[] synonymsInCls = output.getSynonyms();
+//                Collections.addAll(synonyms, synonymsInCls);
+//
+//            }catch (RestClientException ex){
+//                logger.debug(ex.getMessage());
+//                ex.printStackTrace();
+//                return null;
+//            }
+//        } else {
             AnnotatedOntologyQuery[] annotatedTerms = recommenderClient.getAnnotatedTerms(lowerWord, Constants.OBO_ONTOLOGIES);
             if (annotatedTerms == null)
                 return null;
@@ -310,7 +324,6 @@ public class DDIAnnotationService {
             Annotation[] annotations = annotatedTerms[0].getAnnotations();
             Annotation annotation = annotations[0];
 
-            String matchType = annotation.getMatchType();
             int startPos = annotation.getFromPosition();
 
             if (startPos > 1) {
@@ -339,7 +352,7 @@ public class DDIAnnotationService {
                     synonyms.add(synonymInCls);
                 }
             }
-        }
+//        }
 
         return synonyms;
 
@@ -492,10 +505,9 @@ public class DDIAnnotationService {
      */
     private JSONArray findBioOntologyMatchclasses(String matchedWord, AnnotatedOntologyQuery[] annotationResults) throws JSONException {
         JSONArray matchedClasses = new JSONArray();
-        for (int i = 0; i < annotationResults.length; i++) {
+        for (AnnotatedOntologyQuery annotationResult : annotationResults) {
 
-            AnnotatedOntologyQuery annotationResult = annotationResults[i];
-            Annotation[]  annotations = annotationResult.getAnnotations();
+            Annotation[] annotations = annotationResult.getAnnotations();
             Annotation annotation = annotations[0];
 
             String matchedWordHere = annotation.getText().toLowerCase();
@@ -555,9 +567,7 @@ public class DDIAnnotationService {
     private List<WordInField> getDistinctWordList(Annotation[] matchedTerms) throws JSONException {
         List<WordInField> matchedWords = new ArrayList<>();
         if(matchedTerms != null && matchedTerms.length > 0){
-            for (int i = 0; i < matchedTerms.length; i++) {
-                Annotation matchedTerm = matchedTerms[i];
-
+            for (Annotation matchedTerm : matchedTerms) {
                 String text = matchedTerm.getText();
                 int from = matchedTerm.getFromPosition();
                 int to = matchedTerm.getToPosition();
@@ -569,8 +579,8 @@ public class DDIAnnotationService {
                     matchedWords.add(word);
 
                     if (!synonymsService.isWordExist(word.getText())) {
-                        if(matchedTerm.getAnnotatedClass() != null && matchedTerm.getAnnotatedClass().getLinks() != null
-                                && matchedTerm.getAnnotatedClass().getLinks().getSelf() != null){
+                        if (matchedTerm.getAnnotatedClass() != null && matchedTerm.getAnnotatedClass().getLinks() != null
+                                && matchedTerm.getAnnotatedClass().getLinks().getSelf() != null) {
                             String word_url = matchedTerm.getAnnotatedClass().getLinks().getSelf();
                             cachedSynonymUrlForWords.put(word.getText().toLowerCase(), word_url);
                         }

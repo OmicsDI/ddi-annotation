@@ -5,7 +5,6 @@ import org.slf4j.LoggerFactory;
 import uk.ac.ebi.ddi.extservices.entrez.config.TaxWsConfigProd;
 import uk.ac.ebi.ddi.extservices.entrez.ncbiresult.NCBITaxResult;
 
-import java.util.Iterator;
 import java.util.Set;
 
 
@@ -43,9 +42,8 @@ public class TaxonomyWsClient extends WsClient {
 
         String query = "";
         if(terms != null && terms.size() > 0){
-            Iterator<String> specieIterator = terms.iterator();
-            while (specieIterator.hasNext()){
-                query = query + "+OR+" + specieIterator.next();
+            for (String term : terms) {
+                query = query + "+OR+" + term;
             }
             query = query.replaceFirst("\\+OR\\+","");
             String url = String.format("%s://%s/entrez/eutils/esearch.fcgi?db=taxonomy&term=%s&retmode=JSON",

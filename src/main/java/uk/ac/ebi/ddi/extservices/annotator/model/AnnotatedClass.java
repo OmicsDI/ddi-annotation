@@ -3,9 +3,6 @@ package uk.ac.ebi.ddi.extservices.annotator.model;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import java.util.List;
-import java.util.Map;
-
 /**
  * Created by yperez on 29/05/2016.
  */

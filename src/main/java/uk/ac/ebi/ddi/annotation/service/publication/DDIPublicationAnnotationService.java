@@ -3,7 +3,6 @@ package uk.ac.ebi.ddi.annotation.service.publication;
 import org.springframework.web.client.RestClientException;
 import uk.ac.ebi.ddi.annotation.utils.DOIUtils;
 import uk.ac.ebi.ddi.ebe.ws.dao.client.publication.PublicationWsClient;
-import uk.ac.ebi.ddi.ebe.ws.dao.config.EbeyeWsConfigDev;
 import uk.ac.ebi.ddi.ebe.ws.dao.config.EbeyeWsConfigProd;
 import uk.ac.ebi.ddi.ebe.ws.dao.model.common.Entry;
 import uk.ac.ebi.ddi.ebe.ws.dao.model.common.QueryResult;
@@ -110,7 +109,7 @@ public class DDIPublicationAnnotationService {
     public List<Map<String,String[]>> getAbstractPublication(List<String> idList) throws RestClientException{
         String[] fields         = { "description","name", "author" };
         List<Map<String, String[]>> publications = new ArrayList<>();
-        Set<String> finalIds = new HashSet<String>(idList);
+        Set<String> finalIds = new HashSet<>(idList);
         QueryResult pride = publicationWsClient.getPublications(fields, finalIds);
         if(pride != null && pride.getEntries() != null && pride.getEntries().length > 0){
             for(Entry entry: pride.getEntries()){

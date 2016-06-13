@@ -22,7 +22,7 @@ public class UniprotIdentifier {
     private static final Logger logger = LoggerFactory.getLogger(UniprotIdentifier.class);
 
     private static List<String> run(String tool, ParameterNameValue[] params) throws Exception{
-        List<String> newIdentifiers = new ArrayList<String>();
+        List<String> newIdentifiers = new ArrayList<>();
 
         StringBuilder locationBuilder = new StringBuilder(UNIPROT_SERVER + tool + "/?");
         for (int i = 0; i < params.length; i++){

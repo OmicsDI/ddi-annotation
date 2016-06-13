@@ -21,8 +21,7 @@ public class SimilarityCalculator {
     public static void main(String[] args) {
 
         //For test, avoid inputing argument
-        String[] argsExample = {"--dataType=ProteomicsData"};
-        args = argsExample;
+        args = new String[]{"--dataType=ProteomicsData"};
 
 
         TermInDBService termInDBService;

@@ -1,6 +1,8 @@
 package uk.ac.ebi.ddi.annotation.model;
 
+import java.util.HashMap;
 import java.util.Map;
+
 /**
  * Created by mingze on 05/10/15.
  */
@@ -10,10 +12,7 @@ public class DatasetTobeEnriched {
     private String database;
     private String dataType;
 
-    private String title;
-    private String abstractDescription;
-    private String sampleProtocol;
-    private String dataProtocol;
+    Map<String, String> attributes;
 
     /**
      * Default contructor
@@ -30,23 +29,13 @@ public class DatasetTobeEnriched {
      * This constructor is more general and can be use to create an object with all the attributes
      * @param accession accession of the dataset
      * @param database  database of the dataset
-     * @param title     dataset title
-     * @param abstractDescription description of the dataset
-     * @param sampleProtocol sample protocol
-     * @param dataProtocol   data protocol
      */
     public DatasetTobeEnriched(String accession,
                                String database,
-                               String title,
-                               String abstractDescription,
-                               String sampleProtocol,
-                               String dataProtocol) {
+                               Map<String, String> attributes) {
         this.accession = accession;
         this.database = database;
-        this.title = title;
-        this.abstractDescription = abstractDescription;
-        this.sampleProtocol = sampleProtocol;
-        this.dataProtocol = dataProtocol;
+        this.attributes = attributes;
     }
 
     public String getAccession() {
@@ -65,38 +54,6 @@ public class DatasetTobeEnriched {
         this.database = database;
     }
 
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getAbstractDescription() {
-        return abstractDescription;
-    }
-
-    public void setAbstractDescription(String abstractDescription) {
-        this.abstractDescription = abstractDescription;
-    }
-
-    public String getSampleProtocol() {
-        return sampleProtocol;
-    }
-
-    public void setSampleProtocol(String sampleProtocol) {
-        this.sampleProtocol = sampleProtocol;
-    }
-
-    public String getDataProtocol() {
-        return dataProtocol;
-    }
-
-    public void setDataProtocol(String dataProtocol) {
-        this.dataProtocol = dataProtocol;
-    }
-
     public String getDataType() {
         return dataType;
     }
@@ -105,4 +62,17 @@ public class DatasetTobeEnriched {
         this.dataType = dataType;
     }
 
+    public Map<String, String> getAttributes() {
+        return attributes;
+    }
+
+    public void setAttributes(Map<String, String> attributes) {
+        this.attributes = attributes;
+    }
+
+    public void addAttribute(String key, String value){
+        if(attributes == null)
+            attributes = new HashMap<>();
+        attributes.put(key, value);
+    }
 }

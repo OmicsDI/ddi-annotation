@@ -1,5 +1,7 @@
 package uk.ac.ebi.ddi.annotation.model;
 
+import java.util.Map;
+
 /**
  * Created by mingze on 05/10/15.
  */
@@ -8,10 +10,7 @@ public class EnrichedDataset {
     private String accession;
     private String database;
 
-    private String enrichedTitle;
-    private String enrichedAbstractDescription;
-    private String enrichedSampleProtocol;
-    private String enrichedDataProtocol;
+    private Map<String, String> enrichedAttributes;
 
     public EnrichedDataset(String accession, String database) {
         this.accession = accession;
@@ -34,35 +33,11 @@ public class EnrichedDataset {
         this.database = database;
     }
 
-    public String getEnrichedTitle() {
-        return enrichedTitle;
+    public Map<String, String> getEnrichedAttributes() {
+        return enrichedAttributes;
     }
 
-    public void setEnrichedTitle(String enrichedTitle) {
-        this.enrichedTitle = enrichedTitle;
-    }
-
-    public String getEnrichedAbstractDescription() {
-        return enrichedAbstractDescription;
-    }
-
-    public void setEnrichedAbstractDescription(String enrichedAbstractDescription) {
-        this.enrichedAbstractDescription = enrichedAbstractDescription;
-    }
-
-    public String getEnrichedSampleProtocol() {
-        return enrichedSampleProtocol;
-    }
-
-    public void setEnrichedSampleProtocol(String enrichedSampleProtocol) {
-        this.enrichedSampleProtocol = enrichedSampleProtocol;
-    }
-
-    public String getEnrichedDataProtocol() {
-        return enrichedDataProtocol;
-    }
-
-    public void setEnrichedDataProtocol(String enrichedDataProtocol) {
-        this.enrichedDataProtocol = enrichedDataProtocol;
+    public void setEnrichedAttributes(Map<String, String> enrichedAttributes) {
+        this.enrichedAttributes = enrichedAttributes;
     }
 }

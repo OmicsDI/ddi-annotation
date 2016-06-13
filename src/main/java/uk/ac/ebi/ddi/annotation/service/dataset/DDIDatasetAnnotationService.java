@@ -1,26 +1,25 @@
 package uk.ac.ebi.ddi.annotation.service.dataset;
 
+import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import uk.ac.ebi.ddi.annotation.utils.DatasetUtils;
 import uk.ac.ebi.ddi.service.db.model.dataset.Dataset;
+import uk.ac.ebi.ddi.service.db.model.dataset.DatasetSimilars;
 import uk.ac.ebi.ddi.service.db.model.dataset.DatasetStatus;
 import uk.ac.ebi.ddi.service.db.model.publication.PublicationDataset;
 import uk.ac.ebi.ddi.service.db.service.dataset.IDatasetService;
+import uk.ac.ebi.ddi.service.db.service.dataset.IDatasetSimilarsService;
 import uk.ac.ebi.ddi.service.db.service.dataset.IDatasetStatusService;
 import uk.ac.ebi.ddi.service.db.service.publication.IPublicationDatasetService;
 import uk.ac.ebi.ddi.service.db.utils.DatasetCategory;
-import uk.ac.ebi.ddi.xml.validator.parser.model.Date;
 import uk.ac.ebi.ddi.xml.validator.parser.model.Entry;
-import uk.ac.ebi.ddi.xml.validator.parser.model.Reference;
 import uk.ac.ebi.ddi.xml.validator.utils.Field;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.stream.Collectors;
 
 /**
  * @author Yasset Perez-Riverol (ypriverol@gmail.com)
@@ -37,12 +36,16 @@ public class DDIDatasetAnnotationService {
     @Autowired
     IPublicationDatasetService publicationService;
 
+    @Autowired
+    IDatasetSimilarsService similarsService;
+
     /**
      * This function looks for individual datasets and check if they are in the database and if they needs to
      * be updated.
      *
      * @param dataset
      */
+    @Deprecated
     public void insertDataset(Entry dataset){
         Dataset dbDataset = DatasetUtils.transformEntryDataset(dataset);
         Dataset currentDataset = datasetService.read(dbDataset.getAccession(), dbDataset.getDatabase());
@@ -52,6 +55,23 @@ public class DDIDatasetAnnotationService {
             updateDataset(currentDataset, dbDataset);
         }
     }
+
+    /**
+     * THis insert use a fixed database Name and not the one provided by the user
+     * @param dataset Dataset Entry from the XML
+     * @param databaseName database name provided by the users
+     */
+    public void insertDataset(Entry dataset, String databaseName){
+        Dataset dbDataset = DatasetUtils.transformEntryDataset(dataset, databaseName);
+        Dataset currentDataset = datasetService.read(dbDataset.getAccession(), dbDataset.getDatabase());
+        if(currentDataset == null){
+            insertDataset(dbDataset);
+        }else if(currentDataset.getInitHashCode() != dbDataset.getInitHashCode()){
+            updateDataset(currentDataset, dbDataset);
+        }
+    }
+
+
 
     private void updateDataset(Dataset currentDataset, Dataset dbDataset) {
         dbDataset = datasetService.update(currentDataset.getId(), dbDataset);
@@ -135,5 +155,57 @@ public class DDIDatasetAnnotationService {
 
     public void updateDataset(Dataset dataset) {
         datasetService.update(dataset.getId(), dataset);
+    }
+
+    /**
+     * Find a dataset by the Accession
+     * @param dbKey db accession
+     * @return List of Datasets.
+     */
+    public List<Dataset> getDataset(String dbKey) {
+        return datasetService.findByAccession(dbKey);
+    }
+
+    public void updateDatasetSimilars(ObjectId id, String accession, String database, Map<String, Set<String>> similars){
+        DatasetSimilars datasetExisting = similarsService.read(id);
+        if(datasetExisting == null){
+            datasetExisting = new DatasetSimilars(accession, database, similars);
+            similarsService.save(datasetExisting);
+        }else{
+            datasetExisting.setSimilars(similars);
+            similarsService.save(datasetExisting);
+        }
+    }
+
+    public void updateDatasetSimilars(String accession, String database, Map<String, Set<String>> similars){
+        DatasetSimilars datasetExisting = similarsService.read(accession, database);
+        if(datasetExisting == null){
+            datasetExisting = new DatasetSimilars(accession, database, similars);
+            similarsService.save(datasetExisting);
+        }else{
+            datasetExisting.setSimilars(similars);
+            similarsService.save(datasetExisting);
+        }
+    }
+
+    public void addDatasetSimilars(ObjectId id, String accession, String database, Map<String, Set<String>> similars){
+        DatasetSimilars datasetExisting = similarsService.read(id);
+        if(datasetExisting == null){
+            datasetExisting = new DatasetSimilars(accession, database, similars);
+            similarsService.save(datasetExisting);
+        }else{
+            Map<String, Set<String>> datasets = datasetExisting.getSimilars();
+            similars.entrySet().forEach(similar -> {
+                if(!datasets.containsKey(similar.getKey()))
+                    datasets.put(similar.getKey(), similar.getValue());
+                else{
+                    Set<String> value = datasets.get(similar.getKey());
+                    value.addAll(similar.getValue());
+                    datasets.put(similar.getKey(), value);
+                }
+            });
+            datasetExisting.setSimilars(datasets);
+            similarsService.save(datasetExisting);
+        }
     }
 }

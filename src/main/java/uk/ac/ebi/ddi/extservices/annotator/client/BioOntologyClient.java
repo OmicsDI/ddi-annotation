@@ -1,5 +1,6 @@
 package uk.ac.ebi.ddi.extservices.annotator.client;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.web.client.RestClientException;
 import uk.ac.ebi.ddi.annotation.utils.Constants;
 import uk.ac.ebi.ddi.extservices.annotator.config.BioOntologyWsConfigProd;
@@ -20,6 +21,8 @@ public class BioOntologyClient extends WsClient{
 
     private static final Logger logger = LoggerFactory.getLogger(BioOntologyClient.class);
 
+    private ObjectMapper mapper = new ObjectMapper(); // can reuse, share globally
+
     /**
      * Default constructor for Archive clients
      *
@@ -36,19 +39,8 @@ public class BioOntologyClient extends WsClient{
      * @return
      * @throws UnsupportedEncodingException
      */
-    public RecomendedOntologyQuery[] getRecommendedTerms(String query, String[] ontologies) throws UnsupportedEncodingException {
-        String ontology = "";
-        if((ontologies != null) && (ontologies.length > 0)) {
-            int count = 0;
-            for (String value : ontologies) {
-                if (count == ontologies.length - 1)
-                    ontology = ontology + value;
-                else
-                    ontology = ontology + value + ",";
-                count++;
-            }
-        }
-
+    public RecomendedOntologyQuery[] getRecommendedTerms(String query, String[] ontologies) throws UnsupportedEncodingException, RestClientException {
+        String ontology = getStringfromArray(ontologies);
         query = URLEncoder.encode(query, "UTF-8");
 
         String url = String.format("%s://%s/recommender?ontologies=%s&apikey=%s&input=%s",
@@ -60,14 +52,8 @@ public class BioOntologyClient extends WsClient{
 
     }
 
-    /**
-     * Retrieve the Recommended term using a query and set of ontologies.
-     * @param query Query Text
-     * @param ontologies List of ontologies
-     * @return
-     * @throws UnsupportedEncodingException
-     */
-    public RecomendedOntologyQuery[] postRecommendedTerms(String query, String[] ontologies) throws UnsupportedEncodingException, RestClientException {
+    private String getStringfromArray(String[] ontologies) {
+
         String ontology = "";
         if((ontologies != null) && (ontologies.length > 0)) {
             int count = 0;
@@ -79,6 +65,18 @@ public class BioOntologyClient extends WsClient{
                 count++;
             }
         }
+        return ontology;
+    }
+
+    /**
+     * Retrieve the Recommended term using a query and set of ontologies.
+     * @param query Query Text
+     * @param ontologies List of ontologies
+     * @return
+     * @throws UnsupportedEncodingException
+     */
+    public RecomendedOntologyQuery[] postRecommendedTerms(String query, String[] ontologies) throws UnsupportedEncodingException, RestClientException {
+        String ontology = getStringfromArray(ontologies);
 
         query = URLEncoder.encode(query, "UTF-8");
 
@@ -92,18 +90,8 @@ public class BioOntologyClient extends WsClient{
 
     }
 
-    public AnnotatedOntologyQuery[] getAnnotatedTerms(String query, String[] ontologies){
-        String ontology = "";
-        if((ontologies != null) && (ontologies.length > 0)) {
-            int count = 0;
-            for (String value : ontologies) {
-                if (count == ontologies.length - 1)
-                    ontology = ontology + value;
-                else
-                    ontology = ontology + value + ",";
-                count++;
-            }
-        }
+    public AnnotatedOntologyQuery[] getAnnotatedTerms(String query, String[] ontologies) throws RestClientException{
+        String ontology = getStringfromArray(ontologies);
 
         String url = String.format("%s://%s/annotator?ontologies=%s&longest_only=true&whole_word_only=false&apikey=%s&text=%s",
                 config.getProtocol(), config.getHostName(), ontology, Constants.OBO_KEY, query);
@@ -113,7 +101,7 @@ public class BioOntologyClient extends WsClient{
 
     }
 
-    public SynonymQuery getAllSynonyms(String ontology, String term){
+    public SynonymQuery getAllSynonyms(String ontology, String term) throws RestClientException{
 
         String url = String.format("%s://%s/ontologies/%s/classes/%s?apikey=%s",
                 config.getProtocol(), config.getHostName(), ontology, term, Constants.OBO_KEY);
@@ -132,6 +120,8 @@ public class BioOntologyClient extends WsClient{
         return this.restTemplate.getForObject(url, SynonymQuery.class);
 
     }
+
+
 
 
 

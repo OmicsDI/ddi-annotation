@@ -42,24 +42,20 @@ public class DatasetAnnotationEnrichmentService {
     @Deprecated
     public static EnrichedDataset enrichment(DDIAnnotationService service, Entry dataset) throws DDIException, UnsupportedEncodingException, JSONException {
 
-        DatasetTobeEnriched datasetTobeEnriched = new DatasetTobeEnriched(dataset.getId(),dataset.getAdditionalFieldValue(Field.REPOSITORY.getName()),
-                dataset.getName().getValue(), dataset.getDescription(), dataset.getAdditionalFieldValue(Field.SAMPLE.getName()),
-                dataset.getAdditionalFieldValue(Field.DATA.getName()));
-
-        EnrichedDataset enrichedDataset = service.enrichment(datasetTobeEnriched);
-
-        return enrichedDataset;
+        DatasetTobeEnriched datasetTobeEnriched = new DatasetTobeEnriched(dataset.getId(),dataset.getAdditionalFieldValue(Field.REPOSITORY.getName()), "");
+        return service.enrichment(datasetTobeEnriched);
     }
 
-    public static EnrichedDataset enrichment(DDIAnnotationService service, Dataset dataset) throws DDIException, UnsupportedEncodingException, JSONException {
+    public static EnrichedDataset enrichment(DDIAnnotationService service, Dataset dataset) throws DDIException, UnsupportedEncodingException, RestClientException, JSONException {
 
-        DatasetTobeEnriched datasetTobeEnriched = new DatasetTobeEnriched(dataset.getAccession(), dataset.getDatabase(),dataset.getName(),
-                dataset.getDescription(), DatasetUtils.getFirstAdditionalFieldValue(dataset, Field.SAMPLE.getName()),
-                DatasetUtils.getFirstAdditionalFieldValue(dataset, Field.DATA.getName()));
-
-        EnrichedDataset enrichedDataset = service.enrichment(datasetTobeEnriched);
-
-        return enrichedDataset;
+        Map<String, String> fields = new HashMap<>();
+        fields.put(Field.NAME.getName(), dataset.getName());
+        fields.put(Field.DESCRIPTION.getName(), dataset.getDescription());
+        fields.put(Field.DATA.getName(), DatasetUtils.getFirstAdditionalFieldValue(dataset, Field.DATA.getName()));
+        fields.put(Field.SAMPLE.getName(), DatasetUtils.getFirstAdditionalFieldValue(dataset, Field.SAMPLE.getName()));
+        fields.put(Field.PUBMED_ABSTRACT.getName(), DatasetUtils.getFirstAdditionalFieldValue(dataset, Field.PUBMED_ABSTRACT.getName()));
+        fields.put(Field.PUBMED_TITLE.getName(), DatasetUtils.getFirstAdditionalFieldValue(dataset, Field.PUBMED_TITLE.getName()));
+        return service.enrichment(new DatasetTobeEnriched(dataset.getAccession(), dataset.getDatabase(),fields));
     }
 
     /**
@@ -88,20 +84,26 @@ public class DatasetAnnotationEnrichmentService {
      * @param enrichedDataset The new fields to be added to the dataset
      * @return Entry a new entry with all the fields
      */
-    @Deprecated
-    public static Entry addEnrichedFields(Entry dataset, EnrichedDataset enrichedDataset){
-        dataset.addAdditionalField(Field.ENRICH_TITLE.getName(), Utils.removeRedundantSynonyms(enrichedDataset.getEnrichedTitle()));
-        dataset.addAdditionalField(Field.ENRICH_ABSTRACT.getName(), Utils.removeRedundantSynonyms(enrichedDataset.getEnrichedAbstractDescription()));
-        dataset.addAdditionalField(Field.ENRICH_SAMPLE.getName(), Utils.removeRedundantSynonyms(enrichedDataset.getEnrichedSampleProtocol()));
-        dataset.addAdditionalField(Field.ENRICH_DATA.getName(), Utils.removeRedundantSynonyms(enrichedDataset.getEnrichedDataProtocol()));
-        return dataset;
-    }
 
     public static Dataset addEnrichedFields(Dataset dataset, EnrichedDataset enrichedDataset){
-        DatasetUtils.addAdditionalField(dataset, Field.ENRICH_TITLE.getName(), Utils.removeRedundantSynonyms(enrichedDataset.getEnrichedTitle()));
-        DatasetUtils.addAdditionalField(dataset, Field.ENRICH_ABSTRACT.getName(), Utils.removeRedundantSynonyms(enrichedDataset.getEnrichedAbstractDescription()));
-        DatasetUtils.addAdditionalField(dataset, Field.ENRICH_SAMPLE.getName(), Utils.removeRedundantSynonyms(enrichedDataset.getEnrichedSampleProtocol()));
-        DatasetUtils.addAdditionalField(dataset, Field.ENRICH_DATA.getName(), Utils.removeRedundantSynonyms(enrichedDataset.getEnrichedDataProtocol()));
+        if(enrichedDataset.getEnrichedAttributes().containsKey(Field.NAME.getName()))
+            DatasetUtils.addAdditionalField(dataset, Field.ENRICH_TITLE.getName(), Utils.removeRedundantSynonyms(enrichedDataset.getEnrichedAttributes().get(Field.NAME.getName())));
+
+        if(enrichedDataset.getEnrichedAttributes().containsKey(Field.DESCRIPTION.getName()))
+            DatasetUtils.addAdditionalField(dataset, Field.ENRICH_ABSTRACT.getName(), Utils.removeRedundantSynonyms(enrichedDataset.getEnrichedAttributes().get(Field.DESCRIPTION.getName())));
+
+        if(enrichedDataset.getEnrichedAttributes().containsKey(Field.SAMPLE.getName()))
+            DatasetUtils.addAdditionalField(dataset, Field.ENRICH_SAMPLE.getName(), Utils.removeRedundantSynonyms(enrichedDataset.getEnrichedAttributes().get(Field.SAMPLE.getName())));
+
+        if(enrichedDataset.getEnrichedAttributes().containsKey(Field.DATA.getName()))
+            DatasetUtils.addAdditionalField(dataset, Field.ENRICH_DATA.getName(), Utils.removeRedundantSynonyms(enrichedDataset.getEnrichedAttributes().get(Field.DATA.getName())));
+
+        if(enrichedDataset.getEnrichedAttributes().containsKey(Field.PUBMED_TITLE.getName()))
+            DatasetUtils.addAdditionalField(dataset, Field.ENRICHE_PUBMED_TITLE.getName(), Utils.removeRedundantSynonyms(enrichedDataset.getEnrichedAttributes().get(Field.PUBMED_TITLE.getName())));
+
+        if(enrichedDataset.getEnrichedAttributes().containsKey(Field.PUBMED_ABSTRACT.getName()))
+            DatasetUtils.addAdditionalField(dataset, Field.ENRICH_PUBMED_ABSTRACT.getName(), Utils.removeRedundantSynonyms(enrichedDataset.getEnrichedAttributes().get(Field.PUBMED_ABSTRACT.getName())));
+
         return dataset;
     }
 
@@ -180,7 +182,7 @@ public class DatasetAnnotationEnrichmentService {
                 }
             }
         }
-        if(dataset.getCrossReferences() != null && DatasetUtils.getCrossReferenceFieldValue(dataset, Field.PUBMED.getName()).isEmpty()){
+        if(dataset.getCrossReferences() != null && !DatasetUtils.getCrossReferenceFieldValue(dataset, Field.PUBMED.getName()).isEmpty()){
             Set<String> pubmedIds = DatasetUtils.getCrossReferenceFieldValue(dataset, Field.PUBMED.getName());
             if(!pubmedIds.isEmpty()){
                 List<Map<String, String[]>> information = service.getAbstractPublication(new ArrayList<>(pubmedIds));

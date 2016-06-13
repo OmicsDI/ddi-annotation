@@ -66,8 +66,8 @@ public class DatasetAnnotationFieldsService {
 
     public static Entry cleanDescription(Entry dataset){
         if(dataset != null && dataset.getDescription() != null){
-            String finalDescription = "";
-            String[] descriptionArray = dataset.getDescription().toString().split("\\(\\[\\[");
+            String finalDescription;
+            String[] descriptionArray = dataset.getDescription().split("\\(\\[\\[");
             if(descriptionArray.length > 1){
                 String[] descriptionArraySecond = descriptionArray[1].split("\\]\\]\\)");
                 if(descriptionArraySecond.length > 1){
@@ -82,10 +82,7 @@ public class DatasetAnnotationFieldsService {
     public static Entry replaceMEDLINEPubmed(Entry dataset){
 
         if(dataset.getCrossReferences() != null && !dataset.getCrossReferenceFieldValue(Field.MEDLINE.getName()).isEmpty()){
-            for(String value: dataset.getCrossReferenceFieldValue(Field.MEDLINE.getName())){
-                if(value != null && !value.isEmpty())
-                    dataset.addCrossReferenceValue(Field.PUBMED.getName(), value);
-            }
+            dataset.getCrossReferenceFieldValue(Field.MEDLINE.getName()).stream().filter(value -> value != null && !value.isEmpty()).forEach(value -> dataset.addCrossReferenceValue(Field.PUBMED.getName(), value));
             dataset.removeCrossReferences(Field.MEDLINE.getName());
         }
         return dataset;

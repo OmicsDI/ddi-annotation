@@ -13,7 +13,7 @@ public enum DataType {
 
     private final String name;
 
-    private DataType(String name) {
+    DataType(String name) {
         this.name = name;
     }
 
