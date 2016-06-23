@@ -9,11 +9,9 @@ import uk.ac.ebi.ddi.service.db.service.similarity.ExpOutputDatasetService;
 import uk.ac.ebi.ddi.service.db.service.similarity.TermInDBService;
 import uk.ac.ebi.ddi.xml.validator.parser.model.Reference;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.stream.Collectors;
 
 /**
  * Created by mingze on 09/09/15.
@@ -36,42 +34,41 @@ public class DDIExpDataImportService {
     @Deprecated
     public String importDatasetTerms(String dataType, String datasetAcc, String database, List<Reference> refs) {
 
-        ExpOutputDataset importedExpDataset = expOutputDatasetService.readByAccession(datasetAcc, database);
-        List<TermInList> terms = getTermsInDataset(dataType, refs);
-        if(importedExpDataset!=null){
-            if(isTermsChanged(importedExpDataset.getTerms(),terms)){
-                importedExpDataset.setTerms(terms);
-                expOutputDatasetService.update(importedExpDataset);
-                return "Updated dataset successfully";
-            }
-            else return "Unchanged, did nothing";
-        }
-        else {
-            ExpOutputDataset newExpDataset = new ExpOutputDataset(datasetAcc, database, dataType, terms);
-            expOutputDatasetService.insert(newExpDataset);
-            return "Inserted new dataset successfully";
-        }
+//        ExpOutputDataset importedExpDataset = expOutputDatasetService.readByAccession(datasetAcc, database);
+//        List<TermInList> terms = getTermsInDataset(dataType, refs);
+//        if(importedExpDataset!=null){
+//            if(isTermsChanged(importedExpDataset.getTerms(),terms)){
+//                importedExpDataset.setTerms(terms);
+//                expOutputDatasetService.update(importedExpDataset);
+//                return "Updated dataset successfully";
+//            }
+//            else return "Unchanged, did nothing";
+//        }
+//        else {
+//            ExpOutputDataset newExpDataset = new ExpOutputDataset(datasetAcc, database, dataType, terms);
+//            expOutputDatasetService.insert(newExpDataset);
+//            return "Inserted new dataset successfully";
+//        }
+        return null;
 
     }
 
-    public String importDatasetTerms(String dataType, String datasetAcc, String database, Map<String, Set<String>> refs) {
-
-        ExpOutputDataset importedExpDataset = expOutputDatasetService.readByAccession(datasetAcc, database);
-        List<TermInList> terms = getTermsInDataset(dataType, refs);
-        if(importedExpDataset!=null){
-            if(isTermsChanged(importedExpDataset.getTerms(),terms)){
-                importedExpDataset.setTerms(terms);
-                expOutputDatasetService.update(importedExpDataset);
-                return "Updated dataset successfully";
-            }
-            else return "Unchanged, did nothing";
+    /**
+     * Import into the database all the termns
+     * @param dataType Dataset Type Metabolomics, Proteomics, Genomics
+     * @param datasetAcc Dataset Accession
+     * @param database   Database Accession and Name
+     * @param refs       References of the terms
+     */
+    public void importDatasetTerms(String dataType, String datasetAcc, String database, Map<String, Set<String>> refs) {
+        List<String> terms = getTermsInDataset(dataType, refs);
+        if(terms!=null && !terms.isEmpty()){
+            List<TermInDB> termsDB = terms.parallelStream()
+                    .map(x -> new TermInDB(datasetAcc, database, x, dataType))
+                    .collect(Collectors.toList());
+            termInDBService.insert(termsDB);
+            expOutputDatasetService.update(new ExpOutputDataset(datasetAcc, database, dataType, new HashSet<>(terms)));
         }
-        else {
-            ExpOutputDataset newExpDataset = new ExpOutputDataset(datasetAcc, database, dataType, terms);
-            expOutputDatasetService.insert(newExpDataset);
-            return "Inserted new dataset successfully";
-        }
-
     }
 
     private boolean isTermsChanged(List<TermInList> importedTerms, List<TermInList> terms) {
@@ -82,8 +79,6 @@ public class DDIExpDataImportService {
             importedTerms.retainAll(terms);
             return terms.size() == importedTerms.size();
         }
-
-
     }
 
     /**
@@ -92,9 +87,57 @@ public class DDIExpDataImportService {
      * @param refs cross reference data in XML files, contains cross ref id and DB
      * @return
      */
-    @Deprecated
-    private List<TermInList> getTermsInDataset(String dataType, List<Reference> refs) {
-        List<TermInList> terms = new ArrayList<>();
+//    @Deprecated
+//    private List<TermInList> getTermsInDataset(String dataType, List<Reference> refs) {
+//        List<TermInList> terms = new ArrayList<>();
+//        String refKeyWord = null;
+//        String refKeyWord2 = null;
+//        if (dataType.equals(DataType.PROTEOMICS_DATA.getName())) {
+//            refKeyWord = "uniprot";
+//            refKeyWord2 = "ensembl";
+//        } else if (dataType.equals(DataType.METABOLOMICS_DATA.getName())) {
+//            refKeyWord = "ChEBI";
+//        }
+//
+//        refs = removeRedundancy(refs);
+//        for (Reference ref : refs) {
+//            if (ref.getDbname().equals(refKeyWord) || ref.getDbname().equals(refKeyWord2)) {
+//                String dbkey = ref.getDbkey();
+//                dbkey = dbkey.replace("CHEBI:", "");
+//                if (termInDBService.isTermExist(dbkey)) {
+//                    TermInDB tempTermInDB = termInDBService.readByName(dbkey);
+//                    tempTermInDB.increaseTimeOfAccurrenceInDB();
+//                    tempTermInDB.increaseDatasetFrequency();
+//                    termInDBService.update(tempTermInDB);
+//
+//                    TermInList tempTermInList = new TermInList(dbkey); //here we assume one ref/term only occurrence 1 time in a dataset.
+//                    tempTermInList.setIdInDB(tempTermInDB.getId());
+//                    terms.add(tempTermInList);
+//                } else {
+//                    TermInDB newTermInDB = new TermInDB(dbkey, dataType);
+//                    termInDBService.insert(newTermInDB);
+////                    System.out.println("inserted new term" + newTermInDB.getTermName());
+//
+//                    TermInList tempTermInList = new TermInList(dbkey); //here we assume one ref/term only occurrence 1 time in a dataset.
+//                    tempTermInList.setIdInDB(newTermInDB.getId());
+//                    terms.add(tempTermInList);
+//                }
+//            }
+//        }
+//        return terms;
+//    }
+
+    /**
+     * This computes the list of the terms that are interesting and will be use by OmicsDI to the
+     * similarity.
+     *
+     * @param dataType the Data type
+     * @param refs
+     * @return
+     */
+    private List<String> getTermsInDataset(String dataType, Map<String, Set<String>> refs) {
+
+        CopyOnWriteArrayList<String> terms = new CopyOnWriteArrayList<>();
         String refKeyWord = null;
         String refKeyWord2 = null;
         if (dataType.equals(DataType.PROTEOMICS_DATA.getName())) {
@@ -103,73 +146,16 @@ public class DDIExpDataImportService {
         } else if (dataType.equals(DataType.METABOLOMICS_DATA.getName())) {
             refKeyWord = "ChEBI";
         }
-
-        refs = removeRedundancy(refs);
-        for (Reference ref : refs) {
-            if (ref.getDbname().equals(refKeyWord) || ref.getDbname().equals(refKeyWord2)) {
-                String dbkey = ref.getDbkey();
-                dbkey = dbkey.replace("CHEBI:", "");
-                if (termInDBService.isTermExist(dbkey)) {
-                    TermInDB tempTermInDB = termInDBService.readByName(dbkey);
-                    tempTermInDB.increaseTimeOfAccurrenceInDB();
-                    tempTermInDB.increaseDatasetFrequency();
-                    termInDBService.update(tempTermInDB);
-
-                    TermInList tempTermInList = new TermInList(dbkey); //here we assume one ref/term only occurrence 1 time in a dataset.
-                    tempTermInList.setIdInDB(tempTermInDB.getId());
-                    terms.add(tempTermInList);
-                } else {
-                    TermInDB newTermInDB = new TermInDB(dbkey, dataType);
-                    termInDBService.insert(newTermInDB);
-//                    System.out.println("inserted new term" + newTermInDB.getTermName());
-
-                    TermInList tempTermInList = new TermInList(dbkey); //here we assume one ref/term only occurrence 1 time in a dataset.
-                    tempTermInList.setIdInDB(newTermInDB.getId());
-                    terms.add(tempTermInList);
-                }
-            }
-        }
-        return terms;
-    }
-
-
-    private List<TermInList> getTermsInDataset(String dataType, Map<String, Set<String>> refs) {
-        CopyOnWriteArrayList<TermInList> terms = new CopyOnWriteArrayList<>();
-        String refKeyWord = null;
-        String refKeyWord2 = null;
-        if (dataType.equals(DataType.PROTEOMICS_DATA.getName())) {
-            refKeyWord = "uniprot";
-            refKeyWord2 = "ensembl";
-        } else if (dataType.equals(DataType.METABOLOMICS_DATA.getName())) {
-            refKeyWord = "ChEBI";
-        }
-
-        for(String dbkey: refs.keySet()){
-            if (dbkey.equals(refKeyWord) || dbkey.equals(refKeyWord2)) {
-                refs.get(dbkey).stream().forEach( identifier ->{
+        String finalRefKeyWord = refKeyWord;
+        String finalRefKeyWord1 = refKeyWord2;
+        refs.entrySet().parallelStream().forEach(dbkey -> {
+            if (dbkey.getKey().equalsIgnoreCase(finalRefKeyWord) || dbkey.getKey().equalsIgnoreCase(finalRefKeyWord1)) {
+                dbkey.getValue().parallelStream().forEach( identifier ->{
                     identifier  = identifier.replace("CHEBI:", "");
-                    if (termInDBService.isTermExist(identifier)) {
-                        TermInDB tempTermInDB = termInDBService.readByName(identifier);
-                        tempTermInDB.increaseTimeOfAccurrenceInDB();
-                        tempTermInDB.increaseDatasetFrequency();
-                        termInDBService.update(tempTermInDB);
-
-                        TermInList tempTermInList = new TermInList(identifier); //here we assume one ref/term only occurrence 1 time in a dataset.
-                        tempTermInList.setIdInDB(tempTermInDB.getId());
-                        terms.add(tempTermInList);
-                    } else {
-                        TermInDB newTermInDB = new TermInDB(identifier, dataType);
-                        termInDBService.insert(newTermInDB);
-
-                        TermInList tempTermInList = new TermInList(identifier); //here we assume one ref/term only occurrence 1 time in a dataset.
-                        tempTermInList.setIdInDB(newTermInDB.getId());
-                        terms.add(tempTermInList);
-                    }
-
-                });
-            }
-
-        }
+                    if(identifier != null && !identifier.isEmpty())
+                        terms.add(identifier);
+            });
+        }});
         return terms;
     }
 

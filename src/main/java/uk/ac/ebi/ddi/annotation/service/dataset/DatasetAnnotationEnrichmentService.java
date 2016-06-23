@@ -58,18 +58,18 @@ public class DatasetAnnotationEnrichmentService {
         return service.enrichment(new DatasetTobeEnriched(dataset.getAccession(), dataset.getDatabase(),fields));
     }
 
-    /**
-     * This function import all the biological entities into the MongoDB database and to compute the similarity scores.
-     * @param dataset Entry dataset
-     * @param dataType Data type to be index Metabolomics, proteomics, etc
-     * @param ddiExpDataImportService The import service
-     */
-    @Deprecated
-    public static void importTermsToDatabase(Entry dataset, DataType dataType, DDIExpDataImportService ddiExpDataImportService){
-        String entryId = dataset.getId();
-        List<Reference> refs = dataset.getCrossReferences().getRef();
-        ddiExpDataImportService.importDatasetTerms(dataType.getName(), entryId, dataset.getAdditionalFieldValue(Field.REPOSITORY.getName()), refs);
-    }
+//    /**
+//     * This function import all the biological entities into the MongoDB database and to compute the similarity scores.
+//     * @param dataset Entry dataset
+//     * @param dataType Data type to be index Metabolomics, proteomics, etc
+//     * @param ddiExpDataImportService The import service
+//     */
+//    @Deprecated
+//    public static void importTermsToDatabase(Entry dataset, DataType dataType, DDIExpDataImportService ddiExpDataImportService){
+//        String entryId = dataset.getId();
+//        List<Reference> refs = dataset.getCrossReferences().getRef();
+//        ddiExpDataImportService.importDatasetTerms(dataType.getName(), entryId, dataset.getAdditionalFieldValue(Field.REPOSITORY.getName()), refs);
+//    }
 
     public static void importTermsToDatabase(Dataset dataset, DataType dataType, DDIExpDataImportService ddiExpDataImportService){
         String entryId = dataset.getAccession();

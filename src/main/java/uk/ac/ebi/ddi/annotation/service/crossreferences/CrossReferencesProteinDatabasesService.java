@@ -1,5 +1,7 @@
 package uk.ac.ebi.ddi.annotation.service.crossreferences;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.client.RestClientException;
 import uk.ac.ebi.ddi.annotation.service.dataset.DDIDatasetAnnotationService;
 import uk.ac.ebi.ddi.annotation.utils.Constants;
@@ -29,12 +31,14 @@ public class CrossReferencesProteinDatabasesService {
     private static AssayWsClient assayWsClient = new AssayWsClient(new ArchiveWsConfigProd());
     private static ProjectWsClient projectclient = new ProjectWsClient(new ArchiveWsConfigProd());
 
+    public static final Logger logger = LoggerFactory.getLogger(CrossReferencesProteinDatabasesService.class);
+
     /**
      * Annotated Cross References.
      * @param dataset INSERTED to be added
      * @return Resulting dataset
      */
-    public static Entry annotateCrossReferences(Entry dataset){
+    public static Entry annotateCrossReferences(Entry dataset) throws Exception{
 
         if(dataset != null && dataset.getCrossReferences() != null){
             List<Reference> finalReferences = new ArrayList<>();
@@ -125,9 +129,25 @@ public class CrossReferencesProteinDatabasesService {
                 if(crossRef.equalsIgnoreCase("PRIDE")){
                     Set<String> newKeys = new HashSet<>();
                     for(String dbKey: dataset.getCrossReferences().get(crossRef)){
-                        AssayDetail px = assayWsClient.getAssayByAccession(dbKey);
-                        if(px != null && px.projectAccession != null){
-                            newKeys.add(px.projectAccession);
+                        String accession = null;
+                        try{
+                            ProjectDetails pxDetails = projectclient.getProject(dbKey);
+                            if(pxDetails != null && pxDetails.getAccession() != null)
+                                accession = dbKey;
+                        }catch(Exception e){
+                            logger.debug(e.getMessage());
+                        }
+                        try{
+                            if(accession == null){
+                                AssayDetail px = assayWsClient.getAssayByAccession(dbKey);
+                                if(px != null && px.projectAccession != null)
+                                    accession = px.projectAccession;
+                            }
+                        }catch(Exception e){
+                            logger.debug(e.getMessage());
+                        }
+                        if(accession != null){
+                            newKeys.add(accession);
                         }
                     }
                     cross.put("pride", newKeys);

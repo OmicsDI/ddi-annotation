@@ -6,17 +6,20 @@ import uk.ac.ebi.ddi.annotation.utils.DatasetUtils;
 import uk.ac.ebi.ddi.service.db.model.dataset.Dataset;
 import uk.ac.ebi.ddi.service.db.model.dataset.DatasetSimilars;
 import uk.ac.ebi.ddi.service.db.model.dataset.DatasetStatus;
+import uk.ac.ebi.ddi.service.db.model.dataset.SimilarDataset;
 import uk.ac.ebi.ddi.service.db.model.publication.PublicationDataset;
 import uk.ac.ebi.ddi.service.db.service.dataset.IDatasetService;
 import uk.ac.ebi.ddi.service.db.service.dataset.IDatasetSimilarsService;
 import uk.ac.ebi.ddi.service.db.service.dataset.IDatasetStatusService;
 import uk.ac.ebi.ddi.service.db.service.publication.IPublicationDatasetService;
 import uk.ac.ebi.ddi.service.db.utils.DatasetCategory;
+import uk.ac.ebi.ddi.service.db.utils.DatasetSimilarsType;
 import uk.ac.ebi.ddi.xml.validator.parser.model.Entry;
 import uk.ac.ebi.ddi.xml.validator.utils.Field;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -70,8 +73,6 @@ public class DDIDatasetAnnotationService {
             updateDataset(currentDataset, dbDataset);
         }
     }
-
-
 
     private void updateDataset(Dataset currentDataset, Dataset dbDataset) {
         dbDataset = datasetService.update(currentDataset.getId(), dbDataset);
@@ -166,46 +167,82 @@ public class DDIDatasetAnnotationService {
         return datasetService.findByAccession(dbKey);
     }
 
-    public void updateDatasetSimilars(ObjectId id, String accession, String database, Map<String, Set<String>> similars){
-        DatasetSimilars datasetExisting = similarsService.read(id);
-        if(datasetExisting == null){
+    public void updateDatasetSimilars(String accession, String database, Set<SimilarDataset> similars){
+        DatasetSimilars datasetExisting = similarsService.read(accession, database);
+        if(datasetExisting == null)
             datasetExisting = new DatasetSimilars(accession, database, similars);
+        else
+            datasetExisting.setSimilars(similars);
+        similarsService.save(datasetExisting);
+    }
+
+
+    public void addDatasetSimilars(Dataset dataset, Set<PublicationDataset> related, String type){
+        DatasetSimilars datasetExisting = similarsService.read(dataset.getAccession(), dataset.getDatabase());
+        Set<SimilarDataset> similarDatasets = new HashSet<>();
+        for(PublicationDataset publicationDataset: related){
+            if(!publicationDataset.getDatasetID().equalsIgnoreCase(dataset.getAccession()) && !publicationDataset.getDatabase().equalsIgnoreCase(dataset.getDatabase())){
+                Dataset datasetRelated = datasetService.read(publicationDataset.getDatasetID(), publicationDataset.getDatabase());
+                if(datasetRelated != null){
+                    SimilarDataset similar = new SimilarDataset(datasetRelated, type);
+                    similarDatasets.add(similar);
+                }
+            }
+        }
+        if(datasetExisting == null){
+            datasetExisting = new DatasetSimilars(dataset.getAccession(), dataset.getDatabase(), similarDatasets);
             similarsService.save(datasetExisting);
         }else{
+            Set<SimilarDataset> similars = datasetExisting.getSimilars();
+            similars.addAll(similarDatasets);
             datasetExisting.setSimilars(similars);
             similarsService.save(datasetExisting);
         }
     }
 
-    public void updateDatasetSimilars(String accession, String database, Map<String, Set<String>> similars){
+    public void addDatasetSimilars(String accession, String database, SimilarDataset similarDataset){
         DatasetSimilars datasetExisting = similarsService.read(accession, database);
         if(datasetExisting == null){
-            datasetExisting = new DatasetSimilars(accession, database, similars);
+            datasetExisting = new DatasetSimilars(accession, database, similarDataset);
             similarsService.save(datasetExisting);
         }else{
+            Set<SimilarDataset> similars = datasetExisting.getSimilars();
+            similars.add(similarDataset);
             datasetExisting.setSimilars(similars);
             similarsService.save(datasetExisting);
         }
     }
 
-    public void addDatasetSimilars(ObjectId id, String accession, String database, Map<String, Set<String>> similars){
-        DatasetSimilars datasetExisting = similarsService.read(id);
+
+    public void addDatasetReanalisisSimilars(Dataset dataset, Map<String, Set<String>> similarsMap) {
+
+        DatasetSimilars datasetExisting = similarsService.read(dataset.getAccession(), dataset.getDatabase());
+
+        Set<SimilarDataset> similarDatasets = new HashSet<>();
+        for(Map.Entry publicationDataset: similarsMap.entrySet()){
+            String databaseKey = (String) publicationDataset.getKey();
+            Set<String> values = (Set<String>) publicationDataset.getValue();
+            for(String value: values){
+                if(!databaseKey.equalsIgnoreCase(dataset.getDatabase()) && !value.equalsIgnoreCase(dataset.getAccession())){
+                    Dataset datasetRelated = datasetService.read(value, databaseKey);
+                    if(datasetRelated != null){
+                        SimilarDataset similar = new SimilarDataset(datasetRelated, DatasetSimilarsType.REANALYSIS_OF.getType());
+                        similarDatasets.add(similar);
+                        if(datasetExisting != null)
+                            addDatasetSimilars(datasetRelated.getAccession(),datasetRelated.getDatabase(), new SimilarDataset(dataset, DatasetSimilarsType.REANALYZED_BY.getType()));
+                    }
+                }
+            }
+        }
         if(datasetExisting == null){
-            datasetExisting = new DatasetSimilars(accession, database, similars);
+            datasetExisting = new DatasetSimilars(dataset.getAccession(), dataset.getDatabase(), similarDatasets);
             similarsService.save(datasetExisting);
         }else{
-            Map<String, Set<String>> datasets = datasetExisting.getSimilars();
-            similars.entrySet().forEach(similar -> {
-                if(!datasets.containsKey(similar.getKey()))
-                    datasets.put(similar.getKey(), similar.getValue());
-                else{
-                    Set<String> value = datasets.get(similar.getKey());
-                    value.addAll(similar.getValue());
-                    datasets.put(similar.getKey(), value);
-                }
-            });
-            datasetExisting.setSimilars(datasets);
+            Set<SimilarDataset> similars = datasetExisting.getSimilars();
+            similars.addAll(similarDatasets);
+            datasetExisting.setSimilars(similars);
             similarsService.save(datasetExisting);
         }
+
     }
 }
