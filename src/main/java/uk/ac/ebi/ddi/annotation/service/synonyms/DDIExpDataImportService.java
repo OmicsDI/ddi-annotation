@@ -141,10 +141,12 @@ public class DDIExpDataImportService {
         String refKeyWord = null;
         String refKeyWord2 = null;
         if (dataType.equals(DataType.PROTEOMICS_DATA.getName())) {
-            refKeyWord = "uniprot";
+            refKeyWord  = "uniprot";
             refKeyWord2 = "ensembl";
         } else if (dataType.equals(DataType.METABOLOMICS_DATA.getName())) {
             refKeyWord = "ChEBI";
+        } else if (dataType.equals(DataType.TRANSCRIPTOMIC_DATA.getName())){
+            refKeyWord = "ensembl";
         }
         String finalRefKeyWord = refKeyWord;
         String finalRefKeyWord1 = refKeyWord2;

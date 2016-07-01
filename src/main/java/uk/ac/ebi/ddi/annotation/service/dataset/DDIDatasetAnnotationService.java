@@ -214,7 +214,7 @@ public class DDIDatasetAnnotationService {
     }
 
 
-    public void addDatasetReanalisisSimilars(Dataset dataset, Map<String, Set<String>> similarsMap) {
+    public void addDatasetReanalysisSimilars(Dataset dataset, Map<String, Set<String>> similarsMap) {
 
         DatasetSimilars datasetExisting = similarsService.read(dataset.getAccession(), dataset.getDatabase());
 
@@ -223,13 +223,12 @@ public class DDIDatasetAnnotationService {
             String databaseKey = (String) publicationDataset.getKey();
             Set<String> values = (Set<String>) publicationDataset.getValue();
             for(String value: values){
-                if(!databaseKey.equalsIgnoreCase(dataset.getDatabase()) && !value.equalsIgnoreCase(dataset.getAccession())){
+                if(!(databaseKey.equalsIgnoreCase(dataset.getDatabase()) && value.equalsIgnoreCase(dataset.getAccession()))){
                     Dataset datasetRelated = datasetService.read(value, databaseKey);
                     if(datasetRelated != null){
                         SimilarDataset similar = new SimilarDataset(datasetRelated, DatasetSimilarsType.REANALYSIS_OF.getType());
                         similarDatasets.add(similar);
-                        if(datasetExisting != null)
-                            addDatasetSimilars(datasetRelated.getAccession(),datasetRelated.getDatabase(), new SimilarDataset(dataset, DatasetSimilarsType.REANALYZED_BY.getType()));
+                        addDatasetSimilars(datasetRelated.getAccession(),datasetRelated.getDatabase(), new SimilarDataset(dataset, DatasetSimilarsType.REANALYZED_BY.getType()));
                     }
                 }
             }
