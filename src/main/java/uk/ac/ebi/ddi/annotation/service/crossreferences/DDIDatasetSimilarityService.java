@@ -9,6 +9,7 @@ import uk.ac.ebi.ddi.service.db.service.similarity.ExpOutputDatasetService;
 import uk.ac.ebi.ddi.service.db.service.similarity.TermInDBService;
 
 import java.util.*;
+import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.stream.Collectors;
 
 /**
@@ -95,8 +96,8 @@ public class DDIDatasetSimilarityService {
 
         this.cosineScores = calculateCosineScore(expOutputDatasets, numberOfDatasets);
 
-        expOutputDatasets.parallelStream().forEach(dataset -> {
-            List<IntersectionInfo> datasetIntersectionInfos = new ArrayList<>();
+        expOutputDatasets.stream().forEach(dataset -> {
+            List<IntersectionInfo> datasetIntersectionInfos = new CopyOnWriteArrayList<IntersectionInfo>();
             Set<String> terms = dataset.getTerms();
             List<IntersectionInfo> finalDatasetIntersectionInfos = datasetIntersectionInfos;
             terms.parallelStream().forEach(term -> {
@@ -122,12 +123,15 @@ public class DDIDatasetSimilarityService {
     private List<IntersectionInfo> mergeIntersectionInfos(List<IntersectionInfo> datasetIntersectionInfos) {
         List<IntersectionInfo> newIntersectionInfos = new ArrayList<>();
         for (IntersectionInfo tempIntersectionInfo : datasetIntersectionInfos) {
-            int i = contains(newIntersectionInfos, tempIntersectionInfo);
-            if (i >= 0) {
-                newIntersectionInfos.get(i).increaseOneSharedTermsNo();
-            } else {
-                tempIntersectionInfo.setSharedTermsNo(1);
-                newIntersectionInfos.add(tempIntersectionInfo);
+            if(tempIntersectionInfo != null){
+//                System.out.println(tempIntersectionInfo.toString());
+                int i = contains(newIntersectionInfos, tempIntersectionInfo);
+                if (i >= 0) {
+                    newIntersectionInfos.get(i).increaseOneSharedTermsNo();
+                } else {
+                    tempIntersectionInfo.setSharedTermsNo(1);
+                    newIntersectionInfos.add(tempIntersectionInfo);
+                }
             }
         }
         return newIntersectionInfos;
@@ -142,9 +146,13 @@ public class DDIDatasetSimilarityService {
      */
     private int contains(List<IntersectionInfo> datasetIntersectionInfos, IntersectionInfo tempIntersectionInfo) {
         for (int i = 0; i < datasetIntersectionInfos.size(); i++) {
-            if (datasetIntersectionInfos.get(i).getRelatedDatasetAcc().equals(tempIntersectionInfo.getRelatedDatasetAcc())) {
+            if(datasetIntersectionInfos.get(i) != null
+                    && datasetIntersectionInfos.get(i).getRelatedDatasetAcc() != null
+                    && !datasetIntersectionInfos.get(i).getRelatedDatasetAcc().isEmpty()
+                    && tempIntersectionInfo != null && tempIntersectionInfo.getRelatedDatasetAcc() != null
+                    && datasetIntersectionInfos.get(i).getRelatedDatasetAcc().equals(tempIntersectionInfo.getRelatedDatasetAcc()))
                 return i;
-            }
+
         }
         return -1;
     }
@@ -159,7 +167,7 @@ public class DDIDatasetSimilarityService {
     private List<IntersectionInfo> getIntersectionInfos(ExpOutputDataset dataset, List<ExpOutputDataset> relatedDatasets) {
         List<IntersectionInfo> intersectionInfos = new ArrayList<>();
         int indexOfThisDataset = this.indecies.get(dataset.getAccession());
-        relatedDatasets.parallelStream().forEach(relateddataset -> {
+        relatedDatasets.stream().forEach(relateddataset -> {
             int indexOfThatDataset = this.indecies.get(relateddataset.getAccession());
             IntersectionInfo intersectionInfo = new IntersectionInfo();
             intersectionInfo.setRelatedDatasetAcc(relateddataset.getAccession());
@@ -231,7 +239,7 @@ public class DDIDatasetSimilarityService {
     private List<ExpOutputDataset> getRelatedDatasets(ExpOutputDataset originDataset, String term, List<ExpOutputDataset> expOutputDatasets) {
         List<ExpOutputDataset> relatedDatasets = new ArrayList<>();
         for (ExpOutputDataset possibleDataset : expOutputDatasets) {
-            if (possibleDataset.getAccession().equals(originDataset.getAccession())) {
+            if (possibleDataset.getAccession().equalsIgnoreCase(originDataset.getAccession())) {
                 continue;
             }
             Set<String> termsInList = possibleDataset.getTerms();

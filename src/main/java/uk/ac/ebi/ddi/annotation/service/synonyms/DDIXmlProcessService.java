@@ -108,7 +108,7 @@ public class DDIXmlProcessService {
         ddiExpDataImportService.importDatasetTerms(dataType, accession, database, refs);
 
         try {
-            return annotService.enrichment(datasetTobeEnriched);
+            return annotService.enrichment(datasetTobeEnriched, false);
         } catch (JSONException | UnsupportedEncodingException | DDIException e) {
             e.printStackTrace();
         }

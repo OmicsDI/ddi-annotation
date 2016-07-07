@@ -66,7 +66,7 @@ public class DDIAnnotationServiceTest {
         datasetTobeEnriched1.addAttribute(Field.DATA.getName(),dataProtocol);
 
 
-        EnrichedDataset enrichedDataset1 = annotService.enrichment(datasetTobeEnriched1);
+        EnrichedDataset enrichedDataset1 = annotService.enrichment(datasetTobeEnriched1, false);
         System.out.println(enrichedDataset1.getEnrichedAttributes().toString());
 
     }
@@ -109,7 +109,7 @@ public class DDIAnnotationServiceTest {
                         datasetTobeEnriched1.addAttribute(Field.SAMPLE.getName(),sampleProtocol);
                         datasetTobeEnriched1.addAttribute(Field.DATA.getName(),dataProtocol);
 
-                        EnrichedDataset enrichedDataset1 = annotService.enrichment(datasetTobeEnriched1);
+                        EnrichedDataset enrichedDataset1 = annotService.enrichment(datasetTobeEnriched1, false);
                     }
                 }
             }

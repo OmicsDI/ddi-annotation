@@ -40,13 +40,13 @@ public class DatasetAnnotationEnrichmentService {
      * @throws JSONException
      */
     @Deprecated
-    public static EnrichedDataset enrichment(DDIAnnotationService service, Entry dataset) throws DDIException, UnsupportedEncodingException, JSONException {
+    public static EnrichedDataset enrichment(DDIAnnotationService service, Entry dataset, boolean overwrite) throws DDIException, UnsupportedEncodingException, JSONException {
 
         DatasetTobeEnriched datasetTobeEnriched = new DatasetTobeEnriched(dataset.getId(),dataset.getAdditionalFieldValue(Field.REPOSITORY.getName()), "");
-        return service.enrichment(datasetTobeEnriched);
+        return service.enrichment(datasetTobeEnriched, overwrite);
     }
 
-    public static EnrichedDataset enrichment(DDIAnnotationService service, Dataset dataset) throws DDIException, UnsupportedEncodingException, RestClientException, JSONException {
+    public static EnrichedDataset enrichment(DDIAnnotationService service, Dataset dataset, boolean overwrite) throws DDIException, UnsupportedEncodingException, RestClientException, JSONException {
 
         Map<String, String> fields = new HashMap<>();
         fields.put(Field.NAME.getName(), dataset.getName());
@@ -55,7 +55,7 @@ public class DatasetAnnotationEnrichmentService {
         fields.put(Field.SAMPLE.getName(), DatasetUtils.getFirstAdditionalFieldValue(dataset, Field.SAMPLE.getName()));
         fields.put(Field.PUBMED_ABSTRACT.getName(), DatasetUtils.getFirstAdditionalFieldValue(dataset, Field.PUBMED_ABSTRACT.getName()));
         fields.put(Field.PUBMED_TITLE.getName(), DatasetUtils.getFirstAdditionalFieldValue(dataset, Field.PUBMED_TITLE.getName()));
-        return service.enrichment(new DatasetTobeEnriched(dataset.getAccession(), dataset.getDatabase(),fields));
+        return service.enrichment(new DatasetTobeEnriched(dataset.getAccession(), dataset.getDatabase(),fields) , overwrite);
     }
 
 //    /**
@@ -168,47 +168,54 @@ public class DatasetAnnotationEnrichmentService {
      * @param dataset dataset to be updated
      * @return Entry the new dataset with the corresponding information
      */
-    public static Dataset updatePubMedIds(DDIPublicationAnnotationService service, Dataset dataset) throws RestClientException{
+    public static Dataset updatePubMedIds(DDIPublicationAnnotationService service, Dataset dataset){
         // check if the dataset contains pubmed references
-        if(dataset.getCrossReferences() == null || DatasetUtils.getCrossReferenceFieldValue(dataset, Field.PUBMED.getName()).isEmpty()){
-            List<String> datasetText = new ArrayList<>();
-            datasetText.add(dataset.toString());
-            List<String> dois = service.getDOIListFromText(datasetText);
-            if(dois != null && !dois.isEmpty()){
-                List<String> ids = service.getPubMedIDsFromDOIList(dois);
-                if(ids != null && ids.size() >0){
-                    for(String pubmedID: ids)
-                        dataset = DatasetUtils.addCrossReferenceValue(dataset, Field.PUBMED.getName(), pubmedID);
+
+        try{
+
+            if(dataset.getCrossReferences() == null || DatasetUtils.getCrossReferenceFieldValue(dataset, Field.PUBMED.getName()).isEmpty()){
+                List<String> datasetText = new ArrayList<>();
+                datasetText.add(dataset.toString());
+                List<String> dois = service.getDOIListFromText(datasetText);
+                if(dois != null && !dois.isEmpty()){
+                    List<String> ids = service.getPubMedIDsFromDOIList(dois);
+                    if(ids != null && ids.size() >0){
+                        for(String pubmedID: ids)
+                            dataset = DatasetUtils.addCrossReferenceValue(dataset, Field.PUBMED.getName(), pubmedID);
+                    }
                 }
             }
-        }
-        if(dataset.getCrossReferences() != null && !DatasetUtils.getCrossReferenceFieldValue(dataset, Field.PUBMED.getName()).isEmpty()){
-            Set<String> pubmedIds = DatasetUtils.getCrossReferenceFieldValue(dataset, Field.PUBMED.getName());
-            if(!pubmedIds.isEmpty()){
-                List<Map<String, String[]>> information = service.getAbstractPublication(new ArrayList<>(pubmedIds));
-                for(Map<String, String[]> entry: information){
-                    if(!entry.isEmpty()){
-                        for(String key: entry.keySet()){
-                            if(key.equalsIgnoreCase("description")){
-                                for(String values: entry.get(key))
-                                    dataset = DatasetUtils.addAdditionalField(dataset, Field.PUBMED_ABSTRACT.getName(), values);
-                            }else if(key.equalsIgnoreCase("name")) {
-                                for (String values : entry.get(key))
-                                    dataset = DatasetUtils.addAdditionalField(dataset, Field.PUBMED_TITLE.getName(), values);
-                            }else if(key.equalsIgnoreCase("author")){
-                                String authorName = "";
-                                for(String authorValue: entry.get(key)){
-                                    authorName += authorValue + ",";
+            if(dataset.getCrossReferences() != null && !DatasetUtils.getCrossReferenceFieldValue(dataset, Field.PUBMED.getName()).isEmpty()){
+                Set<String> pubmedIds = DatasetUtils.getCrossReferenceFieldValue(dataset, Field.PUBMED.getName());
+                if(!pubmedIds.isEmpty()){
+                    List<Map<String, String[]>> information = service.getAbstractPublication(new ArrayList<>(pubmedIds));
+                    for(Map<String, String[]> entry: information){
+                        if(!entry.isEmpty()){
+                            for(String key: entry.keySet()){
+                                if(key.equalsIgnoreCase("description")){
+                                    for(String values: entry.get(key))
+                                        dataset = DatasetUtils.addAdditionalField(dataset, Field.PUBMED_ABSTRACT.getName(), values);
+                                }else if(key.equalsIgnoreCase("name")) {
+                                    for (String values : entry.get(key))
+                                        dataset = DatasetUtils.addAdditionalField(dataset, Field.PUBMED_TITLE.getName(), values);
+                                }else if(key.equalsIgnoreCase("author")){
+                                    String authorName = "";
+                                    for(String authorValue: entry.get(key)){
+                                        authorName += authorValue + ",";
+                                    }
+                                    dataset = DatasetUtils.addAdditionalField(dataset, Field.PUBMED_AUTHORS.getName(), authorName);
                                 }
-                                dataset = DatasetUtils.addAdditionalField(dataset, Field.PUBMED_AUTHORS.getName(), authorName);
                             }
                         }
                     }
+
                 }
 
             }
-
+        }catch(RestClientException ex){
+           logger.debug(ex.getMessage());
         }
+
         return dataset;
     }
 

@@ -35,4 +35,8 @@ public class DDIDatabaseAnnotationService {
         return databaseService.read(name);
     }
 
+    public List<Database> getDatabases(){
+        return databaseService.readAll();
+    }
+
 }

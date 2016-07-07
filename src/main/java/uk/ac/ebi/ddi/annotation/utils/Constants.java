@@ -8,7 +8,7 @@ public class Constants {
     public static final String OBO_LONG_URL  = "http://data.bioontology.org/annotator?ontologies=MESH,MS&longest_only=true&whole_word_only=false&apikey=807fa818-0a7c-43be-9bac-51576e8795f5&text=";
     public static final String OBO_INPUT_URL = "http://data.bioontology.org/recommender?ontologies=MESH,MS&apikey=807fa818-0a7c-43be-9bac-51576e8795f5&input=";
     public static final String OBO_KEY       = "807fa818-0a7c-43be-9bac-51576e8795f5";
-    public static final String[] OBO_ONTOLOGIES = {"MESH","MS"};
+    public static final String[] OBO_ONTOLOGIES = {"MESH","MS", "EFO", "GO"};
     public static final String ONTOLOGIES    = "ontologies";
     public static final String NOT_AVAILABLE = "Not availabel";
     public static final String COVERAGE_RESULT = "coverageResult";

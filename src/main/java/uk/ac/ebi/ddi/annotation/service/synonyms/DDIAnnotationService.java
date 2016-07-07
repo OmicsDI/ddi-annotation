@@ -59,7 +59,7 @@ public class DDIAnnotationService {
      */
 
     @SuppressWarnings("UnusedAssignment")
-    public EnrichedDataset enrichment(DatasetTobeEnriched datasetTobeEnriched) throws JSONException, UnsupportedEncodingException, RestClientException,DDIException {
+    public EnrichedDataset enrichment(DatasetTobeEnriched datasetTobeEnriched, boolean overwrite) throws JSONException, UnsupportedEncodingException, RestClientException,DDIException {
 
         String accession = datasetTobeEnriched.getAccession();
         String database = datasetTobeEnriched.getDatabase();
@@ -71,7 +71,7 @@ public class DDIAnnotationService {
 
         Map<String, List<WordInField>> synonyms = new HashMap<String, List<WordInField>>();
 
-        if (prevDatasetInfo == null)
+        if (prevDatasetInfo == null || overwrite)
             synonyms     = getWordsInFiledFromWS(datasetTobeEnriched.getAttributes());
         else {
             for (String key : datasetTobeEnriched.getAttributes().keySet()) {
@@ -231,19 +231,20 @@ public class DDIAnnotationService {
                 List<WordInField> matchedWords = new ArrayList<>();
                 String fieldText = field.getValue().replace("%", " ");//to avoid malformed error
                 try{
-                    RecomendedOntologyQuery[] annotationResults = recommenderClient.postRecommendedTerms(fieldText, Constants.OBO_ONTOLOGIES);
-                    if (annotationResults != null){
-                        for (RecomendedOntologyQuery annotationResult : annotationResults) {
-                            if (annotationResult.getOntologies() == null || annotationResult.getOntologies().length > 1) {
-                                logger.debug("There are more than one ontologies here, something must be wrong");
-                                throw new DDIException("There are more than one ontologies here, something must be wrong");
+                    if(!fieldText.isEmpty()){
+                        RecomendedOntologyQuery[] annotationResults = recommenderClient.postRecommendedTerms(fieldText, Constants.OBO_ONTOLOGIES);
+                        if (annotationResults != null){
+                            for (RecomendedOntologyQuery annotationResult : annotationResults) {
+                                if (annotationResult.getOntologies() == null || annotationResult.getOntologies().length > 1) {
+                                    logger.debug("There are more than one ontologies here, something must be wrong");
+                                    throw new DDIException("There are more than one ontologies here, something must be wrong");
+                                }
+                                if (annotationResult.getResults() != null && annotationResult.getResults().getAnnotations() != null)
+                                    matchedWords.addAll(getDistinctWordList(annotationResult.getResults().getAnnotations()));
                             }
-                            if (annotationResult.getResults() != null && annotationResult.getResults().getAnnotations() != null)
-                                matchedWords.addAll(getDistinctWordList(annotationResult.getResults().getAnnotations()));
                         }
+                        logger.debug(annotationResults.toString());
                     }
-                    logger.debug(annotationResults.toString());
-
                 }catch (UnsupportedEncodingException | JSONException | DDIException | RestClientException ex){
                     logger.debug(ex.getMessage());
                 }
@@ -347,8 +348,8 @@ public class DDIAnnotationService {
 
                 String[] synonymsInCls = output.getSynonyms();
 
-                for (i = 0; i < synonymsInCls.length; i++) {
-                    String synonymInCls = synonymsInCls[i];
+                for (int j = 0; j < synonymsInCls.length; j++) {
+                    String synonymInCls = synonymsInCls[j];
                     synonyms.add(synonymInCls);
                 }
             }
