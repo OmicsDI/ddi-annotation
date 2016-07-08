@@ -7,6 +7,7 @@ import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.regex.Pattern;
 
+import com.fasterxml.jackson.databind.JsonNode;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.methods.HttpGet;
@@ -194,25 +195,32 @@ public class DDIAnnotationService {
         List<WordInField> matchedWords = new ArrayList<>();
         fieldText = fieldText.replace("%", " ");//to avoid malformed error
         try{
-            RecomendedOntologyQuery[] annotationResults = recommenderClient.postRecommendedTerms(fieldText, Constants.OBO_ONTOLOGIES);
-            if (annotationResults == null)
-                return null;
-            logger.debug(annotationResults.toString());
-
-            for (RecomendedOntologyQuery annotationResult : annotationResults) {
-                if (annotationResult.getOntologies() == null || annotationResult.getOntologies().length > 1) {
-                    logger.debug("There are more than one ontologies here, something must be wrong");
-                    throw new DDIException("There are more than one ontologies here, something must be wrong");
+            if(!fieldText.isEmpty()){
+                JsonNode annotations = recommenderClient.getAnnotatedSynonyms(fieldText);
+                Map<WordInField, Set<String>> synonymsMap = new HashMap<WordInField, Set<String>>();
+                if (annotations != null){
+                    for(JsonNode annotation: annotations){
+                        if(annotation.get("annotations") != null){
+                            String actualWord = annotation.get("annotations").get("text").textValue();
+                            int from = annotation.get("annotations").get("from").intValue();
+                            int to   = annotation.get("annotations").get("to").intValue();
+                            Set<String> synonyms = new HashSet<String>();
+                            if(annotation.get("annotatedClass") != null){
+                                actualWord = annotation.get("annotatedClass").get("prefLabel").textValue();
+                                if(annotation.get("annotatedClass").get("synonym") != null){
+                                    for(JsonNode synonym: annotation.get("annotatedClass").get("synonym"))
+                                        synonyms.add(synonym.textValue());
+                                }
+                            }
+                            synonymsMap.put(new WordInField(actualWord,from, to), synonyms);
+                        }
+                    }
                 }
-                if (annotationResult.getResults() != null && annotationResult.getResults().getAnnotations() != null)
-                    matchedWords.addAll(getDistinctWordList(annotationResult.getResults().getAnnotations()));
+                matchedWords.addAll(getDistinctWordList(synonymsMap));
             }
 
-            Collections.sort(matchedWords);
-
-        }catch (RestClientException ex){
+        }catch (UnsupportedEncodingException | JSONException | RestClientException ex){
             logger.debug(ex.getMessage());
-            return null;
         }
 
         return matchedWords;
@@ -232,21 +240,40 @@ public class DDIAnnotationService {
                 String fieldText = field.getValue().replace("%", " ");//to avoid malformed error
                 try{
                     if(!fieldText.isEmpty()){
-                        RecomendedOntologyQuery[] annotationResults = recommenderClient.postRecommendedTerms(fieldText, Constants.OBO_ONTOLOGIES);
-                        if (annotationResults != null){
-                            for (RecomendedOntologyQuery annotationResult : annotationResults) {
-                                if (annotationResult.getOntologies() == null || annotationResult.getOntologies().length > 1) {
-                                    logger.debug("There are more than one ontologies here, something must be wrong");
-                                    throw new DDIException("There are more than one ontologies here, something must be wrong");
+                        JsonNode annotations = recommenderClient.getAnnotatedSynonyms(fieldText);
+                        Map<WordInField, Set<String>> synonymsMap = new HashMap<WordInField, Set<String>>();
+                        if (annotations != null){
+                            for(JsonNode annotation: annotations){
+                                if(annotation.get("annotatedClass") != null && annotation.get("annotations") != null){
+                                    Set<String> synonyms = new HashSet<String>();
+                                    if(annotation.get("annotatedClass") != null){
+                                        //actualWord = annotation.get("annotatedClass").get("prefLabel").textValue();
+                                        if(annotation.get("annotatedClass").get("synonym") != null){
+                                            for(JsonNode synonym: annotation.get("annotatedClass").get("synonym"))
+                                                synonyms.add(synonym.textValue());
+                                        }
+                                    }
+                                    List<WordInField> words = new ArrayList<WordInField>();
+                                    for(JsonNode annotationValue: annotation.get("annotations")){
+                                        String actualWord = annotationValue.get("text").textValue();
+                                        int from = annotationValue.get("from").intValue();
+                                        int to   = annotationValue.get("to").intValue();
+                                        WordInField word = new WordInField(actualWord,from, to);
+                                        if(synonymsMap.containsKey(word)){
+                                            Set<String> currentSynonyms = synonymsMap.get(word);
+                                            currentSynonyms.addAll(synonyms);
+                                            synonymsMap.put(word, currentSynonyms);
+                                        }else
+                                            synonymsMap.put(word, synonyms);
+                                    }
                                 }
-                                if (annotationResult.getResults() != null && annotationResult.getResults().getAnnotations() != null)
-                                    matchedWords.addAll(getDistinctWordList(annotationResult.getResults().getAnnotations()));
                             }
                         }
-                        logger.debug(annotationResults.toString());
+                        matchedWords.addAll(getDistinctWordList(synonymsMap));
                     }
-                }catch (UnsupportedEncodingException | JSONException | DDIException | RestClientException ex){
-                    logger.debug(ex.getMessage());
+
+                }catch (UnsupportedEncodingException | JSONException | RestClientException ex){
+                   logger.debug(ex.getMessage());
                 }
                 Collections.sort(matchedWords);
                 results.put(field.getKey(), matchedWords);
@@ -595,6 +622,27 @@ public class DDIAnnotationService {
 
         return matchedWords;
     }
+
+    private List<WordInField> getDistinctWordList(Map<WordInField, Set<String>> synonyms) throws JSONException {
+        List<WordInField> matchedWords = new ArrayList<>();
+        if(synonyms != null && synonyms.size() > 0){
+            for (Map.Entry matchedTerm : synonyms.entrySet()) {
+                WordInField key = (WordInField) matchedTerm.getKey();
+                WordInField word = new WordInField(key.getText().toLowerCase(), key.getFrom(), key.getTo());
+                WordInField overlappedWordInList = findOverlappedWordInList(word, matchedWords);
+
+                if (null == overlappedWordInList) {
+                    matchedWords.add(word);
+                }else
+                    modifyWordList(word, overlappedWordInList, matchedWords);
+
+                synonymsService.update(new Synonym(word.getText(), (new ArrayList<String>((Set<String>) matchedTerm.getValue()))));
+
+            }
+        }
+        return matchedWords;
+    }
+
 
     /**
      * Choose the longer one between word and overlapped word, write it in the matchedWords
