@@ -14,7 +14,6 @@ import uk.ac.ebi.ddi.annotation.utils.Utils;
 import uk.ac.ebi.ddi.service.db.model.dataset.Dataset;
 import uk.ac.ebi.ddi.xml.validator.exception.DDIException;
 import uk.ac.ebi.ddi.xml.validator.parser.model.Entry;
-import uk.ac.ebi.ddi.xml.validator.parser.model.Reference;
 import uk.ac.ebi.ddi.xml.validator.utils.Field;
 
 import java.io.UnsupportedEncodingException;
