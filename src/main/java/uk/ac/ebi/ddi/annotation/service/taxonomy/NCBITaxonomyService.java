@@ -22,6 +22,8 @@ public class NCBITaxonomyService {
 
     TaxonomyWsClient taxonomyClient = new TaxonomyWsClient(new TaxWsConfigProd());
 
+    private static Set<String> taxonomySpecies = new HashSet<>();
+
     /**
      * Private Constructor
      */
@@ -84,5 +86,33 @@ public class NCBITaxonomyService {
         if(dataset.getAdditional() != null && dataset.getAdditional().containsKey(key))
             return dataset.getAdditional().get(key);
         return null;
+    }
+
+    public String getParentForNonRanSpecie(String id){
+        return taxonomyClient.getParentForNonRanSpecie(id).getTaxSet()[0].getTaxId();
+    }
+
+    public Dataset annotateParentForNonRanSpecies(Dataset dataset){
+
+        if (dataset.getCrossReferences() != null && dataset.getCrossReferences().containsKey(Field.TAXONOMY.getName())){
+            Set<String> taxonomies = dataset.getCrossReferences().get(Field.TAXONOMY.getName());
+            Set<String> newTaxonomies = new HashSet<>();
+
+            for (String taxId : taxonomies){
+                if(!taxonomySpecies.contains(taxId)){
+                    String parentID = getParentForNonRanSpecie(taxId);
+                    if(!taxId.equalsIgnoreCase(parentID))
+                        newTaxonomies.add(parentID);
+                    else
+                        taxonomySpecies.add(taxId);
+                }
+            }
+            taxonomies.addAll(newTaxonomies);
+            if(newTaxonomies.size() >0 )
+                System.out.println(dataset.getAccession() + " " + newTaxonomies.size());
+            dataset = DatasetUtils.addCrossReferenceValues(dataset, Field.TAXONOMY.getName(), taxonomies);
+        }
+
+        return dataset;
     }
 }

@@ -49,7 +49,7 @@ public class SynonymQuery {
         return "SynonymQuery{" +
                 "prefLabel='" + prefLabel + '\'' +
                 ", synonyms=" + Arrays.toString(synonyms) +
-                ", definition='" + definition + '\'' +
+                ", definition='" + Arrays.toString(definition) + '\'' +
                 '}';
     }
 }

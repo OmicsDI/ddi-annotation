@@ -201,18 +201,20 @@ public class DDIAnnotationService {
                 if (annotations != null){
                     for(JsonNode annotation: annotations){
                         if(annotation.get("annotations") != null){
-                            String actualWord = annotation.get("annotations").get("text").textValue();
-                            int from = annotation.get("annotations").get("from").intValue();
-                            int to   = annotation.get("annotations").get("to").intValue();
-                            Set<String> synonyms = new HashSet<String>();
-                            if(annotation.get("annotatedClass") != null){
-                                actualWord = annotation.get("annotatedClass").get("prefLabel").textValue();
-                                if(annotation.get("annotatedClass").get("synonym") != null){
-                                    for(JsonNode synonym: annotation.get("annotatedClass").get("synonym"))
-                                        synonyms.add(synonym.textValue());
+                            if(annotation.get("annotations").get("text") != null){
+                                String actualWord = annotation.get("annotations").get("text").textValue();
+                                int from = annotation.get("annotations").get("from").intValue();
+                                int to   = annotation.get("annotations").get("to").intValue();
+                                Set<String> synonyms = new HashSet<String>();
+                                if(annotation.get("annotatedClass") != null){
+                                    actualWord = annotation.get("annotatedClass").get("prefLabel").textValue();
+                                    if(annotation.get("annotatedClass").get("synonym") != null){
+                                        for(JsonNode synonym: annotation.get("annotatedClass").get("synonym"))
+                                            synonyms.add(synonym.textValue());
+                                    }
                                 }
+                                synonymsMap.put(new WordInField(actualWord,from, to), synonyms);
                             }
-                            synonymsMap.put(new WordInField(actualWord,from, to), synonyms);
                         }
                     }
                 }
