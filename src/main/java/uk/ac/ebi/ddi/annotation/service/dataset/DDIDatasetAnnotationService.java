@@ -1,6 +1,5 @@
 package uk.ac.ebi.ddi.annotation.service.dataset;
 
-import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import uk.ac.ebi.ddi.annotation.utils.DatasetUtils;
 import uk.ac.ebi.ddi.service.db.model.dataset.Dataset;
@@ -243,5 +242,13 @@ public class DDIDatasetAnnotationService {
             similarsService.save(datasetExisting);
         }
 
+    }
+
+    public List<DatasetSimilars> getDatasetSimilars(){
+        return similarsService.readAll();
+    }
+
+    public void removeSimilar(DatasetSimilars dataset) {
+        similarsService.delete(dataset);
     }
 }

@@ -294,4 +294,7 @@ public class DDIDatasetSimilarityService {
     }
 
 
+    public List<DatasetStatInfo> getBiologicalSimilars() {
+        return datasetStatInfoService.readAll();
+    }
 }

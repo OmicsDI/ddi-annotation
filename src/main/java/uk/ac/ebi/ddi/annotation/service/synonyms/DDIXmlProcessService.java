@@ -13,7 +13,6 @@ import uk.ac.ebi.ddi.annotation.model.EnrichedDataset;
 import uk.ac.ebi.ddi.xml.validator.exception.DDIException;
 import uk.ac.ebi.ddi.xml.validator.parser.OmicsXMLFile;
 import uk.ac.ebi.ddi.xml.validator.parser.model.*;
-import uk.ac.ebi.ddi.xml.validator.utils.*;
 import uk.ac.ebi.ddi.xml.validator.utils.Field;
 
 import java.io.File;
