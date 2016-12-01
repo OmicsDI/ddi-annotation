@@ -58,16 +58,50 @@ public class DDIDatasetSimilarityService {
         this.termsInDB = termInDBService.readAllInOneType(dataType);
         long numberOfDatasets = this.termsInDB.parallelStream().collect(Collectors.groupingBy(TermInDB::getAccession)).size();
         Map<String, List<TermInDB>> termsMap = this.termsInDB.parallelStream().collect(Collectors.groupingBy(TermInDB::getTermName));
-        double tempscore;
 
-        System.out.println("start to calculate IDFWeight for" + dataType);
-        for (String key : termsMap.keySet()) {
-            tempscore = (double) numberOfDatasets / (double) termsMap.get(key).size();
+        Set <String> keys =  termsMap.keySet();
+        keys.parallelStream().forEach((key) -> {
+            double tempscore = (double) numberOfDatasets / (double) termsMap.get(key).size();
             double idfWeigt = Math.log(tempscore) / Math.log(2);
             this.idfWeightMap.put(key, idfWeigt);
-        }
+        });
+
+//        for (String key : termsMap.keySet()) {
+//            double tempscore = (double) numberOfDatasets / (double) termsMap.get(key).size();
+//            double idfWeigt = Math.log(tempscore) / Math.log(2);
+//            this.idfWeightMap.put(key, idfWeigt);
+//        }
         logger.info("End of calculating IDFWeight for" + dataType);
     }
+
+       /**
+     * Calculate the inverse dataset/document frequency weight of each term = log(N/DatasetFrequency)
+     *
+     * @param dataType Omics type of the dataset
+     */
+    public void calculateIDFWeight_new(String dataType) {
+
+        this.dataType = dataType;
+        this.termsInDB = termInDBService.readAllUncalculatedTermsInOneType(dataType);
+        long numberOfDatasets = this.termsInDB.parallelStream().collect(Collectors.groupingBy(TermInDB::getAccession)).size();
+        Map<String, List<TermInDB>> termsMap = this.termsInDB.parallelStream().collect(Collectors.groupingBy(TermInDB::getTermName));
+
+        Set <String> keys =  termsMap.keySet();
+        keys.parallelStream().forEach((key) -> {
+            double tempscore = (double) numberOfDatasets / (double) termsMap.get(key).size();
+            double idfWeigt = Math.log(tempscore) / Math.log(2);
+            this.idfWeightMap.put(key, idfWeigt);
+        });
+
+//        for (String key : termsMap.keySet()) {
+//            double tempscore = (double) numberOfDatasets / (double) termsMap.get(key).size();
+//            double idfWeigt = Math.log(tempscore) / Math.log(2);
+//            this.idfWeightMap.put(key, idfWeigt);
+//        }
+        logger.info("End of calculating IDFWeight for" + dataType);
+    }
+
+
 
     /**
      * Calculate the intersection/(terms sharing) information between datasets
