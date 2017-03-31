@@ -1,9 +1,5 @@
 package uk.ac.ebi.ddi.annotation.service.synonyms;
 
-/**
- * Created by mingze on 22/10/15.
- */
-
 import org.json.JSONException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -67,7 +63,7 @@ public class DDIXmlProcessService {
                 } catch (DDIException e) {
                     e.printStackTrace();
                 }
-                List<Reference> refs = entry.getCrossReferences().getRef();
+                List<Reference> refs = entry != null ? entry.getCrossReferences().getRef() : null;
 
                 DatasetTobeEnriched datasetTobeEnriched = prepareTheDataset(entry, database, dataType);
 

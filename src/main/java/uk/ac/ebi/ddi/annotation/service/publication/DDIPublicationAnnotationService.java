@@ -66,7 +66,7 @@ public class DDIPublicationAnnotationService {
         if(DOIUtils.containsDOI(fullText))
             doiSet.addAll(DOIUtils.extractDOIs(fullText));
 
-        if(doiSet != null && doiSet.size() > 0){
+        if(doiSet.size() > 0){
             Set results = new HashSet();
             for(String doID: doiSet){
                 doID = DOIUtils.cleanDOI(doID);

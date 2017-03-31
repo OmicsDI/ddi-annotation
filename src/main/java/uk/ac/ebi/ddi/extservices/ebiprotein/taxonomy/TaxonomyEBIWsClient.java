@@ -9,9 +9,6 @@ import uk.ac.ebi.ddi.extservices.ebiprotein.model.EBITaxonomyEntry;
 import uk.ac.ebi.ddi.extservices.ebiprotein.utils.EBITaxonomyUtils;
 
 
-import java.util.Set;
-
-
 /**
  * @author Yasset Perez-Riverol ypriverol
  */

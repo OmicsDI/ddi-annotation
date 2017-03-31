@@ -63,11 +63,11 @@ public class UniprotIdentifier {
             InputStream reader = conn.getInputStream();
             URLConnection.guessContentTypeFromStream(reader);
             StringBuilder builder = new StringBuilder();
-            int a = 0;
+            int a;
             while ((a = reader.read()) != -1)
                 builder.append((char) a);
             System.out.println(builder.toString());
-            if(builder.toString() != null && !builder.toString().isEmpty()){
+            if(!builder.toString().isEmpty()){
                 int count = 0;
                 for(String line: builder.toString().split("\n")){
                    if(line != null && !line.isEmpty()){

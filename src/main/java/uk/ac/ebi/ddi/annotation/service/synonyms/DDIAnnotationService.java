@@ -70,7 +70,7 @@ public class DDIAnnotationService {
 
         DatasetEnrichmentInfo prevDatasetInfo = enrichmentInfoService.readByAccession(accession, database);
 
-        Map<String, List<WordInField>> synonyms = new HashMap<String, List<WordInField>>();
+        Map<String, List<WordInField>> synonyms = new HashMap<>();
 
         if (prevDatasetInfo == null || overwrite)
             synonyms     = getWordsInFiledFromWS(datasetTobeEnriched.getAttributes());
@@ -122,13 +122,13 @@ public class DDIAnnotationService {
                     enrichedField += synonym + ", ";
                 }
                 logger.debug("synonymsForWord:" + synonymsForWord.toString());
-                if (enrichedField != null && !enrichedField.isEmpty()) {
+                if (!enrichedField.isEmpty()) {
                     enrichedField = enrichedField.substring(0, enrichedField.length() - 2); //remove the last comma
                     enrichedField += "; ";
                 }
             }
         }
-        if (enrichedField != null && !enrichedField.isEmpty()) {
+        if (!enrichedField.isEmpty()) {
             enrichedField = enrichedField.substring(0, enrichedField.length() - 2); //remove the last comma
             enrichedField += ".";
         }
@@ -136,13 +136,7 @@ public class DDIAnnotationService {
     }
 
 
-    /**
-     * Get the biology related words in one field from WebService at bioontology.org
-     *
-     * @param fieldText a field Text
-     * @return the words which are identified in the fieldText by recommender API from bioontology.org
-     */
-//    private List<WordInField> getWordsInFiledFromWS(String fieldText) throws JSONException, UnsupportedEncodingException, DDIException {
+    //    private List<WordInField> getWordsInFiledFromWS(String fieldText) throws JSONException, UnsupportedEncodingException, DDIException {
 //
 //        if (fieldText == null || fieldText.equals(Constants.NOT_AVAILABLE)) {
 //            return null;
@@ -186,7 +180,7 @@ public class DDIAnnotationService {
      * @return the words which are identified in the fieldText by recommender API from bioontology.org
      */
 
-    private List<WordInField> getWordsInFiledFromWS(String fieldText) throws JSONException, UnsupportedEncodingException, DDIException {
+    private List<WordInField> getWordsInFiledFromWS(String fieldText) {
 
         if (fieldText == null || fieldText.equals(Constants.NOT_AVAILABLE)) {
             return null;
@@ -197,7 +191,7 @@ public class DDIAnnotationService {
         try{
             if(!fieldText.isEmpty()){
                 JsonNode annotations = recommenderClient.getAnnotatedSynonyms(fieldText);
-                Map<WordInField, Set<String>> synonymsMap = new HashMap<WordInField, Set<String>>();
+                Map<WordInField, Set<String>> synonymsMap = new HashMap<>();
                 if (annotations != null){
                     for(JsonNode annotation: annotations){
                         if(annotation.get("annotations") != null){
@@ -205,7 +199,7 @@ public class DDIAnnotationService {
                                 String actualWord = annotation.get("annotations").get("text").textValue();
                                 int from = annotation.get("annotations").get("from").intValue();
                                 int to   = annotation.get("annotations").get("to").intValue();
-                                Set<String> synonyms = new HashSet<String>();
+                                Set<String> synonyms = new HashSet<>();
                                 if(annotation.get("annotatedClass") != null){
                                     actualWord = annotation.get("annotatedClass").get("prefLabel").textValue();
                                     if(annotation.get("annotatedClass").get("synonym") != null){
@@ -228,7 +222,7 @@ public class DDIAnnotationService {
         return matchedWords;
     }
 
-    private Map<String, List<WordInField>> getWordsInFiledFromWS(Map<String, String> fields) throws JSONException, UnsupportedEncodingException, DDIException {
+    private Map<String, List<WordInField>> getWordsInFiledFromWS(Map<String, String> fields) {
 
         ConcurrentHashMap<String, List<WordInField>> results = new ConcurrentHashMap<>();
 
@@ -243,11 +237,11 @@ public class DDIAnnotationService {
                 try{
                     if(!fieldText.isEmpty()){
                         JsonNode annotations = recommenderClient.getAnnotatedSynonyms(fieldText);
-                        Map<WordInField, Set<String>> synonymsMap = new HashMap<WordInField, Set<String>>();
+                        Map<WordInField, Set<String>> synonymsMap = new HashMap<>();
                         if (annotations != null){
                             for(JsonNode annotation: annotations){
                                 if(annotation.get("annotatedClass") != null && annotation.get("annotations") != null){
-                                    Set<String> synonyms = new HashSet<String>();
+                                    Set<String> synonyms = new HashSet<>();
                                     if(annotation.get("annotatedClass") != null){
                                         //actualWord = annotation.get("annotatedClass").get("prefLabel").textValue();
                                         if(annotation.get("annotatedClass").get("synonym") != null){
@@ -255,7 +249,7 @@ public class DDIAnnotationService {
                                                 synonyms.add(synonym.textValue());
                                         }
                                     }
-                                    List<WordInField> words = new ArrayList<WordInField>();
+                                    List<WordInField> words = new ArrayList<>();
                                     for(JsonNode annotationValue: annotation.get("annotations")){
                                         String actualWord = annotationValue.get("text").textValue();
                                         int from = annotationValue.get("from").intValue();
@@ -320,7 +314,7 @@ public class DDIAnnotationService {
      * @param word the word to look for synonyms
      * @return get synonyms of the word, by annotator API from bioontology.org
      */
-    protected ArrayList<String> getSynonymsForWordFromWS(String word) throws JSONException, UnsupportedEncodingException, RestClientException {
+    protected ArrayList<String> getSynonymsForWordFromWS(String word) throws JSONException, RestClientException {
         String lowerWord = word.toLowerCase();
         ArrayList<String> synonyms = new ArrayList<>();
 
@@ -346,7 +340,7 @@ public class DDIAnnotationService {
             if (annotatedTerms == null)
                 return null;
 
-            if (annotatedTerms == null || annotatedTerms.length == 0) {
+            if (annotatedTerms.length == 0) {
                 synonyms.add(Constants.NOT_ANNOTATION_FOUND);
                 return synonyms;
             }
@@ -376,11 +370,7 @@ public class DDIAnnotationService {
                     return null;
 
                 String[] synonymsInCls = output.getSynonyms();
-
-                for (int j = 0; j < synonymsInCls.length; j++) {
-                    String synonymInCls = synonymsInCls[j];
-                    synonyms.add(synonymInCls);
-                }
+                Collections.addAll(synonyms, synonymsInCls);
             }
 //        }
 
@@ -594,7 +584,7 @@ public class DDIAnnotationService {
         return matchedWords;
     }
 
-    private List<WordInField> getDistinctWordList(Annotation[] matchedTerms) throws JSONException {
+    private List<WordInField> getDistinctWordList(Annotation[] matchedTerms) {
         List<WordInField> matchedWords = new ArrayList<>();
         if(matchedTerms != null && matchedTerms.length > 0){
             for (Annotation matchedTerm : matchedTerms) {
@@ -625,7 +615,7 @@ public class DDIAnnotationService {
         return matchedWords;
     }
 
-    private List<WordInField> getDistinctWordList(Map<WordInField, Set<String>> synonyms) throws JSONException {
+    private List<WordInField> getDistinctWordList(Map<WordInField, Set<String>> synonyms) {
         List<WordInField> matchedWords = new ArrayList<>();
         if(synonyms != null && synonyms.size() > 0){
             for (Map.Entry matchedTerm : synonyms.entrySet()) {
@@ -638,7 +628,7 @@ public class DDIAnnotationService {
                 }else
                     modifyWordList(word, overlappedWordInList, matchedWords);
 
-                synonymsService.update(new Synonym(word.getText(), (new ArrayList<String>((Set<String>) matchedTerm.getValue()))));
+                synonymsService.update(new Synonym(word.getText(), (new ArrayList<>((Set<String>) matchedTerm.getValue()))));
 
             }
         }

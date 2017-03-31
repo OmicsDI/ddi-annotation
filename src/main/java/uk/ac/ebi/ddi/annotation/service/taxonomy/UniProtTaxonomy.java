@@ -2,14 +2,11 @@ package uk.ac.ebi.ddi.annotation.service.taxonomy;
 
 import uk.ac.ebi.ddi.annotation.utils.DatasetUtils;
 import uk.ac.ebi.ddi.extservices.ebiprotein.config.TaxEBIPRIDEWsConfigProd;
-import uk.ac.ebi.ddi.extservices.ebiprotein.model.EBITaxonomyEntry;
 import uk.ac.ebi.ddi.extservices.ebiprotein.taxonomy.TaxonomyEBIWsClient;
 import uk.ac.ebi.ddi.service.db.model.dataset.Dataset;
 import uk.ac.ebi.ddi.xml.validator.utils.Field;
 
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 /**

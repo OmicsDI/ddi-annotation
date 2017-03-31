@@ -29,9 +29,8 @@ public class PubmedWsClient extends WsClient {
     public PubmedJSON getPubmedIds(List<String> dois) throws RestClientException{
 
         if(dois != null && dois.size() > 0){
-
             String term = "";
-            if(dois != null && dois.size() > 0){
+            if(dois.size() > 0){
                 int count = 0;
                 for(String value: dois){
                     if(count == dois.size() - 1)

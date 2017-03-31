@@ -38,7 +38,7 @@ public class CrossReferencesProteinDatabasesService {
      * @param dataset INSERTED to be added
      * @return Resulting dataset
      */
-    public static Entry annotateCrossReferences(Entry dataset) throws Exception{
+    public static Entry annotateCrossReferences(Entry dataset) {
 
         if(dataset != null && dataset.getCrossReferences() != null){
             List<Reference> finalReferences = new ArrayList<>();

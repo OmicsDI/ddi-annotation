@@ -13,7 +13,17 @@ import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.stream.Collectors;
 
 /**
- * Created by mingze on 11/09/15.
+ * This code is licensed under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+
+ *  ==Overview==
+ *
+ *  This class
+ *
+ * Created by ypriverol (ypriverol@gmail.com) on 11/09/15.
  */
 public class DDIDatasetSimilarityService {
 
@@ -97,7 +107,7 @@ public class DDIDatasetSimilarityService {
         this.cosineScores = calculateCosineScore(expOutputDatasets, numberOfDatasets);
 
         expOutputDatasets.stream().forEach(dataset -> {
-            List<IntersectionInfo> datasetIntersectionInfos = new CopyOnWriteArrayList<IntersectionInfo>();
+            List<IntersectionInfo> datasetIntersectionInfos = new CopyOnWriteArrayList<>();
             Set<String> terms = dataset.getTerms();
             List<IntersectionInfo> finalDatasetIntersectionInfos = datasetIntersectionInfos;
             terms.parallelStream().forEach(term -> {

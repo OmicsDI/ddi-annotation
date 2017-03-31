@@ -36,9 +36,7 @@ public class EBITaxonomyUtils {
         }
 
         public static boolean isSpeciesOrGenues(String term){
-            if(term.equalsIgnoreCase(SPECIES.getName()) || term.equalsIgnoreCase(GENUES.getName()))
-                return true;
-            return false;
+            return term.equalsIgnoreCase(SPECIES.getName()) || term.equalsIgnoreCase(GENUES.getName());
         }
     }
 }

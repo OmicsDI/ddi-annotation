@@ -1,7 +1,6 @@
 package uk.ac.ebi.ddi.extservices.entrez.ncbiresult;
 
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * This code is licensed under the Apache License, Version 2.0 (the

@@ -28,7 +28,7 @@ public class Utils {
     }
 
     private static boolean isUnsafe(char ch) {
-        return ch > 128 || ch < 0 || " %$&+,/:;=?@<>#%".indexOf(ch) >= 0;
+        return ch > 128 || " %$&+,/:;=?@<>#%".indexOf(ch) >= 0;
     }
 
     public static String removeRedundantSynonyms(String synonyms){

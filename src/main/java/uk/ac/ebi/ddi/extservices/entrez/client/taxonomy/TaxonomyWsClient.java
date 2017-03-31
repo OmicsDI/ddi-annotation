@@ -100,7 +100,7 @@ public class TaxonomyWsClient extends WsClient {
         if((entry != null) && (entry.getTaxSet() != null) && (entry.getTaxSet().length == 1) &&
                 entry.getTaxSet()[0].getRank().equalsIgnoreCase(EBITaxonomyUtils.EbiTaxRank.NO_RANK.getName()))
             return entry;
-        return getParentSpecieOrGenuesTaxonomy(entry.getTaxSet()[0].getParentTaxId());
+        return getParentSpecieOrGenuesTaxonomy((entry != null ? entry.getTaxSet() : new NCBITaxonomyEntry[0])[0].getParentTaxId());
     }
 
 
@@ -110,7 +110,7 @@ public class TaxonomyWsClient extends WsClient {
         if((parent != null) && (parent.getTaxSet() != null) && (parent.getTaxSet().length == 1) &&
                 (EBITaxonomyUtils.EbiTaxRank.isSpeciesOrGenues(parent.getTaxSet()[0].getRank())))
             return parent;
-        return getTaxonomyEntryById(parent.getTaxSet()[0].getParentTaxId());
+        return getTaxonomyEntryById((parent != null ? parent.getTaxSet() : new NCBITaxonomyEntry[0])[0].getParentTaxId());
     }
 
 

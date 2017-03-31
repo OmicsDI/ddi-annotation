@@ -1,6 +1,5 @@
 package uk.ac.ebi.ddi.extservices.annotator.client;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.web.client.RestClientException;
@@ -18,7 +17,17 @@ import java.net.URL;
 import java.net.URLEncoder;
 
 /**
- * Created by yperez on 29/05/2016.
+ * This code is licensed under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+
+ *  ==Overview==
+ *
+ *  This class
+ *
+ * Created by ypriverol (ypriverol@gmail.com) on 29/05/2016.
  */
 public class BioOntologyClient extends WsClient{
 
@@ -133,7 +142,7 @@ public class BioOntologyClient extends WsClient{
         return this.restTemplate.getForObject(url, SynonymQuery.class);
     }
 
-    public SynonymQuery getAllSynonymByURL(String url) throws RestClientException, UnsupportedEncodingException {
+    public SynonymQuery getAllSynonymByURL(String url) throws RestClientException {
 
         url = String.format("%s?apikey=%s", url, Constants.OBO_KEY);
         logger.debug(url);
@@ -147,8 +156,6 @@ public class BioOntologyClient extends WsClient{
         JsonNode root = null;
         try {
             root = mapper.readTree(json);
-        } catch (JsonProcessingException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
