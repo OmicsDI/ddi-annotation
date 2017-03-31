@@ -38,13 +38,13 @@ public class DDIExpDataProcessServiceTest {
     @Test
     public void testCalculateProteomicsData() throws Exception {
         ddiExpDataProcessService.calculateIDFWeight(DataType.PROTEOMICS_DATA.getName());
-        ddiExpDataProcessService.calculateSimilarity(DataType.PROTEOMICS_DATA.getName());
+//        ddiExpDataProcessService.calculateSimilarity(DataType.PROTEOMICS_DATA.getName());
     }
 
     @Test
     public void testCalculateMetabolomicsData() throws Exception {
         ddiExpDataProcessService.calculateIDFWeight(DataType.METABOLOMICS_DATA.getName());
-        ddiExpDataProcessService.calculateSimilarity(DataType.METABOLOMICS_DATA.getName());
+//        ddiExpDataProcessService.calculateSimilarity(DataType.METABOLOMICS_DATA.getName());
     }
 
 }

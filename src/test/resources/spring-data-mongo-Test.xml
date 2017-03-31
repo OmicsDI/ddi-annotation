@@ -54,6 +54,8 @@
 	<bean id="synonymsService" class="uk.ac.ebi.ddi.service.db.service.enrichment.SynonymsService"/>
 
 	<bean id="datasetService"       class="uk.ac.ebi.ddi.service.db.service.dataset.DatasetService" />
+	<bean id="datasetSimilarsService"       class="uk.ac.ebi.ddi.service.db.service.dataset.DatasetSimilarsService" />
+	<bean id="publicationDatasetService"       class="uk.ac.ebi.ddi.service.db.service.publication.PublicationDatasetService" />
 	<bean id="statusService"        class="uk.ac.ebi.ddi.service.db.service.dataset.DatasetStatusService"/>
 	<bean id="annotDatasetService" class="uk.ac.ebi.ddi.annotation.service.dataset.DDIDatasetAnnotationService" />
 
