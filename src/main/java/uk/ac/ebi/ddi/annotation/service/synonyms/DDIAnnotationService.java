@@ -215,7 +215,7 @@ public class DDIAnnotationService {
                 matchedWords.addAll(getDistinctWordList(synonymsMap));
             }
 
-        }catch (UnsupportedEncodingException | JSONException | RestClientException ex){
+        }catch (UnsupportedEncodingException | RestClientException ex){
             logger.debug(ex.getMessage());
         }
 
@@ -268,7 +268,7 @@ public class DDIAnnotationService {
                         matchedWords.addAll(getDistinctWordList(synonymsMap));
                     }
 
-                }catch (UnsupportedEncodingException | JSONException | RestClientException ex){
+                }catch (UnsupportedEncodingException | RestClientException ex){
                    logger.debug(ex.getMessage());
                 }
                 Collections.sort(matchedWords);

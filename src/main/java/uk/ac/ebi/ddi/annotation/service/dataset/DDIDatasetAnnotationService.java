@@ -1,7 +1,12 @@
 package uk.ac.ebi.ddi.annotation.service.dataset;
 
+import com.mongodb.BasicDBObject;
+import org.kohsuke.rngom.parse.host.Base;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.mongodb.core.aggregation.*;
+import org.springframework.data.mongodb.core.query.Criteria;
 import uk.ac.ebi.ddi.annotation.utils.DatasetUtils;
+import uk.ac.ebi.ddi.service.db.model.aggregate.BaseAggregate;
 import uk.ac.ebi.ddi.service.db.model.dataset.Dataset;
 import uk.ac.ebi.ddi.service.db.model.dataset.DatasetSimilars;
 import uk.ac.ebi.ddi.service.db.model.dataset.DatasetStatus;
@@ -250,5 +255,48 @@ public class DDIDatasetAnnotationService {
 
     public void removeSimilar(DatasetSimilars dataset) {
         similarsService.delete(dataset);
+    }
+
+    /*public List<PublicationDataset> getMutiomicsDatasets()
+    {
+        return datasetService.getMutiomicsDatasets();
+    }*/
+
+    public List<PublicationDataset> getMultiomics()
+    {
+        MatchOperation checkPubmedNull = Aggregation.match(new Criteria("crossReferences.pubmed").exists(true).
+                andOperator(new Criteria("currentStatus").ne("Deleted")));
+
+        UnwindOperation unwindPubMed = Aggregation.unwind("crossReferences.pubmed");
+
+        GroupOperation groupPubmed = Aggregation.group("crossReferences.pubmed").
+                addToSet(new BasicDBObject("ac","$accession").append("db","$database")).as("datasets").
+                addToSet("additional.omics_type").as("omics_list").count().as("count");
+
+        ProjectionOperation projectStage = Aggregation.project("_id", "count","datasets","omics_list").
+                and("omics_list").size().as("omics_count").and("_id").as("pubmedId");
+
+        MatchOperation checkMultiomics = Aggregation.match(new Criteria("omics_count").gte(2));
+
+        UnwindOperation unwindDatasets = Aggregation.unwind("datasets");
+
+        ProjectionOperation projectAsPublication = Aggregation.project("pubmedId")
+                .and("datasets.ac").as("accession").
+                        and("datasets.db").as("database").andExclude("_id");
+        Aggregation aggregation
+                = Aggregation.newAggregation(checkPubmedNull, unwindPubMed,groupPubmed,projectStage,checkMultiomics,unwindDatasets,
+                projectAsPublication);
+
+        List<PublicationDataset> aggResult = datasetService.getAggregationResults(aggregation,"datasets.dataset",PublicationDataset.class);
+
+        return aggResult;
+    }
+
+    public void updateDatasetClaim()
+    {
+        String[] sourceDatasets = {"Pride","MetaboLights","MetabolomeExpress","ArrayExpress",
+                "Massive","ArrayExpress","JPOST Repository"};
+
+        datasetService.updateDatasetClaim(sourceDatasets);
     }
 }

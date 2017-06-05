@@ -105,7 +105,7 @@ public class CrossReferencesProteinDatabasesService {
                 ProteinDetailFetcher.AccessionType accessionType = accessionResolver.getAccessionType(accession);
                 if(accessionType == ProteinDetailFetcher.AccessionType.ENSEMBL) {
                     mapIdentifiers.put(accession, Constants.ENSEMBL_DATABASE);
-                } else if(accessionType == ProteinDetailFetcher.AccessionType.ENSEMBL_TRANSCRIPT){
+                } else if(accessionType == ProteinDetailFetcher.AccessionType.ENSEMBL){
                     mapIdentifiers.put(accession, Constants.ENSEMBL_DATABASE);
                 }else if(accessionType == ProteinDetailFetcher.AccessionType.UNIPROT_ID){
                     mapIdentifiers.put(accession, Constants.UNIPROT_DATABASE);

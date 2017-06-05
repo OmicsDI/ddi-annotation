@@ -61,4 +61,15 @@ public class DDIDatasetServiceTest {
         });
 
     }
+
+    @Test
+    public void updateClaimDataset()
+    {
+        try
+        {
+            annotDatasetService.updateDatasetClaim();
+        }catch(Exception ex){
+            ex.printStackTrace();
+        }
+    }
 }
