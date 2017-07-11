@@ -74,18 +74,25 @@ public class DatasetUtils {
     @Deprecated
     public static Dataset transformEntryDataset(Entry dataset){
 
-        Map<String, Set<String>> dates = dataset.getDates().getDate().parallelStream().collect(Collectors.groupingBy(uk.ac.ebi.ddi.xml.validator.parser.model.Date::getType, Collectors.mapping(uk.ac.ebi.ddi.xml.validator.parser.model.Date::getValue, Collectors.toSet())));
+        Map<String, Set<String>> dates= new HashMap<>();;
+        Map<String, Set<String>> crossReferences= new HashMap<>();;
+        Map<String, Set<String>> additionals = new HashMap<>();
+        try {
+            dates = dataset.getDates().getDate().parallelStream().collect(Collectors.groupingBy(uk.ac.ebi.ddi.xml.validator.parser.model.Date::getType, Collectors.mapping(uk.ac.ebi.ddi.xml.validator.parser.model.Date::getValue, Collectors.toSet())));
 
-        Map<String, Set<String>> crossReferences = new HashMap<>();
-        if(dataset.getCrossReferences() != null && dataset.getCrossReferences().getRef() != null){
-            crossReferences = dataset.getCrossReferences().getRef()
+            if (dataset.getCrossReferences() != null && dataset.getCrossReferences().getRef() != null) {
+                crossReferences = dataset.getCrossReferences().getRef()
+                        .stream().parallel()
+                        .collect(Collectors.groupingBy(x -> x.getDbname().trim(), Collectors.mapping(x -> x.getDbkey().trim(), Collectors.toSet())));
+            }
+             additionals = dataset.getAdditionalFields().getField()
                     .stream().parallel()
-                    .collect(Collectors.groupingBy(x -> x.getDbname().trim(), Collectors.mapping(x -> x.getDbkey().trim(), Collectors.toSet())));
+                    .collect(Collectors.groupingBy(x -> x.getName().trim(), Collectors.mapping(x -> x.getValue().trim(), Collectors.toSet())));
         }
-        Map<String, Set<String>> additionals = dataset.getAdditionalFields().getField()
-                .stream().parallel()
-                .collect(Collectors.groupingBy(x -> x.getName().trim(), Collectors.mapping(x -> x.getValue().trim(), Collectors.toSet())));
-
+        catch(Exception ex)
+        {
+            System.out.println("exception occured in entry with id " + dataset.getId());
+        }
         return new Dataset(dataset.getId(), dataset.getDatabase(), dataset.getName().getValue(), dataset.getDescription(),dates, additionals, crossReferences, DatasetCategory.INSERTED);
 
     }
@@ -99,22 +106,30 @@ public class DatasetUtils {
      */
     public static Dataset transformEntryDataset(Entry dataset, String databaseName){
 
-        Map<String, Set<String>> dates = dataset.getDates().getDate().parallelStream().collect(Collectors.groupingBy(uk.ac.ebi.ddi.xml.validator.parser.model.Date::getType, Collectors.mapping(uk.ac.ebi.ddi.xml.validator.parser.model.Date::getValue, Collectors.toSet())));
+        Map<String, Set<String>> dates= new HashMap<>();;
+        Map<String, Set<String>> crossReferences= new HashMap<>();;
+        Map<String, Set<String>> additionals = new HashMap<>();
+        try {
+            dates = dataset.getDates().getDate().parallelStream().collect(Collectors.groupingBy(uk.ac.ebi.ddi.xml.validator.parser.model.Date::getType, Collectors.mapping(uk.ac.ebi.ddi.xml.validator.parser.model.Date::getValue, Collectors.toSet())));
 
-        Map<String, Set<String>> crossReferences = new HashMap<>();
-        if(dataset.getCrossReferences() != null && dataset.getCrossReferences().getRef() != null){
-            crossReferences = dataset.getCrossReferences().getRef()
+            crossReferences = new HashMap<>();
+            if (dataset.getCrossReferences() != null && dataset.getCrossReferences().getRef() != null) {
+                crossReferences = dataset.getCrossReferences().getRef()
+                        .stream().parallel()
+                        .collect(Collectors.groupingBy(x -> x.getDbname().trim(), Collectors.mapping(x -> x.getDbkey().trim(), Collectors.toSet())));
+            }
+            additionals = dataset.getAdditionalFields().getField()
                     .stream().parallel()
-                    .collect(Collectors.groupingBy(x -> x.getDbname().trim(), Collectors.mapping(x -> x.getDbkey().trim(), Collectors.toSet())));
-        }
-        Map<String, Set<String>> additionals = dataset.getAdditionalFields().getField()
-                .stream().parallel()
-                .collect(Collectors.groupingBy(x -> x.getName().trim(), Collectors.mapping(x -> x.getValue().trim(), Collectors.toSet())));
+                    .collect(Collectors.groupingBy(x -> x.getName().trim(), Collectors.mapping(x -> x.getValue().trim(), Collectors.toSet())));
 
-        //** Rewrite the respoitory with the name we would like to handle ***/
-        Set<String> databases = new HashSet<>();
-        databases.add(databaseName);
-        additionals.put(Field.REPOSITORY.getName(), databases);
+            //** Rewrite the respoitory with the name we would like to handle ***/
+            Set<String> databases = new HashSet<>();
+            databases.add(databaseName);
+            additionals.put(Field.REPOSITORY.getName(), databases);
+        }
+        catch(Exception ex){
+            System.out.println("exception occured in entry with id " + dataset.getId());
+        }
         return new Dataset(dataset.getId(), databaseName, dataset.getName().getValue(), dataset.getDescription(),dates, additionals, crossReferences, DatasetCategory.INSERTED);
 
     }
