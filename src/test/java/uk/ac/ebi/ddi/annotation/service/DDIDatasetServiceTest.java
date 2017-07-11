@@ -36,7 +36,7 @@ public class DDIDatasetServiceTest {
         reader = new OmicsXMLFile(new File(fileURL.toURI()));
     }
 
-    @Test
+   /* @Test
     public void importDatasets(){
 
         reader.getEntryIds().parallelStream().forEach( id ->{
@@ -60,7 +60,7 @@ public class DDIDatasetServiceTest {
             }
         });
 
-    }
+    }*/
 
     @Test
     public void updateClaimDataset()
@@ -68,6 +68,18 @@ public class DDIDatasetServiceTest {
         try
         {
             annotDatasetService.updateDatasetClaim();
+        }catch(Exception ex){
+            ex.printStackTrace();
+        }
+    }
+
+    @Test
+    public void updateMostAccessed()
+    {
+        try
+        {
+            annotDatasetService.updateMostAccessed();
+
         }catch(Exception ex){
             ex.printStackTrace();
         }
