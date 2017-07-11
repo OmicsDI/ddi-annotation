@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.aggregation.*;
 import org.springframework.data.mongodb.core.query.Criteria;
 import uk.ac.ebi.ddi.annotation.utils.DatasetUtils;
+import uk.ac.ebi.ddi.ebe.ws.dao.model.common.QueryResult;
 import uk.ac.ebi.ddi.service.db.model.aggregate.BaseAggregate;
 import uk.ac.ebi.ddi.service.db.model.dataset.Dataset;
 import uk.ac.ebi.ddi.service.db.model.dataset.DatasetSimilars;
@@ -15,18 +16,17 @@ import uk.ac.ebi.ddi.service.db.model.publication.PublicationDataset;
 import uk.ac.ebi.ddi.service.db.service.dataset.IDatasetService;
 import uk.ac.ebi.ddi.service.db.service.dataset.IDatasetSimilarsService;
 import uk.ac.ebi.ddi.service.db.service.dataset.IDatasetStatusService;
+import uk.ac.ebi.ddi.service.db.service.logger.IHttpEventService;
 import uk.ac.ebi.ddi.service.db.service.publication.IPublicationDatasetService;
 import uk.ac.ebi.ddi.service.db.utils.DatasetCategory;
 import uk.ac.ebi.ddi.service.db.utils.DatasetSimilarsType;
+import uk.ac.ebi.ddi.service.db.utils.Tuple;
 import uk.ac.ebi.ddi.xml.validator.parser.model.Entry;
 import uk.ac.ebi.ddi.xml.validator.utils.Field;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 /**
  * @author Yasset Perez-Riverol (ypriverol@gmail.com)
@@ -45,6 +45,9 @@ public class DDIDatasetAnnotationService {
 
     @Autowired
     IDatasetSimilarsService similarsService;
+
+    @Autowired
+    IHttpEventService httpEventService;
 
     /**
      * This function looks for individual datasets and check if they are in the database and if they needs to
@@ -295,8 +298,16 @@ public class DDIDatasetAnnotationService {
     public void updateDatasetClaim()
     {
         String[] sourceDatasets = {"Pride","MetaboLights","MetabolomeExpress","ArrayExpress",
-                "Massive","ArrayExpress","JPOST Repository"};
+                "Massive","JPOST Repository"};
 
         datasetService.updateDatasetClaim(sourceDatasets);
     }
+
+    public void updateMostAccessed()
+    {
+        httpEventService.moreAccessedDataset(20);
+
+    }
+
+
 }
