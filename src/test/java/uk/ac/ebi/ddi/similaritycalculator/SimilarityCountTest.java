@@ -26,6 +26,13 @@ public class SimilarityCountTest {
     public void addCitations(){
         similarityCounts.addAllCitations();
     }
+
+    @Test
+    public void addReanalysis(){
+        similarityCounts.saveReanalysisCount();
+    }
+
+
 }
 
 
