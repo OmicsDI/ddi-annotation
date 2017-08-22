@@ -32,6 +32,11 @@ public class SimilarityCountTest {
         similarityCounts.saveReanalysisCount();
     }
 
+    @Test
+    public void addSearchCounts(){
+        similarityCounts.saveSearchcounts();
+    }
+
 
 }
 
