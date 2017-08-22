@@ -37,6 +37,10 @@ public class SimilarityCountTest {
         similarityCounts.saveSearchcounts();
     }
 
+    @Test
+    public void testAllRecords() {
+        similarityCounts.getPageRecords();
+    }
 
 }
 
