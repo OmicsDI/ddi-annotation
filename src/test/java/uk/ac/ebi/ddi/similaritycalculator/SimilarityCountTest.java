@@ -22,7 +22,10 @@ public class SimilarityCountTest {
         similarityCounts.getCitationCount("ArrayExpress","E-MEXP-981");
     }
 
-    
+    @Test
+    public void addCitations(){
+        similarityCounts.addAllCitations();
+    }
 }
 
 
