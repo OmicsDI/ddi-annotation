@@ -1,7 +1,11 @@
 package uk.ac.ebi.ddi.annotation.utils;
 
+import uk.ac.ebi.ddi.service.db.model.dataset.Dataset;
+import uk.ac.ebi.ddi.xml.validator.utils.Field;
+
 import java.util.HashSet;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 /**
  * @author Yasset Perez-Riverol (ypriverol@gmail.com)
@@ -51,5 +55,44 @@ public class Utils {
 
         }
         return null;
+    }
+
+    public static Dataset replaceTextCase(Dataset existingDataset){
+        if(existingDataset.getAdditional().get(Field.DISEASE_FIELD) != null){
+            Set<String> diseases = existingDataset.getAdditional().get(Field.DISEASE_FIELD);
+            Set<String> updatedDisease =  diseases.parallelStream().map(x -> Utils.toTitleCase(x)).collect(Collectors.toSet());
+            existingDataset.addAdditional(Field.DISEASE_FIELD.getName(),updatedDisease);
+        }
+        if(existingDataset.getAdditional().get(Field.SPECIE_FIELD) != null){
+            Set<String> diseases = existingDataset.getAdditional().get(Field.SPECIE_FIELD);
+            Set<String> updatedSpecies =  diseases.parallelStream().map(x -> Utils.toTitleCase(x)).collect(Collectors.toSet());
+            existingDataset.addAdditional(Field.SPECIE_FIELD.getName(),updatedSpecies);
+        }
+        if(existingDataset.getAdditional().get(Field.TISSUE_FIELD) != null){
+            Set<String> diseases = existingDataset.getAdditional().get(Field.TISSUE_FIELD);
+            Set<String> updatedTissue =  diseases.parallelStream().map(x -> Utils.toTitleCase(x)).collect(Collectors.toSet());
+            existingDataset.addAdditional(Field.TISSUE_FIELD.getName(),updatedTissue);
+        }
+        return existingDataset;
+
+    }
+
+    public static String toTitleCase(String input) {
+        StringBuilder titleCase = new StringBuilder();
+        boolean nextTitleCase = true;
+        for (char c : input.toCharArray())
+        {
+            if (Character.isSpaceChar(c))
+            {
+                nextTitleCase = true;
+            }
+            else if (nextTitleCase)
+            {
+                c = Character.toTitleCase(c);
+                nextTitleCase = false;
+            }
+            titleCase.append(c);
+        }
+        return titleCase.toString();
     }
 }
