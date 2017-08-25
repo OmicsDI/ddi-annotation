@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.aggregation.*;
 import org.springframework.data.mongodb.core.query.Criteria;
 import uk.ac.ebi.ddi.annotation.utils.DatasetUtils;
+import uk.ac.ebi.ddi.annotation.utils.Utils;
 import uk.ac.ebi.ddi.ebe.ws.dao.model.common.QueryResult;
 import uk.ac.ebi.ddi.service.db.model.aggregate.BaseAggregate;
 import uk.ac.ebi.ddi.service.db.model.dataset.Dataset;
@@ -58,6 +59,7 @@ public class DDIDatasetAnnotationService {
     @Deprecated
     public void insertDataset(Entry dataset){
         Dataset dbDataset = DatasetUtils.transformEntryDataset(dataset);
+        dbDataset = Utils.replaceTextCase(dbDataset);
         Dataset currentDataset = datasetService.read(dbDataset.getAccession(), dbDataset.getDatabase());
         if(currentDataset == null){
             insertDataset(dbDataset);
