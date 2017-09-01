@@ -75,6 +75,7 @@ public class DDIDatasetAnnotationService {
      */
     public void insertDataset(Entry dataset, String databaseName){
         Dataset dbDataset = DatasetUtils.transformEntryDataset(dataset, databaseName);
+        dbDataset = Utils.replaceTextCase(dbDataset);
         Dataset currentDataset = datasetService.read(dbDataset.getAccession(), dbDataset.getDatabase());
         if(currentDataset == null){
             insertDataset(dbDataset);
