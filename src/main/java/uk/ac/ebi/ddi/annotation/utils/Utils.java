@@ -58,19 +58,19 @@ public class Utils {
     }
 
     public static Dataset replaceTextCase(Dataset existingDataset){
-        if(existingDataset.getAdditional().get(Field.DISEASE_FIELD) != null){
-            Set<String> diseases = existingDataset.getAdditional().get(Field.DISEASE_FIELD);
-            Set<String> updatedDisease =  diseases.parallelStream().map(x -> Utils.toTitleCase(x)).collect(Collectors.toSet());
+        if(existingDataset.getAdditional().get(Field.DISEASE_FIELD.getName()) != null){
+            Set<String> diseases = existingDataset.getAdditional().get(Field.DISEASE_FIELD.getName());
+            Set<String> updatedDisease =  diseases.parallelStream().map(x -> Utils.toTitleCase(x.toLowerCase())).collect(Collectors.toSet());
             existingDataset.addAdditional(Field.DISEASE_FIELD.getName(),updatedDisease);
         }
-        if(existingDataset.getAdditional().get(Field.SPECIE_FIELD) != null){
-            Set<String> diseases = existingDataset.getAdditional().get(Field.SPECIE_FIELD);
-            Set<String> updatedSpecies =  diseases.parallelStream().map(x -> Utils.toTitleCase(x)).collect(Collectors.toSet());
+        if(existingDataset.getAdditional().get(Field.SPECIE_FIELD.getName()) != null){
+            Set<String> diseases = existingDataset.getAdditional().get(Field.SPECIE_FIELD.getName());
+            Set<String> updatedSpecies =  diseases.parallelStream().map(x -> Utils.toTitleCase(x.toLowerCase())).collect(Collectors.toSet());
             existingDataset.addAdditional(Field.SPECIE_FIELD.getName(),updatedSpecies);
         }
-        if(existingDataset.getAdditional().get(Field.TISSUE_FIELD) != null){
-            Set<String> diseases = existingDataset.getAdditional().get(Field.TISSUE_FIELD);
-            Set<String> updatedTissue =  diseases.parallelStream().map(x -> Utils.toTitleCase(x)).collect(Collectors.toSet());
+        if(existingDataset.getAdditional().get(Field.TISSUE_FIELD.getName()) != null){
+            Set<String> diseases = existingDataset.getAdditional().get(Field.TISSUE_FIELD.getName());
+            Set<String> updatedTissue =  diseases.parallelStream().map(x -> Utils.toTitleCase(x.toLowerCase())).collect(Collectors.toSet());
             existingDataset.addAdditional(Field.TISSUE_FIELD.getName(),updatedTissue);
         }
         return existingDataset;
