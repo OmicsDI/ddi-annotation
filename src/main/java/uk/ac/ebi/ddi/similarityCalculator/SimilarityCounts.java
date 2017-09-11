@@ -12,12 +12,15 @@ import uk.ac.ebi.ddi.ebe.ws.dao.model.common.QueryResult;
 import uk.ac.ebi.ddi.ebe.ws.dao.model.europmc.Citation;
 import uk.ac.ebi.ddi.ebe.ws.dao.model.europmc.CitationResponse;
 import uk.ac.ebi.ddi.service.db.model.dataset.Dataset;
+import uk.ac.ebi.ddi.service.db.model.dataset.MostAccessedDatasets;
+import uk.ac.ebi.ddi.service.db.model.dataset.Scores;
 import uk.ac.ebi.ddi.service.db.model.similarity.Citations;
 import uk.ac.ebi.ddi.service.db.model.similarity.EBISearchPubmedCount;
 import uk.ac.ebi.ddi.service.db.model.similarity.ReanalysisData;
 import uk.ac.ebi.ddi.service.db.service.dataset.IDatasetService;
 import uk.ac.ebi.ddi.service.db.service.similarity.*;
 
+import javax.xml.crypto.Data;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -51,10 +54,10 @@ public class SimilarityCounts {
     @Autowired
     IEBIPubmedSearchService ebiPubmedSearchService;
 
-    //private static final Logger logger = LoggerFactory.getLogger(SimilarityCounts.class);
+    private static final Logger logger = LoggerFactory.getLogger(SimilarityCounts.class);
 
     public void getCitationCount(String database,String accession){
-       // try {
+        try {
             CitationResponse citationResponse = citationClient.getCitations(accession);
             Dataset dataset = datasetService.read(accession, database);
             Set<String> cit = new HashSet<String>();
@@ -67,11 +70,22 @@ public class SimilarityCounts {
             citations.setPubmedId(cit);
             citations.setPubmedCount(cit.size());
             citationService.saveCitation(citations);
-        /*}
+
+            if(dataset.getScores() != null) {
+                dataset.getScores().setCitationCount(cit.size());
+
+            }else{
+                Scores scores = new Scores();
+                scores.setCitationCount(cit.size());
+                dataset.setScores(scores);
+            }
+            datasetService.update(dataset.getId(),dataset);
+
+        }
         catch(Exception ex){
             //System.out.println(ex.getMessage());
             logger.error("inside getcitationcount exception is " + ex.getMessage());
-        }*/
+        }
     }
 
     public void addAllCitations(){
@@ -88,8 +102,8 @@ public class SimilarityCounts {
         }*/
     }
 
-    public void addSearchCounts(String dataset,String pubmedId){
-       // try {
+    public void addSearchCounts(String accession,String pubmedId,String database){
+        try {
             int size = 20;
             String query = pubmedId;
             query = (query == null || query.isEmpty() || query.length() == 0) ? "*:*" : query;
@@ -99,40 +113,55 @@ public class SimilarityCounts {
 
             queryResult.getCount();
 
-            Set<String> matchDataset = Arrays.stream(queryResult.getEntries()).filter(dt -> !dt.getId().toString().equals(dataset)).map(dts -> dts.getId().toString()).collect(Collectors.toSet());
+            Set<String> matchDataset = Arrays.stream(queryResult.getEntries()).filter(dt -> !dt.getId().toString().equals(accession)).map(dts -> dts.getId().toString()).collect(Collectors.toSet());
 
             EBISearchPubmedCount ebiSearchPubmedCount = new EBISearchPubmedCount();
-            ebiSearchPubmedCount.setAccession(dataset);
+            ebiSearchPubmedCount.setAccession(accession);
             ebiSearchPubmedCount.setPubmedCount(matchDataset.size());
             Map<String, Set<String>> pubmedDatasets = new HashMap<String, Set<String>>();
             pubmedDatasets.put(pubmedId, matchDataset);
             ebiSearchPubmedCount.setPubmedDatasetList(pubmedDatasets);
             ebiPubmedSearchService.saveEbiSearchPubmed(ebiSearchPubmedCount);
-        /*}
+            Dataset dataset = datasetService.read(accession,database);
+            if (dataset != null) {
+
+                if(dataset.getScores() != null) {
+                    dataset.getScores().setSearchCount(matchDataset.size());
+                }else{
+                    Scores scores = new Scores();
+                    scores.setSearchCount(matchDataset.size());
+                    dataset.setScores(scores);
+                }
+                datasetService.update(dataset.getId(),dataset);
+            }
+
+
+        }
         catch(Exception ex){
-            logger.error("inside add Search Counts exception is " + ex.getMessage() + " query is " + pubmedId + " dataset is  " + dataset);
-        }*/
+            logger.error("inside add Search Counts exception is " + ex.getMessage() + " query is " + pubmedId + " dataset is  " + accession);
+        }
     }
 
     public void saveReanalysisCount(){
         List<ReanalysisData> reanalysisData = datasetStatInfoService.reanalysisCount();
+
         reanalysisData.parallelStream().forEach(dt -> reanalysisDataService.saveReanalysis(dt));
     }
 
     public void saveSearchcounts(){
-       // try {
+        try {
             for (int i = startDataset; i < datasetService.getDatasetCount()/numberOfDataset; i = i + 1) {
                 //System.out.println("value of i is" + i);
                 datasetService.readAll(i, numberOfDataset).getContent().stream().filter(data ->
                         data.getCrossReferences() != null && data.getCrossReferences().get(Constants.PUBMED_FIELD) != null)
                         .forEach(dt ->  dt.getCrossReferences().get(Constants.PUBMED_FIELD).
-                                forEach(dta -> addSearchCounts(dt.getAccession(),dta)));
+                                forEach(dta -> addSearchCounts(dt.getAccession(),dta,dt.getDatabase())));
                 //Thread.sleep(3000);
             }
-       /* }
+        }
         catch(Exception ex){
-            logger.error("error inside exception message is " + ex.getMessage());
-        }*/
+            logger.error("error inside savesearch count exception message is " + ex.getMessage());
+        }
     }
 
     public void getPageRecords(){
