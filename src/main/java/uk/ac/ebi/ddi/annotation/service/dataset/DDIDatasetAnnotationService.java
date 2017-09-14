@@ -313,28 +313,4 @@ public class DDIDatasetAnnotationService {
     }
 
 
-    public void renalyseBioModels(){
-        List<Dataset> datasets = datasetService.findByDatabaseBioModels("BioModels Database");
-        datasets.parallelStream().forEach(data -> addSimilarDataset(data.getAccession(),data.getDatabase(),data.getCrossReferences().get("biomodels__db")));
-    }
-
-    public void addSimilarDataset(String accession,String database,Set<String> similarAccession){
-        DatasetSimilars datasetSimilars = new DatasetSimilars();
-        datasetSimilars.setAccession(accession);
-        datasetSimilars.setDatabase(database);
-        Set<SimilarDataset> similarDatasets = new HashSet<SimilarDataset>();
-        for(String similarAcc : similarAccession) {
-            List<Dataset> dataset = datasetService.findByAccession(similarAccession.iterator().next());
-            if (dataset.size() > 0) {
-                for (Dataset data : dataset) {
-                    SimilarDataset similar = new SimilarDataset(data, DatasetSimilarsType.REANALYSIS_OF.getType());
-                    similarDatasets.add(similar);
-                }
-            }
-
-        }
-        datasetSimilars.setSimilars(similarDatasets);
-        similarsService.save(datasetSimilars);
-    }
-
 }
