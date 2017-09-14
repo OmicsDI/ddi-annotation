@@ -11,14 +11,14 @@ import uk.ac.ebi.ddi.ebe.ws.dao.client.europmc.CitationClient;
 import uk.ac.ebi.ddi.ebe.ws.dao.model.common.QueryResult;
 import uk.ac.ebi.ddi.ebe.ws.dao.model.europmc.Citation;
 import uk.ac.ebi.ddi.ebe.ws.dao.model.europmc.CitationResponse;
-import uk.ac.ebi.ddi.service.db.model.dataset.Dataset;
-import uk.ac.ebi.ddi.service.db.model.dataset.MostAccessedDatasets;
-import uk.ac.ebi.ddi.service.db.model.dataset.Scores;
+import uk.ac.ebi.ddi.service.db.model.dataset.*;
 import uk.ac.ebi.ddi.service.db.model.similarity.Citations;
 import uk.ac.ebi.ddi.service.db.model.similarity.EBISearchPubmedCount;
 import uk.ac.ebi.ddi.service.db.model.similarity.ReanalysisData;
 import uk.ac.ebi.ddi.service.db.service.dataset.IDatasetService;
+import uk.ac.ebi.ddi.service.db.service.dataset.IDatasetSimilarsService;
 import uk.ac.ebi.ddi.service.db.service.similarity.*;
+import uk.ac.ebi.ddi.service.db.utils.DatasetSimilarsType;
 
 import javax.xml.crypto.Data;
 import java.util.*;
@@ -53,6 +53,9 @@ public class SimilarityCounts {
 
     @Autowired
     IEBIPubmedSearchService ebiPubmedSearchService;
+
+    @Autowired
+    IDatasetSimilarsService similarsService;
 
     private static final Logger logger = LoggerFactory.getLogger(SimilarityCounts.class);
 
@@ -171,4 +174,34 @@ public class SimilarityCounts {
                     forEach(dt -> System.out.print(dt.getAccession()));
         }
     }
+
+    public void renalyseBioModels(){
+        List<Dataset> datasets = datasetService.findByDatabaseBioModels("BioModels Database");
+        datasets.parallelStream().forEach(data -> addSimilarDataset(data.getAccession(),data.getDatabase(),data.getCrossReferences().get("biomodels__db")));
+    }
+
+    public void addSimilarDataset(String accession,String database,Set<String> similarAccession){
+        DatasetSimilars datasetSimilars = new DatasetSimilars();
+        datasetSimilars.setAccession(accession);
+        datasetSimilars.setDatabase(database);
+        Set<SimilarDataset> similarDatasets = new HashSet<SimilarDataset>();
+        for(String similarAcc : similarAccession) {
+            List<Dataset> dataset = datasetService.findByAccession(similarAccession.iterator().next());
+            if (dataset.size() > 0) {
+                for (Dataset data : dataset) {
+                    SimilarDataset similar = new SimilarDataset(data, DatasetSimilarsType.REANALYSIS_OF.getType());
+                    similarDatasets.add(similar);
+                }
+            }
+
+        }
+        datasetSimilars.setSimilars(similarDatasets);
+        similarsService.save(datasetSimilars);
+    }
+
+    public void renalysedByBioModels(){
+        List<Dataset> datasets = datasetService.findByDatabaseBioModels("BioModels Database");
+        datasets.parallelStream().forEach(data -> addSimilarDataset(data.getAccession(),data.getDatabase(),data.getCrossReferences().get("biomodels__db")));
+    }
+
 }
