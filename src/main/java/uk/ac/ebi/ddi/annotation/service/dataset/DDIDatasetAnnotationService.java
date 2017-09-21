@@ -5,6 +5,7 @@ import org.kohsuke.rngom.parse.host.Base;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.aggregation.*;
 import org.springframework.data.mongodb.core.query.Criteria;
+import uk.ac.ebi.ddi.annotation.utils.Constants;
 import uk.ac.ebi.ddi.annotation.utils.DatasetUtils;
 import uk.ac.ebi.ddi.annotation.utils.Utils;
 import uk.ac.ebi.ddi.ebe.ws.dao.model.common.QueryResult;
@@ -300,8 +301,8 @@ public class DDIDatasetAnnotationService {
 
     public void updateDatasetClaim()
     {
-        String[] sourceDatasets = {"Pride","MetaboLights","MetabolomeExpress","ArrayExpress",
-                "Massive","JPOST Repository"};
+        String[] sourceDatasets = {Constants.PRIDE_DATABASE,Constants.METABOLIGHTS_DATABASE,Constants.METABOLOME_DATABASE,
+                Constants.ARRAYEXPRESS_DATABASE,Constants.MASSIVE_DATABASE,Constants.JPOST_DATABASE};
 
         datasetService.updateDatasetClaim(sourceDatasets);
     }
