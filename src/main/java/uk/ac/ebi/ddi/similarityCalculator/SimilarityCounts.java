@@ -81,9 +81,9 @@ public class SimilarityCounts {
                 Scores scores = new Scores();
                 scores.setCitationCount(cit.size());
                 dataset.setScores(scores);
-                HashSet<String> count = new HashSet<String>();git gui
+                HashSet<String> count = new HashSet<String>();
                 count.add(String.valueOf(String.valueOf(cit.size())));
-                dataset.getAdditional().put("citationCount",count);
+                dataset.getAdditional().put(Constants.CITATION_FIELD ,count);
             }
             datasetService.update(dataset.getId(),dataset);
 
