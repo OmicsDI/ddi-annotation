@@ -93,6 +93,10 @@ public class Constants {
 
     public static String CHEBI                          =   "CHEBI";
 
+    public static String CITATION_FIELD                 =   "citationCount";
+
+    public static String SEARCH_FIELD                   =   "searchCount";
+
     public static final String[] DATASET_SUMMARY        = {Constants.DESCRIPTION_FIELD,
             Constants.NAME_FIELD,
             Constants.SUBMITTER_KEY_FIELD,Constants.CURATOR_KEY_FIELD,
