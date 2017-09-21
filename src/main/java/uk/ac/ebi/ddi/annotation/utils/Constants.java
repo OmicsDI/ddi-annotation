@@ -99,6 +99,18 @@ public class Constants {
 
     public static String BIOMODELS_DATABASE             =   "BioModels Database";
 
+    public static String PRIDE_DATABASE             =   "Pride";
+
+    public static String METABOLIGHTS_DATABASE             =   "MetaboLights";
+
+    public static String METABOLOME_DATABASE             =   "MetabolomeExpress";
+
+    public static String ARRAYEXPRESS_DATABASE             =   "ArrayExpress";
+
+    public static String MASSIVE_DATABASE             =   "Massive";
+
+    public static String JPOST_DATABASE             =   "JPOST Repository";
+
     public static final String[] DATASET_SUMMARY        = {Constants.DESCRIPTION_FIELD,
             Constants.NAME_FIELD,
             Constants.SUBMITTER_KEY_FIELD,Constants.CURATOR_KEY_FIELD,
