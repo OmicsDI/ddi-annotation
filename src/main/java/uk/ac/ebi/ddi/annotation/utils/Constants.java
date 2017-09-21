@@ -97,6 +97,8 @@ public class Constants {
 
     public static String SEARCH_FIELD                   =   "searchCount";
 
+    public static String BIOMODELS_DATABASE             =   "BioModels Database";
+
     public static final String[] DATASET_SUMMARY        = {Constants.DESCRIPTION_FIELD,
             Constants.NAME_FIELD,
             Constants.SUBMITTER_KEY_FIELD,Constants.CURATOR_KEY_FIELD,
