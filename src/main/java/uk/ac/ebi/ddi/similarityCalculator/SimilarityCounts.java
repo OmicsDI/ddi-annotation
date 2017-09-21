@@ -65,7 +65,7 @@ public class SimilarityCounts {
             Dataset dataset = datasetService.read(accession, database);
             Set<String> cit = new HashSet<String>();
             cit = Arrays.stream(citationResponse.citations.get("result")).
-                    filter(data -> (dataset.getCrossReferences() != null && dataset.getCrossReferences().get("pubmed") != null && !dataset.getCrossReferences().get("pubmed").contains(data.pubmedId)))
+                    filter(data -> (dataset.getCrossReferences() != null && dataset.getCrossReferences().get(Constants.PUBMED_FIELD) != null && !dataset.getCrossReferences().get(Constants.PUBMED_FIELD).contains(data.pubmedId)))
                     .map(dt -> dt.pubmedId).collect(Collectors.toSet());
             Citations citations = new Citations();
             citations.setAccession(accession);
@@ -182,7 +182,7 @@ public class SimilarityCounts {
     }
 
     public void renalyseBioModels(){
-        List<Dataset> datasets = datasetService.findByDatabaseBioModels("BioModels Database");
+        List<Dataset> datasets = datasetService.findByDatabaseBioModels(Constants.BIOMODELS_DATABASE);
         datasets.parallelStream().forEach(data -> addSimilarDataset(data.getAccession(),data.getDatabase(),data.getCrossReferences().get("biomodels__db")));
     }
 
@@ -206,7 +206,7 @@ public class SimilarityCounts {
     }
 
     public void renalysedByBioModels(){
-        List<Dataset> datasets = datasetService.findByDatabaseBioModels("BioModels Database");
+        List<Dataset> datasets = datasetService.findByDatabaseBioModels(Constants.BIOMODELS_DATABASE);
         datasets.parallelStream().forEach(data -> addSimilarDataset(data.getAccession(),data.getDatabase(),data.getCrossReferences().get("biomodels__db")));
     }
 
