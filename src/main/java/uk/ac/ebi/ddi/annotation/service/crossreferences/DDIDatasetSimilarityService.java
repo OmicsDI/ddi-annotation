@@ -137,9 +137,11 @@ public class DDIDatasetSimilarityService {
         for (ExpOutputDataset dataset : expOutputDatasets) {
             this.indecies.put(dataset.getAccession(), i++);
         }
-
+        logger.info("calculating cosine scores");
         this.cosineScores = calculateCosineScore(expOutputDatasets, numberOfDatasets);
+        logger.info("cosine scores completed ");
 
+        logger.info("expdatasets streaming started");
         expOutputDatasets.stream().forEach(dataset -> {
             List<IntersectionInfo> datasetIntersectionInfos = new CopyOnWriteArrayList<>();
             Set<String> terms = dataset.getTerms();
@@ -154,6 +156,7 @@ public class DDIDatasetSimilarityService {
             datasetStatInfoService.insert(datasetStatInfo);
 
         });
+        logger.info("expdatasets streaming completed");
         logger.info("End of calculating similarity for" + dataType);
     }
 
@@ -266,17 +269,27 @@ public class DDIDatasetSimilarityService {
     }
 
     private HashMap<String, Double> CalculateNormArray() {
-        HashMap<String, Double> normMap = new HashMap<>();
 
-        for (ExpOutputDataset dataset : expOutputDatasets) {
-            double norm = 0;
-            for (String term : dataset.getTerms()) {
-                double weight = idfWeightMap.get(term);
-                norm += Math.pow(weight, 2);
+        HashMap<String, Double> normMap = new HashMap<>();
+        try {
+            for (ExpOutputDataset dataset : expOutputDatasets) {
+                double norm = 0;
+                for (String term : dataset.getTerms()) {
+                    try{
+                    double weight = idfWeightMap.get(term);
+                    norm += Math.pow(weight, 2);}
+                    catch(Exception ex){
+                        logger.error("error in idfWeightmap to get term " + term);
+                    }
+                }
+                double normFinal = Math.sqrt(norm);
+                normMap.put(dataset.getAccession(), normFinal);
             }
-            double normFinal = Math.sqrt(norm);
-            normMap.put(dataset.getAccession(), normFinal);
         }
+        catch(Exception ex){
+            logger.error("error in calculatenormarray dataset similarity service " + ex.getMessage());
+        }
+        logger.info("size of normmap in normarray is " + normMap.size());
         return normMap;
     }
 
