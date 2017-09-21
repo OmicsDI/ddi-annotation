@@ -139,7 +139,7 @@ public class SimilarityCounts {
                     dataset.setScores(scores);
                     HashSet<String> count = new HashSet<String>();
                     count.add(String.valueOf(matchDataset.size()));
-                    dataset.getAdditional().put("searchCount",count);
+                    dataset.getAdditional().put(Constants.SEARCH_FIELD,count);
                 }
                 datasetService.update(dataset.getId(),dataset);
             }
