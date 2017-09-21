@@ -1,5 +1,8 @@
 package uk.ac.ebi.ddi.annotation.utils;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import uk.ac.ebi.ddi.annotation.service.crossreferences.DDIDatasetSimilarityService;
 import uk.ac.ebi.ddi.service.db.model.dataset.Dataset;
 import uk.ac.ebi.ddi.service.db.utils.DatasetCategory;
 import uk.ac.ebi.ddi.xml.validator.parser.model.*;
@@ -23,6 +26,7 @@ import java.util.stream.Collectors;
  */
 public class DatasetUtils {
 
+    private static final Logger logger = LoggerFactory.getLogger(DatasetUtils.class);
 
     public static Dataset addCrossReferenceValue(Dataset dataset, String key, String value) {
         Map<String, Set<String>> fields = dataset.getCrossReferences();
@@ -88,10 +92,11 @@ public class DatasetUtils {
              additionals = dataset.getAdditionalFields().getField()
                     .stream().parallel()
                     .collect(Collectors.groupingBy(x -> x.getName().trim(), Collectors.mapping(x -> x.getValue().trim(), Collectors.toSet())));
+
         }
         catch(Exception ex)
         {
-            System.out.println("exception occured in entry with id " + dataset.getId());
+            logger.error("exception occured in transformEntryDataset entry with id " + dataset.getId());
         }
         return new Dataset(dataset.getId(), dataset.getDatabase(), dataset.getName().getValue(), dataset.getDescription(),dates, additionals, crossReferences, DatasetCategory.INSERTED);
 
@@ -128,7 +133,7 @@ public class DatasetUtils {
             additionals.put(Field.REPOSITORY.getName(), databases);
         }
         catch(Exception ex){
-            System.out.println("exception occured in entry with id " + dataset.getId());
+            logger.error("exception occured in transformEntryDataset entry with id " + dataset.getId());
         }
         return new Dataset(dataset.getId(), databaseName, dataset.getName().getValue(), dataset.getDescription(),dates, additionals, crossReferences, DatasetCategory.INSERTED);
 
@@ -137,17 +142,21 @@ public class DatasetUtils {
     public static Entry tansformDatasetToEntry(Dataset dataset){
 
         Entry entry = new Entry();
-        entry.setId(dataset.getAccession());
-        entry.setAcc(dataset.getAccession());
-        entry.setDescription(dataset.getDescription());
-        entry.setName(dataset.getName());
-        if(dataset.getDates() != null)
-            dataset.getDates().entrySet().stream().forEach( date -> date.getValue().stream().forEach(value -> entry.addDate(date.getKey(), value)));
-        if(dataset.getCrossReferences() != null)
-            dataset.getCrossReferences().entrySet().stream().forEach( cross -> cross.getValue().stream().forEach(value -> entry.addCrossReferenceValue(cross.getKey(), value)));
-        if(dataset.getAdditional() != null)
-            dataset.getAdditional().entrySet().stream().forEach( additional -> additional.getValue().stream().forEach(value -> entry.addAdditionalField(additional.getKey(), value)));
-
+        try {
+            entry.setId(dataset.getAccession());
+            entry.setAcc(dataset.getAccession());
+            entry.setDescription(dataset.getDescription());
+            entry.setName(dataset.getName());
+            if (dataset.getDates() != null)
+                dataset.getDates().entrySet().stream().forEach(date -> date.getValue().stream().forEach(value -> entry.addDate(date.getKey(), value)));
+            if (dataset.getCrossReferences() != null)
+                dataset.getCrossReferences().entrySet().stream().forEach(cross -> cross.getValue().stream().forEach(value -> entry.addCrossReferenceValue(cross.getKey(), value)));
+            if (dataset.getAdditional() != null)
+                dataset.getAdditional().entrySet().stream().forEach(additional -> additional.getValue().stream().forEach(value -> entry.addAdditionalField(additional.getKey(), value)));
+        }
+        catch(Exception ex){
+            logger.error("exception occured in transformEntryDataset entry with id " + dataset.getId());
+        }
         return entry;
     }
 
