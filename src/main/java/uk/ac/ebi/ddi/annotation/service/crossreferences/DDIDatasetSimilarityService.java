@@ -66,11 +66,11 @@ public class DDIDatasetSimilarityService {
 
         this.dataType = dataType;
         this.termsInDB = termInDBService.readAllInOneType(dataType);
-        long numberOfDatasets = this.termsInDB.parallelStream().collect(Collectors.groupingBy(TermInDB::getAccession)).size();
-        Map<String, List<TermInDB>> termsMap = this.termsInDB.parallelStream().collect(Collectors.groupingBy(TermInDB::getTermName));
+        long numberOfDatasets = this.termsInDB.stream().collect(Collectors.groupingBy(TermInDB::getAccession)).size();
+        Map<String, List<TermInDB>> termsMap = this.termsInDB.stream().collect(Collectors.groupingBy(TermInDB::getTermName));
 
         Set <String> keys =  termsMap.keySet();
-        keys.parallelStream().forEach((key) -> {
+        keys.stream().forEach((key) -> {
             double tempscore = (double) numberOfDatasets / (double) termsMap.get(key).size();
             double idfWeigt = Math.log(tempscore) / Math.log(2);
             this.idfWeightMap.put(key, idfWeigt);
@@ -93,11 +93,11 @@ public class DDIDatasetSimilarityService {
 
         this.dataType = dataType;
         this.termsInDB = termInDBService.readAllUncalculatedTermsInOneType(dataType);
-        long numberOfDatasets = this.termsInDB.parallelStream().collect(Collectors.groupingBy(TermInDB::getAccession)).size();
-        Map<String, List<TermInDB>> termsMap = this.termsInDB.parallelStream().collect(Collectors.groupingBy(TermInDB::getTermName));
+        long numberOfDatasets = this.termsInDB.stream().collect(Collectors.groupingBy(TermInDB::getAccession)).size();
+        Map<String, List<TermInDB>> termsMap = this.termsInDB.stream().collect(Collectors.groupingBy(TermInDB::getTermName));
 
         Set <String> keys =  termsMap.keySet();
-        keys.parallelStream().forEach((key) -> {
+        keys.stream().forEach((key) -> {
             double tempscore = (double) numberOfDatasets / (double) termsMap.get(key).size();
             double idfWeigt = Math.log(tempscore) / Math.log(2);
             this.idfWeightMap.put(key, idfWeigt);
@@ -142,18 +142,28 @@ public class DDIDatasetSimilarityService {
         logger.info("cosine scores completed ");
 
         logger.info("expdatasets streaming started");
-        expOutputDatasets.stream().forEach(dataset -> {
-            List<IntersectionInfo> datasetIntersectionInfos = new CopyOnWriteArrayList<>();
-            Set<String> terms = dataset.getTerms();
-            List<IntersectionInfo> finalDatasetIntersectionInfos = datasetIntersectionInfos;
-            terms.parallelStream().forEach(term -> {
-                List<ExpOutputDataset> relatedDatasets = getRelatedDatasets(dataset, term, expOutputDatasets);
-                List<IntersectionInfo> tempIntersectionInfos = getIntersectionInfos(dataset, relatedDatasets);
-                finalDatasetIntersectionInfos.addAll(tempIntersectionInfos);
-            });
-            datasetIntersectionInfos = mergeIntersectionInfos(finalDatasetIntersectionInfos);
-            DatasetStatInfo datasetStatInfo = new DatasetStatInfo(dataset.getAccession(), dataset.getDatabase(), dataType, datasetIntersectionInfos);
-            datasetStatInfoService.insert(datasetStatInfo);
+        expOutputDatasets.parallelStream().forEach(dataset -> {
+            try {
+                logger.info("inside expOutput datasets ");
+                List<IntersectionInfo> datasetIntersectionInfos = new CopyOnWriteArrayList<>();
+                Set<String> terms = dataset.getTerms();
+                List<IntersectionInfo> finalDatasetIntersectionInfos = datasetIntersectionInfos;
+                terms.parallelStream().forEach(term -> {
+                    try {
+                        List<ExpOutputDataset> relatedDatasets = getRelatedDatasets(dataset, term, expOutputDatasets);
+                        List<IntersectionInfo> tempIntersectionInfos = getIntersectionInfos(dataset, relatedDatasets);
+                        finalDatasetIntersectionInfos.addAll(tempIntersectionInfos);
+                    }catch (Exception ex){
+                        logger.error("inside term in expoutdasets calculate similarity error is " + ex.getMessage());
+                    }
+                });
+                datasetIntersectionInfos = mergeIntersectionInfos(finalDatasetIntersectionInfos);
+                DatasetStatInfo datasetStatInfo = new DatasetStatInfo(dataset.getAccession(), dataset.getDatabase(), dataType, datasetIntersectionInfos);
+                datasetStatInfoService.insert(datasetStatInfo);
+            }
+            catch(Exception ex){
+                logger.error("inside calculate similarity and expoutdatasets error is " + ex.getMessage());
+            }
 
         });
         logger.info("expdatasets streaming completed");
@@ -236,35 +246,38 @@ public class DDIDatasetSimilarityService {
 
         double[][] cosineScores = new double[(int) numberOfDatasets][(int) numberOfDatasets];
         HashMap<String, Double> normMap = CalculateNormArray();
-
-        expOutputDatasets.parallelStream().forEach( dataset -> {
-            int indexOfThisDataset = this.indecies.get(dataset.getAccession());
-            Set<String> termsOfThisDataset = dataset.getTerms();
-            expOutputDatasets.parallelStream().forEach(dataset2 -> {
-                List<String> intersectionTerms;
-                int indexOfThatDataset = this.indecies.get(dataset2.getAccession());
-                Set<String> termsOfThatDataset = dataset2.getTerms();
-                if (termsOfThisDataset == termsOfThatDataset) { //same dataset
+try {
+    expOutputDatasets.stream().forEach(dataset -> {
+        int indexOfThisDataset = this.indecies.get(dataset.getAccession());
+        Set<String> termsOfThisDataset = dataset.getTerms();
+        expOutputDatasets.stream().forEach(dataset2 -> {
+            List<String> intersectionTerms;
+            int indexOfThatDataset = this.indecies.get(dataset2.getAccession());
+            Set<String> termsOfThatDataset = dataset2.getTerms();
+            if (termsOfThisDataset == termsOfThatDataset) { //same dataset
+                cosineScores[indexOfThisDataset][indexOfThatDataset] = -1;
+            } else if (cosineScores[indexOfThisDataset][indexOfThatDataset] != 0) {//already calculated
+            } else {
+                intersectionTerms = getIntersectionSet(termsOfThisDataset, termsOfThatDataset);
+                if (intersectionTerms.size() == 0) {
                     cosineScores[indexOfThisDataset][indexOfThatDataset] = -1;
-                } else if (cosineScores[indexOfThisDataset][indexOfThatDataset] != 0) {//already calculated
+                    cosineScores[indexOfThatDataset][indexOfThisDataset] = -1;
                 } else {
-                    intersectionTerms = getIntersectionSet(termsOfThisDataset, termsOfThatDataset);
-                    if (intersectionTerms.size() == 0) {
-                        cosineScores[indexOfThisDataset][indexOfThatDataset] = -1;
-                        cosineScores[indexOfThatDataset][indexOfThisDataset] = -1;
-                    }else {
-                        double score = 0;
-                        for (String termInList : intersectionTerms) {
-                            score += Math.pow(idfWeightMap.get(termInList), 2); //each term has same score in both vector(dataset)
-                        }
-                        double scoreFinal = score / (normMap.get(dataset.getAccession()) * normMap.get(dataset2.getAccession()));
-                        cosineScores[indexOfThisDataset][indexOfThatDataset] = scoreFinal;
-                        cosineScores[indexOfThatDataset][indexOfThisDataset] = scoreFinal;
+                    double score = 0;
+                    for (String termInList : intersectionTerms) {
+                        score += Math.pow(idfWeightMap.get(termInList), 2); //each term has same score in both vector(dataset)
                     }
+                    double scoreFinal = score / (normMap.get(dataset.getAccession()) * normMap.get(dataset2.getAccession()));
+                    cosineScores[indexOfThisDataset][indexOfThatDataset] = scoreFinal;
+                    cosineScores[indexOfThatDataset][indexOfThisDataset] = scoreFinal;
                 }
-            });
+            }
         });
-
+    });
+}
+catch(Exception ex) {
+    System.out.println("exception in dataset similarity service " + ex.getMessage());
+}
         return cosineScores;
     }
 
