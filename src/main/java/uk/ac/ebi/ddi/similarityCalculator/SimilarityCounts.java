@@ -81,10 +81,11 @@ public class SimilarityCounts {
                 Scores scores = new Scores();
                 scores.setCitationCount(cit.size());
                 dataset.setScores(scores);
-                HashSet<String> count = new HashSet<String>();
-                count.add(String.valueOf(String.valueOf(cit.size())));
-                dataset.getAdditional().put(Constants.CITATION_FIELD ,count);
+
             }
+            HashSet<String> count = new HashSet<String>();
+            count.add(String.valueOf(String.valueOf(cit.size())));
+            dataset.getAdditional().put(Constants.CITATION_FIELD ,count);
             datasetService.update(dataset.getId(),dataset);
 
         }
@@ -95,17 +96,17 @@ public class SimilarityCounts {
     }
 
     public void addAllCitations(){
-        //try {
+        try {
             for (int i = startDataset; i < datasetService.getDatasetCount()/numberOfDataset; i = i + 1) {
-                //System.out.println("value of i is" + i);
+                logger.info("value of i is" + i);
                 datasetService.readAll(i, numberOfDataset).getContent()
                         .forEach(dt -> getCitationCount(dt.getDatabase(), dt.getAccession()));
                 //Thread.sleep(3000);
             }
-        /*}
+        }
         catch(Exception ex){
             logger.error("error inside add all citations " + ex.getMessage());
-        }*/
+        }
     }
 
     public void addSearchCounts(String accession,String pubmedId,String database){
@@ -137,10 +138,10 @@ public class SimilarityCounts {
                     Scores scores = new Scores();
                     scores.setSearchCount(matchDataset.size());
                     dataset.setScores(scores);
-                    HashSet<String> count = new HashSet<String>();
-                    count.add(String.valueOf(matchDataset.size()));
-                    dataset.getAdditional().put(Constants.SEARCH_FIELD,count);
                 }
+                HashSet<String> count = new HashSet<String>();
+                count.add(String.valueOf(matchDataset.size()));
+                dataset.getAdditional().put(Constants.SEARCH_FIELD,count);
                 datasetService.update(dataset.getId(),dataset);
             }
 
