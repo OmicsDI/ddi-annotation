@@ -66,7 +66,7 @@ public class DDIDatasetSimilarityService {
 
         this.dataType = dataType;
         this.termsInDB = termInDBService.readAllInOneType(dataType);
-        long numberOfDatasets = this.termsInDB.stream().collect(Collectors.groupingBy(TermInDB::getAccession)).size();
+        long numberOfDatasets = this.termsInDB.parallelStream().collect(Collectors.groupingBy(TermInDB::getAccession)).size();
         Map<String, List<TermInDB>> termsMap = this.termsInDB.stream().collect(Collectors.groupingBy(TermInDB::getTermName));
 
         Set <String> keys =  termsMap.keySet();
@@ -93,8 +93,8 @@ public class DDIDatasetSimilarityService {
 
         this.dataType = dataType;
         this.termsInDB = termInDBService.readAllUncalculatedTermsInOneType(dataType);
-        long numberOfDatasets = this.termsInDB.stream().collect(Collectors.groupingBy(TermInDB::getAccession)).size();
-        Map<String, List<TermInDB>> termsMap = this.termsInDB.stream().collect(Collectors.groupingBy(TermInDB::getTermName));
+        long numberOfDatasets = this.termsInDB.parallelStream().collect(Collectors.groupingBy(TermInDB::getAccession)).size();
+        Map<String, List<TermInDB>> termsMap = this.termsInDB.parallelStream().collect(Collectors.groupingBy(TermInDB::getTermName));
 
         Set <String> keys =  termsMap.keySet();
         keys.stream().forEach((key) -> {
