@@ -59,5 +59,16 @@
 	<bean id="publicationDatasetService"       class="uk.ac.ebi.ddi.service.db.service.publication.PublicationDatasetService" />
 	<bean id="statusService"        class="uk.ac.ebi.ddi.service.db.service.dataset.DatasetStatusService"/>
 	<bean id="annotDatasetService" class="uk.ac.ebi.ddi.annotation.service.dataset.DDIDatasetAnnotationService" />
-
+	<bean id="mostAccessedDatasetService" class="uk.ac.ebi.ddi.service.db.service.dataset.MostAccessedDatasetService" />
+	<bean id="similarityCount" class="uk.ac.ebi.ddi.similarityCalculator.SimilarityCounts"/>
+	<bean id="reanalysisDataService" class="uk.ac.ebi.ddi.service.db.service.similarity.ReanalysisDataService" />
+	<bean id="citationClient" class="uk.ac.ebi.ddi.ebe.ws.dao.client.europmc.CitationClient">
+		<constructor-arg name="config" ref="ebeyeWsConfig"/>
+	</bean>
+	<bean id="datasetWsClient" class="uk.ac.ebi.ddi.ebe.ws.dao.client.dataset.DatasetWsClient">
+		<constructor-arg name="config" ref="ebeyeWsConfig"/>
+	</bean>
+	<bean id="ebeyeWsConfig" class="uk.ac.ebi.ddi.ebe.ws.dao.config.EbeyeWsConfigProd"/>
+	<bean id="citationService" class="uk.ac.ebi.ddi.service.db.service.similarity.CitationService"/>
+	<bean id="ebiPubmedSearchService" class="uk.ac.ebi.ddi.service.db.service.similarity.EBIPubmedSearchService"/>
 </beans>
