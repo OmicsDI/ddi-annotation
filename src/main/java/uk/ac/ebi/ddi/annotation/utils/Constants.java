@@ -93,9 +93,9 @@ public class Constants {
 
     public static String CHEBI                          =   "CHEBI";
 
-    public static String CITATION_FIELD                 =   "citationCount";
+    public static String CITATION_FIELD                 =   "citation_count";
 
-    public static String SEARCH_FIELD                   =   "searchCount";
+    public static String SEARCH_FIELD                   =   "search_count";
 
     public static String BIOMODELS_DATABASE             =   "BioModels Database";
 
