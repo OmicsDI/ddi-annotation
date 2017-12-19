@@ -41,11 +41,15 @@ public class DatasetAnnotationEnrichmentService {
     @Deprecated
     public static EnrichedDataset enrichment(DDIAnnotationService service, Entry dataset, boolean overwrite) throws DDIException, UnsupportedEncodingException, JSONException {
 
-        DatasetTobeEnriched datasetTobeEnriched = new DatasetTobeEnriched(dataset.getId(),dataset.getAdditionalFieldValue(Field.REPOSITORY.getName()), "");
+        System.out.print("DatasetTobeEnriched 1:"+ dataset.getId() + " " + dataset.getDatabase() );
+
+        DatasetTobeEnriched datasetTobeEnriched = new DatasetTobeEnriched(dataset.getId(),dataset.getDatabase(), "");
         return service.enrichment(datasetTobeEnriched, overwrite);
     }
 
     public static EnrichedDataset enrichment(DDIAnnotationService service, Dataset dataset, boolean overwrite) throws DDIException, UnsupportedEncodingException, RestClientException, JSONException {
+
+        System.out.print("DatasetTobeEnriched 2:"+ dataset.getId() + " " + dataset.getDatabase() );
 
         Map<String, String> fields = new HashMap<>();
         fields.put(Field.NAME.getName(), dataset.getName());

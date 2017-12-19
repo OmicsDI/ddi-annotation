@@ -238,8 +238,9 @@ public class DDIDatasetAnnotationService {
                     Dataset datasetRelated = datasetService.read(value, databaseKey);
                     if(datasetRelated != null){
                         SimilarDataset similar = new SimilarDataset(datasetRelated, DatasetSimilarsType.REANALYSIS_OF.getType());
+                        SimilarDataset similar2 = new SimilarDataset(dataset, DatasetSimilarsType.REANALYZED_BY.getType());
                         similarDatasets.add(similar);
-                        addDatasetSimilars(datasetRelated.getAccession(),datasetRelated.getDatabase(), new SimilarDataset(dataset, DatasetSimilarsType.REANALYZED_BY.getType()));
+                        addDatasetSimilars(datasetRelated.getAccession(),datasetRelated.getDatabase(), similar2);
                     }
                 }
             }

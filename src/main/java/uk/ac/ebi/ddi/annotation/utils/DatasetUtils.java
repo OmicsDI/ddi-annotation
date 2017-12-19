@@ -127,10 +127,14 @@ public class DatasetUtils {
                     .stream().parallel()
                     .collect(Collectors.groupingBy(x -> x.getName().trim(), Collectors.mapping(x -> x.getValue().trim(), Collectors.toSet())));
 
-            //** Rewrite the respoitory with the name we would like to handle ***/
-            Set<String> databases = new HashSet<>();
-            databases.add(databaseName);
-            additionals.put(Field.REPOSITORY.getName(), databases);
+            Set<String> repositories = additionals.get(Field.REPOSITORY.getName());
+            if(null == repositories || repositories.size() < 1 ) {
+                //AZ:this code overrides additonal.repository. why? wrapped by if
+                //** Rewrite the respoitory with the name we would like to handle ***/
+                Set<String> databases = new HashSet<>();
+                databases.add(databaseName);
+                additionals.put(Field.REPOSITORY.getName(), databases);
+            }
         }
         catch(Exception ex){
             logger.error("exception occured in transformEntryDataset entry with id " + dataset.getId());
