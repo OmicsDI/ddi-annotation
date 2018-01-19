@@ -98,7 +98,7 @@ public class DatasetUtils {
         {
             logger.error("exception occured in transformEntryDataset entry with id " + dataset.getId());
         }
-        return new Dataset(dataset.getId(), dataset.getDatabase(), dataset.getName().getValue(), dataset.getDescription(),dates, additionals, crossReferences, DatasetCategory.INSERTED);
+        return new Dataset(dataset.getId(), dataset.getRepository(), dataset.getName().getValue(), dataset.getDescription(),dates, additionals, crossReferences, DatasetCategory.INSERTED);
 
     }
 

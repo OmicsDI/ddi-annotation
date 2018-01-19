@@ -151,7 +151,7 @@ public class DDIDatasetAnnotationService {
 
     public Integer findDataset(Entry dataset){
 
-        Dataset dbDataset = datasetService.read(dataset.getAcc(), dataset.getDatabase());
+        Dataset dbDataset = datasetService.read(dataset.getAcc(), dataset.getRepository());
 
         if(dbDataset != null)
             return dbDataset.getInitHashCode();

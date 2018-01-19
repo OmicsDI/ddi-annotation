@@ -41,9 +41,9 @@ public class DatasetAnnotationEnrichmentService {
     @Deprecated
     public static EnrichedDataset enrichment(DDIAnnotationService service, Entry dataset, boolean overwrite) throws DDIException, UnsupportedEncodingException, JSONException {
 
-        System.out.print("DatasetTobeEnriched 1:"+ dataset.getId() + " " + dataset.getDatabase() );
+        System.out.print("DatasetTobeEnriched 1:"+ dataset.getId() + " " + dataset.getRepository() );
 
-        DatasetTobeEnriched datasetTobeEnriched = new DatasetTobeEnriched(dataset.getId(),dataset.getDatabase(), "");
+        DatasetTobeEnriched datasetTobeEnriched = new DatasetTobeEnriched(dataset.getId(),dataset.getRepository(), "");
         return service.enrichment(datasetTobeEnriched, overwrite);
     }
 
