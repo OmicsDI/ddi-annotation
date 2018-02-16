@@ -7,6 +7,11 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import uk.ac.ebi.ddi.similarityCalculator.SimilarityCounts;
 
+import java.util.ArrayList;
+import java.util.stream.Stream;
+
+import static java.util.stream.Collectors.toList;
+
 /**
  * Created by gaur on 13/07/17.
  */
@@ -19,7 +24,7 @@ public class SimilarityCountTest {
 
     @Test
     public void getCitationCount(){
-        similarityCounts.getCitationCount("ArrayExpress","E-MEXP-981");
+        similarityCounts.getCitationCount("ArrayExpress","E-GEOD-2034", Stream.of("GSE2034").collect(toList()));
     }
 
     @Test
@@ -42,6 +47,10 @@ public class SimilarityCountTest {
         similarityCounts.getPageRecords();
     }
 
+    @Test
+    public void getSearchCount(){
+        similarityCounts.addSearchCounts("E-MTAB-599","21921910","ArrayExpress");
+    }
 }
 
 
