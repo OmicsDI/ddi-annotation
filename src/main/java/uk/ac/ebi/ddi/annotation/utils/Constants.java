@@ -111,6 +111,10 @@ public class Constants {
 
     public static String JPOST_DATABASE             =   "JPOST Repository";
 
+    public static String SECONDARY_ACCESSION =          "additional_accession";
+
+    public static String ALL_DOMAIN                 =   "";
+
     public static final String[] DATASET_SUMMARY        = {Constants.DESCRIPTION_FIELD,
             Constants.NAME_FIELD,
             Constants.SUBMITTER_KEY_FIELD,Constants.CURATOR_KEY_FIELD,
