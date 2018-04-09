@@ -171,7 +171,8 @@ public class SimilarityCounts {
 
             List<String> domains = Arrays.stream(domainList.list).map(dtl -> dtl.getId().toString()).collect(Collectors.toList());
 
-
+            domains.add("atlas-genes");
+            domains.add("atlas-genes-differential");
             if(!pubmedId.equals("") && !pubmedId.equals("none") && !pubmedId.equals("0")) {
                 query = "PUBMED:" + query + " OR MEDLINE:" +query +" OR PMID:" + query;
                 queryResult = datasetWsClient.getDatasets(Constants.ALL_DOMAIN, query,
