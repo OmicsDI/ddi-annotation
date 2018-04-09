@@ -314,5 +314,15 @@ public class DDIDatasetAnnotationService {
 
     }
 
+    public long getMergedDatasetCount(String database, String accession){
+        return datasetService.getMergedDatasetCount(database, accession);
+    }
 
+    public void updatePrivateDataset(String database){
+        datasetService.updatePrivateDatasets(database);
+    }
+
+    public void getPrivateDatasets(String database){
+        datasetService.getPrivateDatasets(database);
+    }
 }
