@@ -2,6 +2,8 @@ package uk.ac.ebi.ddi.annotation.service.dataset;
 
 import com.mongodb.BasicDBObject;
 import org.kohsuke.rngom.parse.host.Base;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.aggregation.*;
 import org.springframework.data.mongodb.core.query.Criteria;
@@ -50,6 +52,8 @@ public class DDIDatasetAnnotationService {
 
     @Autowired
     IHttpEventService httpEventService;
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(DDIDatasetAnnotationService.class);
 
     /**
      * This function looks for individual datasets and check if they are in the database and if they needs to
@@ -200,10 +204,15 @@ public class DDIDatasetAnnotationService {
                 }
             }
         }
+        if (similarDatasets.size() == 0) {
+            LOGGER.warn("Adding related datasets to {} with type " + type + ", but none of them were in our database {}", dataset.getAccession(), related);
+            return;
+        }
+
         if(datasetExisting == null){
             datasetExisting = new DatasetSimilars(dataset.getAccession(), dataset.getDatabase(), similarDatasets);
             similarsService.save(datasetExisting);
-        }else{
+        } else{
             Set<SimilarDataset> similars = datasetExisting.getSimilars();
             similars.addAll(similarDatasets);
             datasetExisting.setSimilars(similars);
