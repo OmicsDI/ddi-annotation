@@ -220,6 +220,34 @@ public class DDIDatasetAnnotationService {
         }
     }
 
+    public void addGEODatasetSimilars(Dataset dataset, Set<PublicationDataset> related, String type){
+        DatasetSimilars datasetExisting = similarsService.read(dataset.getAccession(), dataset.getDatabase());
+        Set<SimilarDataset> similarDatasets = new HashSet<>();
+        for(PublicationDataset publicationDataset: related){
+            if (!publicationDataset.getDatasetID().equalsIgnoreCase(dataset.getAccession())){
+                Dataset datasetRelated = datasetService.read(publicationDataset.getDatasetID(), publicationDataset.getDatabase());
+                if(datasetRelated != null){
+                    SimilarDataset similar = new SimilarDataset(datasetRelated, type);
+                    similarDatasets.add(similar);
+                }
+            }
+        }
+        if (similarDatasets.size() == 0) {
+            LOGGER.warn("Adding related datasets to {} with type " + type + ", but none of them were in our database {}", dataset.getAccession(), related);
+            return;
+        }
+
+        if(datasetExisting == null){
+            datasetExisting = new DatasetSimilars(dataset.getAccession(), dataset.getDatabase(), similarDatasets);
+            similarsService.save(datasetExisting);
+        } else{
+            Set<SimilarDataset> similars = datasetExisting.getSimilars();
+            similars.addAll(similarDatasets);
+            datasetExisting.setSimilars(similars);
+            similarsService.save(datasetExisting);
+        }
+    }
+
     public void addDatasetSimilars(String accession, String database, SimilarDataset similarDataset){
         DatasetSimilars datasetExisting = similarsService.read(accession, database);
         if(datasetExisting == null){
