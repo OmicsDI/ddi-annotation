@@ -35,7 +35,7 @@ public class SimilarityCounts {
 
     Integer startDataset = 0;
 
-    Integer numberOfDataset = 100;
+    Integer numberOfDataset = 2000;
 
     Integer numberOfCitations = 500;
 
@@ -158,9 +158,15 @@ public class SimilarityCounts {
 
     public void addSearchCounts(String accession,String pubmedId,String database){
         try {
+            if(accession.equals("E-GEOD-29683") || accession.equals("E-GEOD-62373") || accession.equals("E-GEOD-66373"))
+            {
+                System.out.print("exception dataset");
+            }
             int size = 20;
             int searchCount = 0;
+            HashMap<String, Integer> domainMap = new HashMap<String,Integer>();
             Dataset dataset = datasetService.read(accession,database);
+            List<String> filteredDomains = new ArrayList<String>();
             Set<String> secondaryAccession = dataset.getAdditional().get(Constants.SECONDARY_ACCESSION);
             String query = pubmedId;
             query = (query == null || query.isEmpty() || query.length() == 0) ? "*:*" : query;
@@ -173,30 +179,40 @@ public class SimilarityCounts {
 
             domains.add("atlas-genes");
             domains.add("atlas-genes-differential");
+            domains.add("metabolights");
+
             if(!pubmedId.equals("") && !pubmedId.equals("none") && !pubmedId.equals("0")) {
                 query = "PUBMED:" + query + " OR MEDLINE:" +query +" OR PMID:" + query;
                 queryResult = datasetWsClient.getDatasets(Constants.ALL_DOMAIN, query,
                         Constants.DATASET_SUMMARY, Constants.PUB_DATE_FIELD, "descending", 0, size, 10);
             }
 
-            int leftCount =  queryResult!=null ? queryResult.getDomains().stream().flatMap(dtl -> Arrays.stream(dtl.getSubdomains())).
+/*            int leftCount =  queryResult!=null ? queryResult.getDomains().stream().flatMap(dtl -> Arrays.stream(dtl.getSubdomains())).
                     map(dtl -> Arrays.stream(dtl.getSubdomains())).
-                    flatMap(sbdt ->sbdt.filter(dt -> !domains.contains(dt.getId()))).mapToInt(dtf -> dtf.getHitCount()).sum():0;
+                    flatMap(sbdt ->sbdt.filter(dt -> !domains.contains(dt.getId()))).mapToInt(dtf ->{
+                //filteredDomains.add(dtf.getId() + "~" +dtf.getHitCount());
+                return dtf.getHitCount();}).sum():0;*/
 
             QueryResult queryAccessionResult = datasetWsClient.getDatasets(Constants.ALL_DOMAIN, accession,
                     Constants.DATASET_SUMMARY, Constants.PUB_DATE_FIELD, "descending", 0, size, 10);
 
 
-            searchCount = queryResult!=null ? queryResult.getDomains().stream().flatMap(dtl -> Arrays.stream(dtl.getSubdomains())).
+            searchCount = queryResult!=null && queryResult.getCount() > 0 ? queryResult.getDomains().stream().flatMap(dtl -> Arrays.stream(dtl.getSubdomains())).
                     map(dtl -> Arrays.stream(dtl.getSubdomains())).
-                    flatMap(sbdt ->sbdt.filter(dt -> !domains.contains(dt.getId()))).mapToInt(dtf -> dtf.getHitCount()).sum():0 ;
+                    flatMap(sbdt ->sbdt.filter(dt -> !domains.contains(dt.getId()))).mapToInt(dtf ->{
+                        updateKeyValue(dtf.getId().toLowerCase(),dtf.getHitCount(),domainMap);
+                        //filteredDomains.add(dtf.getId() + "~" +dtf.getHitCount());
+                        return dtf.getHitCount();}).sum():0 ;
 
-            if(queryAccessionResult != null) {
-                searchCount = searchCount + queryAccessionResult.getDomains().stream().
+            if(queryAccessionResult != null && queryAccessionResult.getCount() > 0) {
+                searchCount = searchCount + queryAccessionResult.getDomains().parallelStream().
                         flatMap(dtl -> Arrays.stream(dtl.getSubdomains())).
                         map(dtl -> Arrays.stream(dtl.getSubdomains())).
                         flatMap(sbdt -> sbdt.filter(dt -> !domains.contains(dt.getId()))).
-                        mapToInt(dtf -> dtf.getHitCount()).sum();
+                        mapToInt(dtf ->{
+                            updateKeyValue(dtf.getId().toLowerCase(),dtf.getHitCount(),domainMap);
+                            //filteredDomains.add(dtf.getId() + "~" +dtf.getHitCount());
+                            return dtf.getHitCount();}).sum();
             }
 
             int allCounts = secondaryAccession!= null ? secondaryAccession.parallelStream().mapToInt(dt -> {
@@ -206,7 +222,10 @@ public class SimilarityCounts {
                         flatMap(dtl -> Arrays.stream(dtl.getSubdomains())).
                         map(dtl -> Arrays.stream(dtl.getSubdomains())).
                         flatMap(sbdt -> sbdt.filter(dtls -> !domains.contains(dtls.getId()))).
-                        mapToInt(dtf -> dtf.getHitCount()).sum();
+                        mapToInt(dtf ->{
+                            updateKeyValue(dtf.getId().toLowerCase(),dtf.getHitCount(),domainMap);
+                            //filteredDomains.add(dtf.getId() + "~" +dtf.getHitCount());
+                            return dtf.getHitCount();}).sum();
                 //return querySecondaryResult.getCount();
             }).sum() : 0;
 
@@ -215,13 +234,21 @@ public class SimilarityCounts {
 
             Set<String> matchDataset = new HashSet<String>();
             if(queryResult != null && queryResult.getEntries() != null) {
-                matchDataset = Arrays.stream(queryResult.getEntries()).filter(dt -> !dt.getId().toString().equals(accession)).map(dts -> dts.getId().toString()).collect(Collectors.toSet());
+                matchDataset = Arrays.stream(queryResult.getEntries()).
+                        filter(dt -> !dt.getId().toString().equals(accession)).
+                        map(dts -> dts.getId().toString()).collect(Collectors.toSet());
             }
 
             if(dataset.getCrossReferences() != null){
                 Collection<Set<String>> crossReferences = dataset.getCrossReferences().values();
                 searchCount = searchCount + crossReferences.stream().mapToInt(dt -> dt.size()).sum();
+                dataset.getCrossReferences().keySet().forEach(dt -> {
+                    updateKeyValue(dt.toLowerCase(),dataset.getCrossReferences().get(dt).size(),domainMap);
+                });
+
             }
+
+            Set<String> domainSet =  domainMap.entrySet().parallelStream().map(dt -> dt.getKey() + "~" + dt.getValue()).collect(Collectors.toSet());
             EBISearchPubmedCount ebiSearchPubmedCount = new EBISearchPubmedCount();
             ebiSearchPubmedCount.setAccession(accession);
             ebiSearchPubmedCount.setPubmedCount(searchCount);
@@ -241,6 +268,8 @@ public class SimilarityCounts {
                 HashSet<String> count = new HashSet<String>();
                 count.add(String.valueOf(searchCount));
                 dataset.getAdditional().put(Constants.SEARCH_FIELD,count);
+                Set<String> searchDomains = new HashSet<String>(filteredDomains);
+                dataset.getAdditional().put(Constants.SEARCH_DOMAIN,domainSet);
                 datasetService.update(dataset.getId(),dataset);
             }
 
@@ -249,6 +278,19 @@ public class SimilarityCounts {
         catch(Exception ex){
             logger.error("inside add Search Counts exception is " + ex.getMessage() + " query is " + pubmedId + " dataset is  " + accession);
         }
+    }
+
+    public Map<String, Integer> updateKeyValue(String key, Integer value,Map<String, Integer> domainMap){
+        if(domainMap.containsKey(key)){
+            Integer updatedValue = domainMap.get(key);
+            updatedValue = updatedValue + value;
+            domainMap.put(key,updatedValue);
+        }
+        else
+        {
+            domainMap.put(key, value);
+        }
+        return domainMap;
     }
 
     public void saveReanalysisCount(){
@@ -261,10 +303,23 @@ public class SimilarityCounts {
         try {
             for (int i = startDataset; i < datasetService.getDatasetCount()/numberOfDataset; i = i + 1) {
                 //System.out.println("value of i is" + i);
-                datasetService.readAll(i, numberOfDataset).getContent().stream().filter(data ->
+                datasetService.readAll(i, numberOfDataset).getContent().parallelStream()
+                        .map(data ->  {
+                            if(data.getCrossReferences() != null && data.getCrossReferences().get(Constants.PUBMED_FIELD) != null) {
+                                data.getCrossReferences().get(Constants.PUBMED_FIELD).
+                                        forEach(dta -> addSearchCounts(data.getAccession(), dta, data.getDatabase()));
+
+                            }
+                            else{
+                                 addSearchCounts(data.getAccession(), "", data.getDatabase());
+                            }
+                            return "";
+                        }).count();
+
+/*                datasetService.readAll(i, numberOfDataset).getContent().parallelStream().filter(data ->
                         data.getCrossReferences() != null && data.getCrossReferences().get(Constants.PUBMED_FIELD) != null)
                         .forEach(dt ->  dt.getCrossReferences().get(Constants.PUBMED_FIELD).
-                                forEach(dta -> addSearchCounts(dt.getAccession(),dta,dt.getDatabase())));
+                                forEach(dta -> addSearchCounts(dt.getAccession(),dta,dt.getDatabase())));*/
                 //Thread.sleep(3000);
             }
         }
@@ -273,6 +328,33 @@ public class SimilarityCounts {
         }
     }
 
+    public void saveLeftSearchcounts(){
+        try {
+            long count = 0;
+            int[] iarr = {0};
+            int pages = datasetService.getWithoutSearchDomains(0 , numberOfDataset).getTotalPages();
+            for (int i = startDataset; i < pages; i = i + 1) {
+                    System.out.println("page number is " + i);
+                 datasetService.getWithoutSearchDomains(i , numberOfDataset).getContent().parallelStream()
+                        .map(data ->  {
+                    if(data.getCrossReferences() != null && data.getCrossReferences().get(Constants.PUBMED_FIELD) != null) {
+                        data.getCrossReferences().get(Constants.PUBMED_FIELD).
+                                forEach(dta -> addSearchCounts(data.getAccession(), dta, data.getDatabase()));
+
+                    }
+                    else{
+                        addSearchCounts(data.getAccession(), "", data.getDatabase());
+                    }
+                    return "";
+                }).count();
+                //Thread.sleep(3000);
+            }
+            System.out.println(count);
+        }
+        catch(Exception ex){
+            logger.error("error inside savesearch count exception message is " + ex.getMessage());
+        }
+    }
     public void getPageRecords(){
         for (int i = startDataset; i < datasetService.getDatasetCount()/numberOfDataset; i = i + 1) {
             //System.out.println("value of i is" + i);
@@ -330,5 +412,9 @@ public class SimilarityCounts {
         }
         return primaryCit;
 
+    }
+
+    public void addReanalysisKeyword(){
+        reanalysisDataService.updateReanalysisKeywords();
     }
 }
