@@ -115,6 +115,8 @@ public class Constants {
 
     public static String ALL_DOMAIN                 =   "";
 
+    public static String SEARCH_DOMAIN              = "search_domains";
+
     public static final String[] DATASET_SUMMARY        = {Constants.DESCRIPTION_FIELD,
             Constants.NAME_FIELD,
             Constants.SUBMITTER_KEY_FIELD,Constants.CURATOR_KEY_FIELD,
