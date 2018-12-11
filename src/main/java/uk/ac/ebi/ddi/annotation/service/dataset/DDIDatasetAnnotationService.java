@@ -31,6 +31,7 @@ import uk.ac.ebi.ddi.xml.validator.utils.Field;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * @author Yasset Perez-Riverol (ypriverol@gmail.com)
@@ -238,7 +239,8 @@ public class DDIDatasetAnnotationService {
         }
         if (similarDatasets.size() == 0) {
             LOGGER.warn("Adding related datasets to {} with type " + type + ", but none of them were in our database {}",
-                    dataset.getAccession(), related.stream().map(PublicationDataset::getDatasetID));
+                    dataset.getAccession(),
+                    related.stream().map(PublicationDataset::getDatasetID).collect(Collectors.toList()));
             return;
         }
 
@@ -251,8 +253,8 @@ public class DDIDatasetAnnotationService {
             datasetExisting.setSimilars(similars);
             similarsService.save(datasetExisting);
         }
-        LOGGER.info("Added some new related datasets to {} with type " + type + " {}", dataset.getAccession(),
-                similarDatasets.stream().map(x -> x.getSimilarDataset().getAccession()));
+        LOGGER.info("Added some new related datasets with type " + type + " to {}, {}", dataset.getAccession(),
+                similarDatasets.stream().map(x -> x.getSimilarDataset().getAccession()).collect(Collectors.toList()));
     }
 
     public void addDatasetSimilars(String accession, String database, SimilarDataset similarDataset){
