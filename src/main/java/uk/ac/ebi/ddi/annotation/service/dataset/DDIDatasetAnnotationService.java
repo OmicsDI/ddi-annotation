@@ -31,6 +31,7 @@ import uk.ac.ebi.ddi.xml.validator.utils.Field;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * @author Yasset Perez-Riverol (ypriverol@gmail.com)
@@ -226,26 +227,34 @@ public class DDIDatasetAnnotationService {
         for(PublicationDataset publicationDataset: related){
             if (!publicationDataset.getDatasetID().equalsIgnoreCase(dataset.getAccession())){
                 Dataset datasetRelated = datasetService.read(publicationDataset.getDatasetID(), publicationDataset.getDatabase());
-                if(datasetRelated != null){
-                    SimilarDataset similar = new SimilarDataset(datasetRelated, type);
-                    similarDatasets.add(similar);
+                if (datasetRelated == null) {
+                    List<Dataset> secondaries = datasetService.getBySecondaryAccession(publicationDataset.getDatasetID());
+                    for (Dataset secondary : secondaries) {
+                        similarDatasets.add(new SimilarDataset(secondary, type));
+                    }
+                } else {
+                    similarDatasets.add(new SimilarDataset(datasetRelated, type));
                 }
             }
         }
         if (similarDatasets.size() == 0) {
-            LOGGER.warn("Adding related datasets to {} with type " + type + ", but none of them were in our database {}", dataset.getAccession(), related);
+            LOGGER.warn("Adding related datasets to {} with type " + type + ", but none of them were in our database {}",
+                    dataset.getAccession(),
+                    related.stream().map(PublicationDataset::getDatasetID).collect(Collectors.toList()));
             return;
         }
 
-        if(datasetExisting == null){
+        if (datasetExisting == null) {
             datasetExisting = new DatasetSimilars(dataset.getAccession(), dataset.getDatabase(), similarDatasets);
             similarsService.save(datasetExisting);
-        } else{
+        } else {
             Set<SimilarDataset> similars = datasetExisting.getSimilars();
             similars.addAll(similarDatasets);
             datasetExisting.setSimilars(similars);
             similarsService.save(datasetExisting);
         }
+        LOGGER.info("Added some new related datasets with type " + type + " to {}, {}", dataset.getAccession(),
+                similarDatasets.stream().map(x -> x.getSimilarDataset().getAccession()).collect(Collectors.toList()));
     }
 
     public void addDatasetSimilars(String accession, String database, SimilarDataset similarDataset){
