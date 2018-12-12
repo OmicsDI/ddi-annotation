@@ -28,8 +28,8 @@ public class DDIDatasetAnotationServiceTest {
         ddiDatasetAnnotationService.updatePrivateDataset("BioModels");
     }
 
-    @Test
+    /*@Test
     public void getPrivateDatasets(){
         ddiDatasetAnnotationService.getPrivateDatasets("BioModels");
-    }
+    }*/
 }

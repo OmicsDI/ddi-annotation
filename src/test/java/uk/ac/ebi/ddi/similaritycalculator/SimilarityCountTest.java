@@ -22,7 +22,7 @@ public class SimilarityCountTest {
     @Autowired
     SimilarityCounts similarityCounts;
 
-    @Test
+    /*@Test
     public void getCitationCount(){
         similarityCounts.getCitationCount("ArrayExpress","E-GEOD-2034", Stream.of("GSE2034").collect(toList()));
     }
@@ -45,11 +45,16 @@ public class SimilarityCountTest {
     @Test
     public void testAllRecords() {
         similarityCounts.getPageRecords();
-    }
+    }*/
+
+    /*@Test
+    public void getSearchCount(){
+        similarityCounts.addSearchCounts("E-MTAB-599","21921910","ExpressionAtlas");
+    }*/
 
     @Test
-    public void getSearchCount(){
-        similarityCounts.addSearchCounts("E-MTAB-599","21921910","ArrayExpress");
+    public void testDownloadCount(){
+        similarityCounts.addDatasetDownloadCount();
     }
 }
 
