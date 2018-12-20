@@ -227,12 +227,7 @@ public class DDIDatasetAnnotationService {
         for(PublicationDataset publicationDataset: related){
             if (!publicationDataset.getDatasetID().equalsIgnoreCase(dataset.getAccession())){
                 Dataset datasetRelated = datasetService.read(publicationDataset.getDatasetID(), publicationDataset.getDatabase());
-                if (datasetRelated == null) {
-                    List<Dataset> secondaries = datasetService.getBySecondaryAccession(publicationDataset.getDatasetID());
-                    for (Dataset secondary : secondaries) {
-                        similarDatasets.add(new SimilarDataset(secondary, type));
-                    }
-                } else {
+                if (datasetRelated != null) {
                     similarDatasets.add(new SimilarDataset(datasetRelated, type));
                 }
             }
