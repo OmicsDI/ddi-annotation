@@ -90,22 +90,22 @@ public class DatasetAnnotationEnrichmentService {
 
     public static Dataset addEnrichedFields(Dataset dataset, EnrichedDataset enrichedDataset){
         if(enrichedDataset.getEnrichedAttributes().containsKey(Field.NAME.getName()))
-            DatasetUtils.addAdditionalField(dataset, Field.ENRICH_TITLE.getName(), Utils.removeRedundantSynonyms(enrichedDataset.getEnrichedAttributes().get(Field.NAME.getName())));
+            DatasetUtils.addAdditionalFieldSingleValue(dataset, Field.ENRICH_TITLE.getName(), Utils.removeRedundantSynonyms(enrichedDataset.getEnrichedAttributes().get(Field.NAME.getName())));
 
         if(enrichedDataset.getEnrichedAttributes().containsKey(Field.DESCRIPTION.getName()))
-            DatasetUtils.addAdditionalField(dataset, Field.ENRICH_ABSTRACT.getName(), Utils.removeRedundantSynonyms(enrichedDataset.getEnrichedAttributes().get(Field.DESCRIPTION.getName())));
+            DatasetUtils.addAdditionalFieldSingleValue(dataset, Field.ENRICH_ABSTRACT.getName(), Utils.removeRedundantSynonyms(enrichedDataset.getEnrichedAttributes().get(Field.DESCRIPTION.getName())));
 
         if(enrichedDataset.getEnrichedAttributes().containsKey(Field.SAMPLE.getName()))
-            DatasetUtils.addAdditionalField(dataset, Field.ENRICH_SAMPLE.getName(), Utils.removeRedundantSynonyms(enrichedDataset.getEnrichedAttributes().get(Field.SAMPLE.getName())));
+            DatasetUtils.addAdditionalFieldSingleValue(dataset, Field.ENRICH_SAMPLE.getName(), Utils.removeRedundantSynonyms(enrichedDataset.getEnrichedAttributes().get(Field.SAMPLE.getName())));
 
         if(enrichedDataset.getEnrichedAttributes().containsKey(Field.DATA.getName()))
-            DatasetUtils.addAdditionalField(dataset, Field.ENRICH_DATA.getName(), Utils.removeRedundantSynonyms(enrichedDataset.getEnrichedAttributes().get(Field.DATA.getName())));
+            DatasetUtils.addAdditionalFieldSingleValue(dataset, Field.ENRICH_DATA.getName(), Utils.removeRedundantSynonyms(enrichedDataset.getEnrichedAttributes().get(Field.DATA.getName())));
 
         if(enrichedDataset.getEnrichedAttributes().containsKey(Field.PUBMED_TITLE.getName()))
-            DatasetUtils.addAdditionalField(dataset, Field.ENRICHE_PUBMED_TITLE.getName(), Utils.removeRedundantSynonyms(enrichedDataset.getEnrichedAttributes().get(Field.PUBMED_TITLE.getName())));
+            DatasetUtils.addAdditionalFieldSingleValue(dataset, Field.ENRICHE_PUBMED_TITLE.getName(), Utils.removeRedundantSynonyms(enrichedDataset.getEnrichedAttributes().get(Field.PUBMED_TITLE.getName())));
 
         if(enrichedDataset.getEnrichedAttributes().containsKey(Field.PUBMED_ABSTRACT.getName()))
-            DatasetUtils.addAdditionalField(dataset, Field.ENRICH_PUBMED_ABSTRACT.getName(), Utils.removeRedundantSynonyms(enrichedDataset.getEnrichedAttributes().get(Field.PUBMED_ABSTRACT.getName())));
+            DatasetUtils.addAdditionalFieldSingleValue(dataset, Field.ENRICH_PUBMED_ABSTRACT.getName(), Utils.removeRedundantSynonyms(enrichedDataset.getEnrichedAttributes().get(Field.PUBMED_ABSTRACT.getName())));
 
         return dataset;
     }

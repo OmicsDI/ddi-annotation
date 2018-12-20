@@ -51,5 +51,7 @@
 	<bean id="domainWsClient" class="uk.ac.ebi.ddi.ebe.ws.dao.client.domain.DomainWsClient">
 		<constructor-arg name="config" ref="ebeyeWsConfig"/>
 	</bean>
+	<bean id ="datasetCountService" class = "uk.ac.ebi.ddi.service.db.service.dataset.DatasetCountService" />
+	<bean id="statisticsService" class="uk.ac.ebi.ddi.similarityCalculator.StatisticsService" />
 
 </beans>

@@ -66,7 +66,18 @@ public class DatasetUtils {
         return dataset;
     }
 
-
+    public static Dataset addAdditionalFieldSingleValue(Dataset dataset, String key, String value) {
+        Map<String, Set<String>> additional = dataset.getAdditional();
+        if(additional == null)
+            additional = new HashMap<>();
+        if(key != null && value != null && !value.isEmpty()){
+            Set<String> values = new HashSet<>();
+            values.add(value);
+            additional.put(key, values);
+            dataset.setAdditional(additional);
+        }
+        return dataset;
+    }
     public static String getFirstAdditionalFieldValue(Dataset dataset, String key) {
         if(dataset.getAdditional() != null && !dataset.getAdditional().isEmpty())
             if(dataset.getAdditional().containsKey(key))
@@ -81,24 +92,30 @@ public class DatasetUtils {
         Map<String, Set<String>> dates= new HashMap<>();;
         Map<String, Set<String>> crossReferences= new HashMap<>();;
         Map<String, Set<String>> additionals = new HashMap<>();
+        if(dataset.getName() == null)
+        {
+            logger.error("exception occured in transformEntryDataset entry with id name value is not there" + dataset.getId());
+        }
         try {
-            dates = dataset.getDates().getDate().parallelStream().collect(Collectors.groupingBy(uk.ac.ebi.ddi.xml.validator.parser.model.Date::getType, Collectors.mapping(uk.ac.ebi.ddi.xml.validator.parser.model.Date::getValue, Collectors.toSet())));
-
+            if(dataset.getDates() != null) {
+                dates = dataset.getDates().getDate().parallelStream().collect(Collectors.groupingBy(uk.ac.ebi.ddi.xml.validator.parser.model.Date::getType, Collectors.mapping(uk.ac.ebi.ddi.xml.validator.parser.model.Date::getValue, Collectors.toSet())));
+            }
             if (dataset.getCrossReferences() != null && dataset.getCrossReferences().getRef() != null) {
                 crossReferences = dataset.getCrossReferences().getRef()
                         .stream().parallel()
                         .collect(Collectors.groupingBy(x -> x.getDbname().trim(), Collectors.mapping(x -> x.getDbkey().trim(), Collectors.toSet())));
             }
-             additionals = dataset.getAdditionalFields().getField()
-                    .stream().parallel()
-                    .collect(Collectors.groupingBy(x -> x.getName().trim(), Collectors.mapping(x -> x.getValue().trim(), Collectors.toSet())));
-
+            if(dataset.getAdditionalFields() != null) {
+                additionals = dataset.getAdditionalFields().getField()
+                        .stream().parallel()
+                        .collect(Collectors.groupingBy(x -> x.getName().trim(), Collectors.mapping(x -> x.getValue().trim(), Collectors.toSet())));
+            }
         }
         catch(Exception ex)
         {
             logger.error("exception occured in transformEntryDataset entry with id " + dataset.getId());
         }
-        return new Dataset(dataset.getId(), dataset.getRepository(), dataset.getName().getValue(), dataset.getDescription(),dates, additionals, crossReferences, DatasetCategory.INSERTED);
+        return new Dataset(dataset.getId(), dataset.getRepository(), dataset.getName() != null ? dataset.getName().getValue():"", dataset.getDescription(),dates, additionals, crossReferences, DatasetCategory.INSERTED);
 
     }
 
@@ -115,18 +132,24 @@ public class DatasetUtils {
         Map<String, Set<String>> crossReferences= new HashMap<>();;
         Map<String, Set<String>> additionals = new HashMap<>();
         try {
-            dates = dataset.getDates().getDate().parallelStream().collect(Collectors.groupingBy(uk.ac.ebi.ddi.xml.validator.parser.model.Date::getType, Collectors.mapping(uk.ac.ebi.ddi.xml.validator.parser.model.Date::getValue, Collectors.toSet())));
-
+            if(dataset.getName() == null)
+            {
+                logger.error("exception occured in transformEntryDataset entry with id name value is not there" + dataset.getId());
+            }
+            if(dataset.getDates() != null) {
+                dates = dataset.getDates().getDate().parallelStream().collect(Collectors.groupingBy(uk.ac.ebi.ddi.xml.validator.parser.model.Date::getType, Collectors.mapping(uk.ac.ebi.ddi.xml.validator.parser.model.Date::getValue, Collectors.toSet())));
+            }
             crossReferences = new HashMap<>();
             if (dataset.getCrossReferences() != null && dataset.getCrossReferences().getRef() != null) {
                 crossReferences = dataset.getCrossReferences().getRef()
                         .stream().parallel()
                         .collect(Collectors.groupingBy(x -> x.getDbname().trim(), Collectors.mapping(x -> x.getDbkey().trim(), Collectors.toSet())));
             }
-            additionals = dataset.getAdditionalFields().getField()
-                    .stream().parallel()
-                    .collect(Collectors.groupingBy(x -> x.getName().trim(), Collectors.mapping(x -> x.getValue().trim(), Collectors.toSet())));
-
+            if(dataset.getAdditionalFields() != null ) {
+                additionals = dataset.getAdditionalFields().getField()
+                        .stream().parallel()
+                        .collect(Collectors.groupingBy(x -> x.getName().trim(), Collectors.mapping(x -> x.getValue().trim(), Collectors.toSet())));
+            }
             Set<String> repositories = additionals.get(Field.REPOSITORY.getName());
             if(null == repositories || repositories.size() < 1 ) {
                 //AZ:this code overrides additonal.repository. why? wrapped by if
@@ -139,7 +162,7 @@ public class DatasetUtils {
         catch(Exception ex){
             logger.error("exception occured in transformEntryDataset entry with id " + dataset.getId());
         }
-        return new Dataset(dataset.getId(), databaseName, dataset.getName().getValue(), dataset.getDescription(),dates, additionals, crossReferences, DatasetCategory.INSERTED);
+        return new Dataset(dataset.getId(), databaseName, dataset.getName() != null ? dataset.getName().getValue():"", dataset.getDescription(),dates, additionals, crossReferences, DatasetCategory.INSERTED);
 
     }
 

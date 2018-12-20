@@ -4,6 +4,7 @@ import org.omg.CosNaming.NamingContextExtPackage.StringNameHelper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import uk.ac.ebi.ddi.annotation.service.synonyms.DDIXmlProcessService;
 import uk.ac.ebi.ddi.annotation.utils.Constants;
 import uk.ac.ebi.ddi.ebe.ws.dao.client.dataset.DatasetWsClient;
@@ -18,6 +19,8 @@ import uk.ac.ebi.ddi.service.db.model.dataset.*;
 import uk.ac.ebi.ddi.service.db.model.similarity.Citations;
 import uk.ac.ebi.ddi.service.db.model.similarity.EBISearchPubmedCount;
 import uk.ac.ebi.ddi.service.db.model.similarity.ReanalysisData;
+import uk.ac.ebi.ddi.service.db.service.dataset.DatasetCountService;
+import uk.ac.ebi.ddi.service.db.service.dataset.IDatasetCountService;
 import uk.ac.ebi.ddi.service.db.service.dataset.IDatasetService;
 import uk.ac.ebi.ddi.service.db.service.dataset.IDatasetSimilarsService;
 import uk.ac.ebi.ddi.service.db.service.similarity.*;
@@ -31,6 +34,7 @@ import java.util.stream.Collectors;
 /**
  * Created by gaur on 13/07/17.
  */
+@Service
 public class SimilarityCounts {
 
     Integer startDataset = 0;
@@ -52,6 +56,9 @@ public class SimilarityCounts {
     IDatasetService datasetService;
 
     @Autowired
+    DatasetCountService datasetCountService;
+
+    @Autowired
     IDatasetStatInfoService datasetStatInfoService;
 
     @Autowired
@@ -65,6 +72,9 @@ public class SimilarityCounts {
 
     @Autowired
     DomainWsClient domainWsClient;
+
+    @Autowired
+    StatisticsService statisticsService;
 
     private static final Logger logger = LoggerFactory.getLogger(SimilarityCounts.class);
 
@@ -157,13 +167,11 @@ public class SimilarityCounts {
     }
 
     public void addSearchCounts(String accession,String pubmedId,String database){
-        try {
-            if(accession.equals("E-GEOD-29683") || accession.equals("E-GEOD-62373") || accession.equals("E-GEOD-66373"))
-            {
-                System.out.print("exception dataset");
-            }
-            int size = 20;
-            int searchCount = 0;
+        int size = 20;
+        int searchCount = 0;
+        try
+        {
+
             HashMap<String, Integer> domainMap = new HashMap<String,Integer>();
             Dataset dataset = datasetService.read(accession,database);
             List<String> filteredDomains = new ArrayList<String>();
@@ -416,5 +424,10 @@ public class SimilarityCounts {
 
     public void addReanalysisKeyword(){
         reanalysisDataService.updateReanalysisKeywords();
+    }
+
+    public void addDatasetDownloadCount(){
+        //datasetCountService.saveDatasetDownloadCount();
+        statisticsService.saveDatasetDownloadCount();
     }
 }
