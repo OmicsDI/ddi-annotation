@@ -60,9 +60,10 @@ public class StatisticsService {
                     * */
                     Map<String, Map<String, Multiset<String>>> prideDownloads = elasticSearchClient.
                             getDataDownloads(ElasticSearchWsConfigProd.DB.valueOf(dt.getDatabase()),
-                                    dt.getAccession(), LocalDate.now());
+                                    dt.getAccession());
 
                     Dataset dataset = datasetService.read(dt.getAccession(), dt.getDatabase());
+                    int downloadCurrValue = dataset.getAdditional().containsKey(Constants.DOWNLOAD_COUNT) ? Integer.valueOf(dataset.getAdditional().get(Constants.DOWNLOAD_COUNT).iterator().next()) :0;
 
                     Set<String> downloadCount = new HashSet<String>();
 
@@ -70,7 +71,8 @@ public class StatisticsService {
                         int count = prideDownloads.entrySet().stream().mapToInt(dst ->
                                 dst.getValue().entrySet().stream().mapToInt(dtr -> dtr.getValue().elementSet().stream().mapToInt(dtrc -> dtr.getValue().count(dtrc)).sum() ).sum()
                         ).sum();
-                        downloadCount.add(String.valueOf(count));
+
+                        downloadCount.add(String.valueOf(count + downloadCurrValue));
                         dataset.getAdditional().put(Constants.DOWNLOAD_COUNT, downloadCount);
                         datasetService.save(dataset);
                     }
