@@ -2,6 +2,9 @@ package uk.ac.ebi.ddi.extservices.annotator.client;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.retry.backoff.ExponentialBackOffPolicy;
+import org.springframework.retry.policy.SimpleRetryPolicy;
+import org.springframework.retry.support.RetryTemplate;
 import org.springframework.web.client.RestClientException;
 import uk.ac.ebi.ddi.annotation.utils.Constants;
 import uk.ac.ebi.ddi.extservices.annotator.config.BioOntologyWsConfigProd;
@@ -15,6 +18,7 @@ import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.util.Collections;
 
 /**
  * This code is licensed under the Apache License, Version 2.0 (the
@@ -37,6 +41,19 @@ public class BioOntologyClient extends WsClient{
     static final ObjectMapper mapper = new ObjectMapper();
 
     static String REST_URL = "http://data.bioontology.org";
+
+    private static final int RETRIES = 5;
+    private static RetryTemplate template = new RetryTemplate();
+
+    static {
+        SimpleRetryPolicy policy =
+                new SimpleRetryPolicy(RETRIES, Collections.singletonMap(Exception.class, true));
+        template.setRetryPolicy(policy);
+        ExponentialBackOffPolicy backOffPolicy = new ExponentialBackOffPolicy();
+        backOffPolicy.setInitialInterval(2000);
+        backOffPolicy.setMultiplier(1.6);
+        template.setBackOffPolicy(backOffPolicy);
+    }
 
     /**
      * Default constructor for Archive clients
@@ -163,65 +180,67 @@ public class BioOntologyClient extends WsClient{
     }
 
     private static String get(String urlToGet, String API_KEY) {
-        URL url;
-        HttpURLConnection conn;
-        BufferedReader rd;
-        String line;
-        String result = "";
         try {
-            url = new URL(urlToGet);
-            conn = (HttpURLConnection) url.openConnection();
-            conn.setRequestMethod("GET");
-            conn.setRequestProperty("Authorization", "apikey token=" + API_KEY);
-            conn.setRequestProperty("Accept", "application/json");
-            rd = new BufferedReader(
-                    new InputStreamReader(conn.getInputStream()));
-            while ((line = rd.readLine()) != null) {
-                result += line;
-            }
-            rd.close();
-        } catch (Exception e) {
-            e.printStackTrace();
+            return template.execute(context -> {
+                URL url;
+                HttpURLConnection conn;
+                String line;
+                String result = "";
+                url = new URL(urlToGet);
+                conn = (HttpURLConnection) url.openConnection();
+                conn.setRequestMethod("GET");
+                conn.setRequestProperty("Authorization", "apikey token=" + API_KEY);
+                conn.setRequestProperty("Accept", "application/json");
+                try (BufferedReader rd = new BufferedReader(new InputStreamReader(conn.getInputStream()))) {
+                    while ((line = rd.readLine()) != null) {
+                        result += line;
+                    }
+                }
+                conn.disconnect();
+                return result;
+            });
+        } catch (IOException e) {
+            logger.error("Exception occurred while fetching API {}, ", urlToGet, e);
+            return "";
         }
-        return result;
     }
 
     private static String post(String urlToGet, String urlParameters, String API_KEY) {
-        URL url;
-        HttpURLConnection conn;
-
-        String line;
-        String result = "";
         try {
-            url = new URL(urlToGet);
-            logger.info(urlToGet + urlParameters);
-            conn = (HttpURLConnection) url.openConnection();
-            conn.setDoOutput(true);
-            conn.setDoInput(true);
-            conn.setInstanceFollowRedirects(false);
-            conn.setRequestMethod("POST");
-            conn.setRequestProperty("Authorization", "apikey token=" + API_KEY);
-            conn.setRequestProperty("Accept", "application/json");
-            conn.setRequestProperty("charset", "utf-8");
-            conn.setUseCaches(false);
+            return template.execute(context -> {
+                URL url;
+                HttpURLConnection conn;
 
-            DataOutputStream wr = new DataOutputStream(conn.getOutputStream());
-            wr.writeBytes(urlParameters);
-            wr.flush();
-            wr.close();
-            conn.disconnect();
+                String line;
+                String result = "";
+                url = new URL(urlToGet);
+                logger.info(urlToGet + urlParameters);
+                conn = (HttpURLConnection) url.openConnection();
+                conn.setDoOutput(true);
+                conn.setDoInput(true);
+                conn.setInstanceFollowRedirects(false);
+                conn.setRequestMethod("POST");
+                conn.setRequestProperty("Authorization", "apikey token=" + API_KEY);
+                conn.setRequestProperty("Accept", "application/json");
+                conn.setRequestProperty("charset", "utf-8");
+                conn.setUseCaches(false);
 
-            BufferedReader rd = new BufferedReader(
-                    new InputStreamReader(conn.getInputStream()));
-            while ((line = rd.readLine()) != null) {
-                result += line;
-            }
-            rd.close();
-        } catch (Exception e) {
-            e.printStackTrace();
+                try (DataOutputStream wr = new DataOutputStream(conn.getOutputStream())) {
+                    wr.writeBytes(urlParameters);
+                    wr.flush();
+                }
+                conn.disconnect();
+                try (BufferedReader rd = new BufferedReader(new InputStreamReader(conn.getInputStream()))) {
+                    while ((line = rd.readLine()) != null) {
+                        result += line;
+                    }
+                }
+                return result;
+            });
+        } catch (IOException e) {
+            logger.error("Exception occurred while fetching API" + urlToGet + ", {}", urlParameters, e);
+            return "";
         }
-
-        return result;
     }
     private static void printAnnotations(JsonNode annotations) {
         for (JsonNode annotation : annotations) {
