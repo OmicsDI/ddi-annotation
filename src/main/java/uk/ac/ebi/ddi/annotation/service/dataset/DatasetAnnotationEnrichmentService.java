@@ -1,6 +1,7 @@
 package uk.ac.ebi.ddi.annotation.service.dataset;
 
 import org.json.JSONException;
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.client.RestClientException;
 import uk.ac.ebi.ddi.annotation.model.DatasetTobeEnriched;
@@ -16,6 +17,7 @@ import uk.ac.ebi.ddi.xml.validator.exception.DDIException;
 import uk.ac.ebi.ddi.xml.validator.parser.model.Entry;
 import uk.ac.ebi.ddi.xml.validator.utils.Field;
 
+import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.util.*;
 
@@ -26,7 +28,7 @@ import java.util.*;
  */
 public class DatasetAnnotationEnrichmentService {
 
-    private static final org.slf4j.Logger logger = LoggerFactory.getLogger(DatasetAnnotationEnrichmentService.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(DatasetAnnotationEnrichmentService.class);
 
 
     /**
@@ -39,26 +41,32 @@ public class DatasetAnnotationEnrichmentService {
      * @throws JSONException
      */
     @Deprecated
-    public static EnrichedDataset enrichment(DDIAnnotationService service, Entry dataset, boolean overwrite) throws DDIException, UnsupportedEncodingException, JSONException {
+    public static EnrichedDataset enrichment(DDIAnnotationService service, Entry dataset, boolean overwrite)
+            throws DDIException, IOException, JSONException {
 
-        System.out.print("DatasetTobeEnriched 1:"+ dataset.getId() + " " + dataset.getRepository() );
+        LOGGER.info("DatasetTobeEnriched 1: {}, {}", dataset.getId(), dataset.getRepository());
 
-        DatasetTobeEnriched datasetTobeEnriched = new DatasetTobeEnriched(dataset.getId(),dataset.getRepository(), "");
+        DatasetTobeEnriched datasetTobeEnriched = new DatasetTobeEnriched(
+                dataset.getId(), dataset.getRepository(), "");
         return service.enrichment(datasetTobeEnriched, overwrite);
     }
 
-    public static EnrichedDataset enrichment(DDIAnnotationService service, Dataset dataset, boolean overwrite) throws DDIException, UnsupportedEncodingException, RestClientException, JSONException {
+    public static EnrichedDataset enrichment(DDIAnnotationService service, Dataset dataset, boolean overwrite)
+            throws DDIException, IOException, RestClientException, JSONException {
 
-        System.out.print("DatasetTobeEnriched 2:"+ dataset.getId() + " " + dataset.getDatabase() );
+        LOGGER.info("DatasetTobeEnriched 2: {}, {}", dataset.getAccession(), dataset.getDatabase());
 
         Map<String, String> fields = new HashMap<>();
         fields.put(Field.NAME.getName(), dataset.getName());
         fields.put(Field.DESCRIPTION.getName(), dataset.getDescription());
         fields.put(Field.DATA.getName(), DatasetUtils.getFirstAdditionalFieldValue(dataset, Field.DATA.getName()));
         fields.put(Field.SAMPLE.getName(), DatasetUtils.getFirstAdditionalFieldValue(dataset, Field.SAMPLE.getName()));
-        fields.put(Field.PUBMED_ABSTRACT.getName(), DatasetUtils.getFirstAdditionalFieldValue(dataset, Field.PUBMED_ABSTRACT.getName()));
-        fields.put(Field.PUBMED_TITLE.getName(), DatasetUtils.getFirstAdditionalFieldValue(dataset, Field.PUBMED_TITLE.getName()));
-        return service.enrichment(new DatasetTobeEnriched(dataset.getAccession(), dataset.getDatabase(),fields) , overwrite);
+        fields.put(Field.PUBMED_ABSTRACT.getName(), DatasetUtils.getFirstAdditionalFieldValue(
+                dataset, Field.PUBMED_ABSTRACT.getName()));
+        fields.put(Field.PUBMED_TITLE.getName(), DatasetUtils.getFirstAdditionalFieldValue(
+                dataset, Field.PUBMED_TITLE.getName()));
+        return service.enrichment(
+                new DatasetTobeEnriched(dataset.getAccession(), dataset.getDatabase(), fields) , overwrite);
     }
 
 //    /**
@@ -216,7 +224,7 @@ public class DatasetAnnotationEnrichmentService {
 
             }
         }catch(RestClientException ex){
-           logger.debug(ex.getMessage());
+           LOGGER.debug(ex.getMessage());
         }
 
         return dataset;

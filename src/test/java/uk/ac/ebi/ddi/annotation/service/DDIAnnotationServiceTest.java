@@ -72,7 +72,7 @@ public class DDIAnnotationServiceTest {
     }
 
     @Test
-    public void proteomicFilsAnnotationTest() throws URISyntaxException, DDIException, UnsupportedEncodingException, JSONException {
+    public void proteomicFilsAnnotationTest() throws URISyntaxException, DDIException, IOException, JSONException {
         URL urlProteomics = DDIXmlProcessServiceTest.class.getClassLoader().getResource("pride-files");
 
         assert urlProteomics != null;

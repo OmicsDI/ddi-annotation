@@ -12,6 +12,7 @@ import uk.ac.ebi.ddi.xml.validator.parser.model.*;
 import uk.ac.ebi.ddi.xml.validator.utils.Field;
 
 import java.io.File;
+import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.util.*;
 
@@ -104,7 +105,7 @@ public class DDIXmlProcessService {
 
         try {
             return annotService.enrichment(datasetTobeEnriched, false);
-        } catch (JSONException | UnsupportedEncodingException | DDIException e) {
+        } catch (JSONException | DDIException | IOException e) {
             e.printStackTrace();
         }
         return null;

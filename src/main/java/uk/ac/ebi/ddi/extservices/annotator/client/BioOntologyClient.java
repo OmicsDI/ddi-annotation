@@ -122,7 +122,7 @@ public class BioOntologyClient extends WsClient{
 
     }
 
-    public JsonNode getAnnotatedSynonyms(String query) throws UnsupportedEncodingException {
+    public JsonNode getAnnotatedSynonyms(String query) throws IOException {
 
         String urlParameters;
         JsonNode annotations;
@@ -169,17 +169,11 @@ public class BioOntologyClient extends WsClient{
 
     }
 
-    private static JsonNode jsonToNode(String json) {
-        JsonNode root = null;
-        try {
-            root = mapper.readTree(json);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return root;
+    private static JsonNode jsonToNode(String json) throws IOException {
+        return mapper.readTree(json);
     }
 
-    private static String get(String urlToGet, String API_KEY) {
+    private static String get(String urlToGet, String API_KEY) throws IOException {
         try {
             return template.execute(context -> {
                 URL url;
@@ -201,11 +195,11 @@ public class BioOntologyClient extends WsClient{
             });
         } catch (IOException e) {
             logger.error("Exception occurred while fetching API {}, ", urlToGet, e);
-            return "";
+            throw e;
         }
     }
 
-    private static String post(String urlToGet, String urlParameters, String API_KEY) {
+    private static String post(String urlToGet, String urlParameters, String API_KEY) throws IOException {
         try {
             return template.execute(context -> {
                 URL url;
@@ -214,7 +208,7 @@ public class BioOntologyClient extends WsClient{
                 String line;
                 String result = "";
                 url = new URL(urlToGet);
-                logger.info(urlToGet + urlParameters);
+                logger.debug(urlToGet + urlParameters);
                 conn = (HttpURLConnection) url.openConnection();
                 conn.setDoOutput(true);
                 conn.setDoInput(true);
@@ -238,11 +232,11 @@ public class BioOntologyClient extends WsClient{
                 return result;
             });
         } catch (IOException e) {
-            logger.error("Exception occurred while fetching API" + urlToGet + ", {}", urlParameters, e);
-            return "";
+            logger.error("Exception occurred while fetching API " + urlToGet + ", {}", urlParameters, e);
+            throw e;
         }
     }
-    private static void printAnnotations(JsonNode annotations) {
+    private static void printAnnotations(JsonNode annotations) throws IOException {
         for (JsonNode annotation : annotations) {
             // Get the details for the class that was found in the annotation and print
             JsonNode classDetails = jsonToNode(get(annotation.get("annotatedClass").get("links").get("self").asText(), Constants.OBO_KEY));

@@ -59,29 +59,31 @@ public class DDIAnnotationService {
      * @return and enriched dataset
      */
 
-    @SuppressWarnings("UnusedAssignment")
-    public EnrichedDataset enrichment(DatasetTobeEnriched datasetTobeEnriched, boolean overwrite) throws JSONException, UnsupportedEncodingException, RestClientException,DDIException {
+    public EnrichedDataset enrichment(DatasetTobeEnriched datasetTobeEnriched, boolean overwrite)
+            throws JSONException, IOException, RestClientException, DDIException {
 
         String accession = datasetTobeEnriched.getAccession();
         String database = datasetTobeEnriched.getDatabase();
 
         EnrichedDataset enrichedDataset = new EnrichedDataset(accession, database);
         DatasetEnrichmentInfo datasetEnrichmentInfo = new DatasetEnrichmentInfo(accession, database);
-
-        DatasetEnrichmentInfo prevDatasetInfo = enrichmentInfoService.readByAccession(accession, database);
+        DatasetEnrichmentInfo prevDs = enrichmentInfoService.readByAccession(accession, database);
 
         Map<String, List<WordInField>> synonyms = new HashMap<>();
 
-        if (prevDatasetInfo == null || overwrite)
-            synonyms     = getWordsInFiledFromWS(datasetTobeEnriched.getAttributes());
-        else {
+        if (prevDs == null || overwrite) {
+            synonyms = getWordsInFiledFromWS(datasetTobeEnriched.getAttributes());
+        } else {
             for (String key : datasetTobeEnriched.getAttributes().keySet()) {
-                if (prevDatasetInfo.getSynonyms() != null && prevDatasetInfo.getSynonyms().containsKey(key) && prevDatasetInfo.getOriginalAttributes().get(key).equals(datasetTobeEnriched.getAttributes().get(key)))
-                    synonyms.put(key, prevDatasetInfo.getSynonyms().get(key));
-                else {
+                if (prevDs.getSynonyms() != null && prevDs.getSynonyms().containsKey(key)
+                        && prevDs.getOriginalAttributes().get(key)
+                                                    .equals(datasetTobeEnriched.getAttributes().get(key))) {
+                    synonyms.put(key, prevDs.getSynonyms().get(key));
+                } else {
                     List<WordInField> words = getWordsInFiledFromWS(datasetTobeEnriched.getAttributes().get(key));
-                    if (words != null && !words.isEmpty())
+                    if (words != null && !words.isEmpty()) {
                         synonyms.put(key, words);
+                    }
                 }
             }
         }
@@ -92,13 +94,9 @@ public class DDIAnnotationService {
         datasetEnrichmentInfo.setOriginalAttributes(datasetTobeEnriched.getAttributes());
         enrichmentInfoService.insert(datasetEnrichmentInfo);
         Map<String, String> fields = new HashMap<>();
-        synonyms.entrySet().stream().forEach(x -> {
-            try {
-                fields.put(x.getKey(), EnrichField(x.getValue()));
-            } catch (JSONException | UnsupportedEncodingException e) {
-                e.printStackTrace();
-            }
-        });
+        for (Map.Entry<String, List<WordInField>> entry : synonyms.entrySet()) {
+            fields.put(entry.getKey(), EnrichField(entry.getValue()));
+        }
         enrichedDataset.setEnrichedAttributes(fields);
 
         return enrichedDataset;
@@ -121,7 +119,6 @@ public class DDIAnnotationService {
                 for (String synonym : synonymsForWord) {
                     enrichedField += synonym + ", ";
                 }
-                logger.debug("synonymsForWord:" + synonymsForWord.toString());
                 if (!enrichedField.isEmpty()) {
                     enrichedField = enrichedField.substring(0, enrichedField.length() - 2); //remove the last comma
                     enrichedField += "; ";
@@ -180,49 +177,48 @@ public class DDIAnnotationService {
      * @return the words which are identified in the fieldText by recommender API from bioontology.org
      */
 
-    private List<WordInField> getWordsInFiledFromWS(String fieldText) {
-
-        if (fieldText == null || fieldText.equals(Constants.NOT_AVAILABLE)) {
-            return null;
-        }
+    private List<WordInField> getWordsInFiledFromWS(String fieldText) throws IOException {
 
         List<WordInField> matchedWords = new ArrayList<>();
-        fieldText = fieldText.replace("%", " ");//to avoid malformed error
-        try{
-            if(!fieldText.isEmpty()){
-                JsonNode annotations = recommenderClient.getAnnotatedSynonyms(fieldText);
-                Map<WordInField, Set<String>> synonymsMap = new HashMap<>();
-                if (annotations != null){
-                    for(JsonNode annotation: annotations){
-                        if(annotation.get("annotations") != null){
-                            if(annotation.get("annotations").get("text") != null){
-                                String actualWord = annotation.get("annotations").get("text").textValue();
-                                int from = annotation.get("annotations").get("from").intValue();
-                                int to   = annotation.get("annotations").get("to").intValue();
-                                Set<String> synonyms = new HashSet<>();
-                                if(annotation.get("annotatedClass") != null){
-                                    actualWord = annotation.get("annotatedClass").get("prefLabel").textValue();
-                                    if(annotation.get("annotatedClass").get("synonym") != null){
-                                        for(JsonNode synonym: annotation.get("annotatedClass").get("synonym"))
-                                            synonyms.add(synonym.textValue());
-                                    }
-                                }
-                                synonymsMap.put(new WordInField(actualWord,from, to), synonyms);
-                            }
+        if (fieldText == null || fieldText.equals(Constants.NOT_AVAILABLE)) {
+            return matchedWords;
+        }
+        fieldText = fieldText.replace("%", " ").trim(); //to avoid malformed error
+
+        if (fieldText.isEmpty()) {
+            return matchedWords;
+        }
+        JsonNode recommends = recommenderClient.getAnnotatedSynonyms(fieldText);
+        Map<WordInField, Set<String>> synonymsMap = new HashMap<>();
+        if (recommends != null) {
+            for (JsonNode annotations: recommends) {
+                if (annotations.get("annotatedClass") != null && annotations.get("annotations") != null) {
+                    Set<String> synonyms = new HashSet<>();
+                    if (annotations.get("annotatedClass") != null) {
+                        if(annotations.get("annotatedClass").get("synonym") != null){
+                            for(JsonNode synonym: annotations.get("annotatedClass").get("synonym"))
+                                synonyms.add(synonym.textValue());
                         }
                     }
+                    for (JsonNode annotationValue: annotations.get("annotations")) {
+                        String actualWord = annotationValue.get("text").textValue();
+                        int from = annotationValue.get("from").intValue();
+                        int to = annotationValue.get("to").intValue();
+                        WordInField wordInField = new WordInField(actualWord, from, to);
+                        if (synonymsMap.containsKey(wordInField)) {
+                            synonyms.addAll(synonymsMap.get(wordInField));
+                        }
+                        synonymsMap.put(wordInField, synonyms);
+                    }
                 }
-                matchedWords.addAll(getDistinctWordList(synonymsMap));
             }
-
-        }catch (UnsupportedEncodingException | RestClientException ex){
-            logger.debug(ex.getMessage());
         }
+        matchedWords.addAll(getDistinctWordList(synonymsMap));
 
         return matchedWords;
     }
 
-    private Map<String, List<WordInField>> getWordsInFiledFromWS(Map<String, String> fields) {
+    private Map<String, List<WordInField>> getWordsInFiledFromWS(Map<String, String> fields) throws IOException {
 
         ConcurrentHashMap<String, List<WordInField>> results = new ConcurrentHashMap<>();
 
@@ -230,51 +226,13 @@ public class DDIAnnotationService {
             return results;
         }
 
-        fields.entrySet().parallelStream().forEach( field ->{
-            if(field.getValue() != null && !field.getValue().equalsIgnoreCase(Constants.NOT_AVAILABLE)){
-                List<WordInField> matchedWords = new ArrayList<>();
-                String fieldText = field.getValue().replace("%", " ");//to avoid malformed error
-                try{
-                    if(!fieldText.isEmpty()){
-                        JsonNode annotations = recommenderClient.getAnnotatedSynonyms(fieldText);
-                        Map<WordInField, Set<String>> synonymsMap = new HashMap<>();
-                        if (annotations != null){
-                            for(JsonNode annotation: annotations){
-                                if(annotation.get("annotatedClass") != null && annotation.get("annotations") != null){
-                                    Set<String> synonyms = new HashSet<>();
-                                    if(annotation.get("annotatedClass") != null){
-                                        //actualWord = annotation.get("annotatedClass").get("prefLabel").textValue();
-                                        if(annotation.get("annotatedClass").get("synonym") != null){
-                                            for(JsonNode synonym: annotation.get("annotatedClass").get("synonym"))
-                                                synonyms.add(synonym.textValue());
-                                        }
-                                    }
-                                    List<WordInField> words = new ArrayList<>();
-                                    for(JsonNode annotationValue: annotation.get("annotations")){
-                                        String actualWord = annotationValue.get("text").textValue();
-                                        int from = annotationValue.get("from").intValue();
-                                        int to   = annotationValue.get("to").intValue();
-                                        WordInField word = new WordInField(actualWord,from, to);
-                                        if(synonymsMap.containsKey(word)){
-                                            Set<String> currentSynonyms = synonymsMap.get(word);
-                                            currentSynonyms.addAll(synonyms);
-                                            synonymsMap.put(word, currentSynonyms);
-                                        }else
-                                            synonymsMap.put(word, synonyms);
-                                    }
-                                }
-                            }
-                        }
-                        matchedWords.addAll(getDistinctWordList(synonymsMap));
-                    }
-
-                }catch (UnsupportedEncodingException | RestClientException ex){
-                   logger.debug(ex.getMessage());
-                }
+        for (Map.Entry<String, String> entry : fields.entrySet()) {
+            List<WordInField> matchedWords = getWordsInFiledFromWS(entry.getValue());
+            if (!matchedWords.isEmpty()) {
                 Collections.sort(matchedWords);
-                results.put(field.getKey(), matchedWords);
+                results.put(entry.getKey(), matchedWords);
             }
-        });
+        }
 
         return results;
     }
