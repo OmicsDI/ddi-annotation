@@ -51,6 +51,12 @@ public class DatasetAnnotationEnrichmentService {
         return service.enrichment(datasetTobeEnriched, overwrite);
     }
 
+    /**
+     * This logic must be placed on controller/handler
+     * rather than utils like this.
+     * This function will be removed in the next version
+     */
+    @Deprecated
     public static EnrichedDataset enrichment(DDIAnnotationService service, Dataset dataset, boolean overwrite)
             throws DDIException, IOException, RestClientException, JSONException {
 
@@ -91,31 +97,67 @@ public class DatasetAnnotationEnrichmentService {
 
     /**
      * Add the enrichment fields to the entry to be use during indexing process
+     *
+     * This logic must be placed on controller/handler
+     * rather than utils like this.
+     * This function will be removed in the next version
+     *
      * @param dataset Entry the dataset to add the new fields
      * @param enrichedDataset The new fields to be added to the dataset
      * @return Entry a new entry with all the fields
      */
 
+    @Deprecated
     public static Dataset addEnrichedFields(Dataset dataset, EnrichedDataset enrichedDataset){
-        if(enrichedDataset.getEnrichedAttributes().containsKey(Field.NAME.getName()))
-            DatasetUtils.addAdditionalFieldSingleValue(dataset, Field.ENRICH_TITLE.getName(), Utils.removeRedundantSynonyms(enrichedDataset.getEnrichedAttributes().get(Field.NAME.getName())));
+        if (enrichedDataset.getEnrichedAttributes().containsKey(Field.NAME.getName())) {
+            DatasetUtils.addAdditionalFieldSingleValue(dataset, Field.ENRICH_TITLE.getName(),
+                    Utils.removeRedundantSynonyms(enrichedDataset.getEnrichedAttributes().get(Field.NAME.getName())));
+        }
 
-        if(enrichedDataset.getEnrichedAttributes().containsKey(Field.DESCRIPTION.getName()))
-            DatasetUtils.addAdditionalFieldSingleValue(dataset, Field.ENRICH_ABSTRACT.getName(), Utils.removeRedundantSynonyms(enrichedDataset.getEnrichedAttributes().get(Field.DESCRIPTION.getName())));
+        if (enrichedDataset.getEnrichedAttributes().containsKey(Field.DESCRIPTION.getName())) {
+            DatasetUtils.addAdditionalFieldSingleValue(dataset, Field.ENRICH_ABSTRACT.getName(),
+                    Utils.removeRedundantSynonyms(
+                            enrichedDataset.getEnrichedAttributes().get(Field.DESCRIPTION.getName())));
+        }
 
-        if(enrichedDataset.getEnrichedAttributes().containsKey(Field.SAMPLE.getName()))
-            DatasetUtils.addAdditionalFieldSingleValue(dataset, Field.ENRICH_SAMPLE.getName(), Utils.removeRedundantSynonyms(enrichedDataset.getEnrichedAttributes().get(Field.SAMPLE.getName())));
+        if (enrichedDataset.getEnrichedAttributes().containsKey(Field.SAMPLE.getName())) {
+            DatasetUtils.addAdditionalFieldSingleValue(dataset, Field.ENRICH_SAMPLE.getName(),
+                    Utils.removeRedundantSynonyms(
+                            enrichedDataset.getEnrichedAttributes().get(Field.SAMPLE.getName())));
+        }
 
-        if(enrichedDataset.getEnrichedAttributes().containsKey(Field.DATA.getName()))
-            DatasetUtils.addAdditionalFieldSingleValue(dataset, Field.ENRICH_DATA.getName(), Utils.removeRedundantSynonyms(enrichedDataset.getEnrichedAttributes().get(Field.DATA.getName())));
+        if (enrichedDataset.getEnrichedAttributes().containsKey(Field.DATA.getName())) {
+            DatasetUtils.addAdditionalFieldSingleValue(dataset, Field.ENRICH_DATA.getName(),
+                    Utils.removeRedundantSynonyms(enrichedDataset.getEnrichedAttributes().get(Field.DATA.getName())));
+        }
 
-        if(enrichedDataset.getEnrichedAttributes().containsKey(Field.PUBMED_TITLE.getName()))
-            DatasetUtils.addAdditionalFieldSingleValue(dataset, Field.ENRICHE_PUBMED_TITLE.getName(), Utils.removeRedundantSynonyms(enrichedDataset.getEnrichedAttributes().get(Field.PUBMED_TITLE.getName())));
+        if (enrichedDataset.getEnrichedAttributes().containsKey(Field.PUBMED_TITLE.getName())) {
+            DatasetUtils.addAdditionalFieldSingleValue(dataset, Field.ENRICHE_PUBMED_TITLE.getName(),
+                    Utils.removeRedundantSynonyms(
+                            enrichedDataset.getEnrichedAttributes().get(Field.PUBMED_TITLE.getName())));
+        }
 
-        if(enrichedDataset.getEnrichedAttributes().containsKey(Field.PUBMED_ABSTRACT.getName()))
-            DatasetUtils.addAdditionalFieldSingleValue(dataset, Field.ENRICH_PUBMED_ABSTRACT.getName(), Utils.removeRedundantSynonyms(enrichedDataset.getEnrichedAttributes().get(Field.PUBMED_ABSTRACT.getName())));
+        if (enrichedDataset.getEnrichedAttributes().containsKey(Field.PUBMED_ABSTRACT.getName())) {
+            DatasetUtils.addAdditionalFieldSingleValue(dataset, Field.ENRICH_PUBMED_ABSTRACT.getName(),
+                    Utils.removeRedundantSynonyms(
+                            enrichedDataset.getEnrichedAttributes().get(Field.PUBMED_ABSTRACT.getName())));
+        }
 
         return dataset;
+    }
+
+    /**
+     * Add multiple enrichment fields into dataset
+     * @param dataset
+     * @param fieldValues
+     */
+    public static void addEnrichedFields(Dataset dataset, Map<Field, String> fieldValues) {
+        for (Map.Entry<Field, String> entry : fieldValues.entrySet()) {
+            if (entry.getValue() != null) {
+                DatasetUtils.addAdditionalFieldSingleValue(dataset, entry.getKey().getName(),
+                        Utils.removeRedundantSynonyms(entry.getValue()));
+            }
+        }
     }
 
 
@@ -229,12 +271,4 @@ public class DatasetAnnotationEnrichmentService {
 
         return dataset;
     }
-
-
-
-
-
-
-
-
 }
