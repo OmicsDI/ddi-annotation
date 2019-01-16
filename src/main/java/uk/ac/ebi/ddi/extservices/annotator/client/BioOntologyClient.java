@@ -83,10 +83,7 @@ public class BioOntologyClient extends WsClient {
 
         String url = String.format("%s://%s/recommender?ontologies=%s&apikey=%s&input=%s",
                 config.getProtocol(), config.getHostName(), ontology, Constants.OBO_KEY, query);
-        LOGGER.debug(url);
-        System.out.println(url);
-
-        return this.restTemplate.getForObject(url, RecomendedOntologyQuery[].class);
+        return restTemplate.getForObject(url, RecomendedOntologyQuery[].class);
 
     }
 
@@ -122,15 +119,10 @@ public class BioOntologyClient extends WsClient {
 
         String url = String.format("%s://%s/recommender?ontologies=%s&apikey=%s&input=%s",
                 config.getProtocol(), config.getHostName(), ontology, Constants.OBO_KEY, query);
-
-        LOGGER.debug(url);
-        System.out.println(url);
-
         return restTemplate.postForObject(url, null, RecomendedOntologyQuery[].class);
-
     }
 
-    public JsonNode getAnnotatedSynonyms(String query) throws Exception {
+    public JsonNode getAnnotatedSynonyms(String query) {
         UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(REST_URL)
                 .path("/annotator")
                 .queryParam("ontologies", getStringfromArray(Constants.OBO_ONTOLOGIES))
@@ -144,12 +136,7 @@ public class BioOntologyClient extends WsClient {
         headers.add("Content-Type", "application/json");
         HttpEntity<?> httpEntity = new HttpEntity<>(null, headers);
         URI uri = builder.build().encode().toUri();
-        try {
-            return retryTemplate.execute(ctx -> restTemplate.postForObject(uri, httpEntity, JsonNode.class));
-        } catch (Exception e) {
-            LOGGER.error("Exception occurred when trying to fetch API {}, ", uri, e);
-            throw e;
-        }
+        return retryTemplate.execute(ctx -> restTemplate.postForObject(uri, httpEntity, JsonNode.class));
     }
 
     public AnnotatedOntologyQuery[] getAnnotatedTerms(String query, String[] ontologies) throws RestClientException {
@@ -158,7 +145,6 @@ public class BioOntologyClient extends WsClient {
         String url = String.format(
                 "%s://%s/annotator?ontologies=%s&longest_only=true&whole_word_only=false&apikey=%s&text=%s",
                 config.getProtocol(), config.getHostName(), ontology, Constants.OBO_KEY, query);
-        LOGGER.debug(url);
 
         return restTemplate.getForObject(url, AnnotatedOntologyQuery[].class);
 
@@ -177,9 +163,6 @@ public class BioOntologyClient extends WsClient {
     public SynonymQuery getAllSynonymByURL(String url) throws RestClientException {
 
         url = String.format("%s?apikey=%s", url, Constants.OBO_KEY);
-        LOGGER.debug(url);
-        System.out.println(url);
-
         return this.restTemplate.getForObject(url, SynonymQuery.class);
 
     }

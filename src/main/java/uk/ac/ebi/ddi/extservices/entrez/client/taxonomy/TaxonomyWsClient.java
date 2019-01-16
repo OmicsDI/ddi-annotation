@@ -2,12 +2,14 @@ package uk.ac.ebi.ddi.extservices.entrez.client.taxonomy;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.web.util.UriComponentsBuilder;
 import uk.ac.ebi.ddi.extservices.ebiprotein.utils.EBITaxonomyUtils;
 import uk.ac.ebi.ddi.extservices.entrez.config.TaxWsConfigProd;
 import uk.ac.ebi.ddi.extservices.entrez.ncbiresult.NCBITaxResult;
 import uk.ac.ebi.ddi.extservices.entrez.ncbiresult.NCBITaxonomyEntry;
 import uk.ac.ebi.ddi.extservices.entrez.ncbiresult.NCBITaxonomyEntrySet;
 
+import java.net.URI;
 import java.util.Set;
 
 
@@ -29,12 +31,15 @@ public class TaxonomyWsClient extends WsClient {
 
     public NCBITaxResult getNCBITax(String term) {
         if (term != null && term.length() > 0) {
-            String url = String.format("%s://%s/entrez/eutils/esearch.fcgi?db=taxonomy&term=%s&retmode=JSON",
-                    config.getProtocol(), config.getHostName(), term);
-            //Todo: Needs to be removed in the future, this is for debugging
-            LOGGER.debug(url);
-
-            return this.restTemplate.getForObject(url, NCBITaxResult.class);
+            UriComponentsBuilder uriComponentsBuilder = UriComponentsBuilder.newInstance()
+                    .scheme(config.getProtocol())
+                    .host(config.getHostName())
+                    .path("/entrez/eutils/esearch.fcgi")
+                    .queryParam("db", "taxonomy")
+                    .queryParam("term", term)
+                    .queryParam("retmode", "JSON");
+            URI uri = uriComponentsBuilder.build().encode().toUri();
+            return retryTemplate.execute(context -> restTemplate.getForObject(uri, NCBITaxResult.class));
         }
         return null;
 
@@ -42,29 +47,27 @@ public class TaxonomyWsClient extends WsClient {
 
     public NCBITaxResult getNCBITax(Set<String> terms) {
 
-        String query = "";
+        StringBuilder query = new StringBuilder();
         if (terms != null && terms.size() > 0) {
             for (String term : terms) {
-                query = query + "+OR+" + term;
+                query.append("+OR+").append(term);
             }
-            query = query.replaceFirst("\\+OR\\+", "");
-            String url = String.format("%s://%s/entrez/eutils/esearch.fcgi?db=taxonomy&term=%s&retmode=JSON",
-                    config.getProtocol(), config.getHostName(), query);
-            //Todo: Needs to be removed in the future, this is for debugging
-            LOGGER.debug(url);
-
-            return this.restTemplate.getForObject(url, NCBITaxResult.class);
+            query = new StringBuilder(query.toString().replaceFirst("\\+OR\\+", ""));
+            return getNCBITax(query.toString());
         }
         return null;
     }
 
     public NCBITaxonomyEntrySet getTaxonomyEntryById(String id) {
         if (id != null && id.length() > 0) {
-            String url = String.format("%s://%s/entrez/eutils/efetch.fcgi?db=taxonomy&id=%s",
-                    config.getProtocol(), config.getHostName(), id);
-            //Todo: Needs to be removed in the future, this is for debugging
-            LOGGER.debug(url);
-            return this.restTemplate.getForObject(url, NCBITaxonomyEntrySet.class);
+            UriComponentsBuilder uriComponentsBuilder = UriComponentsBuilder.newInstance()
+                    .scheme(config.getProtocol())
+                    .host(config.getHostName())
+                    .path("/entrez/eutils/efetch.fcgi")
+                    .queryParam("db", "taxonomy")
+                    .queryParam("id", id);
+            URI uri = uriComponentsBuilder.build().encode().toUri();
+            return retryTemplate.execute(context -> restTemplate.getForObject(uri, NCBITaxonomyEntrySet.class));
         }
         return null;
     }
