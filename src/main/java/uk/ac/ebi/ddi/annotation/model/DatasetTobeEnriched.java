@@ -80,9 +80,10 @@ public class DatasetTobeEnriched {
         this.attributes = attributes;
     }
 
-    public void addAttribute(String key, String value){
-        if(attributes == null)
+    public void addAttribute(String key, String value) {
+        if (attributes == null) {
             attributes = new HashMap<>();
+        }
         attributes.put(key, value);
     }
 }

@@ -14,7 +14,7 @@ import uk.ac.ebi.ddi.extservices.ebiprotein.utils.EBITaxonomyUtils;
  */
 public class TaxonomyEBIWsClient extends WsClient {
 
-    private static final Logger logger = LoggerFactory.getLogger(TaxonomyEBIWsClient.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(TaxonomyEBIWsClient.class);
 
     /**
      * Default constructor for Ws clients
@@ -25,32 +25,31 @@ public class TaxonomyEBIWsClient extends WsClient {
         super(config);
     }
 
-    public EBITaxParent getTaxonomyParent(String id){
+    public EBITaxParent getTaxonomyParent(String id) {
 
-        if(id != null && id.length() > 0){
+        if (id != null && id.length() > 0) {
             String url = String.format("%s://%s/taxonomy/id/%s/parent",
                     config.getProtocol(), config.getHostName(), id);
             //Todo: Needs to be removed in the future, this is for debugging
-            logger.debug(url);
-
+            LOGGER.debug(url);
             return this.restTemplate.getForObject(url, EBITaxParent.class);
         }
         return null;
     }
 
-    public EBITaxonomyEntry getTaxonomyEntryById(String id){
+    public EBITaxonomyEntry getTaxonomyEntryById(String id) {
 
-        try{
-            if(id != null && id.length() > 0){
+        try {
+            if (id != null && id.length() > 0) {
                 String url = String.format("%s://%s/taxonomy/id/%s",
                         config.getProtocol(), config.getHostName(), id);
                 //Todo: Needs to be removed in the future, this is for debugging
-                logger.debug(url);
+                LOGGER.debug(url);
                 System.out.println(url);
                 return this.restTemplate.getForObject(url, EBITaxonomyEntry.class);
             }
-        }catch (HttpClientErrorException e){
-            logger.error(e.getMessage());
+        } catch (HttpClientErrorException e) {
+            LOGGER.error(e.getMessage());
         }
         return null;
     }
@@ -60,11 +59,11 @@ public class TaxonomyEBIWsClient extends WsClient {
      * @param entry entry to search
      * @return Parent Entry
      */
-    public EBITaxonomyEntry getParentByEntry(EBITaxonomyEntry entry){
+    public EBITaxonomyEntry getParentByEntry(EBITaxonomyEntry entry) {
 
         String url = entry.getParentLink();
             //Todo: Needs to be removed in the future, this is for debugging
-        logger.debug(url);
+        LOGGER.debug(url);
 
         return this.restTemplate.getForObject(url, EBITaxonomyEntry.class);
 
@@ -77,25 +76,24 @@ public class TaxonomyEBIWsClient extends WsClient {
      * @return the Taxonomy of the NonRan parent Taxonomy
      */
 
-    public EBITaxonomyEntry getParentForNonRanSpecie(String id){
+    public EBITaxonomyEntry getParentForNonRanSpecie(String id) {
 
         EBITaxonomyEntry entry = getTaxonomyEntryById(id);
-        if(entry == null )
+        if (entry == null) {
             return null;
-        if(!entry.getRank().equalsIgnoreCase(EBITaxonomyUtils.EbiTaxRank.NO_RANK.getName()))
+        }
+        if (!entry.getRank().equalsIgnoreCase(EBITaxonomyUtils.EbiTaxRank.NO_RANK.getName())) {
             return entry;
+        }
         return getParentSpecieOrGenuesTaxonomy(entry);
     }
 
 
-    public EBITaxonomyEntry getParentSpecieOrGenuesTaxonomy(EBITaxonomyEntry entry){
-
+    public EBITaxonomyEntry getParentSpecieOrGenuesTaxonomy(EBITaxonomyEntry entry) {
         EBITaxonomyEntry parent = getParentByEntry(entry);
-        if(EBITaxonomyUtils.EbiTaxRank.isSpeciesOrGenues(parent.getRank()))
+        if (EBITaxonomyUtils.EbiTaxRank.isSpeciesOrGenues(parent.getRank())) {
             return parent;
+        }
         return getParentByEntry(parent);
     }
-
-
-
 }

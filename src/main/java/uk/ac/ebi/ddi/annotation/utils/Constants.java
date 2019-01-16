@@ -8,7 +8,7 @@ public class Constants {
     public static final String OBO_LONG_URL  = "http://data.bioontology.org/annotator?ontologies=MESH,MS&longest_only=true&whole_word_only=false&apikey=807fa818-0a7c-43be-9bac-51576e8795f5&text=";
     public static final String OBO_INPUT_URL = "http://data.bioontology.org/recommender?ontologies=MESH,MS&apikey=807fa818-0a7c-43be-9bac-51576e8795f5&input=";
     public static final String OBO_KEY       = "807fa818-0a7c-43be-9bac-51576e8795f5";
-    public static final String[] OBO_ONTOLOGIES = {"MESH","MS",
+    public static final String[] OBO_ONTOLOGIES = {"MESH", "MS",
                                                    "EFO", "GO-PLUS", "BIOMODELS", "BP",
                                                    "MEDLINEPLUS", "NCBITAXON", "GEXO", "CCO", "CLO",
                                                    "CCONT", "BTO", "OBI", "GO"};
@@ -41,7 +41,7 @@ public class Constants {
 
     public static final String REPOSITORY_TAG           = "Repositories";
 
-    public static final String TISSUE_FIELD             = "tissue" ;
+    public static final String TISSUE_FIELD             = "tissue";
 
     public static final String OMICS_TYPE_FIELD         = "omics_type";
 
@@ -79,52 +79,52 @@ public class Constants {
 
     public static final String DATES_FIELD              = "dates";
 
-    public static String SUBMITTER_FIELD                = "submitter";
+    public static final String SUBMITTER_FIELD                = "submitter";
 
-    public static String SUBMITTER_MAIL_FIELD           = "submitter_mail";
+    public static final String SUBMITTER_MAIL_FIELD           = "submitter_mail";
 
-    public static String LAB_HEAD_FIELD                 =  "labhead";
+    public static final String LAB_HEAD_FIELD                 =  "labhead";
 
-    public static String LAB_HEAD_MAIL_FIELD            =  "labhead_mail";
+    public static final String LAB_HEAD_MAIL_FIELD            =  "labhead_mail";
 
-    public static String ENSEMBL                        =   "ENSEMBL";
+    public static final String ENSEMBL                        =   "ENSEMBL";
 
-    public static String UNIPROT                        =   "UNIPROT";
+    public static final String UNIPROT                        =   "UNIPROT";
 
-    public static String CHEBI                          =   "CHEBI";
+    public static final String CHEBI                          =   "CHEBI";
 
-    public static String CITATION_FIELD                 =   "citation_count";
+    public static final String CITATION_FIELD                 =   "citation_count";
 
-    public static String SEARCH_FIELD                   =   "search_count";
+    public static final String SEARCH_FIELD                   =   "search_count";
 
-    public static String BIOMODELS_DATABASE             =   "BioModels Database";
+    public static final String BIOMODELS_DATABASE             =   "BioModels Database";
 
-    public static String PRIDE_DATABASE             =   "Pride";
+    public static final String PRIDE_DATABASE             =   "Pride";
 
-    public static String METABOLIGHTS_DATABASE             =   "MetaboLights";
+    public static final String METABOLIGHTS_DATABASE             =   "MetaboLights";
 
-    public static String METABOLOME_DATABASE             =   "MetabolomeExpress";
+    public static final String METABOLOME_DATABASE             =   "MetabolomeExpress";
 
-    public static String ARRAYEXPRESS_DATABASE             =   "ArrayExpress";
+    public static final String ARRAYEXPRESS_DATABASE             =   "ArrayExpress";
 
-    public static String MASSIVE_DATABASE             =   "Massive";
+    public static final String MASSIVE_DATABASE             =   "Massive";
 
-    public static String JPOST_DATABASE             =   "JPOST Repository";
+    public static final String JPOST_DATABASE             =   "JPOST Repository";
 
-    public static String SECONDARY_ACCESSION =          "additional_accession";
+    public static final String SECONDARY_ACCESSION =          "additional_accession";
 
-    public static String ALL_DOMAIN                 =   "";
+    public static final String ALL_DOMAIN                 =   "";
 
-    public static String SEARCH_DOMAIN              = "search_domains";
+    public static final String SEARCH_DOMAIN              = "search_domains";
 
-    public static final String[] DATASET_SUMMARY        = {Constants.DESCRIPTION_FIELD,
+    public static final String[] DATASET_SUMMARY        = {
+            Constants.DESCRIPTION_FIELD,
             Constants.NAME_FIELD,
-            Constants.SUBMITTER_KEY_FIELD,Constants.CURATOR_KEY_FIELD,
+            Constants.SUBMITTER_KEY_FIELD, Constants.CURATOR_KEY_FIELD,
             Constants.PUB_DATE_FIELD,
             Constants.TAXONOMY_FIELD,
             Constants.OMICS_TYPE_FIELD,
-            Constants. ENSEMBL,
+            Constants.ENSEMBL,
             Constants.UNIPROT,
             Constants.CHEBI};
-
 }

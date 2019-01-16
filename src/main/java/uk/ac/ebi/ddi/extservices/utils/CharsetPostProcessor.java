@@ -13,7 +13,7 @@ import java.util.List;
  */
 public class CharsetPostProcessor extends StringHttpMessageConverter {
 
-    public CharsetPostProcessor(){
+    public CharsetPostProcessor() {
 
         List<MediaType> types = Arrays.asList(
                 new MediaType("text", "html", DEFAULT_CHARSET),
@@ -23,8 +23,5 @@ public class CharsetPostProcessor extends StringHttpMessageConverter {
                 new MediaType("text", "html", Charset.forName("ISO-8859-1"))
         );
         super.setSupportedMediaTypes(types);
-
     }
-
-
 }

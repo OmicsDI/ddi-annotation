@@ -33,9 +33,10 @@ public class NCBITaxResult {
         this.result = result;
     }
 
-    public String[] getNCBITaxonomy(){
-        if(getResult() != null && getResult().getIdList() != null && getResult().getIdList().length == 1)
+    public String[] getNCBITaxonomy() {
+        if (getResult() != null && getResult().getIdList() != null && getResult().getIdList().length == 1) {
             return getResult().getIdList();
+        }
         return null;
     }
 }

@@ -16,7 +16,7 @@ import java.util.Set;
  */
 public class TaxonomyWsClient extends WsClient {
 
-    private static final Logger logger = LoggerFactory.getLogger(TaxonomyWsClient.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(TaxonomyWsClient.class);
 
     /**
      * Default constructor for Ws clients
@@ -27,13 +27,12 @@ public class TaxonomyWsClient extends WsClient {
         super(config);
     }
 
-    public NCBITaxResult getNCBITax(String term){
-
-        if(term != null && term.length() > 0){
+    public NCBITaxResult getNCBITax(String term) {
+        if (term != null && term.length() > 0) {
             String url = String.format("%s://%s/entrez/eutils/esearch.fcgi?db=taxonomy&term=%s&retmode=JSON",
                     config.getProtocol(), config.getHostName(), term);
             //Todo: Needs to be removed in the future, this is for debugging
-            logger.debug(url);
+            LOGGER.debug(url);
 
             return this.restTemplate.getForObject(url, NCBITaxResult.class);
         }
@@ -41,32 +40,30 @@ public class TaxonomyWsClient extends WsClient {
 
     }
 
-    public NCBITaxResult getNCBITax(Set<String> terms){
+    public NCBITaxResult getNCBITax(Set<String> terms) {
 
         String query = "";
-        if(terms != null && terms.size() > 0){
+        if (terms != null && terms.size() > 0) {
             for (String term : terms) {
                 query = query + "+OR+" + term;
             }
-            query = query.replaceFirst("\\+OR\\+","");
+            query = query.replaceFirst("\\+OR\\+", "");
             String url = String.format("%s://%s/entrez/eutils/esearch.fcgi?db=taxonomy&term=%s&retmode=JSON",
                     config.getProtocol(), config.getHostName(), query);
             //Todo: Needs to be removed in the future, this is for debugging
-            logger.debug(url);
+            LOGGER.debug(url);
 
             return this.restTemplate.getForObject(url, NCBITaxResult.class);
         }
         return null;
     }
 
-    public NCBITaxonomyEntrySet getTaxonomyEntryById(String id){
-
-        if(id != null && id.length() > 0){
+    public NCBITaxonomyEntrySet getTaxonomyEntryById(String id) {
+        if (id != null && id.length() > 0) {
             String url = String.format("%s://%s/entrez/eutils/efetch.fcgi?db=taxonomy&id=%s",
                     config.getProtocol(), config.getHostName(), id);
             //Todo: Needs to be removed in the future, this is for debugging
-            logger.debug(url);
-            System.out.println(url);
+            LOGGER.debug(url);
             return this.restTemplate.getForObject(url, NCBITaxonomyEntrySet.class);
         }
         return null;
@@ -77,11 +74,11 @@ public class TaxonomyWsClient extends WsClient {
      * @param entry entry to search
      * @return Parent Entry
      */
-    public NCBITaxonomyEntrySet getParentByEntry(NCBITaxonomyEntry entry){
+    public NCBITaxonomyEntrySet getParentByEntry(NCBITaxonomyEntry entry) {
 
         String url = entry.getParentTaxId();
         //Todo: Needs to be removed in the future, this is for debugging
-        logger.debug(url);
+        LOGGER.debug(url);
 
         return this.restTemplate.getForObject(url, NCBITaxonomyEntrySet.class);
 
@@ -94,23 +91,33 @@ public class TaxonomyWsClient extends WsClient {
      * @return the Taxonomy of the NonRan parent Taxonomy
      */
 
-    public NCBITaxonomyEntrySet getParentForNonRanSpecie(String id){
+    public NCBITaxonomyEntrySet getParentForNonRanSpecie(String id) {
 
         NCBITaxonomyEntrySet entry = getTaxonomyEntryById(id);
-        if((entry != null) && (entry.getTaxSet() != null) && (entry.getTaxSet().length == 1) &&
-                entry.getTaxSet()[0].getRank().equalsIgnoreCase(EBITaxonomyUtils.EbiTaxRank.NO_RANK.getName()))
+        if ((entry != null) && (entry.getTaxSet() != null) && (entry.getTaxSet().length == 1) &&
+                entry.getTaxSet()[0].getRank().equalsIgnoreCase(EBITaxonomyUtils.EbiTaxRank.NO_RANK.getName())) {
             return entry;
-        return getParentSpecieOrGenuesTaxonomy((entry != null ? entry.getTaxSet() : new NCBITaxonomyEntry[0])[0].getParentTaxId());
+        }
+        if (entry != null && entry.getTaxSet() != null && entry.getTaxSet().length > 0) {
+            return getParentSpecieOrGenuesTaxonomy(entry.getTaxSet()[0].getTaxId());
+        }
+        NCBITaxonomyEntry ncbiTaxonomyEntry = new NCBITaxonomyEntry();
+        return getParentSpecieOrGenuesTaxonomy(ncbiTaxonomyEntry.getParentTaxId());
     }
 
 
-    public NCBITaxonomyEntrySet getParentSpecieOrGenuesTaxonomy(String id){
+    public NCBITaxonomyEntrySet getParentSpecieOrGenuesTaxonomy(String id) {
 
         NCBITaxonomyEntrySet parent = getTaxonomyEntryById(id);
-        if((parent != null) && (parent.getTaxSet() != null) && (parent.getTaxSet().length == 1) &&
-                (EBITaxonomyUtils.EbiTaxRank.isSpeciesOrGenues(parent.getTaxSet()[0].getRank())))
+        if ((parent != null) && (parent.getTaxSet() != null) && (parent.getTaxSet().length == 1) &&
+                (EBITaxonomyUtils.EbiTaxRank.isSpeciesOrGenues(parent.getTaxSet()[0].getRank()))) {
             return parent;
-        return getTaxonomyEntryById((parent != null ? parent.getTaxSet() : new NCBITaxonomyEntry[0])[0].getParentTaxId());
+        }
+        if (parent != null && parent.getTaxSet() != null && parent.getTaxSet().length > 0) {
+            return getTaxonomyEntryById(parent.getTaxSet()[0].getTaxId());
+        }
+        NCBITaxonomyEntry ncbiTaxonomyEntry = new NCBITaxonomyEntry();
+        return getParentSpecieOrGenuesTaxonomy(ncbiTaxonomyEntry.getParentTaxId());
     }
 
 

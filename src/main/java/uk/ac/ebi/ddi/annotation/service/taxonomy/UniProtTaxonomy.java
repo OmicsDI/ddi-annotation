@@ -1,7 +1,10 @@
 package uk.ac.ebi.ddi.annotation.service.taxonomy;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import uk.ac.ebi.ddi.annotation.utils.DatasetUtils;
 import uk.ac.ebi.ddi.extservices.ebiprotein.config.TaxEBIPRIDEWsConfigProd;
+import uk.ac.ebi.ddi.extservices.ebiprotein.model.EBITaxonomyEntry;
 import uk.ac.ebi.ddi.extservices.ebiprotein.taxonomy.TaxonomyEBIWsClient;
 import uk.ac.ebi.ddi.service.db.model.dataset.Dataset;
 import uk.ac.ebi.ddi.xml.validator.utils.Field;
@@ -30,6 +33,8 @@ public class UniProtTaxonomy {
 
     private static UniProtTaxonomy instance;
 
+    private static final Logger LOGGER = LoggerFactory.getLogger(UniProtTaxonomy.class);
+
     TaxonomyEBIWsClient taxonomyClient = new TaxonomyEBIWsClient(new TaxEBIPRIDEWsConfigProd());
 
     private static Set<String> taxonomySpecies = new HashSet<>();
@@ -37,41 +42,48 @@ public class UniProtTaxonomy {
     /**
      * Private Constructor
      */
-    private UniProtTaxonomy(){}
+    private UniProtTaxonomy() {
+    }
 
     /**
      * Public instance to be retrieved
      * @return Public-Unique instance
      */
-    public static UniProtTaxonomy getInstance(){
-        if(instance == null){
+    public static UniProtTaxonomy getInstance() {
+        if (instance == null) {
             instance = new UniProtTaxonomy();
         }
         return instance;
     }
 
-    public String getParentForNonRanSpecie(String id){
-        return (taxonomyClient.getParentForNonRanSpecie(id) != null)?taxonomyClient.getParentForNonRanSpecie(id).getTaxonomyId(): id;
+    public String getParentForNonRanSpecie(String id) {
+        EBITaxonomyEntry parent = taxonomyClient.getParentForNonRanSpecie(id);
+        if (parent != null) {
+            return parent.getTaxonomyId();
+        }
+        return id;
     }
 
-    public Dataset annotateParentForNonRanSpecies(Dataset dataset){
-
-        if (dataset.getCrossReferences() != null && dataset.getCrossReferences().containsKey(Field.TAXONOMY.getName())){
+    public Dataset annotateParentForNonRanSpecies(Dataset dataset) {
+        if (dataset.getCrossReferences() != null
+                && dataset.getCrossReferences().containsKey(Field.TAXONOMY.getName())) {
             Set<String> taxonomies = dataset.getCrossReferences().get(Field.TAXONOMY.getName());
             Set<String> newTaxonomies = new HashSet<>();
 
-            for (String taxId : taxonomies){
-                if(!taxonomySpecies.contains(taxId)){
+            for (String taxId : taxonomies) {
+                if (!taxonomySpecies.contains(taxId)) {
                     String parentID = getParentForNonRanSpecie(taxId);
-                    if(!taxId.equalsIgnoreCase(parentID))
+                    if (!taxId.equalsIgnoreCase(parentID)) {
                         newTaxonomies.add(parentID);
-                    else
+                    } else {
                         taxonomySpecies.add(taxId);
+                    }
                 }
             }
             taxonomies.addAll(newTaxonomies);
-            if(newTaxonomies.size() >0 )
-                System.out.println(dataset.getAccession() + " " + newTaxonomies.size());
+            if (newTaxonomies.size() > 0) {
+                LOGGER.debug("{}: {}", dataset.getAccession(), newTaxonomies.size());
+            }
             dataset = DatasetUtils.addCrossReferenceValues(dataset, Field.TAXONOMY.getName(), taxonomies);
         }
 

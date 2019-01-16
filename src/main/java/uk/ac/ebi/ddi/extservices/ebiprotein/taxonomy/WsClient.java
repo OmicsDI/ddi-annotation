@@ -21,7 +21,7 @@ public class WsClient {
      * Default constructor for Archive clients
      * @param config
      */
-    public WsClient(TaxEBIPRIDEWsConfigProd config){
+    public WsClient(TaxEBIPRIDEWsConfigProd config) {
         this.config = config;
         this.restTemplate = new RestTemplate(clientHttpRequestFactory());
     }

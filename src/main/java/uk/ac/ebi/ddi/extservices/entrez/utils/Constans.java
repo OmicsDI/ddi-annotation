@@ -5,7 +5,7 @@ package uk.ac.ebi.ddi.extservices.entrez.utils;
  */
 public class Constans {
 
-    public static String OR  = "OR";
+    public static final String OR  = "OR";
 
-    public static String AND = "AND";
+    public static final String AND = "AND";
 }

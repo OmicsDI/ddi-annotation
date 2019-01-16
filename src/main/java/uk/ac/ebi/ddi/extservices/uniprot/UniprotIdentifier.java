@@ -19,21 +19,21 @@ import java.util.List;
 public class UniprotIdentifier {
 
     private static final String UNIPROT_SERVER = "http://www.uniprot.org/";
-    private static final Logger logger = LoggerFactory.getLogger(UniprotIdentifier.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(UniprotIdentifier.class);
 
-    private static List<String> run(String tool, ParameterNameValue[] params) throws Exception{
+    private static List<String> run(String tool, ParameterNameValue[] params) throws Exception {
         List<String> newIdentifiers = new ArrayList<>();
-
         StringBuilder locationBuilder = new StringBuilder(UNIPROT_SERVER + tool + "/?");
-        for (int i = 0; i < params.length; i++){
-            if (i > 0)
+        for (int i = 0; i < params.length; i++) {
+            if (i > 0) {
                 locationBuilder.append('&');
+            }
             locationBuilder.append(params[i].name).append('=').append(params[i].value);
         }
 
         String location = locationBuilder.toString();
         URL url = new URL(location);
-        logger.debug("Submitting...");
+        LOGGER.debug("Submitting...");
 
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
         HttpURLConnection.setFollowRedirects(true);
@@ -43,14 +43,16 @@ public class UniprotIdentifier {
         conn.connect();
 
         int status = conn.getResponseCode();
-        while (true){
+        while (true) {
             int wait = 0;
             String header = conn.getHeaderField("Retry-After");
-            if (header != null)
+            if (header != null) {
                 wait = Integer.valueOf(header);
-            if (wait == 0)
+            }
+            if (wait == 0) {
                 break;
-            logger.debug("Waiting (" + wait + ")...");
+            }
+            LOGGER.debug("Waiting (" + wait + ")...");
             conn.disconnect();
             Thread.sleep(wait * 1000);
             conn = (HttpURLConnection) new URL(location).openConnection();
@@ -58,38 +60,41 @@ public class UniprotIdentifier {
             conn.connect();
             status = conn.getResponseCode();
         }
-        if (status == HttpURLConnection.HTTP_OK){
-            logger.info("Got a OK reply");
+        if (status == HttpURLConnection.HTTP_OK) {
+            LOGGER.info("Got a OK reply");
             InputStream reader = conn.getInputStream();
             URLConnection.guessContentTypeFromStream(reader);
             StringBuilder builder = new StringBuilder();
             int a;
-            while ((a = reader.read()) != -1)
+            while ((a = reader.read()) != -1) {
                 builder.append((char) a);
+            }
             System.out.println(builder.toString());
-            if(!builder.toString().isEmpty()){
+            if (!builder.toString().isEmpty()) {
                 int count = 0;
-                for(String line: builder.toString().split("\n")){
-                   if(line != null && !line.isEmpty()){
+                for (String line: builder.toString().split("\n")) {
+                   if (line != null && !line.isEmpty()) {
                        String[] value = line.split("\t");
-                       if(value.length > 1 && count != 0)
+                       if (value.length > 1 && count != 0) {
                            newIdentifiers.add(value[1].trim());
+                       }
                    }
                     count++;
                 }
             }
-        }else
-            logger.debug("Failed, got " + conn.getResponseMessage() + " for " + location);
+        } else {
+            LOGGER.debug("Failed, got " + conn.getResponseMessage() + " for " + location);
+        }
         conn.disconnect();
         return newIdentifiers;
     }
 
-    public static List<String> retrieve (List<String> identifiers, String fromAccession, String toAccession){
-        String identiferString = "";
-        if(identifiers != null && identifiers.size() > 0){
-            for(String id: identifiers)
-                identiferString = id + " " + identiferString;
-            identiferString.trim();
+    public static List<String> retrieve(List<String> identifiers, String fromAccession, String toAccession) {
+        StringBuilder identiferString = new StringBuilder();
+        if (identifiers != null && identifiers.size() > 0) {
+            for (String id: identifiers) {
+                identiferString.insert(0, id + " ");
+            }
         }
         List<String> newIdentifiers = null;
         try {
@@ -97,10 +102,10 @@ public class UniprotIdentifier {
                     new ParameterNameValue("from", fromAccession),
                     new ParameterNameValue("to", toAccession),
                     new ParameterNameValue("format", "tab"),
-                    new ParameterNameValue("query", identiferString),
+                    new ParameterNameValue("query", identiferString.toString().trim()),
             });
         } catch (Exception e) {
-            logger.debug(e.getMessage());
+            LOGGER.error("Exception occurred, query: {}, ", identiferString.toString(), e);
         }
         return newIdentifiers;
     }
@@ -110,9 +115,7 @@ public class UniprotIdentifier {
         private final String name;
         private final String value;
 
-        public ParameterNameValue(String name, String value)
-                throws UnsupportedEncodingException
-        {
+        ParameterNameValue(String name, String value) throws UnsupportedEncodingException {
             this.name = URLEncoder.encode(name, "UTF-8");
             this.value = URLEncoder.encode(value, "UTF-8");
         }

@@ -35,43 +35,49 @@ public class Utils {
         return ch > 128 || " %$&+,/:;=?@<>#%".indexOf(ch) >= 0;
     }
 
-    public static String removeRedundantSynonyms(String synonyms){
-        if(synonyms != null){
+    public static String removeRedundantSynonyms(String synonyms) {
+        if (synonyms != null) {
             Set<String> resultStringSet = new HashSet<>();
-            String resultSynonym = "";
+            StringBuilder resultSynonym = new StringBuilder();
             String[] synonymsArr = synonyms.split(";");
-            for(String synonym: synonymsArr){
-                if(synonym != null && !synonym.isEmpty()){
+            for (String synonym: synonymsArr) {
+                if (synonym != null && !synonym.isEmpty()) {
                     String[] redudantSynonyms = synonym.split(",");
-                    for(String redundantSynom: redudantSynonyms)
+                    for (String redundantSynom: redudantSynonyms) {
                         resultStringSet.add(redundantSynom.trim());
+                    }
                 }
             }
-            for(String synonym: resultStringSet)
-                resultSynonym += synonym + ", ";
-            if(!resultSynonym.isEmpty() && resultSynonym.length() > 2)
-                resultSynonym = resultSynonym.substring(0, resultSynonym.length()-2);
-            return resultSynonym;
+            for (String synonym: resultStringSet) {
+                resultSynonym.append(synonym).append(", ");
+            }
+            if ((resultSynonym.length() > 0) && resultSynonym.length() > 2) {
+                resultSynonym = new StringBuilder(resultSynonym.substring(0, resultSynonym.length() - 2));
+            }
+            return resultSynonym.toString();
 
         }
         return null;
     }
 
-    public static Dataset replaceTextCase(Dataset existingDataset){
-        if(existingDataset.getAdditional().get(Field.DISEASE_FIELD.getName()) != null){
+    public static Dataset replaceTextCase(Dataset existingDataset) {
+        if (existingDataset.getAdditional().get(Field.DISEASE_FIELD.getName()) != null) {
             Set<String> diseases = existingDataset.getAdditional().get(Field.DISEASE_FIELD.getName());
-            Set<String> updatedDisease =  diseases.parallelStream().map(x -> Utils.toTitleCase(x.toLowerCase())).collect(Collectors.toSet());
-            existingDataset.addAdditional(Field.DISEASE_FIELD.getName(),updatedDisease);
+            Set<String> updatedDisease =  diseases.parallelStream()
+                    .map(x -> Utils.toTitleCase(x.toLowerCase())).collect(Collectors.toSet());
+            existingDataset.addAdditional(Field.DISEASE_FIELD.getName(), updatedDisease);
         }
-        if(existingDataset.getAdditional().get(Field.SPECIE_FIELD.getName()) != null){
+        if (existingDataset.getAdditional().get(Field.SPECIE_FIELD.getName()) != null) {
             Set<String> diseases = existingDataset.getAdditional().get(Field.SPECIE_FIELD.getName());
-            Set<String> updatedSpecies =  diseases.parallelStream().map(x -> Utils.toTitleCase(x.toLowerCase())).collect(Collectors.toSet());
-            existingDataset.addAdditional(Field.SPECIE_FIELD.getName(),updatedSpecies);
+            Set<String> updatedSpecies =  diseases.parallelStream()
+                    .map(x -> Utils.toTitleCase(x.toLowerCase())).collect(Collectors.toSet());
+            existingDataset.addAdditional(Field.SPECIE_FIELD.getName(), updatedSpecies);
         }
-        if(existingDataset.getAdditional().get(Field.TISSUE_FIELD.getName()) != null){
+        if (existingDataset.getAdditional().get(Field.TISSUE_FIELD.getName()) != null) {
             Set<String> diseases = existingDataset.getAdditional().get(Field.TISSUE_FIELD.getName());
-            Set<String> updatedTissue =  diseases.parallelStream().map(x -> Utils.toTitleCase(x.toLowerCase())).collect(Collectors.toSet());
-            existingDataset.addAdditional(Field.TISSUE_FIELD.getName(),updatedTissue);
+            Set<String> updatedTissue = diseases.parallelStream()
+                    .map(x -> Utils.toTitleCase(x.toLowerCase())).collect(Collectors.toSet());
+            existingDataset.addAdditional(Field.TISSUE_FIELD.getName(), updatedTissue);
         }
         return existingDataset;
 
@@ -80,14 +86,10 @@ public class Utils {
     public static String toTitleCase(String input) {
         StringBuilder titleCase = new StringBuilder();
         boolean nextTitleCase = true;
-        for (char c : input.toCharArray())
-        {
-            if (Character.isSpaceChar(c))
-            {
+        for (char c : input.toCharArray()) {
+            if (Character.isSpaceChar(c)) {
                 nextTitleCase = true;
-            }
-            else if (nextTitleCase)
-            {
+            } else if (nextTitleCase) {
                 c = Character.toTitleCase(c);
                 nextTitleCase = false;
             }

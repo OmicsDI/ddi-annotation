@@ -13,7 +13,6 @@ import uk.ac.ebi.ddi.xml.validator.utils.Field;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
 import java.util.*;
 
 
@@ -25,7 +24,7 @@ import java.util.*;
  */
 public class DDIXmlProcessService {
 
-    private static final Logger logger = LoggerFactory.getLogger(DDIXmlProcessService.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(DDIXmlProcessService.class);
 
     @Autowired
     DDIAnnotationService annotService = new DDIAnnotationService();
@@ -56,7 +55,7 @@ public class DDIXmlProcessService {
             }
             String database = reader.getName();
             for (int i = 0; i < reader.getEntryIds().size(); i++) {
-                logger.debug("dealing the" + index + "entry in " + file.getName() + ";");
+                LOGGER.debug("dealing the" + index + "entry in " + file.getName() + ";");
                 index++;
                 Entry entry = null;
                 try {
@@ -72,7 +71,7 @@ public class DDIXmlProcessService {
             }
             return true;
         } else {
-            logger.error("The file is not an XML File");
+            LOGGER.error("The file is not an XML File");
             return false;
         }
     }
