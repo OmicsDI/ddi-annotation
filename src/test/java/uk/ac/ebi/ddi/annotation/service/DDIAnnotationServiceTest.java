@@ -1,6 +1,5 @@
 package uk.ac.ebi.ddi.annotation.service;
 
-import org.json.JSONException;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,15 +9,11 @@ import uk.ac.ebi.ddi.annotation.model.DatasetTobeEnriched;
 import uk.ac.ebi.ddi.annotation.model.EnrichedDataset;
 import uk.ac.ebi.ddi.annotation.service.synonyms.DDIAnnotationService;
 import uk.ac.ebi.ddi.annotation.utils.DataType;
-import uk.ac.ebi.ddi.xml.validator.exception.DDIException;
 import uk.ac.ebi.ddi.xml.validator.parser.OmicsXMLFile;
 import uk.ac.ebi.ddi.xml.validator.parser.model.Entry;
 import uk.ac.ebi.ddi.xml.validator.utils.Field;
 
 import java.io.File;
-import java.io.IOException;
-import java.io.UnsupportedEncodingException;
-import java.net.URISyntaxException;
 import java.net.URL;
 
 
@@ -51,7 +46,7 @@ public class DDIAnnotationServiceTest {
 //    }
 
     @Test
-    public void enrichmentTest() throws IOException, JSONException, DDIException {
+    public void enrichmentTest() throws Exception {
 
         DatasetTobeEnriched datasetTobeEnriched1 = new DatasetTobeEnriched("PXD002287", "PRIDE", DataType.PROTEOMICS_DATA.getName());
         datasetTobeEnriched1.addAttribute(Field.NAME.getName(), "Proteome-wide analysis of lysine acetylation suggests its broad regulatory scope in Saccharomyces cerevisiae.");
@@ -72,7 +67,7 @@ public class DDIAnnotationServiceTest {
     }
 
     @Test
-    public void proteomicFilsAnnotationTest() throws URISyntaxException, DDIException, IOException, JSONException {
+    public void proteomicFilsAnnotationTest() throws Exception {
         URL urlProteomics = DDIXmlProcessServiceTest.class.getClassLoader().getResource("pride-files");
 
         assert urlProteomics != null;

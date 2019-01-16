@@ -1,6 +1,5 @@
 package uk.ac.ebi.ddi.annotation.service.synonyms;
 
-import org.json.JSONException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,12 +7,12 @@ import uk.ac.ebi.ddi.annotation.model.DatasetTobeEnriched;
 import uk.ac.ebi.ddi.annotation.model.EnrichedDataset;
 import uk.ac.ebi.ddi.xml.validator.exception.DDIException;
 import uk.ac.ebi.ddi.xml.validator.parser.OmicsXMLFile;
-import uk.ac.ebi.ddi.xml.validator.parser.model.*;
+import uk.ac.ebi.ddi.xml.validator.parser.model.Entry;
+import uk.ac.ebi.ddi.xml.validator.parser.model.Reference;
 import uk.ac.ebi.ddi.xml.validator.utils.Field;
 
 import java.io.File;
-import java.io.IOException;
-import java.util.*;
+import java.util.List;
 
 
 /**
@@ -104,8 +103,8 @@ public class DDIXmlProcessService {
 
         try {
             return annotService.enrichment(datasetTobeEnriched, false);
-        } catch (JSONException | DDIException | IOException e) {
-            e.printStackTrace();
+        } catch (Exception e) {
+            LOGGER.error("Exception occurred when enriching dataset {}, ", datasetTobeEnriched.getAccession(), e);
         }
         return null;
     }

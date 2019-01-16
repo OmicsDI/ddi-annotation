@@ -2,20 +2,25 @@ package uk.ac.ebi.ddi.extservices.annotator.client;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.http.HttpEntity;
 import org.springframework.retry.backoff.ExponentialBackOffPolicy;
 import org.springframework.retry.policy.SimpleRetryPolicy;
 import org.springframework.retry.support.RetryTemplate;
+import org.springframework.util.LinkedMultiValueMap;
+import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestClientException;
+import org.springframework.web.util.UriComponentsBuilder;
 import uk.ac.ebi.ddi.annotation.utils.Constants;
 import uk.ac.ebi.ddi.extservices.annotator.config.BioOntologyWsConfigProd;
 import uk.ac.ebi.ddi.extservices.annotator.model.AnnotatedOntologyQuery;
 import uk.ac.ebi.ddi.extservices.annotator.model.RecomendedOntologyQuery;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import uk.ac.ebi.ddi.extservices.annotator.model.SynonymQuery;
 
 import java.io.*;
 import java.net.HttpURLConnection;
+import java.net.URI;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.util.Collections;
@@ -121,26 +126,30 @@ public class BioOntologyClient extends WsClient {
         LOGGER.debug(url);
         System.out.println(url);
 
-        return this.restTemplate.postForObject(url, null, RecomendedOntologyQuery[].class);
+        return restTemplate.postForObject(url, null, RecomendedOntologyQuery[].class);
 
     }
 
-    public JsonNode getAnnotatedSynonyms(String query) throws IOException {
-
-        String urlParameters;
-        JsonNode annotations;
-//        String textToAnnotate = URLEncoder.encode(query, "ISO-8859-1");
-        String ontologies = String.format("ontologies=%s&", getStringfromArray(Constants.OBO_ONTOLOGIES));
-
-        // Annotations using POST (necessary for long text)
-        urlParameters = ontologies
-                + "&longest_only=true&whole_word_only=true&include=prefLabel,synonym,definition&max_level=3&text="
-                + query;
-        annotations = jsonToNode(post(REST_URL + "/annotator", urlParameters, Constants.OBO_KEY));
-        //printAnnotations(annotations);
-
-        return annotations;
-
+    public JsonNode getAnnotatedSynonyms(String query) throws Exception {
+        UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(REST_URL)
+                .path("/annotator")
+                .queryParam("ontologies", getStringfromArray(Constants.OBO_ONTOLOGIES))
+                .queryParam("longest_only", true)
+                .queryParam("whole_word_only", true)
+                .queryParam("include", "prefLabel,synonym,definition")
+                .queryParam("max_level", 3)
+                .queryParam("text", query);
+        MultiValueMap<String, String> headers = new LinkedMultiValueMap<>();
+        headers.add("Authorization", "apikey token=" + Constants.OBO_KEY);
+        headers.add("Content-Type", "application/json");
+        HttpEntity<?> httpEntity = new HttpEntity<>(null, headers);
+        URI uri = builder.build().encode().toUri();
+        try {
+            return retryTemplate.execute(ctx -> restTemplate.postForObject(uri, httpEntity, JsonNode.class));
+        } catch (Exception e) {
+            LOGGER.error("Exception occurred when trying to fetch API {}, ", uri, e);
+            throw e;
+        }
     }
 
     public AnnotatedOntologyQuery[] getAnnotatedTerms(String query, String[] ontologies) throws RestClientException {
@@ -151,7 +160,7 @@ public class BioOntologyClient extends WsClient {
                 config.getProtocol(), config.getHostName(), ontology, Constants.OBO_KEY, query);
         LOGGER.debug(url);
 
-        return this.restTemplate.getForObject(url, AnnotatedOntologyQuery[].class);
+        return restTemplate.getForObject(url, AnnotatedOntologyQuery[].class);
 
     }
 
@@ -179,6 +188,7 @@ public class BioOntologyClient extends WsClient {
         return MAPPER.readTree(json);
     }
 
+    @Deprecated
     private static String get(String urlToGet, String API_KEY) throws IOException {
         try {
             return template.execute(context -> {
@@ -205,6 +215,7 @@ public class BioOntologyClient extends WsClient {
         }
     }
 
+    @Deprecated
     private static String post(String urlToGet, String urlParameters, String API_KEY) throws IOException {
         try {
             return template.execute(context -> {
