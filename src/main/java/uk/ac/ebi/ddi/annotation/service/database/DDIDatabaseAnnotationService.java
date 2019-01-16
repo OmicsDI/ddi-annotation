@@ -32,20 +32,22 @@ public class DDIDatabaseAnnotationService {
      * @param releaseTag
      * @param omicsType
      */
-    public void updateDatabase(String name, String description, String releaseDate, String releaseTag, List<String> omicsType, String url){
+    public void updateDatabase(String name, String description, String releaseDate, String releaseTag,
+                               List<String> omicsType, String url) {
         Database database = new Database(name, description, releaseDate, releaseTag, omicsType, url);
         Database existingDatabase = databaseService.read(name);
-        if(existingDatabase != null)
+        if (existingDatabase != null) {
             databaseService.update(existingDatabase.get_id(), database);
-        else
+        } else {
             databaseService.save(database);
+        }
     }
 
-    public Database getDatabaseInfo( String name){
+    public Database getDatabaseInfo(String name) {
         return databaseService.read(name);
     }
 
-    public List<Database> getDatabases(){
+    public List<Database> getDatabases() {
         return databaseService.readAll();
     }
 

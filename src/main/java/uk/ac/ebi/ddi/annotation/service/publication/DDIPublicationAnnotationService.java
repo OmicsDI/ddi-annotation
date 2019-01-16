@@ -33,14 +33,15 @@ public class DDIPublicationAnnotationService {
     /**
      * Private Constructor
      */
-    private DDIPublicationAnnotationService(){}
+    private DDIPublicationAnnotationService() {
+    }
 
     /**
      * Public instance to be retrieved
      * @return Public-Unique instance
      */
-    public static DDIPublicationAnnotationService getInstance(){
-        if(instance == null){
+    public static DDIPublicationAnnotationService getInstance() {
+        if (instance == null) {
             instance = new DDIPublicationAnnotationService();
         }
         return instance;
@@ -54,21 +55,23 @@ public class DDIPublicationAnnotationService {
      * @param textList The list of free text
      * @return A list of DOI ids
      */
-    public List<String> getDOIListFromText(List<String> textList){
+    public List<String> getDOIListFromText(List<String> textList) {
 
         Set<String> doiSet = new HashSet<>();
 
-        String fullText = "";
+        StringBuilder fullText = new StringBuilder();
 
-        for(String text: textList)
-            fullText = fullText + text + " ";
+        for (String text: textList) {
+            fullText.append(text).append(" ");
+        }
 
-        if(DOIUtils.containsDOI(fullText))
-            doiSet.addAll(DOIUtils.extractDOIs(fullText));
+        if (DOIUtils.containsDOI(fullText.toString())) {
+            doiSet.addAll(DOIUtils.extractDOIs(fullText.toString()));
+        }
 
-        if(doiSet.size() > 0){
-            Set results = new HashSet();
-            for(String doID: doiSet){
+        if (doiSet.size() > 0) {
+            Set<String> results = new HashSet<>();
+            for (String doID: doiSet) {
                 doID = DOIUtils.cleanDOI(doID);
                 doID = DOIUtils.cleanDOITrail(doID);
                 results.add(doID);
@@ -85,14 +88,15 @@ public class DDIPublicationAnnotationService {
      * @param doiList
      * @return
      */
-    public List<String> getPubMedIDsFromDOIList(List<String> doiList) throws RestClientException{
+    public List<String> getPubMedIDsFromDOIList(List<String> doiList) throws RestClientException {
         List<String> pubmedIds = new ArrayList<>();
-        if(doiList != null && doiList.size() > 0){
+        if (doiList != null && doiList.size() > 0) {
             PubmedJSON resultJSON = clientPMC.getPubmedIds(doiList);
-            if(resultJSON != null && resultJSON.getRecords() != null && resultJSON.getRecords().length > 0){
-                for(Record record: resultJSON.getRecords()){
-                    if(record != null && record.getPmid() != null && !record.getPmid().isEmpty())
+            if (resultJSON != null && resultJSON.getRecords() != null && resultJSON.getRecords().length > 0) {
+                for (Record record: resultJSON.getRecords()) {
+                    if (record != null && record.getPmid() != null && !record.getPmid().isEmpty()) {
                         pubmedIds.add(record.getPmid());
+                    }
                 }
             }
         }
@@ -101,25 +105,24 @@ public class DDIPublicationAnnotationService {
     }
 
     /**
-     * This function retrieve from the web service the publication information to be index in the database, also we will generate all the information
+     * This function retrieve from the web service the publication information to be index in the database,
+     * also we will generate all the information
      * about the publication reference from the dataset.
      * @param idList
      * @return
      */
-    public List<Map<String,String[]>> getAbstractPublication(List<String> idList) throws RestClientException{
-        String[] fields         = { "description","name", "author" };
+    public List<Map<String, String[]>> getAbstractPublication(List<String> idList) throws RestClientException {
+        String[] fields = {"description", "name", "author"};
         List<Map<String, String[]>> publications = new ArrayList<>();
         Set<String> finalIds = new HashSet<>(idList);
         QueryResult pride = publicationWsClient.getPublications(fields, finalIds);
-        if(pride != null && pride.getEntries() != null && pride.getEntries().length > 0){
-            for(Entry entry: pride.getEntries()){
-                if(entry.getFields() != null){
+        if (pride != null && pride.getEntries() != null && pride.getEntries().length > 0) {
+            for (Entry entry: pride.getEntries()) {
+                if (entry.getFields() != null) {
                     publications.add(entry.getFields());
                 }
             }
         }
         return publications;
     }
-
-
 }

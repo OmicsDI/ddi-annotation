@@ -19,8 +19,7 @@ package uk.ac.ebi.ddi.extservices.ebiprotein.utils;
  */
 public class EBITaxonomyUtils {
 
-    public enum EbiTaxRank{
-
+    public enum EbiTaxRank {
         SPECIES("species"),
         GENUES("genues"),
         NO_RANK("no rank");
@@ -35,7 +34,7 @@ public class EBITaxonomyUtils {
             return name;
         }
 
-        public static boolean isSpeciesOrGenues(String term){
+        public static boolean isSpeciesOrGenues(String term) {
             return term.equalsIgnoreCase(SPECIES.getName()) || term.equalsIgnoreCase(GENUES.getName());
         }
     }

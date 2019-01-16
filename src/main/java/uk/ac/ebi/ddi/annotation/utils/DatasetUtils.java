@@ -2,10 +2,10 @@ package uk.ac.ebi.ddi.annotation.utils;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import uk.ac.ebi.ddi.annotation.service.crossreferences.DDIDatasetSimilarityService;
 import uk.ac.ebi.ddi.service.db.model.dataset.Dataset;
 import uk.ac.ebi.ddi.service.db.utils.DatasetCategory;
-import uk.ac.ebi.ddi.xml.validator.parser.model.*;
+import uk.ac.ebi.ddi.xml.validator.parser.model.Date;
+import uk.ac.ebi.ddi.xml.validator.parser.model.Entry;
 import uk.ac.ebi.ddi.xml.validator.utils.Field;
 
 import java.util.*;
@@ -26,16 +26,18 @@ import java.util.stream.Collectors;
  */
 public class DatasetUtils {
 
-    private static final Logger logger = LoggerFactory.getLogger(DatasetUtils.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(DatasetUtils.class);
 
     public static Dataset addCrossReferenceValue(Dataset dataset, String key, String value) {
         Map<String, Set<String>> fields = dataset.getCrossReferences();
-        if(fields == null)
+        if (fields == null) {
             fields = new HashMap<>();
-        if(key != null && value != null){
+        }
+        if (key != null && value != null) {
             Set<String> values = new HashSet<>();
-            if(fields.containsKey(key))
+            if (fields.containsKey(key)) {
                 values = fields.get(key);
+            }
             values.add(value);
             fields.put(key, values);
             dataset.setCrossReferences(fields);
@@ -44,21 +46,24 @@ public class DatasetUtils {
     }
 
     public static Set<String> getCrossReferenceFieldValue(Dataset dataset, String nameKey) {
-        if(dataset.getCrossReferences() != null && !dataset.getCrossReferences().isEmpty()){
-            if(dataset.getCrossReferences().containsKey(nameKey))
+        if (dataset.getCrossReferences() != null && !dataset.getCrossReferences().isEmpty()) {
+            if (dataset.getCrossReferences().containsKey(nameKey)) {
                 return dataset.getCrossReferences().get(nameKey);
+            }
         }
-        return Collections.EMPTY_SET;
+        return Collections.emptySet();
     }
 
     public static Dataset addAdditionalField(Dataset dataset, String key, String value) {
         Map<String, Set<String>> additional = dataset.getAdditional();
-        if(additional == null)
+        if (additional == null) {
             additional = new HashMap<>();
-        if(key != null && value != null){
+        }
+        if (key != null && value != null) {
             Set<String> values = new HashSet<>();
-            if(additional.containsKey(key))
+            if (additional.containsKey(key)) {
                 values = additional.get(key);
+            }
             values.add(value);
             additional.put(key, values);
             dataset.setAdditional(additional);
@@ -68,9 +73,10 @@ public class DatasetUtils {
 
     public static Dataset addAdditionalFieldSingleValue(Dataset dataset, String key, String value) {
         Map<String, Set<String>> additional = dataset.getAdditional();
-        if(additional == null)
+        if (additional == null) {
             additional = new HashMap<>();
-        if(key != null && value != null && !value.isEmpty()){
+        }
+        if (key != null && value != null && !value.isEmpty()) {
             Set<String> values = new HashSet<>();
             values.add(value);
             additional.put(key, values);
@@ -78,44 +84,54 @@ public class DatasetUtils {
         }
         return dataset;
     }
+
     public static String getFirstAdditionalFieldValue(Dataset dataset, String key) {
-        if(dataset.getAdditional() != null && !dataset.getAdditional().isEmpty())
-            if(dataset.getAdditional().containsKey(key))
+        if (dataset.getAdditional() != null && !dataset.getAdditional().isEmpty()) {
+            if (dataset.getAdditional().containsKey(key)) {
                 return new ArrayList<>(dataset.getAdditional().get(key)).get(0);
+            }
+        }
         return null;
 
     }
 
     @Deprecated
-    public static Dataset transformEntryDataset(Entry dataset){
+    public static Dataset transformEntryDataset(Entry dataset) {
 
-        Map<String, Set<String>> dates= new HashMap<>();;
-        Map<String, Set<String>> crossReferences= new HashMap<>();;
+        Map<String, Set<String>> dates = new HashMap<>();
+        Map<String, Set<String>> crossReferences = new HashMap<>();
         Map<String, Set<String>> additionals = new HashMap<>();
-        if(dataset.getName() == null)
-        {
-            logger.error("exception occured in transformEntryDataset entry with id name value is not there" + dataset.getId());
+
+        if (dataset.getName() == null) {
+            LOGGER.error("Exception occurred, entry with id name value is not there, {}", dataset.getAcc());
         }
         try {
-            if(dataset.getDates() != null) {
-                dates = dataset.getDates().getDate().parallelStream().collect(Collectors.groupingBy(uk.ac.ebi.ddi.xml.validator.parser.model.Date::getType, Collectors.mapping(uk.ac.ebi.ddi.xml.validator.parser.model.Date::getValue, Collectors.toSet())));
+            if (dataset.getDates() != null) {
+                dates = dataset.getDates().getDate().parallelStream()
+                        .collect(Collectors.groupingBy(
+                                Date::getType,
+                                Collectors.mapping(Date::getValue, Collectors.toSet())));
             }
             if (dataset.getCrossReferences() != null && dataset.getCrossReferences().getRef() != null) {
                 crossReferences = dataset.getCrossReferences().getRef()
                         .stream().parallel()
-                        .collect(Collectors.groupingBy(x -> x.getDbname().trim(), Collectors.mapping(x -> x.getDbkey().trim(), Collectors.toSet())));
+                        .collect(Collectors.groupingBy(
+                                x -> x.getDbname().trim(),
+                                Collectors.mapping(x -> x.getDbkey().trim(), Collectors.toSet())));
             }
-            if(dataset.getAdditionalFields() != null) {
+            if (dataset.getAdditionalFields() != null) {
                 additionals = dataset.getAdditionalFields().getField()
                         .stream().parallel()
-                        .collect(Collectors.groupingBy(x -> x.getName().trim(), Collectors.mapping(x -> x.getValue().trim(), Collectors.toSet())));
+                        .collect(Collectors.groupingBy(
+                                x -> x.getName().trim(),
+                                Collectors.mapping(x -> x.getValue().trim(), Collectors.toSet())));
             }
+        } catch (Exception ex) {
+            LOGGER.error("Exception occured, acc: {}", dataset.getAcc());
         }
-        catch(Exception ex)
-        {
-            logger.error("exception occured in transformEntryDataset entry with id " + dataset.getId());
-        }
-        return new Dataset(dataset.getId(), dataset.getRepository(), dataset.getName() != null ? dataset.getName().getValue():"", dataset.getDescription(),dates, additionals, crossReferences, DatasetCategory.INSERTED);
+        return new Dataset(dataset.getId(), dataset.getRepository(),
+                dataset.getName() != null ? dataset.getName().getValue() : "",
+                dataset.getDescription(), dates, additionals, crossReferences, DatasetCategory.INSERTED);
 
     }
 
@@ -126,78 +142,87 @@ public class DatasetUtils {
      * @param databaseName The database Name
      * @return Dataset from the dtabase.
      */
-    public static Dataset transformEntryDataset(Entry dataset, String databaseName){
+    public static Dataset transformEntryDataset(Entry dataset, String databaseName) {
 
-        Map<String, Set<String>> dates= new HashMap<>();;
-        Map<String, Set<String>> crossReferences= new HashMap<>();;
+        Map<String, Set<String>> dates = new HashMap<>();
+        Map<String, Set<String>> crossReferences = new HashMap<>();
         Map<String, Set<String>> additionals = new HashMap<>();
         try {
-            if(dataset.getName() == null)
-            {
-                logger.error("exception occured in transformEntryDataset entry with id name value is not there" + dataset.getId());
+            if (dataset.getName() == null) {
+                LOGGER.error("Exception occurred, entry with id name value is not there, acc: {}", dataset.getAcc());
             }
-            if(dataset.getDates() != null) {
-                dates = dataset.getDates().getDate().parallelStream().collect(Collectors.groupingBy(uk.ac.ebi.ddi.xml.validator.parser.model.Date::getType, Collectors.mapping(uk.ac.ebi.ddi.xml.validator.parser.model.Date::getValue, Collectors.toSet())));
+            if (dataset.getDates() != null) {
+                dates = dataset.getDates().getDate().parallelStream()
+                        .collect(Collectors.groupingBy(
+                                Date::getType,
+                                Collectors.mapping(Date::getValue, Collectors.toSet())));
             }
             crossReferences = new HashMap<>();
             if (dataset.getCrossReferences() != null && dataset.getCrossReferences().getRef() != null) {
                 crossReferences = dataset.getCrossReferences().getRef()
                         .stream().parallel()
-                        .collect(Collectors.groupingBy(x -> x.getDbname().trim(), Collectors.mapping(x -> x.getDbkey().trim(), Collectors.toSet())));
+                        .collect(Collectors.groupingBy(
+                                x -> x.getDbname().trim(),
+                                Collectors.mapping(x -> x.getDbkey().trim(), Collectors.toSet())));
             }
-            if(dataset.getAdditionalFields() != null ) {
+            if (dataset.getAdditionalFields() != null) {
                 additionals = dataset.getAdditionalFields().getField()
                         .stream().parallel()
-                        .collect(Collectors.groupingBy(x -> x.getName().trim(), Collectors.mapping(x -> x.getValue().trim(), Collectors.toSet())));
+                        .collect(Collectors.groupingBy(
+                                x -> x.getName().trim(),
+                                Collectors.mapping(x -> x.getValue().trim(), Collectors.toSet())));
             }
             Set<String> repositories = additionals.get(Field.REPOSITORY.getName());
-            if(null == repositories || repositories.size() < 1 ) {
+            if (null == repositories || repositories.size() < 1) {
                 //AZ:this code overrides additonal.repository. why? wrapped by if
                 //** Rewrite the respoitory with the name we would like to handle ***/
                 Set<String> databases = new HashSet<>();
                 databases.add(databaseName);
                 additionals.put(Field.REPOSITORY.getName(), databases);
             }
+        } catch (Exception ex) {
+            LOGGER.error("Exception occured in transformEntryDataset entry with id " + dataset.getId());
         }
-        catch(Exception ex){
-            logger.error("exception occured in transformEntryDataset entry with id " + dataset.getId());
-        }
-        return new Dataset(dataset.getId(), databaseName, dataset.getName() != null ? dataset.getName().getValue():"", dataset.getDescription(),dates, additionals, crossReferences, DatasetCategory.INSERTED);
+        return new Dataset(dataset.getId(), databaseName,
+                dataset.getName() != null ? dataset.getName().getValue() : "",
+                dataset.getDescription(), dates, additionals, crossReferences, DatasetCategory.INSERTED);
 
     }
 
-    public static Entry tansformDatasetToEntry(Dataset dataset){
-
+    public static Entry tansformDatasetToEntry(Dataset dataset) {
         Entry entry = new Entry();
         try {
             entry.setId(dataset.getAccession());
             entry.setAcc(dataset.getAccession());
             entry.setDescription(dataset.getDescription());
             entry.setName(dataset.getName());
-            if (dataset.getDates() != null)
-                dataset.getDates().entrySet().stream().forEach(date -> date.getValue().stream().forEach(value -> entry.addDate(date.getKey(), value)));
-            if (dataset.getCrossReferences() != null)
-                dataset.getCrossReferences().entrySet().stream().forEach(cross -> cross.getValue().stream().forEach(value -> entry.addCrossReferenceValue(cross.getKey(), value)));
-            if (dataset.getAdditional() != null)
-                dataset.getAdditional().entrySet().stream().forEach(additional -> additional.getValue().stream().forEach(value -> entry.addAdditionalField(additional.getKey(), value)));
-        }
-        catch(Exception ex){
-            logger.error("exception occured in transformEntryDataset entry with id " + dataset.getId());
+            if (dataset.getDates() != null) {
+                dataset.getDates().forEach((key, value1) -> value1.forEach(value -> entry.addDate(key, value)));
+            }
+            if (dataset.getCrossReferences() != null) {
+                dataset.getCrossReferences()
+                        .forEach((key, value1) -> value1.forEach(value -> entry.addCrossReferenceValue(key, value)));
+            }
+            if (dataset.getAdditional() != null) {
+                dataset.getAdditional()
+                        .forEach((key, value1) -> value1.forEach(value -> entry.addAdditionalField(key, value)));
+            }
+        } catch (Exception ex) {
+            LOGGER.error("Exception occurred in transformEntryDataset entry with id " + dataset.getId());
         }
         return entry;
     }
 
     public static Dataset removeCrossReferences(Dataset dataset, String key) {
-        if(dataset.getCrossReferences().containsKey(key))
-            dataset.getCrossReferences().remove(key);
+        dataset.getCrossReferences().remove(key);
         return dataset;
     }
 
     public static Dataset addCrossReferenceValues(Dataset dataset, String dbName, Set<String> newKeys) {
-        if(dataset.getCrossReferences() == null)
+        if (dataset.getCrossReferences() == null) {
             dataset.setCrossReferences(new HashMap<>());
+        }
         dataset.getCrossReferences().put(dbName, newKeys);
         return dataset;
-
     }
 }

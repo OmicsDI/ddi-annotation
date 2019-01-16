@@ -33,14 +33,14 @@ import java.util.Collections;
  *
  * Created by ypriverol (ypriverol@gmail.com) on 29/05/2016.
  */
-public class BioOntologyClient extends WsClient{
+public class BioOntologyClient extends WsClient {
 
 
-    private static final Logger logger = LoggerFactory.getLogger(BioOntologyClient.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(BioOntologyClient.class);
 
-    static final ObjectMapper mapper = new ObjectMapper();
+    static final ObjectMapper MAPPER = new ObjectMapper();
 
-    static String REST_URL = "http://data.bioontology.org";
+    static final String REST_URL = "http://data.bioontology.org";
 
     private static final int RETRIES = 5;
     private static RetryTemplate template = new RetryTemplate();
@@ -71,13 +71,14 @@ public class BioOntologyClient extends WsClient{
      * @return
      * @throws UnsupportedEncodingException
      */
-    public RecomendedOntologyQuery[] getRecommendedTerms(String query, String[] ontologies) throws UnsupportedEncodingException, RestClientException {
+    public RecomendedOntologyQuery[] getRecommendedTerms(String query, String[] ontologies)
+            throws UnsupportedEncodingException, RestClientException {
         String ontology = getStringfromArray(ontologies);
         query = URLEncoder.encode(query, "UTF-8");
 
         String url = String.format("%s://%s/recommender?ontologies=%s&apikey=%s&input=%s",
                 config.getProtocol(), config.getHostName(), ontology, Constants.OBO_KEY, query);
-        logger.debug(url);
+        LOGGER.debug(url);
         System.out.println(url);
 
         return this.restTemplate.getForObject(url, RecomendedOntologyQuery[].class);
@@ -86,18 +87,19 @@ public class BioOntologyClient extends WsClient{
 
     private String getStringfromArray(String[] ontologies) {
 
-        String ontology = "";
-        if((ontologies != null) && (ontologies.length > 0)) {
+        StringBuilder ontology = new StringBuilder();
+        if ((ontologies != null) && (ontologies.length > 0)) {
             int count = 0;
             for (String value : ontologies) {
-                if (count == ontologies.length - 1)
-                    ontology = ontology + value;
-                else
-                    ontology = ontology + value + ",";
+                if (count == ontologies.length - 1) {
+                    ontology.append(value);
+                } else {
+                    ontology.append(value).append(",");
+                }
                 count++;
             }
         }
-        return ontology;
+        return ontology.toString();
     }
 
     /**
@@ -107,7 +109,8 @@ public class BioOntologyClient extends WsClient{
      * @return
      * @throws UnsupportedEncodingException
      */
-    public RecomendedOntologyQuery[] postRecommendedTerms(String query, String[] ontologies) throws UnsupportedEncodingException, RestClientException {
+    public RecomendedOntologyQuery[] postRecommendedTerms(String query, String[] ontologies)
+            throws UnsupportedEncodingException, RestClientException {
         String ontology = getStringfromArray(ontologies);
 
         query = URLEncoder.encode(query, "UTF-8");
@@ -115,7 +118,7 @@ public class BioOntologyClient extends WsClient{
         String url = String.format("%s://%s/recommender?ontologies=%s&apikey=%s&input=%s",
                 config.getProtocol(), config.getHostName(), ontology, Constants.OBO_KEY, query);
 
-        logger.debug(url);
+        LOGGER.debug(url);
         System.out.println(url);
 
         return this.restTemplate.postForObject(url, null, RecomendedOntologyQuery[].class);
@@ -126,11 +129,13 @@ public class BioOntologyClient extends WsClient{
 
         String urlParameters;
         JsonNode annotations;
-        String textToAnnotate = URLEncoder.encode(query, "ISO-8859-1");
+//        String textToAnnotate = URLEncoder.encode(query, "ISO-8859-1");
         String ontologies = String.format("ontologies=%s&", getStringfromArray(Constants.OBO_ONTOLOGIES));
 
         // Annotations using POST (necessary for long text)
-        urlParameters = ontologies + "&longest_only=true&whole_word_only=true&include=prefLabel,synonym,definition&max_level=3&text=" + textToAnnotate;
+        urlParameters = ontologies
+                + "&longest_only=true&whole_word_only=true&include=prefLabel,synonym,definition&max_level=3&text="
+                + query;
         annotations = jsonToNode(post(REST_URL + "/annotator", urlParameters, Constants.OBO_KEY));
         //printAnnotations(annotations);
 
@@ -138,22 +143,23 @@ public class BioOntologyClient extends WsClient{
 
     }
 
-    public AnnotatedOntologyQuery[] getAnnotatedTerms(String query, String[] ontologies) throws RestClientException{
+    public AnnotatedOntologyQuery[] getAnnotatedTerms(String query, String[] ontologies) throws RestClientException {
         String ontology = getStringfromArray(ontologies);
 
-        String url = String.format("%s://%s/annotator?ontologies=%s&longest_only=true&whole_word_only=false&apikey=%s&text=%s",
+        String url = String.format(
+                "%s://%s/annotator?ontologies=%s&longest_only=true&whole_word_only=false&apikey=%s&text=%s",
                 config.getProtocol(), config.getHostName(), ontology, Constants.OBO_KEY, query);
-        logger.debug(url);
+        LOGGER.debug(url);
 
         return this.restTemplate.getForObject(url, AnnotatedOntologyQuery[].class);
 
     }
 
-    public SynonymQuery getAllSynonyms(String ontology, String term) throws RestClientException{
+    public SynonymQuery getAllSynonyms(String ontology, String term) throws RestClientException {
 
         String url = String.format("%s://%s/ontologies/%s/classes/%s?apikey=%s",
                 config.getProtocol(), config.getHostName(), ontology, term, Constants.OBO_KEY);
-        logger.debug(url);
+        LOGGER.debug(url);
         System.out.println(url);
 
         return this.restTemplate.getForObject(url, SynonymQuery.class);
@@ -162,7 +168,7 @@ public class BioOntologyClient extends WsClient{
     public SynonymQuery getAllSynonymByURL(String url) throws RestClientException {
 
         url = String.format("%s?apikey=%s", url, Constants.OBO_KEY);
-        logger.debug(url);
+        LOGGER.debug(url);
         System.out.println(url);
 
         return this.restTemplate.getForObject(url, SynonymQuery.class);
@@ -170,7 +176,7 @@ public class BioOntologyClient extends WsClient{
     }
 
     private static JsonNode jsonToNode(String json) throws IOException {
-        return mapper.readTree(json);
+        return MAPPER.readTree(json);
     }
 
     private static String get(String urlToGet, String API_KEY) throws IOException {
@@ -194,7 +200,7 @@ public class BioOntologyClient extends WsClient{
                 return result;
             });
         } catch (IOException e) {
-            logger.error("Exception occurred while fetching API {}, ", urlToGet, e);
+            LOGGER.error("Exception occurred while fetching API {}, ", urlToGet, e);
             throw e;
         }
     }
@@ -208,7 +214,7 @@ public class BioOntologyClient extends WsClient{
                 String line;
                 String result = "";
                 url = new URL(urlToGet);
-                logger.debug(urlToGet + urlParameters);
+                LOGGER.debug(urlToGet + urlParameters);
                 conn = (HttpURLConnection) url.openConnection();
                 conn.setDoOutput(true);
                 conn.setDoInput(true);
@@ -232,14 +238,15 @@ public class BioOntologyClient extends WsClient{
                 return result;
             });
         } catch (IOException e) {
-            logger.error("Exception occurred while fetching API " + urlToGet + ", {}", urlParameters, e);
+            LOGGER.error("Exception occurred while fetching API " + urlToGet + ", {}", urlParameters, e);
             throw e;
         }
     }
     private static void printAnnotations(JsonNode annotations) throws IOException {
         for (JsonNode annotation : annotations) {
             // Get the details for the class that was found in the annotation and print
-            JsonNode classDetails = jsonToNode(get(annotation.get("annotatedClass").get("links").get("self").asText(), Constants.OBO_KEY));
+            JsonNode classDetails = jsonToNode(get(annotation.get("annotatedClass").get("links").get("self").asText(),
+                    Constants.OBO_KEY));
             System.out.println("Class details");
             System.out.println("\tid: " + classDetails.get("@id").asText());
             System.out.println("\tprefLabel: " + classDetails.get("prefLabel").asText());
@@ -251,7 +258,9 @@ public class BioOntologyClient extends WsClient{
             if (hierarchy.isArray() && hierarchy.elements().hasNext()) {
                 System.out.println("\tHierarchy annotations");
                 for (JsonNode hierarchyAnnotation : hierarchy) {
-                    classDetails = jsonToNode(get(hierarchyAnnotation.get("annotatedClass").get("links").get("self").asText(), Constants.OBO_KEY));
+                    classDetails = jsonToNode(get(
+                            hierarchyAnnotation.get("annotatedClass").get("links").get("self").asText(),
+                            Constants.OBO_KEY));
                     System.out.println("\t\tClass details");
                     System.out.println("\t\t\tid: " + classDetails.get("@id").asText());
                     System.out.println("\t\t\tprefLabel: " + classDetails.get("prefLabel").asText());
@@ -260,10 +269,4 @@ public class BioOntologyClient extends WsClient{
             }
         }
     }
-
-
-
-
-
-
 }

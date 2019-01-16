@@ -72,7 +72,7 @@ public class DDIExpDataImportService {
      */
     public void importDatasetTerms(String dataType, String datasetAcc, String database, Map<String, Set<String>> refs) {
         List<String> terms = getTermsInDataset(dataType, refs);
-        if(terms!=null && !terms.isEmpty()){
+        if (terms != null && !terms.isEmpty()) {
             List<TermInDB> termsDB = terms.parallelStream()
                     .map(x -> new TermInDB(datasetAcc, database, x, dataType))
                     .collect(Collectors.toList());
@@ -83,7 +83,7 @@ public class DDIExpDataImportService {
 
     private boolean isTermsChanged(List<TermInList> importedTerms, List<TermInList> terms) {
 
-        if(terms.size()!=importedTerms.size()){
+        if (terms.size() != importedTerms.size()) {
             return false;
         } else {
             importedTerms.retainAll(terms);
@@ -114,7 +114,8 @@ public class DDIExpDataImportService {
 //                    tempTermInDB.increaseDatasetFrequency();
 //                    termInDBService.update(tempTermInDB);
 //
-//                    TermInList tempTermInList = new TermInList(dbkey); //here we assume one ref/term only occurrence 1 time in a dataset.
+//                    TermInList tempTermInList = new TermInList(dbkey);
+// here we assume one ref/term only occurrence 1 time in a dataset.
 //                    tempTermInList.setIdInDB(tempTermInDB.getId());
 //                    terms.add(tempTermInList);
 //                } else {
@@ -122,7 +123,8 @@ public class DDIExpDataImportService {
 //                    termInDBService.insert(newTermInDB);
 ////                    System.out.println("inserted new term" + newTermInDB.getTermName());
 //
-//                    TermInList tempTermInList = new TermInList(dbkey); //here we assume one ref/term only occurrence 1 time in a dataset.
+//                    TermInList tempTermInList = new TermInList(dbkey);
+// here we assume one ref/term only occurrence 1 time in a dataset.
 //                    tempTermInList.setIdInDB(newTermInDB.getId());
 //                    terms.add(tempTermInList);
 //                }
@@ -149,19 +151,21 @@ public class DDIExpDataImportService {
             refKeyWord2 = "ensembl";
         } else if (dataType.equals(DataType.METABOLOMICS_DATA.getName())) {
             refKeyWord = "ChEBI";
-        } else if (dataType.equals(DataType.TRANSCRIPTOMIC_DATA.getName())){
+        } else if (dataType.equals(DataType.TRANSCRIPTOMIC_DATA.getName())) {
             refKeyWord = "ensembl";
         }
         String finalRefKeyWord = refKeyWord;
         String finalRefKeyWord1 = refKeyWord2;
         refs.entrySet().parallelStream().forEach(dbkey -> {
             if (dbkey.getKey().equalsIgnoreCase(finalRefKeyWord) || dbkey.getKey().equalsIgnoreCase(finalRefKeyWord1)) {
-                dbkey.getValue().parallelStream().forEach( identifier ->{
+                dbkey.getValue().parallelStream().forEach(identifier -> {
                     identifier  = identifier.replace("CHEBI:", "");
-                    if(identifier != null && !identifier.isEmpty())
+                    if (!identifier.isEmpty()) {
                         terms.add(identifier);
-            });
-        }});
+                    }
+                });
+            }
+        });
         return terms;
     }
 

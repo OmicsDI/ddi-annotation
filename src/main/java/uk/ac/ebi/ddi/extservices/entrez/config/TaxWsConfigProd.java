@@ -3,7 +3,7 @@ package uk.ac.ebi.ddi.extservices.entrez.config;
 /**
  * This class help to configure the web-service provider that would be used.
  */
-public class TaxWsConfigProd{
+public class TaxWsConfigProd {
 
     private String hostName;
     private String protocol;
