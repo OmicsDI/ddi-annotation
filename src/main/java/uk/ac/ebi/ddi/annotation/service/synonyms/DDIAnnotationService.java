@@ -27,7 +27,6 @@ import uk.ac.ebi.ddi.service.db.model.enrichment.Synonym;
 import uk.ac.ebi.ddi.service.db.model.enrichment.WordInField;
 import uk.ac.ebi.ddi.service.db.service.enrichment.EnrichmentInfoService;
 import uk.ac.ebi.ddi.service.db.service.enrichment.SynonymsService;
-import uk.ac.ebi.ddi.xml.validator.exception.DDIException;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -65,8 +64,7 @@ public class DDIAnnotationService {
      * @return and enriched dataset
      */
 
-    public EnrichedDataset enrichment(DatasetTobeEnriched datasetTobeEnriched, boolean overwrite)
-            throws JSONException, IOException, RestClientException, DDIException {
+    public EnrichedDataset enrichment(DatasetTobeEnriched datasetTobeEnriched, boolean overwrite) throws Exception {
 
         String accession = datasetTobeEnriched.getAccession();
         String database = datasetTobeEnriched.getDatabase();
@@ -187,7 +185,7 @@ public class DDIAnnotationService {
      * @return the words which are identified in the fieldText by recommender API from bioontology.org
      */
 
-    private List<WordInField> getWordsInFiledFromWS(String fieldText) throws IOException {
+    private List<WordInField> getWordsInFiledFromWS(String fieldText) throws Exception {
 
         List<WordInField> matchedWords = new ArrayList<>();
         if (fieldText == null || fieldText.equals(Constants.NOT_AVAILABLE)) {
@@ -229,7 +227,7 @@ public class DDIAnnotationService {
         return matchedWords;
     }
 
-    private Map<String, List<WordInField>> getWordsInFiledFromWS(Map<String, String> fields) throws IOException {
+    private Map<String, List<WordInField>> getWordsInFiledFromWS(Map<String, String> fields) throws Exception {
 
         ConcurrentHashMap<String, List<WordInField>> results = new ConcurrentHashMap<>();
 

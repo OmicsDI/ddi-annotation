@@ -1,23 +1,19 @@
 package uk.ac.ebi.ddi.annotation.service.dataset;
 
-import org.json.JSONException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.web.client.RestClientException;
 import uk.ac.ebi.ddi.annotation.model.DatasetTobeEnriched;
 import uk.ac.ebi.ddi.annotation.model.EnrichedDataset;
+import uk.ac.ebi.ddi.annotation.service.publication.DDIPublicationAnnotationService;
 import uk.ac.ebi.ddi.annotation.service.synonyms.DDIAnnotationService;
 import uk.ac.ebi.ddi.annotation.service.synonyms.DDIExpDataImportService;
-import uk.ac.ebi.ddi.annotation.service.publication.DDIPublicationAnnotationService;
 import uk.ac.ebi.ddi.annotation.utils.DataType;
 import uk.ac.ebi.ddi.annotation.utils.DatasetUtils;
 import uk.ac.ebi.ddi.annotation.utils.Utils;
 import uk.ac.ebi.ddi.service.db.model.dataset.Dataset;
-import uk.ac.ebi.ddi.xml.validator.exception.DDIException;
 import uk.ac.ebi.ddi.xml.validator.parser.model.Entry;
 import uk.ac.ebi.ddi.xml.validator.utils.Field;
 
-import java.io.IOException;
 import java.util.*;
 
 /**
@@ -35,12 +31,10 @@ public class DatasetAnnotationEnrichmentService {
      * @param service DDIAnnotationService that enrich a correponding dataset
      * @param dataset Entry to be enriched
      * @return
-     * @throws DDIException
-     * @throws JSONException
      */
     @Deprecated
     public static EnrichedDataset enrichment(DDIAnnotationService service, Entry dataset, boolean overwrite)
-            throws DDIException, IOException, JSONException {
+            throws Exception {
 
         LOGGER.info("DatasetTobeEnriched 1: {}, {}", dataset.getId(), dataset.getRepository());
 
@@ -56,7 +50,7 @@ public class DatasetAnnotationEnrichmentService {
      */
     @Deprecated
     public static EnrichedDataset enrichment(DDIAnnotationService service, Dataset dataset, boolean overwrite)
-            throws DDIException, IOException, RestClientException, JSONException {
+            throws Exception {
 
         LOGGER.info("DatasetTobeEnriched 2: {}, {}", dataset.getAccession(), dataset.getDatabase());
 

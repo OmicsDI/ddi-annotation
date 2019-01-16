@@ -7,10 +7,7 @@ import uk.ac.ebi.ddi.extservices.entrez.ncbiresult.NCBITaxResult;
 import uk.ac.ebi.ddi.service.db.model.dataset.Dataset;
 import uk.ac.ebi.ddi.xml.validator.utils.Field;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 /**
  * @author Yasset Perez-Riverol (ypriverol@gmail.com)
@@ -20,7 +17,7 @@ public class NCBITaxonomyService {
 
     private static NCBITaxonomyService instance;
 
-    TaxonomyWsClient taxonomyClient = new TaxonomyWsClient(new TaxWsConfigProd());
+    private TaxonomyWsClient taxonomyClient = new TaxonomyWsClient(new TaxWsConfigProd());
 
     private static Set<String> taxonomySpecies = new HashSet<>();
 
@@ -48,7 +45,7 @@ public class NCBITaxonomyService {
                 return getTaxonomyArr(ncbiTax.getNCBITaxonomy());
             }
         }
-        return null;
+        return Collections.emptyList();
     }
 
     public List<String> getNCBITaxonomy(List<String> term) {
@@ -59,7 +56,7 @@ public class NCBITaxonomyService {
                 return getTaxonomyArr(ncbiTax.getNCBITaxonomy());
             }
         }
-        return null;
+        return Collections.emptyList();
     }
 
     private List<String> getTaxonomyArr(String[] taxonomy) {
@@ -79,14 +76,9 @@ public class NCBITaxonomyService {
                 && dataset.getAdditional() != null
                 && getAdditionalField(dataset, Field.SPECIE_FIELD.getName()) != null) {
             Set<String> taxs = getAdditionalField(dataset, Field.SPECIE_FIELD.getName());
-            if (taxs == null) {
-                return dataset;
-            }
             List<String> taxonomies = NCBITaxonomyService.getInstance().getNCBITaxonomy(new ArrayList<>(taxs));
-            if (taxonomies != null && taxonomies.size() > 0) {
-                for (String tax : taxonomies) {
-                    dataset = DatasetUtils.addCrossReferenceValue(dataset, Field.TAXONOMY.getName(), tax);
-                }
+            for (String tax : taxonomies) {
+                DatasetUtils.addCrossReferenceValue(dataset, Field.TAXONOMY.getName(), tax);
             }
         }
         return dataset;
@@ -96,7 +88,7 @@ public class NCBITaxonomyService {
         if (dataset.getAdditional() != null && dataset.getAdditional().containsKey(key)) {
             return dataset.getAdditional().get(key);
         }
-        return null;
+        return Collections.emptySet();
     }
 
     public String getParentForNonRanSpecie(String id) {
@@ -120,10 +112,7 @@ public class NCBITaxonomyService {
                 }
             }
             taxonomies.addAll(newTaxonomies);
-            if (newTaxonomies.size() > 0) {
-                System.out.println(dataset.getAccession() + " " + newTaxonomies.size());
-            }
-            dataset = DatasetUtils.addCrossReferenceValues(dataset, Field.TAXONOMY.getName(), taxonomies);
+            DatasetUtils.addCrossReferenceValues(dataset, Field.TAXONOMY.getName(), taxonomies);
         }
 
         return dataset;
