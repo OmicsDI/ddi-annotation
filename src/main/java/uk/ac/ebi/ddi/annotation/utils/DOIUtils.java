@@ -62,7 +62,7 @@ public class DOIUtils {
     private static final Pattern STRICT_DOI_PATTERN = Pattern.compile(
             "^" + NON_NUMBERS_OR_LETTERS + DOI + DOI_END + NON_NUMBERS_OR_LETTERS + "$", Pattern.CASE_INSENSITIVE);
     private static final Pattern SLOPPY_DOI_PATTERN = Pattern.compile(
-            ".*?" + DOI + DOI_END + ".*", Pattern.CASE_INSENSITIVE);
+            DOI + DOI_END, Pattern.CASE_INSENSITIVE);
     private static final Pattern ONLY_DOI_PATTERN = Pattern.compile(DOI, Pattern.CASE_INSENSITIVE);
 
     /**
