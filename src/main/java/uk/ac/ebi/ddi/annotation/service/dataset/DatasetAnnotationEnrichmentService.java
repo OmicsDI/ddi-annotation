@@ -228,16 +228,12 @@ public class DatasetAnnotationEnrichmentService {
      */
     public static Dataset updatePubMedIds(DDIPublicationAnnotationService service, Dataset dataset) {
 
-        if (dataset.getCrossReferences() == null
-                || DatasetUtils.getCrossReferenceFieldValue(dataset, Field.PUBMED.getName()).isEmpty()) {
-            List<String> dois = service.getDOIListFromText(Collections.singletonList(dataset.toString()));
-            List<String> ids = service.getPubMedIDsFromDOIList(dois);
-            for (String pubmedID: ids) {
-                DatasetUtils.addCrossReferenceValue(dataset, Field.PUBMED.getName(), pubmedID);
-            }
+        List<String> dois = service.getDOIListFromText(Collections.singletonList(dataset.toString()));
+        List<String> ids = service.getPubMedIDsFromDOIList(dois);
+        for (String pubmedID: ids) {
+            DatasetUtils.addCrossReferenceValue(dataset, Field.PUBMED.getName(), pubmedID);
         }
-        if (dataset.getCrossReferences() != null
-                && !DatasetUtils.getCrossReferenceFieldValue(dataset, Field.PUBMED.getName()).isEmpty()) {
+        if (!DatasetUtils.getCrossReferenceFieldValue(dataset, Field.PUBMED.getName()).isEmpty()) {
             Set<String> pubmedIds = DatasetUtils.getCrossReferenceFieldValue(dataset, Field.PUBMED.getName());
             List<Map<String, String[]>> information = service.getAbstractPublication(new ArrayList<>(pubmedIds));
             information.forEach(info -> info.forEach((key, value) -> {
@@ -250,11 +246,8 @@ public class DatasetAnnotationEnrichmentService {
                         DatasetUtils.addAdditionalField(dataset, Field.PUBMED_TITLE.getName(), values);
                     }
                 } else if (key.equalsIgnoreCase("author")) {
-                    StringBuilder authorName = new StringBuilder();
-                    for (String authorValue : value) {
-                        authorName.append(authorValue).append(",");
-                    }
-                    DatasetUtils.addAdditionalField(dataset, Field.PUBMED_AUTHORS.getName(), authorName.toString());
+                    String authorName = String.join(", ", value);
+                    DatasetUtils.addAdditionalField(dataset, Field.PUBMED_AUTHORS.getName(), authorName);
                 }
             }));
         }

@@ -18,36 +18,9 @@ public class DOIUtils {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(DOIUtils.class);
 
-    /**
-     * Host name of the DOI resolver.
-     */
-    public static final String DX_DOI_ORG = "dx.doi.org";
-    /**
-     * URL of the DOI resolver.
-     */
-    public static final String DX_DOI_ORG_URL = "http://" + DX_DOI_ORG + "/";
-
-    private static final Pattern HOST_PATTERN = Pattern.compile(".*" + DX_DOI_ORG);
-
     private static final String NON_NUMBERS_OR_LETTERS = "[^0-9\\p{L}]*?";
 
-
-    /**
-     * The first variant is too strict, according to
-     * <p>
-     * http://stackoverflow.com/questions/27910/finding-a-doi-in-a-document-or-page
-     * <p>
-     * Changes:
-     * <ul>
-     * <li>added "doi:" as possible prefix</li>
-     * <li>replaced the last \d by [^\s"'], thus allowing everything but whitespace and some
-     * "closing" characters (which are in principle allowed but makes detection of the end of a
-     * DOI almost impossible). We in particular disallow "}", because it is at the end of BibTeX
-     * DOIs (which we otherwise would extract wrong).</li>
-     * </ul>
-     */
-    private static final String DOI = "(doi:\\s*)?(10\\.\\d+\\/[^\\s\"'}]+)";
-    private static final String DOI_END = "[\\s\"'}]*";
+    private static final String DOI = "\\b(10[.][0-9]{4,}(?:[.][0-9]+)*\\/(?:(?![\"&\\'<>])\\S)+)\\b";
 
     /**
      * Matches a pure DOI. Disregards case.
@@ -60,9 +33,7 @@ public class DOIUtils {
      * first non-matching symbol.
      */
     private static final Pattern STRICT_DOI_PATTERN = Pattern.compile(
-            "^" + NON_NUMBERS_OR_LETTERS + DOI + DOI_END + NON_NUMBERS_OR_LETTERS + "$", Pattern.CASE_INSENSITIVE);
-    private static final Pattern SLOPPY_DOI_PATTERN = Pattern.compile(
-            DOI + DOI_END, Pattern.CASE_INSENSITIVE);
+            "^" + NON_NUMBERS_OR_LETTERS + DOI + NON_NUMBERS_OR_LETTERS + "$", Pattern.CASE_INSENSITIVE);
     private static final Pattern ONLY_DOI_PATTERN = Pattern.compile(DOI, Pattern.CASE_INSENSITIVE);
 
     /**
@@ -84,8 +55,8 @@ public class DOIUtils {
         if (string != null) {
             Matcher matcher = ONLY_DOI_PATTERN.matcher(string);
             while (matcher.find()) {
-                LOGGER.debug(matcher.group(2));
-                values.add(matcher.group(2));
+                LOGGER.debug(matcher.group(1));
+                values.add(matcher.group(1));
             }
         }
         return new ArrayList<>(values);
@@ -101,7 +72,7 @@ public class DOIUtils {
      * @return <code>true</code>, if the given string contains a DOI.
      */
     public static boolean containsDOI(final String string) {
-        return string != null && SLOPPY_DOI_PATTERN.matcher(string).find();
+        return string != null && ONLY_DOI_PATTERN.matcher(string).find();
     }
 
     /**
