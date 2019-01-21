@@ -1,15 +1,20 @@
 package uk.ac.ebi.ddi.extservices.entrez.client.taxonomy;
 
+import com.google.common.collect.Lists;
+import org.apache.commons.lang3.ArrayUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.util.UriComponentsBuilder;
 import uk.ac.ebi.ddi.extservices.ebiprotein.utils.EBITaxonomyUtils;
 import uk.ac.ebi.ddi.extservices.entrez.config.TaxWsConfigProd;
+import uk.ac.ebi.ddi.extservices.entrez.ncbiresult.NCBIEResult;
 import uk.ac.ebi.ddi.extservices.entrez.ncbiresult.NCBITaxResult;
 import uk.ac.ebi.ddi.extservices.entrez.ncbiresult.NCBITaxonomyEntry;
 import uk.ac.ebi.ddi.extservices.entrez.ncbiresult.NCBITaxonomyEntrySet;
 
 import java.net.URI;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 
@@ -19,6 +24,8 @@ import java.util.Set;
 public class TaxonomyWsClient extends WsClient {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(TaxonomyWsClient.class);
+
+    private static final int MAX_TAX_PER_REQUEST = 30;
 
     /**
      * Default constructor for Ws clients
@@ -46,16 +53,24 @@ public class TaxonomyWsClient extends WsClient {
     }
 
     public NCBITaxResult getNCBITax(Set<String> terms) {
-
-        StringBuilder query = new StringBuilder();
-        if (terms != null && terms.size() > 0) {
-            for (String term : terms) {
-                query.append("+OR+").append(term);
-            }
-            query = new StringBuilder(query.toString().replaceFirst("\\+OR\\+", ""));
-            return getNCBITax(query.toString());
+        if (terms == null || terms.size() == 0) {
+            return null;
         }
-        return null;
+        List<List<String>> partitions = Lists.partition(new ArrayList<>(terms), MAX_TAX_PER_REQUEST);
+        NCBITaxResult ncbiTaxResult = null;
+        for (List<String> partition : partitions) {
+            String query = String.join("+OR+", partition);
+            if (ncbiTaxResult == null) {
+                ncbiTaxResult = getNCBITax(query);
+            } else {
+                NCBITaxResult tmp = getNCBITax(query);
+                NCBIEResult oldResult = ncbiTaxResult.getResult();
+                oldResult.setCount(tmp.getResult().getCount() + oldResult.getCount());
+                oldResult.setIdList(ArrayUtils.addAll(oldResult.getIdList(), tmp.getResult().getIdList()));
+                ncbiTaxResult.setResult(oldResult);
+            }
+        }
+        return ncbiTaxResult;
     }
 
     public NCBITaxonomyEntrySet getTaxonomyEntryById(String id) {
