@@ -5,6 +5,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestClientException;
@@ -112,12 +114,14 @@ public class BioOntologyClient extends WsClient {
                 .queryParam("longest_only", true)
                 .queryParam("whole_word_only", true)
                 .queryParam("include", "prefLabel,synonym,definition")
-                .queryParam("max_level", 3)
-                .queryParam("text", query);
-        MultiValueMap<String, String> headers = new LinkedMultiValueMap<>();
+                .queryParam("max_level", 3);
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
         headers.add("Authorization", "apikey token=" + Constants.OBO_KEY);
         headers.add("Content-Type", "application/json");
-        HttpEntity<?> httpEntity = new HttpEntity<>(null, headers);
+        MultiValueMap<String, String> map = new LinkedMultiValueMap<>();
+        map.add("text", query);
+        HttpEntity<?> httpEntity = new HttpEntity<>(map, headers);
         URI uri = builder.build().encode().toUri();
         return getRetryTemplate().execute(ctx -> restTemplate.postForObject(uri, httpEntity, JsonNode.class));
     }
