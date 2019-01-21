@@ -4,6 +4,7 @@ import org.springframework.http.client.ClientHttpRequestFactory;
 import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
 import org.springframework.web.client.RestTemplate;
 import uk.ac.ebi.ddi.extservices.pubmed.config.PubmedWsConfigProd;
+import uk.ac.ebi.ddi.extservices.utils.RetryClient;
 
 
 /**
@@ -12,7 +13,7 @@ import uk.ac.ebi.ddi.extservices.pubmed.config.PubmedWsConfigProd;
  * @author ypriverol
  */
 
-public class WsClient {
+public class WsClient extends RetryClient {
 
     protected RestTemplate restTemplate;
     protected PubmedWsConfigProd config;

@@ -87,12 +87,11 @@ public class DatasetUtils {
 
     public static String getFirstAdditionalFieldValue(Dataset dataset, String key) {
         if (dataset.getAdditional() != null && !dataset.getAdditional().isEmpty()) {
-            if (dataset.getAdditional().containsKey(key)) {
+            if (dataset.getAdditional().containsKey(key) && !dataset.getAdditional().get(key).isEmpty()) {
                 return new ArrayList<>(dataset.getAdditional().get(key)).get(0);
             }
         }
         return null;
-
     }
 
     @Deprecated

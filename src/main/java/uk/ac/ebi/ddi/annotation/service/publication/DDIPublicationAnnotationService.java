@@ -12,6 +12,7 @@ import uk.ac.ebi.ddi.extservices.pubmed.model.PubmedJSON;
 import uk.ac.ebi.ddi.extservices.pubmed.model.Record;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * This class help to lookup for doi in text and get the pubmed if
@@ -115,6 +116,7 @@ public class DDIPublicationAnnotationService {
         String[] fields = {"description", "name", "author"};
         List<Map<String, String[]>> publications = new ArrayList<>();
         Set<String> finalIds = new HashSet<>(idList);
+        finalIds = finalIds.stream().filter(x -> !x.trim().isEmpty()).collect(Collectors.toSet());
         QueryResult pride = publicationWsClient.getPublications(fields, finalIds);
         if (pride != null && pride.getEntries() != null && pride.getEntries().length > 0) {
             for (Entry entry: pride.getEntries()) {
