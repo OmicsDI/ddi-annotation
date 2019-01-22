@@ -74,9 +74,11 @@ public class DDIAnnotationService {
         DatasetEnrichmentInfo prevDs = enrichmentInfoService.readByAccession(accession, database);
 
         Map<String, List<WordInField>> synonyms = new HashMap<>();
+        boolean hasChange = false;
 
         if (prevDs == null || overwrite) {
             synonyms = getWordsInFiledFromWS(datasetTobeEnriched.getAttributes());
+            hasChange = true;
         } else {
             for (String key : datasetTobeEnriched.getAttributes().keySet()) {
                 if (prevDs.getSynonyms() != null && prevDs.getSynonyms().containsKey(key)
@@ -87,6 +89,7 @@ public class DDIAnnotationService {
                     List<WordInField> words = getWordsInFiledFromWS(datasetTobeEnriched.getAttributes().get(key));
                     if (words != null && !words.isEmpty()) {
                         synonyms.put(key, words);
+                        hasChange = true;
                     }
                 }
             }
@@ -96,7 +99,10 @@ public class DDIAnnotationService {
         datasetEnrichmentInfo.setEnrichTime(new Date());
 
         datasetEnrichmentInfo.setOriginalAttributes(datasetTobeEnriched.getAttributes());
-        enrichmentInfoService.insert(datasetEnrichmentInfo);
+        if (hasChange) {
+            //Only save into db when there is some changes
+            enrichmentInfoService.insert(datasetEnrichmentInfo);
+        }
         Map<String, String> fields = new HashMap<>();
         for (Map.Entry<String, List<WordInField>> entry : synonyms.entrySet()) {
             fields.put(entry.getKey(), EnrichField(entry.getValue()));
@@ -198,27 +204,25 @@ public class DDIAnnotationService {
         }
         JsonNode recommends = recommenderClient.getAnnotatedSynonyms(fieldText);
         Map<WordInField, Set<String>> synonymsMap = new HashMap<>();
-        if (recommends != null) {
-            for (JsonNode annotations: recommends) {
-                if (annotations.get("annotatedClass") != null && annotations.get("annotations") != null) {
-                    Set<String> synonyms = new HashSet<>();
-                    if (annotations.get("annotatedClass") != null) {
-                        if (annotations.get("annotatedClass").get("synonym") != null) {
-                            for (JsonNode synonym: annotations.get("annotatedClass").get("synonym")) {
-                                synonyms.add(synonym.textValue());
-                            }
+        for (JsonNode annotations: recommends) {
+            if (annotations.get("annotatedClass") != null && annotations.get("annotations") != null) {
+                Set<String> synonyms = new HashSet<>();
+                if (annotations.get("annotatedClass") != null) {
+                    if (annotations.get("annotatedClass").get("synonym") != null) {
+                        for (JsonNode synonym: annotations.get("annotatedClass").get("synonym")) {
+                            synonyms.add(synonym.textValue());
                         }
                     }
-                    for (JsonNode annotationValue: annotations.get("annotations")) {
-                        String actualWord = annotationValue.get("text").textValue();
-                        int from = annotationValue.get("from").intValue();
-                        int to = annotationValue.get("to").intValue();
-                        WordInField wordInField = new WordInField(actualWord, from, to);
-                        if (synonymsMap.containsKey(wordInField)) {
-                            synonyms.addAll(synonymsMap.get(wordInField));
-                        }
-                        synonymsMap.put(wordInField, synonyms);
+                }
+                for (JsonNode annotationValue: annotations.get("annotations")) {
+                    String actualWord = annotationValue.get("text").textValue();
+                    int from = annotationValue.get("from").intValue();
+                    int to = annotationValue.get("to").intValue();
+                    WordInField wordInField = new WordInField(actualWord, from, to);
+                    if (synonymsMap.containsKey(wordInField)) {
+                        synonyms.addAll(synonymsMap.get(wordInField));
                     }
+                    synonymsMap.put(wordInField, synonyms);
                 }
             }
         }
