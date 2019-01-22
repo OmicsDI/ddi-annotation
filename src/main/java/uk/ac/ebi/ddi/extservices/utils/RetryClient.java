@@ -8,7 +8,7 @@ import java.util.Collections;
 
 public class RetryClient {
 
-    private static final int RETRIES = 10;
+    private static final int RETRIES = 5;
     private RetryTemplate retryTemplate = new RetryTemplate();
 
     public RetryClient() {
