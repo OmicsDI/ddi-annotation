@@ -71,7 +71,7 @@ public class DDIAnnotationService {
 
         EnrichedDataset enrichedDataset = new EnrichedDataset(accession, database);
         DatasetEnrichmentInfo datasetEnrichmentInfo = new DatasetEnrichmentInfo(accession, database);
-        DatasetEnrichmentInfo prevDs = enrichmentInfoService.readByAccession(accession, database);
+        DatasetEnrichmentInfo prevDs = enrichmentInfoService.getLatest(accession, database);
 
         Map<String, List<WordInField>> synonyms = new HashMap<>();
         boolean hasChange = false;
@@ -227,7 +227,7 @@ public class DDIAnnotationService {
             }
         }
         matchedWords.addAll(getDistinctWordList(synonymsMap));
-
+        Collections.sort(matchedWords);
         return matchedWords;
     }
 
@@ -242,7 +242,6 @@ public class DDIAnnotationService {
         for (Map.Entry<String, String> entry : fields.entrySet()) {
             List<WordInField> matchedWords = getWordsInFiledFromWS(entry.getValue());
             if (!matchedWords.isEmpty()) {
-                Collections.sort(matchedWords);
                 results.put(entry.getKey(), matchedWords);
             }
         }
