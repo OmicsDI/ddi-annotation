@@ -1,16 +1,10 @@
 package uk.ac.ebi.ddi.similaritycalculator;
 
-import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import uk.ac.ebi.ddi.similarityCalculator.SimilarityCounts;
-
-import java.util.ArrayList;
-import java.util.stream.Stream;
-
-import static java.util.stream.Collectors.toList;
 
 /**
  * Created by gaur on 13/07/17.
@@ -52,10 +46,10 @@ public class SimilarityCountTest {
         similarityCounts.addSearchCounts("E-MTAB-599","21921910","ExpressionAtlas");
     }*/
 
-    @Test
-    public void testDownloadCount(){
-        similarityCounts.addDatasetDownloadCount();
-    }
+//    @Test
+//    public void testDownloadCount(){
+//        similarityCounts.addDatasetDownloadCount();
+//    }
 }
 
 

@@ -68,9 +68,6 @@ public class SimilarityCounts {
     @Autowired
     DomainWsClient domainWsClient;
 
-    @Autowired
-    StatisticsService statisticsService;
-
     private static final Logger LOGGER = LoggerFactory.getLogger(SimilarityCounts.class);
 
     public void getCitationCount(String database, String accession, List<String> secondaryAccession) {
@@ -421,10 +418,5 @@ public class SimilarityCounts {
 
     public void addReanalysisKeyword() {
         reanalysisDataService.updateReanalysisKeywords();
-    }
-
-    public void addDatasetDownloadCount() {
-        //datasetCountService.saveDatasetDownloadCount();
-        statisticsService.saveDatasetDownloadCount();
     }
 }
