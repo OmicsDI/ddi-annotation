@@ -46,7 +46,7 @@ public class TaxonomyWsClient extends WsClient {
                     .queryParam("term", term)
                     .queryParam("retmode", "JSON");
             URI uri = uriComponentsBuilder.build().encode().toUri();
-            return getRetryTemplate().execute(context -> restTemplate.getForObject(uri, NCBITaxResult.class));
+            return execute(context -> restTemplate.getForObject(uri, NCBITaxResult.class));
         }
         return null;
 
@@ -82,7 +82,7 @@ public class TaxonomyWsClient extends WsClient {
                     .queryParam("db", "taxonomy")
                     .queryParam("id", id);
             URI uri = uriComponentsBuilder.build().encode().toUri();
-            return getRetryTemplate().execute(context -> restTemplate.getForObject(uri, NCBITaxonomyEntrySet.class));
+            return execute(context -> restTemplate.getForObject(uri, NCBITaxonomyEntrySet.class));
         }
         return null;
     }
