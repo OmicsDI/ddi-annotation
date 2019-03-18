@@ -6,6 +6,7 @@ import org.springframework.retry.backoff.ExponentialRandomBackOffPolicy;
 import org.springframework.retry.policy.SimpleRetryPolicy;
 import org.springframework.retry.support.RetryTemplate;
 import org.springframework.web.client.HttpClientErrorException;
+import org.springframework.web.client.ResourceAccessException;
 
 import java.util.Collections;
 
@@ -33,6 +34,11 @@ public class RetryClient {
             return retryTemplate.execute(retryCallback);
         } catch (HttpClientErrorException e) {
             if (e.getStatusCode() == HttpStatus.TOO_MANY_REQUESTS && count > 0) {
+                return execute(retryCallback, count - 1);
+            }
+            throw e;
+        } catch (ResourceAccessException e) {
+            if (count > 0) {
                 return execute(retryCallback, count - 1);
             }
             throw e;
