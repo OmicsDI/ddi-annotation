@@ -346,7 +346,7 @@ public class SimilarityCounts {
                 }).count();
                 //Thread.sleep(3000);
             }
-            System.out.println(count);
+            LOGGER.info("count in save search count is " + count);
         } catch (Exception ex) {
             LOGGER.error("error inside savesearch count exception message is " + ex.getMessage());
         }
