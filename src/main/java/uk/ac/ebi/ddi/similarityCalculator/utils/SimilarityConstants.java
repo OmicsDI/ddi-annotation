@@ -7,6 +7,10 @@ public class SimilarityConstants {
 
     public static final String OMICS_DOMAIN = "omics";
 
+    public static final String ATLAS_GENES = "atlas-genes";
+
+
+
 
 
 }
