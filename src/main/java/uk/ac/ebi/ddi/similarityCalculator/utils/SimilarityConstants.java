@@ -11,6 +11,8 @@ public class SimilarityConstants {
 
     public static final String ATLAS_GENES_DIFFERENTIAL = "atlas-genes-differential";
 
+    public static final String METABOLIGHTS = "metabolights";,
+
 
 
 }
