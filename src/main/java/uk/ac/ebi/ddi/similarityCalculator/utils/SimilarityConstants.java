@@ -9,7 +9,7 @@ public class SimilarityConstants {
 
     public static final String ATLAS_GENES = "atlas-genes";
 
-
+    public static final String ATLAS_GENES_DIFFERENTIAL = "atlas-genes-differential";
 
 
 
