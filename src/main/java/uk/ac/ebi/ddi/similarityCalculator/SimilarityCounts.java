@@ -174,7 +174,7 @@ public class SimilarityCounts {
 
             domains.add(SimilarityConstants.ATLAS_GENES);
             domains.add(SimilarityConstants.ATLAS_GENES_DIFFERENTIAL);
-            domains.add("metabolights");
+            domains.add(SimilarityConstants.METABOLIGHTS);
 
             if (!pubmedId.equals("") && !pubmedId.equals("none") && !pubmedId.equals("0")) {
                 query = "PUBMED:" + query + " OR MEDLINE:" + query + " OR PMID:" + query;
