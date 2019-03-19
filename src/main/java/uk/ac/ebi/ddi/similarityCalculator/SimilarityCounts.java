@@ -331,7 +331,7 @@ public class SimilarityCounts {
             int[] iarr = {0};
             int pages = datasetService.getWithoutSearchDomains(0, numberOfDataset).getTotalPages();
             for (int i = startDataset; i < pages; i = i + 1) {
-                    System.out.println("page number is " + i);
+                   LOGGER.info("page number is " + i);
                  datasetService.getWithoutSearchDomains(i, numberOfDataset).getContent().parallelStream()
                         .map(data -> {
                     if (data.getCrossReferences() != null
