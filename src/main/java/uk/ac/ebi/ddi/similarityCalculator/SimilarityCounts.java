@@ -22,6 +22,7 @@ import uk.ac.ebi.ddi.service.db.service.dataset.IDatasetService;
 import uk.ac.ebi.ddi.service.db.service.dataset.IDatasetSimilarsService;
 import uk.ac.ebi.ddi.service.db.service.similarity.*;
 import uk.ac.ebi.ddi.service.db.utils.DatasetSimilarsType;
+import uk.ac.ebi.ddi.similarityCalculator.utils.SimilarityConstants;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -154,6 +155,7 @@ public class SimilarityCounts {
     }
 
     public void addSearchCounts(String accession, String pubmedId, String database) {
+        LOGGER.info("inside add search counts ");
         int size = 20;
         int searchCount;
         try {
@@ -166,7 +168,7 @@ public class SimilarityCounts {
 
             QueryResult queryResult = null;
 
-            DomainList domainList = domainWsClient.getDomainByName("omics");
+            DomainList domainList = domainWsClient.getDomainByName(SimilarityConstants.OMICS_DOMAIN);
 
             List<String> domains = Arrays.stream(domainList.list).map(Domain::getId).collect(Collectors.toList());
 
