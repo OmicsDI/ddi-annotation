@@ -173,7 +173,7 @@ public class SimilarityCounts {
             List<String> domains = Arrays.stream(domainList.list).map(Domain::getId).collect(Collectors.toList());
 
             domains.add(SimilarityConstants.ATLAS_GENES);
-            domains.add("atlas-genes-differential");
+            domains.add(SimilarityConstants.ATLAS_GENES_DIFFERENTIAL);
             domains.add("metabolights");
 
             if (!pubmedId.equals("") && !pubmedId.equals("none") && !pubmedId.equals("0")) {
