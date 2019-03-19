@@ -36,7 +36,7 @@ public class PubmedWsClient extends WsClient {
                     .queryParam("format", "json");
 
             URI uri = builder.build().encode().toUri();
-            return getRetryTemplate().execute(ctx -> restTemplate.getForObject(uri, PubmedJSON.class));
+            return execute(ctx -> restTemplate.getForObject(uri, PubmedJSON.class));
         }
         return null;
     }

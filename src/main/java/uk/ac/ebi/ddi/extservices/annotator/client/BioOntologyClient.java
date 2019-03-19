@@ -123,7 +123,7 @@ public class BioOntologyClient extends WsClient {
         map.add("text", query);
         HttpEntity<?> httpEntity = new HttpEntity<>(map, headers);
         URI uri = builder.build().encode().toUri();
-        return getRetryTemplate().execute(ctx -> restTemplate.postForObject(uri, httpEntity, JsonNode.class));
+        return execute(ctx -> restTemplate.postForObject(uri, httpEntity, JsonNode.class));
     }
 
     public AnnotatedOntologyQuery[] getAnnotatedTerms(String query, String[] ontologies) throws RestClientException {
