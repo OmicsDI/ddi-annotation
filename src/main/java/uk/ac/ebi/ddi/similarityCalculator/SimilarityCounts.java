@@ -397,7 +397,7 @@ public class SimilarityCounts {
         Set<String> primaryCit = new HashSet<String>();
         int numberOfPages = 0;
         CitationResponse primaryCitation = citationClient.getCitations(accession, numberOfCitations, "*");
-        primaryCit.addAll(Arrays.stream(primaryCitation.citations.get("result"))
+        primaryCit.addAll(Arrays.stream(primaryCitation.citations.get(SimilarityConstants.RESULT))
                 .filter(data -> (dataset.getCrossReferences() != null
                         && dataset.getCrossReferences().get(Constants.PUBMED_FIELD) != null
                         && !dataset.getCrossReferences().get(Constants.PUBMED_FIELD).contains(data.pubmedId)))
