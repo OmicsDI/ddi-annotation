@@ -15,4 +15,8 @@ public class SimilarityConstants {
 
     public static final String RESULT = "result";
 
+    public static final String DESCENDING_ORDER = "descending";
+
+    public static final String BIOMODELS_REFERENCES = "biomodels__db";
+
 }
