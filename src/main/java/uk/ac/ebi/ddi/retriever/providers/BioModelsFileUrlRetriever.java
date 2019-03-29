@@ -30,8 +30,7 @@ public class BioModelsFileUrlRetriever extends DatasetFileUrlRetriever {
                 .path("/files")
                 .path("/" + accession);
         URI uriForFiles = builder.build().toUri();
-        ResponseEntity<JsonNode> files = getRetryTemplate()
-                .execute(x -> restTemplate.getForEntity(uriForFiles, JsonNode.class));
+        ResponseEntity<JsonNode> files = execute(x -> restTemplate.getForEntity(uriForFiles, JsonNode.class));
         for (JsonNode node : files.getBody().get("additional")) {
             UriComponentsBuilder urlFileBuilder = UriComponentsBuilder.fromHttpUrl(BIOMODEL_ENDPOINT)
                     .path("/download")

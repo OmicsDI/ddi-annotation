@@ -115,11 +115,16 @@ public class Constants {
 
     public static final String EXPRESSION_ATLAS_DATABASE = "ExpressionAtlas";
 
+    public static final String PEPTIDE_ATLAS_DATABASE = "PeptideAtlas";
+
     public static final String GEO_DATABASE = "GEO";
 
     public static final String MASSIVE_DATABASE             =   "Massive";
+    public static final String MASSIVE_DATABASE_2             =   "MassIVE";
 
     public static final String JPOST_DATABASE             =   "JPOST Repository";
+
+    public static final String LINCS_DATABASE = "LINCS";
 
     public static final String SECONDARY_ACCESSION =          "additional_accession";
 
