@@ -389,7 +389,8 @@ public class SimilarityCounts {
     public void renalysedByBioModels() {
         List<Dataset> datasets = datasetService.findByDatabaseBioModels(Constants.BIOMODELS_DATABASE);
         datasets.parallelStream().forEach(data -> addSimilarDataset(
-                data.getAccession(), data.getDatabase(), data.getCrossReferences().get(SimilarityConstants.BIOMODELS_REFERENCES)));
+                data.getAccession(), data.getDatabase(),
+                data.getCrossReferences().get(SimilarityConstants.BIOMODELS_REFERENCES)));
     }
 
     public Set<String> getCitationsSet(String accession, Dataset dataset) {
