@@ -66,6 +66,13 @@ public class DDIDatasetAnnotationService {
         Dataset dbDataset = DatasetUtils.transformEntryDataset(dataset);
         dbDataset = Utils.replaceTextCase(dbDataset);
         Dataset currentDataset = datasetService.read(dbDataset.getAccession(), dbDataset.getDatabase());
+        /*LOGGER.info("dates during insertion of "+ currentDataset.getAccession()+"are " +
+                currentDataset.getDates().keySet()
+                .stream().map(dt -> {
+            LOGGER.info("dates during insertion of " + currentDataset.getAccession() +
+                    currentDataset.getDates().get(dt).iterator().next());
+            return currentDataset.getDates().get(dt);
+        }));*/
         if (currentDataset == null) {
             insertDataset(dbDataset);
         } else if (currentDataset.getInitHashCode() != dbDataset.getInitHashCode()) {
@@ -82,9 +89,32 @@ public class DDIDatasetAnnotationService {
         Dataset dbDataset = DatasetUtils.transformEntryDataset(dataset, databaseName);
         dbDataset = Utils.replaceTextCase(dbDataset);
         Dataset currentDataset = datasetService.read(dbDataset.getAccession(), dbDataset.getDatabase());
+
+        if (currentDataset != null) {
+            for (String date : currentDataset.getDates().keySet()) {
+                LOGGER.info("dates during insertion of " + currentDataset.getAccession() + "with key" + date
+                        + "are " + currentDataset.getDates().get(date));
+            }
+            if (!currentDataset.getDates().isEmpty()) {
+                LOGGER.info("dates of " + currentDataset.getId() + "are " +
+                        currentDataset.getDates().get("publication").toString());
+
+
+                currentDataset.getDates().keySet()
+                        .stream().map(dt -> {
+                    LOGGER.info("dates during insertion of " + currentDataset.getAccession() +
+                            currentDataset.getDates().get(dt).iterator().next());
+                    return currentDataset.getDates().get(dt);
+                });
+            }
+        }
         if (currentDataset == null) {
+            LOGGER.info("inserting dataset as dataset is not available");
+            LOGGER.info("dataset is " + dbDataset.toString());
             insertDataset(dbDataset);
-        } else if (currentDataset.getInitHashCode() != dbDataset.getInitHashCode()) {
+        } else if (currentDataset.getInitHashCode() != dbDataset.getInitHashCode() ||
+                (currentDataset.getDates().get("publication").iterator().next() !=
+                        dbDataset.getDates().get("publication").iterator().next())) {
             updateDataset(currentDataset, dbDataset);
         }
     }
