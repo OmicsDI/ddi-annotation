@@ -31,7 +31,7 @@ public class PeptideAtlasFileUrlRetriever extends DatasetFileUrlRetriever {
                 ftpClient.connect(uri.getHost());
                 ftpClient.login("anonymous", "anonymous");
                 FtpUtils.getListFiles(ftpClient, uri.getPath(), "archive").stream()
-                        .map(x -> String.format("ftp://%s/%s", uri.getHost(), x))
+                        .map(x -> String.format("ftp://%s%s", uri.getHost(), x))
                         .forEach(result::add);
             } finally {
                 if (ftpClient.isConnected()) {
