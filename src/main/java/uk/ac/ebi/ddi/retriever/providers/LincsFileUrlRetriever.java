@@ -1,10 +1,10 @@
 package uk.ac.ebi.ddi.retriever.providers;
 
 import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.collect.Lists;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.util.UriComponentsBuilder;
 import uk.ac.ebi.ddi.annotation.utils.Constants;
@@ -24,6 +24,8 @@ public class LincsFileUrlRetriever extends DatasetFileUrlRetriever {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(LincsFileUrlRetriever.class);
 
+    private ObjectMapper objectMapper = new ObjectMapper();
+
     public LincsFileUrlRetriever(IDatasetFileUrlRetriever datasetDownloadingRetriever) {
         super(datasetDownloadingRetriever);
     }
@@ -38,16 +40,14 @@ public class LincsFileUrlRetriever extends DatasetFileUrlRetriever {
                     .queryParam("searchTerm", "datasetid:" + accession)
                     .queryParam("skip", 0);
             URI uri = builder.build().encode().toUri();
-            ResponseEntity<JsonNode> responseEntity = execute(x -> restTemplate.getForEntity(uri, JsonNode.class));
-            if (responseEntity.getStatusCode() != HttpStatus.OK) {
+            ResponseEntity<String> responseEntity = execute(x -> restTemplate.getForEntity(uri, String.class));
+
+            JsonNode res = objectMapper.readTree(responseEntity.getBody());
+            if (res.get("results").get("totalDocuments").intValue() < 1) {
                 LOGGER.error("Exception occurred when fetching dataset's files of {}", accession);
                 return result;
             }
-            if (responseEntity.getBody().get("results").get("totalDocuments").intValue() < 1) {
-                LOGGER.error("Exception occurred when fetching dataset's files of {}", accession);
-                return result;
-            }
-            JsonNode node = responseEntity.getBody().get("results").get("documents").elements().next();
+            JsonNode node = res.get("results").get("documents").elements().next();
             List<JsonNode> levelPaths = Lists.newArrayList(node.get("levelspath").elements());
             List<JsonNode> datasetLevels = Lists.newArrayList(node.get("datasetlevels").elements());
 
