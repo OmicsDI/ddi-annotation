@@ -132,6 +132,8 @@ public class Constants {
 
     public static final String SEARCH_DOMAIN              = "search_domains";
 
+    public static final String IS_PRIVATE               =   "isPrivate";
+
     public static final String[] DATASET_SUMMARY        = {
             Constants.DESCRIPTION_FIELD,
             Constants.NAME_FIELD,
