@@ -34,9 +34,31 @@ public class JPostFileUrlRetriever extends DatasetFileUrlRetriever {
     public Set<String> getAllDatasetFiles(String accession, String database) throws IOException {
         Set<String> result = new HashSet<>();
         if (database.equals(Constants.JPOST_DATABASE)) {
-            result.addAll(fetchListDatasetFiles(0, DEFAULT_ELEMENTS_PER_REQUEST, accession));
+            String jpostProject = getJpostProject(accession);
+            if (jpostProject == null) {
+                return result;
+            }
+            result.addAll(fetchListDatasetFiles(0, DEFAULT_ELEMENTS_PER_REQUEST, jpostProject));
         }
         return result;
+    }
+
+
+    private String getJpostProject(String accession) {
+        UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(JPOST_ENDPOINT)
+                .path("/_api/project")
+                .queryParam("sortKey", "announcementDate")
+                .queryParam("offset", 0)
+                .queryParam("num", 1)
+                .queryParam("target", "public")
+                .queryParam("keyword", accession)
+                .queryParam("searchKey", "");
+        URI uri = builder.build().encode().toUri();
+        ResponseEntity<JsonNode> response = execute(x -> restTemplate.getForEntity(uri, JsonNode.class));
+        for (JsonNode node : response.getBody()) {
+            return node.get("jpostId").asText();
+        }
+        return null;
     }
 
     private List<String> fetchListDatasetFiles(int offset, int numberElement, String accession) {

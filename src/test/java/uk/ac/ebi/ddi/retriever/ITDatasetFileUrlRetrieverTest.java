@@ -70,8 +70,8 @@ public class ITDatasetFileUrlRetrieverTest {
 
     @Test
     public void testJPost() throws IOException {
-        Set<String> files = retriever.getDatasetFiles("JPST000061", Constants.JPOST_DATABASE);
-        Assert.assertEquals(96, files.size());
+        Set<String> files = retriever.getDatasetFiles("PXD004621", Constants.JPOST_DATABASE);
+        Assert.assertEquals(62, files.size());
     }
 
     @Test
