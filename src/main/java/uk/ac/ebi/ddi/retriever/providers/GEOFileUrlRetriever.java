@@ -41,7 +41,7 @@ public class GEOFileUrlRetriever extends DatasetFileUrlRetriever {
                 ftpClient.connect(uri.getHost());
                 ftpClient.login("anonymous", "anonymous");
                 FtpUtils.getListFiles(ftpClient, uri.getPath()).stream()
-                        .map(x -> String.format("ftp://%s/%s", uri.getHost(), x))
+                        .map(x -> String.format("ftp://%s%s", uri.getHost(), x))
                         .forEach(result::add);
             } finally {
                 if (ftpClient.isConnected()) {
