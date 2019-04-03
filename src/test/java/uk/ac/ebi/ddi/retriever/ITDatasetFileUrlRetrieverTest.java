@@ -84,6 +84,9 @@ public class ITDatasetFileUrlRetrieverTest {
     public void testLincs() throws IOException {
         Set<String> files = retriever.getDatasetFiles("LDS-1372", Constants.LINCS_DATABASE);
         Assert.assertEquals(4, files.size());
+
+        files = retriever.getDatasetFiles("LDS-1226", Constants.LINCS_DATABASE);
+        Assert.assertEquals(1, files.size());
     }
 
     @Test
