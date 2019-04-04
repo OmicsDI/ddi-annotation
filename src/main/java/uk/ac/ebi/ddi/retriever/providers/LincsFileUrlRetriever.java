@@ -48,6 +48,10 @@ public class LincsFileUrlRetriever extends DatasetFileUrlRetriever {
                 return result;
             }
             JsonNode node = res.get("results").get("documents").elements().next();
+            if (!node.has("levelspath")) {
+                // Under Evaluation. i.e LDS-1237
+                return result;
+            }
             List<JsonNode> levelPaths = Lists.newArrayList(node.get("levelspath").elements());
             List<JsonNode> datasetLevels = Lists.newArrayList(node.get("datasetlevels").elements());
 
