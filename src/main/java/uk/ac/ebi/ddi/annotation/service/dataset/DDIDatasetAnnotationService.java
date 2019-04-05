@@ -116,7 +116,7 @@ public class DDIDatasetAnnotationService {
         } else if (currentDataset.getInitHashCode() != dbDataset.getInitHashCode() ||
                 (currentDataset.getDates().containsKey(SimilarityConstants.PUBLICATION_DATE) &&
                         currentDataset.getDates().get(SimilarityConstants.PUBLICATION_DATE).iterator().next() !=
-                        dbDataset.getDates().get("publication").iterator().next())) {
+                        dbDataset.getDates().get(SimilarityConstants.PUBLICATION_DATE).iterator().next())) {
             updateDataset(currentDataset, dbDataset);
         }
     }
