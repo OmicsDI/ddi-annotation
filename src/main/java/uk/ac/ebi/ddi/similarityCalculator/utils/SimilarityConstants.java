@@ -19,4 +19,6 @@ public class SimilarityConstants {
 
     public static final String BIOMODELS_REFERENCES = "biomodels__db";
 
+    public static final String PUBLICATION_DATE = "publication";
+
 }

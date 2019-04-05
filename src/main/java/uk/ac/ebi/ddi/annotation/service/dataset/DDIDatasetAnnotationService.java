@@ -21,6 +21,7 @@ import uk.ac.ebi.ddi.service.db.service.logger.IHttpEventService;
 import uk.ac.ebi.ddi.service.db.service.publication.IPublicationDatasetService;
 import uk.ac.ebi.ddi.service.db.utils.DatasetCategory;
 import uk.ac.ebi.ddi.service.db.utils.DatasetSimilarsType;
+import uk.ac.ebi.ddi.similarityCalculator.utils.SimilarityConstants;
 import uk.ac.ebi.ddi.xml.validator.parser.model.Entry;
 import uk.ac.ebi.ddi.xml.validator.utils.Field;
 
@@ -90,12 +91,12 @@ public class DDIDatasetAnnotationService {
         dbDataset = Utils.replaceTextCase(dbDataset);
         Dataset currentDataset = datasetService.read(dbDataset.getAccession(), dbDataset.getDatabase());
 
-        if (currentDataset != null) {
+        if (currentDataset != null && currentDataset.getDates() != null) {
             for (String date : currentDataset.getDates().keySet()) {
                 LOGGER.info("dates during insertion of " + currentDataset.getAccession() + "with key" + date
                         + "are " + currentDataset.getDates().get(date));
             }
-            if (!currentDataset.getDates().isEmpty()) {
+            if (!currentDataset.getDates().isEmpty() && currentDataset.getDates().containsKey("publication")) {
                 LOGGER.info("dates of " + currentDataset.getId() + "are " +
                         currentDataset.getDates().get("publication").toString());
 
@@ -113,8 +114,9 @@ public class DDIDatasetAnnotationService {
             LOGGER.info("dataset is " + dbDataset.toString());
             insertDataset(dbDataset);
         } else if (currentDataset.getInitHashCode() != dbDataset.getInitHashCode() ||
-                (currentDataset.getDates().get("publication").iterator().next() !=
-                        dbDataset.getDates().get("publication").iterator().next())) {
+                (currentDataset.getDates().containsKey(SimilarityConstants.PUBLICATION_DATE) &&
+                        currentDataset.getDates().get(SimilarityConstants.PUBLICATION_DATE).iterator().next() !=
+                        dbDataset.getDates().get(SimilarityConstants.PUBLICATION_DATE).iterator().next())) {
             updateDataset(currentDataset, dbDataset);
         }
     }
