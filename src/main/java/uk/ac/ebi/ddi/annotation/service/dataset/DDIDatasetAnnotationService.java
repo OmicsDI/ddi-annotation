@@ -21,6 +21,7 @@ import uk.ac.ebi.ddi.service.db.service.logger.IHttpEventService;
 import uk.ac.ebi.ddi.service.db.service.publication.IPublicationDatasetService;
 import uk.ac.ebi.ddi.service.db.utils.DatasetCategory;
 import uk.ac.ebi.ddi.service.db.utils.DatasetSimilarsType;
+import uk.ac.ebi.ddi.similarityCalculator.utils.SimilarityConstants;
 import uk.ac.ebi.ddi.xml.validator.parser.model.Entry;
 import uk.ac.ebi.ddi.xml.validator.utils.Field;
 
@@ -113,7 +114,7 @@ public class DDIDatasetAnnotationService {
             LOGGER.info("dataset is " + dbDataset.toString());
             insertDataset(dbDataset);
         } else if (currentDataset.getInitHashCode() != dbDataset.getInitHashCode() ||
-                (currentDataset.getDates().containsKey("publication") && currentDataset.getDates().get("publication").iterator().next() !=
+                (currentDataset.getDates().containsKey(SimilarityConstants.PUBLICATION_DATE) && currentDataset.getDates().get("publication").iterator().next() !=
                         dbDataset.getDates().get("publication").iterator().next())) {
             updateDataset(currentDataset, dbDataset);
         }
