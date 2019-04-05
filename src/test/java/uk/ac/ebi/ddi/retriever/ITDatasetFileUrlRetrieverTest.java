@@ -89,7 +89,7 @@ public class ITDatasetFileUrlRetrieverTest {
         Assert.assertEquals(1, files.size());
 
         files = retriever.getDatasetFiles("LDS-1237", Constants.LINCS_DATABASE);
-        Assert.assertEquals(1, files.size());
+        Assert.assertEquals(0, files.size());
     }
 
     @Test

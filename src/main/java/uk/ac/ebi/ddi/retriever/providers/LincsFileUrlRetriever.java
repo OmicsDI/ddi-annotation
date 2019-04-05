@@ -44,7 +44,6 @@ public class LincsFileUrlRetriever extends DatasetFileUrlRetriever {
 
             JsonNode res = objectMapper.readTree(responseEntity.getBody());
             if (res.get("results").get("totalDocuments").intValue() < 1) {
-                LOGGER.error("Exception occurred when fetching dataset's files of {}", accession);
                 return result;
             }
             JsonNode node = res.get("results").get("documents").elements().next();
