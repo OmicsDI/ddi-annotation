@@ -9,6 +9,7 @@ import org.springframework.data.mongodb.core.query.Criteria;
 import uk.ac.ebi.ddi.annotation.utils.Constants;
 import uk.ac.ebi.ddi.annotation.utils.DatasetUtils;
 import uk.ac.ebi.ddi.annotation.utils.Utils;
+import uk.ac.ebi.ddi.cache.CacheClient;
 import uk.ac.ebi.ddi.service.db.model.dataset.Dataset;
 import uk.ac.ebi.ddi.service.db.model.dataset.DatasetSimilars;
 import uk.ac.ebi.ddi.service.db.model.dataset.DatasetStatus;
@@ -21,7 +22,6 @@ import uk.ac.ebi.ddi.service.db.service.logger.IHttpEventService;
 import uk.ac.ebi.ddi.service.db.service.publication.IPublicationDatasetService;
 import uk.ac.ebi.ddi.service.db.utils.DatasetCategory;
 import uk.ac.ebi.ddi.service.db.utils.DatasetSimilarsType;
-import uk.ac.ebi.ddi.similarityCalculator.utils.SimilarityConstants;
 import uk.ac.ebi.ddi.xml.validator.parser.model.Entry;
 import uk.ac.ebi.ddi.xml.validator.utils.Field;
 
@@ -56,6 +56,12 @@ public class DDIDatasetAnnotationService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(DDIDatasetAnnotationService.class);
 
+    private static final String CACHE_NAME = "DDIDatasetAnnotation";
+
+    static {
+        CacheClient.loadCaches(CACHE_NAME);
+    }
+
     /**
      * This function looks for individual datasets and check if they are in the database and if they needs to
      * be updated.
@@ -88,36 +94,28 @@ public class DDIDatasetAnnotationService {
      */
     public void insertDataset(Entry dataset, String databaseName) {
         Dataset dbDataset = DatasetUtils.transformEntryDataset(dataset, databaseName);
-        dbDataset = Utils.replaceTextCase(dbDataset);
+        Utils.replaceTextCase(dbDataset);
         Dataset currentDataset = datasetService.read(dbDataset.getAccession(), dbDataset.getDatabase());
 
-        if (currentDataset != null && currentDataset.getDates() != null) {
-            for (String date : currentDataset.getDates().keySet()) {
-                LOGGER.info("dates during insertion of " + currentDataset.getAccession() + "with key" + date
-                        + "are " + currentDataset.getDates().get(date));
+        if (currentDataset != null) {
+            if (currentDataset.getDates() != null) {
+                for (String date : currentDataset.getDates().keySet()) {
+                    LOGGER.info("dates during insertion of " + currentDataset.getAccession() + "with key" + date
+                            + "are " + currentDataset.getDates().get(date));
+                }
+                if (!currentDataset.getDates().isEmpty() && currentDataset.getDates().containsKey("publication")) {
+                    LOGGER.info("dates of " + currentDataset.getId() + "are " +
+                            currentDataset.getDates().get("publication").toString());
+                }
             }
-            if (!currentDataset.getDates().isEmpty() && currentDataset.getDates().containsKey("publication")) {
-                LOGGER.info("dates of " + currentDataset.getId() + "are " +
-                        currentDataset.getDates().get("publication").toString());
 
-
-                currentDataset.getDates().keySet()
-                        .stream().map(dt -> {
-                    LOGGER.info("dates during insertion of " + currentDataset.getAccession() +
-                            currentDataset.getDates().get(dt).iterator().next());
-                    return currentDataset.getDates().get(dt);
-                });
+            if (currentDataset.getInitHashCode() != dbDataset.getInitHashCode()) {
+                updateDataset(currentDataset, dbDataset);
             }
-        }
-        if (currentDataset == null) {
+        } else {
             LOGGER.info("inserting dataset as dataset is not available");
             LOGGER.info("dataset is " + dbDataset.toString());
             insertDataset(dbDataset);
-        } else if (currentDataset.getInitHashCode() != dbDataset.getInitHashCode() ||
-                (currentDataset.getDates().containsKey(SimilarityConstants.PUBLICATION_DATE) &&
-                        currentDataset.getDates().get(SimilarityConstants.PUBLICATION_DATE).iterator().next() !=
-                        dbDataset.getDates().get(SimilarityConstants.PUBLICATION_DATE).iterator().next())) {
-            updateDataset(currentDataset, dbDataset);
         }
     }
 
