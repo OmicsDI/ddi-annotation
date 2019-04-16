@@ -33,14 +33,17 @@ public class JPostFileUrlRetriever extends DatasetFileUrlRetriever {
     @Override
     public Set<String> getAllDatasetFiles(String accession, String database) throws IOException {
         Set<String> result = new HashSet<>();
-        if (database.equals(Constants.JPOST_DATABASE)) {
-            String jpostProject = getJpostProject(accession);
-            if (jpostProject == null) {
-                return result;
-            }
-            result.addAll(fetchListDatasetFiles(0, DEFAULT_ELEMENTS_PER_REQUEST, jpostProject));
+        String jpostProject = getJpostProject(accession);
+        if (jpostProject == null) {
+            return result;
         }
+        result.addAll(fetchListDatasetFiles(0, DEFAULT_ELEMENTS_PER_REQUEST, jpostProject));
         return result;
+    }
+
+    @Override
+    protected boolean isSupported(String database) {
+        return database.equals(Constants.JPOST_DATABASE);
     }
 
 
