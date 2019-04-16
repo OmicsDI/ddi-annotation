@@ -24,22 +24,25 @@ public class DbGapFileUrlRetriever extends DatasetFileUrlRetriever {
     @Override
     public Set<String> getAllDatasetFiles(String accession, String database) throws IOException {
         Set<String> result = new HashSet<>();
-        if (database.equals(Constants.DBGAP_DATABASE)) {
-            String url = String.format("%s/%s", FTP_DBGAP, accession);
-            URI uri = UriUtils.toUri(url);
-            FTPClient ftpClient = new FTPClient();
-            try {
-                ftpClient.connect(uri.getHost());
-                ftpClient.login("anonymous", "anonymous");
-                FtpUtils.getListFiles(ftpClient, uri.getPath()).stream()
-                        .map(x -> String.format("ftp://%s%s", uri.getHost(), x))
-                        .forEach(result::add);
-            } finally {
-                if (ftpClient.isConnected()) {
-                    ftpClient.disconnect();
-                }
+        String url = String.format("%s/%s", FTP_DBGAP, accession);
+        URI uri = UriUtils.toUri(url);
+        FTPClient ftpClient = createFtpClient();
+        try {
+            ftpClient.connect(uri.getHost());
+            ftpClient.login("anonymous", "anonymous");
+            FtpUtils.getListFiles(ftpClient, uri.getPath()).stream()
+                    .map(x -> String.format("ftp://%s%s", uri.getHost(), x))
+                    .forEach(result::add);
+        } finally {
+            if (ftpClient.isConnected()) {
+                ftpClient.disconnect();
             }
         }
         return result;
+    }
+
+    @Override
+    protected boolean isSupported(String database) {
+        return database.equals(Constants.DBGAP_DATABASE);
     }
 }

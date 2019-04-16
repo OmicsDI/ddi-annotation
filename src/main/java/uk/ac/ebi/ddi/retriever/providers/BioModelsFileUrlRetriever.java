@@ -23,9 +23,6 @@ public class BioModelsFileUrlRetriever extends DatasetFileUrlRetriever {
     @Override
     public Set<String> getAllDatasetFiles(String accession, String database) throws IOException {
         Set<String> result = new HashSet<>();
-        if (!database.equals(Constants.BIOMODELS_DATABASE) && !database.equals(Constants.BIOMODELS_DATABASE_2)) {
-            return result;
-        }
         UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(BIOMODEL_ENDPOINT)
                 .path("/files")
                 .path("/" + accession);
@@ -48,5 +45,10 @@ public class BioModelsFileUrlRetriever extends DatasetFileUrlRetriever {
         }
 
         return result;
+    }
+
+    @Override
+    protected boolean isSupported(String database) {
+        return database.equals(Constants.BIOMODELS_DATABASE) || database.equals(Constants.BIOMODELS_DATABASE_2);
     }
 }

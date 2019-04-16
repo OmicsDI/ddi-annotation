@@ -1,5 +1,6 @@
 package uk.ac.ebi.ddi.retriever;
 
+import org.apache.commons.net.ftp.FTPClient;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.config.CookieSpecs;
 import org.apache.http.client.config.RequestConfig;
@@ -28,6 +29,8 @@ public abstract class DatasetFileUrlRetriever extends RetryClient implements IDa
 
     protected RestTemplate restTemplate;
 
+    private static final int FTP_TIMEOUT = 60000;
+
     public DatasetFileUrlRetriever(IDatasetFileUrlRetriever datasetDownloadingRetriever) {
         this.datasetDownloadingRetriever = datasetDownloadingRetriever;
         try {
@@ -42,10 +45,20 @@ public abstract class DatasetFileUrlRetriever extends RetryClient implements IDa
 
     protected abstract Set<String> getAllDatasetFiles(String accession, String database) throws IOException;
 
+    protected abstract boolean isSupported(String database);
+
+    protected FTPClient createFtpClient() {
+        FTPClient ftpClient = new FTPClient();
+        ftpClient.setConnectTimeout(FTP_TIMEOUT);
+        return ftpClient;
+    }
+
     @Override
     public Set<String> getDatasetFiles(String accession, String database) throws IOException {
         Set<String> result = datasetDownloadingRetriever.getDatasetFiles(accession, database);
-        result.addAll(getAllDatasetFiles(accession, database));
+        if (isSupported(database)) {
+            result.addAll(getAllDatasetFiles(accession, database));
+        }
         return result;
     }
 
