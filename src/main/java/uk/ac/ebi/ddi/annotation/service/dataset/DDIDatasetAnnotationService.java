@@ -22,6 +22,7 @@ import uk.ac.ebi.ddi.service.db.service.logger.IHttpEventService;
 import uk.ac.ebi.ddi.service.db.service.publication.IPublicationDatasetService;
 import uk.ac.ebi.ddi.service.db.utils.DatasetCategory;
 import uk.ac.ebi.ddi.service.db.utils.DatasetSimilarsType;
+import uk.ac.ebi.ddi.similarityCalculator.utils.SimilarityConstants;
 import uk.ac.ebi.ddi.xml.validator.parser.model.Entry;
 import uk.ac.ebi.ddi.xml.validator.utils.Field;
 
@@ -204,7 +205,7 @@ public class DDIDatasetAnnotationService {
     }
 
     private String getDate() {
-        DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd");
+        DateFormat dateFormat = new SimpleDateFormat(SimilarityConstants.DATE_FORMAT_YYYY);
         return dateFormat.format(new java.util.Date());
     }
 
