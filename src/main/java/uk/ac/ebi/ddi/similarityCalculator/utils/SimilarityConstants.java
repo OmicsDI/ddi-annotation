@@ -21,4 +21,8 @@ public class SimilarityConstants {
 
     public static final String PUBLICATION_DATE = "publication";
 
+    public static final String DATE_FORMAT_YYYY = "yyyy/MM/dd";
+
+    public static final String DATASETS_COLLECTION = "datasets.dataset";
+
 }
