@@ -105,6 +105,8 @@ public class Constants {
 
     public static final String METABOLIGHTS_DATABASE             =   "MetaboLights";
 
+    public static final String EVA_DATABASE = "EVA";
+
     public static final String METABOLOME_DATABASE             =   "MetabolomeExpress";
 
     public static final String ARRAYEXPRESS_DATABASE             =   "ArrayExpress";
