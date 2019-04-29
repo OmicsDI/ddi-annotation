@@ -24,6 +24,8 @@ public class ITDatasetFileUrlRetrieverTest {
         retriever = new MassIVEFileUrlRetriever(retriever);
         retriever = new LincsFileUrlRetriever(retriever);
         retriever = new PeptideAtlasFileUrlRetriever(retriever);
+        retriever = new MetabolightsFileUrlRetriever(retriever);
+        retriever = new EVAFileUrlRetriever(retriever);
     }
 
     @Test
@@ -96,5 +98,17 @@ public class ITDatasetFileUrlRetrieverTest {
     public void testPeptideAtlas() throws IOException {
         Set<String> files = retriever.getDatasetFiles("PAe000572", Constants.PEPTIDE_ATLAS_DATABASE);
         Assert.assertEquals(6, files.size());
+    }
+
+    @Test
+    public void testMetabolights() throws IOException {
+        Set<String> files = retriever.getDatasetFiles("MTBLS21", Constants.METABOLIGHTS_DATABASE);
+        Assert.assertEquals(91, files.size());
+    }
+
+    @Test
+    public void testEVA() throws IOException {
+        Set<String> files = retriever.getDatasetFiles("PRJEB4019", Constants.EVA_DATABASE);
+        Assert.assertEquals(25, files.size());
     }
 }
