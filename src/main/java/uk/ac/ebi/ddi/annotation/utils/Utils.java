@@ -1,7 +1,7 @@
 package uk.ac.ebi.ddi.annotation.utils;
 
+import uk.ac.ebi.ddi.ddidomaindb.dataset.DSField;
 import uk.ac.ebi.ddi.service.db.model.dataset.Dataset;
-import uk.ac.ebi.ddi.xml.validator.utils.Field;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -61,23 +61,23 @@ public class Utils {
     }
 
     public static Dataset replaceTextCase(Dataset existingDataset) {
-        if (existingDataset.getAdditional().get(Field.DISEASE_FIELD.getName()) != null) {
-            Set<String> diseases = existingDataset.getAdditional().get(Field.DISEASE_FIELD.getName());
+        if (existingDataset.getAdditional().get(DSField.Additional.DISEASE_FIELD.getName()) != null) {
+            Set<String> diseases = existingDataset.getAdditional().get(DSField.Additional.DISEASE_FIELD.getName());
             Set<String> updatedDisease =  diseases.parallelStream()
                     .map(x -> Utils.toTitleCase(x.toLowerCase())).collect(Collectors.toSet());
-            existingDataset.addAdditional(Field.DISEASE_FIELD.getName(), updatedDisease);
+            existingDataset.addAdditional(DSField.Additional.DISEASE_FIELD.getName(), updatedDisease);
         }
-        if (existingDataset.getAdditional().get(Field.SPECIE_FIELD.getName()) != null) {
-            Set<String> diseases = existingDataset.getAdditional().get(Field.SPECIE_FIELD.getName());
+        if (existingDataset.getAdditional().get(DSField.Additional.SPECIE_FIELD.getName()) != null) {
+            Set<String> diseases = existingDataset.getAdditional().get(DSField.Additional.SPECIE_FIELD.getName());
             Set<String> updatedSpecies =  diseases.parallelStream()
                     .map(x -> Utils.toTitleCase(x.toLowerCase())).collect(Collectors.toSet());
-            existingDataset.addAdditional(Field.SPECIE_FIELD.getName(), updatedSpecies);
+            existingDataset.addAdditional(DSField.Additional.SPECIE_FIELD.getName(), updatedSpecies);
         }
-        if (existingDataset.getAdditional().get(Field.TISSUE_FIELD.getName()) != null) {
-            Set<String> diseases = existingDataset.getAdditional().get(Field.TISSUE_FIELD.getName());
+        if (existingDataset.getAdditional().get(DSField.Additional.TISSUE_FIELD.getName()) != null) {
+            Set<String> diseases = existingDataset.getAdditional().get(DSField.Additional.TISSUE_FIELD.getName());
             Set<String> updatedTissue = diseases.parallelStream()
                     .map(x -> Utils.toTitleCase(x.toLowerCase())).collect(Collectors.toSet());
-            existingDataset.addAdditional(Field.TISSUE_FIELD.getName(), updatedTissue);
+            existingDataset.addAdditional(DSField.Additional.TISSUE_FIELD.getName(), updatedTissue);
         }
         return existingDataset;
 

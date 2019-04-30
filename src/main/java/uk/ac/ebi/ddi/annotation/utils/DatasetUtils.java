@@ -2,11 +2,11 @@ package uk.ac.ebi.ddi.annotation.utils;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import uk.ac.ebi.ddi.ddidomaindb.dataset.DSField;
 import uk.ac.ebi.ddi.service.db.model.dataset.Dataset;
 import uk.ac.ebi.ddi.service.db.utils.DatasetCategory;
 import uk.ac.ebi.ddi.xml.validator.parser.model.Date;
 import uk.ac.ebi.ddi.xml.validator.parser.model.Entry;
-import uk.ac.ebi.ddi.xml.validator.utils.Field;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -45,7 +45,7 @@ public class DatasetUtils {
         return dataset;
     }
 
-    public static Set<String> getCrossReferenceFieldValue(Dataset dataset, String nameKey) {
+    public static Set<String> getCrossReference(Dataset dataset, String nameKey) {
         if (dataset.getCrossReferences() != null && !dataset.getCrossReferences().isEmpty()) {
             if (dataset.getCrossReferences().containsKey(nameKey)) {
                 return dataset.getCrossReferences().get(nameKey);
@@ -85,7 +85,7 @@ public class DatasetUtils {
         return dataset;
     }
 
-    public static String getFirstAdditionalFieldValue(Dataset dataset, String key) {
+    public static String getFirstAdditional(Dataset dataset, String key) {
         if (dataset.getAdditional() != null && !dataset.getAdditional().isEmpty()) {
             if (dataset.getAdditional().containsKey(key) && !dataset.getAdditional().get(key).isEmpty()) {
                 return new ArrayList<>(dataset.getAdditional().get(key)).get(0);
@@ -171,13 +171,13 @@ public class DatasetUtils {
                                 x -> x.getName().trim(),
                                 Collectors.mapping(x -> x.getValue().trim(), Collectors.toSet())));
             }
-            Set<String> repositories = additionals.get(Field.REPOSITORY.getName());
+            Set<String> repositories = additionals.get(DSField.Additional.REPOSITORY.getName());
             if (null == repositories || repositories.size() < 1) {
                 //AZ:this code overrides additonal.repository. why? wrapped by if
                 //** Rewrite the respoitory with the name we would like to handle ***/
                 Set<String> databases = new HashSet<>();
                 databases.add(databaseName);
-                additionals.put(Field.REPOSITORY.getName(), databases);
+                additionals.put(DSField.Additional.REPOSITORY.getName(), databases);
             }
         } catch (Exception ex) {
             LOGGER.error("Exception occured in transformEntryDataset entry with id " + dataset.getId());

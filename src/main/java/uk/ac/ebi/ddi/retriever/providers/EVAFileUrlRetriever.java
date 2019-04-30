@@ -1,7 +1,7 @@
 package uk.ac.ebi.ddi.retriever.providers;
 
 import org.apache.commons.net.ftp.FTPClient;
-import uk.ac.ebi.ddi.annotation.utils.Constants;
+import uk.ac.ebi.ddi.ddidomaindb.database.DB;
 import uk.ac.ebi.ddi.extservices.net.FtpUtils;
 import uk.ac.ebi.ddi.extservices.net.UriUtils;
 import uk.ac.ebi.ddi.retriever.DatasetFileUrlRetriever;
@@ -43,6 +43,6 @@ public class EVAFileUrlRetriever extends DatasetFileUrlRetriever {
 
     @Override
     protected boolean isSupported(String database) {
-        return Constants.EVA_DATABASE.equals(database);
+        return DB.EVA.getDBName().equals(database);
     }
 }

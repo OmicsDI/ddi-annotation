@@ -12,6 +12,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import uk.ac.ebi.ddi.annotation.service.synonyms.DDIExpDataImportService;
 import uk.ac.ebi.ddi.annotation.service.synonyms.DDIXmlProcessService;
 import uk.ac.ebi.ddi.annotation.utils.DataType;
+import uk.ac.ebi.ddi.ddidomaindb.dataset.DSField;
 import uk.ac.ebi.ddi.service.db.service.enrichment.EnrichmentInfoService;
 import uk.ac.ebi.ddi.service.db.service.similarity.DatasetStatInfoService;
 import uk.ac.ebi.ddi.service.db.service.similarity.ExpOutputDatasetService;
@@ -23,7 +24,6 @@ import uk.ac.ebi.ddi.xml.validator.parser.model.Database;
 import uk.ac.ebi.ddi.xml.validator.parser.model.Entries;
 import uk.ac.ebi.ddi.xml.validator.parser.model.Entry;
 import uk.ac.ebi.ddi.xml.validator.parser.model.Reference;
-import uk.ac.ebi.ddi.xml.validator.utils.Field;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -184,7 +184,8 @@ public class DDIXmlProcessServiceTest {
                         Entry entry = reader.getEntryByIndex(i);
                         String entryAccession = entry.getId();
                         List<Reference> refs = entry.getCrossReferences().getRef();
-                        ddiExpDataImportService.importDatasetTerms(dataType, entryAccession, entry.getAdditionalFieldValue(Field.REPOSITORY.getName()), refs);
+                        ddiExpDataImportService.importDatasetTerms(dataType, entryAccession,
+                                entry.getAdditionalFieldValue(DSField.Additional.REPOSITORY.getName()), refs);
                     }
                 }
             }

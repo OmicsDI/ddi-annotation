@@ -5,6 +5,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import uk.ac.ebi.ddi.annotation.utils.Constants;
+import uk.ac.ebi.ddi.ddidomaindb.database.DB;
+import uk.ac.ebi.ddi.ddidomaindb.dataset.DSField;
 import uk.ac.ebi.ddi.ebe.ws.dao.client.dataset.DatasetWsClient;
 import uk.ac.ebi.ddi.ebe.ws.dao.client.domain.DomainWsClient;
 import uk.ac.ebi.ddi.ebe.ws.dao.client.europmc.CitationClient;
@@ -133,7 +135,7 @@ public class SimilarityCounts {
         }
         HashSet<String> count = new HashSet<>();
         count.add(String.valueOf(allCitationIds.size()));
-        updateDataset.getAdditional().put(Constants.CITATION_FIELD, count);
+        updateDataset.getAdditional().put(DSField.Additional.CITATION_COUNT.key(), count);
         datasetService.update(updateDataset.getId(), updateDataset);
         return dataset;
     }
@@ -145,8 +147,10 @@ public class SimilarityCounts {
                 datasetService.readAll(i, numberOfDataset).getContent()
                         .forEach(dt -> getCitationCount(
                                 dt.getDatabase(), dt.getAccession(),
-                                dt.getAdditional().containsKey(Constants.SECONDARY_ACCESSION) ?
-                                        new ArrayList<String>(dt.getAdditional().get(Constants.SECONDARY_ACCESSION)) :
+                                dt.getAdditional().containsKey(DSField.Additional.SECONDARY_ACCESSION.key()) ?
+                                        new ArrayList<String>(
+                                                dt.getAdditional().get(DSField.Additional.SECONDARY_ACCESSION.key())
+                                        ) :
                                         new ArrayList<String>()));
             }
         } catch (Exception ex) {
@@ -162,7 +166,7 @@ public class SimilarityCounts {
             HashMap<String, Integer> domainMap = new HashMap<>();
             Dataset dataset = datasetService.read(accession, database);
             List<String> filteredDomains = new ArrayList<>();
-            Set<String> secondaryAccession = dataset.getAdditional().get(Constants.SECONDARY_ACCESSION);
+            Set<String> secondaryAccession = dataset.getAdditional().get(DSField.Additional.SECONDARY_ACCESSION.key());
             String query = pubmedId;
             query = (query == null || query.isEmpty()) ? "*:*" : query;
 
@@ -271,7 +275,7 @@ public class SimilarityCounts {
             }
             HashSet<String> count = new HashSet<>();
             count.add(String.valueOf(searchCount));
-            dataset.getAdditional().put(Constants.SEARCH_FIELD, count);
+            dataset.getAdditional().put(DSField.Additional.SEARCH_COUNT.key(), count);
             dataset.getAdditional().put(Constants.SEARCH_DOMAIN, domainSet);
             datasetService.update(dataset.getId(), dataset);
 
@@ -304,8 +308,8 @@ public class SimilarityCounts {
                         .parallelStream()
                         .map(data -> {
                             if (data.getCrossReferences() != null
-                                    && data.getCrossReferences().get(Constants.PUBMED_FIELD) != null) {
-                                data.getCrossReferences().get(Constants.PUBMED_FIELD)
+                                    && data.getCrossReferences().get(DSField.CrossRef.PUBMED.key()) != null) {
+                                data.getCrossReferences().get(DSField.CrossRef.PUBMED.key())
                                         .forEach(dta -> addSearchCounts(data.getAccession(), dta, data.getDatabase()));
                             } else {
                                  addSearchCounts(data.getAccession(), "", data.getDatabase());
@@ -335,8 +339,8 @@ public class SimilarityCounts {
                  datasetService.getWithoutSearchDomains(i, numberOfDataset).getContent().parallelStream()
                         .map(data -> {
                     if (data.getCrossReferences() != null
-                            && data.getCrossReferences().get(Constants.PUBMED_FIELD) != null) {
-                        data.getCrossReferences().get(Constants.PUBMED_FIELD).
+                            && data.getCrossReferences().get(DSField.CrossRef.PUBMED.key()) != null) {
+                        data.getCrossReferences().get(DSField.CrossRef.PUBMED.key()).
                                 forEach(dta -> addSearchCounts(data.getAccession(), dta, data.getDatabase()));
 
                     } else {
@@ -360,7 +364,7 @@ public class SimilarityCounts {
     }
 
     public void renalyseBioModels() {
-        List<Dataset> datasets = datasetService.findByDatabaseBioModels(Constants.BIOMODELS_DATABASE);
+        List<Dataset> datasets = datasetService.findByDatabaseBioModels(DB.BIOMODELS.getDBName());
         datasets.parallelStream().forEach(data -> addSimilarDataset(
                 data.getAccession(),
                 data.getDatabase(),
@@ -387,7 +391,7 @@ public class SimilarityCounts {
     }
 
     public void renalysedByBioModels() {
-        List<Dataset> datasets = datasetService.findByDatabaseBioModels(Constants.BIOMODELS_DATABASE);
+        List<Dataset> datasets = datasetService.findByDatabaseBioModels(DB.BIOMODELS.getDBName());
         datasets.parallelStream().forEach(data -> addSimilarDataset(
                 data.getAccession(), data.getDatabase(),
                 data.getCrossReferences().get(SimilarityConstants.BIOMODELS_REFERENCES)));
@@ -400,8 +404,8 @@ public class SimilarityCounts {
         CitationResponse primaryCitation = citationClient.getCitations(accession, numberOfCitations, "*");
         primaryCit.addAll(Arrays.stream(primaryCitation.citations.get(SimilarityConstants.RESULT))
                 .filter(data -> (dataset.getCrossReferences() != null
-                        && dataset.getCrossReferences().get(Constants.PUBMED_FIELD) != null
-                        && !dataset.getCrossReferences().get(Constants.PUBMED_FIELD).contains(data.pubmedId)))
+                        && dataset.getCrossReferences().get(DSField.CrossRef.PUBMED.key()) != null
+                        && !dataset.getCrossReferences().get(DSField.CrossRef.PUBMED.key()).contains(data.pubmedId)))
                 .map(dt -> dt.pubmedId).collect(Collectors.toSet()));
 
         if (primaryCitation.count > numberOfCitations) {
@@ -409,8 +413,9 @@ public class SimilarityCounts {
                 primaryCitation = citationClient.getCitations(accession, numberOfCitations, primaryCitation.cursorMark);
                 primaryCit.addAll(Arrays.stream(primaryCitation.citations.get(SimilarityConstants.RESULT))
                         .filter(data -> (dataset.getCrossReferences() != null
-                                && dataset.getCrossReferences().get(Constants.PUBMED_FIELD) != null
-                                && !dataset.getCrossReferences().get(Constants.PUBMED_FIELD).contains(data.pubmedId)))
+                                && dataset.getCrossReferences().get(DSField.CrossRef.PUBMED.key()) != null
+                                && !dataset.getCrossReferences().get(
+                                        DSField.CrossRef.PUBMED.key()).contains(data.pubmedId)))
                         .map(dt -> dt.pubmedId).collect(Collectors.toSet()));
                 numberOfPages++;
             }

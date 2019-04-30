@@ -6,10 +6,11 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.aggregation.*;
 import org.springframework.data.mongodb.core.query.Criteria;
-import uk.ac.ebi.ddi.annotation.utils.Constants;
 import uk.ac.ebi.ddi.annotation.utils.DatasetUtils;
 import uk.ac.ebi.ddi.annotation.utils.Utils;
 import uk.ac.ebi.ddi.cache.CacheClient;
+import uk.ac.ebi.ddi.ddidomaindb.database.DB;
+import uk.ac.ebi.ddi.ddidomaindb.dataset.DSField;
 import uk.ac.ebi.ddi.service.db.model.dataset.Dataset;
 import uk.ac.ebi.ddi.service.db.model.dataset.DatasetSimilars;
 import uk.ac.ebi.ddi.service.db.model.dataset.DatasetStatus;
@@ -23,7 +24,6 @@ import uk.ac.ebi.ddi.service.db.service.publication.IPublicationDatasetService;
 import uk.ac.ebi.ddi.service.db.utils.DatasetCategory;
 import uk.ac.ebi.ddi.service.db.utils.DatasetSimilarsType;
 import uk.ac.ebi.ddi.xml.validator.parser.model.Entry;
-import uk.ac.ebi.ddi.xml.validator.utils.Field;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -132,13 +132,12 @@ public class DDIDatasetAnnotationService {
             exitingDataset.setCurrentStatus(DatasetCategory.UPDATED.getType());
         }
         datasetService.update(exitingDataset.getId(), exitingDataset);
-        if (exitingDataset.getCrossReferences() != null
-                && !DatasetUtils.getCrossReferenceFieldValue(exitingDataset, Field.PUBMED.getName()).isEmpty()) {
-            for (String pubmedId: DatasetUtils.getCrossReferenceFieldValue(exitingDataset, Field.PUBMED.getName())) {
+        if (!DatasetUtils.getCrossReference(exitingDataset, DSField.CrossRef.PUBMED.key()).isEmpty()) {
+            for (String pubmedId: DatasetUtils.getCrossReference(exitingDataset, DSField.CrossRef.PUBMED.key())) {
                 //Todo: In the future we need to check for providers that have multiple omics already.
                 publicationService.save(new PublicationDataset(pubmedId, exitingDataset.getAccession(),
                         exitingDataset.getDatabase(),
-                        DatasetUtils.getFirstAdditionalFieldValue(exitingDataset, Field.OMICS.getName()))
+                        DatasetUtils.getFirstAdditional(exitingDataset, DSField.Additional.OMICS.key()))
                 );
             }
         }
@@ -386,9 +385,9 @@ public class DDIDatasetAnnotationService {
     }
 
     public void updateDatasetClaim() {
-        String[] sourceDatasets = {Constants.PRIDE_DATABASE, Constants.METABOLIGHTS_DATABASE,
-                Constants.METABOLOME_DATABASE, Constants.ARRAYEXPRESS_DATABASE, Constants.MASSIVE_DATABASE,
-                Constants.JPOST_DATABASE};
+        String[] sourceDatasets = {DB.PRIDE.getDBName(), DB.METABOLIGHTS.getDBName(),
+                DB.METABOLOMEEXPRESS.getDBName(), DB.ARRAY_EXPRESS.getDBName(), DB.MASSIVE.getDBName(),
+                DB.JPOST.getDBName()};
 
         datasetService.updateDatasetClaim(sourceDatasets);
     }

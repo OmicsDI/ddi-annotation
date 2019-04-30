@@ -1,11 +1,11 @@
 package uk.ac.ebi.ddi.annotation.service.taxonomy;
 
 import uk.ac.ebi.ddi.annotation.utils.DatasetUtils;
+import uk.ac.ebi.ddi.ddidomaindb.dataset.DSField;
 import uk.ac.ebi.ddi.extservices.entrez.client.taxonomy.TaxonomyWsClient;
 import uk.ac.ebi.ddi.extservices.entrez.config.TaxWsConfigProd;
 import uk.ac.ebi.ddi.extservices.entrez.ncbiresult.NCBITaxResult;
 import uk.ac.ebi.ddi.service.db.model.dataset.Dataset;
-import uk.ac.ebi.ddi.xml.validator.utils.Field;
 
 import java.util.*;
 
@@ -72,13 +72,12 @@ public class NCBITaxonomyService {
     }
 
     public Dataset annotateSpecies(Dataset dataset) {
-        if (dataset.getCrossReferences() != null && !dataset.getCrossReferences().containsKey(Field.TAXONOMY.getName())
-                && dataset.getAdditional() != null
-                && getAdditionalField(dataset, Field.SPECIE_FIELD.getName()) != null) {
-            Set<String> taxs = getAdditionalField(dataset, Field.SPECIE_FIELD.getName());
+        if (DatasetUtils.getCrossReference(dataset, DSField.CrossRef.TAXONOMY.key()).isEmpty()
+                && !getAdditionalField(dataset, DSField.Additional.SPECIE_FIELD.getName()).isEmpty()) {
+            Set<String> taxs = getAdditionalField(dataset, DSField.Additional.SPECIE_FIELD.getName());
             List<String> taxonomies = NCBITaxonomyService.getInstance().getNCBITaxonomy(new ArrayList<>(taxs));
             for (String tax : taxonomies) {
-                DatasetUtils.addCrossReferenceValue(dataset, Field.TAXONOMY.getName(), tax);
+                DatasetUtils.addCrossReferenceValue(dataset, DSField.CrossRef.TAXONOMY.getName(), tax);
             }
         }
         return dataset;
@@ -97,8 +96,8 @@ public class NCBITaxonomyService {
 
     public Dataset annotateParentForNonRanSpecies(Dataset dataset) {
         if (dataset.getCrossReferences() != null
-                && dataset.getCrossReferences().containsKey(Field.TAXONOMY.getName())) {
-            Set<String> taxonomies = dataset.getCrossReferences().get(Field.TAXONOMY.getName());
+                && dataset.getCrossReferences().containsKey(DSField.CrossRef.TAXONOMY.getName())) {
+            Set<String> taxonomies = dataset.getCrossReferences().get(DSField.CrossRef.TAXONOMY.getName());
             Set<String> newTaxonomies = new HashSet<>();
 
             for (String taxId : taxonomies) {
@@ -112,7 +111,7 @@ public class NCBITaxonomyService {
                 }
             }
             taxonomies.addAll(newTaxonomies);
-            DatasetUtils.addCrossReferenceValues(dataset, Field.TAXONOMY.getName(), taxonomies);
+            DatasetUtils.addCrossReferenceValues(dataset, DSField.CrossRef.TAXONOMY.getName(), taxonomies);
         }
 
         return dataset;

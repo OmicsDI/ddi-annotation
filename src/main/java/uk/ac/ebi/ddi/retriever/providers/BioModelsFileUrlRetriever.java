@@ -3,7 +3,7 @@ package uk.ac.ebi.ddi.retriever.providers;
 import com.fasterxml.jackson.databind.JsonNode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.util.UriComponentsBuilder;
-import uk.ac.ebi.ddi.annotation.utils.Constants;
+import uk.ac.ebi.ddi.ddidomaindb.database.DB;
 import uk.ac.ebi.ddi.retriever.DatasetFileUrlRetriever;
 import uk.ac.ebi.ddi.retriever.IDatasetFileUrlRetriever;
 
@@ -49,6 +49,6 @@ public class BioModelsFileUrlRetriever extends DatasetFileUrlRetriever {
 
     @Override
     protected boolean isSupported(String database) {
-        return database.equals(Constants.BIOMODELS_DATABASE) || database.equals(Constants.BIOMODELS_DATABASE_2);
+        return database.equals(DB.BIOMODELS.getDBName()) || database.equals(DB.BIOMODELS_SHORT.getDBName());
     }
 }

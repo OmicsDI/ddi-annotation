@@ -1,9 +1,9 @@
 package uk.ac.ebi.ddi.annotation.service.dataset;
 
+import uk.ac.ebi.ddi.ddidomaindb.dataset.DSField;
 import uk.ac.ebi.ddi.service.db.model.dataset.Dataset;
 import uk.ac.ebi.ddi.xml.validator.parser.model.Date;
 import uk.ac.ebi.ddi.xml.validator.parser.model.Entry;
-import uk.ac.ebi.ddi.xml.validator.utils.Field;
 
 import java.util.Map;
 import java.util.Set;
@@ -34,13 +34,13 @@ public class DatasetAnnotationFieldsService {
         Set<String> toAdd = null;
         if (dataset.getDates() != null && !dataset.getDates().isEmpty()) {
             for (String dateField: dataset.getDates().keySet()) {
-                if (dateField.equalsIgnoreCase(Field.PUBLICATION_UPDATED.getName())) {
+                if (dateField.equalsIgnoreCase(DSField.Date.PUBLICATION_UPDATED.getName())) {
                     toAdd = dataset.getDates().get(dateField);
                 }
             }
         }
         if (toAdd != null) {
-            dataset.getDates().put(Field.PUBLICATION.getName(), toAdd);
+            dataset.getDates().put(DSField.Date.PUBLICATION.getName(), toAdd);
         }
         return dataset;
     }
@@ -48,7 +48,7 @@ public class DatasetAnnotationFieldsService {
     private static boolean containsPublicationDate(Map<String, Set<String>> dates) {
         if (dates != null && !dates.isEmpty()) {
             for (String dateField : dates.keySet()) {
-                if (dateField.equalsIgnoreCase(Field.PUBLICATION.getName())) {
+                if (dateField.equalsIgnoreCase(DSField.Date.PUBLICATION.getName())) {
                     return true;
                 }
             }
@@ -60,9 +60,9 @@ public class DatasetAnnotationFieldsService {
     public static Entry addPublicationDateFromSubmission(Entry dataset) {
         if (dataset.getDates() != null && !dataset.getDates().isEmpty()
                 && !dataset.getDates().containsPublicationDate()) {
-            Date date = dataset.getDates().getDateByKey(Field.SUBMISSION_DATE.getName());
+            Date date = dataset.getDates().getDateByKey(DSField.Additional.SUBMISSION_DATE.getName());
             if (date != null) {
-                dataset.addDate(new Date(Field.PUBLICATION.getName(), date.getValue()));
+                dataset.addDate(new Date(DSField.Date.PUBLICATION.getName(), date.getValue()));
             }
         }
         return dataset;
@@ -86,18 +86,18 @@ public class DatasetAnnotationFieldsService {
     public static Entry replaceMEDLINEPubmed(Entry dataset) {
 
         if (dataset.getCrossReferences() != null
-                && !dataset.getCrossReferenceFieldValue(Field.MEDLINE.getName()).isEmpty()) {
-            dataset.getCrossReferenceFieldValue(Field.MEDLINE.getName()).stream()
+                && !dataset.getCrossReferenceFieldValue(DSField.CrossRef.MEDLINE.getName()).isEmpty()) {
+            dataset.getCrossReferenceFieldValue(DSField.CrossRef.MEDLINE.getName()).stream()
                     .filter(value -> value != null && !value.isEmpty())
-                    .forEach(value -> dataset.addCrossReferenceValue(Field.PUBMED.getName(), value));
-            dataset.removeCrossReferences(Field.MEDLINE.getName());
+                    .forEach(value -> dataset.addCrossReferenceValue(DSField.CrossRef.PUBMED.getName(), value));
+            dataset.removeCrossReferences(DSField.CrossRef.MEDLINE.getName());
         }
         return dataset;
     }
 
     public static Entry replaceAuthorField(Entry dataset) {
         if (dataset.getAuthors() != null && !dataset.getAuthors().isEmpty()) {
-            dataset.addAdditionalField(Field.SUBMITTER.getName(), dataset.getAuthors());
+            dataset.addAdditionalField(DSField.Additional.SUBMITTER.getName(), dataset.getAuthors());
             dataset.setAuthors(null);
         }
         return dataset;
@@ -105,7 +105,7 @@ public class DatasetAnnotationFieldsService {
 
     public static Entry replaceKeywords(Entry dataset) {
         if (dataset.getKeywords() != null && !dataset.getKeywords().isEmpty()) {
-            dataset.addAdditionalField(Field.SUBMITTER_KEYWORDS.getName(), dataset.getKeywords());
+            dataset.addAdditionalField(DSField.Additional.SUBMITTER_KEYWORDS.getName(), dataset.getKeywords());
             dataset.setKeywords(null);
         }
         return dataset;

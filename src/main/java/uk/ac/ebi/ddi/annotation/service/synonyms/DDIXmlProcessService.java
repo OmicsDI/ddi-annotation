@@ -5,11 +5,11 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import uk.ac.ebi.ddi.annotation.model.DatasetTobeEnriched;
 import uk.ac.ebi.ddi.annotation.model.EnrichedDataset;
+import uk.ac.ebi.ddi.ddidomaindb.dataset.DSField;
 import uk.ac.ebi.ddi.xml.validator.exception.DDIException;
 import uk.ac.ebi.ddi.xml.validator.parser.OmicsXMLFile;
 import uk.ac.ebi.ddi.xml.validator.parser.model.Entry;
 import uk.ac.ebi.ddi.xml.validator.parser.model.Reference;
-import uk.ac.ebi.ddi.xml.validator.utils.Field;
 
 import java.io.File;
 import java.util.List;
@@ -87,10 +87,12 @@ public class DDIXmlProcessService {
         String accession = entry.getId();
         DatasetTobeEnriched datasetTobeEnriched = new DatasetTobeEnriched(accession, database, dataType);
 
-        datasetTobeEnriched.addAttribute(Field.NAME.getName(), entry.getName().getValue());
-        datasetTobeEnriched.addAttribute(Field.DESCRIPTION.getName(), entry.getDescription());
-        datasetTobeEnriched.addAttribute(Field.SAMPLE.getName(), entry.getAdditionalFieldValue("sample_protocol"));
-        datasetTobeEnriched.addAttribute(Field.DATA.getName(), entry.getAdditionalFieldValue("data_protocol"));
+        datasetTobeEnriched.addAttribute(DSField.NAME.getName(), entry.getName().getValue());
+        datasetTobeEnriched.addAttribute(DSField.DESCRIPTION.getName(), entry.getDescription());
+        datasetTobeEnriched.addAttribute(DSField.Additional.SAMPLE.getName(),
+                entry.getAdditionalFieldValue("sample_protocol"));
+        datasetTobeEnriched.addAttribute(DSField.Additional.DATA.getName(),
+                entry.getAdditionalFieldValue("data_protocol"));
         return datasetTobeEnriched;
     }
 
