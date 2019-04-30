@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.web.client.RestClientException;
 import uk.ac.ebi.ddi.annotation.service.dataset.DDIDatasetAnnotationService;
 import uk.ac.ebi.ddi.annotation.utils.Constants;
+import uk.ac.ebi.ddi.ddidomaindb.dataset.DSField;
 import uk.ac.ebi.ddi.extservices.uniprot.UniprotIdentifier;
 import uk.ac.ebi.ddi.gpmdb.GetGPMDBInformation;
 import uk.ac.ebi.ddi.pride.web.service.client.assay.AssayWsClient;
@@ -16,7 +17,6 @@ import uk.ac.ebi.ddi.service.db.model.dataset.Dataset;
 import uk.ac.ebi.ddi.xml.validator.parser.model.CrossReferences;
 import uk.ac.ebi.ddi.xml.validator.parser.model.Entry;
 import uk.ac.ebi.ddi.xml.validator.parser.model.Reference;
-import uk.ac.ebi.ddi.xml.validator.utils.Field;
 import uk.ac.ebi.pride.tools.protein_details_fetcher.ProteinDetailFetcher;
 
 import java.io.IOException;
@@ -78,7 +78,8 @@ public class CrossReferencesProteinDatabasesService {
         if (dataset != null && dataset.getAdditionalFields() != null && !dataset.getAdditionalFields().isEmpty()) {
             List<String> models = new ArrayList<>();
             dataset.getAdditionalFields().getField().stream()
-                    .filter(field -> field != null && field.getName().equalsIgnoreCase(Field.GPMDB_MODEL.getName()))
+                    .filter(field -> field != null
+                            && field.getName().equalsIgnoreCase(DSField.Additional.GPMDB_MODEL.getName()))
                     .forEach(field -> {
                         String valueModel = field.getValue();
                         String[] valueString = valueModel.split("=");

@@ -3,11 +3,11 @@ package uk.ac.ebi.ddi.annotation.service.taxonomy;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import uk.ac.ebi.ddi.annotation.utils.DatasetUtils;
+import uk.ac.ebi.ddi.ddidomaindb.dataset.DSField;
 import uk.ac.ebi.ddi.extservices.ebiprotein.config.TaxEBIPRIDEWsConfigProd;
 import uk.ac.ebi.ddi.extservices.ebiprotein.model.EBITaxonomyEntry;
 import uk.ac.ebi.ddi.extservices.ebiprotein.taxonomy.TaxonomyEBIWsClient;
 import uk.ac.ebi.ddi.service.db.model.dataset.Dataset;
-import uk.ac.ebi.ddi.xml.validator.utils.Field;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -66,8 +66,8 @@ public class UniProtTaxonomy {
 
     public Dataset annotateParentForNonRanSpecies(Dataset dataset) {
         if (dataset.getCrossReferences() != null
-                && dataset.getCrossReferences().containsKey(Field.TAXONOMY.getName())) {
-            Set<String> taxonomies = dataset.getCrossReferences().get(Field.TAXONOMY.getName());
+                && dataset.getCrossReferences().containsKey(DSField.CrossRef.TAXONOMY.getName())) {
+            Set<String> taxonomies = dataset.getCrossReferences().get(DSField.CrossRef.TAXONOMY.getName());
             Set<String> newTaxonomies = new HashSet<>();
 
             for (String taxId : taxonomies) {
@@ -84,7 +84,7 @@ public class UniProtTaxonomy {
             if (newTaxonomies.size() > 0) {
                 LOGGER.debug("{}: {}", dataset.getAccession(), newTaxonomies.size());
             }
-            dataset = DatasetUtils.addCrossReferenceValues(dataset, Field.TAXONOMY.getName(), taxonomies);
+            dataset = DatasetUtils.addCrossReferenceValues(dataset, DSField.CrossRef.TAXONOMY.getName(), taxonomies);
         }
 
         return dataset;

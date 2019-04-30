@@ -6,7 +6,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.util.UriComponentsBuilder;
-import uk.ac.ebi.ddi.annotation.utils.Constants;
+import uk.ac.ebi.ddi.ddidomaindb.database.DB;
 import uk.ac.ebi.ddi.retriever.DatasetFileUrlRetriever;
 import uk.ac.ebi.ddi.retriever.IDatasetFileUrlRetriever;
 
@@ -43,7 +43,7 @@ public class JPostFileUrlRetriever extends DatasetFileUrlRetriever {
 
     @Override
     protected boolean isSupported(String database) {
-        return database.equals(Constants.JPOST_DATABASE);
+        return database.equals(DB.JPOST.getDBName());
     }
 
 

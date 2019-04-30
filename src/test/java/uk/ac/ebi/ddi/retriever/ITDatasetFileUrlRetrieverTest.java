@@ -2,7 +2,7 @@ package uk.ac.ebi.ddi.retriever;
 
 import org.junit.Assert;
 import org.junit.Test;
-import uk.ac.ebi.ddi.annotation.utils.Constants;
+import uk.ac.ebi.ddi.ddidomaindb.database.DB;
 import uk.ac.ebi.ddi.retriever.providers.*;
 
 import java.io.IOException;
@@ -30,85 +30,85 @@ public class ITDatasetFileUrlRetrieverTest {
 
     @Test
     public void testArrayExpress() throws IOException {
-        Set<String> files = retriever.getDatasetFiles("E-MEXP-2224", Constants.ARRAYEXPRESS_DATABASE);
+        Set<String> files = retriever.getDatasetFiles("E-MEXP-2224", DB.ARRAY_EXPRESS.getDBName());
         Assert.assertEquals(7, files.size());
 
-        files = retriever.getDatasetFiles("E-GEOD-18213", Constants.ARRAYEXPRESS_DATABASE);
+        files = retriever.getDatasetFiles("E-GEOD-18213", DB.ARRAY_EXPRESS.getDBName());
         Assert.assertEquals(4, files.size());
     }
 
     @Test
     public void testGEODatabase() throws IOException {
-        Set<String> files = retriever.getDatasetFiles("GSE4745", Constants.GEO_DATABASE);
+        Set<String> files = retriever.getDatasetFiles("GSE4745", DB.GEO.getDBName());
         Assert.assertEquals(2, files.size());
 
-        files = retriever.getDatasetFiles("GSE2096", Constants.GEO_DATABASE);
+        files = retriever.getDatasetFiles("GSE2096", DB.GEO.getDBName());
         Assert.assertEquals(0, files.size());
     }
 
     @Test
     public void testBioModelsDatabase() throws IOException {
-        Set<String> files = retriever.getDatasetFiles("BIOMD0000000652", Constants.BIOMODELS_DATABASE);
+        Set<String> files = retriever.getDatasetFiles("BIOMD0000000652", DB.BIOMODELS.getDBName());
         Assert.assertEquals(10, files.size());
     }
 
     @Test
     public void testExpressionAtlas() throws IOException {
-        Set<String> files = retriever.getDatasetFiles("E-GEOD-4745", Constants.EXPRESSION_ATLAS_DATABASE);
+        Set<String> files = retriever.getDatasetFiles("E-GEOD-4745", DB.EXPRESSION_ATLAS.getDBName());
         Assert.assertEquals(91, files.size());
     }
 
     @Test
     public void testDBGap() throws IOException {
-        Set<String> files = retriever.getDatasetFiles("phs000703", Constants.DBGAP_DATABASE);
+        Set<String> files = retriever.getDatasetFiles("phs000703", DB.DB_GAP.getDBName());
         Assert.assertEquals(21, files.size());
     }
 
     @Test
     public void testGNPSDatabase() throws IOException {
-        Set<String> files = retriever.getDatasetFiles("MSV000080113", Constants.GNPS_DATABASE);
+        Set<String> files = retriever.getDatasetFiles("MSV000080113", DB.GNPS.getDBName());
         Assert.assertEquals(14, files.size());
     }
 
     @Test
     public void testJPost() throws IOException {
-        Set<String> files = retriever.getDatasetFiles("PXD004621", Constants.JPOST_DATABASE);
+        Set<String> files = retriever.getDatasetFiles("PXD004621", DB.JPOST.getDBName());
         Assert.assertEquals(62, files.size());
     }
 
     @Test
     public void testMassIVE() throws IOException {
-        Set<String> files = retriever.getDatasetFiles("MSV000078822", Constants.MASSIVE_DATABASE);
+        Set<String> files = retriever.getDatasetFiles("MSV000078822", DB.MASSIVE.getDBName());
         Assert.assertEquals(153, files.size());
     }
 
     @Test
     public void testLincs() throws IOException {
-        Set<String> files = retriever.getDatasetFiles("LDS-1372", Constants.LINCS_DATABASE);
+        Set<String> files = retriever.getDatasetFiles("LDS-1372", DB.LINCS.getDBName());
         Assert.assertEquals(4, files.size());
 
-        files = retriever.getDatasetFiles("LDS-1226", Constants.LINCS_DATABASE);
+        files = retriever.getDatasetFiles("LDS-1226", DB.LINCS.getDBName());
         Assert.assertEquals(1, files.size());
 
-        files = retriever.getDatasetFiles("LDS-1237", Constants.LINCS_DATABASE);
+        files = retriever.getDatasetFiles("LDS-1237", DB.LINCS.getDBName());
         Assert.assertEquals(0, files.size());
     }
 
     @Test
     public void testPeptideAtlas() throws IOException {
-        Set<String> files = retriever.getDatasetFiles("PAe000572", Constants.PEPTIDE_ATLAS_DATABASE);
+        Set<String> files = retriever.getDatasetFiles("PAe000572", DB.PEPTIDEATLAS.getDBName());
         Assert.assertEquals(6, files.size());
     }
 
     @Test
     public void testMetabolights() throws IOException {
-        Set<String> files = retriever.getDatasetFiles("MTBLS21", Constants.METABOLIGHTS_DATABASE);
+        Set<String> files = retriever.getDatasetFiles("MTBLS21", DB.METABOLIGHTS.getDBName());
         Assert.assertEquals(91, files.size());
     }
 
     @Test
     public void testEVA() throws IOException {
-        Set<String> files = retriever.getDatasetFiles("PRJEB4019", Constants.EVA_DATABASE);
+        Set<String> files = retriever.getDatasetFiles("PRJEB4019", DB.EVA.getDBName());
         Assert.assertEquals(25, files.size());
     }
 }

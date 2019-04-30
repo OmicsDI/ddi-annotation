@@ -1,7 +1,7 @@
 package uk.ac.ebi.ddi.retriever.providers;
 
 import org.apache.commons.net.ftp.FTPClient;
-import uk.ac.ebi.ddi.annotation.utils.Constants;
+import uk.ac.ebi.ddi.ddidomaindb.database.DB;
 import uk.ac.ebi.ddi.extservices.net.FtpUtils;
 import uk.ac.ebi.ddi.extservices.net.UriUtils;
 import uk.ac.ebi.ddi.retriever.DatasetFileUrlRetriever;
@@ -42,6 +42,6 @@ public class ExpressionAtlasFileUrlRetriever extends DatasetFileUrlRetriever {
 
     @Override
     protected boolean isSupported(String database) {
-        return database.equals(Constants.EXPRESSION_ATLAS_DATABASE);
+        return database.equals(DB.EXPRESSION_ATLAS.getDBName());
     }
 }
