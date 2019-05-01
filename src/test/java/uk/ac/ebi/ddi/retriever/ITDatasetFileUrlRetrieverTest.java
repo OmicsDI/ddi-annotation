@@ -26,6 +26,7 @@ public class ITDatasetFileUrlRetrieverTest {
         retriever = new PeptideAtlasFileUrlRetriever(retriever);
         retriever = new MetabolightsFileUrlRetriever(retriever);
         retriever = new EVAFileUrlRetriever(retriever);
+        retriever = new MetabolomicsWorkbenchFileUrlRetriever(retriever);
     }
 
     @Test
@@ -110,5 +111,11 @@ public class ITDatasetFileUrlRetrieverTest {
     public void testEVA() throws IOException {
         Set<String> files = retriever.getDatasetFiles("PRJEB4019", DB.EVA.getDBName());
         Assert.assertEquals(25, files.size());
+    }
+
+    @Test
+    public void testMetaWB() throws Exception {
+        Set<String> files = retriever.getDatasetFiles("ST000814", DB.METABOLOMICSWORKBENCH.getDBName());
+        Assert.assertEquals(3, files.size());
     }
 }
