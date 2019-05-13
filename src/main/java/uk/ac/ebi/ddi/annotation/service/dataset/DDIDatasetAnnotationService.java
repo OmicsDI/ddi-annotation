@@ -110,6 +110,8 @@ public class DDIDatasetAnnotationService {
             }
 
             if (currentDataset.getInitHashCode() != dbDataset.getInitHashCode()) {
+                LOGGER.info("Inithashcode of " + dbDataset.getAccession() + " is changed, previous: {}, current: {}",
+                        currentDataset.getInitHashCode(), dbDataset.getInitHashCode());
                 updateDataset(currentDataset, dbDataset);
             }
         } else {
@@ -119,8 +121,11 @@ public class DDIDatasetAnnotationService {
         }
     }
 
-    private void updateDataset(Dataset currentDataset, Dataset dbDataset) {
-        dbDataset = datasetService.update(currentDataset.getId(), dbDataset);
+    private void updateDataset(Dataset currentDataset, Dataset newDataset) {
+
+        Dataset dbDataset = datasetService.update(currentDataset.getId(), newDataset);
+        dbDataset.setInitHashCode(newDataset.getInitHashCode());
+        datasetService.save(dbDataset);
         if (dbDataset.getId() != null) {
             statusService.save(new DatasetStatus(dbDataset.getAccession(), dbDataset.getDatabase(),
                     dbDataset.getInitHashCode(), getDate(), DatasetCategory.INSERTED.getType()));
