@@ -52,14 +52,14 @@ public class ENAFileUrlRetriever extends DatasetFileUrlRetriever {
             response1.close();
         }
     }*/
-    public Set<String> getReadRunFiles() throws IOException{
+    public Set<String> getReadRunFiles(String accession) throws IOException{
         Set<String> result = new HashSet<>();
         try{
             URI uri = new URIBuilder()
                     .setScheme("https")
                     .setHost(ENA_ENDPOINT)
                     .setPath("/search")
-                    .setParameter("query", "(study_accession=PRJNA215355)")
+                    .setParameter("query", "(study_accession=" + accession + ")")
                     .setParameter("fields", "study_accession,fastq_ftp,fastq_aspera,fastq_galaxy")
                     .setParameter("result", "read_run")
                     .setParameter("limit", "0")
@@ -80,14 +80,14 @@ public class ENAFileUrlRetriever extends DatasetFileUrlRetriever {
         return result;
     }
 
-    public Set<String> getAnalysisFiles() throws IOException{
+    public Set<String> getAnalysisFiles(String accession) throws IOException{
         Set<String> result = new HashSet<>();
         try{
             URI uri = new URIBuilder()
                     .setScheme("https")
                     .setHost(ENA_ENDPOINT)
                     .setPath("/search")
-                    .setParameter("query", "(study_accession=PRJNA215355)")
+                    .setParameter("query", "(study_accession=" + accession + ")")
                     .setParameter("fields", "study_accession,fastq_ftp,fastq_aspera,fastq_galaxy")
                     .setParameter("result", "analysis")
                     .setParameter("limit", "0")
@@ -108,14 +108,14 @@ public class ENAFileUrlRetriever extends DatasetFileUrlRetriever {
         return result;
     }
 
-    public Set<String> getAssemblyFiles() throws IOException{
+    public Set<String> getAssemblyFiles(String accession) throws IOException{
         Set<String> result = new HashSet<>();
         try{
             URI uri = new URIBuilder()
                     .setScheme("https")
                     .setHost(ENA_ENDPOINT)
                     .setPath("/search")
-                    .setParameter("query", "(study_accession=PRJNA215355)")
+                    .setParameter("query", "(study_accession=" + accession + ")")
                     .setParameter("fields", "study_accession,fastq_ftp,fastq_aspera,fastq_galaxy")
                     .setParameter("result", "assembly")
                     .setParameter("limit", "0")
@@ -136,14 +136,14 @@ public class ENAFileUrlRetriever extends DatasetFileUrlRetriever {
         return result;
     }
 
-    public Set<String> getWgsFiles() throws IOException{
+    public Set<String> getWgsFiles(String accession) throws IOException{
         Set<String> result = new HashSet<>();
         try{
             URI uri = new URIBuilder()
                     .setScheme("https")
                     .setHost(ENA_ENDPOINT)
                     .setPath("/search")
-                    .setParameter("query", "(study_accession=PRJNA215355)")
+                    .setParameter("query", "(study_accession=" + accession + ")")
                     .setParameter("fields", "study_accession,fastq_ftp,fastq_aspera,fastq_galaxy")
                     .setParameter("result", "wgs_set")
                     .setParameter("limit", "0")
