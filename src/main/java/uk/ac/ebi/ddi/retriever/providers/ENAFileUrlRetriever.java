@@ -27,7 +27,7 @@ public class ENAFileUrlRetriever extends DatasetFileUrlRetriever {
     public Set<String> getAllDatasetFiles(String accession, String database) throws IOException {
 
         Set<String> result = new HashSet<>();
-        getTemplateFiles();
+        //getTemplateFiles();
         //getReadRunFiles();
         return result;
     }
@@ -50,7 +50,7 @@ public class ENAFileUrlRetriever extends DatasetFileUrlRetriever {
             response1.close();
         }
     }*/
-    public void getReadRunFiles() throws IOException{
+    public Set<String> getReadRunFiles() throws IOException{
         Set<String> result = new HashSet<>();
         try{
             URI uri = new URIBuilder()
@@ -75,11 +75,10 @@ public class ENAFileUrlRetriever extends DatasetFileUrlRetriever {
         catch(URISyntaxException ex){
 
         }
-
-
+        return result;
     }
 
-    public void getAnalysisFiles() throws IOException{
+    public Set<String> getAnalysisFiles() throws IOException{
         Set<String> result = new HashSet<>();
         try{
             URI uri = new URIBuilder()
@@ -104,9 +103,10 @@ public class ENAFileUrlRetriever extends DatasetFileUrlRetriever {
         catch(URISyntaxException ex){
 
         }
+        return result;
     }
 
-    public void getAssemblyFiles() throws IOException{
+    public Set<String> getAssemblyFiles() throws IOException{
         Set<String> result = new HashSet<>();
         try{
             URI uri = new URIBuilder()
@@ -131,9 +131,10 @@ public class ENAFileUrlRetriever extends DatasetFileUrlRetriever {
         catch(URISyntaxException ex){
 
         }
+        return result;
     }
 
-    public void getWgsFiles() throws IOException{
+    public Set<String> getWgsFiles() throws IOException{
         Set<String> result = new HashSet<>();
         try{
             URI uri = new URIBuilder()
@@ -158,6 +159,7 @@ public class ENAFileUrlRetriever extends DatasetFileUrlRetriever {
         catch(URISyntaxException ex){
 
         }
+        return result;
     }
     @Override
     protected boolean isSupported(String database) {
