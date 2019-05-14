@@ -19,6 +19,8 @@ import java.util.Set;
 
 public class ENAFileUrlRetriever extends DatasetFileUrlRetriever {
 
+    private static final String ENA_ENDPOINT = "www.ebi.ac.uk/ena/portal/api";
+
     public ENAFileUrlRetriever(IDatasetFileUrlRetriever datasetDownloadingRetriever) {
         super(datasetDownloadingRetriever);
     }
@@ -55,7 +57,7 @@ public class ENAFileUrlRetriever extends DatasetFileUrlRetriever {
         try{
             URI uri = new URIBuilder()
                     .setScheme("https")
-                    .setHost("www.ebi.ac.uk/ena/portal/api")
+                    .setHost(ENA_ENDPOINT)
                     .setPath("/search")
                     .setParameter("query", "(study_accession=PRJNA215355)")
                     .setParameter("fields", "study_accession,fastq_ftp,fastq_aspera,fastq_galaxy")
@@ -83,7 +85,7 @@ public class ENAFileUrlRetriever extends DatasetFileUrlRetriever {
         try{
             URI uri = new URIBuilder()
                     .setScheme("https")
-                    .setHost("www.ebi.ac.uk/ena/portal/api")
+                    .setHost(ENA_ENDPOINT)
                     .setPath("/search")
                     .setParameter("query", "(study_accession=PRJNA215355)")
                     .setParameter("fields", "study_accession,fastq_ftp,fastq_aspera,fastq_galaxy")
@@ -111,7 +113,7 @@ public class ENAFileUrlRetriever extends DatasetFileUrlRetriever {
         try{
             URI uri = new URIBuilder()
                     .setScheme("https")
-                    .setHost("www.ebi.ac.uk/ena/portal/api")
+                    .setHost(ENA_ENDPOINT)
                     .setPath("/search")
                     .setParameter("query", "(study_accession=PRJNA215355)")
                     .setParameter("fields", "study_accession,fastq_ftp,fastq_aspera,fastq_galaxy")
@@ -139,7 +141,7 @@ public class ENAFileUrlRetriever extends DatasetFileUrlRetriever {
         try{
             URI uri = new URIBuilder()
                     .setScheme("https")
-                    .setHost("www.ebi.ac.uk/ena/portal/api")
+                    .setHost(ENA_ENDPOINT)
                     .setPath("/search")
                     .setParameter("query", "(study_accession=PRJNA215355)")
                     .setParameter("fields", "study_accession,fastq_ftp,fastq_aspera,fastq_galaxy")
