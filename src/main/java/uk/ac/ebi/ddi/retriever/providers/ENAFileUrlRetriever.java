@@ -65,7 +65,7 @@ public class ENAFileUrlRetriever extends DatasetFileUrlRetriever {
             }
             //getFiles(uri, ENAReadRunDataset[].class);
         } catch (URISyntaxException ex) {
-            LOGGER.info("uri syntax exception in read run files method of ena file retriever");
+            LOGGER.error("uri syntax exception in read run files method of ena file retriever");
         }
         return result;
     }
@@ -92,7 +92,7 @@ public class ENAFileUrlRetriever extends DatasetFileUrlRetriever {
             }
             //getFiles(uri);
         } catch (URISyntaxException ex) {
-            LOGGER.info("uri syntax exception in Analysis files method of ena file retriever");
+            LOGGER.error("uri syntax exception in Analysis files method of ena file retriever");
         }
         return result;
     }
@@ -127,9 +127,9 @@ public class ENAFileUrlRetriever extends DatasetFileUrlRetriever {
             }
            // getFiles(uri);
         } catch (URISyntaxException ex) {
-            LOGGER.info("uri syntax exception in assembly files method of ena file retriever");
+            LOGGER.error("uri syntax exception in assembly files method of ena file retriever");
         } catch (XPathException ex) {
-            LOGGER.info("xpath exception in assembly method of ena file retriever");
+            LOGGER.error("xpath exception in assembly method of ena file retriever");
         }
         return result;
     }
@@ -155,7 +155,7 @@ public class ENAFileUrlRetriever extends DatasetFileUrlRetriever {
                 result.add(node.get("master_file").textValue());
             }
         } catch (URISyntaxException ex) {
-            LOGGER.info("uri syntax exception in wsg files method of ena file retriever");
+            LOGGER.error("uri syntax exception in wsg files method of ena file retriever");
         }
         return result;
     }
