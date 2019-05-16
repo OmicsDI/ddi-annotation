@@ -6,6 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
 import org.xml.sax.InputSource;
+import uk.ac.ebi.ddi.annotation.utils.Constants;
 import uk.ac.ebi.ddi.ddidomaindb.database.DB;
 import uk.ac.ebi.ddi.retriever.DatasetFileUrlRetriever;
 import uk.ac.ebi.ddi.retriever.IDatasetFileUrlRetriever;
@@ -56,7 +57,7 @@ public class ENAFileUrlRetriever extends DatasetFileUrlRetriever {
                 .setHost(ENA_ENDPOINT)
                 .setPath("/search")
                 .setParameter("query", "(study_accession=" + accession + ")")
-                .setParameter("fields", "study_accession,fastq_ftp,fastq_aspera,fastq_galaxy")
+                .setParameter("fields", Constants.ENAREADRUNCOLUMN)
                 .setParameter("result", "read_run")
                 .setParameter("limit", "0")
                 .setParameter("format", "json")
@@ -70,23 +71,24 @@ public class ENAFileUrlRetriever extends DatasetFileUrlRetriever {
         String fastqGalaxy = node.get("fastq_galaxy").asText();*/
             }
         }
-            //getFiles(uri, ENAReadRunDataset[].class);
 
         return result;
     }
 
     public Set<String> getAnalysisFiles(String accession) throws IOException, URISyntaxException {
         Set<String> result = new HashSet<>();
+
         URI uri = new URIBuilder()
                 .setScheme("https")
                 .setHost(ENA_ENDPOINT)
                 .setPath("/search")
                 .setParameter("query", "(study_accession=" + accession + ")")
-                .setParameter("fields", "study_accession,submitted_ftp,submitted_aspera,submitted_galaxy")
+                .setParameter("fields", Constants.ENAANALYSISCOLUMN)
                 .setParameter("result", "analysis")
                 .setParameter("limit", "0")
                 .setParameter("format", "json")
                 .build();
+
         ResponseEntity<JsonNode> files = execute(x -> restTemplate.getForEntity(uri, JsonNode.class));
 
         if (files.getBody() != null) {
@@ -139,7 +141,7 @@ public class ENAFileUrlRetriever extends DatasetFileUrlRetriever {
                 .setHost(ENA_ENDPOINT)
                 .setPath("/search")
                 .setParameter("query", "(study_accession=" + accession + ")")
-                .setParameter("fields", "study_accession,embl_file,fasta_file,master_file")
+                .setParameter("fields", Constants.ENAWSGFILECOLUMN)
                 .setParameter("result", "wgs_set")
                 .setParameter("limit", "0")
                 .setParameter("format", "json")
