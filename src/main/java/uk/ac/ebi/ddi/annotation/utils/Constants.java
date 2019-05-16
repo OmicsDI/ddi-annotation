@@ -38,17 +38,23 @@ public class Constants {
     public static final String UNIPROT_DATABASE = "uniprot";
     public static final String MULTIOMICS_TYPE  = "Multiomics";
 
-    public static final String PUB_DATE_FIELD           = "publication_date";
+    public static final String PUB_DATE_FIELD   = "publication_date";
 
-    public static final String EGA_UPDATED_FIELD        = "updated";
+    public static final String EGA_UPDATED_FIELD = "updated";
 
-    public static final String UNIPROT                        =   "UNIPROT";
+    public static final String UNIPROT =  "UNIPROT";
 
-    public static final String CHEBI                          =   "CHEBI";
+    public static final String CHEBI = "CHEBI";
 
     public static final String ALL_DOMAIN                 =   "";
 
-    public static final String SEARCH_DOMAIN              = "search_domains";
+    public static final String SEARCH_DOMAIN    = "search_domains";
+
+    public static final String ENAWSGFILECOLUMN = "study_accession,embl_file,fasta_file,master_file";
+
+    public static final String ENAANALYSISCOLUMN = "study_accession,submitted_ftp,submitted_aspera,submitted_galaxy";
+
+    public static final String ENAREADRUNCOLUMN = "study_accession,fastq_ftp,fastq_aspera,fastq_galaxy";
 
     public static final String[] DATASET_SUMMARY        = {
             DSField.DESCRIPTION.getName(),
