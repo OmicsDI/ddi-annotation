@@ -36,133 +36,122 @@ public class ENAFileUrlRetriever extends DatasetFileUrlRetriever {
     @Override
     public Set<String> getAllDatasetFiles(String accession, String database) throws IOException {
         Set<String> result = new HashSet<>();
-        result.addAll(getReadRunFiles(accession));
-        result.addAll(getAnalysisFiles(accession));
-        result.addAll(getAssemblyFiles(accession));
-        result.addAll(getWgsFiles(accession));
-        return result;
-    }
-
-    public Set<String> getReadRunFiles(String accession) throws IOException {
-        Set<String> result = new HashSet<>();
         try {
-            URI uri = new URIBuilder()
-                    .setScheme("https")
-                    .setHost(ENA_ENDPOINT)
-                    .setPath("/search")
-                    .setParameter("query", "(study_accession=" + accession + ")")
-                    .setParameter("fields", "study_accession,fastq_ftp,fastq_aspera,fastq_galaxy")
-                    .setParameter("result", "read_run")
-                    .setParameter("limit", "0")
-                    .setParameter("format", "json")
-                    .build();
-            ResponseEntity<JsonNode> files = execute(x -> restTemplate.getForEntity(uri, JsonNode.class));
-
-            if (files.getBody() != null) {
-                for (JsonNode node : files.getBody()) {
-                    result.addAll(Arrays.asList(node.get("fastq_ftp").asText().split(";")));
-            /*String fastqAspera = node.get("fastq_aspera").asText();
-            String fastqGalaxy = node.get("fastq_galaxy").asText();*/
-                }
-            }
-            //getFiles(uri, ENAReadRunDataset[].class);
+            result.addAll(getReadRunFiles(accession));
+            result.addAll(getAnalysisFiles(accession));
+            result.addAll(getAssemblyFiles(accession));
+            result.addAll(getWgsFiles(accession));
         } catch (URISyntaxException ex) {
-            LOGGER.error("uri syntax exception in read run files method of ena file retriever");
-        }
-        return result;
-    }
-
-    public Set<String> getAnalysisFiles(String accession) throws IOException {
-        Set<String> result = new HashSet<>();
-        try {
-            URI uri = new URIBuilder()
-                    .setScheme("https")
-                    .setHost(ENA_ENDPOINT)
-                    .setPath("/search")
-                    .setParameter("query", "(study_accession=" + accession + ")")
-                    .setParameter("fields", "study_accession,submitted_ftp,submitted_aspera,submitted_galaxy")
-                    .setParameter("result", "analysis")
-                    .setParameter("limit", "0")
-                    .setParameter("format", "json")
-                    .build();
-            ResponseEntity<JsonNode> files = execute(x -> restTemplate.getForEntity(uri, JsonNode.class));
-
-            if (files.getBody() != null) {
-                for (JsonNode node : files.getBody()) {
-                    result.addAll(Arrays.asList(node.get("submitted_ftp").asText().split(";")));
-                }
-            }
-            //getFiles(uri);
-        } catch (URISyntaxException ex) {
-            LOGGER.error("uri syntax exception in Analysis files method of ena file retriever");
-        }
-        return result;
-    }
-
-    public Set<String> getAssemblyFiles(String accession) throws IOException {
-        Set<String> result = new HashSet<>();
-        try {
-            URI uri = new URIBuilder()
-                    .setScheme("https")
-                    .setHost(ENA_ENDPOINT)
-                    .setPath("/search")
-                    .setParameter("query", "(study_accession=" + accession + ")")
-                    .setParameter("fields", "accession")
-                    .setParameter("result", "assembly")
-                    .setParameter("limit", "0")
-                    .setParameter("format", "json")
-                    .build();
-            ResponseEntity<JsonNode> files = execute(x -> restTemplate.getForEntity(uri, JsonNode.class));
-
-            if (files.getBody() != null) {
-                for (JsonNode node : files.getBody()) {
-                    String acc = node.get("accession").textValue();
-                    URI viewUri = new URIBuilder()
-                            .setScheme("https")
-                            .setHost("www.ebi.ac.uk/ena/data/view")
-                            .setPath("/" + acc + ".1&display=xml")
-                            .build();
-                    ResponseEntity<String> assemblyFiles = execute(x -> restTemplate
-                            .getForEntity(viewUri, String.class));
-                    XPath xPath = XPathFactory.newInstance().newXPath();
-                    result.add(xPath.evaluate("ROOT/ASSEMBLY/ASSEMBLY_LINKS/ASSEMBLY_LINK/URL_LINK/URL",
-                            new InputSource(new StringReader(assemblyFiles.getBody()))));
-                    assemblyFiles.getStatusCode();
-                }
-            }
-           // getFiles(uri);
-        } catch (URISyntaxException ex) {
-            LOGGER.error("uri syntax exception in assembly files method of ena file retriever");
+            LOGGER.error("uri syntax exception in get all dataset files method of ena file retriever with acc", accession, ex);
         } catch (XPathException ex) {
-            LOGGER.error("xpath exception in assembly method of ena file retriever");
+            LOGGER.error("xpath exception in get all dataset files method of ena file retriever with acc", accession, ex);
         }
         return result;
     }
 
-    public Set<String> getWgsFiles(String accession) throws IOException {
+    public Set<String> getReadRunFiles(String accession) throws IOException, URISyntaxException{
         Set<String> result = new HashSet<>();
-        try {
-            URI uri = new URIBuilder()
-                    .setScheme("https")
-                    .setHost(ENA_ENDPOINT)
-                    .setPath("/search")
-                    .setParameter("query", "(study_accession=" + accession + ")")
-                    .setParameter("fields", "study_accession,embl_file,fasta_file,master_file")
-                    .setParameter("result", "wgs_set")
-                    .setParameter("limit", "0")
-                    .setParameter("format", "json")
-                    .build();
-            ResponseEntity<JsonNode> files = execute(x -> restTemplate.getForEntity(uri, JsonNode.class));
+        URI uri = new URIBuilder()
+                .setScheme("https")
+                .setHost(ENA_ENDPOINT)
+                .setPath("/search")
+                .setParameter("query", "(study_accession=" + accession + ")")
+                .setParameter("fields", "study_accession,fastq_ftp,fastq_aspera,fastq_galaxy")
+                .setParameter("result", "read_run")
+                .setParameter("limit", "0")
+                .setParameter("format", "json")
+                .build();
+        ResponseEntity<JsonNode> files = execute(x -> restTemplate.getForEntity(uri, JsonNode.class));
 
-            if (files.getBody() != null) {
-                for (JsonNode node : files.getBody()) {
-                    result.add(node.get("embl_file").textValue());
-                    result.add(node.get("fasta_file").textValue());
-                    result.add(node.get("master_file").textValue());
-                }
+        if (files.getBody() != null) {
+            for (JsonNode node : files.getBody()) {
+                result.addAll(Arrays.asList(node.get("fastq_ftp").asText().split(";")));
+        /*String fastqAspera = node.get("fastq_aspera").asText();
+        String fastqGalaxy = node.get("fastq_galaxy").asText();*/
             }
-        } catch (URISyntaxException ex) {
-            LOGGER.error("uri syntax exception in wsg files method of ena file retriever");
+        }
+            //getFiles(uri, ENAReadRunDataset[].class);
+
+        return result;
+    }
+
+    public Set<String> getAnalysisFiles(String accession) throws IOException, URISyntaxException {
+        Set<String> result = new HashSet<>();
+        URI uri = new URIBuilder()
+                .setScheme("https")
+                .setHost(ENA_ENDPOINT)
+                .setPath("/search")
+                .setParameter("query", "(study_accession=" + accession + ")")
+                .setParameter("fields", "study_accession,submitted_ftp,submitted_aspera,submitted_galaxy")
+                .setParameter("result", "analysis")
+                .setParameter("limit", "0")
+                .setParameter("format", "json")
+                .build();
+        ResponseEntity<JsonNode> files = execute(x -> restTemplate.getForEntity(uri, JsonNode.class));
+
+        if (files.getBody() != null) {
+            for (JsonNode node : files.getBody()) {
+                result.addAll(Arrays.asList(node.get("submitted_ftp").asText().split(";")));
+            }
+        }
+
+        return result;
+    }
+
+    public Set<String> getAssemblyFiles(String accession) throws IOException, URISyntaxException, XPathException {
+        Set<String> result = new HashSet<>();
+        URI uri = new URIBuilder()
+                .setScheme("https")
+                .setHost(ENA_ENDPOINT)
+                .setPath("/search")
+                .setParameter("query", "(study_accession=" + accession + ")")
+                .setParameter("fields", "accession")
+                .setParameter("result", "assembly")
+                .setParameter("limit", "0")
+                .setParameter("format", "json")
+                .build();
+        ResponseEntity<JsonNode> files = execute(x -> restTemplate.getForEntity(uri, JsonNode.class));
+
+        if (files.getBody() != null) {
+            for (JsonNode node : files.getBody()) {
+                String acc = node.get("accession").textValue();
+                URI viewUri = new URIBuilder()
+                        .setScheme("https")
+                        .setHost("www.ebi.ac.uk/ena/data/view")
+                        .setPath("/" + acc + ".1&display=xml")
+                        .build();
+                ResponseEntity<String> assemblyFiles = execute(x -> restTemplate
+                        .getForEntity(viewUri, String.class));
+                XPath xPath = XPathFactory.newInstance().newXPath();
+                result.add(xPath.evaluate("ROOT/ASSEMBLY/ASSEMBLY_LINKS/ASSEMBLY_LINK/URL_LINK/URL",
+                        new InputSource(new StringReader(assemblyFiles.getBody()))));
+                assemblyFiles.getStatusCode();
+            }
+        }
+
+        return result;
+    }
+
+    public Set<String> getWgsFiles(String accession) throws IOException, URISyntaxException {
+        Set<String> result = new HashSet<>();
+        URI uri = new URIBuilder()
+                .setScheme("https")
+                .setHost(ENA_ENDPOINT)
+                .setPath("/search")
+                .setParameter("query", "(study_accession=" + accession + ")")
+                .setParameter("fields", "study_accession,embl_file,fasta_file,master_file")
+                .setParameter("result", "wgs_set")
+                .setParameter("limit", "0")
+                .setParameter("format", "json")
+                .build();
+        ResponseEntity<JsonNode> files = execute(x -> restTemplate.getForEntity(uri, JsonNode.class));
+
+        if (files.getBody() != null) {
+            for (JsonNode node : files.getBody()) {
+                result.add(node.get("embl_file").textValue());
+                result.add(node.get("fasta_file").textValue());
+                result.add(node.get("master_file").textValue());
+            }
         }
         return result;
     }
