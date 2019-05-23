@@ -43,14 +43,16 @@ public class ENAFileUrlRetriever extends DatasetFileUrlRetriever {
             result.addAll(getAssemblyFiles(accession));
             result.addAll(getWgsFiles(accession));
         } catch (URISyntaxException ex) {
-            LOGGER.error("uri syntax exception in get all dataset files method of ena file retriever with acc", accession, ex);
+            LOGGER.error("uri syntax exception in get all dataset " +
+                    "files method of ena file retriever with acc", accession, ex);
         } catch (XPathException ex) {
-            LOGGER.error("xpath exception in get all dataset files method of ena file retriever with acc", accession, ex);
+            LOGGER.error("xpath exception in get all dataset " +
+                    "files method of ena file retriever with acc", accession, ex);
         }
         return result;
     }
 
-    public Set<String> getReadRunFiles(String accession) throws IOException, URISyntaxException{
+    public Set<String> getReadRunFiles(String accession) throws IOException, URISyntaxException {
         Set<String> result = new HashSet<>();
         URI uri = new URIBuilder()
                 .setScheme("https")
