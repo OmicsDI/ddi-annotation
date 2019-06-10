@@ -44,10 +44,10 @@ public class ENAFileUrlRetriever extends DatasetFileUrlRetriever {
             result.addAll(getWgsFiles(accession));
         } catch (URISyntaxException ex) {
             LOGGER.error("uri syntax exception in get all dataset " +
-                    "files method of ena file retriever with acc", accession, ex);
+                    "files method of ena file retriever with acc {}, ", accession, ex);
         } catch (XPathException ex) {
             LOGGER.error("xpath exception in get all dataset " +
-                    "files method of ena file retriever with acc", accession, ex);
+                    "files method of ena file retriever with acc {}, ", accession, ex);
         }
         return result;
     }
