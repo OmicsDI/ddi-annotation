@@ -119,10 +119,9 @@ public class ITDatasetFileUrlRetrieverTest {
         Set<String> files = retriever.getDatasetFiles("ST000814", DB.METABOLOMICSWORKBENCH.getDBName());
         Assert.assertEquals(3, files.size());
     }
-
     @Test
     public void testENA() throws Exception {
         Set<String> files = retriever.getDatasetFiles("PRJNA215355", DB.ENA.getDBName());
-        Assert.assertEquals(49422, files.size());
+        Assert.assertEquals(49623, files.size());
     }
 }
