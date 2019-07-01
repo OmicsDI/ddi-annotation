@@ -1,10 +1,19 @@
 package uk.ac.ebi.ddi.similaritycalculator;
 
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import uk.ac.ebi.ddi.ddidomaindb.dataset.DSField;
+import uk.ac.ebi.ddi.service.db.model.dataset.Dataset;
 import uk.ac.ebi.ddi.similarityCalculator.SimilarityCounts;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Stream;
+
+import static java.util.stream.Collectors.toList;
 
 /**
  * Created by gaur on 13/07/17.
@@ -16,11 +25,23 @@ public class SimilarityCountTest {
     @Autowired
     SimilarityCounts similarityCounts;
 
-    /*@Test
+    @Test
     public void getCitationCount(){
-        similarityCounts.getCitationCount("ArrayExpress","E-GEOD-2034", Stream.of("GSE2034").collect(toList()));
+        similarityCounts.getCitationCount("ArrayExpress","E-MEXP-981", new ArrayList<String>());
     }
 
+   /* @Test
+    public void testCitation(){
+        List<Dataset> dts = new ArrayList<Dataset>();
+                dts.add(similarityCounts.datasetService.read("E-MEXP-981","ArrayExpress"));
+        dts.forEach(dt ->  similarityCounts.getCitationCount(
+                dt.getDatabase(), dt.getAccession(),
+                dt.getAdditional().containsKey(DSField.Additional.SECONDARY_ACCESSION.key()) ?
+                        new ArrayList<String>(
+                                dt.getAdditional().get(DSField.Additional.SECONDARY_ACCESSION.key())
+                        ) :
+                        new ArrayList<String>()));
+    }*/
     @Test
     public void addCitations(){
         similarityCounts.addAllCitations();
@@ -39,17 +60,17 @@ public class SimilarityCountTest {
     @Test
     public void testAllRecords() {
         similarityCounts.getPageRecords();
-    }*/
+    }
 
-    /*@Test
+    @Test
     public void getSearchCount(){
         similarityCounts.addSearchCounts("E-MTAB-599","21921910","ExpressionAtlas");
-    }*/
+    }
 
-//    @Test
-//    public void testDownloadCount(){
-//        similarityCounts.addDatasetDownloadCount();
-//    }
+    /*@Test
+    public void testDownloadCount(){
+        similarityCounts.addDatasetDownloadCount();
+    }*/
 }
 
 
