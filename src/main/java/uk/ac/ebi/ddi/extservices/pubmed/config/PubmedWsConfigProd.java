@@ -14,7 +14,7 @@ public class PubmedWsConfigProd {
     }
 
     public PubmedWsConfigProd() {
-        this("http", "www.ncbi.nlm.nih.gov");
+        this("https", "www.ncbi.nlm.nih.gov");
     }
 
     public String getHostName() {
