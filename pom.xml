@@ -8,7 +8,7 @@
     <parent>
         <groupId>uk.ac.ebi.ddi.maven</groupId>
         <artifactId>ddi-base-master</artifactId>
-        <version>1.1-SNAPSHOT</version>
+        <version>1.5</version>
     </parent>
 
     <groupId>uk.ac.ebi.ddi</groupId>
@@ -16,7 +16,12 @@
     <version>1.4.5-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-
+    <scm>
+        <connection>scm:git:github.com/OmicsDI/ddi-annotation.git</connection>
+        <developerConnection>scm:git:git@github.com:OmicsDI/ddi-annotation.git</developerConnection>
+        <url>https://github.com/OmicsDI/ddi-service-db.git</url>
+        <tag>ddi-annotation</tag>
+    </scm>
     <licenses>
         <license>
             <name>Apache 2</name>
@@ -48,6 +53,11 @@
             <artifactId>ddi-service-db</artifactId>
             <version>1.2.2-SNAPSHOT</version>
         </dependency>
+        <!--<dependency>
+            <groupId>uk.ac.ebi.ddi</groupId>
+            <artifactId>ddi-service-db</artifactId>
+            <version>1.15-SNAPSHOT</version>
+        </dependency>-->
         <dependency>
             <groupId>uk.ac.ebi.pride.tools</groupId>
             <artifactId>protein-details-fetcher</artifactId>
@@ -216,10 +226,10 @@
         </plugins>
     </build>
 
-    <repositories>
+   <!-- <repositories>
 
-        <!-- For main Spring releases -->
- <!--       <repository>
+        &lt;!&ndash; For main Spring releases &ndash;&gt;
+ &lt;!&ndash;       <repository>
             <id>org.springframework.maven.release</id>
             <name>Spring Maven Release Repository</name>
             <url>http://maven.springframework.org/release</url>
@@ -230,8 +240,8 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
--->
-<!--        &lt;!&ndash; For testing against latest Spring snapshots &ndash;&gt;
+&ndash;&gt;
+&lt;!&ndash;        &lt;!&ndash; For testing against latest Spring snapshots &ndash;&gt;
         <repository>
             <id>org.springframework.maven.snapshot</id>
             <name>Spring Maven Snapshot Repository</name>
@@ -252,9 +262,9 @@
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
-        </repository>-->
+        </repository>&ndash;&gt;
 
-        <!-- EBI repo -->
+        &lt;!&ndash; EBI repo &ndash;&gt;
         <repository>
             <id>nexus-ebi-release-repo</id>
             <url>http://www.ebi.ac.uk/Tools/maven/repos/content/groups/ebi-repo/</url>
@@ -265,16 +275,16 @@
         </repository>
     </repositories>
     <distributionManagement>
-        <!-- EBI repo -->
+        &lt;!&ndash; EBI repo &ndash;&gt;
         <repository>
             <id>nexus-ebi-repo</id>
             <url>http://www.ebi.ac.uk/Tools/maven/repos/content/groups/ebi-repo/</url>
         </repository>
-        <!-- EBI SNAPSHOT repo -->
+        &lt;!&ndash; EBI SNAPSHOT repo &ndash;&gt;
         <snapshotRepository>
             <id>nexus-ebi-repo-snapshots</id>
             <url>http://www.ebi.ac.uk/Tools/maven/repos/content/groups/ebi-snapshots/</url>
         </snapshotRepository>
-    </distributionManagement>
+    </distributionManagement>-->
 
 </project>
