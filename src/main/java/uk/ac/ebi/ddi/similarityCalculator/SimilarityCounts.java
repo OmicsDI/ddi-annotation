@@ -19,7 +19,7 @@ import uk.ac.ebi.ddi.service.db.model.dataset.*;
 import uk.ac.ebi.ddi.service.db.model.similarity.Citations;
 import uk.ac.ebi.ddi.service.db.model.similarity.EBISearchPubmedCount;
 import uk.ac.ebi.ddi.service.db.model.similarity.ReanalysisData;
-import uk.ac.ebi.ddi.service.db.service.dataset.DatasetCountService;
+//import uk.ac.ebi.ddi.service.db.service.dataset.DatasetCountService;
 import uk.ac.ebi.ddi.service.db.service.dataset.IDatasetService;
 import uk.ac.ebi.ddi.service.db.service.dataset.IDatasetSimilarsService;
 import uk.ac.ebi.ddi.service.db.service.similarity.*;
@@ -51,10 +51,10 @@ public class SimilarityCounts {
     ICitationService citationService;
 
     @Autowired
-    IDatasetService datasetService;
+    public IDatasetService datasetService;
 
-    @Autowired
-    DatasetCountService datasetCountService;
+    //@Autowired
+    //DatasetCountService datasetCountService;
 
     @Autowired
     IDatasetStatInfoService datasetStatInfoService;
@@ -153,6 +153,7 @@ public class SimilarityCounts {
                                         ) :
                                         new ArrayList<String>()));
             }
+
         } catch (Exception ex) {
             LOGGER.error("Exception occurred, ", ex);
         }
