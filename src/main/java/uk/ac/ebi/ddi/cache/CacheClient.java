@@ -1,6 +1,7 @@
 package uk.ac.ebi.ddi.cache;
 
-import javafx.util.Pair;
+
+import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,7 +16,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public class CacheClient {
 
-    private static Map<String, Map<String, Pair<Date, Object>>> cache = new ConcurrentHashMap<>();
+    private static Map<String, Map<String, ImmutablePair<Date, Object>>> cache = new ConcurrentHashMap<>();
 
     private static final String CACHE_DIR;
 
@@ -42,7 +43,7 @@ public class CacheClient {
         if (cache.get(service) == null) {
             cache.put(service, new ConcurrentHashMap<>());
         }
-        cache.get(service).put(key, new Pair<>(DUE_DATE, value));
+        cache.get(service).put(key, new ImmutablePair<>(DUE_DATE, value));
         if (cache.get(service).keySet().size() % AUTO_SAVE_EVERY_N_ITEMS == 0) {
             writeCache(service);
         }
@@ -50,7 +51,7 @@ public class CacheClient {
 
     public static <T> T getCache(String service, String key, Class<T> clazz) {
         if (cache.get(service) != null) {
-            Pair<Date, Object> result = cache.get(service).get(key);
+            ImmutablePair<Date, Object> result = cache.get(service).get(key);
             if (result == null) {
                 return null;
             } else if (result.getKey().after(new Date())) {
@@ -95,7 +96,7 @@ public class CacheClient {
                 return;
             }
             ObjectInputStream in = new ObjectInputStream(new FileInputStream(cacheFile.toFile()));
-            cache.put(service, (Map<String, Pair<Date, Object>>) in.readObject());
+            cache.put(service, (Map<String, ImmutablePair<Date, Object>>) in.readObject());
         } catch (IOException | ClassNotFoundException e) {
             LOGGER.error("Exception occurred when trying to read cache, service {}, ", service, e);
         }
