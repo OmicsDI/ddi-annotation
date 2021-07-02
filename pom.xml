@@ -45,7 +45,7 @@
         <maven.checkstyle.version>2.17</maven.checkstyle.version>
         <checkstyle.config.location>checkstyle.xml</checkstyle.config.location>
         <ddi.service.db.version>1.14</ddi.service.db.version>
-        <ddi.protein.details.fetcher.version>1.0.10-SNAPSHOT</ddi.protein.details.fetcher.version>
+        <ddi.protein.details.fetcher.version>1.0.11-SNAPSHOT</ddi.protein.details.fetcher.version>
         <ddi.validator.version>1.2</ddi.validator.version>
         <ddi.ebe.logs.version>1.0</ddi.ebe.logs.version>
         <ddi.ebe.ws.dao.version>1.1.1</ddi.ebe.ws.dao.version>
