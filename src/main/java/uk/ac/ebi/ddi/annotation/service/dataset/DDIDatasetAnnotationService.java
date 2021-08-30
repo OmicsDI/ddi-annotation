@@ -110,7 +110,9 @@ public class DDIDatasetAnnotationService {
                 }
             }
 
-            if (currentDataset.getInitHashCode() != dbDataset.getInitHashCode()) {
+            if (currentDataset.getInitHashCode() != dbDataset.getInitHashCode() ||
+                    !currentDataset.getAdditionalField(DSField.Additional.OMICS.key()).
+                            containsAll(dbDataset.getAdditionalField(DSField.Additional.OMICS.key()))) {
                 LOGGER.info("Inithashcode of " + dbDataset.getAccession() + " is changed, previous: {}, current: {}",
                         currentDataset.getInitHashCode(), dbDataset.getInitHashCode());
                 updateDataset(currentDataset, dbDataset);
@@ -141,10 +143,18 @@ public class DDIDatasetAnnotationService {
         if (!DatasetUtils.getCrossReference(exitingDataset, DSField.CrossRef.PUBMED.key()).isEmpty()) {
             for (String pubmedId: DatasetUtils.getCrossReference(exitingDataset, DSField.CrossRef.PUBMED.key())) {
                 //Todo: In the future we need to check for providers that have multiple omics already.
-                publicationService.save(new PublicationDataset(pubmedId, exitingDataset.getAccession(),
-                        exitingDataset.getDatabase(),
-                        DatasetUtils.getFirstAdditional(exitingDataset, DSField.Additional.OMICS.key()))
-                );
+                try {
+                    publicationService.save(new PublicationDataset(pubmedId, exitingDataset.getAccession(),
+                            exitingDataset.getDatabase(),
+                            DatasetUtils.getFirstAdditional(exitingDataset, DSField.Additional.OMICS.key()))
+                    );
+                } catch (Exception ex) {
+                    LOGGER.info("exception while inserting data", ex.getMessage());
+                    /*publicationService.update(new PublicationDataset(pubmedId, exitingDataset.getAccession(),
+                            exitingDataset.getDatabase(),
+                            DatasetUtils.getFirstAdditional(exitingDataset, DSField.Additional.OMICS.key()))
+                    );*/
+                }
             }
         }
     }
