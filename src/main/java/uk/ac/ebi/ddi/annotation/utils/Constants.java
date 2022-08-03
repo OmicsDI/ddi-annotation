@@ -56,6 +56,8 @@ public class Constants {
 
     public static final String ENAREADRUNCOLUMN = "study_accession,fastq_ftp,fastq_aspera,fastq_galaxy";
 
+    public static final String RECURRATED_MODEL = "RecurratedModel";
+
     public static final String[] DATASET_SUMMARY        = {
             DSField.DESCRIPTION.getName(),
             DSField.NAME.getName(),

@@ -21,6 +21,7 @@ import uk.ac.ebi.ddi.service.db.service.dataset.IDatasetSimilarsService;
 import uk.ac.ebi.ddi.service.db.service.dataset.IDatasetStatusService;
 import uk.ac.ebi.ddi.service.db.service.logger.IHttpEventService;
 import uk.ac.ebi.ddi.service.db.service.publication.IPublicationDatasetService;
+//import uk.ac.ebi.ddi.service.db.service.publication.PublicationDatasetService;
 import uk.ac.ebi.ddi.service.db.utils.DatasetCategory;
 import uk.ac.ebi.ddi.service.db.utils.DatasetSimilarsType;
 import uk.ac.ebi.ddi.similarityCalculator.utils.SimilarityConstants;
@@ -112,7 +113,8 @@ public class DDIDatasetAnnotationService {
 
             if (currentDataset.getInitHashCode() != dbDataset.getInitHashCode() ||
                     !currentDataset.getAdditionalField(DSField.Additional.OMICS.key()).
-                            containsAll(dbDataset.getAdditionalField(DSField.Additional.OMICS.key()))) {
+                            containsAll(dbDataset.getAdditionalField(DSField.Additional.OMICS.key()))
+                   ) {
                 LOGGER.info("Inithashcode of " + dbDataset.getAccession() + " is changed, previous: {}, current: {}",
                         currentDataset.getInitHashCode(), dbDataset.getInitHashCode());
                 updateDataset(currentDataset, dbDataset);
@@ -128,8 +130,9 @@ public class DDIDatasetAnnotationService {
 
         Dataset dbDataset = datasetService.update(currentDataset.getId(), newDataset);
         dbDataset.setInitHashCode(newDataset.getInitHashCode());
-        datasetService.save(dbDataset);
+        //
         if (dbDataset.getId() != null) {
+            datasetService.save(dbDataset);
             statusService.save(new DatasetStatus(dbDataset.getAccession(), dbDataset.getDatabase(),
                     dbDataset.getInitHashCode(), getDate(), DatasetCategory.INSERTED.getType()));
         }
@@ -144,16 +147,16 @@ public class DDIDatasetAnnotationService {
             for (String pubmedId: DatasetUtils.getCrossReference(exitingDataset, DSField.CrossRef.PUBMED.key())) {
                 //Todo: In the future we need to check for providers that have multiple omics already.
                 try {
-                    publicationService.save(new PublicationDataset(pubmedId, exitingDataset.getAccession(),
-                            exitingDataset.getDatabase(),
-                            DatasetUtils.getFirstAdditional(exitingDataset, DSField.Additional.OMICS.key()))
-                    );
+                    PublicationDataset publicationDataset = publicationService.read(exitingDataset.getAccession(),
+                            exitingDataset.getDatabase());
+                    if (publicationDataset != null && !publicationDataset.getPubmedId().equals(pubmedId)) {
+                        publicationService.save(new PublicationDataset(pubmedId, exitingDataset.getAccession(),
+                                exitingDataset.getDatabase(),
+                                DatasetUtils.getFirstAdditional(exitingDataset, DSField.Additional.OMICS.key()))
+                        );
+                    }
                 } catch (Exception ex) {
-                    LOGGER.info("exception while inserting data", ex.getMessage());
-                    /*publicationService.update(new PublicationDataset(pubmedId, exitingDataset.getAccession(),
-                            exitingDataset.getDatabase(),
-                            DatasetUtils.getFirstAdditional(exitingDataset, DSField.Additional.OMICS.key()))
-                    );*/
+                    LOGGER.info("exception while annotation data", ex.getMessage().toString());
                 }
             }
         }

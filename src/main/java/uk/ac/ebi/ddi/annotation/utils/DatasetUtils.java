@@ -113,7 +113,7 @@ public class DatasetUtils {
             }
             if (dataset.getCrossReferences() != null && dataset.getCrossReferences().getRef() != null) {
                 crossReferences = dataset.getCrossReferences().getRef()
-                        .stream().parallel()
+                        .stream().parallel().filter(x -> x.getDbname() != null)
                         .collect(Collectors.groupingBy(
                                 x -> x.getDbname().trim(),
                                 Collectors.mapping(x -> x.getDbkey().trim(), Collectors.toSet())));
@@ -159,7 +159,7 @@ public class DatasetUtils {
             crossReferences = new HashMap<>();
             if (dataset.getCrossReferences() != null && dataset.getCrossReferences().getRef() != null) {
                 crossReferences = dataset.getCrossReferences().getRef()
-                        .stream().parallel()
+                        .stream().parallel().filter(x -> x.getDbname() != null)
                         .collect(Collectors.groupingBy(
                                 x -> x.getDbname().trim(),
                                 Collectors.mapping(x -> x.getDbkey().trim(), Collectors.toSet())));
