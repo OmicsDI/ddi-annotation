@@ -41,7 +41,7 @@ public class BioStudiesService {
 
     public void parseJson(InputStream is) throws IOException {
 
-        List<Submissions> submissionsList = new LinkedList<Submissions>();
+       /* List<Submissions> submissionsList = new LinkedList<Submissions>();
         // Create and configure an ObjectMapper instance
         ObjectMapper mapper = new ObjectMapper();
         //mapper.registerModule(new JavaTimeModule());
@@ -99,15 +99,102 @@ public class BioStudiesService {
                 }
                 jsonToken = jsonParser.nextToken();
             }
-        }
+        }*/
     }
 
+    public void parseJsonBioStudies(InputStream is) throws IOException {
+
+        List<Submissions> submissionsList = new LinkedList<Submissions>();
+        // Create and configure an ObjectMapper instance
+        ObjectMapper mapper = new ObjectMapper();
+        //mapper.registerModule(new JavaTimeModule());
+        mapper.findAndRegisterModules();
+        mapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
+
+        // Create a JsonParser instance
+        try (JsonParser jsonParser = mapper.getFactory().createParser(is)) {
+            JsonToken jsonToken = jsonParser.nextToken();
+
+            while (jsonToken != JsonToken.END_ARRAY && jsonToken != null) {
+                System.out.println(jsonParser.getCurrentName());
+                if (jsonToken == JsonToken.FIELD_NAME) {
+
+                    System.out.println("\nYour are in submissions ");
+
+
+                        // Read a contact instance using ObjectMapper and do something with it
+                        Submissions submissions = mapper.readValue(jsonParser, Submissions.class);
+
+                        if (submissions.getSection().getType().equals("Study")) {
+                            Dataset dataset = transformSubmissionDataset(submissions);
+                            if (!dataset.getAdditional().containsKey("additional_accession")) {
+                                updateDataset(dataset);
+                            } else {
+                                String accession = dataset.getAdditional().get("additional_accession")
+                                        .iterator().next();
+                                System.out.println("updating secondary accession of " + accession);
+                                List<Dataset> datasetList = datasetService.findByAccession(accession);
+                                if (datasetList.size() > 0) {
+                                    Dataset dataset1 =  datasetList.get(0);
+                                    if (dataset1.getAdditional().containsKey("additional_accession")) {
+                                        dataset1.getAdditional().get("additional_accession")
+                                                .add(dataset.getAccession());
+                                        updateDataset(dataset1);
+                                    }
+                                } else {
+                                    updateDataset(dataset);
+                                }
+                                System.out.println("secondary accession is " + accession);
+                            }
+                            submissions.toString();
+                            System.out.println("accession number is " + submissions.getAccNo());
+                        }
+                        submissionsList.add(submissions);
+                        System.out.println("list count is " + submissionsList.size());
+                        jsonToken = jsonParser.nextToken();
+                    }
+                jsonToken = jsonParser.nextToken();
+                }
+                jsonToken = jsonParser.nextToken();
+            }
+        }
+
+    public void parseSubmissions(JsonParser jsonParser) throws IOException {
+        ObjectMapper mapper = new ObjectMapper();
+
+        Submissions submissions = mapper.readValue(jsonParser, Submissions.class);
+
+        if (submissions.getSection().getType().equals("Study")) {
+            Dataset dataset = transformSubmissionDataset(submissions);
+            if (!dataset.getAdditional().containsKey("additional_accession")) {
+                updateDataset(dataset);
+            } else {
+                String accession = dataset.getAdditional().get("additional_accession")
+                        .iterator().next();
+                System.out.println("updating secondary accession of " + accession);
+                List<Dataset> datasetList = datasetService.findByAccession(accession);
+                if (datasetList.size() > 0) {
+                    Dataset dataset1 =  datasetList.get(0);
+                    if (dataset1.getAdditional().containsKey("additional_accession")) {
+                        dataset1.getAdditional().get("additional_accession")
+                                .add(dataset.getAccession());
+                        updateDataset(dataset1);
+                    }
+                } else {
+                    updateDataset(dataset);
+                }
+                System.out.println("secondary accession is " + accession);
+            }
+            submissions.toString();
+            System.out.println("accession number is " + submissions.getAccNo());
+        }
+    }
    /* public static void main(String[] args) throws IOException {
-        File initialFile = new File("/media/gaur/Elements/teststudies.json");
+        File initialFile = new File("/partition/sample.json");
         InputStream targetStream = new FileInputStream(initialFile);
 
         BioStudiesService studiesParser = new BioStudiesService();
-        studiesParser.saveStudies("/media/gaur/Elements/teststudies.json");
+        studiesParser.saveStudies("/partition/sample.json");
     }*/
 
     public void saveStudies(String filePath) throws IOException {
@@ -116,7 +203,7 @@ public class BioStudiesService {
         //File initialFile = new File("/media/gaur/Elements/biostudies/publicOnlyStudies.json");
         //File initialFile = new File("/media/gaur/Elements/teststudies.json");
         InputStream targetStream = new FileInputStream(initialFile);
-        parseJson(targetStream);
+        parseJsonBioStudies(targetStream);
         //StudiesParserService studiesParser = new StudiesParserService();
         //studiesParser.parseJson(targetStream);
     }
@@ -125,9 +212,9 @@ public class BioStudiesService {
         try {
             HashSet<String> datasetLink = new HashSet<String>();
             Map<String, String> subsections = null;
-            datasetLink.add("https://www.ebi.ac.uk/biostudies/studies/" + submissions.getAccno());
+            datasetLink.add("https://www.ebi.ac.uk/biostudies/studies/" + submissions.getAccNo());
             HashSet<String> authors = new HashSet<String>();
-            dataset.setAccession(submissions.getAccno());
+            dataset.setAccession(submissions.getAccNo());
             dataset.setDatabase("BioStudies");
             dataset.setCurrentStatus(DatasetCategory.INSERTED.getType());
             dataset.addAdditional("omics_type", omicsType);
@@ -199,6 +286,7 @@ public class BioStudiesService {
     }
 
     public void updateDataset(Dataset dataset) {
+
         Dataset inDataset = datasetService.
                 read(dataset.getAccession(), dataset.getDatabase());
         if (inDataset != null) {
