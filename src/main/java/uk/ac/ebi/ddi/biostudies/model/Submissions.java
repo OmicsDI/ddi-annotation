@@ -3,9 +3,7 @@ package uk.ac.ebi.ddi.biostudies.model;
 import java.util.List;
 
 public class Submissions {
-
-    String id;
-    String accno;
+    String accNo;
     String seckey;
     String relPath;
     String rtime;
@@ -50,20 +48,12 @@ public class Submissions {
         this.filesCount = filesCount;
     }
 
-    public String getId() {
-        return id;
+    public String getAccNo() {
+        return accNo;
     }
 
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getAccno() {
-        return accno;
-    }
-
-    public void setAccno(String accno) {
-        this.accno = accno;
+    public void setAccNo(String accNo) {
+        this.accNo = accNo;
     }
 
     public String getSeckey() {
