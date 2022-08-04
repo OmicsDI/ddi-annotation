@@ -123,7 +123,7 @@ public class SimilarityCounts {
         citations.setDatabase(dataset.getDatabase());
         citations.setPubmedId(allCitationIds);
         citations.setPubmedCount(allCitationIds.size());
-        citationService.saveCitation(citations);
+        //citationService.saveCitation(citations);
 
         if (dataset.getScores() != null) {
             updateDataset.getScores().setCitationCount(allCitationIds.size());
