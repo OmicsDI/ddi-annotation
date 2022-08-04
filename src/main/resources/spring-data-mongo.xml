@@ -39,7 +39,8 @@
 	<bean id="ddiDatasetSimilarityService" class="uk.ac.ebi.ddi.annotation.service.crossreferences.DDIDatasetSimilarityService"/>
 	<bean id="datasetStatInfoService" class="uk.ac.ebi.ddi.service.db.service.similarity.DatasetStatInfoService"/>
 	<bean id="InDBServiceRepo" class="uk.ac.ebi.ddi.service.db.repo.similarity.ITermInDBRepoImpl"/>
-    <bean class="uk.ac.ebi.ddi.service.db.utils.CascadingMongoEventListener" />
+    <bean id="datasetService" class="uk.ac.ebi.ddi.service.db.service.dataset.DatasetService" />
+	<bean class="uk.ac.ebi.ddi.service.db.utils.CascadingMongoEventListener" />
 
 	<bean id="annotService" class="uk.ac.ebi.ddi.annotation.service.synonyms.DDIAnnotationService"/>
 	<bean id="termService" class="uk.ac.ebi.ddi.service.db.service.similarity.TermInDBService"/>
