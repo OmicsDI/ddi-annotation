@@ -222,8 +222,9 @@ public class BioStudiesService {
             Map<String, String> sectionMap = submissions.getSection().getAttributes() != null ?
                     submissions.getSection().getAttributes().stream()
                     .collect(Collectors.toMap(Attributes::getName, Attributes::getValue, (a1, a2) -> a1)) : null;
-            Map<String, String> attributesMap = submissions.getAttributes().stream()
-                    .collect(Collectors.toMap(Attributes::getName, Attributes::getValue, (a1, a2) -> a1));
+            Map<String, String> attributesMap = submissions.getAttributes() != null ?
+                    submissions.getAttributes().stream()
+                    .collect(Collectors.toMap(Attributes::getName, Attributes::getValue, (a1, a2) -> a1)) : null;
             Map<String, String> linksMap = null;
             List<Links> linksList = submissions.getSection().getLinks();
             if (submissions.getSection() != null && submissions.getSection().getSubsections() != null) {
@@ -255,7 +256,7 @@ public class BioStudiesService {
             } else if (sectionMap != null && sectionMap.containsKey(DESCRIPTION.toString())) {
                 dataset.setDescription(sectionMap.get(DESCRIPTION.toString()));
             }
-            if (attributesMap.containsKey(TITLE.toString())) {
+            if (attributesMap != null && attributesMap.containsKey(TITLE.toString())) {
                 dataset.setName(attributesMap.get(TITLE.toString()));
             } else if (sectionMap != null && sectionMap.containsKey(TITLE.toString())) {
                 dataset.setName(sectionMap.get(TITLE.toString()));
@@ -263,7 +264,9 @@ public class BioStudiesService {
             Map<String, Set<String>> dates = new HashMap<String, Set<String>>();
             HashSet<String> setData = new HashSet<String>();
             HashSet<String> setOrganisms = new HashSet<String>();
-            setData.add(attributesMap.get(PUBLICATION));
+            if (attributesMap != null && attributesMap.containsKey(PUBLICATION.toString())) {
+                setData.add(attributesMap.get(PUBLICATION.toString()));
+            }
             //dates.put()
             dates.put("publication", setData);
 
@@ -287,12 +290,16 @@ public class BioStudiesService {
 
     public void updateDataset(Dataset dataset) {
 
-        Dataset inDataset = datasetService.
-                read(dataset.getAccession(), dataset.getDatabase());
-        if (inDataset != null) {
-            datasetService.update(inDataset.getId(), dataset);
-        } else {
-            datasetService.save(dataset);
+        try {
+            Dataset inDataset = datasetService.
+                    read(dataset.getAccession(), dataset.getDatabase());
+            if (inDataset != null) {
+                datasetService.update(inDataset.getId(), dataset);
+            } else {
+                datasetService.save(dataset);
+            }
+        } catch (Exception exception) {
+            LOGGER.error("exception while saving dataset", exception.getMessage());
         }
     }
 }
