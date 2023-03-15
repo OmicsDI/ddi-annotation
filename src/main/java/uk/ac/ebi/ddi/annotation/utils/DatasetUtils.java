@@ -150,8 +150,8 @@ public class DatasetUtils {
             if (dataset.getName() == null) {
                 LOGGER.error("Exception occurred, entry with id name value is not there, acc: {}", dataset.getAcc());
             }
-            if (dataset.getDates() != null) {
-                dates = dataset.getDates().getDate().parallelStream()
+            if (dataset.getDates() != null && dataset.getDates().getDate() != null) {
+                dates = dataset.getDates().getDate().parallelStream().filter(date -> date.getType() != null && date.getValue() != null)
                         .collect(Collectors.groupingBy(
                                 Date::getType,
                                 Collectors.mapping(Date::getValue, Collectors.toSet())));
@@ -159,14 +159,14 @@ public class DatasetUtils {
             crossReferences = new HashMap<>();
             if (dataset.getCrossReferences() != null && dataset.getCrossReferences().getRef() != null) {
                 crossReferences = dataset.getCrossReferences().getRef()
-                        .stream().parallel().filter(x -> x.getDbname() != null)
+                        .stream().parallel().filter(x -> x.getDbname() != null && x.getDbkey() != null)
                         .collect(Collectors.groupingBy(
                                 x -> x.getDbname().trim(),
                                 Collectors.mapping(x -> x.getDbkey().trim(), Collectors.toSet())));
             }
-            if (dataset.getAdditionalFields() != null) {
+            if (dataset.getAdditionalFields() != null &&  dataset.getAdditionalFields().getField() != null && !dataset.getAdditionalFields().getField().isEmpty()) {
                 additionals = dataset.getAdditionalFields().getField()
-                        .stream().parallel()
+                        .stream().filter(field -> field != null).parallel().filter(x -> x.getName() != null && x.getValue() != null)
                         .collect(Collectors.groupingBy(
                                 x -> x.getName().trim(),
                                 Collectors.mapping(x -> x.getValue().trim(), Collectors.toSet())));
