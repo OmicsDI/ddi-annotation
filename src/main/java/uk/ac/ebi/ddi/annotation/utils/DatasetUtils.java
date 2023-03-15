@@ -151,7 +151,7 @@ public class DatasetUtils {
                 LOGGER.error("Exception occurred, entry with id name value is not there, acc: {}", dataset.getAcc());
             }
             if (dataset.getDates() != null && dataset.getDates().getDate() != null) {
-                dates = dataset.getDates().getDate().parallelStream().filter(date -> date.getType() != null && date.getValue() != null)
+                dates = dataset.getDates().getDate().parallelStream().filter(date -> Objects.nonNull(date.getType())).filter(date -> Objects.nonNull(date.getValue()))
                         .collect(Collectors.groupingBy(
                                 Date::getType,
                                 Collectors.mapping(Date::getValue, Collectors.toSet())));
@@ -159,12 +159,12 @@ public class DatasetUtils {
             crossReferences = new HashMap<>();
             if (dataset.getCrossReferences() != null && dataset.getCrossReferences().getRef() != null) {
                 crossReferences = dataset.getCrossReferences().getRef()
-                        .stream().parallel().filter(x -> x.getDbname() != null && x.getDbkey() != null)
+                        .stream().parallel().filter(x -> x.getDbname() != null).filter(x -> x.getDbkey() != null)
                         .collect(Collectors.groupingBy(
                                 x -> x.getDbname().trim(),
                                 Collectors.mapping(x -> x.getDbkey().trim(), Collectors.toSet())));
             }
-            if (dataset.getAdditionalFields() != null &&  dataset.getAdditionalFields().getField() != null && !dataset.getAdditionalFields().getField().isEmpty()) {
+            if (dataset.getAdditionalFields() != null &&  dataset.getAdditionalFields().getField() != null) {
                 additionals = dataset.getAdditionalFields().getField()
                         .stream().filter(field -> field != null).parallel().filter(x -> x.getName() != null && x.getValue() != null)
                         .collect(Collectors.groupingBy(
