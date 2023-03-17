@@ -116,11 +116,7 @@ public class BioStudiesService {
             JsonToken jsonToken = jsonParser.nextToken();
 
             while (jsonToken != JsonToken.END_ARRAY && jsonToken != null) {
-                System.out.println(jsonParser.getCurrentName());
                 if (jsonToken == JsonToken.FIELD_NAME) {
-
-                    System.out.println("\nYour are in submissions ");
-
 
                         // Read a contact instance using ObjectMapper and do something with it
                         Submissions submissions = mapper.readValue(jsonParser, Submissions.class);
@@ -132,7 +128,6 @@ public class BioStudiesService {
                             } else {
                                 String accession = dataset.getAdditional().get("additional_accession")
                                         .iterator().next();
-                                System.out.println("updating secondary accession of " + accession);
                                 List<Dataset> datasetList = datasetService.findByAccession(accession);
                                 if (datasetList.size() > 0) {
                                     Dataset dataset1 =  datasetList.get(0);
@@ -144,13 +139,10 @@ public class BioStudiesService {
                                 } else {
                                     updateDataset(dataset);
                                 }
-                                System.out.println("secondary accession is " + accession);
                             }
                             submissions.toString();
-                            System.out.println("accession number is " + submissions.getAccNo());
                         }
                         submissionsList.add(submissions);
-                        System.out.println("list count is " + submissionsList.size());
                         jsonToken = jsonParser.nextToken();
                     }
                 jsonToken = jsonParser.nextToken();
@@ -171,7 +163,6 @@ public class BioStudiesService {
             } else {
                 String accession = dataset.getAdditional().get("additional_accession")
                         .iterator().next();
-                System.out.println("updating secondary accession of " + accession);
                 List<Dataset> datasetList = datasetService.findByAccession(accession);
                 if (datasetList.size() > 0) {
                     Dataset dataset1 =  datasetList.get(0);
@@ -183,10 +174,8 @@ public class BioStudiesService {
                 } else {
                     updateDataset(dataset);
                 }
-                System.out.println("secondary accession is " + accession);
             }
             submissions.toString();
-            System.out.println("accession number is " + submissions.getAccNo());
         }
     }
    /* public static void main(String[] args) throws IOException {
@@ -220,31 +209,28 @@ public class BioStudiesService {
             dataset.addAdditional("omics_type", omicsType);
             dataset.addAdditional("full_dataset_link", datasetLink);
             Map<String, String> sectionMap = submissions.getSection().getAttributes() != null ?
-                    submissions.getSection().getAttributes().stream()
+                    submissions.getSection().getAttributes().stream().filter(attribute -> attribute.getName() != null && attribute.getValue() != null)
                     .collect(Collectors.toMap(Attributes::getName, Attributes::getValue, (a1, a2) -> a1)) : null;
             Map<String, String> attributesMap = submissions.getAttributes() != null ?
-                    submissions.getAttributes().stream()
+                    submissions.getAttributes().stream().filter(attribute -> attribute.getName() != null && attribute.getValue() != null)
                     .collect(Collectors.toMap(Attributes::getName, Attributes::getValue, (a1, a2) -> a1)) : null;
             Map<String, String> linksMap = null;
             List<Links> linksList = submissions.getSection().getLinks();
             if (submissions.getSection() != null && submissions.getSection().getSubsections() != null) {
                 subsections = submissions.getSection().getSubsections()
-                        .stream().filter(r -> r.getType().equals("Author")).map(r -> r.getAttributes())
-                        .flatMap(x -> x.stream()).collect(Collectors.toMap(Attributes::getName,
+                        .stream().filter(r -> r.getType() != null && r.getType().equals("Author")).map(r -> r.getAttributes())
+                        .flatMap(x -> x.stream()).filter(attribute -> attribute.getName() != null && attribute.getValue() != null).collect(Collectors.toMap(Attributes::getName,
                                 Attributes::getValue, (a1, a2) -> a1));
                 authors.add(subsections.get("Name"));
                 dataset.addAdditional("submitter", authors);
             }
-
             if (linksList != null && linksList.size() > 0 && linksList.get(0).getAttributes() != null) {
-                linksMap = linksList.stream().map(r -> r.getAttributes())
-                        .flatMap(x -> x.stream()).collect(Collectors.toMap(Attributes::getName,
+                linksMap = linksList.stream().filter(l -> l.getAttributes() != null && l.getAttributes().size() > 0).map(Links::getAttributes)
+                        .flatMap(x -> x.stream()).filter(attribute -> attribute.getName() != null && attribute.getValue() != null).collect(Collectors.toMap(Attributes::getName,
                                 Attributes::getValue, (a1, a2) -> a1));
-
             }
             //.collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue,(countInFirstMap, countInSecondMap)
             // -> countInFirstMap + countInSecondMap)));
-
             if (linksMap != null && linksMap.containsKey("Type")) {
                 String accession = linksList.get(0).getUrl();
                 HashSet<String> setSecAcc = new HashSet<String>();
@@ -269,7 +255,6 @@ public class BioStudiesService {
             }
             //dates.put()
             dates.put("publication", setData);
-
             HashSet<String> repository = new HashSet<String>();
             repository.add("biostudies");
             dataset.addAdditional("repository", repository);
@@ -284,7 +269,6 @@ public class BioStudiesService {
         } catch (Exception ex) {
             LOGGER.error("exception while parsing submission into dataset in transformsubmission", ex.getMessage());
         }
-        //if(submissions.getSection().getLinks().)
         return dataset;
     }
 
