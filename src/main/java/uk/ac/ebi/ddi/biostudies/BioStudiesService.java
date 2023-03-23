@@ -117,7 +117,6 @@ public class BioStudiesService {
 
             while (jsonToken != JsonToken.END_ARRAY && jsonToken != null) {
                 if (jsonToken == JsonToken.FIELD_NAME) {
-
                         // Read a contact instance using ObjectMapper and do something with it
                         Submissions submissions = mapper.readValue(jsonParser, Submissions.class);
 
@@ -153,7 +152,6 @@ public class BioStudiesService {
 
     public void parseSubmissions(JsonParser jsonParser) throws IOException {
         ObjectMapper mapper = new ObjectMapper();
-
         Submissions submissions = mapper.readValue(jsonParser, Submissions.class);
 
         if (submissions.getSection().getType().equals("Study")) {
@@ -242,11 +240,16 @@ public class BioStudiesService {
             } else if (sectionMap != null && sectionMap.containsKey(DESCRIPTION.toString())) {
                 dataset.setDescription(sectionMap.get(DESCRIPTION.toString()));
             }
-            if (attributesMap != null && attributesMap.containsKey(TITLE.toString())) {
+
+            //Based on request from biostudies team
+            if (submissions.getTitle() != null && !submissions.getTitle().isEmpty()) {
+                dataset.setName(submissions.getTitle());
+            } else if (attributesMap != null && attributesMap.containsKey(TITLE.toString())) {
                 dataset.setName(attributesMap.get(TITLE.toString()));
             } else if (sectionMap != null && sectionMap.containsKey(TITLE.toString())) {
                 dataset.setName(sectionMap.get(TITLE.toString()));
             }
+
             Map<String, Set<String>> dates = new HashMap<String, Set<String>>();
             HashSet<String> setData = new HashSet<String>();
             HashSet<String> setOrganisms = new HashSet<String>();
@@ -283,6 +286,7 @@ public class BioStudiesService {
                 datasetService.save(dataset);
             }
         } catch (Exception exception) {
+            exception.printStackTrace();
             LOGGER.error("exception while saving dataset", exception.getMessage());
         }
     }
