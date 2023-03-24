@@ -11,6 +11,8 @@ public class Submissions {
     String mtime;
     String views;
     String type;
+
+    String title;
     List<Attributes> attributes;
     List<String> accessTags;
     Section section;
@@ -112,6 +114,12 @@ public class Submissions {
         this.type = type;
     }
 
+    public String getTitle() {
+        return title;
+    }
 
+    public void setTitle(String title) {
+        this.title = title;
+    }
 }
 
